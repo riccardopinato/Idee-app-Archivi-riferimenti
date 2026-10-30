@@ -1,5 +1,14 @@
 # Changelog dell'archivio
 
+## 2026-10-30 — Audit trasversale idee e innovazione (solo archivio)
+- Rilette fonti Project, backlog, 16 idee Web Utility, repository OSS/Design-App e roadmap app pertinenti; evidenziata distinzione GIA IMPLEMENTATO vs GAP vs APPROVATO STORICO vs NUOVA IPOTESI.
+- Registra 30 interventi di prodotto, riuso/provider e priorità con evidence scope.
+- Conserva 7 nuove ipotesi in Inbox senza promuoverle a classifica né cambiare roadmap app.
+- Evita duplicati: Shopping/Workout/Calendar/Map/Threads/Review già presenti in Anna; lifecycle Anna e Notes; Anti-Waste TasteAI; suite Notification/Phone.
+- Verifica licensing Open-Meteo commerciale e POI/OSM/Overture; distingue 632 cataloghi stelle da deep source audit.
+- Nessun codice di app o Golden modificato; nessuna certificazione/release creata.
+
+
 ## 2026-10-30 — Audit ChatGPT vs GitHub
 - Classifica espansa a 37 voci, 7 colonne (chat, main/PR, codice, allineamento) e 37 descrizioni in elenco.
 - Stato main/branch rettificato per TrailPath e Anna; contrasto Golden Wonderlog; gap README AppLab e Corpo Umano; Send-to-PC e Cozy.
