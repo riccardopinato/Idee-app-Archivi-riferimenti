@@ -1,0 +1,11 @@
+# Modello scheda libreria/repository OSS
+- Nome, URL, proprietario:
+- Ref/commit:
+- Licenza per repo/file:
+- Origine: INTERNAL_GOLDEN / INTERNAL_DONOR / OSS_COPIED / OSS_REFERENCE_REWRITE:
+- Capability utile:
+- App consumatrici:
+- Delta di adattamento:
+- Tests / evidence / data review:
+- Vincoli copyleft e sicurezza:
+- Stato: CANDIDATE / ADAPTED / VERIFIED / GOLDEN / DEPRECATED:
