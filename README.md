@@ -7,7 +7,7 @@
 | Cartella | Trovi qui |
 |---|---|
 | [00-GUIDA](00-GUIDA/COME_AGGIORNARE.md) | Come cercare, aggiungere e verificare informazioni |
-| [01-PORTAFOGLIO](01-PORTAFOGLIO/CATALOGO_APP.md) | App già registrate e [classifica](01-PORTAFOGLIO/CLASSIFICA_2026-10-30.md) |
+| [01-PORTAFOGLIO](01-PORTAFOGLIO/CATALOGO_APP.md) | App già registrate e [classifica Chat/GitHub](01-PORTAFOGLIO/CLASSIFICA_2026-10-30.md) e [audit](01-PORTAFOGLIO/AUDIT_CHAT_GITHUB_2026-10-30.md) |
 | [02-SUITE-E-MICROAPP](02-SUITE-E-MICROAPP/SUITE_E_COMPONENTI.md) | Composizione suite, componenti, vendita standalone e combinata |
 | [03-WEB-UTILITY](03-WEB-UTILITY/CATALOGO_WEB_001_016.md) | 16 idee SEO, [ranking](03-WEB-UTILITY/CLASSIFICA.md), multi-market |
 | [04-FONTI-DATI](04-FONTI-DATI/REGISTRO_FONTI_API.md) | [POI/mappe](04-FONTI-DATI/POI_MAPPE.md), [meteo](04-FONTI-DATI/METEO_CLIMA.md), [mobilità](04-FONTI-DATI/MOBILITA.md), [dati vari](04-FONTI-DATI/ALTRI_DATASET.md) |
