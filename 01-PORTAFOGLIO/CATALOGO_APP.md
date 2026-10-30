@@ -1,5 +1,16 @@
 # Catalogo app: stato e descrizione
 
+## Verifiche repository: suite già costruite e nuovi prodotti compositi (30/10/2026)
+
+- **Notification Control** — suite in codice verificata; accorpa Undo, Pausa Ping, Follow Up, Critical Alert, Pickup Code e Luminous. Repo `riccardopinato/Notification-Control`; release live non certificata in questo audit.
+- **Phone Guard** — suite in codice verificata; unisce Tabletop Motion Alarm e Pocket Guard/Pockara, più Bag, Charging, Accessory e Journey. Repo `riccardopinato/Phone-Guard`; physical QA aperta.
+- **Android Omni Cleaner** — prodotto reale v1.0.0 RC1 che aggrega storage/duplicate/media/download/EXIF, distinto da CleanOS. Repo `riccardopinato/Android-Omni-Cleaner`.
+- **TasteAI** — prodotto ricette/anti-spreco in codice v0.13, potenziale riuso per MealMate ma non fusione formalizzata. Repo `riccardopinato/TasteAI`.
+- **PDF-Unifier** — progetto Kotlin con PDF engine/OCR; da considerare donor per la futura evoluzione PDF Pocket Tools. Repo `riccardopinato/PDF-Unifier`.
+
+La classifica aggiornata e le descrizioni di TUTTE le voci sono in [CLASSIFICA_2026-10-30.md](CLASSIFICA_2026-10-30.md). Queste informazioni non certificano Store Ready.
+
+
 > Snapshot di fonte storica al 30 ottobre 2026. Le sigle [E]/[V]/[C]/[R] riportano provenienza, non certificazione corrente. Originale preservato in 90-STORICO.
 
 [E] Anna's Diary — diario, agenda, ricordi e vita personale; evoluzione iOS moderna; mantenere autonoma da Notes. Sviluppo maturo; release UX/QA da consolidare.

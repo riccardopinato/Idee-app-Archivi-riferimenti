@@ -2,16 +2,16 @@
 
 > Snapshot di fonte storica al 30 ottobre 2026. Le sigle [E]/[V]/[C]/[R] riportano provenienza, non certificazione corrente. Originale preservato in 90-STORICO.
 
-Legenda: 🟢 donor o codice segnalato; 🔴 nessuno sviluppo dimostrato in questa revisione.
-⚠ Una suite 🔴 può contenere donor 🟢. Stato dichiarato come promemoria storico, da verificare su repo alla prossima attivazione.
+Legenda aggiornata: 🟢 codice in repo verificato; 🟡 donor storico/parziale; 🔴 non implementato in un prodotto suite verificato. Alcune sezioni restano snapshot storico, con note di audit sotto.
+⚠ Una suite 🔴 può contenere donor 🟢. La verifica del 30/10/2026 ha confermato Notification Control e Phone Guard come suite realmente in codice, non Store-ready.
 
-SUITE: NOTIFICATION CONTROL [🔴 suite da assemblare]
- 🔴 Notification Undo — storico notifiche cancellate; vendibile standalone.
- 🔴 Pausa Ping — silenziamento temporaneo; standalone opzionale.
- 🔴 Follow Up Reminder — notif→promemoria; standalone.
- 🔴 Critical Message Alert — alert distinti per priorità; standalone.
- 🔴 Pickup Code Pin — codice di ritiro in evidenza; principalmente modulo.
- 🟢? Luminous Infinite Circle — visual alert donor/progetto definito; verificare codice prima di considerarlo realmente riusabile.
+SUITE: NOTIFICATION CONTROL [🟢 SUITE IMPLEMENTATA — repo Notification-Control @ 664cf8c7eaaa8843711ddc99b62b547a1997fcb9; release live/Play pending]
+ 🟢 Notification Undo — storico notifiche cancellate; vendibile standalone.
+ 🟢 Pausa Ping — silenziamento temporaneo; standalone opzionale.
+ 🟢 Follow Up Reminder — notif→promemoria; standalone.
+ 🟢 Critical Message Alert — alert distinti per priorità; standalone.
+ 🟢 Pickup Code Pin — codice di ritiro in evidenza; principalmente modulo.
+ 🟢 Luminous Visual Alerts — presente come modulo in codice Notification Control; donor storico Luminous Infinite Circle.
 
 SUITE: APP PROFILES [🔴 suite da assemblare]
  🔴 App Brightness / Brightness Profiles — luminosità per app; standalone.
@@ -39,10 +39,10 @@ SUITE: SAFESHARE [🔴]
  🔴 Photo Metadata Cleaner — elimina EXIF/GPS foto; standalone.
  🔴 File/PDF Metadata Cleaner — metadati documenti; possibile standalone.
 
-SUITE: PHONE GUARD [🔴]
+SUITE: PHONE GUARD [🟢 SUITE IMPLEMENTATA — repo Phone-Guard @ ba377aa0fadbe2d7e5ec603f5abd4b69d411ed3c; v0.9.7, physical Play QA pending]
  🟢 Tabletop Motion Alarm — motion alarm con countdown/sensori; standalone.
  🟢 Pocket Guard — protezione tasca/borsa sensori; standalone.
- 🔴 Journey Guard — modalità viaggio, attenzione possibili componenti nel donor Pocket: verificare prima di dichiararla assente.
+ 🟢 Journey Guard — modalità viaggio effettivamente inclusa in Phone Guard, insieme a Table/Pocket/Bag/Charging/Accessory.
  🔴 Pocket Drop Alarm — rilevamento caduta/estrazione; possibile standalone.
 
 SUITE: DOWNLOADS BUTLER [🔴]
@@ -110,3 +110,13 @@ PRINCIPIO DI PACKAGING
 - Store listing non duplicati: ogni app deve avere funzione principale e valore completi, non una facciata del medesimo prodotto.
 
 ====================================================================
+
+## AUDIT REPOSITORY DEL 30/10/2026 — ULTERIORI PRODOTTI COMPOSITI E DONOR
+
+**Android Omni Cleaner — 🟢 prodotto composito reale (v1.0.0 RC1).** Accorpa storage scanner, large-file cleaner, duplicate finder, Gallery Cleaner con undo, thumbnail/cache, app residues, Smart Categories dei download/installer/archivi/screenshot, EXIF cleaner e Safe Trash. Fonti: README, PRODUCT_BIBLE e Kotlin `cleaner/` + `exif/`. **Non è CleanOS** e non implementa Easy Debloat.
+
+**TasteAI — 🟢 prodotto multifunzione reale (v0.13).** Ricette offline, ricerca intelligente e Anti-Waste Engine + Ispirami/Preferiti/Plus. Somiglianze con MealMate **non** costituiscono fusione formale. Possibile donor per meal planning futuro.
+
+**PDF-Unifier — 🟢 codice reale; PDF Pocket Tools è proposta di ampliamento.** Merge, split, immagini→PDF, lock, rotate, compression, reader, OCR, bookmarking e search in Kotlin; non trattare il nuovo concept come prodotto già certificato.
+
+**SafeShare — 🟡 donor parziale**: EXIF Cleaner è presente in Omni Cleaner ma non la suite con Clean Link/File Metadata. **Downloads Butler — 🟡 donor parziale**: Smart Categories Omni gestisce anche download vecchi, non dimostra un organizer Butler completo.
