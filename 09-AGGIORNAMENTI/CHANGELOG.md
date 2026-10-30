@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-10-30 — Audit ChatGPT vs GitHub
+- Classifica espansa a 37 voci, 7 colonne (chat, main/PR, codice, allineamento) e 37 descrizioni in elenco.
+- Stato main/branch rettificato per TrailPath e Anna; contrasto Golden Wonderlog; gap README AppLab e Corpo Umano; Send-to-PC e Cozy.
+- Aggiunte autonome Pockara, Tabletop, Easy Debloat e Design-App; score rivisti FocusSense, Cozy e CleanOS.
+- Audit dettagliato aggiunto, classifica precedente preservata. Nessuna modifica codice app.
+
+
 ## 2026-10-30 — Audit fusioni già iniziate e classifica aggiornata
 - Verificati su GitHub code tree e repository doc per Notification Control, Phone Guard, Android Omni Cleaner, TasteAI e PDF-Unifier, con main SHA indicati in classifica.
 - La classifica cresce da 30 a 33 righe: nuovi Android Omni Cleaner, TasteAI e Downloads Butler (solo donor parziale); PDF Pocket Tools riceve evidenza concreta dal donor PDF-Unifier.
