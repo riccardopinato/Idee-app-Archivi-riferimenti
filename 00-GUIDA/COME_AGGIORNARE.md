@@ -1,7 +1,7 @@
 # Come consultare e ampliare questo archivio
 
 1. Parti dal README; entra nella cartella tematica. Non è necessario leggere tutti i file.
-2. Ogni nuova idea va in 01-PORTAFOGLIO/INBOX_IDEE.md prima della promozione. Se esiste già un ID, usa quello.
+2. Ogni nuova idea va in [11-NUOVE-IDEE/INBOX_IDEE.md](../11-NUOVE-IDEE/INBOX_IDEE.md) prima di essere valutata. Solo i progetti promossi entrano nel portafoglio 01; non duplicare ID e conserva il riferimento alla proposta originale.
 3. Crea scheda app con il template e descrizione cliente separata, senza claim non verificati.
 4. Per librerie/repo registra URL, licenza, ref/commit, donor e progetto destinatario.
 5. Per provider pubblici registra paese, diritto d'uso commerciale, attribution, rate limit, costi, data di verifica e fallback.
