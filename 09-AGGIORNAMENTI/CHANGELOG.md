@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-10-30 — Audit fusioni già iniziate e classifica aggiornata
+- Verificati su GitHub code tree e repository doc per Notification Control, Phone Guard, Android Omni Cleaner, TasteAI e PDF-Unifier, con main SHA indicati in classifica.
+- La classifica cresce da 30 a 33 righe: nuovi Android Omni Cleaner, TasteAI e Downloads Butler (solo donor parziale); PDF Pocket Tools riceve evidenza concreta dal donor PDF-Unifier.
+- Notification Control e Phone Guard riconosciuti come fusioni implementate (non ancora certificate Store), descrizione completa in elenco sotto classifica.
+- Corretto il catalogo suite, preservando distinzione CleanOS vs Omni e MealMate vs TasteAI.
+- Punteggi rimangono stime strategiche; snapshot classifica precedente conservato in 90-STORICO.
+
+
 ## 2026-10-30 — Nuove idee in cartella separata
 - Introdotta `11-NUOVE-IDEE/` come sede canonica di proposte e inbox, separata da `01-PORTAFOGLIO/` che raccoglie i prodotti catalogati.
 - Trasferite le 7 idee già presenti nell'inbox senza perdere nessuna riga; l'indirizzo precedente resta come rimando.
