@@ -1,0 +1,11 @@
+# Modello scheda provider
+- Nome e URL:
+- Tipo: dataset / API / renderer / standard:
+- Campo dati e mercati:
+- Condizioni commerciali, licenza e versione:
+- Rate limit, costo e attribution:
+- Frequenza e data ultima verifica:
+- Privacy/PII, caching e redistribuzione:
+- App candidate e adapter già implementati:
+- Evidenza d'uso / test:
+- Stato: CANDIDATE / REVIEWED / APPROVED_FOR_SCOPED_USE / BLOCKED:

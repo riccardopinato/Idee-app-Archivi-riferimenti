@@ -1,0 +1,17 @@
+# Modello scheda app
+- ID stabile:
+- Nome e alias precedenti:
+- Categoria e mercato:
+- Problema cliente:
+- Proposta di valore:
+- Funzioni MVP:
+- Descrizione cliente (draft):
+- Repo / ref / SHA:
+- Stato: IDEA / ROADMAP / CODICE / TESTATO / RELEASE / NON_VERIFICATO
+- Suite di appartenenza / standalone:
+- Monetizzazione ipotizzata:
+- Provider e donor:
+- Privacy / policy / permessi:
+- Difficoltà / score e criteri:
+- Ultima verifica:
+- Prossimo step:

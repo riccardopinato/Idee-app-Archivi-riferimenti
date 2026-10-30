@@ -1,0 +1,383 @@
+REGISTRO MASTER — APP FACTORY, APP, MICRO-UTILITY, REPOSITORY, LIBRERIE E FONTI DATI
+Versione: 2026-10-30 | Ambito: portafoglio App Factory + Web Utility Factory
+Formato: registro operativo consultabile e ampliabile. NON sostituisce Product Bible, roadmap o audit reale dei singoli repo.
+
+STATO/PROVENIENZA DELLE INFORMAZIONI
+[E] Evidenza nota da conversazione, documento di progetto o Golden centrale; non equivale a audit attuale del repository.
+[V] Fonte esterna controllata sul sito/documentazione ufficiale il 2026-10-30.
+[C] Candidato/idea/possibile integrazione: non sviluppato o non validato nella specifica app.
+[R] Richiede verifica aggiornata di licenza, permessi, costi, policy, copertura e qualità.
+Maturità: IN CODICE = esiste progetto o donor segnalato; IN ROADMAP = pianificato; IDEA = nessun codice verificato; RELEASE = richiede evidenze fisiche/store, non basta la build.
+
+PRINCIPIO CENTRALE
+- Conservare TUTTE le idee, senza eliminare gli ID storici.
+- Distinguere prodotto autonomo, micro-app vendibile separatamente, modulo di suite e semplice donor tecnico.
+- Dove ha senso, VENDERE LA STESSA CAPABILITY sia come micro-app standalone sia nella suite: un motore condiviso, package/app differenti e verifiche per-app.
+- Le suite non cancellano il valore delle standalone. Niente duplicazioni di codebase o fatturazione incrociata implicita.
+- Per le utility semplici: prima valore immediato, poi lifetime/no-ads. Per contenuti esplorativi (World Days, Cooking Anime): engagement utile e AdMob non invasivo.
+- Integrazione di fonti dati: valore utente -> qualità/canone della fonte -> licenza commerciale/attribution -> freshness -> caching/offline -> fallback -> indicatori di affidabilità in UI.
+- Distinguere LINGUA da MERCATO: en-US e en-GB possono condividere UI ma non necessariamente dati, regole o fonti.
+
+====================================================================
+1. APP / PRODOTTI PRINCIPALI E STATO DI PORTAFOGLIO
+====================================================================
+[E] Anna's Diary — diario, agenda, ricordi e vita personale; evoluzione iOS moderna; mantenere autonoma da Notes. Sviluppo maturo; release UX/QA da consolidare.
+[E] Notes – Ecosistema — conoscenza, canvas, note, tasks, documenti; autonomo, bridge espliciti con Anna/Wonderlog/TrailPath.
+[E] World Days — calendario giorni/settimane mondiali, contenuti editoriali, quiz, share cards, reminder e AdMob; donor per cataloghi/entitlement.
+[E] Send to PC / Invia al PC — trasferimento locale Android↔PC browser/QR; APK e AdMob donor noti.
+[E] Battery Guard — monitoraggio batteria, avvisi e sessioni; mantenere standalone.
+[E] TrailPath — percorsi outdoor e gesture-to-route; OSM/Valhalla/MapLibre/MapTiler; routing e autorizzazioni da validare sul campo.
+[E] Wonderlog — diario di viaggio, itinerari, ricordi e ponte verso Anna, TrailPath.
+[E] AppLab — QA, CI, release e certificazione applicazioni; infrastruttura, potenziale B2B, non normale consumer app.
+[E] BeerClass AI — diario e valutazione birre, barcode CameraX/ML Kit, dati prodotto tipo Open Food Facts, ads.
+[E] Human Zoom / Edu Corpo Umano — atlante anatomico e quiz; prodotti educativi.
+[E] FrameLab — catalogo editoriale fotografia/preset; multilingua e content pipeline.
+[E] Cooking Anime (ex In Cucina con gli Anime) — ricette ispirate a opere anime, immagini, ricerca, shopping, timer, AdMob; presente in Play Console come Cooking Anime; non confondere con riproduzione di illustrazioni protette.
+[E] GrillBoss — barbecue: tagli, cotture, timer, porzioni; la correttezza alimentare e il termometro restano centrali.
+[E] CashMate AI — finanza personale locale con Premium/cloud opzionale.
+[E] CamperBoss — utility per camper/viaggi, luoghi, offline content, pianificazione.
+[E] SleepMax Coach — routine sonno, abitudini, reminder e statistica.
+[E] FocusSense — sensori rumore/luce/movimento, Focus Score, XP/streak.
+[E] 180FlipCharge — rotazione 180° durante ricarica; standalone e donor per App Profiles.
+[E] Pocket Guard — allarme antifurto tasca/borsa; donor per Phone Guard.
+[E] Tabletop Motion Alarm — allarme movimento del telefono sul tavolo; donor per Phone Guard.
+[E] Focus Kingdom — gamificazione focus/produttività.
+[E] Snack Empire Tycoon — idle game, retention, IAP/ads.
+[E] Cozy Days — gioco casual, produzione già avviata.
+[E] Neon Arcade Runner — shooter/arcade, base in sviluppo.
+[C] CasePhone / Cold DM — fake-phone mystery game episodico, monetizzazione capitoli.
+[C] Court Manager Padel/Tennis — SaaS B2B gestione campi/prenotazioni.
+[C] ReelForge / ClipForge — video/content creation AI; costi provider da valutare.
+[C] Fake Persona / Fake Persona Generator — identità sintetiche fittizie a fini creativi, non credenziali realistiche sfruttabili.
+[C] Phone Health Check — diagnostica hardware guidata.
+[C] Work Time Keeper — presenze, pause, straordinari, report.
+[C] Parking Buddy — posizione auto da disconnessione Bluetooth, note/foto/timer.
+[C] Bluetooth Guardian — avvisi disconnessione dispositivo e luogo/ora.
+[C] PDF Pocket Tools — modifica PDF locale/offline, merge/split/riordina/extract; candidato standalone forte.
+[C] EdgeDock / SideHub — toolbox laterale, launcher rapido, gesture e overlay; rischio permessi/policy.
+[C] CmdPocket / TLDR Offline — reference tldr comandi sviluppatore, database locale.
+[C] Android QA Cockpit — frontend desktop con scrcpy/ADB, complementare ad AppLab.
+[C] DevBridge — interfaccia per Wireless ADB/Shizuku; preferire condivisione dei componenti con CleanOS.
+[C] Palette Lens — estrazione palette foto; valutare prima integrazione FrameLab.
+[C] ComicShelf — reader locale comic/CBZ/PDF; solo clean-room.
+[C] CuraVestiti — cura indumenti (macchie, lavaggi, simboli).
+[C] HomeFix — problemi domestici e guide sicure; mantenere distinta da manutenzione preventiva.
+[C] MealMate — pianificazione pasti, quantità e anti-spreco.
+[C] Anti-Truffa — difesa da link/messaggi/notifiche sospetti; privacy e false-positive importanti.
+[C] Senior Safe Home — UX telefono semplificata per anziani.
+[C] Kid Mode — uso controllato telefono per bambini; policy e permessi specifici.
+[C] Document Vault & Scadenze — documenti privati/biometria/avvisi.
+[C] Foto→Chiavetta — backup locale USB OTG guidato.
+[C] Firewall 1-Click — regole internet per app via VPN locale; attenzione VpnService.
+[C] Macro Reading Lens — lente di ingrandimento fotocamera.
+[C] Media Sleep Timer — arresta media dopo timer.
+[C] Relentless Reminder — reminder persistenti finché completati.
+[C] BoxFinder — inventario scatole/oggetti con QR.
+[C] Call Companion — note e richiamo dopo chiamate.
+
+====================================================================
+2. SUITE E TUTTI I MODULI COLLEGATI — VENDITA MICRO + SUITE
+====================================================================
+Legenda: 🟢 donor o codice segnalato; 🔴 nessuno sviluppo dimostrato in questa revisione.
+⚠ Una suite 🔴 può contenere donor 🟢. Stato dichiarato come promemoria storico, da verificare su repo alla prossima attivazione.
+
+SUITE: NOTIFICATION CONTROL [🔴 suite da assemblare]
+ 🔴 Notification Undo — storico notifiche cancellate; vendibile standalone.
+ 🔴 Pausa Ping — silenziamento temporaneo; standalone opzionale.
+ 🔴 Follow Up Reminder — notif→promemoria; standalone.
+ 🔴 Critical Message Alert — alert distinti per priorità; standalone.
+ 🔴 Pickup Code Pin — codice di ritiro in evidenza; principalmente modulo.
+ 🟢? Luminous Infinite Circle — visual alert donor/progetto definito; verificare codice prima di considerarlo realmente riusabile.
+
+SUITE: APP PROFILES [🔴 suite da assemblare]
+ 🔴 App Brightness / Brightness Profiles — luminosità per app; standalone.
+ 🔴 Rotation Profiles — orientamento per app; standalone.
+ 🔴 Screen Awake Profiles — schermo sempre acceso per app; standalone.
+ 🔴 Bluetooth Volume Memory — volume per device; standalone.
+ 🔴 Public Audio Guard — prevenzione suoni inattesi; modulo.
+ 🔴 Music Focus — profili media/focus; modulo.
+ 🔴 Calendar Auto-Mute — silenzioso da calendario; valutare standalone.
+ 🔴 Silent Timer — temporizzazione silenzioso; valutare standalone.
+ 🔴 DisplayPilot — fusione nella suite, NON terza implementazione.
+ 🔴 SoundPilot — fusione nella suite, NON terza implementazione.
+ 🟢 180FlipCharge engine — codice in progetto dedicato; donor, standalone autonomo.
+
+SUITE: CLEANOS [🔴 suite da assemblare]
+ 🟢 Easy Debloat — debloat/disabilita app OEM, donor Kotlin/Compose, Shizuku già testato storicamente; standalone forte.
+ 🔴 OEM Ad Shield — ridurre raccomandazioni/pubblicità OEM per modelli supportati.
+ 🔴 App Control — stop, freeze/disable con privilegi disponibili.
+ 🔴 Kill Current App — microcomando, solo modulo.
+ 🔴 Local Wireless ADB bridge/pairing — candidato senza app Shizuku obbligatoria; Android 11+, pairing utente, mai asserire funzionamento già realizzato.
+
+SUITE: SAFESHARE [🔴]
+ 🔴 Clean Link — elimina parametri tracking URL; standalone.
+ 🔴 ShareSafe — flusso condivisione protetta; possibile standalone.
+ 🔴 Photo Metadata Cleaner — elimina EXIF/GPS foto; standalone.
+ 🔴 File/PDF Metadata Cleaner — metadati documenti; possibile standalone.
+
+SUITE: PHONE GUARD [🔴]
+ 🟢 Tabletop Motion Alarm — motion alarm con countdown/sensori; standalone.
+ 🟢 Pocket Guard — protezione tasca/borsa sensori; standalone.
+ 🔴 Journey Guard — modalità viaggio, attenzione possibili componenti nel donor Pocket: verificare prima di dichiararla assente.
+ 🔴 Pocket Drop Alarm — rilevamento caduta/estrazione; possibile standalone.
+
+SUITE: DOWNLOADS BUTLER [🔴]
+ 🔴 Download Organizer — organizza file per categoria; standalone.
+ 🔴 Downloads Cleaner — pulizia file download; standalone.
+ 🔴 TempBox — file temporanei ed expiry; modulo o standalone.
+
+SUITE: PURCHASE GUARD [🔴]
+ 🔴 Receipt & Warranty Guard — ricevute/garanzie; standalone.
+ 🔴 Subscription Guard — rinnovi/abbonamenti; standalone.
+ 🔴 Trial Reminder — prova gratuita in scadenza; modulo.
+ 🔴 Return Reminder — termine resi; modulo.
+
+SUITE: RESOURCE WATCH [🔴]
+ 🔴 Storage Growth Watch — quale app cresce nello storage; standalone condizionata a permessi Android.
+ 🔴 Data Hog Guard — traffico dati per app; standalone condizionata a visibilità Android.
+ 🔴 App Usage Snapshot — uso app; principalmente modulo.
+
+SUITE: SENIOR SAFE HOME [🔴]
+ 🔴 Senior Home — launcher accessibile.
+ 🔴 Big Contacts — chiamate/contatti con foto e pulsanti grandi; standalone.
+ 🔴 Sono Arrivato — avvisa contatto di arrivo; modulo.
+ 🔴 Scam Call Warning — segnala rischio call center/truffa; standalone possibile e policy sensibile.
+ 🔴 Call Me Back — richiamo/promemoria; modulo condiviso con Call Companion.
+
+SUITE: HANDOFF MODE [🔴]
+ 🔴 Single Photo Lock — mostra una sola foto, non galleria; standalone.
+ 🔴 Touch Lock — blocco tocchi/gesture; standalone.
+ 🔴 Temporary HandOff — prestito controllato dispositivo; core suite.
+
+SUITE: KID MODE [🔴]
+ 🔴 Kids App Lock — limita accesso a specifiche app.
+ 🔴 Screen Time Traffic Light — semaforo tempo schermo.
+ 🔴 Touch Lock — RIUSO unico motore dalla famiglia HandOff.
+ 🔴 Chore Button — checklist compiti.
+ 🔴 School Bag Check — checklist zaino.
+ 🔴 Wake Up Routine Kids — routine mattutina.
+
+SUITE: CALL COMPANION [🔴]
+ 🔴 Missed Call Reminder — richiamare chiamata persa; standalone possibile.
+ 🔴 Post-call Notes — nota dopo chiamata; modulo.
+ 🔴 Follow-up Call — richiamo in data futura; modulo.
+
+SUITE: CURAVESTITI [🔴]
+ 🔴 SmacchiaFacile — trattamento macchie per tessuto.
+ 🔴 Lavatrice Facile — programma/cura lavaggio.
+ 🔴 Care Symbols — spiegazione simboli etichette.
+
+SUITE: HOMEFIX [🔴]
+ 🔴 Casa SOS — checklist primo controllo problema domestico.
+ 🔴 Pronto Casa — identificare quando serve professionista.
+ 🔴 Papà Fai Da Te — manutenzione base, con limiti di sicurezza.
+
+SUITE: MEALMATE [🔴]
+ 🔴 Cosa cucino stasera? — suggerimenti con ingredienti disponibili.
+ 🔴 Anti-Spreco — priorità alimenti vicini a scadenza.
+ 🔴 Quantity Calculator — porzioni/quantità.
+ 🔴 Random Dinner — scelta pasto casuale.
+ 🔴 Weekly Meal Planner — pianificazione settimana.
+
+PRINCIPIO DI PACKAGING
+- Un solo package di librerie/core per ciascuna famiglia; N shell/app distinte con propri package name, signing, store listing, analytics e billing.
+- Acquisti di una standalone NON sbloccano automaticamente la suite: eventuale cross-upgrade richiede contratto commerciale e verifica billing/store.
+- Se un modulo introduce permessi invasivi, non includerli automaticamente nelle altre standalone.
+- Store listing non duplicati: ogni app deve avere funzione principale e valore completi, non una facciata del medesimo prodotto.
+
+====================================================================
+3. WEB UTILITY FACTORY — REGISTRO STABILE WEB-001…WEB-016
+====================================================================
+WEB-001 WhoCalledMe / ChiMiChiama | ricerca chiamante/spam | libphonenumber, numbering plan, segnalazioni con moderazione | D4/5.
+WEB-002 Fuel Prices / Benzina Ora | prezzi carburanti | MIMIT IT, France data.gouv, MTS-K DE/Tankerkönig condizioni | D4/5.
+WEB-003 Is It Down? | outage servizi/ISP | Cloudflare Radar, status page, report comunità | D4/5.
+WEB-004 Salary Calculator | lordo/netto per mercato | HMRC/IRS/enti fiscali nazionali; normative annuali | D4/5.
+WEB-005 Pharmacy Open Now | farmacie aperte/di turno | Ministero Salute IT + feed regionali/NHS | D4/5.
+WEB-006 Universal Parcel Tracking | pacchi per tracking code | 17TRACK, AfterShip, carrier API | D4/5.
+WEB-007 Vehicle Check / AutoCheck | revisioni/MOT | DVSA UK e authorities nazionali | D4/5.
+WEB-008 Useful Weather | condizioni meteo utili per task | Open-Meteo piano commerciale/self-host + OSM | D3/5.
+WEB-009 Trip Cost Calculator | km, carburante, costi divisi, pedaggi | OSM, Valhalla/OSRM, prezzi fuel, provider pedaggi | D3/5.
+WEB-010 Strikes Today | scioperi e disservizi | autorità/aziende/GTFS-RT service alerts | D5/5.
+WEB-011 Postal Code & Area Info | CAP/ZIP/città | GeoNames + fonti postali ufficiali | D2/5.
+WEB-012 Sun & Moon | alba/tramonto/golden hour/fase lunare | SunCalc locale | D1/5.
+WEB-013 Holidays & Bridges | festività e ponti per mercato | Nager.Date + regole locali | D2/5.
+WEB-014 Air / Pollen / UV | qualità aria, pollini, UV | Open-Meteo Air Quality/CAMS, OpenAQ | D3/5.
+WEB-015 How Many Days? | differenza date | calcolo locale | D1/5.
+WEB-016 Fake Persona Generator | personaggi fittizi sintetici | dati locali artificiali | D2/5.
+
+Valutazioni SEO: SERP clickability, volume, concorrenza, long-tail reale, freshness, costo API, privacy, RPM ads, rete/retention, qualità pagine; vietato thin SEO.
+Web frontend SEO: Next.js/TypeScript oppure Astro con SSR/SSG, hreflang, structured data, sitemap, caching.
+App companion: Flutter. Separazione lingua/mercato: en-US, en-GB, it-IT, es-ES, de-DE, fr-FR ecc.
+
+====================================================================
+4. FONTI ESTERNE / DATA PROVIDER / API — URL, UTILIZZO, VINCOLI
+====================================================================
+Le fonti in questa sezione sono CANDIDATI DI INTEGRAZIONE, non provider automaticamente approvati. Dove [V], almeno una fonte ufficiale/policy è stata controllata il 2026-10-30.
+
+MAPPE, POI, GEOCODING, ATTRAZIONI
+[V] OpenStreetMap data | https://www.openstreetmap.org/copyright | strade, sentieri, servizi, parcheggi, campeggi, punti interesse | TrailPath, CamperBoss, Wonderlog, Parking Buddy, Web | ODbL con attribuzione e obblighi per DB derivati; NON confondere dati con tile gratuiti.
+[V] Geofabrik OSM extracts | https://download.geofabrik.de/ | estratti OSM per regione, aggiornati spesso quotidianamente, bulk/offline | TrailPath, CamperBoss, POI own DB | ODbL; dimensioni/granularità e responsabilità hosting.
+[V] Overpass API | https://wiki.openstreetmap.org/wiki/Overpass_API | query geografiche/tag OSM e POI | prototipi, aggiornamenti circoscritti | public endpoint NON per query massicce sostenute; preferire estratti/self-host/provider.
+[V] Nominatim | https://operations.osmfoundation.org/policies/nominatim/ | geocoding e reverse-geocoding | location search | SERVER PUBBLICO massimo 1 request/sec, no autocomplete lato client, no estrazione massiva POI; valutare self-host/provider commerciale.
+[V] OSM tile server policy | https://operations.osmfoundation.org/policies/tiles/ | mappe tile standard | app mappe | vietato bulk download/offline map prefetch su tile.openstreetmap.org; tile commerciali/self-host per distribuzione/offline.
+[V] Overture Maps Places | https://docs.overturemaps.org/guides/places/ | grandi dataset POI, business, edifici, indirizzi, transportation via GeoParquet | CamperBoss, Wonderlog, WEB local discovery | verificare licenza per TEMA: Places CDLA-Permissive 2.0/Apache, altri temi possono avere ODbL; provenance a livello record.
+[V] Overture Maps data repo | https://github.com/OvertureMaps/data | dataset bulk S3/Azure, IDs GERS, release con data | GeoData Core condiviso | schema/versioni/licenze per tema e fonte.
+[V] Wikidata Query Service | https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service | entità, monumenti, luoghi e relazioni enciclopediche | Wonderlog, World Days, CamperBoss | 2026–27 migrazione backend in corso; limiti query e dati incompleti; attribuzione fonti per media.
+[C][R] Wikimedia Commons / MediaWiki | https://commons.wikimedia.org/ | fotografie/descrizioni per luoghi, heritage | Wonderlog, World Days, CamperBoss | controllare licenza di OGNI immagine, credit e derivati; una pagina pubblica non significa riuso libero.
+[C][R] OpenTripMap | https://opentripmap.io/ | POI turistici e attrazioni | Wonderlog/CamperBoss | verificare API key, piani, licenza commerciale e qualità.
+[C][R] MapTiler API | https://docs.maptiler.com/cloud/api/reference/ | tiles, satellite, geocoding | TrailPath, CamperBoss | API key, piano commerciale, attribuzione; mai assumere tiles/offline free.
+[C][R] MapLibre | https://maplibre.org/ | RENDERER cartografico, NON dataset POI | TrailPath, app maps | differenziare SDK mappe da provider dati/tiles.
+[C][R] Geonames | https://www.geonames.org/ | località, CAP/ZIP, coordinate | WEB-011, geocoding/locale | controllare licenza per dataset, precisione/freschezza.
+
+ROUTING, SENTIERI, ALTIMETRIA, TRASPORTI
+[C][R] Valhalla | https://github.com/valhalla/valhalla | routing OSM, map matching/trace, matrice, isocrone | TrailPath, WEB-009, CamperBoss | engine OSS; costo hosting e dataset, verify routing mountain paths.
+[C][R] OSRM | https://project-osrm.org/ | routing rapido su rete OSM | WEB-009, trip cost | self-host/provider, profili e map matching da scegliere.
+[C][R] GraphHopper | https://www.graphhopper.com/ | routing/optimization, engine/provider | TrailPath, CamperBoss | API hosted vs OSS, licenze/costi distinti.
+[V] OpenTopoData | https://www.opentopodata.org/ | quota altimetrica da DEM; self-host | TrailPath profilo altimetrico | selezione dataset/risoluzione/licenze/limiti API.
+[V] Open-Elevation | https://open-elevation.com/ | alternative elevation API | TrailPath | GPL del server se usato come codice, dataset e limiti da validare.
+[V] GTFS/GTFS Realtime | https://gtfs.org/ | orari, fermate, ritardi, disservizi, alert | WEB-010, CamperBoss/viaggi | standard NON provider: acquisire feed per operatore/mercato e relativi diritti.
+[C][R] operatori/regioni/ministeri trasporti | portali ufficiali locali | scioperi, orari, lavori, alert | WEB-010 | refresh e copertura geografica, non inventare stato live.
+
+METEO, CLIMA, ARIA, SOLE
+[V] Open-Meteo forecast | https://open-meteo.com/ | meteo orario/giornaliero globale | TrailPath, CamperBoss, GrillBoss, Wonderlog, WEB-008 | API pubblica gratuita SOLO NON COMMERCIALE (pubblicità e abbonamenti sono uso commerciale); usare piano commerciale o hosting proprio a condizioni verificate.
+[V] Open-Meteo terms | https://open-meteo.com/en/terms | diritti, quote, attribution | tutti i progetti meteo | distinguere API terms da licenza dei dati; attribution dei modelli inclusi.
+[V] Open-Meteo Air Quality | https://open-meteo.com/en/docs/air-quality-api | PM2.5, PM10, NO2, ozono, UV, pollini dove disponibili | WEB-014, TrailPath, CamperBoss | copertura pollini non globale, reportare disponibilità.
+[V] Open-Meteo Marine | https://open-meteo.com/en/docs/marine-weather-api | onde, direzione/periodo, superficie mare, correnti | CamperBoss costa, Wonderlog, app marine future | stessa verifica commerciale, granularità incerta per alcuni dati.
+[V] OpenAQ v3 | https://docs.openaq.org/about/about | misure qualità aria rete mondiale | WEB-014, TrailPath | API pubblica; rispettare condizioni dei provider terzi, non copertura totale.
+[V] Meteostat | https://dev.meteostat.net/ | serie meteo storiche orarie/giornaliere, stazioni | analitica meteo, storico outdoor | licenza/provenance e qualità serie da controllare.
+[V] Copernicus Climate Data Store | https://cds.climate.copernicus.eu/en/ | dataset climatici/reanalysis | ricerca/analisi storica per app meteo | troppo pesante per meteo consumer in diretta; consultare dataset-specific licenses.
+[C][R] CAMS/Copernicus Atmosphere | https://atmosphere.copernicus.eu/ | qualità aria, pollini e modelli ambientali | WEB-014 | limiti copertura, licenze dataset.
+[C][R] NOAA / NWS | https://www.weather.gov/documentation/services-web-api | allerte e meteo US | servizi USA in WEB-008 | termini/geografie/config da verificare.
+[C][R] MET Norway | https://api.met.no/ | forecast meteorologici, avvisi | fallback meteo app | User-Agent/termini di attribuzione e caching da verificare.
+[C][R] SunCalc | https://github.com/mourner/suncalc | calcolo locale sole/luna/golden hour | WEB-012, FrameLab, TrailPath, Wonderlog | libreria, NON API esterna; controllare licenza repo prima di copiare.
+
+ALTRI DATASET: CARBURANTE, FARMACIE, TASSE, TELEFONI, TRACKING
+[C][R] MIMIT Open Data carburanti | https://www.mimit.gov.it/index.php/it/open-data/elenco-dataset/carburanti-prezzi-praticati-e-anagrafica-degli-impianti | impianti e prezzi carburanti Italia | WEB-002, WEB-009, CamperBoss/auto | fonte istituzionale; verificare rilascio, licenza, freshness.
+[C][R] France fuel data | https://www.data.gouv.fr/ | impianti/prezzi Francia | WEB-002, WEB-009 | identificare dataset canonico e riuso.
+[C][R] Tankerkönig / MTS-K | https://www.tankerkoenig.de/ | prezzi carburanti Germania | WEB-002 | restrizioni commerciali/ridistribuzione, verificare condizioni.
+[C][R] Ministero Salute Farmacie | https://www.dati.salute.gov.it/it/dataset/farmacie/ | anagrafica farmacia Italia | WEB-005 | NON comprende automaticamente turni aggiornati; aggregare autorità locali.
+[C][R] UK DVSA MOT History | https://findtransportdata.dft.gov.uk/dataset/mot-history-api | MOT e storico veicoli UK | WEB-007 | credenziali, accesso e API terms.
+[C][R] HMRC income tax | https://www.gov.uk/income-tax-rates | aliquote UK | WEB-004 | versionare per anno fiscale; utilizzare enti ufficiali per ogni paese.
+[C][R] Cloudflare Radar | https://developers.cloudflare.com/radar/investigate/outages/ | anomalie Internet/ASN/outage | WEB-003 | non conferma da solo un downtime di singola app.
+[C][R] Status pages ufficiali | per singolo servizio | disponibilità incidenti programmati | WEB-003 | licenze, no scraping vietato, timestamp e severity.
+[C][R] 17TRACK | https://www.17track.net/ | tracking pacchi multi-corriere | WEB-006, Parcel Inbox | API commerciale, quote, privacy tracking.
+[C][R] AfterShip | https://www.aftership.com/ | tracking API/webhook | WEB-006 | costi, webhooks, conservazione dati.
+[C][R] libphonenumber | https://github.com/google/libphonenumber | validazione e parsing numeri, carrier originario approssimato | WEB-001, Anti-Truffa | NON dà identità privata reale né reputazione spam.
+[C][R] Ofcom numbering data | https://www.ofcom.org.uk/ | blocchi numerici UK | WEB-001 | aggiornamento e autorizzazioni per dataset.
+[C][R] GeoNames postal | https://www.geonames.org/postal-codes-sources.html | CAP/ZIP, città | WEB-011 | verifica dataset nazione.
+[C][R] Nager.Date | https://github.com/nager/Nager.Date | festività per paese/regione | WEB-013, World Days | differenziare festivi ufficiali dalle giornate mondiali, validare copertura divisioni.
+[C][R] ONU days/weeks | https://www.un.org/en/observances/international-days-and-weeks | giornate e settimane riconosciute dall'ONU | World Days | verificare ricorrenza, stato ufficiale e data; metadati/provenance.
+[C][R] UNESCO Days | https://www.unesco.org/en/days | giorni internazionali UNESCO | World Days | originalità testo, fonte della data.
+[C][R] WHO campaigns | https://www.who.int/campaigns | campagne, giornate e settimane | World Days | distingue campagne da festività ONU.
+[C][R] FAO Days | https://www.fao.org/ | giornate FAO, ad es. alimentazione | World Days | verifica calendario ufficiale.
+
+DATASET EDITORIALI, CATALOGHI, PRODUCT SCAN
+[C][R] Open Food Facts | https://world.openfoodfacts.org/ | alimenti, ingredienti, EAN/UPC, nutrienti e foto dove presenti | BeerClass, MealMate, Cooking Anime | ODbL per dati, diritti immagini e attribuzione; verificare categorie birra e cache.
+[C][R] OpenStreetMap POI categories | https://wiki.openstreetmap.org/wiki/Map_features | amenity/tourism/shop/leisure/natural | CamperBoss, TrailPath, WEB local | schema tags e completezza per nazione variabili.
+[C][R] Wikimedia Commons | https://commons.wikimedia.org/ | immagini su luoghi/eventi | World Days, Wonderlog | obbligatorio licensing asset-by-asset.
+
+====================================================================
+5. LIBRERIE, REPOSITORY DONOR E STRUMENTI OSS — COLLEGAMENTO APP
+====================================================================
+Questa lista è il sottoinsieme curatoriale, NON riproduce le 632 stelle del repo separato. Tutte le licenze vanno ricontrollate PRIMA di integrare codice commerciale.
+
+[E] scrcpy | https://github.com/Genymobile/scrcpy | mirroring/controllo Android | AppLab Physical QA, Android QA Cockpit. Apache-2.0 storico.
+[E] Joplin | https://github.com/laurent22/joplin | note offline/sync/encryption/history | Notes benchmark/pattern, NON copia casuale AGPL.
+[E] Smart Edge | repo storico da ricaricare dall'audit stelle | overlay/edge toolbox | EdgeDock, App Profiles, Utility Android. MIT riportata nell'audit; verifica repo preciso.
+[E] Wireless ADB Switch | https://github.com/Smooth-E/wireless-adb-switch | Wireless Debugging, Shizuku, Quick Tiles | Easy Debloat/DevBridge. GPL-3.0 storico: non copiare in app closed-source senza valutare copyleft.
+[E] Universal Android Debloater NG | repo da risolvere nel registro stelle | classificazione debloat e liste OEM | Easy Debloat/CleanOS, pattern di sicurezza/whitelist.
+[E] PdfUnifier | repo da risolvere nel registro stelle | merger PDF | PDF Pocket Tools; audit precedente segnalava assenza licenza: NO copia codice senza licenza.
+[E] tldr-pages | https://github.com/tldr-pages/tldr | esempi comandi CLI | CmdPocket e Notes developer pack; attribuzione CC-BY 4.0 per pagine.
+[E] Android architecture-samples | https://github.com/android/architecture-samples | Compose/ViewModel/Room/testing | Kotlin donor architecture.
+[E] LeakCanary | https://github.com/square/leakcanary | memory leak debug | Battery Guard, Tabletop, Easy Debloat, QA; debug-only.
+[E] MPAndroidChart | https://github.com/PhilJay/MPAndroidChart | grafici nativi | Battery Guard, TrailPath, SleepMax, FocusSense; verificare branch/versioni effettive.
+[E] Tauri | https://tauri.app/ | shell desktop Rust/Web | Android QA Cockpit, Desktop Utility Factory.
+[E] Colorwaver | repository da risolvere nel registro stelle | estrazione colori | FrameLab Palette Live concetto, clean-room secondo audit.
+[E] Penpot | https://github.com/penpot/penpot | canvas/visual interaction/design tokens | Notes Visual Workspace/Factory design; verify MPL obligations.
+[E] raylib | https://github.com/raysan5/raylib | piccoli giochi/graphics | Game Factory.
+[E] Nakama | https://github.com/heroiclabs/nakama | backend giochi multiplayer | solo giochi con multiplayer reale.
+[E] Shattered Pixel Dungeon | https://github.com/00-Evan/shattered-pixel-dungeon | roguelike open game | Game Factory; GPL-3.0 obligations.
+[E] browser-use | https://github.com/browser-use/browser-use | automation research agent | AppLab possibile tool/pattern.
+[E] crawl4ai | https://github.com/unclecode/crawl4ai | estrazione web per fonti autorizzate | source ingestion/editorial research, non aggira copyright/ToS.
+[E] addyosmani/agent-skills | https://github.com/addyosmani/agent-skills | skills di coding | App Factory process.
+[E] mattpocock/skills | https://github.com/mattpocock/skills | skill modulari | App Factory process.
+[E] ECC (Everything Claude Code) | repository da risolvere nell'audit stelle | pattern agents/QA | AppLab process, no framework replacement automatic.
+[E] ZXing | https://github.com/zxing/zxing | barcode core | BeerClass/Professional Wallet fallback; app scanner legacy non da copiare.
+[E] GraphHopper | https://github.com/graphhopper/graphhopper | routing engine | TrailPath/WEB-009.
+[E] Valhalla | https://github.com/valhalla/valhalla | route/trace engine | TrailPath/WEB-009.
+[E] OSRM | https://github.com/Project-OSRM/osrm-backend | routing engine | WEB-009.
+[E] OvertureMaps/data | https://github.com/OvertureMaps/data | POI open dataset | Geography/POI Core.
+[E] Open-Meteo source | https://github.com/open-meteo/open-meteo | weather server AGPL | eventuale self-host; distinguere backend code license e data/API terms.
+[E] SunCalc | https://github.com/mourner/suncalc | sole/luna computati localmente | WEB-012 e FrameLab.
+[E] Nager.Date | https://github.com/nager/Nager.Date | festive calendario | WEB-013.
+[E] libphonenumber | https://github.com/google/libphonenumber | phone parsing | WEB-001.
+[E] OpenTopoData | https://github.com/ajnisbet/opentopodata | elevation DEM API | TrailPath.
+[E] MapLibre | https://maplibre.org/ | map render SDK | TrailPath.
+[E] Geofabrik | https://download.geofabrik.de/ | OSM bulk extracts | GeoData Core.
+[E] Osmium | https://osmcode.org/osmium-tool/ | processing PBF | GeoData Core.
+[E] DuckDB | https://duckdb.org/ | query GeoParquet/SQL | Overture POI pipeline.
+
+REGISTRO SEPARATO DELLE STELLE (fonte storica fornita dall'utente):
+https://github.com/riccardopinato/Analisi-delle-mie-stelle-github
+L'audit del 24/10/2026 dichiarava 632 repo uniche enumerabili su 645 stelle mostrate, 13 gap da chiarire. Questo registro NON pretende che tutti i 632 repo siano stati verificati qui.
+
+====================================================================
+6. MATRICE PRATICA APP -> INTEGRAZIONI CANDIDATE
+====================================================================
+TrailPath -> OSM/Geofabrik (sentieri e topologia), Valhalla trace/routing, MapLibre rendering, MapTiler eventuali basemap satellite, Overture Places POI, OpenTopoData elevazione, Open-Meteo weather/alerts, GTFS solo se utile. Routing OSM/Valhalla con evidenza storica di smoke; provider e disponibilità reali da verificare per release.
+CamperBoss -> OSM/Overture (aree sosta, camping, servizi, POI), Open-Meteo forecast/marine se costa, GeoNames località, GTFS/trasporti, prezzi carburanti dataset nazionale; verifica qualità dei POI (non tutti hanno servizi e aperture).
+Wonderlog -> Overture + Wikidata + OSM (luoghi/attrazioni), Wikimedia Commons con diritti per foto, Open-Meteo meteo viaggi, SunCalc golden hour, Shared Ecosystem Core con Anna/TrailPath.
+World Days -> ONU/UNESCO/WHO/FAO come autorità, Nager.Date distinto per festivi, Commons per asset sotto licenza, catalogo editoriale versionato e source provenance.
+FrameLab -> SunCalc golden hour, Open-Meteo previsioni per shooting, palette da foto/Colorwaver reference, catalogo editoriale multilingua.
+GrillBoss -> Open-Meteo 'BBQ today' come feature secondaria; NO dipendenza dal meteo per guida di sicurezza alimentare; database originali tagli/temperature da fonti autorevoli.
+Cooking Anime -> dataset ricette originali revisionati, immagini licenziate o create appositamente, ricerca per opere con attenzione diritti/trademark; niente scraping indiscriminato di libri.
+BeerClass -> Open Food Facts quando prodotti supportati, CameraX/ML Kit, barcode decoding; dataset non necessariamente esaustivo per birre.
+MealMate -> Open Food Facts + catalogo ricette originale e scadenze; dati personali local-first.
+Battery Guard -> Android BatteryManager/sensori di sistema, grafici storici locali; non necessita API meteo o POI.
+CleanOS -> Android package manager, local ADB/Shizuku bridge, profili OEM basati su verifica reale per modello; privacy, reversibilità e differenza fra disable/uninstall per user.
+Notification Control -> NotificationListener, schedulazione e permessi Android, niente acquisizione cloud indiscriminata del contenuto privato.
+SafeShare -> URL cleaning rules, EXIF parser, PDF metadata parser locale; le liste tracking vanno versionate con test.
+Phone Guard -> accelerometro/prossimità, modalità background compatibili e test fisici; non serve API remota.
+PDF Pocket Tools -> libreria PDF compatibile con licenza commerciale/Android, no cloud forzato.
+World/Web-008 -> Open-Meteo con licenza commerciale o self-host; usare OSM/Overture per geografie e luoghi.
+WEB-014 -> Open-Meteo Air Quality + OpenAQ per qualità aria e freshness, non inventare pollini mancanti.
+WEB-009 -> OSM + Valhalla/OSRM + dataset carburante + provider toll dove serve; esplicitare stime.
+WEB-002 -> feed ufficiali prezzi fuel per mercato; refresh timestamp.
+WEB-005 -> ministero/anagrafica + feed regionale turni e orari; 'aperta ora' solo con prova dei turni.
+WEB-006 -> 17TRACK/AfterShip e carrier API; valutare costi per tracking/call e privacy.
+WEB-011 -> GeoNames + autorità postali; gestire variabilità copertura.
+WEB-012 -> SunCalc locale, quasi nessun provider.
+
+====================================================================
+7. REGOLE DI AMMISSIONE DI UN PROVIDER / DONOR
+====================================================================
+Per ogni futura libreria, repository, fonte dati, POI, meteo o API creare una scheda:
+- resource_id stabile, titolo, categoria (DATASET/API/LIB/REPO/CONTENT), URL canonico, proprietario;
+- modello licenza (dati/code/assets separati), link a ToS, attribution, commercial_use_allowed, ODbL/CC/GPL/copyright obligations;
+- mercato/copertura, granularità spaziale/temporale, aggiornamento, ultimo controllo, disponibilità SLA;
+- costo: free noncommerciale, piano commerciale, query/month, limiti, egress, offline, caching, ridistribuzione;
+- privacy/PII e necessità di consenso; API key in backend/restricted config;
+- affidabilità e fallback; schema/versioning/dedup ID; test sample; quote e rate limit;
+- app beneficiarie e uso concreto; stato CANDIDATE/VALIDATED/IMPLEMENTED/PROD VERIFIED/BLOCKED;
+- prova fisica/store dove necessario; owner decision, data ultimo audit; note su aggiornamenti.
+
+Non acquisire massivamente POI da endpoint pubblici Nominatim/Overpass per creare un mirror. Usare data extracts autorizzati.
+Non usare tile OSM pubblici per download offline; configurare tile provider o self-host.
+Non monetizzare un'app AdMob usando il piano API Open-Meteo dichiarato noncommerciale.
+Non dare per scontata una licenza per le immagini presa dal fatto che una foto è su Wikimedia/un sito.
+Non confondere il codice OSS con il contenuto servito dall'API di un provider.
+Non presentare informazioni come 'aggiornato ora', 'aperto ora', 'routing confermato', 'scaricato' se non provate dai dati e dal runtime.
+
+====================================================================
+8. RIFERIMENTI / DOCUMENTI IMPORTATI
+====================================================================
+- PDF dell'utente (scansione 8 pagine): SKM_C301i26103009270.pdf — Portfolio Web Utility/Search Traffic del 03/10/2026, classifica WEB-001…WEB-016, fonti dati, SEO, architettura e lingue.
+- Copia digitale del Portfolio presente nel progetto: Web_Utility_Search_Traffic_Portfolio.pdf e .docx (stessa linea di contenuto).
+- Classifica idee app.txt — ranking Web Utility e note fonti.
+- Analisi stelle GitHub.txt — audit 632 stelle e shortlist OSS.
+- Idee che mi vengono in mente per le app.txt — Notes/Anna, donor, componenti, roadmap.
+- Backlog idee app.txt — promemoria idee e requisiti persistenti.
+- Chat corrente: audit portfolio, classifiche micro-utility, strategia standalone+suite, elenco completo dei moduli con stato visuale.
+- Factory baseline letta nella sessione: App-Factory-Core CURRENT v26.6, master v26.6, Golden Index v22, Golden Registry v2, SHA ed6466e774a28e95f9f371cd56bbf7278428776a.
+
+N.B. File creato in locale come promemoria esportabile. Non è stato automaticamente caricato sul repository App-Factory-Core né sostituisce le roadmap app. Non contiene chiavi API, credenziali o segreti.
