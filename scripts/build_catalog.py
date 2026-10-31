@@ -15,6 +15,8 @@ BASE = ROOT / "12-CAPABILITY-E-IMPLEMENTAZIONI"
 JSON_FILE = BASE / "REGISTRO_CAPABILITY.json"
 KNOWN = {"PROPOSTA", "ROADMAP_STORICA", "SOURCE_REPORTED", "DONOR_REPORTED",
          "SOURCE_CONFIRMED", "CI_VERIFIED", "DEVICE_VERIFIED", "RELEASE", "BLOCKED"}
+DOCUMENTED_STAGES = {"SOURCE_REPORTED", "DONOR_REPORTED", "SOURCE_CONFIRMED",
+                     "CI_VERIFIED", "DEVICE_VERIFIED", "RELEASE"}
 
 def md_table(headers, rows):
     def clean(x):
@@ -89,7 +91,7 @@ def main():
     )
     status_rows = [[stage, sum(stage == status for rec in records for status in rec["app_states"].values()), desc]
                    for stage, desc in data["statuses"].items()]
-    existing = [rec for rec in records if any(s in ("SOURCE_REPORTED", "DONOR_REPORTED")
+    existing = [rec for rec in records if any(s in DOCUMENTED_STAGES
                                              for s in rec["app_states"].values())]
     versions["STATO_IMPLEMENTAZIONI.md"] = (
         f"# Stato delle implementazioni — audit {data['updated_at']}\n\n"
@@ -99,7 +101,7 @@ def main():
         + md_table(["Capability con donor o sorgente documentata","App","Prova"], [
             [rec["id"] + " " + rec["title"],
              ", ".join(f"{app} ({status})" for app, status in rec["app_states"].items()
-                       if status in ("SOURCE_REPORTED", "DONOR_REPORTED")), rec["source"]["ref"]]
+                       if status in DOCUMENTED_STAGES), rec["source"]["ref"]]
             for rec in existing])
         + "\nNon promuovere a `CI_VERIFIED`, `DEVICE_VERIFIED` o `RELEASE` senza evidence esatta del repo e della build pertinente.\n"
     )

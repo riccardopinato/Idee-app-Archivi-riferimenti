@@ -5,8 +5,8 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | Stato | Associamenti app-capability | Interpretazione |
 | --- | --- | --- |
 | PROPOSTA | 109 | Idea non approvata / nessun codice verificato qui |
-| ROADMAP_STORICA | 15 | Indicata in roadmap o decisione storica; richiede verifica live |
-| SOURCE_REPORTED | 86 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
+| ROADMAP_STORICA | 16 | Indicata in roadmap o decisione storica; richiede verifica live |
+| SOURCE_REPORTED | 85 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
 | DONOR_REPORTED | 2 | Repo donor documentato; riuso non ancora validato |
 | SOURCE_CONFIRMED | 0 | Implementazione verificata con riferimento puntuale a codice e commit |
 | CI_VERIFIED | 0 | CI exact-head verde per questa capability nel repository autorevole |
@@ -57,7 +57,6 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | CAP-0060 Protezione batteria avvisi e sessioni | Battery_Guard (SOURCE_REPORTED) | https://github.com/riccardopinato/Battery_Guard/blob/main/ROADMAP.md |
 | CAP-0061 Smart ETA e idle drain batteria | Battery_Guard (SOURCE_REPORTED) | https://github.com/riccardopinato/Battery_Guard/blob/main/ROADMAP.md |
 | CAP-0062 Best Conditions Engine sensori | FocuSense (SOURCE_REPORTED) | https://github.com/riccardopinato/FocuSense/blob/main/ROADMAP.md |
-| CAP-0064 Sonno routine e reminder adattivi | SleepMax-Coach (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0066 Trasferimento LAN QR HTTPS fidato | Send-to-pc (SOURCE_REPORTED) | https://github.com/riccardopinato/Send-to-pc/blob/main/ROADMAP.md |
 | CAP-0067 Release Android firmato artifact provenance | Agenda-per-Anna (SOURCE_REPORTED), AppLab (SOURCE_REPORTED), Battery_Guard (SOURCE_REPORTED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md |
 | CAP-0068 AppLab evidence ladder exact SHA | AppLab (SOURCE_REPORTED), Agenda-per-Anna (SOURCE_REPORTED), CamperBoss (SOURCE_REPORTED) | https://github.com/riccardopinato/AppLab/blob/main/ROADMAP.md |

@@ -1704,12 +1704,12 @@
       },
       "description": "Routine serali e reminder con tolleranza oraria",
       "app_states": {
-        "SleepMax-Coach": "SOURCE_REPORTED",
+        "SleepMax-Coach": "ROADMAP_STORICA",
         "Agenda-per-Anna": "PROPOSTA"
       },
       "source": {
-        "type": "AUDIT_REPO_20261030",
-        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+        "type": "HISTORICAL_PORTFOLIO",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/CLASSIFICA_2026-10-30.md"
       },
       "next_gate": "Non formulare diagnosi mediche",
       "reviewed_at": "2026-11-01",
