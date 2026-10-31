@@ -19,3 +19,7 @@
 - Il GitHub Actions `GITHUB_TOKEN` locale puo validare lo stesso repo ma non esplorare arbitrariamente tutti i repository privati del proprietario. Il controllo trasversale usa una automazione ChatGPT separata, non secrets replicati.
 - Il catalogo NON cambia automaticamente le roadmap delle app; ogni promozione prodotto richiede il contratto della app.
 - Lo stato reale di una build/release richiede evidence-specifica, non deduzione da descrizioni.
+
+## Baseline discovery
+
+Il file [SOURCE_INVENTORY.json](SOURCE_INVENTORY.json) elenca i 31 repository accessibili al 01/11/2026 e distingue quelli campionati con roadmap dai repository censiti solo come presenza. I SHA `null` sono intenzionali: il prossimo controllo deve leggere il commit reale del default branch prima di un confronto; non inventare SHA. Per qualsiasi nuova app senza repository pubblico si mantiene PROPOSTA e si segnala la mancata verifica.

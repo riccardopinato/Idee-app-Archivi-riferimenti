@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-01",
+  "scope": "Repositories visible to the connected GitHub account. Presence does not mean product, implementation, release or source audit.",
+  "repositories": [
+    {
+      "name": "1000-AI-collection-tools",
+      "default_branch": "main",
+      "audit_scope": "INVENTORY_ONLY",
+      "head_sha": null
+    },
+    {
+      "name": "180FlipCharge",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Agenda-per-Anna",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Analisi-delle-mie-stelle-github",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Android-Omni-Cleaner",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "App-corpo-umano",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "App-Factory-Core",
+      "default_branch": "main",
+      "audit_scope": "INVENTORY_ONLY",
+      "head_sha": null
+    },
+    {
+      "name": "app-fotografia",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "AppLab",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Battery_Guard",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "btrader",
+      "default_branch": "master",
+      "audit_scope": "INVENTORY_ONLY",
+      "head_sha": null
+    },
+    {
+      "name": "CamperBoss",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Cozy-game-nome-da-scegliere-",
+      "default_branch": "main",
+      "audit_scope": "INVENTORY_ONLY",
+      "head_sha": null
+    },
+    {
+      "name": "Design-App",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "desktop-tutorial",
+      "default_branch": "main",
+      "audit_scope": "INVENTORY_ONLY",
+      "head_sha": null
+    },
+    {
+      "name": "FocuSense",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "FrameLab-Google-AI-Studio",
+      "default_branch": "main",
+      "audit_scope": "INVENTORY_ONLY",
+      "head_sha": null
+    },
+    {
+      "name": "Idee-app-Archivi-riferimenti",
+      "default_branch": "main",
+      "audit_scope": "INVENTORY_ONLY",
+      "head_sha": null
+    },
+    {
+      "name": "In-Cucina-con-gli-Anime",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Neon-arcade-runner",
+      "default_branch": "main",
+      "audit_scope": "INVENTORY_ONLY",
+      "head_sha": null
+    },
+    {
+      "name": "Notes-Ecosistema",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Notification-Control",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "PDF-Unifier",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Phone-Guard",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Pocket-Guard",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Send-to-pc",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Tabletop-Motion-Alarm",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "TasteAI",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "TrailPath",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "Wonderlog",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    },
+    {
+      "name": "World-Days",
+      "default_branch": "main",
+      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
+      "head_sha": null
+    }
+  ]
+}

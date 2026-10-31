@@ -8,14 +8,13 @@ outside the derived catalogue paths. --check is read-only and fail-closed.
 import argparse
 import json
 import re
-import sys
-from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "12-CAPABILITY-E-IMPLEMENTAZIONI"
 JSON_FILE = BASE / "REGISTRO_CAPABILITY.json"
-KNOWN = {"PROPOSTA", "ROADMAP_STORICA", "SOURCE_REPORTED", "DONOR_REPORTED"}
+KNOWN = {"PROPOSTA", "ROADMAP_STORICA", "SOURCE_REPORTED", "DONOR_REPORTED",
+         "SOURCE_CONFIRMED", "CI_VERIFIED", "DEVICE_VERIFIED", "RELEASE", "BLOCKED"}
 
 def md_table(headers, rows):
     def clean(x):
@@ -32,6 +31,10 @@ def main():
     args = parser.parse_args()
     data = json.loads(JSON_FILE.read_text(encoding="utf-8"))
     records = data["records"]
+    inventory = json.loads((BASE / "SOURCE_INVENTORY.json").read_text(encoding="utf-8"))
+    repos = inventory["repositories"]
+    if len(repos) != len({r["name"] for r in repos}) or any(not r["default_branch"] for r in repos):
+        raise SystemExit("Invalid or duplicate repository inventory")
     ids = [r["id"] for r in records]
     if data["schema_version"] != 1 or len(ids) != len(set(ids)):
         raise SystemExit("Invalid schema or duplicate capability ID")
@@ -66,7 +69,7 @@ def main():
     rank = sorted(records, key=lambda rec: (-rec["score"], rec["id"]))
     versions = {}
     versions["CLASSIFICA_PRIORITA.md"] = (
-        "# Classifica capability — snapshot 2026-11-01\n\n"
+        f"# Classifica capability — snapshot {data['updated_at']}\n\n"
         "**Ranking tecnico-editoriale relativo, NON approvazione di roadmap.** P1: >=92, P2: 79–91, P3: <79. P0 e riservato ai veri incidenti di sicurezza/dati, non alla ricerca di idee.\n\n"
         + md_table(["#","ID","Capability","Ambito","Score","Classe","App interessate","Prossima verifica"], [
             [i, f"[{rec['id']}](REGISTRO_CAPABILITY/{rec['id']}.md)", rec["title"], rec["domain"], rec["score"],
@@ -79,19 +82,18 @@ def main():
         "_Generato da REGISTRO_CAPABILITY.json. Ogni cella e una fotografia di ricerca, non prova runtime._\n\n"
         + md_table(["App / prodotto","N. capability candidate/riuso","Prime 8 per punteggio"], [
             [app, sum(app in rec["app_states"] for rec in records),
-             "; ".join(f"{rec['id']} {rec['title']} ({rec['app_states'][app]})" for rec in rank if app in rec["app_states"]) if False else
              "; ".join(f"{rec['id']} {rec['title']} ({rec['app_states'][app]})" for rec in
                        [rec for rec in rank if app in rec["app_states"]][:8])]
             for app in apps])
-        + "\nPer il dettaglio di tutte le associazioni consultare \`REGISTRO_CAPABILITY.json\` e le schede individuali.\n"
+        + "\nPer il dettaglio di tutte le associazioni consultare `REGISTRO_CAPABILITY.json` e le schede individuali.\n"
     )
     status_rows = [[stage, sum(stage == status for rec in records for status in rec["app_states"].values()), desc]
                    for stage, desc in data["statuses"].items()]
     existing = [rec for rec in records if any(s in ("SOURCE_REPORTED", "DONOR_REPORTED")
                                              for s in rec["app_states"].values())]
     versions["STATO_IMPLEMENTAZIONI.md"] = (
-        "# Stato delle implementazioni — audit 2026-11-01\n\n"
-        "Gli stati sono **per app**, non globali. \`SOURCE_REPORTED\` indica fonte repo/audit consultata, non esecuzione del codice ne CI/DEVICE PASS verificati in questa sessione.\n\n"
+        f"# Stato delle implementazioni — audit {data['updated_at']}\n\n"
+        "Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/audit consultata, non esecuzione del codice ne CI/DEVICE PASS verificati in questa sessione.\n\n"
         + md_table(["Stato","Associamenti app-capability","Interpretazione"], status_rows)
         + "\n"
         + md_table(["Capability con donor o sorgente documentata","App","Prova"], [
@@ -99,10 +101,10 @@ def main():
              ", ".join(f"{app} ({status})" for app, status in rec["app_states"].items()
                        if status in ("SOURCE_REPORTED", "DONOR_REPORTED")), rec["source"]["ref"]]
             for rec in existing])
-        + "\nNon promuovere a \`CI_VERIFIED\`, \`DEVICE_VERIFIED\` o \`RELEASE\` senza evidence esatta del repo e della build pertinente.\n"
+        + "\nNon promuovere a `CI_VERIFIED`, `DEVICE_VERIFIED` o `RELEASE` senza evidence esatta del repo e della build pertinente.\n"
     )
     for rec in records:
-        apps_text = "\n".join(f"  - {app}: \`{status}\`" for app, status in rec["app_states"].items())
+        apps_text = "\n".join(f"  - {app}: `{status}`" for app, status in rec["app_states"].items())
         versions[f"REGISTRO_CAPABILITY/{rec['id']}.md"] = (
             f"# {rec['id']} — {rec['title']}\n\n"
             f"- **Categoria:** {rec['domain']}\n"
@@ -114,13 +116,13 @@ def main():
             "- **Validazione:** NON VERIFICATA in questo audit; distinguere codice, CI, dispositivo e distribuzione.\n"
             "- **Stato commerciale:** idea catalogata, non approvazione implicita del Product Bible.\n"
             f"- **Revisione:** {rec['reviewed_at']}\n\n"
-            "La scheda e generata dalla fonte canonica \`REGISTRO_CAPABILITY.json\`. Cambiare prima il JSON e rigenerare le viste.\n"
+            "La scheda e generata dalla fonte canonica `REGISTRO_CAPABILITY.json`. Cambiare prima il JSON e rigenerare le viste.\n"
         )
     for app in apps:
         items = [rec for rec in rank if app in rec["app_states"]]
         versions[f"PER_APP/{app}.md"] = (
             f"# {app} — capability e priorita\n\n"
-            "Fonte canonica: \`../REGISTRO_CAPABILITY.json\`. Stati di audit, non certificazioni.\n\n"
+            "Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.\n\n"
             + md_table(["ID","Capability","Priorita","Score","Stato nell'app","Prossimo gate"], [
                 [f"[{rec['id']}](../REGISTRO_CAPABILITY/{rec['id']}.md)", rec["title"], rec["priority"],
                  rec["score"], rec["app_states"][app], rec["next_gate"]] for rec in items])

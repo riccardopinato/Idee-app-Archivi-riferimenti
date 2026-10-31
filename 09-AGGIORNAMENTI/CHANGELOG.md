@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Capability registry multi-app e manutenzione ricorrente
+- Audit documentale trasversale: 31 repository inventariati, 23 con tree/roadmap o README pertinenti campionati; fonti Project, vecchi audit, Master/Golden, Design-App e riferimenti OSS.
+- Catalogate 82 capability con ID stabili, 39 app/progetti possibili consumer e 212 associazioni per app; le priorita sono P1 14, P2 42 e P3 26, indicative e distinte dalle severity dei bug.
+- Inseriti catalogo canonico JSON, schede singole, viste per ogni app, matrice, classifica, stato documentale e inventario nuove repository.
+- CI valida coerenza di score, ID, stati, fonti, schede e viste; il task programmato puo aggiornare il catalogo via PR dopo confronto con repo nuovi o modificati.
+- Nessuna app modificata, nessuna nuova funzione implementata, nessuna certificazione fisica dedotta. Licenze esterne da riverificare prima di integrare.
+
 ## 2026-10-30 — Audit trasversale idee e innovazione (solo archivio)
 - Rilette fonti Project, backlog, 16 idee Web Utility, repository OSS/Design-App e roadmap app pertinenti; evidenziata distinzione GIA IMPLEMENTATO vs GAP vs APPROVATO STORICO vs NUOVA IPOTESI.
 - Registra 30 interventi di prodotto, riuso/provider e priorità con evidence scope.

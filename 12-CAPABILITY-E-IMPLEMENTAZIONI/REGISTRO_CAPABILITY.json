@@ -8,7 +8,12 @@
     "PROPOSTA": "Idea non approvata / nessun codice verificato qui",
     "ROADMAP_STORICA": "Indicata in roadmap o decisione storica; richiede verifica live",
     "SOURCE_REPORTED": "Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit",
-    "DONOR_REPORTED": "Repo donor documentato; riuso non ancora validato"
+    "DONOR_REPORTED": "Repo donor documentato; riuso non ancora validato",
+    "SOURCE_CONFIRMED": "Implementazione verificata con riferimento puntuale a codice e commit",
+    "CI_VERIFIED": "CI exact-head verde per questa capability nel repository autorevole",
+    "DEVICE_VERIFIED": "Test su dispositivo con artifact e SHA identificati",
+    "RELEASE": "Distribuzione verificata nel canale dichiarato, non inferita dalla build",
+    "BLOCKED": "Blocco concreto con causa e riferimento; mantenere l'idea nel catalogo"
   },
   "records": [
     {

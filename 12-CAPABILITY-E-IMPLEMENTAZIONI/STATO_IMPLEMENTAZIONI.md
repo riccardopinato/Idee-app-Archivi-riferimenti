@@ -8,6 +8,11 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | ROADMAP_STORICA | 15 | Indicata in roadmap o decisione storica; richiede verifica live |
 | SOURCE_REPORTED | 86 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
 | DONOR_REPORTED | 2 | Repo donor documentato; riuso non ancora validato |
+| SOURCE_CONFIRMED | 0 | Implementazione verificata con riferimento puntuale a codice e commit |
+| CI_VERIFIED | 0 | CI exact-head verde per questa capability nel repository autorevole |
+| DEVICE_VERIFIED | 0 | Test su dispositivo con artifact e SHA identificati |
+| RELEASE | 0 | Distribuzione verificata nel canale dichiarato, non inferita dalla build |
+| BLOCKED | 0 | Blocco concreto con causa e riferimento; mantenere l'idea nel catalogo |
 
 | Capability con donor o sorgente documentata | App | Prova |
 | --- | --- | --- |

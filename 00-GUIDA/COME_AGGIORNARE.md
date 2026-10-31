@@ -12,3 +12,9 @@
 Stati: [E] evidenza storica da chat/documento; [V] fonte esaminata alla data indicata; [C] candidata; [R] necessita di ulteriore verifica. Sono livelli di provenienza, non certificazioni. Per licenze e provider prevalgono condizioni correnti alla data dell'integrazione.
 
 Confini: App-Factory-Core = Master/Golden; AppLab = QA; repo delle app = implementazione; questo repo = catalogo e ricerca.
+
+## Capability trasversali e automazione
+
+9. Nuove **funzioni** di un'app esistente o riusabili sono catalogate in `12-CAPABILITY-E-IMPLEMENTAZIONI`, non nell'inbox delle nuove **app**. Riutilizzare ID CAP esistente quando e la stessa responsabilita.
+10. Per ogni app nuova aggiornare l'inventario e linkare le capability; per ogni stato di implementazione registrare fonte verificabile, esatto ref e prova disponibile.
+11. Generare le viste con `python3 scripts/build_catalog.py`; la CI blocca il drift. Il monitoraggio trasversale e programmato tramite task con connettore GitHub (non webhook istantaneo, non accesso globale con GITHUB_TOKEN).
