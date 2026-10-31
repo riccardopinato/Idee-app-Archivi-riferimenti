@@ -18,7 +18,7 @@
 | [09-AGGIORNAMENTI](09-AGGIORNAMENTI/CHANGELOG.md) | Cronologia modifiche e decisioni |
 | [10-MODELLI](10-MODELLI/SCHEDA_APP.md) | Modelli standard per app, provider e librerie |
 | [11-NUOVE-IDEE](11-NUOVE-IDEE/README.md) | **Nuove proposte**, [inbox](11-NUOVE-IDEE/INBOX_IDEE.md), [audit nuove idee](11-NUOVE-IDEE/CANDIDATI_AUDIT_2026-10-30.md) e candidati non ancora promossi al portafoglio |
-| [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **82 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
+| [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **91 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
 | [90-STORICO](90-STORICO/REGISTRO_MASTER_2026-10-30.txt) | Registro integrale originale, immutato |
 
 ## Versioni centrali: snapshot letto il 30 ottobre 2026
@@ -32,6 +32,9 @@
 Ogni nuova idea entra prima in **11-NUOVE-IDEE**; dopo valutazione può essere promossa in **01-PORTAFOGLIO**, senza cancellare lo storico. Non eliminare idee o riutilizzare ID storici. Separare informazioni **verificate**, **storiche** e **candidate**. Le licenze/ToS e i costi dei dati vanno verificati prima dell'integrazione commerciale. App e suite hanno prodotti e package separati, ma possono riusare capability. Le schede clienti non devono promettere funzioni non testate. Aggiornare il [changelog](09-AGGIORNAMENTI/CHANGELOG.md).
 
 La Factory centrale governa **regole e Golden**; AppLab governa **QA/orchestrazione**; ogni repo app governa **codice, roadmap, certificazione**; questo repo è **archivio portfolio/ricerca**.
+
+## Nuove fonti community
+- [Ricerca r/BestGitHubRepos — 1 novembre 2026](12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_REDDIT_BESTGITHUBREPOS_2026-11-01.md) — componenti concreti, donor con commit/licenze, nuove app candidate e limiti.
 
 ## Capability e nuovi repository (dal 1 novembre 2026)
 

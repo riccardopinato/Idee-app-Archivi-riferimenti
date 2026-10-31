@@ -832,7 +832,11 @@
       },
       "next_gate": "Licenza modello footprint benchmark 5 lingue e download opt-in",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9",
+        "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50"
+      ]
     },
     {
       "id": "CAP-0032",
@@ -859,7 +863,10 @@
       },
       "next_gate": "Modello multilingue licenza footprint e benchmark; non inserire pack base",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9"
+      ]
     },
     {
       "id": "CAP-0033",
@@ -885,7 +892,10 @@
       },
       "next_gate": "Play delivery benchmark e entitlement non auto concesso",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50"
+      ]
     },
     {
       "id": "CAP-0034",
@@ -2060,7 +2070,10 @@
       },
       "next_gate": "Permesso concesso non prova capability operativa",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/NarYuki/Dextop/tree/5402d091975cdae4f39943b59a3a0131f5a0a543"
+      ]
     },
     {
       "id": "CAP-0078",
@@ -2088,7 +2101,10 @@
       },
       "next_gate": "Lingua diversa dal mercato e diritti provider",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/bilawalsidhu/gods-eye-view/tree/8978801dfd2a88368074883a87bcd05ffb57ef92"
+      ]
     },
     {
       "id": "CAP-0079",
@@ -2195,6 +2211,298 @@
       "next_gate": "Non generare asset coperti da diritti",
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0083",
+      "title": "Treemap interattiva dello spazio e selezione sicura",
+      "domain": "file",
+      "score": 87,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Usare visualizzazione a rettangoli proporzionali per mostrare cosa occupa lo storage senza cancellazioni implicite.",
+      "app_states": {
+        "Android-Omni-Cleaner": "PROPOSTA",
+        "Downloads-Butler": "PROPOSTA",
+        "Send-to-pc": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/tobi/disktree/tree/9b18b272ca3c5a145f6ff58eaf89dc4d311eeaea"
+      },
+      "next_gate": "Scansione progressiva read-only, treemap per dimensione, selezione esplicita, conferma eliminazione o esportazione e rollback ove disponibile. Non replicare accesso MFT/NTFS nel sandbox Android.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1wud3go/disktree_shows_you_exactly_whats_eating_your_disk/",
+        "https://github.com/tobi/disktree"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0084",
+      "title": "Toolbox locale conversioni testo dati e QR",
+      "domain": "web",
+      "score": 89,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 5,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Suite leggera browser-first che processa i dati nel dispositivo senza upload e senza account.",
+      "app_states": {
+        "DevPocket-Tools": "PROPOSTA",
+        "CmdPocket": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA",
+        "WEB-UTILITY": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/CorentinTh/it-tools/tree/d505845f918e946ec300af7b36efc107e2f66e9e"
+      },
+      "next_gate": "Selezionare 5 utility davvero richieste (JSON, Base64, URL, UUID, QR) con test input sensibili offline; GPLv3: clean-room o conformita copyleft; evitare duplicazione CmdPocket e PDF-Unifier.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1xgpvro/it_tools_collection_of_handy_online_tools_for/",
+        "https://github.com/CorentinTh/it-tools"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0085",
+      "title": "Diarizzazione vocale locale per appunti riunioni",
+      "domain": "voce",
+      "score": 70,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Separare gli interventi di piu persone nelle trascrizioni locali con correzione manuale.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9"
+      },
+      "next_gate": "Benchmark sherpa-onnx o modello compatibile su smartphone; opt-in microfono, indicatori recording, segmenti speaker non affidabili senza validazione; non aggiungere modello grande all'APK base.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1wqltx4/openwhispr_press_a_hotkey_speak_and_your_words/",
+        "https://github.com/OpenWhispr/openwhispr"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0086",
+      "title": "Sintesi vocale locale di note e contenuti editoriali",
+      "domain": "voce",
+      "score": 72,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Leggere ad alta voce ricordi, guide e ricette con controlli di velocita e ascolto offline.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Wonderlog": "PROPOSTA",
+        "App-corpo-umano": "PROPOSTA",
+        "In-Cucina-con-gli-Anime": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50"
+      },
+      "next_gate": "Prima valutare Android TextToSpeech sistema e licenze voci; modelli scaricabili solo opt-in; VoiceStudio AGPL: pattern solo, no code copy closed-source; nessuna imitazione vocale senza consenso.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1wqvy29/voicestudio_a_fully_local_opensource_elevenlabs/",
+        "https://github.com/debpalash/VoiceStudio"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0087",
+      "title": "Layer geografici pubblici con freshness e fallback",
+      "domain": "geografia",
+      "score": 79,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Overlay opt-in su mappa per terremoti, incendi o altri dati pubblici con data e confidenza esplicite.",
+      "app_states": {
+        "TrailPath": "PROPOSTA",
+        "CamperBoss": "PROPOSTA",
+        "Wonderlog": "PROPOSTA",
+        "WEB-014": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/bilawalsidhu/gods-eye-view/tree/8978801dfd2a88368074883a87bcd05ffb57ef92"
+      },
+      "next_gate": "Per ogni feed dichiarare API, diritti commerciali, refresh, intervalli, limiti, simulazioni e disponibilita; nessuna navigazione operativa o allerta emergenza da data feed incompleti. Repo metadata NOASSERTION: verify license per file.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1wkt8qz/gods_eye_view_a_spysatellite_simulator_in_your/",
+        "https://github.com/bilawalsidhu/gods-eye-view"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0088",
+      "title": "Workspace Android desktop virtuale con capability probe",
+      "domain": "android",
+      "score": 45,
+      "priority": "P3",
+      "scores": {
+        "user_value": 3,
+        "cross_app_reuse": 2,
+        "feasibility": 1,
+        "evidence_strength": 4,
+        "risk_control": 1
+      },
+      "description": "Preset e ripristino layout multi finestra soltanto per device desktop realmente compatibili.",
+      "app_states": {
+        "EdgeDock": "PROPOSTA",
+        "App-Profiles": "PROPOSTA",
+        "DeskPilot": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/NarYuki/Dextop/tree/5402d091975cdae4f39943b59a3a0131f5a0a543"
+      },
+      "next_gate": "Rimandato: Dextop GPLv3, usa hidden API e runtime privilegiati; Samsung OneUI moderno prevalente, Xiaomi/HyperOS disabilitato. Vietato promettere compatibilita universale, copia solo con obblighi GPL e test Play.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1wu5tcb/dextop_unlocks_samsung_dex_and_desktop_mode_on/",
+        "https://github.com/NarYuki/Dextop"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0089",
+      "title": "Registro locale esperimenti con ipotesi e risultato",
+      "domain": "devops",
+      "score": 87,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 5
+      },
+      "description": "Tracciare prove e tentativi per decidere se una nuova capability migliora un prodotto.",
+      "app_states": {
+        "AppLab": "PROPOSTA",
+        "Idee-app-Archivi-riferimenti": "PROPOSTA",
+        "app-fotografia": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/alphaXiv/OpenResearch/tree/a92fd471aba91e9bdd14a88e2322ec42f9dfdbdb"
+      },
+      "next_gate": "Riutilizzare evidence/versioning AppLab e Git; nuovi record solo per ipotesi, misura, input baseline, output e decisione, senza seconda authority CI o agent runtime.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1wt62lb/openresearch_turn_your_coding_agent_into_a/",
+        "https://github.com/alphaXiv/OpenResearch"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0090",
+      "title": "Controllo scope creep e dipendenze nelle PR",
+      "domain": "devops",
+      "score": 92,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Segnalare file e comportamenti fuori dallo scope autorizzato prima del merge.",
+      "app_states": {
+        "AppLab": "PROPOSTA",
+        "Idee-app-Archivi-riferimenti": "PROPOSTA",
+        "App-Factory-Core": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306"
+      },
+      "next_gate": "Verificare se AppLab copre gia la stessa responsabilita: solo gate advisory a diff bounded confrontato con PR scope, niente agente ulteriore o trigger duplicati. Controllare licenza di ogni skill e le sue dipendenze.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1x1jike/6_github_repos_that_take_you_from_zero_to/",
+        "https://github.com/Shubhamsaboo/awesome-llm-apps"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0091",
+      "title": "Snapshot condivisibile della vista mappa senza dati privati",
+      "domain": "geografia",
+      "score": 78,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Ricreare una vista di mappa con gli stessi layer e posizione di camera su un altro dispositivo.",
+      "app_states": {
+        "Wonderlog": "PROPOSTA",
+        "TrailPath": "PROPOSTA",
+        "CamperBoss": "PROPOSTA",
+        "app-fotografia": "PROPOSTA"
+      },
+      "source": {
+        "type": "EXTERNAL_REPO_RESEARCH",
+        "ref": "https://github.com/bilawalsidhu/gods-eye-view/tree/8978801dfd2a88368074883a87bcd05ffb57ef92"
+      },
+      "next_gate": "Distinguere view state (camera, zoom, layers) da percorso/ricordi privati; share URL/file su azione volontaria, nessuna chiave API, token o posizione personale inclusa.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://www.reddit.com/r/BestGitHubRepos/comments/1wkt8qz/gods_eye_view_a_spysatellite_simulator_in_your/",
+        "https://github.com/bilawalsidhu/gods-eye-view"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     }
   ]
 }

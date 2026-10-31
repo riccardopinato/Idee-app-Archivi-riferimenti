@@ -13,5 +13,6 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0043](../REGISTRO_CAPABILITY/CAP-0043.md) | Raccolta fonti contenuti e audit artwork | P2 | 85 | SOURCE_REPORTED | Rispettare copyright e revisioni umane obbligatorie |
 | [CAP-0036](../REGISTRO_CAPABILITY/CAP-0036.md) | Riconoscimento etichette senza barcode | P3 | 78 | PROPOSTA | Conferma manuale prodotto gradazione ingredienti |
 | [CAP-0046](../REGISTRO_CAPABILITY/CAP-0046.md) | Ingredienti da foto e confezioni | P3 | 78 | PROPOSTA | OCR poi conferma attributi e nessuna promessa nutrizionale |
+| [CAP-0086](../REGISTRO_CAPABILITY/CAP-0086.md) | Sintesi vocale locale di note e contenuti editoriali | P3 | 72 | PROPOSTA | Prima valutare Android TextToSpeech sistema e licenze voci; modelli scaricabili solo opt-in; VoiceStudio AGPL: pattern solo, no code copy closed-source; nessuna imitazione vocale senza consenso. |
 
-**Totale associazioni:** 9. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 10. Non modificare automaticamente la roadmap del prodotto.

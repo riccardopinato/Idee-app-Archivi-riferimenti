@@ -9,6 +9,7 @@
 - [Schede individuali](REGISTRO_CAPABILITY/)
 - [JSON canonico](REGISTRO_CAPABILITY.json)
 - [Audit fonti e copertura](AUDIT_TRASVERSALE_2026-11-01.md)
+- [Ricerca r/BestGitHubRepos 01/11](RICERCA_REDDIT_BESTGITHUBREPOS_2026-11-01.md)
 - [Automazione incrementale](AUTOMAZIONE_E_REGOLE.md)
 
 ## Regole

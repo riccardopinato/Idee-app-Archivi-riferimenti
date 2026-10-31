@@ -12,6 +12,7 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0018](../REGISTRO_CAPABILITY/CAP-0018.md) | Backup restore con staging e rollback | P2 | 90 | SOURCE_REPORTED | Audit formati e test corrupt archive per consumer |
 | [CAP-0027](../REGISTRO_CAPABILITY/CAP-0027.md) | Cattura universale condividi link testo immagine | P2 | 90 | PROPOSTA | Android share intent e consenso senza import occulto |
 | [CAP-0071](../REGISTRO_CAPABILITY/CAP-0071.md) | Offline content packs incremental sync | P2 | 90 | SOURCE_REPORTED | Licenze e hashing versioni pack |
+| [CAP-0084](../REGISTRO_CAPABILITY/CAP-0084.md) | Toolbox locale conversioni testo dati e QR | P2 | 89 | PROPOSTA | Selezionare 5 utility davvero richieste (JSON, Base64, URL, UUID, QR) con test input sensibili offline; GPLv3: clean-room o conformita copyleft; evitare duplicazione CmdPocket e PDF-Unifier. |
 | [CAP-0013](../REGISTRO_CAPABILITY/CAP-0013.md) | Collection e ricerca locale | P2 | 88 | PROPOSTA | Verificare performance e origine dei risultati |
 | [CAP-0016](../REGISTRO_CAPABILITY/CAP-0016.md) | Inbox con categorie modificabili | P2 | 88 | PROPOSTA | Smoke fisico categoria vuota riavvio e sync |
 | [CAP-0020](../REGISTRO_CAPABILITY/CAP-0020.md) | Shared Ecosystem Bridge COPY LINK | P2 | 88 | PROPOSTA | Verificare roundtrip reale e contratti consumer per versione |
@@ -29,6 +30,8 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0030](../REGISTRO_CAPABILITY/CAP-0030.md) | Professional Wallet CV attestati QR vCard | P3 | 75 | ROADMAP_STORICA | Integrare Document Workspace senza wallet parallelo |
 | [CAP-0075](../REGISTRO_CAPABILITY/CAP-0075.md) | Import Center per migrazioni utenti | P3 | 74 | PROPOSTA | Import validato e non perdere storico |
 | [CAP-0032](../REGISTRO_CAPABILITY/CAP-0032.md) | Indicizzazione ricerca semantica locale | P3 | 73 | PROPOSTA | Modello multilingue licenza footprint e benchmark; non inserire pack base |
+| [CAP-0086](../REGISTRO_CAPABILITY/CAP-0086.md) | Sintesi vocale locale di note e contenuti editoriali | P3 | 72 | PROPOSTA | Prima valutare Android TextToSpeech sistema e licenze voci; modelli scaricabili solo opt-in; VoiceStudio AGPL: pattern solo, no code copy closed-source; nessuna imitazione vocale senza consenso. |
+| [CAP-0085](../REGISTRO_CAPABILITY/CAP-0085.md) | Diarizzazione vocale locale per appunti riunioni | P3 | 70 | PROPOSTA | Benchmark sherpa-onnx o modello compatibile su smartphone; opt-in microfono, indicatori recording, segmenti speaker non affidabili senza validazione; non aggiungere modello grande all'APK base. |
 | [CAP-0074](../REGISTRO_CAPABILITY/CAP-0074.md) | Companion voice note organizer | P3 | 67 | PROPOSTA | No duplicare trascrizione vocale offline |
 
-**Totale associazioni:** 26. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 29. Non modificare automaticamente la roadmap del prodotto.

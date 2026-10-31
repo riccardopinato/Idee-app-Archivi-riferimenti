@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Ricerca r/BestGitHubRepos e aggiornamento capability
+- Esaminati post indicizzati settembre-ottobre 2026 e README/metadati GitHub di 11 donor, con commit e licenze snapshot; pagina listing Reddit non accessibile, audit dichiaratamente non esaustivo.
+- Aggiornato il registro da 82 a 91 capability (nuove CAP-0083..CAP-0091), 48 app/progetti collegati, 243 associazioni, punteggi P1=15, P2=46, P3=30.
+- CAP-0031, CAP-0032, CAP-0033, CAP-0077 e CAP-0078: aggiunte fonti di ricerca senza duplicare capability.
+- Ampliati catalogo donor OSS, matrice riuso, inbox nuove idee (DevPocket Tools, DiskScope, GeoPulse Live, DeskPilot) e nota di ricerca con licenze e limiti.
+- Nessun repository app alterato, nessun modello/code/assets copiato; GPT/LLM/API prezzi indicati da directory esterne NON assunti come verificati.
+
 ## 2026-11-01 — Capability registry multi-app e manutenzione ricorrente
 - Audit documentale trasversale: 31 repository inventariati, 23 con tree/roadmap o README pertinenti campionati; fonti Project, vecchi audit, Master/Golden, Design-App e riferimenti OSS.
 - Catalogate 82 capability con ID stabili, 39 app/progetti possibili consumer e 212 associazioni per app; le priorita sono P1 14, P2 42 e P3 26, indicative e distinte dalle severity dei bug.

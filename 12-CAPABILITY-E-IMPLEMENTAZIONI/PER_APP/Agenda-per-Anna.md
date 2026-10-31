@@ -47,6 +47,7 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0075](../REGISTRO_CAPABILITY/CAP-0075.md) | Import Center per migrazioni utenti | P3 | 74 | ROADMAP_STORICA | Import validato e non perdere storico |
 | [CAP-0032](../REGISTRO_CAPABILITY/CAP-0032.md) | Indicizzazione ricerca semantica locale | P3 | 73 | PROPOSTA | Modello multilingue licenza footprint e benchmark; non inserire pack base |
 | [CAP-0064](../REGISTRO_CAPABILITY/CAP-0064.md) | Sonno routine e reminder adattivi | P3 | 73 | PROPOSTA | Non formulare diagnosi mediche |
+| [CAP-0085](../REGISTRO_CAPABILITY/CAP-0085.md) | Diarizzazione vocale locale per appunti riunioni | P3 | 70 | PROPOSTA | Benchmark sherpa-onnx o modello compatibile su smartphone; opt-in microfono, indicatori recording, segmenti speaker non affidabili senza validazione; non aggiungere modello grande all'APK base. |
 | [CAP-0074](../REGISTRO_CAPABILITY/CAP-0074.md) | Companion voice note organizer | P3 | 67 | PROPOSTA | No duplicare trascrizione vocale offline |
 
-**Totale associazioni:** 44. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 45. Non modificare automaticamente la roadmap del prodotto.
