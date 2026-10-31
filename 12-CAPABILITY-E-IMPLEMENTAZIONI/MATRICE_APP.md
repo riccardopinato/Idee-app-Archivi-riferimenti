@@ -29,7 +29,7 @@ _Generato da REGISTRO_CAPABILITY.json. Ogni cella e una fotografia di ricerca, n
 | Pocket-Guard | 2 | CAP-0057 Allarme protezione Table Pocket Bag Journey (SOURCE_REPORTED); CAP-0081 Phone protection sensitivity adviser (PROPOSTA) |
 | SafeShare | 1 | CAP-0039 EXIF privacy safe copy (PROPOSTA) |
 | Send-to-pc | 2 | CAP-0039 EXIF privacy safe copy (PROPOSTA); CAP-0066 Trasferimento LAN QR HTTPS fidato (SOURCE_REPORTED) |
-| SleepMax-Coach | 2 | CAP-0062 Best Conditions Engine sensori (PROPOSTA); CAP-0064 Sonno routine e reminder adattivi (SOURCE_REPORTED) |
+| SleepMax-Coach | 2 | CAP-0062 Best Conditions Engine sensori (PROPOSTA); CAP-0064 Sonno routine e reminder adattivi (ROADMAP_STORICA) |
 | Tabletop-Motion-Alarm | 1 | CAP-0057 Allarme protezione Table Pocket Bag Journey (SOURCE_REPORTED) |
 | TasteAI | 7 | CAP-0044 Ricette anti-spreco da ingredienti (SOURCE_REPORTED); CAP-0072 Entitlement RevenueCat provider truth (SOURCE_REPORTED); CAP-0006 Lista della spesa privata e condivisa (PROPOSTA); CAP-0045 Meal plan e spesa derivata (PROPOSTA); CAP-0046 Ingredienti da foto e confezioni (PROPOSTA); CAP-0033 Modello Needle 3 on demand Plus (ROADMAP_STORICA); CAP-0032 Indicizzazione ricerca semantica locale (PROPOSTA) |
 | TrailPath | 10 | CAP-0077 Health check permessi nativi per-capability (PROPOSTA); CAP-0053 Sun Moon calcolo locale (PROPOSTA); CAP-0020 Shared Ecosystem Bridge COPY LINK (PROPOSTA); CAP-0047 POI offline versionati e provenienza (PROPOSTA); CAP-0041 Palette da foto e golden hour (PROPOSTA); CAP-0050 Riorganizzazione tappe e tempi itinerario (PROPOSTA); CAP-0052 Meteo contestuale finestre outdoor (PROPOSTA); CAP-0051 Mappe luoghi ricordi condivisi con ponte (PROPOSTA) |
