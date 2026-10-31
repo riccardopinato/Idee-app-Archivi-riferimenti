@@ -1,0 +1,2195 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-01",
+  "authority": "Research/portfolio only. Product Bible/roadmap/code/tests/real-device evidence live in app repositories.",
+  "factory_baseline": "riccardopinato/App-Factory-Core@632a66dce4aa00e8e1700b0a3e4dfc7ea008197c",
+  "score_explanation": "0-100 opportunity estimate: value 35%, cross-app reuse 25%, feasibility 20%, evidence 10%, low risk 10%. Each factor 1-5. P1>=80; P2>=65; otherwise P3. Not an implementation authorization or revenue projection.",
+  "statuses": {
+    "PROPOSTA": "Idea non approvata / nessun codice verificato qui",
+    "ROADMAP_STORICA": "Indicata in roadmap o decisione storica; richiede verifica live",
+    "SOURCE_REPORTED": "Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit",
+    "DONOR_REPORTED": "Repo donor documentato; riuso non ancora validato"
+  },
+  "records": [
+    {
+      "id": "CAP-0001",
+      "title": "Pianificazione di slot liberi",
+      "domain": "agenda",
+      "score": 91,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 3,
+        "risk_control": 5
+      },
+      "description": "Algoritmo locale che suggerisce fasce disponibili in calendario",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "FocuSense": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Verificare conflitti e non spostare eventi fissi",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0002",
+      "title": "Creazione eventi da linguaggio naturale",
+      "domain": "agenda",
+      "score": 86,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 5,
+        "evidence_strength": 3,
+        "risk_control": 5
+      },
+      "description": "Convertire frasi semplici in bozze di appuntamenti senza API a pagamento",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://aivalley.ai/"
+      },
+      "next_gate": "Parser EN IT ES FR PT con conferma e timezone",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0003",
+      "title": "Preparazione contestuale appuntamento",
+      "domain": "agenda",
+      "score": 77,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 5,
+        "evidence_strength": 2,
+        "risk_control": 5
+      },
+      "description": "Scheda prima di eventi con checklist note e promemoria collegati",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://aivalley.ai/"
+      },
+      "next_gate": "Riutilizzare reminder e note senza nuovo scheduler",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0004",
+      "title": "Overlay calendari esterni read-only",
+      "domain": "agenda",
+      "score": 87,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Una sola vista che combina appuntamenti interni ed esterni senza import implicito",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "ROADMAP_STORICA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Verificare Android Calendar Provider e disponibilità Notes",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0005",
+      "title": "Esportazione esplicita eventi verso calendario",
+      "domain": "agenda",
+      "score": 87,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Aggiungi anche al calendario con selezione dell'account",
+      "app_states": {
+        "Agenda-per-Anna": "ROADMAP_STORICA",
+        "Notes-Ecosistema": "ROADMAP_STORICA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Verificare provider permessi e intent senza sync bidirezionale",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0006",
+      "title": "Lista della spesa privata e condivisa",
+      "domain": "agenda",
+      "score": 83,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "Quantità categorie e condivisione selettiva tra membri",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "TasteAI": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Verificare test v0.71 e riuso senza database condiviso",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0007",
+      "title": "Scheda workout e storico multisport",
+      "domain": "agenda",
+      "score": 77,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 5
+      },
+      "description": "Collega la scheda ad attività della giornata e storico",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "FocuSense": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Non creare doppio diario allenamenti",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0008",
+      "title": "Import foto PDF delle schede workout",
+      "domain": "documenti",
+      "score": 75,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Estendere TXT CSV con acquisizione foto e PDF per allenamenti",
+      "app_states": {
+        "Agenda-per-Anna": "ROADMAP_STORICA",
+        "PDF-Unifier": "DONOR_REPORTED"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Verificare parser e conservazione file originale",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0009",
+      "title": "Ricordi mappa geolocalizzata",
+      "domain": "memorie",
+      "score": 77,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Visualizzare ricordi per località e periodo",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Verificare permessi e nessuna condivisione GPS implicita",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0010",
+      "title": "Ricordi Then and Now",
+      "domain": "memorie",
+      "score": 83,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "Confronto di ricordi e fotografie tra due periodi",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Usare media canonici e consenso foto",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0011",
+      "title": "Life Threads narrativi",
+      "domain": "memorie",
+      "score": 82,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Raggruppare in viste derivate persone eventi luoghi ricordi",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Non introdurre archivio parallelo",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0012",
+      "title": "Year in Review deterministico",
+      "domain": "memorie",
+      "score": 79,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "Riepilogo annuale derivato da dati personali gia salvati",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Non ricostruire funzione gia integrata",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0013",
+      "title": "Collection e ricerca locale",
+      "domain": "memorie",
+      "score": 88,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "Raggruppamenti personali su dati senza duplicarli",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Verificare performance e origine dei risultati",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0014",
+      "title": "Cattura rapida contestuale da calendario",
+      "domain": "memorie",
+      "score": 75,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 5
+      },
+      "description": "Proporre ricordo da evento passato senza scrittura automatica",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "PROJECT_ATTACHMENT",
+        "ref": "Anna's Diary.txt"
+      },
+      "next_gate": "Conversione evento a ricordo sempre esplicita",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0015",
+      "title": "Ricerca globale ordinabile e un carattere",
+      "domain": "ricerca",
+      "score": 95,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "Ricerca visibile con filtri e A-Z recente antico",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md"
+      },
+      "next_gate": "Source gate riportati PASS ma verificare smoke Android",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0016",
+      "title": "Inbox con categorie modificabili",
+      "domain": "organizzazione",
+      "score": 88,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Categorie utente con rename filter e persistenza",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md"
+      },
+      "next_gate": "Smoke fisico categoria vuota riavvio e sync",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0017",
+      "title": "Universal Delete Trash e lifecycle audit",
+      "domain": "data-safety",
+      "score": 94,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Delete soft restore purge riferimenti cascata reminder media",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "SOURCE_REPORTED",
+        "Wonderlog": "PROPOSTA",
+        "CamperBoss": "PROPOSTA"
+      },
+      "source": {
+        "type": "PROJECT_ATTACHMENT",
+        "ref": "Backlog idee app.txt"
+      },
+      "next_gate": "Regression entita-per-entita e file orfani; niente duplicazione lifecycle",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0018",
+      "title": "Backup restore con staging e rollback",
+      "domain": "data-safety",
+      "score": 90,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Ripristino validato e rollback safe",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "SOURCE_REPORTED",
+        "CamperBoss": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Audit formati e test corrupt archive per consumer",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0019",
+      "title": "Store media content addressed e GC",
+      "domain": "data-safety",
+      "score": 81,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Deduplicazione file su SHA e pulizia referenziata",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "SOURCE_REPORTED",
+        "CamperBoss": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Non uniformare database privacy separati",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0020",
+      "title": "Shared Ecosystem Bridge COPY LINK",
+      "domain": "integrazione",
+      "score": 88,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Trasferimento esplicito con provenance senza sincronizzazione implicita",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Wonderlog": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "PROPOSTA",
+        "TrailPath": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Verificare roundtrip reale e contratti consumer per versione",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0021",
+      "title": "QR inviti condivisi 24 ore",
+      "domain": "condivisione",
+      "score": 75,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Inviti riutilizzabili limitati nel tempo e revocabili",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md"
+      },
+      "next_gate": "Serve prova camera e 2 account su device distinti",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0022",
+      "title": "Localizzazione cinque o piu lingue",
+      "domain": "fondazione",
+      "score": 94,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Fallback lingua dispositivo manuale e stringhe corrette",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "World-Days": "SOURCE_REPORTED",
+        "app-fotografia": "SOURCE_REPORTED",
+        "In-Cucina-con-gli-Anime": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md"
+      },
+      "next_gate": "Controllare parita lingua in native notifications",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0023",
+      "title": "Design System Flutter token-first",
+      "domain": "design",
+      "score": 89,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "Tokens tema componenti tipografia spacing e radius",
+      "app_states": {
+        "Design-App": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Wonderlog": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "REGISTRO_REPO",
+        "ref": "https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml"
+      },
+      "next_gate": "Riuso pattern non diventa Golden automaticamente",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0024",
+      "title": "Motion reduced-motion e microinterazioni",
+      "domain": "design",
+      "score": 87,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Microanimazioni funzionali con fallback reduced motion",
+      "app_states": {
+        "Design-App": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "World-Days": "PROPOSTA"
+      },
+      "source": {
+        "type": "REGISTRO_REPO",
+        "ref": "https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml"
+      },
+      "next_gate": "Verifica accessibilita e prestazioni su device",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0025",
+      "title": "Schermate responsive rail e split view",
+      "domain": "design",
+      "score": 89,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "NavigationRail e contenuti a larghezza delimitata",
+      "app_states": {
+        "Design-App": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "app-fotografia": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "REGISTRO_REPO",
+        "ref": "https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml"
+      },
+      "next_gate": "No claim desktop full prima di QA multi-width",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0026",
+      "title": "Sound feedback semantico opzionale",
+      "domain": "design",
+      "score": 78,
+      "priority": "P2",
+      "scores": {
+        "user_value": 3,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Feedback sonoro minimo e disattivabile",
+      "app_states": {
+        "Design-App": "SOURCE_REPORTED",
+        "FocuSense": "PROPOSTA",
+        "Battery_Guard": "PROPOSTA"
+      },
+      "source": {
+        "type": "REGISTRO_REPO",
+        "ref": "https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml"
+      },
+      "next_gate": "Controllare silent mode e opzioni accessibilita",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0027",
+      "title": "Cattura universale condividi link testo immagine",
+      "domain": "organizzazione",
+      "score": 90,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Salvare contenuti da altre app nel dominio canonico",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://aivalley.ai/"
+      },
+      "next_gate": "Android share intent e consenso senza import occulto",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0028",
+      "title": "Connettori visuali tra post-it",
+      "domain": "canvas",
+      "score": 91,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 3,
+        "risk_control": 5
+      },
+      "description": "Linee agganciate a post it con zoom pan e drag",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Riutilizzare canvas esistente e salvare soli edge",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0029",
+      "title": "Canvas ibrida sketch sotto note",
+      "domain": "canvas",
+      "score": 80,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Layer di disegno persistente sotto le schede",
+      "app_states": {
+        "Notes-Ecosistema": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Verificare gesto pennello undo save e restore device",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0030",
+      "title": "Professional Wallet CV attestati QR vCard",
+      "domain": "documenti",
+      "score": 75,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Portfolio professionale e biglietto digitale",
+      "app_states": {
+        "Notes-Ecosistema": "ROADMAP_STORICA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "PROJECT_ATTACHMENT",
+        "ref": "Idee che mi vengono in mente per le app.txt"
+      },
+      "next_gate": "Integrare Document Workspace senza wallet parallelo",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0031",
+      "title": "Trascrizione vocale offline opzionale",
+      "domain": "voce",
+      "score": 86,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Audio a testo editabile locale con modello scaricabile",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://huggingface.co/"
+      },
+      "next_gate": "Licenza modello footprint benchmark 5 lingue e download opt-in",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0032",
+      "title": "Indicizzazione ricerca semantica locale",
+      "domain": "ricerca",
+      "score": 73,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 2,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Ricerca per significato on device solo se migliora FTS",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "TasteAI": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://huggingface.co/"
+      },
+      "next_gate": "Modello multilingue licenza footprint e benchmark; non inserire pack base",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0033",
+      "title": "Modello Needle 3 on demand Plus",
+      "domain": "ai-locale",
+      "score": 76,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Pacchetto AI opzionale con fallback e non requisito del core",
+      "app_states": {
+        "Notes-Ecosistema": "SOURCE_REPORTED",
+        "TasteAI": "ROADMAP_STORICA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Play delivery benchmark e entitlement non auto concesso",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0034",
+      "title": "OCR scontrino e parsing spese",
+      "domain": "ocr",
+      "score": 90,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Estrarre data totale negozio da scontrino",
+      "app_states": {
+        "CashMate-AI": "PROPOSTA",
+        "In-Cucina-con-gli-Anime": "PROPOSTA",
+        "BeerClass-AI": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "OCR locale poi conferma prima di transazione",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0035",
+      "title": "OCR immagini e documenti on device",
+      "domain": "ocr",
+      "score": 92,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Motore OCR condivisibile senza creare servizio cloud",
+      "app_states": {
+        "PDF-Unifier": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "BeerClass-AI": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Audit licenza ML Kit e processi media originali",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0036",
+      "title": "Riconoscimento etichette senza barcode",
+      "domain": "ocr",
+      "score": 78,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "OCR etichette e match con catalogo",
+      "app_states": {
+        "BeerClass-AI": "PROPOSTA",
+        "In-Cucina-con-gli-Anime": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://aivalley.ai/"
+      },
+      "next_gate": "Conferma manuale prodotto gradazione ingredienti",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0037",
+      "title": "Operazioni PDF split merge rotate lock",
+      "domain": "pdf",
+      "score": 98,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "PDF engine riusabile per operazioni locali",
+      "app_states": {
+        "PDF-Unifier": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "PROPOSTA",
+        "PDF-Pocket-Tools": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Verificare motore originale licenza e compatibilita Flutter",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0038",
+      "title": "PDF Pocket Tools packaging standalone",
+      "domain": "pdf",
+      "score": 75,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Nuova app come front end a capability PDF esistenti",
+      "app_states": {
+        "PDF-Pocket-Tools": "ROADMAP_STORICA",
+        "PDF-Unifier": "DONOR_REPORTED"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Non creare secondo motore per packaging",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0039",
+      "title": "EXIF privacy safe copy",
+      "domain": "privacy",
+      "score": 98,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Esportazione copia foto senza GPS e dati sensibili",
+      "app_states": {
+        "Android-Omni-Cleaner": "SOURCE_REPORTED",
+        "app-fotografia": "PROPOSTA",
+        "Send-to-pc": "PROPOSTA",
+        "SafeShare": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Niente modifica di originali e UI attributi rimossi",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0040",
+      "title": "Deduplicazione foto per hash percettivo",
+      "domain": "foto",
+      "score": 87,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Raggruppare file media simili senza cancellazione automatica",
+      "app_states": {
+        "Android-Omni-Cleaner": "SOURCE_REPORTED",
+        "Wonderlog": "PROPOSTA",
+        "app-fotografia": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Android-Omni-Cleaner/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Verificare algoritmo reale e precisione duplicati quasi identici",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0041",
+      "title": "Palette da foto e golden hour",
+      "domain": "foto",
+      "score": 86,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 4,
+        "risk_control": 5
+      },
+      "description": "Estrarre palette e pianificare sessioni fotografiche",
+      "app_states": {
+        "app-fotografia": "ROADMAP_STORICA",
+        "World-Days": "PROPOSTA",
+        "TrailPath": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "SunCalc locale e colori originali con file donor verificato",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0042",
+      "title": "Catalogo editoriale multilingua offline",
+      "domain": "editoriale",
+      "score": 94,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Pacchetti contenuti verificabili e localizzabili",
+      "app_states": {
+        "app-fotografia": "SOURCE_REPORTED",
+        "World-Days": "SOURCE_REPORTED",
+        "In-Cucina-con-gli-Anime": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/app-fotografia/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Riusare pattern non mescolare dati editoriali di prodotti differenti",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0043",
+      "title": "Raccolta fonti contenuti e audit artwork",
+      "domain": "editoriale",
+      "score": 85,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Workflow fonti licenze immagini e verifica contenuto",
+      "app_states": {
+        "In-Cucina-con-gli-Anime": "SOURCE_REPORTED",
+        "World-Days": "SOURCE_REPORTED",
+        "app-fotografia": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/In-Cucina-con-gli-Anime/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Rispettare copyright e revisioni umane obbligatorie",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0044",
+      "title": "Ricette anti-spreco da ingredienti",
+      "domain": "ricette",
+      "score": 95,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "Suggerire ricette fattibili usando ingredienti disponibili",
+      "app_states": {
+        "TasteAI": "SOURCE_REPORTED",
+        "In-Cucina-con-gli-Anime": "PROPOSTA",
+        "MealMate": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/TasteAI/blob/main/docs/ROADMAP.md"
+      },
+      "next_gate": "Non clonare TasteAI; validare differenziazione",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0045",
+      "title": "Meal plan e spesa derivata",
+      "domain": "ricette",
+      "score": 82,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 5
+      },
+      "description": "Pianificazione pasti collegata a ingredienti e lista spesa",
+      "app_states": {
+        "TasteAI": "PROPOSTA",
+        "MealMate": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Lista derivata con consenso e separazione proprieta dati",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0046",
+      "title": "Ingredienti da foto e confezioni",
+      "domain": "ricette",
+      "score": 78,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Scansione lista o confezione per scegliere ricetta",
+      "app_states": {
+        "In-Cucina-con-gli-Anime": "PROPOSTA",
+        "TasteAI": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://aivalley.ai/"
+      },
+      "next_gate": "OCR poi conferma attributi e nessuna promessa nutrizionale",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0047",
+      "title": "POI offline versionati e provenienza",
+      "domain": "geografia",
+      "score": 88,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Pack di punti di interesse offline con fonte e versionamento",
+      "app_states": {
+        "CamperBoss": "ROADMAP_STORICA",
+        "TrailPath": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Licenze ODbL provider e freshness; non scaricare tile pubblici",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0048",
+      "title": "Routing sentieri trace snap affidabile",
+      "domain": "geografia",
+      "score": 79,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Tracciamento del percorso e matching su grafo stradale",
+      "app_states": {
+        "TrailPath": "SOURCE_REPORTED",
+        "CamperBoss": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/TrailPath/blob/main/docs/ROADMAP.md"
+      },
+      "next_gate": "Test fisico snap a vari zoom e reti",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0049",
+      "title": "Offline map engine e routing camper",
+      "domain": "geografia",
+      "score": 79,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Routing con vincoli veicolo e caching affidabile",
+      "app_states": {
+        "CamperBoss": "ROADMAP_STORICA",
+        "TrailPath": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/CamperBoss/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Validare routing camper reale e non dichiarare vera navigazione offline senza mappe",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0050",
+      "title": "Riorganizzazione tappe e tempi itinerario",
+      "domain": "geografia",
+      "score": 85,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Ordina le soste di viaggio senza tempi inventati",
+      "app_states": {
+        "Wonderlog": "PROPOSTA",
+        "CamperBoss": "PROPOSTA",
+        "TrailPath": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://aivalley.ai/"
+      },
+      "next_gate": "Tempi da routing verificato e controllo manuale ordine",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0051",
+      "title": "Mappe luoghi ricordi condivisi con ponte",
+      "domain": "geografia",
+      "score": 80,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Mappa viaggio con import selettivo di memorie",
+      "app_states": {
+        "Wonderlog": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "TrailPath": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Trasporto COPY LINK esplicito e autorizzato",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0052",
+      "title": "Meteo contestuale finestre outdoor",
+      "domain": "geografia",
+      "score": 85,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Suggerire finestre attività con data provider e incertezza",
+      "app_states": {
+        "CamperBoss": "PROPOSTA",
+        "TrailPath": "PROPOSTA",
+        "app-fotografia": "PROPOSTA",
+        "GrillBoss": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "API gratuita meteo non commerciale non usare con Ads",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0053",
+      "title": "Sun Moon calcolo locale",
+      "domain": "geografia",
+      "score": 93,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 5
+      },
+      "description": "Alba tramonto golden hour luna",
+      "app_states": {
+        "app-fotografia": "PROPOSTA",
+        "TrailPath": "PROPOSTA",
+        "CamperBoss": "PROPOSTA",
+        "WEB-012": "PROPOSTA"
+      },
+      "source": {
+        "type": "REPO_ARCHIVE",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/03-WEB-UTILITY/CATALOGO_WEB_001_016.md"
+      },
+      "next_gate": "Calcolo locale SunCalc con timezone corretto",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0054",
+      "title": "Prezzi carburanti ufficiali",
+      "domain": "geografia",
+      "score": 76,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Comparazione carburante con feed pubblici verificati",
+      "app_states": {
+        "CamperBoss": "PROPOSTA",
+        "WEB-002": "PROPOSTA",
+        "WEB-009": "PROPOSTA"
+      },
+      "source": {
+        "type": "REPO_ARCHIVE",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/03-WEB-UTILITY/CATALOGO_WEB_001_016.md"
+      },
+      "next_gate": "Dati nazionali diritti timestamp e valuta",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0055",
+      "title": "Notifiche affidabili e diagnostics truth",
+      "domain": "notifiche",
+      "score": 94,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Scheduled reminders con diagnosi scheduling e OS",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "World-Days": "SOURCE_REPORTED",
+        "Notification-Control": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Permesso non equivale consegna reale",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0056",
+      "title": "Notification listener multi-modulo",
+      "domain": "notifiche",
+      "score": 76,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Undo pausa follow-up e critical rules su listener unico",
+      "app_states": {
+        "Notification-Control": "SOURCE_REPORTED",
+        "Phone-Guard": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Non accedere a messaggi privati fuori scopo",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0057",
+      "title": "Allarme protezione Table Pocket Bag Journey",
+      "domain": "sicurezza",
+      "score": 83,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Motore arm escalation comune con diversi sensori",
+      "app_states": {
+        "Phone-Guard": "SOURCE_REPORTED",
+        "Pocket-Guard": "SOURCE_REPORTED",
+        "Tabletop-Motion-Alarm": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Phone-Guard/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Test multi OEM FGS false-positive e batteria",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0058",
+      "title": "Quick settings overlay rotazione 180",
+      "domain": "android",
+      "score": 71,
+      "priority": "P2",
+      "scores": {
+        "user_value": 3,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Controllo rapida rotazione via quick tile e overlay",
+      "app_states": {
+        "180FlipCharge": "SOURCE_REPORTED",
+        "App-Profiles": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Permessi overlay e specialUse Play policy",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0059",
+      "title": "ADB Shizuku debloat reversibile",
+      "domain": "android",
+      "score": 72,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 2
+      },
+      "description": "Catalogo OEM e disable reversibile con warning",
+      "app_states": {
+        "Easy-Debloat": "ROADMAP_STORICA",
+        "CleanOS": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/05-REPOSITORY-E-LIBRERIE/LIBRERIE_DONOR.md"
+      },
+      "next_gate": "Conferma dispositivo e backup package actions no root claim",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0060",
+      "title": "Protezione batteria avvisi e sessioni",
+      "domain": "batteria",
+      "score": 84,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Sessioni ricarica analisi comportamento batteria",
+      "app_states": {
+        "Battery_Guard": "SOURCE_REPORTED",
+        "CamperBoss": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Battery_Guard/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Distingue salute stimata da misure disponibili",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0061",
+      "title": "Smart ETA e idle drain batteria",
+      "domain": "batteria",
+      "score": 77,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Stima contestuale tempo carica e consumi",
+      "app_states": {
+        "Battery_Guard": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Battery_Guard/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Verificare contro scarica reale in standby",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0062",
+      "title": "Best Conditions Engine sensori",
+      "domain": "focus",
+      "score": 80,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Usare luce rumore movimento per finestre di focus",
+      "app_states": {
+        "FocuSense": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "PROPOSTA",
+        "SleepMax-Coach": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/FocuSense/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Score sensori non diagnosi e test runtime",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0063",
+      "title": "Momenti ideali per focus in calendario",
+      "domain": "focus",
+      "score": 80,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 5
+      },
+      "description": "Suggerire intervalli di concentrazione da dati aggregati",
+      "app_states": {
+        "FocuSense": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://aivalley.ai/"
+      },
+      "next_gate": "Consenso e niente spostamento eventi involontario",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0064",
+      "title": "Sonno routine e reminder adattivi",
+      "domain": "benessere",
+      "score": 73,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Routine serali e reminder con tolleranza oraria",
+      "app_states": {
+        "SleepMax-Coach": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Non formulare diagnosi mediche",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0065",
+      "title": "Routine wearable e battery optimization audit",
+      "domain": "qualita",
+      "score": 94,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Matrice dei limiti foreground service batteria sensori",
+      "app_states": {
+        "Phone-Guard": "ROADMAP_STORICA",
+        "Battery_Guard": "ROADMAP_STORICA",
+        "FocuSense": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Test OEM reale multi dispositivo e Doze",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0066",
+      "title": "Trasferimento LAN QR HTTPS fidato",
+      "domain": "file",
+      "score": 83,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Condivisione file locale senza cloud obbligatorio",
+      "app_states": {
+        "Send-to-pc": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Send-to-pc/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Pairing fingerprint HTTPS e test rete locale",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0067",
+      "title": "Release Android firmato artifact provenance",
+      "domain": "devops",
+      "score": 94,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Workflow build firma stabile SHA e manifest",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "AppLab": "SOURCE_REPORTED",
+        "Battery_Guard": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md"
+      },
+      "next_gate": "Artifact build non e device certification",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0068",
+      "title": "AppLab evidence ladder exact SHA",
+      "domain": "devops",
+      "score": 90,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Prova per livelli code CI runtime device Play",
+      "app_states": {
+        "AppLab": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "CamperBoss": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/AppLab/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Mai inferire device PASS da CI",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0069",
+      "title": "Automated screenshot visual regression",
+      "domain": "devops",
+      "score": 81,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Snapshot UI e analisi differenze",
+      "app_states": {
+        "Design-App": "SOURCE_REPORTED",
+        "AppLab": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "REGISTRO_REPO",
+        "ref": "https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml"
+      },
+      "next_gate": "Baseline screen e variant certi",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0070",
+      "title": "AppLab autonomous bounded repair",
+      "domain": "devops",
+      "score": 70,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 5,
+        "risk_control": 2
+      },
+      "description": "Diagnosi e riparazione entro limiti di mutazione",
+      "app_states": {
+        "AppLab": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/AppLab/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Politica fail closed P0/P1 e review",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0071",
+      "title": "Offline content packs incremental sync",
+      "domain": "fondazione",
+      "score": 90,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Pack scaricabili opzionali con update e verifica",
+      "app_states": {
+        "World-Days": "SOURCE_REPORTED",
+        "CamperBoss": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Licenze e hashing versioni pack",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0072",
+      "title": "Entitlement RevenueCat provider truth",
+      "domain": "monetizzazione",
+      "score": 88,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Servizio entitlement con stato verificato e fallback",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "TasteAI": "SOURCE_REPORTED",
+        "In-Cucina-con-gli-Anime": "ROADMAP_STORICA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md"
+      },
+      "next_gate": "IAP compliance e no premium unlocked falsely",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0073",
+      "title": "AdMob UMP consent gating",
+      "domain": "monetizzazione",
+      "score": 92,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Monetizzazione con richiesta ads soltanto quando consentita",
+      "app_states": {
+        "World-Days": "SOURCE_REPORTED",
+        "In-Cucina-con-gli-Anime": "SOURCE_REPORTED",
+        "Battery_Guard": "SOURCE_REPORTED"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/World-Days/blob/main/ROADMAP.md"
+      },
+      "next_gate": "Test permessi consent e policy store",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0074",
+      "title": "Companion voice note organizer",
+      "domain": "voce",
+      "score": 67,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 2,
+        "risk_control": 4
+      },
+      "description": "Titoli e tag suggeriti da regole locali dopo trascrizione",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "RESEARCH_CANDIDATE",
+        "ref": "https://huggingface.co/"
+      },
+      "next_gate": "No duplicare trascrizione vocale offline",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0075",
+      "title": "Import Center per migrazioni utenti",
+      "domain": "data-safety",
+      "score": 74,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Importazione da altri formati e strumenti con preview",
+      "app_states": {
+        "Agenda-per-Anna": "ROADMAP_STORICA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "PROJECT_ATTACHMENT",
+        "ref": "Anna's Diary.txt"
+      },
+      "next_gate": "Import validato e non perdere storico",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0076",
+      "title": "Web Clip sicuro con provenienza",
+      "domain": "organizzazione",
+      "score": 78,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Clipping web manuale in note con origine",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/05-REPOSITORY-E-LIBRERIE/LIBRERIE_DONOR.md"
+      },
+      "next_gate": "Permissions share sheet e URL originale",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0077",
+      "title": "Health check permessi nativi per-capability",
+      "domain": "devops",
+      "score": 94,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Diagnosi degli stati di sensori accessi e notifiche",
+      "app_states": {
+        "Phone-Guard": "SOURCE_REPORTED",
+        "TrailPath": "PROPOSTA",
+        "Battery_Guard": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "RIUSO_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
+      },
+      "next_gate": "Permesso concesso non prova capability operativa",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0078",
+      "title": "Web utility location market provider adapter",
+      "domain": "web",
+      "score": 81,
+      "priority": "P1",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 3,
+        "evidence_strength": 5,
+        "risk_control": 3
+      },
+      "description": "Catalogo geografie riutilizzabile across siti",
+      "app_states": {
+        "WEB-008": "PROPOSTA",
+        "WEB-012": "PROPOSTA",
+        "WEB-014": "PROPOSTA",
+        "WEB-009": "PROPOSTA"
+      },
+      "source": {
+        "type": "REPO_ARCHIVE",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/03-WEB-UTILITY/CATALOGO_WEB_001_016.md"
+      },
+      "next_gate": "Lingua diversa dal mercato e diritti provider",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0079",
+      "title": "Report fiscale stipendi mercati separati",
+      "domain": "web",
+      "score": 67,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 2
+      },
+      "description": "Regole calcolo retribuzione per mercato",
+      "app_states": {
+        "WEB-004": "PROPOSTA",
+        "Work-Time-Keeper": "PROPOSTA"
+      },
+      "source": {
+        "type": "REPO_ARCHIVE",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/03-WEB-UTILITY/CATALOGO_WEB_001_016.md"
+      },
+      "next_gate": "Fonte fiscale ufficiale e data annuale",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0080",
+      "title": "Document expiry and asset passport",
+      "domain": "documenti",
+      "score": 78,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Scadenze documenti garanzie e allegati local-first",
+      "app_states": {
+        "CamperBoss": "SOURCE_REPORTED",
+        "Notes-Ecosistema": "PROPOSTA",
+        "Home-Assets-Passport": "PROPOSTA"
+      },
+      "source": {
+        "type": "AUDIT_REPO_20261030",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md"
+      },
+      "next_gate": "Non includere segreti/identita in archivio condiviso",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0081",
+      "title": "Phone protection sensitivity adviser",
+      "domain": "sicurezza",
+      "score": 73,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Calibrazione sensori e diagnostics configurabili",
+      "app_states": {
+        "Phone-Guard": "SOURCE_REPORTED",
+        "Pocket-Guard": "PROPOSTA"
+      },
+      "source": {
+        "type": "ROADMAP_REPO",
+        "ref": "https://github.com/riccardopinato/Phone-Guard/blob/main/ROADMAP.md"
+      },
+      "next_gate": "False-positive risk e test sensori reali",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    },
+    {
+      "id": "CAP-0082",
+      "title": "Deterministic UI design artwork",
+      "domain": "design",
+      "score": 79,
+      "priority": "P2",
+      "scores": {
+        "user_value": 3,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 4,
+        "risk_control": 5
+      },
+      "description": "Pattern artwork SVG/gradienti da chiavi editoriali",
+      "app_states": {
+        "World-Days": "SOURCE_REPORTED",
+        "app-fotografia": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "REGISTRO_REPO",
+        "ref": "https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml"
+      },
+      "next_gate": "Non generare asset coperti da diritti",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+    }
+  ]
+}
