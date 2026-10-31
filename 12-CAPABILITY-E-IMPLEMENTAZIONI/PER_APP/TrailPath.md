@@ -14,5 +14,7 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0051](../REGISTRO_CAPABILITY/CAP-0051.md) | Mappe luoghi ricordi condivisi con ponte | P2 | 80 | PROPOSTA | Trasporto COPY LINK esplicito e autorizzato |
 | [CAP-0048](../REGISTRO_CAPABILITY/CAP-0048.md) | Routing sentieri trace snap affidabile | P2 | 79 | SOURCE_REPORTED | Test fisico snap a vari zoom e reti |
 | [CAP-0049](../REGISTRO_CAPABILITY/CAP-0049.md) | Offline map engine e routing camper | P2 | 79 | SOURCE_REPORTED | Validare routing camper reale e non dichiarare vera navigazione offline senza mappe |
+| [CAP-0087](../REGISTRO_CAPABILITY/CAP-0087.md) | Layer geografici pubblici con freshness e fallback | P2 | 79 | PROPOSTA | Per ogni feed dichiarare API, diritti commerciali, refresh, intervalli, limiti, simulazioni e disponibilita; nessuna navigazione operativa o allerta emergenza da data feed incompleti. Repo metadata NOASSERTION: verify license per file. |
+| [CAP-0091](../REGISTRO_CAPABILITY/CAP-0091.md) | Snapshot condivisibile della vista mappa senza dati privati | P3 | 78 | PROPOSTA | Distinguere view state (camera, zoom, layers) da percorso/ricordi privati; share URL/file su azione volontaria, nessuna chiave API, token o posizione personale inclusa. |
 
-**Totale associazioni:** 10. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 12. Non modificare automaticamente la roadmap del prodotto.

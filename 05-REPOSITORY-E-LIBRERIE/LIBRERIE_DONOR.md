@@ -45,3 +45,21 @@ https://github.com/riccardopinato/Analisi-delle-mie-stelle-github
 L'audit del 24/10/2026 dichiarava 632 repo uniche enumerabili su 645 stelle mostrate, 13 gap da chiarire. Questo registro NON pretende che tutti i 632 repo siano stati verificati qui.
 
 ====================================================================
+
+## Donor nuovi individuati da r/BestGitHubRepos — 2026-11-01
+
+> Ricognizione documentale; nessun codice trasferito. [Schede e commit](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_REDDIT_BESTGITHUBREPOS_2026-11-01.md).
+
+| Repository | Licenza snapshot | Capability e target | Modalita ammissibile |
+|---|---|---|---|
+| [OpenWhispr](https://github.com/OpenWhispr/openwhispr) | MIT | dettatura offline, diarizzazione; Notes, Anna, Wonderlog | valutare componenti native Android separati da Electron |
+| [VoiceStudio](https://github.com/debpalash/VoiceStudio) | AGPL-3.0 | TTS locale, modeli on-demand; Notes, Wonderlog | pattern, non copiare in app proprietaria senza compliance |
+| [disktree](https://github.com/tobi/disktree) | MIT | treemap spazio file; Omni Cleaner | adattare UI, NON scanner NTFS desktop |
+| [IT Tools](https://github.com/CorentinTh/it-tools) + [fork sharevb](https://github.com/sharevb/it-tools) | GPL-3.0 | conversioni locali; DevPocket, CmdPocket | reference/clean-room salvo compatibilita copyleft |
+| [Dextop](https://github.com/NarYuki/Dextop) | GPL-3.0 | compatibility probe e desktop layout; EdgeDock/App Profiles | reference, hidden API/OEM Play gate, HyperOS disabled |
+| [OpenResearch](https://github.com/alphaXiv/OpenResearch) | MIT | research experiment ledger; AppLab/portfolio | adapter leggero senza secondo orchestrator |
+| [God's Eye View](https://github.com/bilawalsidhu/gods-eye-view) | metadata NOASSERTION; README MIT | layer di segnali e geo scene; TrailPath/Wonderlog/CamperBoss | solo reference, feed e assets a licenze autonome |
+| [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | Apache-2.0 | scope creep detector; AppLab | singoli pattern/skill con audit dipendenze |
+| [free-ai-tools](https://github.com/ShaikhWarsi/free-ai-tools) | MIT | scouting provider; tutte | elenco non fonte autoritativa di prezzi o limiti |
+
+**Non duplicare** `mattpocock/skills`: era gia stato censito. Rileggere licenza e commit prima di qualunque riuso.

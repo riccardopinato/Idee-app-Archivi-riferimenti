@@ -10,9 +10,11 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0053](../REGISTRO_CAPABILITY/CAP-0053.md) | Sun Moon calcolo locale | P1 | 93 | PROPOSTA | Calcolo locale SunCalc con timezone corretto |
 | [CAP-0025](../REGISTRO_CAPABILITY/CAP-0025.md) | Schermate responsive rail e split view | P2 | 89 | SOURCE_REPORTED | No claim desktop full prima di QA multi-width |
 | [CAP-0040](../REGISTRO_CAPABILITY/CAP-0040.md) | Deduplicazione foto per hash percettivo | P2 | 87 | PROPOSTA | Verificare algoritmo reale e precisione duplicati quasi identici |
+| [CAP-0089](../REGISTRO_CAPABILITY/CAP-0089.md) | Registro locale esperimenti con ipotesi e risultato | P2 | 87 | PROPOSTA | Riutilizzare evidence/versioning AppLab e Git; nuovi record solo per ipotesi, misura, input baseline, output e decisione, senza seconda authority CI o agent runtime. |
 | [CAP-0041](../REGISTRO_CAPABILITY/CAP-0041.md) | Palette da foto e golden hour | P2 | 86 | ROADMAP_STORICA | SunCalc locale e colori originali con file donor verificato |
 | [CAP-0043](../REGISTRO_CAPABILITY/CAP-0043.md) | Raccolta fonti contenuti e audit artwork | P2 | 85 | SOURCE_REPORTED | Rispettare copyright e revisioni umane obbligatorie |
 | [CAP-0052](../REGISTRO_CAPABILITY/CAP-0052.md) | Meteo contestuale finestre outdoor | P2 | 85 | PROPOSTA | API gratuita meteo non commerciale non usare con Ads |
 | [CAP-0082](../REGISTRO_CAPABILITY/CAP-0082.md) | Deterministic UI design artwork | P2 | 79 | PROPOSTA | Non generare asset coperti da diritti |
+| [CAP-0091](../REGISTRO_CAPABILITY/CAP-0091.md) | Snapshot condivisibile della vista mappa senza dati privati | P3 | 78 | PROPOSTA | Distinguere view state (camera, zoom, layers) da percorso/ricordi privati; share URL/file su azione volontaria, nessuna chiave API, token o posizione personale inclusa. |
 
-**Totale associazioni:** 10. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 12. Non modificare automaticamente la roadmap del prodotto.
