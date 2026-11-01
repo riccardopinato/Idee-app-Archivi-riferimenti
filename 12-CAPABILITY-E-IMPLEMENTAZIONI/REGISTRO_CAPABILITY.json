@@ -458,7 +458,11 @@
       },
       "next_gate": "Regression entita-per-entita e file orfani; niente duplicazione lifecycle",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://huggingface.co/AbdulElahGwaith/todo-app-enhanced-repo",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0018",
@@ -485,7 +489,10 @@
       },
       "next_gate": "Audit formati e test corrupt archive per consumer",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0019",
@@ -754,7 +761,10 @@
       },
       "next_gate": "Riutilizzare canvas esistente e salvare soli edge",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0029",
@@ -779,7 +789,10 @@
       },
       "next_gate": "Verificare gesto pennello undo save e restore device",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0030",
@@ -835,7 +848,9 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9",
-        "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50"
+        "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50",
+        "https://huggingface.co/docs/inference-providers/guides/building-first-app",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
       ]
     },
     {
@@ -865,7 +880,9 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9"
+        "https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9",
+        "https://huggingface.co/spaces/sebasmos/sherlock-project-assistant",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
       ]
     },
     {
@@ -894,7 +911,9 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50"
+        "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50",
+        "https://huggingface.co/sayedimran/Ai_Todo_App",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
       ]
     },
     {
@@ -1488,7 +1507,10 @@
       },
       "next_gate": "Permesso non equivale consegna reale",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0056",
@@ -2016,7 +2038,10 @@
       },
       "next_gate": "Import validato e non perdere storico",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0076",
@@ -2501,6 +2526,310 @@
       "research_refs": [
         "https://www.reddit.com/r/BestGitHubRepos/comments/1wkt8qz/gods_eye_view_a_spysatellite_simulator_in_your/",
         "https://github.com/bilawalsidhu/gods-eye-view"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0092",
+      "title": "Cattura task da linguaggio naturale e note",
+      "domain": "organizzazione",
+      "score": 90,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Convertire testo o trascrizioni volontarie in bozze editabili di task, date, priorita e reminder; origine e ambiguita conservate.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Verificare capture/task canonici prima di aggiungere parser IT/EN locale; preview, timezone, consenso prima di scheduler, AI solo pack opzionale e niente download automatici.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://huggingface.co/sayedimran/Ai_Todo_App"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0093",
+      "title": "Da note a checklist strutturate",
+      "domain": "organizzazione",
+      "score": 94,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 5,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Estrarre piu attivita e sottoattivita da una nota mantenendo origine, editabilita e link canonici invece di duplicare documenti.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Audit note/task esistenti, implementare parsing deterministico e preview multi-selezione; dataset NC reference only, test su ambiguita e nessuna creazione implicita.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://huggingface.co/datasets/Srinivasmec26/Structured-Todo-Lists-for-Learning-and-Projects"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0094",
+      "title": "Sticky Kanban con task canoniche su canvas e planner",
+      "domain": "canvas",
+      "score": 85,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Una stessa attivita appare su post-it, Kanban, checklist e planner con ID/ownership unici, drag-and-drop e stati sincronizzati.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Verificare modelli e canvas attuali, riusare post-it/task, garantire update unico, undo e sync; non usare come donor il link MiniMax-M1 non pertinente.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0095",
+      "title": "Estrazione decisioni e action items da riunioni",
+      "domain": "voce",
+      "score": 79,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Dalle note o trascrizioni delle riunioni proporre decisioni, assegnatari, scadenze, task e blocchi con evidenza della frase origine.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Conferma umana, privacy meeting/consensi, diarizzazione opzionale, test IT/EN, footprint offline e riferimento Sherlock solo progettuale CC BY-NC-SA.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://huggingface.co/spaces/sebasmos/sherlock-project-assistant"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0096",
+      "title": "Gerarchie task ricorrenze e relazioni alle note",
+      "domain": "organizzazione",
+      "score": 78,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Task principali e sottotask, dipendenze/relazioni, ricorrenze, tag e priorita con reminder coerenti e lifecycle recuperabile.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Audit funzioni task e recurrence gia presenti; non introdurre secondo scheduler o storage; test eccezioni ricorrenza, delete e restore.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://huggingface.co/spaces/Rvwaqas/todoapp"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0097",
+      "title": "Project Memory con Q&A circoscritto e provenance",
+      "domain": "ricerca",
+      "score": 72,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Recuperare decisioni, blocchi e storico per singolo progetto, rimandando ai documenti originali e mostrando i limiti delle risposte.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Partire da filtri e FTS locale esistenti; ricerca semantica solo opt-in/on-device se giustificata; citazioni verificabili e isolamento tra progetti.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://huggingface.co/spaces/sebasmos/sherlock-project-assistant"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0098",
+      "title": "Mind map navigabile derivata da note e documenti",
+      "domain": "canvas",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Mappa mentale interattiva da nodi estratti da note/fonti, con zoom pan e tap che torna all'entita originale senza duplicare lo storage.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Riutilizzare canvas e connettori, audit licenza Vertical.ai; evitare dipendenze RAG cloud o Neo4j introdotte solo per il concept.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://huggingface.co/Abhisingh-18/Vertical.ai"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0099",
+      "title": "Planner studio e progetto da obiettivi in checklist",
+      "domain": "organizzazione",
+      "score": 73,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Trasformare obiettivi di apprendimento o progetti in passi editabili, checklist, sessioni e scadenze collegate alla pianificazione.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Riusare note-to-checklist CAP-0093 e planner; niente copia dataset CC BY-NC; generazione sempre come bozza e conferma degli impegni.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://huggingface.co/datasets/Srinivasmec26/Structured-Todo-Lists-for-Learning-and-Projects"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0100",
+      "title": "Kanban collaborativa task e permessi per workspace",
+      "domain": "condivisione",
+      "score": 61,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 3,
+        "risk_control": 2
+      },
+      "description": "Assegnare task, tracciare cambi stato e filtrare per persona in workspace condivisi con ownership, ACL e cancellazione differenziata.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Non anticipare il Team roadmap; design-only finche identita/ACL/sync non sono approvati; nessuna condivisione implicita di note private; WebTestBench non e donor Kanban.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0101",
+      "title": "Dashboard produttivita locale da task canoniche",
+      "domain": "organizzazione",
+      "score": 84,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 3,
+        "risk_control": 5
+      },
+      "description": "Statistiche deterministiche su completate, arretrate, priorita, progetti e intervalli, senza telemetria esterna necessaria.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+      },
+      "next_gate": "Verificare report gia esistenti; calcolare su task non cestinate; metriche semplici e leggibili con limiti e no analytics privacy-invasive.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://huggingface.co/sayedimran/Ai_Todo_App"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     }
