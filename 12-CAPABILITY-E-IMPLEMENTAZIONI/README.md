@@ -1,6 +1,6 @@
 # Catalogo centrale capability — App Factory
 
-**112 capability individuali, 48 app/idee beneficiarie e 273 associazioni app-capability**, stato catalogo 01/11/2026 (audit iniziale + ricerche incrementali).
+**113 capability individuali, 48 app/idee beneficiarie e 275 associazioni app-capability**, stato catalogo 01/11/2026 (audit iniziale + ricerche incrementali).
 
 - [Classifica globale](CLASSIFICA_PRIORITA.md)
 - [Matrice per app](MATRICE_APP.md)

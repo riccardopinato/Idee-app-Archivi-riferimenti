@@ -75,27 +75,37 @@
       "id": "CAP-0003",
       "title": "Preparazione contestuale appuntamento",
       "domain": "agenda",
-      "score": 77,
-      "priority": "P3",
+      "score": 81,
+      "priority": "P2",
       "scores": {
         "user_value": 4,
         "cross_app_reuse": 3,
         "feasibility": 5,
-        "evidence_strength": 2,
+        "evidence_strength": 4,
         "risk_control": 5
       },
-      "description": "Scheda prima di eventi con checklist note e promemoria collegati",
+      "description": "Editor contestuale per appuntamenti privati con note e checklist leggibili in AgendaItem.note, senza scheduler o storage aggiuntivo.",
       "app_states": {
-        "Agenda-per-Anna": "PROPOSTA",
+        "Agenda-per-Anna": "SOURCE_CONFIRMED",
         "Notes-Ecosistema": "PROPOSTA"
       },
       "source": {
-        "type": "RESEARCH_CANDIDATE",
-        "ref": "https://aivalley.ai/"
+        "type": "SOURCE_CODE_EXACT_SHA",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_preparation.dart"
       },
-      "next_gate": "Riutilizzare reminder e note senza nuovo scheduler",
+      "next_gate": "Collaudo fisico +116 V116-06…V116-10 e V116-12: note, checklist, conflitti, Trash, offline e lingue; CI e APK firmato non equivalgono a DEVICE_PASS.",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "SOURCE_CONFIRMED_DEVICE_PENDING",
+      "research_refs": [
+        "https://aivalley.ai/"
+      ],
+      "evidence": {
+        "code_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "test_ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/test/v107_a2_event_preparation_test.dart",
+        "ci_ref": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41262693723",
+        "physical": "NOT_VERIFIED",
+        "release_candidate": "1.0.0-rc.6+116"
+      }
     },
     {
       "id": "CAP-0004",
@@ -3178,6 +3188,39 @@
         "https://huggingface.co/spaces/abc1181/HermesAgent/blob/main/RELEASE_v0.6.0.md"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0113",
+      "title": "Da appuntamento passato a ricordo privato",
+      "domain": "memorie",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 5,
+        "evidence_strength": 4,
+        "risk_control": 5
+      },
+      "description": "Creare una bozza modificabile di ricordo da un appuntamento privato passato, con conferma, identita deterministica anti-duplicato e rispetto del Cestino.",
+      "app_states": {
+        "Agenda-per-Anna": "SOURCE_CONFIRMED",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "SOURCE_CODE_EXACT_SHA",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_memory_capture.dart"
+      },
+      "next_gate": "Collaudo fisico APK +116 V116-03…V116-05: annulla senza scrivere, anti-duplicato, Trash/restore e privacy; valutare riuso Wonderlog senza duplicare il diario.",
+      "reviewed_at": "2026-11-01",
+      "certification": "SOURCE_CONFIRMED_DEVICE_PENDING",
+      "evidence": {
+        "code_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "test_ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/test/v107_a1_event_to_memory_test.dart",
+        "ci_ref": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41262693723",
+        "physical": "NOT_VERIFIED",
+        "release_candidate": "1.0.0-rc.6+116"
+      }
     }
   ]
 }

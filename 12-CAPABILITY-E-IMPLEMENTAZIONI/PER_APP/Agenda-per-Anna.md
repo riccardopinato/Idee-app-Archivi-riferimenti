@@ -37,8 +37,10 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0010](../REGISTRO_CAPABILITY/CAP-0010.md) | Ricordi Then and Now | P2 | 83 | SOURCE_REPORTED | Usare media canonici e consenso foto |
 | [CAP-0011](../REGISTRO_CAPABILITY/CAP-0011.md) | Life Threads narrativi | P2 | 82 | SOURCE_REPORTED | Non introdurre archivio parallelo |
 | [CAP-0045](../REGISTRO_CAPABILITY/CAP-0045.md) | Meal plan e spesa derivata | P2 | 82 | PROPOSTA | Lista derivata con consenso e separazione proprieta dati |
+| [CAP-0003](../REGISTRO_CAPABILITY/CAP-0003.md) | Preparazione contestuale appuntamento | P2 | 81 | SOURCE_CONFIRMED | Collaudo fisico +116 V116-06…V116-10 e V116-12: note, checklist, conflitti, Trash, offline e lingue; CI e APK firmato non equivalgono a DEVICE_PASS. |
 | [CAP-0019](../REGISTRO_CAPABILITY/CAP-0019.md) | Store media content addressed e GC | P2 | 81 | SOURCE_REPORTED | Non uniformare database privacy separati |
 | [CAP-0069](../REGISTRO_CAPABILITY/CAP-0069.md) | Automated screenshot visual regression | P2 | 81 | PROPOSTA | Baseline screen e variant certi |
+| [CAP-0113](../REGISTRO_CAPABILITY/CAP-0113.md) | Da appuntamento passato a ricordo privato | P2 | 81 | SOURCE_CONFIRMED | Collaudo fisico APK +116 V116-03…V116-05: annulla senza scrivere, anti-duplicato, Trash/restore e privacy; valutare riuso Wonderlog senza duplicare il diario. |
 | [CAP-0051](../REGISTRO_CAPABILITY/CAP-0051.md) | Mappe luoghi ricordi condivisi con ponte | P2 | 80 | SOURCE_REPORTED | Trasporto COPY LINK esplicito e autorizzato |
 | [CAP-0062](../REGISTRO_CAPABILITY/CAP-0062.md) | Best Conditions Engine sensori | P2 | 80 | PROPOSTA | Score sensori non diagnosi e test runtime |
 | [CAP-0063](../REGISTRO_CAPABILITY/CAP-0063.md) | Momenti ideali per focus in calendario | P2 | 80 | PROPOSTA | Consenso e niente spostamento eventi involontario |
@@ -46,7 +48,6 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0082](../REGISTRO_CAPABILITY/CAP-0082.md) | Deterministic UI design artwork | P2 | 79 | PROPOSTA | Non generare asset coperti da diritti |
 | [CAP-0076](../REGISTRO_CAPABILITY/CAP-0076.md) | Web Clip sicuro con provenienza | P3 | 78 | PROPOSTA | Permissions share sheet e URL originale |
 | [CAP-0096](../REGISTRO_CAPABILITY/CAP-0096.md) | Gerarchie task ricorrenze e relazioni alle note | P3 | 78 | PROPOSTA | Audit funzioni task e recurrence gia presenti; non introdurre secondo scheduler o storage; test eccezioni ricorrenza, delete e restore. |
-| [CAP-0003](../REGISTRO_CAPABILITY/CAP-0003.md) | Preparazione contestuale appuntamento | P3 | 77 | PROPOSTA | Riutilizzare reminder e note senza nuovo scheduler |
 | [CAP-0007](../REGISTRO_CAPABILITY/CAP-0007.md) | Scheda workout e storico multisport | P3 | 77 | SOURCE_REPORTED | Non creare doppio diario allenamenti |
 | [CAP-0009](../REGISTRO_CAPABILITY/CAP-0009.md) | Ricordi mappa geolocalizzata | P3 | 77 | SOURCE_REPORTED | Verificare permessi e nessuna condivisione GPS implicita |
 | [CAP-0008](../REGISTRO_CAPABILITY/CAP-0008.md) | Import foto PDF delle schede workout | P3 | 75 | ROADMAP_STORICA | Verificare parser e conservazione file originale |
@@ -58,4 +59,4 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0085](../REGISTRO_CAPABILITY/CAP-0085.md) | Diarizzazione vocale locale per appunti riunioni | P3 | 70 | PROPOSTA | Benchmark sherpa-onnx o modello compatibile su smartphone; opt-in microfono, indicatori recording, segmenti speaker non affidabili senza validazione; non aggiungere modello grande all'APK base. |
 | [CAP-0074](../REGISTRO_CAPABILITY/CAP-0074.md) | Companion voice note organizer | P3 | 67 | PROPOSTA | No duplicare trascrizione vocale offline |
 
-**Totale associazioni:** 53. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 54. Non modificare automaticamente la roadmap del prodotto.

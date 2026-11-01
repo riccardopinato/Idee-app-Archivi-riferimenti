@@ -1,193 +1,224 @@
 {
   "schema_version": 1,
   "updated_at": "2026-11-01",
-  "scope": "Repositories visible to the connected GitHub account. Presence does not mean product, implementation, release or source audit.",
+  "scope": "31 connected-account repository heads observed on 2026-11-01. head_sha is a metadata baseline for future incremental comparisons, NOT proof of source audit or product validation; self repository is pinned to pre-PR main.",
   "repositories": [
     {
       "name": "1000-AI-collection-tools",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": null
+      "head_sha": "3fec0fc008894f364cdef0f18419b5b575c24d55",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "180FlipCharge",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "1d4a9f3492afab2c4486738c466ce2acc38719c0",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Agenda-per-Anna",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Analisi-delle-mie-stelle-github",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "493db7d438f530957ddae03a4fe1777548c5f4f6",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Android-Omni-Cleaner",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "a753baa8ad0b647be747050ac7e2f6d1fde85465",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "App-corpo-umano",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "0a0cdbd2564e2e6db20f6aab9f6c07eba6722556",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "App-Factory-Core",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": null
+      "head_sha": "632a66dce4aa00e8e1700b0a3e4dfc7ea008197c",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "app-fotografia",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "e7538d7dfc484f81f37a8e4363cd56a5b742e804",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "AppLab",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "58cb25070b80673f1e9d12593bceb496b83bc6f0",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Battery_Guard",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "d8cf237ab2df2daf427b87ca057871e3143bccc7",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "btrader",
       "default_branch": "master",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": null
+      "head_sha": "59721c9ca1601f29bfa382e0a3131b9dfc02cc2d",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "CamperBoss",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "cf4202e25bf3bc630f9cfe5e3823219acfba84b4",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Cozy-game-nome-da-scegliere-",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": null
+      "head_sha": "433ffe98cd2f658a2e15b2b6029336b5487e881d",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Design-App",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "546a1c187824a416b5caf3b841c8f143b373aae1",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "desktop-tutorial",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": null
+      "head_sha": "ce1383559996b0e0d447a4208b78431da23ff49b",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "FocuSense",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "bdc8becfff1b1a5f629456deb34170f0d905d8b7",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "FrameLab-Google-AI-Studio",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": null
+      "head_sha": "239995759e2b56f5315a061a169404c591d77f39",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Idee-app-Archivi-riferimenti",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": null
+      "head_sha": "f2f25609fb183758e12d20548887518d0635e8fe",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "In-Cucina-con-gli-Anime",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "478f6db6d6cdcfe9adcbddacfe834cb7fbc345e7",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Neon-arcade-runner",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": null
+      "head_sha": "ecb79f6fc2ed24513cc04dab5a44ca4606b5ab59",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Notes-Ecosistema",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Notification-Control",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "664cf8c7eaaa8843711ddc99b62b547a1997fcb9",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "PDF-Unifier",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "3aacb3e2ac4822db4601fe5c217c016cecc6cbf4",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Phone-Guard",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "ba377aa0fadbe2d7e5ec603f5abd4b69d411ed3c",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Pocket-Guard",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "b7b1c74de66e047c32083365b44561e42237b4fc",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Send-to-pc",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "bd271cb96b565e4b937f0e7cfe14058759f830b3",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Tabletop-Motion-Alarm",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "9e67bcbd84e8add7d183349644d3f6f6bbe9ffe0",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "TasteAI",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "99e93784db403c9da65c8753c6bbcc802d01180e",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "TrailPath",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "3f44ab37c0881e4315033797c451cec723e23cd2",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "Wonderlog",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "5e07317571df85fbda770583cc3d56cb3aa85040",
+      "head_observed_at": "2026-11-01"
     },
     {
       "name": "World-Days",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": null
+      "head_sha": "622e5c2f00c08b0905207c6765c9b51e199e706f",
+      "head_observed_at": "2026-11-01"
     }
   ]
 }
