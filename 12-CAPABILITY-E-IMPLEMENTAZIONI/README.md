@@ -1,6 +1,6 @@
 # Catalogo centrale capability — App Factory
 
-**82 capability individuali, 39 app/idee beneficiarie e 212 associazioni app-capability**, audit iniziale 01/11/2026.
+**101 capability individuali, 48 app/idee beneficiarie e 257 associazioni app-capability**, stato catalogo 01/11/2026 (audit iniziale + ricerche incrementali).
 
 - [Classifica globale](CLASSIFICA_PRIORITA.md)
 - [Matrice per app](MATRICE_APP.md)
@@ -10,6 +10,7 @@
 - [JSON canonico](REGISTRO_CAPABILITY.json)
 - [Audit fonti e copertura](AUDIT_TRASVERSALE_2026-11-01.md)
 - [Ricerca r/BestGitHubRepos 01/11](RICERCA_REDDIT_BESTGITHUBREPOS_2026-11-01.md)
+- [Hugging Face «to do»: 12 proposte Notes/Anna 01/11](RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md)
 - [Automazione incrementale](AUTOMAZIONE_E_REGOLE.md)
 
 ## Regole

@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Hugging Face «to do» per Notes-Ecosistema / Anna's Diary
+- Archiviate 12 proposte nella ricerca dedicata, con punteggi originali 0–10, fonti verificate vs link non probanti, licenze e impatto sull'APK.
+- Aggiunte 10 capability uniche CAP-0092…CAP-0101; collegate e riusate CAP-0017/0018/0028/0029/0031/0032/0033/0055/0075 senza duplicarne la responsabilita.
+- Registro ora 101 CAP (16 P1, 50 P2, 35 P3), 48 app/progetti, 257 associazioni; aggiornate viste generate, Inbox e indici.
+- Tutte le nuove feature sono PROPOSTA (non IN_ROADMAP, non CODE/CI/DEVICE); nessun code/dataset OSS copiato, nessuna modifica ai repository delle app.
+- Fonti: https://huggingface.co/search/full-text?q=to+do e scheda locale di ricerca.
+
+
 ## 2026-11-01 — Ricerca r/BestGitHubRepos e aggiornamento capability
 - Esaminati post indicizzati settembre-ottobre 2026 e README/metadati GitHub di 11 donor, con commit e licenze snapshot; pagina listing Reddit non accessibile, audit dichiaratamente non esaustivo.
 - Aggiornato il registro da 82 a 91 capability (nuove CAP-0083..CAP-0091), 48 app/progetti collegati, 243 associazioni, punteggi P1=15, P2=46, P3=30.

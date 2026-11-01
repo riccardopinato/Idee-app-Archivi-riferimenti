@@ -4,7 +4,7 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 
 | Stato | Associamenti app-capability | Interpretazione |
 | --- | --- | --- |
-| PROPOSTA | 140 | Idea non approvata / nessun codice verificato qui |
+| PROPOSTA | 154 | Idea non approvata / nessun codice verificato qui |
 | ROADMAP_STORICA | 16 | Indicata in roadmap o decisione storica; richiede verifica live |
 | SOURCE_REPORTED | 85 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
 | DONOR_REPORTED | 2 | Repo donor documentato; riuso non ancora validato |

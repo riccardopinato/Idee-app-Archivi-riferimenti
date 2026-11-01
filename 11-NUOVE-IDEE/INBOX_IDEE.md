@@ -30,3 +30,24 @@ Prima di assegnare nuovi ID controllare i [cataloghi esistenti](../01-PORTAFOGLI
 | **DeskPilot** | Android desktop workspace | **BASSA PRIORITA / BLOCCO OEM** | CAP-0088, Dextop GPL e HyperOS non supportato; non sovrapporre a EdgeDock/App Profiles |
 
 Le idee restano in 11; i singoli comportamenti sono in 12 con ID CAP. Nessuna apertura app repo o promozione al portafoglio senza approvazione distinta.
+
+## Hugging Face «to do» — 12 proposte funzionali, 01/11/2026 (NON nuove app)
+
+Tutte **PROPOSTA**; destinazione principale Notes-Ecosistema, subset essenziale Anna's Diary. Scheda completa con punteggi, fonti, licensing e gate: [RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md).
+
+| # | Idea conservata | Stato |
+| --- | --- | --- |
+| 1 | **01 Smart Task Capture** — CAP-0092 | PROPOSTA / non in roadmap |
+| 2 | **02 Note → Checklist** — CAP-0093 | PROPOSTA / non in roadmap |
+| 3 | **03 Sticky Kanban** — CAP-0094 | PROPOSTA / non in roadmap |
+| 4 | **04 Voice → Actions** — CAP-0031/0092/0095 | PROPOSTA / non in roadmap |
+| 5 | **05 Meeting Intelligence** — CAP-0095 | PROPOSTA / non in roadmap |
+| 6 | **06 Task collegate/ricorrenti** — CAP-0096 | PROPOSTA / non in roadmap |
+| 7 | **07 Project Memory** — CAP-0097 | PROPOSTA / non in roadmap |
+| 8 | **08 Mind Map** — CAP-0098 | PROPOSTA / non in roadmap |
+| 9 | **09 Planner studio** — CAP-0099 | PROPOSTA / non in roadmap |
+| 10 | **10 Kanban collaborativa** — CAP-0100 | PROPOSTA / non in roadmap |
+| 11 | **11 Productivity Dashboard** — CAP-0101 | PROPOSTA / non in roadmap |
+| 12 | **12 Task Recovery** — CAP-0017/0018/0075 | PROPOSTA / non in roadmap |
+
+Nessun progetto standalone o migrazione AI approvato; i CAP nuovi sono CAP-0092…CAP-0101. I CAP esistenti restano canonici per backup, lifecycle, voce e ricerca.
