@@ -1,19 +1,8 @@
-# Specifiche candidate — CAP-0114
+# CAP-0114 — specifiche sorgente vs implementazione disponibile
 
-## Scopo
+- Il donor Redact descrive classificazione PII multilingue (nomi, indirizzi, email, IBAN ecc.), runtime browser/Android con componente modello ~24.5MB e licenza propria. La demo non certifica una pipeline PDF senza dati residui.
+- Il nostro codice originale `PrivacyPreview.detect` copre **soltanto email sintattiche e IBAN con checksum MOD 97**. Non riconosce nomi, indirizzi, telefono, targhe, metadata, immagini, PDF testo nascosto, OCR o record secondari.
+- `mask(text, selected)` verifica corrispondenza originale e offset, restituisce una **nuova stringa** senza mutare l'originale, non esporta PDF e non ha selezione automatica di tutti i dati.
+- Un prodotto di redazione deve fallire chiuso quando non puo garantire l'assenza di dati recuperabili: per PDF serve riscrittura e verifica del file esportato, non un rettangolo sopra il testo.
 
-Privacy Shield: Individua PII nel testo di note/PDF e propone oscuramenti in una copia esportata, conservando l'originale e la scelta per campo.
-
-## Requisiti iniziali proposti (non specifiche donor verificate)
-
-1. Selezione esplicita dell'input e identificazione della fonte.
-2. Elaborazione limitata a **Redazione PII e privacy copy di note e PDF** e restituzione di un risultato chiaro o errore esplicito.
-3. Preview/edit prima di ogni mutazione; nessun download, upload, sincronizzazione o cancellazione implicita.
-4. Riutilizzo dei dati canonici, import/export, lifecycle e backup dell'app destinataria.
-5. Offline/failure, localizzazione, accessibilità e logica permessi trattati per-app.
-
-## Gate particolare
-
-Non certifica copertura IBAN/credenziali o privacy su tutte le lingue; regex locali e NER opzionale, redaction irreversibile sul file esportato. Verificare architettura e licensing nel Product Bible prima di integrare.
-
-**DA COMPLETARE:** interfacce sorgente e API reali, forme dati e file target dopo audit a SHA del donor e dell'app.
+**Gate:** privacy specialist review, licenze/termini del donor, performance e test sulle categorie PII italiane, verificate sull'APK reale e audit metadata/export.

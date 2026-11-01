@@ -1,30 +1,12 @@
-# CAP-0114 — Redazione PII e privacy copy di note e PDF
+# CAP-0114 — Privacy Shield, nucleo limitato originale
 
-**KIT LIVELLO 1: RIFERIMENTI_ACQUISITI.** Non implica codice estratto o testato.
+**Stato: CONTRACT_PROTOTYPE**, riconoscimento parziale email + IBAN validati, non completo rilevamento PII e **non una soluzione sicura per anonimizzare PDF**.
 
-## Funzionalità
+- [Dart source](lib/privacy_preview.dart): individuazione e anteprima mascheratura di stringhe in copia, validazione modulo-97 IBAN, selezione esplicita e rifiuto posizioni non valide.
+- [Test Dart](test/privacy_preview_test.dart): checksum/negativi, nessuna mutazione del testo sorgente, selezione, duplicati e limiti input.
+- [Modello di riferimento](https://huggingface.co/desert-ant-labs/redact) indica SDK Kotlin/Android e capacità più ampie; `redact-demo` usa una licenza `other` e [termini commerciali dedicati](https://license.desertant.com/1.0): **nessun codice/modello donor importato**.
+- Notes `0.56.3+74@3fd9b0d`: `attachments.dart` e `documents.dart` consentono di preparare un'anteprima di testo, ma esportazione realmente redatta e pulizia metadata/immagini non sono implementate.
 
-Privacy Shield: Individua PII nel testo di note/PDF e propone oscuramenti in una copia esportata, conservando l'originale e la scelta per campo.
+**Facilità ricalibrata:** Notes 55%, Anna 45%, PDF-Unifier 40%. Non usare il codice come privacy guarantee.
 
-## App e stato corrente
-
-- Notes-Ecosistema: `PROPOSTA`
-- Agenda-per-Anna: `PROPOSTA`
-- PDF-Unifier: `PROPOSTA`
-
-## Documenti tecnici
-
-- [Specifiche candidate](SPECIFICHE.md)
-- [Codice di riferimento e fonti](CODICE_RIFERIMENTO.txt)
-- [Piano integrazione Flutter](INTEGRAZIONE_FLUTTER.md)
-- [Licenze e dipendenze](LICENZE_E_DIPENDENZE.md)
-- [Test e validazione](TEST_E_VALIDAZIONE.md)
-
-## Riferimenti
-
-- [Sorgente 1](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md)
-- [Sorgente 2](https://huggingface.co/spaces/desert-ant-labs/redact-demo)
-
-[Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0114.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
-
-**Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+[Specifiche](SPECIFICHE.md) · [Codice](CODICE_RIFERIMENTO.txt) · [Piano Flutter](INTEGRAZIONE_FLUTTER.md) · [Licenze](LICENZE_E_DIPENDENZE.md) · [Test](TEST_E_VALIDAZIONE.md)

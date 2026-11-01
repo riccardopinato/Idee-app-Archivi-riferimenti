@@ -1,13 +1,11 @@
-CAP: CAP-0114
-CAPABILITY: Redazione PII e privacy copy di note e PDF
-FONTE: HUGGINGFACE_IDEA_RESEARCH
-CODICE_ESTRATTO: NO
-CODICE_PRONTO_DA_COPIARE: NO
-
-RIFERIMENTI:
-1. https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md
-2. https://huggingface.co/spaces/desert-ant-labs/redact-demo
-
-Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
-Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
-NON inserire qui codice inventato o snippet senza provenance.
+CAP-0114
+ORIGINAL CODE: lib/privacy_preview.dart
+TESTS: test/privacy_preview_test.dart
+ORIGIN: NEW_IMPLEMENTATION / limited deterministic parser
+DONOR: https://huggingface.co/desert-ant-labs/redact
+DONOR DEMO: https://huggingface.co/spaces/desert-ant-labs/redact-demo
+DONOR LICENSE: custom / other; terms https://license.desertant.com/1.0
+DONOR CODE COPIED: NO
+DONOR MODEL COPIED: NO
+PRODUCTION REDACTION: NOT READY (only email and checksum-validated IBAN text preview)
+NOT ANONYMIZED PDF / NOT COMPLETE PII

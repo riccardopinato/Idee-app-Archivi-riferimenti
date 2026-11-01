@@ -1,14 +1,8 @@
-# Riuso, licenze e dipendenze — CAP-0114
+# CAP-0114 — licensing and risk
 
-## Fonti
-
-- [Sorgente 1](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md)
-- [Sorgente 2](https://huggingface.co/spaces/desert-ant-labs/redact-demo)
-
-- Tipo fonte catalogo: HUGGINGFACE_IDEA_RESEARCH.
-- Commit donor e path autorizzato: **NON VERIFICATI NEL KIT**.
-- Licenza dei singoli file, dipendenze, modelli e dataset: **DA VERIFICARE**.
-- Riuso commerciale approvato: **NO**.
-- Codice, modello e dataset copiati: **NESSUNO**.
-
-Prima di usare una fonte: verificare SHA, licenza SPDX, attribuzioni, limitazioni commerciali, costi/rate limit, privacy, disponibilità geografica e manutenzione. Classificare donor di codice, pattern, riferimento UI oppure respinto. Licenza incompatibile o mancante implica nessuna copia del codice.
+- Research: https://huggingface.co/spaces/desert-ant-labs/redact-demo/blob/main/README.md (Space license `other`).
+- Model: https://huggingface.co/desert-ant-labs/redact ; native Kotlin / Android SDK stated.
+- Legal terms: https://license.desertant.com/1.0 (separate commercial-use conditions; require assessment).
+- SDK/model **not included, copied, sublicensed or tested in this repo**.
+- Dart source in this kit is entirely original and limited to email and checksum-valid IBAN patterns; no additional package dependency.
+- Do not claim full GDPR compliance, complete PII detection or secure PDF sanitization.

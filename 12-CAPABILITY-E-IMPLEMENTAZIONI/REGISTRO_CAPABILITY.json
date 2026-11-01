@@ -3791,9 +3791,18 @@
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
-        "Notes-Ecosistema": 80,
-        "Agenda-per-Anna": 80,
-        "PDF-Unifier": 75
+        "Notes-Ecosistema": 55,
+        "Agenda-per-Anna": 45,
+        "PDF-Unifier": 40
+      },
+      "kit_research": {
+        "status": "CONTRACT_PROTOTYPE: email+validated IBAN text, not full PII/PDF redaction",
+        "kind": "original_dart_contract",
+        "target_repo": "riccardopinato/Notes-Ecosistema",
+        "target_sha": "3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c",
+        "verified_scope": "source interfaces reviewed, standalone Dart tests submitted to exact-head CI; no app runtime proof",
+        "assessed_at": "2026-11-01",
+        "notes": "Updated ease estimates are conservative editorial assessments, not empirical compatibility percentages."
       }
     },
     {
@@ -4484,9 +4493,18 @@
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
-        "Notes-Ecosistema": 95,
-        "Agenda-per-Anna": 85,
-        "PDF-Unifier": 95
+        "Notes-Ecosistema": 70,
+        "Agenda-per-Anna": 55,
+        "PDF-Unifier": 65
+      },
+      "kit_research": {
+        "status": "CONTRACT_PROTOTYPE: pre/postprocessing Dart only, no ONNX model execution",
+        "kind": "original_dart_contract",
+        "target_repo": "riccardopinato/Notes-Ecosistema",
+        "target_sha": "3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c",
+        "verified_scope": "source interfaces reviewed, standalone Dart tests submitted to exact-head CI; no app runtime proof",
+        "assessed_at": "2026-11-01",
+        "notes": "Updated ease estimates are conservative editorial assessments, not empirical compatibility percentages."
       }
     },
     {
@@ -4622,7 +4640,16 @@
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
-        "Notes-Ecosistema": 85
+        "Notes-Ecosistema": 65
+      },
+      "kit_research": {
+        "status": "CONTRACT_PROTOTYPE: original bounded audio/stroke index, not wired into Notes",
+        "kind": "original_dart_contract",
+        "target_repo": "riccardopinato/Notes-Ecosistema",
+        "target_sha": "3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c",
+        "verified_scope": "source interfaces reviewed, standalone Dart tests submitted to exact-head CI; no app runtime proof",
+        "assessed_at": "2026-11-01",
+        "notes": "Updated ease estimates are conservative editorial assessments, not empirical compatibility percentages."
       }
     },
     {

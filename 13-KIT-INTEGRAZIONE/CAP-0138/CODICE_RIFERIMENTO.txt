@@ -1,13 +1,10 @@
-CAP: CAP-0138
-CAPABILITY: Ink sincronizzato al tempo di una registrazione
-FONTE: HUGGINGFACE_IDEA_RESEARCH
-CODICE_ESTRATTO: NO
-CODICE_PRONTO_DA_COPIARE: NO
-
-RIFERIMENTI:
-1. https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md
-2. https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
-
-Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
-Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
-NON inserire qui codice inventato o snippet senza provenance.
+CAP-0138
+SOURCE APP: https://github.com/riccardopinato/Notes-Ecosistema/tree/3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c/flutter_app/lib/src
+DONOR CONCEPT: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize (Apache-2.0 model 0.9B; not used)
+ORIGIN: NEW_IMPLEMENTATION, no external copied source
+ORIGINAL CODE: lib/audio_ink_index.dart
+TESTS: test/audio_ink_index_test.dart
+SCOPE: bounded recordingId/strokeId/time index and stable JSON codec only
+AUDIO RECORDING: EXISTING Notes editor code, NOT IMPLEMENTED HERE
+NOTE/WHITEBOARD PERSISTENCE: NOT INTEGRATED
+DEVICE TEST: NOT VERIFIED

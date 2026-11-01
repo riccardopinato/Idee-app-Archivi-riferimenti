@@ -1,14 +1,13 @@
-# Piano di verifica — CAP-0134
+# CAP-0134 — test plan and evidence
 
-- Input ordinario, vuoto, grande, corrotto, duplicato; risultato specifico: **Triage e categorizzazione documenti importati**.
-- Nessuna mutazione senza consenso; annulla, ripristino, rollback, dati e media originali preservati.
-- Offline, autorizzazioni negate, dipendenze/modello assenti, errori runtime e riavvio.
-- Traduzioni, leggibilità, accessibilità, font scaling, compatibilità con app esistente.
-- Prestazioni, RAM, footprint APK, storage e batteria quando pertinenti.
-- QA: `flutter analyze`, test, build, CI exact-head, smoke e dispositivo fisico dove richiesto.
+## Automated standalone contract tests
 
-## Gate specifico
+- [test/document_triage_test.dart](test/document_triage_test.dart) (Dart SDK only).
+- Cases: 3-channel normalization, center crop, input shape, label order, stable softmax, unknown/low confidence, NaN, out-of-range threshold.
+- [Workflow](../../.github/workflows/kit-dart-compat.yml) must pass exact PR head before a merge.
 
-DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti italiani. Verificare architettura e licensing nel Product Bible prima di integrare.
+## NOT tested
 
-**Evidenze ancora da produrre:** SHA target, tests PASS, runtime/device, licenze donor. Questa checklist NON certifica alcun test.
+- ONNX graph load or binary checksum of actual downloaded model; PDF and camera decoding; GPU/CPU throughput; device RAM and APK size; compatibility with Notes build; Italian-language invoices; model privacy/accessibility; no Android/iOS runtime or real-device QA.
+
+**Status:** Dart contract test result is only whatever the linked CI proves; donor-level claimed 98.35% is not our measurement. Integration state in app: `PROPOSTA`.

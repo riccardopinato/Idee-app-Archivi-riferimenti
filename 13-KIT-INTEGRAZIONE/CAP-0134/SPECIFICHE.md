@@ -1,19 +1,29 @@
-# Specifiche candidate — CAP-0134
+# CAP-0134 — specifiche estratte: DocRex e contratto candidato
 
-## Scopo
+| Voce | Dato verificato sul model card |
+|---|---|
+| Model | MobileNetV3-Small, ONNX FP32 opset 18 |
+|---|---|
+| Input | RGB, resize 256×256, center crop 224×224, NCHW float32 |
+|---|---|
+| Mean | 0.485, 0.456, 0.406 |
+|---|---|
+| Std | 0.229, 0.224, 0.225 |
+|---|---|
+| Output | 3 logits, softmax locale |
+|---|---|
+| Label order | bank_statement, invoice, other |
+|---|---|
+| Modello FP32 | 6.084.524 byte, SHA pubblicato nel README |
+|---|---|
+| Quantizzato INT8 | Experimental, non raccomandato |
 
-Document Auto-Sorter: Classifica documenti importati e propone destinazione senza spostarli automaticamente.
+**Non dedurre dal model card:** supporto PDF nativo, estrazione testo, classificazione ricevute separata, altre lingue o performance su fatture italiane. La soglia 0,85 e il margin 0,10 del codice originale sono **decisioni di sicurezza del prototipo**, non parametri certificati del donor.
 
-## Requisiti iniziali proposti (non specifiche donor verificate)
+## API proposta
 
-1. Selezione esplicita dell'input e identificazione della fonte.
-2. Elaborazione limitata a **Triage e categorizzazione documenti importati** e restituzione di un risultato chiaro o errore esplicito.
-3. Preview/edit prima di ogni mutazione; nessun download, upload, sincronizzazione o cancellazione implicita.
-4. Riutilizzo dei dati canonici, import/export, lifecycle e backup dell'app destinataria.
-5. Offline/failure, localizzazione, accessibilità e logica permessi trattati per-app.
+`DocRexContract.normalizeCenterCrop(Uint8List rgb256) -> Float32List` e `DocRexContract.evaluate(List<double> logits) -> TriageDecision` (suggerimento non esecutivo).
 
-## Gate particolare
+Il renderer dell'app ospite deve generare RGB 256x256 tramite un adattatore Flutter; il runtime ONNX (plugin) e un'eventuale distribuzione on-demand del modello sono da valutare con audit Android/iOS.
 
-DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti italiani. Verificare architettura e licensing nel Product Bible prima di integrare.
-
-**DA COMPLETARE:** interfacce sorgente e API reali, forme dati e file target dopo audit a SHA del donor e dell'app.
+**Accettazione prodotto:** file originali immutati, preview manuale, fallback `other`/bassa confidenza senza classificazione forzata, niente rete implicita, report del benchmark italiano e no secondi datastore.
