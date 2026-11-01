@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Audit completo delle 61 capability Anna's Diary
+- Copertura 61/61 associazioni del registro Anna allo SHA `Agenda-per-Anna@88efdfa9` con percorso sorgente per CAP e scheda di compatibilità individuale; totale 62 documenti di audit.
+- Classificazione: 26 sorgenti coerenti, 21 riusi parziali, 2 nuove candidate, 8 fuori scope, 2 pianificate, 2 infrastrutturali. Presenza di file ≠ test runtime.
+- Ricalibrate 29 stime editoriali di facilità per Anna, senza modificare Score, evidenza app, roadmap, Product Bible o codice Flutter.
+- Tabella Anna arricchita con colonne Esito sorgente e Analisi compatibilita; la CI valida catalogo e derivazioni. [Rapporto](../13-KIT-INTEGRAZIONE/ANNA_FULL_AUDIT_61_2026-11-01.md).
+- Nessun APK, inferenza modello, test fisico o prova di release inventati. Tutte le 140 CAP rimangono identificate univocamente.
+
+
 ## 2026-11-01 — Audit Anna's Diary e 3 kit con codice Dart preparato
 - Verificata in lettura `Agenda-per-Anna@88efdfa9`, Product Bible, roadmap e API `CalendarFreeSlot`, `UnifiedAgendaEntry`, `AgendaItem`, `WeekData`, `DayJournal`, `MediaAssetStore`.
 - Preparati contratti puri originali e test per CAP-0102 rescheduling preview (nessun writer), CAP-0111 weekly review (soli task privati, date completamento non inventate), CAP-0114 privacy text gate (Vault/Noi/ciclo/media esclusi).

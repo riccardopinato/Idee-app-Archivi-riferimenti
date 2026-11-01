@@ -2,6 +2,10 @@
 
 **Archivio organizzato** per idee app, classifiche, descrizioni cliente, suite, micro-utility, fonti dati, librerie, repository, commercializzazione e aggiornamenti. Il repository non contiene il codice delle app.
 
+## Audit Anna's Diary: 61 capability su 61
+
+[Visualizza analisi completa, fonti sorgenti e facilità per Anna](13-KIT-INTEGRAZIONE/ANNA_FULL_AUDIT_61_2026-11-01.md). Per ciascuna CAP: scheda, stato di compatibilità, codice ispezionato e gate di integrazione; nessuna modifica al codice app.
+
 ## Libreria kit tecnici
 
 - [140 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.

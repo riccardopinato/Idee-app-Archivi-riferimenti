@@ -135,14 +135,30 @@ def main():
         )
     for app in apps:
         items = [rec for rec in rank if app in rec["app_states"]]
+        headers = ["ID","Capability","Priorita","Score","Facilita integrazione (%)",
+                   "Descrizione breve","Kit tecnico","Stato nell'app","Prossimo gate"]
+        rows = []
+        for rec in items:
+            row = [f"[{rec['id']}](../REGISTRO_CAPABILITY/{rec['id']}.md)", rec["title"],
+                   rec["priority"], rec["score"], f"{rec['integration_ease_percent'][app]}%",
+                   brief(rec["description"]),
+                   f"[Apri](../../13-KIT-INTEGRAZIONE/{rec['id']}/README.md)",
+                   rec["app_states"][app], rec["next_gate"]]
+            if app == "Agenda-per-Anna":
+                audit = rec.get("anna_full_source_audit")
+                if not isinstance(audit, dict) or not audit.get("classification") or not audit.get("source_paths"):
+                    raise SystemExit("Missing Anna source audit for " + rec["id"])
+                if audit.get("target_sha") != "88efdfa9a688f35585cf2760d131f7a6b0b9deb2":
+                    raise SystemExit("Anna audit wrong baseline " + rec["id"])
+                row.extend([audit["classification"],
+                            f"[Verifica](../../13-KIT-INTEGRAZIONE/{rec['id']}/ANNA_SOURCE_COMPATIBILITA.md)"])
+            rows.append(row)
+        if app == "Agenda-per-Anna":
+            headers.extend(["Esito sorgente Anna","Analisi compatibilita"])
         versions[f"PER_APP/{app}.md"] = (
             f"# {app} — capability e priorita\n\n"
             "Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.\n\n"
-            + md_table(["ID","Capability","Priorita","Score","Facilita integrazione (%)","Descrizione breve","Kit tecnico","Stato nell'app","Prossimo gate"], [
-                [f"[{rec['id']}](../REGISTRO_CAPABILITY/{rec['id']}.md)", rec["title"], rec["priority"],
-                 rec["score"], f"{rec['integration_ease_percent'][app]}%", brief(rec["description"]),
-                 f"[Apri](../../13-KIT-INTEGRAZIONE/{rec['id']}/README.md)",
-                 rec["app_states"][app], rec["next_gate"]] for rec in items])
+            + md_table(headers, rows)
             + f"\n**Totale associazioni:** {len(items)}. Non modificare automaticamente la roadmap del prodotto.\n"
         )
     problems=[]

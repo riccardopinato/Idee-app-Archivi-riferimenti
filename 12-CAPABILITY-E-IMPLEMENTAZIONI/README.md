@@ -30,6 +30,10 @@
 
 **Licenze**: ogni API/repo/modello esterno richiede licenza ToS costi footprint privacy e commercial-use gate al momento dell'integrazione; solo ispirazione se non copiable. Questo archivio non autorizza alcuna nuova AI o backend.
 
+## Audit totale Anna's Diary (61/61)
+
+[Rapporto di compatibilita sorgente](../13-KIT-INTEGRAZIONE/ANNA_FULL_AUDIT_61_2026-11-01.md) con schede per ogni CAP. Nella [tabella Anna](PER_APP/Agenda-per-Anna.md) sono aggiunti Esito sorgente e Analisi compatibilita, oltre alla facilità percentuale, senza promuovere alcuna capability a runtime certificato.
+
 ## Colonne per-app
 
 Ogni tabella delle app presenta Score, **Facilita integrazione (%)**, **Descrizione breve**, **Kit tecnico** e l'evidence ladder. Le percentuali sono stime preliminari per singola app e si aggiornano nel JSON. I kit sono al livello 1, senza codice donor copiato o licenza verificata nel kit.

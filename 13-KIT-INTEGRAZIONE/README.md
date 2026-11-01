@@ -12,6 +12,10 @@ Ogni kit contiene: `README.md`, `SPECIFICHE.md`, `CODICE_RIFERIMENTO.txt`, `INTE
 
 [Audit sorgente Anna e codice/test CAP-0102, CAP-0111, CAP-0114](ANNA_COMPATIBILITA_2026-11-01.md). Le stime per Anna sono state ricalibrate e i contratti rimangono in sola lettura.
 
+## Audit completo Anna’s Diary — 61 capability
+
+[Rapporto complessivo e matrice 61/61](ANNA_FULL_AUDIT_61_2026-11-01.md). Le 61 schede dedicate `CAP-NNNN/ANNA_SOURCE_COMPATIBILITA.md` documentano codice esaminato, stima di integrazione e gate. Non sono 61 integrazioni nell'app.
+
 ## Livelli di preparazione
 
 1. **RIFERIMENTI_ACQUISITI:** link, necessità, specifiche candidate e gate. Tutti i kit attualmente partono da qui.

@@ -47,6 +47,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 95,
         "FocuSense": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/calendar_free_slots.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0001/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -77,6 +90,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 95,
         "Notes-Ecosistema": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/natural_event_parser.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0002/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -117,6 +143,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 95,
         "Notes-Ecosistema": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/event_preparation.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0003/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -147,6 +186,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 85,
         "Notes-Ecosistema": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/external_calendar_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0004/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -175,8 +227,21 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
-        "Agenda-per-Anna": 85,
+        "Agenda-per-Anna": 75,
         "Notes-Ecosistema": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/android_calendar_sync.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0005/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -207,6 +272,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 95,
         "TasteAI": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/shopping_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0006/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -237,6 +315,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 85,
         "FocuSense": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/workout_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0007/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -265,8 +356,21 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
-        "Agenda-per-Anna": 70,
+        "Agenda-per-Anna": 55,
         "PDF-Unifier": 85
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/photo_ocr_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0008/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -297,6 +401,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 85,
         "Wonderlog": 85
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/diary/diary_memories.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0009/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -327,6 +444,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 95,
         "Wonderlog": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/search_connections_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0010/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -357,6 +487,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 85,
         "Wonderlog": 85
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/memory_collections_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0011/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -387,6 +530,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 85,
         "Wonderlog": 85
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/year_review_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0012/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -420,6 +576,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 95,
         "Notes-Ecosistema": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/memory_collections_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0013/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -448,8 +617,21 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
-        "Agenda-per-Anna": 85,
+        "Agenda-per-Anna": 80,
         "Wonderlog": 85
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/event_memory_capture.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0014/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -480,6 +662,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 95,
         "Notes-Ecosistema": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/approved_search_policy.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0015/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -510,6 +705,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 90,
         "Notes-Ecosistema": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/organization_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0016/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -549,6 +757,19 @@
         "Notes-Ecosistema": 80,
         "Wonderlog": 80,
         "CamperBoss": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/lifecycle_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0017/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -585,6 +806,19 @@
         "Agenda-per-Anna": 65,
         "Notes-Ecosistema": 65,
         "CamperBoss": 65
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/backup_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0018/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -620,6 +854,19 @@
         "Agenda-per-Anna": 65,
         "Notes-Ecosistema": 65,
         "CamperBoss": 65
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/media_asset_store.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0019/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -654,6 +901,19 @@
         "Wonderlog": 60,
         "Notes-Ecosistema": 60,
         "TrailPath": 60
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/ecosystem/ecosystem_contract.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0020/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -684,6 +944,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 75,
         "Wonderlog": 75
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/shared_invite_qr.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0021/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -721,6 +994,19 @@
         "World-Days": 80,
         "app-fotografia": 80,
         "In-Cucina-con-gli-Anime": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/localization.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0022/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -753,6 +1039,19 @@
         "Design-App": 80,
         "Agenda-per-Anna": 80,
         "Wonderlog": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/ios_journal_design.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0023/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -785,6 +1084,19 @@
         "Design-App": 80,
         "Agenda-per-Anna": 80,
         "World-Days": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/motion_v108.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0024/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -815,8 +1127,21 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
         "Design-App": 80,
-        "Agenda-per-Anna": 80,
+        "Agenda-per-Anna": 75,
         "app-fotografia": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/app_shell.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0025/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -884,6 +1209,19 @@
         "Notes-Ecosistema": 85,
         "Agenda-per-Anna": 80,
         "Wonderlog": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/share_capture_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0027/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -1016,9 +1354,22 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
       ],
       "integration_ease_percent": {
-        "Agenda-per-Anna": 65,
+        "Agenda-per-Anna": 35,
         "Notes-Ecosistema": 65,
         "Wonderlog": 65
+      },
+      "anna_full_source_audit": {
+        "classification": "NEW_CANDIDATE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/voice_diary_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0031/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -1056,7 +1407,20 @@
       "integration_ease_percent": {
         "Notes-Ecosistema": 55,
         "TasteAI": 50,
-        "Agenda-per-Anna": 50
+        "Agenda-per-Anna": 40
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/search_connections_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0032/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -1162,6 +1526,19 @@
         "Notes-Ecosistema": 80,
         "Agenda-per-Anna": 80,
         "BeerClass-AI": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/photo_ocr_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0035/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -1487,7 +1864,20 @@
       "integration_ease_percent": {
         "TasteAI": 80,
         "MealMate": 80,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 45
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/shopping_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0045/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -1672,8 +2062,21 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
         "Wonderlog": 80,
-        "Agenda-per-Anna": 80,
+        "Agenda-per-Anna": 65,
         "TrailPath": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/search_connections_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0051/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -1809,6 +2212,19 @@
         "Agenda-per-Anna": 85,
         "World-Days": 80,
         "Notification-Control": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/notification_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0055/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2019,8 +2435,21 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
         "FocuSense": 85,
-        "Agenda-per-Anna": 80,
+        "Agenda-per-Anna": 15,
         "SleepMax-Coach": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "OUT_OF_SCOPE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "pubspec.yaml"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0062/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2050,7 +2479,20 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
         "FocuSense": 90,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 40
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/calendar_free_slots.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0063/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2080,7 +2522,20 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
         "SleepMax-Coach": 80,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 40
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/daily_rituals.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0064/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2177,6 +2632,19 @@
         "Agenda-per-Anna": 80,
         "AppLab": 80,
         "Battery_Guard": 80
+      },
+      "anna_full_source_audit": {
+        "classification": "INFRA_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          ".github/workflows/sideload-arm64.yml"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0067/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2209,6 +2677,19 @@
         "AppLab": 65,
         "Agenda-per-Anna": 65,
         "CamperBoss": 65
+      },
+      "anna_full_source_audit": {
+        "classification": "INFRA_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          ".github/workflows/applab.yml"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0068/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2241,6 +2722,19 @@
         "Design-App": 65,
         "AppLab": 65,
         "Agenda-per-Anna": 65
+      },
+      "anna_full_source_audit": {
+        "classification": "ROADMAP_PLANNED",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/ios_journal_design.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0069/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2333,6 +2827,19 @@
         "Agenda-per-Anna": 60,
         "TasteAI": 60,
         "In-Cucina-con-gli-Anime": 60
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/premium_entitlement_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0072/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2394,7 +2901,20 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
         "Notes-Ecosistema": 65,
-        "Agenda-per-Anna": 65
+        "Agenda-per-Anna": 55
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/voice_diary_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0074/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2429,8 +2949,21 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
       ],
       "integration_ease_percent": {
-        "Agenda-per-Anna": 65,
+        "Agenda-per-Anna": 55,
         "Notes-Ecosistema": 65
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/backup_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0075/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2460,7 +2993,20 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
         "Notes-Ecosistema": 85,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 55
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/share_capture_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0076/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2498,7 +3044,20 @@
         "Phone-Guard": 80,
         "TrailPath": 80,
         "Battery_Guard": 80,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 70
+      },
+      "anna_full_source_audit": {
+        "classification": "ROADMAP_PLANNED",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/notification_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0077/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2659,7 +3218,20 @@
       "integration_ease_percent": {
         "World-Days": 95,
         "app-fotografia": 95,
-        "Agenda-per-Anna": 95
+        "Agenda-per-Anna": 55
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/ios_journal_design.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0082/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -2771,8 +3343,21 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 50,
-        "Agenda-per-Anna": 50,
+        "Agenda-per-Anna": 10,
         "Wonderlog": 50
+      },
+      "anna_full_source_audit": {
+        "classification": "OUT_OF_SCOPE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/voice_diary_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0085/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3035,7 +3620,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 85,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 55
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/natural_event_parser.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0092/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3071,7 +3669,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 95,
-        "Agenda-per-Anna": 90
+        "Agenda-per-Anna": 60
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/event_preparation.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0093/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3173,7 +3784,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 85,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 25
+      },
+      "anna_full_source_audit": {
+        "classification": "OUT_OF_SCOPE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/recurring_life_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0096/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3345,7 +3969,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 95,
-        "Agenda-per-Anna": 95
+        "Agenda-per-Anna": 55
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/planner_views.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0101/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3389,6 +4026,19 @@
         "scope": "SOURCE_INSPECTED_CONTRACT_TEST_PENDING",
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md",
         "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/calendar_free_slots.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0102/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3489,7 +4139,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 85,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 25
+      },
+      "anna_full_source_audit": {
+        "classification": "OUT_OF_SCOPE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/planner_views.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0105/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3525,7 +4188,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 85,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 25
+      },
+      "anna_full_source_audit": {
+        "classification": "OUT_OF_SCOPE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/calendar_free_slots.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0106/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3703,6 +4379,19 @@
         "scope": "SOURCE_INSPECTED_CONTRACT_TEST_PENDING",
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md",
         "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/domain_models.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0111/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3773,6 +4462,19 @@
       "integration_ease_percent": {
         "Agenda-per-Anna": 95,
         "Wonderlog": 95
+      },
+      "anna_full_source_audit": {
+        "classification": "EXISTING_SOURCE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/event_memory_capture.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0113/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -3827,6 +4529,19 @@
         "scope": "SOURCE_INSPECTED_CONTRACT_TEST_PENDING",
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md",
         "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/domain_models.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0114/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -4030,8 +4745,21 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 60,
-        "Agenda-per-Anna": 55,
+        "Agenda-per-Anna": 45,
         "Wonderlog": 55
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/photo_ocr_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0120/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -4066,7 +4794,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 65,
-        "Agenda-per-Anna": 60
+        "Agenda-per-Anna": 35
+      },
+      "anna_full_source_audit": {
+        "classification": "NEW_CANDIDATE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/localization.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0121/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -4136,7 +4877,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 60,
-        "Agenda-per-Anna": 60
+        "Agenda-per-Anna": 25
+      },
+      "anna_full_source_audit": {
+        "classification": "OUT_OF_SCOPE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/localization.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0123/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -4342,7 +5096,20 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 65,
-        "Agenda-per-Anna": 60
+        "Agenda-per-Anna": 45
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/life_archive_domain.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0129/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -4447,7 +5214,20 @@
       "integration_ease_percent": {
         "Notes-Ecosistema": 55,
         "Wonderlog": 55,
-        "Agenda-per-Anna": 55
+        "Agenda-per-Anna": 25
+      },
+      "anna_full_source_audit": {
+        "classification": "OUT_OF_SCOPE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/voice_diary_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0132/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
@@ -4518,7 +5298,7 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 70,
-        "Agenda-per-Anna": 35,
+        "Agenda-per-Anna": 25,
         "PDF-Unifier": 65
       },
       "kit_research": {
@@ -4537,6 +5317,19 @@
         "scope": "SOURCE_INSPECTED_NOT_RECOMMENDED",
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md",
         "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
+      },
+      "anna_full_source_audit": {
+        "classification": "OUT_OF_SCOPE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/photo_ocr_service.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0134/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped source inspection and product-policy mapping",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-01"
       }
     },
     {
