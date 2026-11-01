@@ -1,0 +1,14 @@
+CAP: CAP-0086
+CAPABILITY: Sintesi vocale locale di note e contenuti editoriali
+FONTE: EXTERNAL_REPO_RESEARCH
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50
+2. https://www.reddit.com/r/BestGitHubRepos/comments/1wqvy29/voicestudio_a_fully_local_opensource_elevenlabs/
+3. https://github.com/debpalash/VoiceStudio
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.

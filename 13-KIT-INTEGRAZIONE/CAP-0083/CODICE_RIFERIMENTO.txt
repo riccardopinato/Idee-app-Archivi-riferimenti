@@ -1,0 +1,14 @@
+CAP: CAP-0083
+CAPABILITY: Treemap interattiva dello spazio e selezione sicura
+FONTE: EXTERNAL_REPO_RESEARCH
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://github.com/tobi/disktree/tree/9b18b272ca3c5a145f6ff58eaf89dc4d311eeaea
+2. https://www.reddit.com/r/BestGitHubRepos/comments/1wud3go/disktree_shows_you_exactly_whats_eating_your_disk/
+3. https://github.com/tobi/disktree
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.

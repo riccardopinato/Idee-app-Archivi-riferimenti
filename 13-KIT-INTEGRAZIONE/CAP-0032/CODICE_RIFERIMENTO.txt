@@ -1,0 +1,16 @@
+CAP: CAP-0032
+CAPABILITY: Indicizzazione ricerca semantica locale
+FONTE: RESEARCH_CANDIDATE
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://huggingface.co/
+2. https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9
+3. https://huggingface.co/spaces/sebasmos/sherlock-project-assistant
+4. https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md
+5. https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.

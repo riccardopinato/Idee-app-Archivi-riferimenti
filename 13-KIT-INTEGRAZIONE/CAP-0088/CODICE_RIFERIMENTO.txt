@@ -1,0 +1,14 @@
+CAP: CAP-0088
+CAPABILITY: Workspace Android desktop virtuale con capability probe
+FONTE: EXTERNAL_REPO_RESEARCH
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://github.com/NarYuki/Dextop/tree/5402d091975cdae4f39943b59a3a0131f5a0a543
+2. https://www.reddit.com/r/BestGitHubRepos/comments/1wu5tcb/dextop_unlocks_samsung_dex_and_desktop_mode_on/
+3. https://github.com/NarYuki/Dextop
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.

@@ -1,0 +1,12 @@
+CAP: CAP-0113
+CAPABILITY: Da appuntamento passato a ricordo privato
+FONTE: SOURCE_CODE_EXACT_SHA
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_memory_capture.dart
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.

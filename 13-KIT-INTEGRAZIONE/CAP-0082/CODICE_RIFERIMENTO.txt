@@ -1,0 +1,12 @@
+CAP: CAP-0082
+CAPABILITY: Deterministic UI design artwork
+FONTE: REGISTRO_REPO
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.

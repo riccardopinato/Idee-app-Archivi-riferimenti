@@ -1,0 +1,14 @@
+CAP: CAP-0090
+CAPABILITY: Controllo scope creep e dipendenze nelle PR
+FONTE: EXTERNAL_REPO_RESEARCH
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://github.com/Shubhamsaboo/awesome-llm-apps/tree/6c16b23f1bacd0fdf240bb5141ef45e59e82c306
+2. https://www.reddit.com/r/BestGitHubRepos/comments/1x1jike/6_github_repos_that_take_you_from_zero_to/
+3. https://github.com/Shubhamsaboo/awesome-llm-apps
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.

@@ -1,0 +1,14 @@
+CAP: CAP-0085
+CAPABILITY: Diarizzazione vocale locale per appunti riunioni
+FONTE: EXTERNAL_REPO_RESEARCH
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9
+2. https://www.reddit.com/r/BestGitHubRepos/comments/1wqltx4/openwhispr_press_a_hotkey_speak_and_your_words/
+3. https://github.com/OpenWhispr/openwhispr
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.
