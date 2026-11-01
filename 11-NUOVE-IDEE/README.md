@@ -20,3 +20,5 @@ Anche le idee **scartate o rinviate** rimangono visibili con motivazione e data.
 
 - [12 idee Hugging Face «to do» per Notes e Anna](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md): ingressi da Inbox, catalogazione canonica CAP-0092…0101 e riuso dei CAP preesistenti. Stato: PROPOSTA.
 - [Seconda ricerca Hugging Face «to do»: idee 13–28](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md): 16 nuove proposte funzionali, 11 nuovi CAP e riuso capability esistenti. Stato PROPOSTA.
+- [Terza ricerca Hugging Face #29–44](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md): 16 proposte, riferimenti verificati/non verificati, nessuna promozione.
+- [Quarta ricerca Hugging Face #45–56](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md): 12 proposte, una capability condivisa slide/figure; nessuna promozione.

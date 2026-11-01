@@ -4,6 +4,7 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 
 | ID | Capability | Priorita | Score | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- |
+| [CAP-0134](../REGISTRO_CAPABILITY/CAP-0134.md) | Triage e categorizzazione documenti importati | P1 | 98 | PROPOSTA | DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti italiani. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0015](../REGISTRO_CAPABILITY/CAP-0015.md) | Ricerca globale ordinabile e un carattere | P1 | 95 | SOURCE_REPORTED | Source gate riportati PASS ma verificare smoke Android |
 | [CAP-0017](../REGISTRO_CAPABILITY/CAP-0017.md) | Universal Delete Trash e lifecycle audit | P1 | 94 | SOURCE_REPORTED | Regression entita-per-entita e file orfani; niente duplicazione lifecycle |
 | [CAP-0022](../REGISTRO_CAPABILITY/CAP-0022.md) | Localizzazione cinque o piu lingue | P1 | 94 | SOURCE_REPORTED | Controllare parita lingua in native notifications |
@@ -32,6 +33,7 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0002](../REGISTRO_CAPABILITY/CAP-0002.md) | Creazione eventi da linguaggio naturale | P2 | 86 | PROPOSTA | Parser EN IT ES FR PT con conferma e timezone |
 | [CAP-0031](../REGISTRO_CAPABILITY/CAP-0031.md) | Trascrizione vocale offline opzionale | P2 | 86 | PROPOSTA | Licenza modello footprint benchmark 5 lingue e download opt-in |
 | [CAP-0105](../REGISTRO_CAPABILITY/CAP-0105.md) | Prioritizzazione trasparente e matrice Eisenhower | P2 | 85 | PROPOSTA | Controllare priorita/task preesistenti; regole deterministiche configurabili, no score opachi e drag quadranti deve aggiornare le stesse task; evitare classificazioni non richieste. |
+| [CAP-0114](../REGISTRO_CAPABILITY/CAP-0114.md) | Redazione PII e privacy copy di note e PDF | P2 | 85 | PROPOSTA | Non certifica copertura IBAN/credenziali o privacy su tutte le lingue; regex locali e NER opzionale, redaction irreversibile sul file esportato. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0101](../REGISTRO_CAPABILITY/CAP-0101.md) | Dashboard produttivita locale da task canoniche | P2 | 84 | PROPOSTA | Verificare report gia esistenti; calcolare su task non cestinate; metriche semplici e leggibili con limiti e no analytics privacy-invasive. |
 | [CAP-0006](../REGISTRO_CAPABILITY/CAP-0006.md) | Lista della spesa privata e condivisa | P2 | 83 | SOURCE_REPORTED | Verificare test v0.71 e riuso senza database condiviso |
 | [CAP-0010](../REGISTRO_CAPABILITY/CAP-0010.md) | Ricordi Then and Now | P2 | 83 | SOURCE_REPORTED | Usare media canonici e consenso foto |
@@ -41,6 +43,9 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0019](../REGISTRO_CAPABILITY/CAP-0019.md) | Store media content addressed e GC | P2 | 81 | SOURCE_REPORTED | Non uniformare database privacy separati |
 | [CAP-0069](../REGISTRO_CAPABILITY/CAP-0069.md) | Automated screenshot visual regression | P2 | 81 | PROPOSTA | Baseline screen e variant certi |
 | [CAP-0113](../REGISTRO_CAPABILITY/CAP-0113.md) | Da appuntamento passato a ricordo privato | P2 | 81 | SOURCE_CONFIRMED | Collaudo fisico APK +116 V116-03…V116-05: annulla senza scrivere, anti-duplicato, Trash/restore e privacy; valutare riuso Wonderlog senza duplicare il diario. |
+| [CAP-0120](../REGISTRO_CAPABILITY/CAP-0120.md) | Testi alternativi accessibili per immagini delle note | P2 | 81 | PROPOSTA | Il demo usa modelli BLIP/servizi che possono essere pesanti; l'accessibilita non equivale a certificazione WCAG. Test con screen reader. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0121](../REGISTRO_CAPABILITY/CAP-0121.md) | Lettura semplificata con originale affiancato | P2 | 81 | PROPOSTA | Dataset multilingue Easy-Language come riferimento; rischio di cambiare significato, soprattutto testi legali/medici. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0129](../REGISTRO_CAPABILITY/CAP-0129.md) | Aggiornamento controllato dei fatti con storia e fonti | P2 | 81 | PROPOSTA | Infini Memory e ricerca per memoria agentica topic-based; l'adattamento a note locali e proposta, non software certificato. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0051](../REGISTRO_CAPABILITY/CAP-0051.md) | Mappe luoghi ricordi condivisi con ponte | P2 | 80 | SOURCE_REPORTED | Trasporto COPY LINK esplicito e autorizzato |
 | [CAP-0062](../REGISTRO_CAPABILITY/CAP-0062.md) | Best Conditions Engine sensori | P2 | 80 | PROPOSTA | Score sensori non diagnosi e test runtime |
 | [CAP-0063](../REGISTRO_CAPABILITY/CAP-0063.md) | Momenti ideali per focus in calendario | P2 | 80 | PROPOSTA | Consenso e niente spostamento eventi involontario |
@@ -54,9 +59,11 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0014](../REGISTRO_CAPABILITY/CAP-0014.md) | Cattura rapida contestuale da calendario | P3 | 75 | PROPOSTA | Conversione evento a ricordo sempre esplicita |
 | [CAP-0021](../REGISTRO_CAPABILITY/CAP-0021.md) | QR inviti condivisi 24 ore | P3 | 75 | SOURCE_REPORTED | Serve prova camera e 2 account su device distinti |
 | [CAP-0075](../REGISTRO_CAPABILITY/CAP-0075.md) | Import Center per migrazioni utenti | P3 | 74 | ROADMAP_STORICA | Import validato e non perdere storico |
+| [CAP-0123](../REGISTRO_CAPABILITY/CAP-0123.md) | Lettura bilingue sincronizzata di note e PDF | P3 | 74 | PROPOSTA | Il donor traduce PDF con pipeline e servizi esterni; niente invio implicito di documenti privati; licenza, quote e uso commerciale da verificare. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0032](../REGISTRO_CAPABILITY/CAP-0032.md) | Indicizzazione ricerca semantica locale | P3 | 73 | PROPOSTA | Modello multilingue licenza footprint e benchmark; non inserire pack base |
 | [CAP-0064](../REGISTRO_CAPABILITY/CAP-0064.md) | Sonno routine e reminder adattivi | P3 | 73 | PROPOSTA | Non formulare diagnosi mediche |
 | [CAP-0085](../REGISTRO_CAPABILITY/CAP-0085.md) | Diarizzazione vocale locale per appunti riunioni | P3 | 70 | PROPOSTA | Benchmark sherpa-onnx o modello compatibile su smartphone; opt-in microfono, indicatori recording, segmenti speaker non affidabili senza validazione; non aggiungere modello grande all'APK base. |
+| [CAP-0132](../REGISTRO_CAPABILITY/CAP-0132.md) | Diario sonoro e classificazione eventi acustici | P3 | 69 | PROPOSTA | AudioDet classifica 17 suoni in dominio specifico; accuratezza universale non dimostrata. Nessuna registrazione senza consenso/azione. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0074](../REGISTRO_CAPABILITY/CAP-0074.md) | Companion voice note organizer | P3 | 67 | PROPOSTA | No duplicare trascrizione vocale offline |
 
-**Totale associazioni:** 54. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 61. Non modificare automaticamente la roadmap del prodotto.

@@ -11,5 +11,6 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0063](../REGISTRO_CAPABILITY/CAP-0063.md) | Momenti ideali per focus in calendario | P2 | 80 | PROPOSTA | Consenso e niente spostamento eventi involontario |
 | [CAP-0026](../REGISTRO_CAPABILITY/CAP-0026.md) | Sound feedback semantico opzionale | P3 | 78 | PROPOSTA | Controllare silent mode e opzioni accessibilita |
 | [CAP-0007](../REGISTRO_CAPABILITY/CAP-0007.md) | Scheda workout e storico multisport | P3 | 77 | PROPOSTA | Non creare doppio diario allenamenti |
+| [CAP-0139](../REGISTRO_CAPABILITY/CAP-0139.md) | Studio del movimento da video con pose annotate | P3 | 63 | PROPOSTA | AIMoCap demo esiste; accuratezza tecnica e scientifica, privacy dei soggetti e permessi video da testare; non diagnosi medica. Verificare architettura e licensing nel Product Bible prima di integrare. |
 
-**Totale associazioni:** 7. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 8. Non modificare automaticamente la roadmap del prodotto.
