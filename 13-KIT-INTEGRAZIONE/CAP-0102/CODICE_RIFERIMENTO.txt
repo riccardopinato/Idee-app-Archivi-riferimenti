@@ -1,13 +1,14 @@
 CAP: CAP-0102
-CAPABILITY: Ripianificazione assistita e confronto piani alternativi
-FONTE: HUGGINGFACE_IDEA_RESEARCH
-CODICE_ESTRATTO: NO
-CODICE_PRONTO_DA_COPIARE: NO
-
-RIFERIMENTI:
-1. https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md
-2. https://huggingface.co/datasets/burtenshaw/plan-my-day-results
-
-Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
-Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
-NON inserire qui codice inventato o snippet senza provenance.
+APP: riccardopinato/Agenda-per-Anna@88efdfa9a688f35585cf2760d131f7a6b0b9deb2
+SOURCE: https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/calendar_free_slots.dart
+SOURCE: https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/unified_agenda.dart
+SOURCE: https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/domain_models.dart
+SOURCE: https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/docs/PRODUCT_BIBLE.md
+CONCEPT: https://huggingface.co/datasets/burtenshaw/plan-my-day-results
+CODE READY FOR STANDALONE CONTRACT: lib/anna_reschedule_preview.dart
+TEST: test/anna_reschedule_preview_test.dart
+ORIGIN: NEW_IMPLEMENTATION, no external donor code copied
+LICENSE SOURCE EXTERNAL: dataset declares apache-2.0; code/models NOT imported
+FULL ANNA INTEGRATION: NO
+CALENDAR WRITER: NO
+DURATION: explicit requestedMinutes input; AgendaItem currently has no universal duration

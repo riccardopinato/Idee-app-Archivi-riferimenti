@@ -1,19 +1,17 @@
-# Specifiche candidate — CAP-0111
+# CAP-0111 — Anna weekly review source-backed
 
-## Scopo
+**Source:** riccardopinato/Agenda-per-Anna@88efdfa9a688f35585cf2760d131f7a6b0b9deb2.
 
-Revisione settimanale di task scadute, avanzamenti e impegni con azioni esplicite di conferma/skip e storico.
+## Proprietari canonici e separazioni
 
-## Requisiti iniziali proposti (non specifiche donor verificate)
+- `AgendaStore.items` conserva le task personali; `AgendaItem.done` e stato booleano corrente, non timestamp completamento. Non calcolare trend temporali da uno stato senza cronologia.
+- `WeekData`: `focus`, `priorities`, `bestThing`, `reflection` esistono gia; una nuova UI deve proiettare e semmai aggiornare soltanto questa struttura tramite metodi esistenti.
+- `DayJournal` e `DiaryBlock` servono il diario locale, non sono trascrizioni task; non includere automatiche sezioni Vault, Password Vault, ciclo e Spazio Condiviso.
 
-1. Selezione esplicita dell'input e identificazione della fonte.
-2. Elaborazione limitata a **Weekly Review con proposte di pulizia e ripianificazione** e restituzione di un risultato chiaro o errore esplicito.
-3. Preview/edit prima di ogni mutazione; nessun download, upload, sincronizzazione o cancellazione implicita.
-4. Riutilizzo dei dati canonici, import/export, lifecycle e backup dell'app destinataria.
-5. Offline/failure, localizzazione, accessibilità e logica permessi trattati per-app.
+## API prototipo
 
-## Gate particolare
+`AnnaWeeklyReview.fromPrivateTasks(weekOf, entries, accountUnchanged) -> AnnaWeekReview` con `overdueTaskIds`, `pendingDatedThisWeekIds`, `completedDatedThisWeek`, `totalTasksDatedThisWeek`.
 
-Riutilizzare dashboard CAP-0101, scheduler esistente e lifecycle; nessuna cancellazione o ripianificazione automatica; Anna in forma Today/diario non PM suite.
+Solo ID (non i testi di task/diario), nessuna persistenza, no lettura dati shared. La denominazione `completedDatedThisWeek` e intenzionale: indica task *datate* nella settimana attualmente marcate come fatte, NON task completate in quella settimana.
 
-**DA COMPLETARE:** interfacce sorgente e API reali, forme dati e file target dopo audit a SHA del donor e dell'app.
+Ispirazione generica [MiniAppBench](https://huggingface.co/datasets/MiniAppBench/Dataset) benchmark specifiche; non un SDK ne codice copiato.

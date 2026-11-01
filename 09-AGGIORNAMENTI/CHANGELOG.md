@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Audit Anna's Diary e 3 kit con codice Dart preparato
+- Verificata in lettura `Agenda-per-Anna@88efdfa9`, Product Bible, roadmap e API `CalendarFreeSlot`, `UnifiedAgendaEntry`, `AgendaItem`, `WeekData`, `DayJournal`, `MediaAssetStore`.
+- Preparati contratti puri originali e test per CAP-0102 rescheduling preview (nessun writer), CAP-0111 weekly review (soli task privati, date completamento non inventate), CAP-0114 privacy text gate (Vault/Noi/ciclo/media esclusi).
+- Ricalibrate facilità stimate Anna: CAP-0102 80→70, CAP-0111 90→80, CAP-0114 45→40, CAP-0134 55→35. CAP-0134 non prioritario per Anna; CAP-0138 non associato.
+- Workflow `kit-dart-compat.yml` esteso a analyze+test; nessuna modifica sorgente/roadmap Anna, stato app `PROPOSTA` invariato, nessun APK/device claim. [Audit](../13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md).
+
+
 ## 2026-11-01 — Prima compatibilita mirata kit CAP-0134/0114/0138
 - App Notes-Ecosistema `3fd9b0d` analizzata in lettura: Flutter 0.56.3+74, contratti documenti/media/whiteboard/audio, assenza runtime ONNX dichiarato nel pubspec.
 - Tre moduli Dart originali, sei file codice/test: decoder parziale RGB/preprocessing/softmax DocRex, preview email/IBAN parziale, indice stroke-audio e codec versionato. Workflow GitHub di analyze+test; non compilati APK, non importati modelli.

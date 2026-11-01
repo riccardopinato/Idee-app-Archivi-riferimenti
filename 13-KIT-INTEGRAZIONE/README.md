@@ -8,6 +8,10 @@ Ogni kit contiene: `README.md`, `SPECIFICHE.md`, `CODICE_RIFERIMENTO.txt`, `INTE
 
 [Audit e prove CAP-0134, CAP-0114 e CAP-0138](COMPATIBILITA_2026-11-01.md): codice originale limitato, test Dart, snapshot reale di Notes, licenze e limiti; nessun runtime Flutter/Android certificato.
 
+## Anna's Diary — nuovi kit approfonditi
+
+[Audit sorgente Anna e codice/test CAP-0102, CAP-0111, CAP-0114](ANNA_COMPATIBILITA_2026-11-01.md). Le stime per Anna sono state ricalibrate e i contratti rimangono in sola lettura.
+
 ## Livelli di preparazione
 
 1. **RIFERIMENTI_ACQUISITI:** link, necessità, specifiche candidate e gate. Tutti i kit attualmente partono da qui.

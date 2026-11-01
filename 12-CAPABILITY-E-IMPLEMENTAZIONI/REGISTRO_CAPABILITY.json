@@ -3380,7 +3380,15 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 85,
-        "Agenda-per-Anna": 80
+        "Agenda-per-Anna": 70
+      },
+      "anna_compatibility": {
+        "assessed_at": "2026-11-01",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "scope": "SOURCE_INSPECTED_CONTRACT_TEST_PENDING",
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md",
+        "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
       }
     },
     {
@@ -3686,7 +3694,15 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 95,
-        "Agenda-per-Anna": 90
+        "Agenda-per-Anna": 80
+      },
+      "anna_compatibility": {
+        "assessed_at": "2026-11-01",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "scope": "SOURCE_INSPECTED_CONTRACT_TEST_PENDING",
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md",
+        "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
       }
     },
     {
@@ -3792,7 +3808,7 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 55,
-        "Agenda-per-Anna": 45,
+        "Agenda-per-Anna": 40,
         "PDF-Unifier": 40
       },
       "kit_research": {
@@ -3803,6 +3819,14 @@
         "verified_scope": "source interfaces reviewed, standalone Dart tests submitted to exact-head CI; no app runtime proof",
         "assessed_at": "2026-11-01",
         "notes": "Updated ease estimates are conservative editorial assessments, not empirical compatibility percentages."
+      },
+      "anna_compatibility": {
+        "assessed_at": "2026-11-01",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "scope": "SOURCE_INSPECTED_CONTRACT_TEST_PENDING",
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md",
+        "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
       }
     },
     {
@@ -4494,7 +4518,7 @@
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
         "Notes-Ecosistema": 70,
-        "Agenda-per-Anna": 55,
+        "Agenda-per-Anna": 35,
         "PDF-Unifier": 65
       },
       "kit_research": {
@@ -4505,6 +4529,14 @@
         "verified_scope": "source interfaces reviewed, standalone Dart tests submitted to exact-head CI; no app runtime proof",
         "assessed_at": "2026-11-01",
         "notes": "Updated ease estimates are conservative editorial assessments, not empirical compatibility percentages."
+      },
+      "anna_compatibility": {
+        "assessed_at": "2026-11-01",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "scope": "SOURCE_INSPECTED_NOT_RECOMMENDED",
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/ANNA_COMPATIBILITA_2026-11-01.md",
+        "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
       }
     },
     {

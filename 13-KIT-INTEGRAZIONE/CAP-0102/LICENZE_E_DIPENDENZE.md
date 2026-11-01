@@ -1,14 +1,7 @@
-# Riuso, licenze e dipendenze — CAP-0102
+# CAP-0102 — provenance e licenza
 
-## Fonti
-
-- [Sorgente 1](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md)
-- [Sorgente 2](https://huggingface.co/datasets/burtenshaw/plan-my-day-results)
-
-- Tipo fonte catalogo: HUGGINGFACE_IDEA_RESEARCH.
-- Commit donor e path autorizzato: **NON VERIFICATI NEL KIT**.
-- Licenza dei singoli file, dipendenze, modelli e dataset: **DA VERIFICARE**.
-- Riuso commerciale approvato: **NO**.
-- Codice, modello e dataset copiati: **NESSUNO**.
-
-Prima di usare una fonte: verificare SHA, licenza SPDX, attribuzioni, limitazioni commerciali, costi/rate limit, privacy, disponibilità geografica e manutenzione. Classificare donor di codice, pattern, riferimento UI oppure respinto. Licenza incompatibile o mancante implica nessuna copia del codice.
+- Codice `lib/anna_reschedule_preview.dart`: originale, Dart SDK only, **nessuna nuova dipendenza**.
+- Referenze Anna: riccardopinato/Agenda-per-Anna@88efdfa9a688f35585cf2760d131f7a6b0b9deb2, source read-only; non copiate.
+- Ispirazione esterna: https://huggingface.co/datasets/burtenshaw/plan-my-day-results — dataset sperimentale con licenza dichiarata Apache-2.0, senza codice o modelli scaricati.
+- Nessun cloud, AI, account, calendari esterni o editor di Anna modificato; accesso esclusivamente a slot passati dall'app ospite con consenso/coverage.
+- Richiesta review sul prodotto prima di promuovere il kit a runtime app.

@@ -1,16 +1,9 @@
-# Piano di integrazione Flutter — CAP-0102
+# CAP-0102 — piano integrazione Anna Flutter
 
-**NON ESEGUITO — proposta da adattare all'app.**
+1. Rileggere Product Bible/roadmap e fissare il target SHA (audit riccardopinato/Agenda-per-Anna@88efdfa9a688f35585cf2760d131f7a6b0b9deb2). Questa capability e PROPOSTA, non in roadmap.
+2. Riprendere la funzione esistente `visibleEntriesForCalendarFreeSlots` e `findCalendarFreeSlots` dal `lib/src/calendar_free_slots.dart`; **non implementare un secondo calendario**, ne cambiare il comportamento conservativo di appuntamenti non temporizzati.
+3. Operare solo sul task privato `AgendaItem`, non su `UnifiedAgendaEntry.shared/external`; bloccare task ricorrenti finche non esista un gate per l'intera serie.
+4. Chiedere durata esplicita e mostrare preview a fianco dell'editor esistente; verificare account/agenda revision e coverage prima di qualunque conferma. Il writer rimane l'API `AgendaStore` attuale; nessun backend aggiunto.
+5. Test Flutter su account switch, overlay revocato, shared filter, timezone/DST, notifiche, backup e undo; QA fisico prima della promozione di stato.
 
-1. Leggere Product Bible/roadmap e fissare commit SHA del repository destinatario.
-2. Cercare componenti Golden e codice equivalente già presente: riuso prima di duplicazione.
-3. Definire piccolo adattatore per **Ripianificazione assistita e confronto piani alternativi** sui modelli e servizi canonici, senza imporre nuovo stack o un secondo database.
-4. Verificare licenze e impatto di SDK, modelli, storage, rete, permessi; local-first e consenso dove previsti.
-5. Creare una UI coerente con il progetto, con preview, errore comprensibile e rollback dei dati.
-6. Eseguire analyze, unit/widget test, build, dimensione APK e QA device se richiesto.
-
-## Vincoli dal registro
-
-Verificare task e calendario canonici; strategia locale con vincoli hard/soft e preview delle modifiche, nessuno spostamento o evento scritto senza conferma; fallback no-AI.
-
-**Non dichiarare codice pronto o piattaforma supportata senza sorgente e test.**
+**Codice preparato:** solo pure Dart, non patch direttamente applicata al codice `part of '../main.dart'`.
