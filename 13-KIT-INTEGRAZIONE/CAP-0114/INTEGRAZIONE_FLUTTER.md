@@ -1,16 +1,5 @@
-# Piano di integrazione Flutter — CAP-0114
+# CAP-0114 — compatibility plan for Notes/Anna/PDF
 
-**NON ESEGUITO — proposta da adattare all'app.**
+Notes at `3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c` stores notes/media via `lib/src/domain/attachments.dart` and PDF annotations in `lib/src/domain/documents.dart`. Reuse these, keeping original data immutable; only preview a new text export after explicit selection. No automatic share.
 
-1. Leggere Product Bible/roadmap e fissare commit SHA del repository destinatario.
-2. Cercare componenti Golden e codice equivalente già presente: riuso prima di duplicazione.
-3. Definire piccolo adattatore per **Redazione PII e privacy copy di note e PDF** sui modelli e servizi canonici, senza imporre nuovo stack o un secondo database.
-4. Verificare licenze e impatto di SDK, modelli, storage, rete, permessi; local-first e consenso dove previsti.
-5. Creare una UI coerente con il progetto, con preview, errore comprensibile e rollback dei dati.
-6. Eseguire analyze, unit/widget test, build, dimensione APK e QA device se richiesto.
-
-## Vincoli dal registro
-
-Non certifica copertura IBAN/credenziali o privacy su tutte le lingue; regex locali e NER opzionale, redaction irreversibile sul file esportato. Verificare architettura e licensing nel Product Bible prima di integrare.
-
-**Non dichiarare codice pronto o piattaforma supportata senza sorgente e test.**
+To achieve production privacy: verify all required PII types and PDF raster/text/metadata, add robust and reversible-prevention tests, fail closed when unsupported, consider vetted SDK only after explicit commercial license clearance and native Android/iOS smoke. Do NOT reuse demo code with ambiguous licensing. Flutter package integration not attempted.

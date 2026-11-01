@@ -1,14 +1,5 @@
-# Piano di verifica — CAP-0138
+# CAP-0138 — executable contract and missing verification
 
-- Input ordinario, vuoto, grande, corrotto, duplicato; risultato specifico: **Ink sincronizzato al tempo di una registrazione**.
-- Nessuna mutazione senza consenso; annulla, ripristino, rollback, dati e media originali preservati.
-- Offline, autorizzazioni negate, dipendenze/modello assenti, errori runtime e riavvio.
-- Traduzioni, leggibilità, accessibilità, font scaling, compatibilità con app esistente.
-- Prestazioni, RAM, footprint APK, storage e batteria quando pertinenti.
-- QA: `flutter analyze`, test, build, CI exact-head, smoke e dispositivo fisico dove richiesto.
+Dart test `test/audio_ink_index_test.dart` checks session separation, time ordering, nearest earlier stroke, no negative time or duplicate IDs, schema versioning, serialization round trip and removal. Run via [CI workflow](../../.github/workflows/kit-dart-compat.yml).
 
-## Gate specifico
-
-MOSS supporta ASR con timestamp; la sincronizzazione stroke-audio puo essere deterministica ed e proposta indipendente. Consenso registrazione obbligatorio. Verificare architettura e licensing nel Product Bible prima di integrare.
-
-**Evidenze ancora da produrre:** SHA target, tests PASS, runtime/device, licenze donor. Questa checklist NON certifica alcun test.
+Still required: plug into real Notes drawing and recording callbacks, actual audio start/pause timestamps, persistence in existing backup/sync, denied permission, crash/restore, wave seek, accessibility and physical Android device. Standalone Dart test != Notes integration compatibility.

@@ -1,19 +1,15 @@
-# Specifiche candidate — CAP-0138
+# CAP-0138 — contract extraction and invariants
 
-## Scopo
+Source app `riccardopinato/Notes-Ecosistema@3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c`: `InkStroke.id` is stable, `Note.id` identifies the owning entity, `editor_screen.dart` manages `AudioRecorder` via `record`. Existing whiteboard and sketch bodies are canonical; this feature must not replace them.
 
-Audio-Linked Ink: Collega ogni tratto scritto sulla canvas al timestamp della registrazione audio per navigare la lezione.
+## Original candidate model
 
-## Requisiti iniziali proposti (non specifiche donor verificate)
+- `recordingId`: reference to an existing audio media asset/recording, no invented cross-app URI.
+- `strokeId`: stable ID from existing `InkStroke`/whiteboard stroke; prohibit duplicates within one recording.
+- `elapsedMs`: integer elapsed from **monotonic recording start**, 0...86,400,000 (24h ceiling in prototype), never wall-clock epoch.
+- `AudioInkIndex.atOrBefore(recording, offsetMs)`: time-navigation reference; ties broken stably by stroke ID, no cross-session lookup.
+- JSON `schema:1` with bounded anchor count; source note/canvas and audio are not modified.
 
-1. Selezione esplicita dell'input e identificazione della fonte.
-2. Elaborazione limitata a **Ink sincronizzato al tempo di una registrazione** e restituzione di un risultato chiaro o errore esplicito.
-3. Preview/edit prima di ogni mutazione; nessun download, upload, sincronizzazione o cancellazione implicita.
-4. Riutilizzo dei dati canonici, import/export, lifecycle e backup dell'app destinataria.
-5. Offline/failure, localizzazione, accessibilità e logica permessi trattati per-app.
+## Missing product integration
 
-## Gate particolare
-
-MOSS supporta ASR con timestamp; la sincronizzazione stroke-audio puo essere deterministica ed e proposta indipendente. Consenso registrazione obbligatorio. Verificare architettura e licensing nel Product Bible prima di integrare.
-
-**DA COMPLETARE:** interfacce sorgente e API reali, forme dati e file target dopo audit a SHA del donor e dell'app.
+Persist companion index as versioned sidecar linked to note/media and include in backup/restore, enforce deletion and access-scopes and clip duration, implement event callbacks in whiteboard + recorder and playback seek in UI. Do not claim full recording synchronization from the index alone.

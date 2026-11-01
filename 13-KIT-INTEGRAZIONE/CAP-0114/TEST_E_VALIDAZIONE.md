@@ -1,14 +1,7 @@
-# Piano di verifica — CAP-0114
+# CAP-0114 — test matrix and scope
 
-- Input ordinario, vuoto, grande, corrotto, duplicato; risultato specifico: **Redazione PII e privacy copy di note e PDF**.
-- Nessuna mutazione senza consenso; annulla, ripristino, rollback, dati e media originali preservati.
-- Offline, autorizzazioni negate, dipendenze/modello assenti, errori runtime e riavvio.
-- Traduzioni, leggibilità, accessibilità, font scaling, compatibilità con app esistente.
-- Prestazioni, RAM, footprint APK, storage e batteria quando pertinenti.
-- QA: `flutter analyze`, test, build, CI exact-head, smoke e dispositivo fisico dove richiesto.
+Dart CLI contract test: `test/privacy_preview_test.dart`, invoked in CI. Covers email, valid/invalid IBAN modulo97, explicit selection, source unchanged, stale spans, duplicate spans and max size.
 
-## Gate specifico
+**Not verified:** personal names, addresses, phones, EU national IDs, OCR/PDF, metadata, alternative text, annotations, attachments, redaction of binary files, screen capture, Android/iOS, security review, comprehensive false negatives. The contract test result is NOT production privacy certification.
 
-Non certifica copertura IBAN/credenziali o privacy su tutte le lingue; regex locali e NER opzionale, redaction irreversibile sul file esportato. Verificare architettura e licensing nel Product Bible prima di integrare.
-
-**Evidenze ancora da produrre:** SHA target, tests PASS, runtime/device, licenze donor. Questa checklist NON certifica alcun test.
+Integration state per-app: PROPOSTA. Test of third-party native SDK requires license review before attempting in a commercial app.

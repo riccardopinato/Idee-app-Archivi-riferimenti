@@ -1,16 +1,10 @@
-# Piano di integrazione Flutter — CAP-0134
+# CAP-0134 — Notes adapter plan after source inspection
 
-**NON ESEGUITO — proposta da adattare all'app.**
+Repo audit: `riccardopinato/Notes-Ecosistema@3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c`.
 
-1. Leggere Product Bible/roadmap e fissare commit SHA del repository destinatario.
-2. Cercare componenti Golden e codice equivalente già presente: riuso prima di duplicazione.
-3. Definire piccolo adattatore per **Triage e categorizzazione documenti importati** sui modelli e servizi canonici, senza imporre nuovo stack o un secondo database.
-4. Verificare licenze e impatto di SDK, modelli, storage, rete, permessi; local-first e consenso dove previsti.
-5. Creare una UI coerente con il progetto, con preview, errore comprensibile e rollback dei dati.
-6. Eseguire analyze, unit/widget test, build, dimensione APK e QA device se richiesto.
-
-## Vincoli dal registro
-
-DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti italiani. Verificare architettura e licensing nel Product Bible prima di integrare.
-
-**Non dichiarare codice pronto o piattaforma supportata senza sorgente e test.**
+1. Attach to existing `flutter_app/lib/src/domain/documents.dart` + `data/document_store.dart` with a read-only proposal service. For images use existing `attachments.dart` SHA-256 media store; PDF render as local page preview. Do not edit originals.
+2. The `pubspec.yaml` has no ONNX dependency. Compare a maintained ONNX Runtime Flutter adapter (and native ARM64/16KB-page/AGP/iOS compatibility) **before** adding it. No new dependency is installed in the kit.
+3. Keep optional model with checksum `bbe9997671953145206939291c592dc937c6c523202234bba66e8a589cc643db` and explicit user action; do not silently download. FP32 size ~5.8 MiB plus unknown runtime overhead.
+4. Decode/resize selected document to 256 RGB, use `DocRexContract.normalizeCenterCrop`, pass NCHW float32 into the ONNX model, evaluate logits and create `TriageDecision`.
+5. Propose only invoice or statement if confident; `other` produces **no automatic folder/category**. Never move files, write category, trigger cloud or OCR based on uncertain output without user confirmation.
+6. Tests: contract CI; then instrumentation using Italian samples, PDF pages, memory/size profiling and physical device. **No claim of end-to-end runtime testing**.

@@ -1,14 +1,6 @@
-# Riuso, licenze e dipendenze — CAP-0138
+# CAP-0138 — provenance
 
-## Fonti
-
-- [Sorgente 1](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md)
-- [Sorgente 2](https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize)
-
-- Tipo fonte catalogo: HUGGINGFACE_IDEA_RESEARCH.
-- Commit donor e path autorizzato: **NON VERIFICATI NEL KIT**.
-- Licenza dei singoli file, dipendenze, modelli e dataset: **DA VERIFICARE**.
-- Riuso commerciale approvato: **NO**.
-- Codice, modello e dataset copiati: **NESSUNO**.
-
-Prima di usare una fonte: verificare SHA, licenza SPDX, attribuzioni, limitazioni commerciali, costi/rate limit, privacy, disponibilità geografica e manutenzione. Classificare donor di codice, pattern, riferimento UI oppure respinto. Licenza incompatibile o mancante implica nessuna copia del codice.
+- Original Dart code authored in this repository: `lib/audio_ink_index.dart`. Dependencies: Dart core only.
+- App interface reference: https://github.com/riccardopinato/Notes-Ecosistema/tree/3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c/flutter_app/lib/src
+- Conceptual ASR reference: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize ; model card Apache-2.0, 0.9B. No model/code copied and no inference planned for deterministic synchronization.
+- Recording and privacy features remain subject to device permissions, local data lifecycle, access control and consent.

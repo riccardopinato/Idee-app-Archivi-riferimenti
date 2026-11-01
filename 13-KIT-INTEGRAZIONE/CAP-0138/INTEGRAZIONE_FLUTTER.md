@@ -1,16 +1,8 @@
-# Piano di integrazione Flutter — CAP-0138
+# CAP-0138 — Notes Flutter compatibility plan
 
-**NON ESEGUITO — proposta da adattare all'app.**
-
-1. Leggere Product Bible/roadmap e fissare commit SHA del repository destinatario.
-2. Cercare componenti Golden e codice equivalente già presente: riuso prima di duplicazione.
-3. Definire piccolo adattatore per **Ink sincronizzato al tempo di una registrazione** sui modelli e servizi canonici, senza imporre nuovo stack o un secondo database.
-4. Verificare licenze e impatto di SDK, modelli, storage, rete, permessi; local-first e consenso dove previsti.
-5. Creare una UI coerente con il progetto, con preview, errore comprensibile e rollback dei dati.
-6. Eseguire analyze, unit/widget test, build, dimensione APK e QA device se richiesto.
-
-## Vincoli dal registro
-
-MOSS supporta ASR con timestamp; la sincronizzazione stroke-audio puo essere deterministica ed e proposta indipendente. Consenso registrazione obbligatorio. Verificare architettura e licensing nel Product Bible prima di integrare.
-
-**Non dichiarare codice pronto o piattaforma supportata senza sorgente e test.**
+1. Inspect `visual_documents.dart` `InkStroke.id` and `BoardStroke` ID, `whiteboard_screen.dart` drawing completion events and `editor_screen.dart` recorder lifecycle (source SHA `3fd9b0d`).
+2. Expose an opt-in recording session with monotonic clock; on stroke committed, pass existing stroke ID + elapsed recording ms to `AudioInkIndex.add`. Ensure no recording without permission and UI indicator.
+3. Persist versioned index sidecar with existing note/media asset references and backup/restore. Avoid mutating serialized whiteboard body without migration.
+4. Handle deletions/undo, permissions, pause/resume, screen lock, app kill, sampling time drift, and per-session ownership correctly.
+5. Playback seek only after known duration and source recording identity; no false timestamp equivalence to AI transcript segments.
+6. Use separate widget/DB/Android physical QA for real integration. No native build or device execution has been done.

@@ -1,13 +1,14 @@
-CAP: CAP-0134
-CAPABILITY: Triage e categorizzazione documenti importati
-FONTE: HUGGINGFACE_IDEA_RESEARCH
-CODICE_ESTRATTO: NO
-CODICE_PRONTO_DA_COPIARE: NO
-
-RIFERIMENTI:
-1. https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md
-2. https://huggingface.co/vivekkaushal/DocRex
-
-Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
-Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
-NON inserire qui codice inventato o snippet senza provenance.
+KIT CAP-0134
+DONOR: https://huggingface.co/vivekkaushal/DocRex
+LICENSE CLAIM: apache-2.0 (model card; file-level audit al download)
+MODEL FP32: invoice_classifier_fp32.onnx (6.084.524 bytes, SHA256 bbe9997671953145206939291c592dc937c6c523202234bba66e8a589cc643db)
+MODEL LABELS: labels.json (0 bank_statement, 1 invoice, 2 other)
+PREPROCESS: preprocess.json; README on model card
+DONOR_COMMIT_SHA: NOT PINNED (must pin for binary download)
+SOURCE FILES COPIED: NONE
+ORIGIN: NEW_IMPLEMENTATION informed by public IO specification, not verbatim source copy
+CODE: lib/document_triage.dart
+TESTS: test/document_triage_test.dart
+FULL INFERENCE: NOT PROVIDED
+MODEL BINARY: NOT DOWNLOADED, NOT BUNDLED
+NOTE: validate binary SHA after a future explicitly approved model download, and check license of model, backbone, code, datasets and host runtime separately.

@@ -1,0 +1,43 @@
+name: Kit Dart contract tests
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "13-KIT-INTEGRAZIONE/CAP-0114/**"
+      - "13-KIT-INTEGRAZIONE/CAP-0134/**"
+      - "13-KIT-INTEGRAZIONE/CAP-0138/**"
+      - ".github/workflows/kit-dart-compat.yml"
+  push:
+    branches: [main]
+    paths:
+      - "13-KIT-INTEGRAZIONE/CAP-0114/**"
+      - "13-KIT-INTEGRAZIONE/CAP-0134/**"
+      - "13-KIT-INTEGRAZIONE/CAP-0138/**"
+      - ".github/workflows/kit-dart-compat.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dart-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install stable Dart
+        uses: dart-lang/setup-dart@v1
+      - name: Dart version
+        run: dart --version
+      - name: Analyze original standalone adapters
+        run: |
+          dart analyze 13-KIT-INTEGRAZIONE/CAP-0114/lib 13-KIT-INTEGRAZIONE/CAP-0114/test
+          dart analyze 13-KIT-INTEGRAZIONE/CAP-0134/lib 13-KIT-INTEGRAZIONE/CAP-0134/test
+          dart analyze 13-KIT-INTEGRAZIONE/CAP-0138/lib 13-KIT-INTEGRAZIONE/CAP-0138/test
+      - name: Execute deterministic tests
+        run: |
+          dart 13-KIT-INTEGRAZIONE/CAP-0114/test/privacy_preview_test.dart
+          dart 13-KIT-INTEGRAZIONE/CAP-0134/test/document_triage_test.dart
+          dart 13-KIT-INTEGRAZIONE/CAP-0138/test/audio_ink_index_test.dart
