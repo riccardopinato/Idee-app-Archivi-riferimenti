@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Snapshot incrementale 31 repository e A1/A2 Anna's Diary
+- Enumerati 31 repository del proprietario; nessun nuovo repository rispetto all'inventario. Registrati nome, default branch e SHA HEAD osservati, come baseline metadata per futuri diff, senza dichiarare audit sorgente dei 31 HEAD.
+- CAP-0003 aggiornata da PROPOSTA a SOURCE_CONFIRMED per Agenda-per-Anna: codice `lib/src/event_preparation.dart`, test `test/v107_a2_event_preparation_test.dart` e source SHA `88efdfa9`; score evidenza 2→4 e priorita P3→P2.
+- Nuova CAP-0113: conversione di appuntamento privato passato in ricordo, SOURCE_CONFIRMED per Agenda-per-Anna, PROPOSTA per Wonderlog; codice e test A1 a SHA `88efdfa9`.
+- Totale 113 CAP, 48 app/idee e 275 associazioni. Viste rigenerate; nessuna Product Bible, roadmap o codice app modificato.
+- APK firmato +116 documentato, ma V116-01…V116-12 sono NOT VERIFIED su dispositivo: SOURCE_CONFIRMED non significa DEVICE_VERIFIED o RELEASE.
+
 ## 2026-11-01 — Seconda ricerca Hugging Face «to do»: idee 13–28
 - Conservate 16 ulteriori proposte per Notes-Ecosistema (adattamenti essenziali Anna's Diary/FocuSense) con fonti Hugging Face e distinzione tra funzionalita effettivamente documentate e proposte progettuali.
 - Registro canonico da 101 a **112 CAP**: introdotti 11 nuovi ID CAP-0102…CAP-0112, riusati quelli esistenti per Backward Planning, Eisenhower Board, Alternative Plans, Focus Protection e Meeting Load Heatmap.

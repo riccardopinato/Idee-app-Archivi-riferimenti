@@ -15,6 +15,7 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0010](../REGISTRO_CAPABILITY/CAP-0010.md) | Ricordi Then and Now | P2 | 83 | PROPOSTA | Usare media canonici e consenso foto |
 | [CAP-0066](../REGISTRO_CAPABILITY/CAP-0066.md) | Trasferimento LAN QR HTTPS fidato | P2 | 83 | PROPOSTA | Pairing fingerprint HTTPS e test rete locale |
 | [CAP-0011](../REGISTRO_CAPABILITY/CAP-0011.md) | Life Threads narrativi | P2 | 82 | PROPOSTA | Non introdurre archivio parallelo |
+| [CAP-0113](../REGISTRO_CAPABILITY/CAP-0113.md) | Da appuntamento passato a ricordo privato | P2 | 81 | PROPOSTA | Collaudo fisico APK +116 V116-03…V116-05: annulla senza scrivere, anti-duplicato, Trash/restore e privacy; valutare riuso Wonderlog senza duplicare il diario. |
 | [CAP-0051](../REGISTRO_CAPABILITY/CAP-0051.md) | Mappe luoghi ricordi condivisi con ponte | P2 | 80 | SOURCE_REPORTED | Trasporto COPY LINK esplicito e autorizzato |
 | [CAP-0012](../REGISTRO_CAPABILITY/CAP-0012.md) | Year in Review deterministico | P2 | 79 | PROPOSTA | Non ricostruire funzione gia integrata |
 | [CAP-0087](../REGISTRO_CAPABILITY/CAP-0087.md) | Layer geografici pubblici con freshness e fallback | P2 | 79 | PROPOSTA | Per ogni feed dichiarare API, diritti commerciali, refresh, intervalli, limiti, simulazioni e disponibilita; nessuna navigazione operativa o allerta emergenza da data feed incompleti. Repo metadata NOASSERTION: verify license per file. |
@@ -25,4 +26,4 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0086](../REGISTRO_CAPABILITY/CAP-0086.md) | Sintesi vocale locale di note e contenuti editoriali | P3 | 72 | PROPOSTA | Prima valutare Android TextToSpeech sistema e licenze voci; modelli scaricabili solo opt-in; VoiceStudio AGPL: pattern solo, no code copy closed-source; nessuna imitazione vocale senza consenso. |
 | [CAP-0085](../REGISTRO_CAPABILITY/CAP-0085.md) | Diarizzazione vocale locale per appunti riunioni | P3 | 70 | PROPOSTA | Benchmark sherpa-onnx o modello compatibile su smartphone; opt-in microfono, indicatori recording, segmenti speaker non affidabili senza validazione; non aggiungere modello grande all'APK base. |
 
-**Totale associazioni:** 20. Non modificare automaticamente la roadmap del prodotto.
+**Totale associazioni:** 21. Non modificare automaticamente la roadmap del prodotto.

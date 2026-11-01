@@ -35,13 +35,13 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 | [CAP-0108](../REGISTRO_CAPABILITY/CAP-0108.md) | Confronto durata prevista e reale per task | P2 | 84 | PROPOSTA | Provenienza dei tempi, pause e interruzioni, import da focus timer opzionale, no raccolta in background e niente telemetria remota; integrazione CAP-0101. |
 | [CAP-0066](../REGISTRO_CAPABILITY/CAP-0066.md) | Trasferimento LAN QR HTTPS fidato | P2 | 83 | PROPOSTA | Pairing fingerprint HTTPS e test rete locale |
 | [CAP-0110](../REGISTRO_CAPABILITY/CAP-0110.md) | Avvio guidato micro-passo e focus breve | P2 | 82 | PROPOSTA | Usare CAP-0109 e CAP-0096; template locali senza AI obbligatoria, scelta editabile e nessuna sovrascrittura della nota; test accessibilita e interruzione. |
+| [CAP-0003](../REGISTRO_CAPABILITY/CAP-0003.md) | Preparazione contestuale appuntamento | P2 | 81 | PROPOSTA | Collaudo fisico +116 V116-06…V116-10 e V116-12: note, checklist, conflitti, Trash, offline e lingue; CI e APK firmato non equivalgono a DEVICE_PASS. |
 | [CAP-0019](../REGISTRO_CAPABILITY/CAP-0019.md) | Store media content addressed e GC | P2 | 81 | SOURCE_REPORTED | Non uniformare database privacy separati |
 | [CAP-0029](../REGISTRO_CAPABILITY/CAP-0029.md) | Canvas ibrida sketch sotto note | P2 | 80 | SOURCE_REPORTED | Verificare gesto pennello undo save e restore device |
 | [CAP-0095](../REGISTRO_CAPABILITY/CAP-0095.md) | Estrazione decisioni e action items da riunioni | P2 | 79 | PROPOSTA | Conferma umana, privacy meeting/consensi, diarizzazione opzionale, test IT/EN, footprint offline e riferimento Sherlock solo progettuale CC BY-NC-SA. |
 | [CAP-0076](../REGISTRO_CAPABILITY/CAP-0076.md) | Web Clip sicuro con provenienza | P3 | 78 | PROPOSTA | Permissions share sheet e URL originale |
 | [CAP-0080](../REGISTRO_CAPABILITY/CAP-0080.md) | Document expiry and asset passport | P3 | 78 | PROPOSTA | Non includere segreti/identita in archivio condiviso |
 | [CAP-0096](../REGISTRO_CAPABILITY/CAP-0096.md) | Gerarchie task ricorrenze e relazioni alle note | P3 | 78 | PROPOSTA | Audit funzioni task e recurrence gia presenti; non introdurre secondo scheduler o storage; test eccezioni ricorrenza, delete e restore. |
-| [CAP-0003](../REGISTRO_CAPABILITY/CAP-0003.md) | Preparazione contestuale appuntamento | P3 | 77 | PROPOSTA | Riutilizzare reminder e note senza nuovo scheduler |
 | [CAP-0033](../REGISTRO_CAPABILITY/CAP-0033.md) | Modello Needle 3 on demand Plus | P3 | 76 | SOURCE_REPORTED | Play delivery benchmark e entitlement non auto concesso |
 | [CAP-0030](../REGISTRO_CAPABILITY/CAP-0030.md) | Professional Wallet CV attestati QR vCard | P3 | 75 | ROADMAP_STORICA | Integrare Document Workspace senza wallet parallelo |
 | [CAP-0075](../REGISTRO_CAPABILITY/CAP-0075.md) | Import Center per migrazioni utenti | P3 | 74 | PROPOSTA | Import validato e non perdere storico |
