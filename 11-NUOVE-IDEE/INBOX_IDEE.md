@@ -51,3 +51,28 @@ Tutte **PROPOSTA**; destinazione principale Notes-Ecosistema, subset essenziale 
 | 12 | **12 Task Recovery** — CAP-0017/0018/0075 | PROPOSTA / non in roadmap |
 
 Nessun progetto standalone o migrazione AI approvato; i CAP nuovi sono CAP-0092…CAP-0101. I CAP esistenti restano canonici per backup, lifecycle, voce e ricerca.
+
+## Hugging Face «to do» — seconda ricerca, idee 13–28, 01/11/2026
+
+Tutte **PROPOSTA** (funzioni, non nuove app). Approfondimento con punteggi, fonti dirette/distinte da inferenze, licenze e gate: [Seconda ricerca Hugging Face «to do»](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md).
+
+| # | Idea | CAP collegati | Stato |
+| --- | --- | --- | --- |
+| 13 | **Smart Rescheduler** | CAP-0102, CAP-0001 | PROPOSTA — non in roadmap |
+| 14 | **Dependency Map** | CAP-0103, CAP-0096, CAP-0028 | PROPOSTA — non in roadmap |
+| 15 | **Goal Timeline** | CAP-0104, CAP-0099 | PROPOSTA — non in roadmap |
+| 16 | **Smart Priority Engine** | CAP-0105 | PROPOSTA — non in roadmap |
+| 17 | **Workload Guard** | CAP-0106, CAP-0001 | PROPOSTA — non in roadmap |
+| 18 | **Project Blueprint Import** | CAP-0107, CAP-0093, CAP-0075 | PROPOSTA — non in roadmap |
+| 19 | **Backward Planning** | CAP-0104, CAP-0001 | PROPOSTA — non in roadmap |
+| 20 | **Task Time Accuracy** | CAP-0108, CAP-0101 | PROPOSTA — non in roadmap |
+| 21 | **Focus Notes** | CAP-0109 | PROPOSTA — non in roadmap |
+| 22 | **Eisenhower Visual Board** | CAP-0105, CAP-0094 | PROPOSTA — non in roadmap |
+| 23 | **Quick Start Mode** | CAP-0110, CAP-0109 | PROPOSTA — non in roadmap |
+| 24 | **Weekly Review** | CAP-0111, CAP-0101 | PROPOSTA — non in roadmap |
+| 25 | **Learning Recall** | CAP-0112, CAP-0099 | PROPOSTA — non in roadmap |
+| 26 | **Alternative Plans** | CAP-0102, CAP-0001 | PROPOSTA — non in roadmap |
+| 27 | **Focus Protection** | CAP-0109, CAP-0077 | PROPOSTA — non in roadmap |
+| 28 | **Meeting Load Heatmap** | CAP-0106, CAP-0101 | PROPOSTA — non in roadmap |
+
+Le 16 idee si traducono in 11 nuovi CAP (CAP-0102…CAP-0112) e collegamenti a CAP preesistenti, evitando doppioni. La ricerca originale 1–12 resta nel documento precedente.
