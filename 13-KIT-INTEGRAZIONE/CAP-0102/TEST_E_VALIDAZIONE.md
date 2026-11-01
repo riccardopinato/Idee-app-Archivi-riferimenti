@@ -1,14 +1,5 @@
-# Piano di verifica — CAP-0102
+# CAP-0102 — test contract Anna
 
-- Input ordinario, vuoto, grande, corrotto, duplicato; risultato specifico: **Ripianificazione assistita e confronto piani alternativi**.
-- Nessuna mutazione senza consenso; annulla, ripristino, rollback, dati e media originali preservati.
-- Offline, autorizzazioni negate, dipendenze/modello assenti, errori runtime e riavvio.
-- Traduzioni, leggibilità, accessibilità, font scaling, compatibilità con app esistente.
-- Prestazioni, RAM, footprint APK, storage e batteria quando pertinenti.
-- QA: `flutter analyze`, test, build, CI exact-head, smoke e dispositivo fisico dove richiesto.
+`dart 13-KIT-INTEGRAZIONE/CAP-0102/test/anna_reschedule_preview_test.dart` in GitHub CI verifica: slot liberi che rispettano durata, due proposte, ordine stabile, deadline, blocco shared/fixed/recurring/completed, coverage parziale, account cambiato, dedup, duration input invalida.
 
-## Gate specifico
-
-Verificare task e calendario canonici; strategia locale con vincoli hard/soft e preview delle modifiche, nessuno spostamento o evento scritto senza conferma; fallback no-AI.
-
-**Evidenze ancora da produrre:** SHA target, tests PASS, runtime/device, licenze donor. Questa checklist NON certifica alcun test.
+**Non testati:** import nella Flutter app, connessione all'AgendaStore e all'editor, vere revisioni DB, DST/fusi reali, reminder/sync e contesto dispositivo. `dart analyze` e CLI test non equivalgono a build APK.

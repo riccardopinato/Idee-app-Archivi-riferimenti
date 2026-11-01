@@ -4,6 +4,8 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - "13-KIT-INTEGRAZIONE/CAP-0102/**"
+      - "13-KIT-INTEGRAZIONE/CAP-0111/**"
       - "13-KIT-INTEGRAZIONE/CAP-0114/**"
       - "13-KIT-INTEGRAZIONE/CAP-0134/**"
       - "13-KIT-INTEGRAZIONE/CAP-0138/**"
@@ -11,6 +13,8 @@ on:
   push:
     branches: [main]
     paths:
+      - "13-KIT-INTEGRAZIONE/CAP-0102/**"
+      - "13-KIT-INTEGRAZIONE/CAP-0111/**"
       - "13-KIT-INTEGRAZIONE/CAP-0114/**"
       - "13-KIT-INTEGRAZIONE/CAP-0134/**"
       - "13-KIT-INTEGRAZIONE/CAP-0138/**"
@@ -33,11 +37,16 @@ jobs:
         run: dart --version
       - name: Analyze original standalone adapters
         run: |
+          dart analyze 13-KIT-INTEGRAZIONE/CAP-0102/lib 13-KIT-INTEGRAZIONE/CAP-0102/test
+          dart analyze 13-KIT-INTEGRAZIONE/CAP-0111/lib 13-KIT-INTEGRAZIONE/CAP-0111/test
           dart analyze 13-KIT-INTEGRAZIONE/CAP-0114/lib 13-KIT-INTEGRAZIONE/CAP-0114/test
           dart analyze 13-KIT-INTEGRAZIONE/CAP-0134/lib 13-KIT-INTEGRAZIONE/CAP-0134/test
           dart analyze 13-KIT-INTEGRAZIONE/CAP-0138/lib 13-KIT-INTEGRAZIONE/CAP-0138/test
       - name: Execute deterministic tests
         run: |
+          dart 13-KIT-INTEGRAZIONE/CAP-0102/test/anna_reschedule_preview_test.dart
+          dart 13-KIT-INTEGRAZIONE/CAP-0111/test/anna_weekly_review_test.dart
+          dart 13-KIT-INTEGRAZIONE/CAP-0114/test/anna_text_privacy_gate_test.dart
           dart 13-KIT-INTEGRAZIONE/CAP-0114/test/privacy_preview_test.dart
           dart 13-KIT-INTEGRAZIONE/CAP-0134/test/document_triage_test.dart
           dart 13-KIT-INTEGRAZIONE/CAP-0138/test/audio_ink_index_test.dart

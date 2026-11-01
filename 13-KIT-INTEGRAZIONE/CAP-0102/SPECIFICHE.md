@@ -1,19 +1,17 @@
-# Specifiche candidate — CAP-0102
+# CAP-0102 — Anna: specifiche derivate dai sorgenti
 
-## Scopo
+**App target:** riccardopinato/Agenda-per-Anna@88efdfa9a688f35585cf2760d131f7a6b0b9deb2 — `pubspec.yaml` Flutter/Dart >=3.10, `1.0.0-rc.6+117`.
 
-Proporre slot alternativi per task spostabili dopo un imprevisto, conservando eventi fissi, preferenze e possibilita di confrontare due soluzioni.
+## Data contracts rilevati
 
-## Requisiti iniziali proposti (non specifiche donor verificate)
+- `CalendarFreeSlot`: coppia DateTime inizio/fine; `findCalendarFreeSlots` deriva gap da eventi visibili e autorizzati, non da task; disponibilita esterna dipende da `ExternalCalendarService`/permission/coverage.
+- `AgendaItem`: `ItemType.task`, `done`, `id`, `date`, `start/end`, `recurrenceRule`; **nessun campo `plannedMinutes` o `duration` universale**; chiedere `requestedMinutes` prima di proporre.
+- `AgendaStore`: owner delle modifiche, account attivo e revisioni; il kit non possiede alcun writer, modalita solo lettura.
 
-1. Selezione esplicita dell'input e identificazione della fonte.
-2. Elaborazione limitata a **Ripianificazione assistita e confronto piani alternativi** e restituzione di un risultato chiaro o errore esplicito.
-3. Preview/edit prima di ogni mutazione; nessun download, upload, sincronizzazione o cancellazione implicita.
-4. Riutilizzo dei dati canonici, import/export, lifecycle e backup dell'app destinataria.
-5. Offline/failure, localizzazione, accessibilità e logica permessi trattati per-app.
+## Adapter originale
 
-## Gate particolare
+`AnnaReschedulePreview.suggest(taskId, requestedMinutes, now, freeWindows, isPrivateTask, completed, recurring, fixedAppointment, calendarCoverageComplete, accountUnchanged, deadline?, previousStart?) -> List<AnnaMoveProposal>`.
 
-Verificare task e calendario canonici; strategia locale con vincoli hard/soft e preview delle modifiche, nessuno spostamento o evento scritto senza conferma; fallback no-AI.
+**Invarianti:** nessuna proposta su shared/external/fixed/ricorrente; deadline hard; ordinamento deterministico, dedup dello stesso start; niente commit o notifica automatica; calendario parziale/account cambiato = zero proposte. Nessun inferenza AI. DateTime timezone e DST dovranno essere verificate nella UI e su device prima del riuso.
 
-**DA COMPLETARE:** interfacce sorgente e API reali, forme dati e file target dopo audit a SHA del donor e dell'app.
+**Fonte di ispirazione**: [Plan My Day, dataset sperimentale Apache-2.0](https://huggingface.co/datasets/burtenshaw/plan-my-day-results) usa imprevisti e preferenze, ma non fornisce un modulo Dart pronto né prove su utenti reali. NESSUN codice/peso/dato donor copiato.

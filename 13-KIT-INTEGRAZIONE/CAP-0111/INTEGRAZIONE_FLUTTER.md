@@ -1,16 +1,9 @@
-# Piano di integrazione Flutter — CAP-0111
+# CAP-0111 — Anna Flutter reuse-first plan
 
-**NON ESEGUITO — proposta da adattare all'app.**
+1. Leggere Product Bible/roadmap corrente e rispettare v1.07 C1/C2 ancora pianificati. Proposta fuori roadmap per ora.
+2. Mappare *solo* `AgendaItem` privati dal `AgendaStore.items` al semplice `AnnaReviewTask`. Non leggere `SharedEntry`, Account diversi, private vault, ciclo, E2EE o contenuti nascosti.
+3. Esporre l'anteprima settimanale in Today/diario, idealmente vicino al preesistente `WeekData` per evitare un nuovo store o motore produttivita.
+4. Al salvataggio di riflessioni o priorita, usare i writer AgendaStore gia esistenti con account/revision guard. No cancellazione, ri-pianificazione o push impliciti.
+5. QA su task ricorrenti, dati Trash, localizzazione, login switch, restore/sync, blocchi Vault e prestazioni su settimana lunga.
 
-1. Leggere Product Bible/roadmap e fissare commit SHA del repository destinatario.
-2. Cercare componenti Golden e codice equivalente già presente: riuso prima di duplicazione.
-3. Definire piccolo adattatore per **Weekly Review con proposte di pulizia e ripianificazione** sui modelli e servizi canonici, senza imporre nuovo stack o un secondo database.
-4. Verificare licenze e impatto di SDK, modelli, storage, rete, permessi; local-first e consenso dove previsti.
-5. Creare una UI coerente con il progetto, con preview, errore comprensibile e rollback dei dati.
-6. Eseguire analyze, unit/widget test, build, dimensione APK e QA device se richiesto.
-
-## Vincoli dal registro
-
-Riutilizzare dashboard CAP-0101, scheduler esistente e lifecycle; nessuna cancellazione o ripianificazione automatica; Anna in forma Today/diario non PM suite.
-
-**Non dichiarare codice pronto o piattaforma supportata senza sorgente e test.**
+Il pure Dart kit non chiama né modifica API Flutter/Anna e non certifica il risultato runtime.

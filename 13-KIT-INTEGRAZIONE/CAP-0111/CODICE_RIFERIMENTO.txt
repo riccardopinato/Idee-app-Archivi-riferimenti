@@ -1,13 +1,11 @@
 CAP: CAP-0111
-CAPABILITY: Weekly Review con proposte di pulizia e ripianificazione
-FONTE: HUGGINGFACE_IDEA_RESEARCH
-CODICE_ESTRATTO: NO
-CODICE_PRONTO_DA_COPIARE: NO
-
-RIFERIMENTI:
-1. https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md
-2. https://huggingface.co/datasets/MiniAppBench/Dataset
-
-Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
-Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
-NON inserire qui codice inventato o snippet senza provenance.
+APP SOURCE: https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/domain_models.dart (AgendaItem/WeekData)
+APP SOURCE: https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/agenda_store.dart (private items)
+APP SOURCE: https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/daily_rituals.dart (existing diary content)
+ORIGIN: NEW_IMPLEMENTATION
+CODE: lib/anna_weekly_review.dart
+TEST: test/anna_weekly_review_test.dart
+DONOR CONCEPT: https://huggingface.co/datasets/MiniAppBench/Dataset
+DONOR CODE COPIED: NO
+STORE WRITES: NO
+NOT VERIFIED: Flutter integration, per-event completion date, real-device
