@@ -11,6 +11,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+KIT_ROOT = ROOT / '13-KIT-INTEGRAZIONE'
 BASE = ROOT / "12-CAPABILITY-E-IMPLEMENTAZIONI"
 JSON_FILE = BASE / "REGISTRO_CAPABILITY.json"
 KNOWN = {"PROPOSTA", "ROADMAP_STORICA", "SOURCE_REPORTED", "DONOR_REPORTED",
@@ -26,6 +27,12 @@ def md_table(headers, rows):
         + "| " + " | ".join("---" for _ in headers) + " |\n"
         + "".join("| " + " | ".join(clean(x) for x in row) + " |\n" for row in rows)
     )
+
+def brief(value, limit=118):
+    value = " ".join(value.split())
+    if len(value) <= limit:
+        return value
+    return value[:limit-1].rsplit(" ", 1)[0] + "…"
 
 def main():
     parser = argparse.ArgumentParser()
@@ -52,6 +59,11 @@ def main():
             raise SystemExit("Missing provenance " + rec["id"])
         if not rec["app_states"]:
             raise SystemExit("Capability without an app: " + rec["id"])
+        ease = rec.get("integration_ease_percent")
+        if not isinstance(ease, dict) or set(ease) != set(rec["app_states"]):
+            raise SystemExit("Missing per-app integration estimate: " + rec["id"])
+        if any(type(value) is not int or not 0 <= value <= 100 for value in ease.values()):
+            raise SystemExit("Invalid per-app integration ease percentage: " + rec["id"])
         if not set(rec["app_states"].values()).issubset(KNOWN):
             raise SystemExit("Invalid app status in " + rec["id"])
         s = rec["scores"]
@@ -73,9 +85,9 @@ def main():
     versions["CLASSIFICA_PRIORITA.md"] = (
         f"# Classifica capability — snapshot {data['updated_at']}\n\n"
         "**Ranking tecnico-editoriale relativo, NON approvazione di roadmap.** P1: >=92, P2: 79–91, P3: <79. P0 e riservato ai veri incidenti di sicurezza/dati, non alla ricerca di idee.\n\n"
-        + md_table(["#","ID","Capability","Ambito","Score","Classe","App interessate","Prossima verifica"], [
+        + md_table(["#","ID","Capability","Ambito","Score","Kit tecnico","Classe","App interessate","Prossima verifica"], [
             [i, f"[{rec['id']}](REGISTRO_CAPABILITY/{rec['id']}.md)", rec["title"], rec["domain"], rec["score"],
-             rec["priority"], ", ".join(rec["app_states"].keys()), rec["next_gate"]]
+             f"[Apri](../13-KIT-INTEGRAZIONE/{rec['id']}/README.md)", rec["priority"], ", ".join(rec["app_states"].keys()), rec["next_gate"]]
             for i, rec in enumerate(rank, 1)])
         + "\nIl ranking NON usa metriche economiche reali; la priorita finale spetta alla roadmap della singola app.\n"
     )
@@ -117,7 +129,8 @@ def main():
             f"- **Fattibilita / prossimo gate:** {rec['next_gate']}\n"
             "- **Validazione:** NON VERIFICATA in questo audit; distinguere codice, CI, dispositivo e distribuzione.\n"
             "- **Stato commerciale:** idea catalogata, non approvazione implicita del Product Bible.\n"
-            f"- **Revisione:** {rec['reviewed_at']}\n\n"
+            f"- **Revisione:** {rec['reviewed_at']}\n"
+            f"- **Kit tecnico:** [Apri il kit](../../13-KIT-INTEGRAZIONE/{rec['id']}/README.md)\n\n"
             "La scheda e generata dalla fonte canonica `REGISTRO_CAPABILITY.json`. Cambiare prima il JSON e rigenerare le viste.\n"
         )
     for app in apps:
@@ -125,12 +138,20 @@ def main():
         versions[f"PER_APP/{app}.md"] = (
             f"# {app} — capability e priorita\n\n"
             "Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.\n\n"
-            + md_table(["ID","Capability","Priorita","Score","Stato nell'app","Prossimo gate"], [
+            + md_table(["ID","Capability","Priorita","Score","Facilita integrazione (%)","Descrizione breve","Kit tecnico","Stato nell'app","Prossimo gate"], [
                 [f"[{rec['id']}](../REGISTRO_CAPABILITY/{rec['id']}.md)", rec["title"], rec["priority"],
-                 rec["score"], rec["app_states"][app], rec["next_gate"]] for rec in items])
+                 rec["score"], f"{rec['integration_ease_percent'][app]}%", brief(rec["description"]),
+                 f"[Apri](../../13-KIT-INTEGRAZIONE/{rec['id']}/README.md)",
+                 rec["app_states"][app], rec["next_gate"]] for rec in items])
             + f"\n**Totale associazioni:** {len(items)}. Non modificare automaticamente la roadmap del prodotto.\n"
         )
     problems=[]
+    required_kit_files = ("README.md", "SPECIFICHE.md", "CODICE_RIFERIMENTO.txt", "INTEGRAZIONE_FLUTTER.md", "LICENZE_E_DIPENDENZE.md", "TEST_E_VALIDAZIONE.md")
+    for rec in records:
+        for filename in required_kit_files:
+            kit_path = KIT_ROOT / rec["id"] / filename
+            if not kit_path.is_file():
+                problems.append(str(kit_path.relative_to(ROOT)))
     for relative, content in versions.items():
         path=BASE/relative
         if args.check:

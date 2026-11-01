@@ -8,6 +8,8 @@
 - [Stato implementazioni](STATO_IMPLEMENTAZIONI.md)
 - [Schede individuali](REGISTRO_CAPABILITY/)
 - [JSON canonico](REGISTRO_CAPABILITY.json)
+- [140 kit tecnici](../13-KIT-INTEGRAZIONE/README.md) e [indice](../13-KIT-INTEGRAZIONE/INDICE.md)
+- [Metodologia percentuali facilità](../13-KIT-INTEGRAZIONE/METODOLOGIA_FACILITA.md)
 - [Audit fonti e copertura](AUDIT_TRASVERSALE_2026-11-01.md)
 - [Ricerca r/BestGitHubRepos 01/11](RICERCA_REDDIT_BESTGITHUBREPOS_2026-11-01.md)
 - [Hugging Face «to do»: 12 proposte Notes/Anna 01/11](RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md)
@@ -27,6 +29,10 @@
 **Scoring**: valore 35%, riuso 25%, fattibilita 20%, evidenza 10%, rischio basso 10% (fattori 1-5). Le classi P1/P2/P3 (P1 >=92; P2 79-91; P3 <79) sono indicative e separate dalla severity bug P0-P3 del Factory Master.
 
 **Licenze**: ogni API/repo/modello esterno richiede licenza ToS costi footprint privacy e commercial-use gate al momento dell'integrazione; solo ispirazione se non copiable. Questo archivio non autorizza alcuna nuova AI o backend.
+
+## Colonne per-app
+
+Ogni tabella delle app presenta Score, **Facilita integrazione (%)**, **Descrizione breve**, **Kit tecnico** e l'evidence ladder. Le percentuali sono stime preliminari per singola app e si aggiornano nel JSON. I kit sono al livello 1, senza codice donor copiato o licenza verificata nel kit.
 
 ## Aggiornamento e verifica
 

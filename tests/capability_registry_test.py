@@ -31,6 +31,21 @@ class CapabilityEvidencePromotionTest(unittest.TestCase):
                 (base / "REGISTRO_CAPABILITY.json").write_text(
                     json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
                 (base / "SOURCE_INVENTORY.json").write_text(inventory, encoding="utf-8")
+                # This fixture isolates evidence promotion from donor kit contents.
+                # The generator also validates six kit files per CAP: stub only their
+                # required presence here, keeping full repository checks strict.
+                kit_root = root / "13-KIT-INTEGRAZIONE"
+                required_kit_files = (
+                    "README.md", "SPECIFICHE.md", "CODICE_RIFERIMENTO.txt",
+                    "INTEGRAZIONE_FLUTTER.md", "LICENZE_E_DIPENDENZE.md",
+                    "TEST_E_VALIDAZIONE.md",
+                )
+                for capability in data["records"]:
+                    kit_dir = kit_root / capability["id"]
+                    kit_dir.mkdir(parents=True, exist_ok=True)
+                    for filename in required_kit_files:
+                        (kit_dir / filename).touch()
+
                 generated = subprocess.run(
                     [sys.executable, str(root / "scripts" / "build_catalog.py")],
                     capture_output=True, text=True, check=True)

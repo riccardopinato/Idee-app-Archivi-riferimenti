@@ -2,6 +2,11 @@
 
 **Archivio organizzato** per idee app, classifiche, descrizioni cliente, suite, micro-utility, fonti dati, librerie, repository, commercializzazione e aggiornamenti. Il repository non contiene il codice delle app.
 
+## Libreria kit tecnici
+
+- [140 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.
+- [Stima facilità per app](13-KIT-INTEGRAZIONE/METODOLOGIA_FACILITA.md): nelle [tabelle delle singole app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/) figurano le colonne **Facilita integrazione (%)**, **Descrizione breve** e **Kit tecnico**, di fianco allo Score.
+
 ## Navigazione
 
 | Cartella | Trovi qui |

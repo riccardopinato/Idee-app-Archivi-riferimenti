@@ -1,0 +1,14 @@
+# Piano di verifica — CAP-0096
+
+- Input ordinario, vuoto, grande, corrotto, duplicato; risultato specifico: **Gerarchie task ricorrenze e relazioni alle note**.
+- Nessuna mutazione senza consenso; annulla, ripristino, rollback, dati e media originali preservati.
+- Offline, autorizzazioni negate, dipendenze/modello assenti, errori runtime e riavvio.
+- Traduzioni, leggibilità, accessibilità, font scaling, compatibilità con app esistente.
+- Prestazioni, RAM, footprint APK, storage e batteria quando pertinenti.
+- QA: `flutter analyze`, test, build, CI exact-head, smoke e dispositivo fisico dove richiesto.
+
+## Gate specifico
+
+Audit funzioni task e recurrence gia presenti; non introdurre secondo scheduler o storage; test eccezioni ricorrenza, delete e restore.
+
+**Evidenze ancora da produrre:** SHA target, tests PASS, runtime/device, licenze donor. Questa checklist NON certifica alcun test.

@@ -1,0 +1,14 @@
+CAP: CAP-0091
+CAPABILITY: Snapshot condivisibile della vista mappa senza dati privati
+FONTE: EXTERNAL_REPO_RESEARCH
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+
+RIFERIMENTI:
+1. https://github.com/bilawalsidhu/gods-eye-view/tree/8978801dfd2a88368074883a87bcd05ffb57ef92
+2. https://www.reddit.com/r/BestGitHubRepos/comments/1wkt8qz/gods_eye_view_a_spysatellite_simulator_in_your/
+3. https://github.com/bilawalsidhu/gods-eye-view
+
+Prima di estrarre: verificare URL, commit/tag, path file, SPDX/diritti commerciali, dipendenze e footprint.
+Se non licenziato in modo compatibile, soltanto pattern e riscrittura originale clean-room.
+NON inserire qui codice inventato o snippet senza provenance.
