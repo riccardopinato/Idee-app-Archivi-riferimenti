@@ -20,3 +20,9 @@
 - Modifica `REGISTRO_CAPABILITY.json` -> esegui `python3 scripts/build_catalog.py` -> `python3 scripts/build_catalog.py --check` -> PR con gate. La PR puo essere unita automaticamente **solo** con check exact-head verdi, mergeable e nessuna review bloccante.
 - Evidence ladder per app: `PROPOSTA`, `ROADMAP_STORICA`, `SOURCE_REPORTED`, `DONOR_REPORTED`, `SOURCE_CONFIRMED`, `CI_VERIFIED`, `DEVICE_VERIFIED`, `RELEASE`, `BLOCKED`; i passaggi a evidence superiore necessitano link SHA/test/artifact concreti. Non confondere `SOURCE_REPORTED` con funzionalita testata.
 - Scansioni ricorrenti: diff incrementali con fallback di verifica, aggiornamenti idempotenti e nessuna modifica diretta a Factory Core, AppLab o repo delle app. Se tool/permessi non disponibili, segnalare blocco e non dichiarare sincronizzazione riuscita.
+
+## Kit tecnici e stime di integrazione
+
+- Ogni CAP deve avere una cartella `13-KIT-INTEGRAZIONE/CAP-NNNN/` con sei file canonici; un link al donor non rende codice licenziato, estratto o riutilizzabile. Non promuovere kit oltre `RIFERIMENTI_ACQUISITI` senza SHA/file/licenza e prove.
+- Ogni associazione app nel registro ha una stima `integration_ease_percent` 0–100, euristica e app-specifica. Dopo un vero audit, aggiornarla nel JSON e documentare la motivazione nel kit; non trattarla come prova runtime.
+- Rigenerare le tabelle e verificare `python3 scripts/build_catalog.py --check` prima di merge; mantenere Score, stima di facilita, evidence e kit come dimensioni distinte.

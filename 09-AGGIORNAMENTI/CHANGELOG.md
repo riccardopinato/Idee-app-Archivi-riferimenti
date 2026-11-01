@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Libreria 140 kit, percentuali integrazione e descrizioni per app
+- Creati 140 kit individuali in `13-KIT-INTEGRAZIONE/` con sei documenti ciascuno, note di provenienza e caveat. Stato dei kit `RIFERIMENTI_ACQUISITI`, nessun codice donor estratto e nessuna licenza automaticamente approvata.
+- Aggiunti i valori `integration_ease_percent` per ogni associazione CAP/app (324): stime editoriali iniziali, memorizzate in JSON, per-app, distinte dallo Score e dalla prova reale di compatibilita.
+- Aggiornato generatore `scripts/build_catalog.py` e 48 viste per app: Score, **Facilita integrazione (%)**, **Descrizione breve**, **Kit tecnico**. Classifica e tutte le schede CAP ora rimandano ai kit.
+- Il check blocca percentuali mancanti/fuori range e kit incompleti; nessuna modifica agli stati di implementazione o ai repository delle app.
+
+
 ## 2026-11-01 — Archiviazione totale 56 idee Hugging Face Notes (ricerche #29–56)
 - Salvate integralmente **16 idee #29–44** e **12 idee #45–56** in due ricerche nuove, con fonte, URL, score editoriale originale, livello di verifica, limiti e gate per futuri test Flutter/Android.
 - Catalogo ora **140 capability**, 48 app/idee, 324 associazioni, 18 P1 / 72 P2 / 50 P3. Creati CAP-0114…CAP-0140 (27 nuove responsabilita), #45 e #55 sullo stesso CAP di generazione artefatti visuali modificabili.

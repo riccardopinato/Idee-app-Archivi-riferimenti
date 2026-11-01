@@ -43,7 +43,11 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 95,
+        "FocuSense": 95
+      }
     },
     {
       "id": "CAP-0002",
@@ -69,7 +73,11 @@
       },
       "next_gate": "Parser EN IT ES FR PT con conferma e timezone",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 95,
+        "Notes-Ecosistema": 95
+      }
     },
     {
       "id": "CAP-0003",
@@ -105,6 +113,10 @@
         "ci_ref": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41262693723",
         "physical": "NOT_VERIFIED",
         "release_candidate": "1.0.0-rc.6+116"
+      },
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 95,
+        "Notes-Ecosistema": 95
       }
     },
     {
@@ -131,7 +143,11 @@
       },
       "next_gate": "Verificare Android Calendar Provider e disponibilità Notes",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 85,
+        "Notes-Ecosistema": 80
+      }
     },
     {
       "id": "CAP-0005",
@@ -157,7 +173,11 @@
       },
       "next_gate": "Verificare provider permessi e intent senza sync bidirezionale",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 85,
+        "Notes-Ecosistema": 80
+      }
     },
     {
       "id": "CAP-0006",
@@ -183,7 +203,11 @@
       },
       "next_gate": "Verificare test v0.71 e riuso senza database condiviso",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 95,
+        "TasteAI": 95
+      }
     },
     {
       "id": "CAP-0007",
@@ -209,7 +233,11 @@
       },
       "next_gate": "Non creare doppio diario allenamenti",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 85,
+        "FocuSense": 80
+      }
     },
     {
       "id": "CAP-0008",
@@ -235,7 +263,11 @@
       },
       "next_gate": "Verificare parser e conservazione file originale",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 70,
+        "PDF-Unifier": 85
+      }
     },
     {
       "id": "CAP-0009",
@@ -261,7 +293,11 @@
       },
       "next_gate": "Verificare permessi e nessuna condivisione GPS implicita",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 85,
+        "Wonderlog": 85
+      }
     },
     {
       "id": "CAP-0010",
@@ -287,7 +323,11 @@
       },
       "next_gate": "Usare media canonici e consenso foto",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 95,
+        "Wonderlog": 95
+      }
     },
     {
       "id": "CAP-0011",
@@ -313,7 +353,11 @@
       },
       "next_gate": "Non introdurre archivio parallelo",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 85,
+        "Wonderlog": 85
+      }
     },
     {
       "id": "CAP-0012",
@@ -339,7 +383,11 @@
       },
       "next_gate": "Non ricostruire funzione gia integrata",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 85,
+        "Wonderlog": 85
+      }
     },
     {
       "id": "CAP-0013",
@@ -368,7 +416,11 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 95,
+        "Notes-Ecosistema": 95
+      }
     },
     {
       "id": "CAP-0014",
@@ -394,7 +446,11 @@
       },
       "next_gate": "Conversione evento a ricordo sempre esplicita",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 85,
+        "Wonderlog": 85
+      }
     },
     {
       "id": "CAP-0015",
@@ -420,7 +476,11 @@
       },
       "next_gate": "Source gate riportati PASS ma verificare smoke Android",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 95,
+        "Notes-Ecosistema": 95
+      }
     },
     {
       "id": "CAP-0016",
@@ -446,7 +506,11 @@
       },
       "next_gate": "Smoke fisico categoria vuota riavvio e sync",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 90,
+        "Notes-Ecosistema": 95
+      }
     },
     {
       "id": "CAP-0017",
@@ -479,7 +543,13 @@
         "https://huggingface.co/AbdulElahGwaith/todo-app-enhanced-repo",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 80,
+        "Notes-Ecosistema": 80,
+        "Wonderlog": 80,
+        "CamperBoss": 80
+      }
     },
     {
       "id": "CAP-0018",
@@ -510,7 +580,12 @@
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 65,
+        "Notes-Ecosistema": 65,
+        "CamperBoss": 65
+      }
     },
     {
       "id": "CAP-0019",
@@ -540,7 +615,12 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 65,
+        "Notes-Ecosistema": 65,
+        "CamperBoss": 65
+      }
     },
     {
       "id": "CAP-0020",
@@ -568,7 +648,13 @@
       },
       "next_gate": "Verificare roundtrip reale e contratti consumer per versione",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 60,
+        "Wonderlog": 60,
+        "Notes-Ecosistema": 60,
+        "TrailPath": 60
+      }
     },
     {
       "id": "CAP-0021",
@@ -594,7 +680,11 @@
       },
       "next_gate": "Serve prova camera e 2 account su device distinti",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 75,
+        "Wonderlog": 75
+      }
     },
     {
       "id": "CAP-0022",
@@ -625,7 +715,13 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 80,
+        "World-Days": 80,
+        "app-fotografia": 80,
+        "In-Cucina-con-gli-Anime": 80
+      }
     },
     {
       "id": "CAP-0023",
@@ -652,7 +748,12 @@
       },
       "next_gate": "Riuso pattern non diventa Golden automaticamente",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Design-App": 80,
+        "Agenda-per-Anna": 80,
+        "Wonderlog": 80
+      }
     },
     {
       "id": "CAP-0024",
@@ -679,7 +780,12 @@
       },
       "next_gate": "Verifica accessibilita e prestazioni su device",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Design-App": 80,
+        "Agenda-per-Anna": 80,
+        "World-Days": 80
+      }
     },
     {
       "id": "CAP-0025",
@@ -706,7 +812,12 @@
       },
       "next_gate": "No claim desktop full prima di QA multi-width",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Design-App": 80,
+        "Agenda-per-Anna": 80,
+        "app-fotografia": 80
+      }
     },
     {
       "id": "CAP-0026",
@@ -733,7 +844,12 @@
       },
       "next_gate": "Controllare silent mode e opzioni accessibilita",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Design-App": 80,
+        "FocuSense": 80,
+        "Battery_Guard": 80
+      }
     },
     {
       "id": "CAP-0027",
@@ -763,7 +879,12 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "Agenda-per-Anna": 80,
+        "Wonderlog": 80
+      }
     },
     {
       "id": "CAP-0028",
@@ -793,7 +914,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 95
+      }
     },
     {
       "id": "CAP-0029",
@@ -823,7 +947,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      }
     },
     {
       "id": "CAP-0030",
@@ -849,7 +976,11 @@
       },
       "next_gate": "Integrare Document Workspace senza wallet parallelo",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "PDF-Unifier": 85
+      }
     },
     {
       "id": "CAP-0031",
@@ -883,7 +1014,12 @@
         "https://huggingface.co/docs/inference-providers/guides/building-first-app",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 65,
+        "Notes-Ecosistema": 65,
+        "Wonderlog": 65
+      }
     },
     {
       "id": "CAP-0032",
@@ -916,7 +1052,12 @@
         "https://huggingface.co/spaces/sebasmos/sherlock-project-assistant",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 55,
+        "TasteAI": 50,
+        "Agenda-per-Anna": 50
+      }
     },
     {
       "id": "CAP-0033",
@@ -947,7 +1088,11 @@
         "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50",
         "https://huggingface.co/sayedimran/Ai_Todo_App",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 60,
+        "TasteAI": 60
+      }
     },
     {
       "id": "CAP-0034",
@@ -974,7 +1119,12 @@
       },
       "next_gate": "OCR locale poi conferma prima di transazione",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "CashMate-AI": 80,
+        "In-Cucina-con-gli-Anime": 80,
+        "BeerClass-AI": 80
+      }
     },
     {
       "id": "CAP-0035",
@@ -1006,7 +1156,13 @@
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "PDF-Unifier": 75,
+        "Notes-Ecosistema": 80,
+        "Agenda-per-Anna": 80,
+        "BeerClass-AI": 80
+      }
     },
     {
       "id": "CAP-0036",
@@ -1032,7 +1188,11 @@
       },
       "next_gate": "Conferma manuale prodotto gradazione ingredienti",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "BeerClass-AI": 80,
+        "In-Cucina-con-gli-Anime": 80
+      }
     },
     {
       "id": "CAP-0037",
@@ -1063,7 +1223,12 @@
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "PDF-Unifier": 95,
+        "Notes-Ecosistema": 90,
+        "PDF-Pocket-Tools": 90
+      }
     },
     {
       "id": "CAP-0038",
@@ -1089,7 +1254,11 @@
       },
       "next_gate": "Non creare secondo motore per packaging",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "PDF-Pocket-Tools": 80,
+        "PDF-Unifier": 85
+      }
     },
     {
       "id": "CAP-0039",
@@ -1121,7 +1290,13 @@
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Android-Omni-Cleaner": 90,
+        "app-fotografia": 95,
+        "Send-to-pc": 90,
+        "SafeShare": 90
+      }
     },
     {
       "id": "CAP-0040",
@@ -1148,7 +1323,12 @@
       },
       "next_gate": "Verificare algoritmo reale e precisione duplicati quasi identici",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Android-Omni-Cleaner": 80,
+        "Wonderlog": 80,
+        "app-fotografia": 80
+      }
     },
     {
       "id": "CAP-0041",
@@ -1175,7 +1355,12 @@
       },
       "next_gate": "SunCalc locale e colori originali con file donor verificato",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "app-fotografia": 95,
+        "World-Days": 95,
+        "TrailPath": 95
+      }
     },
     {
       "id": "CAP-0042",
@@ -1202,7 +1387,12 @@
       },
       "next_gate": "Riusare pattern non mescolare dati editoriali di prodotti differenti",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "app-fotografia": 80,
+        "World-Days": 80,
+        "In-Cucina-con-gli-Anime": 80
+      }
     },
     {
       "id": "CAP-0043",
@@ -1229,7 +1419,12 @@
       },
       "next_gate": "Rispettare copyright e revisioni umane obbligatorie",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "In-Cucina-con-gli-Anime": 65,
+        "World-Days": 65,
+        "app-fotografia": 65
+      }
     },
     {
       "id": "CAP-0044",
@@ -1256,7 +1451,12 @@
       },
       "next_gate": "Non clonare TasteAI; validare differenziazione",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "TasteAI": 95,
+        "In-Cucina-con-gli-Anime": 95,
+        "MealMate": 95
+      }
     },
     {
       "id": "CAP-0045",
@@ -1283,7 +1483,12 @@
       },
       "next_gate": "Lista derivata con consenso e separazione proprieta dati",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "TasteAI": 80,
+        "MealMate": 80,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0046",
@@ -1309,7 +1514,11 @@
       },
       "next_gate": "OCR poi conferma attributi e nessuna promessa nutrizionale",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "In-Cucina-con-gli-Anime": 80,
+        "TasteAI": 80
+      }
     },
     {
       "id": "CAP-0047",
@@ -1336,7 +1545,12 @@
       },
       "next_gate": "Licenze ODbL provider e freshness; non scaricare tile pubblici",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "CamperBoss": 60,
+        "TrailPath": 60,
+        "Wonderlog": 60
+      }
     },
     {
       "id": "CAP-0048",
@@ -1362,7 +1576,11 @@
       },
       "next_gate": "Test fisico snap a vari zoom e reti",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "TrailPath": 50,
+        "CamperBoss": 50
+      }
     },
     {
       "id": "CAP-0049",
@@ -1388,7 +1606,11 @@
       },
       "next_gate": "Validare routing camper reale e non dichiarare vera navigazione offline senza mappe",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "CamperBoss": 50,
+        "TrailPath": 50
+      }
     },
     {
       "id": "CAP-0050",
@@ -1415,7 +1637,12 @@
       },
       "next_gate": "Tempi da routing verificato e controllo manuale ordine",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Wonderlog": 80,
+        "CamperBoss": 80,
+        "TrailPath": 80
+      }
     },
     {
       "id": "CAP-0051",
@@ -1442,7 +1669,12 @@
       },
       "next_gate": "Trasporto COPY LINK esplicito e autorizzato",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Wonderlog": 80,
+        "Agenda-per-Anna": 80,
+        "TrailPath": 80
+      }
     },
     {
       "id": "CAP-0052",
@@ -1470,7 +1702,13 @@
       },
       "next_gate": "API gratuita meteo non commerciale non usare con Ads",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "CamperBoss": 75,
+        "TrailPath": 75,
+        "app-fotografia": 75,
+        "GrillBoss": 75
+      }
     },
     {
       "id": "CAP-0053",
@@ -1498,7 +1736,13 @@
       },
       "next_gate": "Calcolo locale SunCalc con timezone corretto",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "app-fotografia": 95,
+        "TrailPath": 95,
+        "CamperBoss": 95,
+        "WEB-012": 95
+      }
     },
     {
       "id": "CAP-0054",
@@ -1525,7 +1769,12 @@
       },
       "next_gate": "Dati nazionali diritti timestamp e valuta",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "CamperBoss": 60,
+        "WEB-002": 60,
+        "WEB-009": 60
+      }
     },
     {
       "id": "CAP-0055",
@@ -1555,7 +1804,12 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 85,
+        "World-Days": 80,
+        "Notification-Control": 80
+      }
     },
     {
       "id": "CAP-0056",
@@ -1581,7 +1835,11 @@
       },
       "next_gate": "Non accedere a messaggi privati fuori scopo",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Notification-Control": 60,
+        "Phone-Guard": 60
+      }
     },
     {
       "id": "CAP-0057",
@@ -1608,7 +1866,12 @@
       },
       "next_gate": "Test multi OEM FGS false-positive e batteria",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Phone-Guard": 60,
+        "Pocket-Guard": 60,
+        "Tabletop-Motion-Alarm": 60
+      }
     },
     {
       "id": "CAP-0058",
@@ -1634,7 +1897,11 @@
       },
       "next_gate": "Permessi overlay e specialUse Play policy",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "180FlipCharge": 75,
+        "App-Profiles": 75
+      }
     },
     {
       "id": "CAP-0059",
@@ -1660,7 +1927,11 @@
       },
       "next_gate": "Conferma dispositivo e backup package actions no root claim",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Easy-Debloat": 60,
+        "CleanOS": 60
+      }
     },
     {
       "id": "CAP-0060",
@@ -1686,7 +1957,11 @@
       },
       "next_gate": "Distingue salute stimata da misure disponibili",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Battery_Guard": 80,
+        "CamperBoss": 80
+      }
     },
     {
       "id": "CAP-0061",
@@ -1711,7 +1986,10 @@
       },
       "next_gate": "Verificare contro scarica reale in standby",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Battery_Guard": 80
+      }
     },
     {
       "id": "CAP-0062",
@@ -1738,7 +2016,12 @@
       },
       "next_gate": "Score sensori non diagnosi e test runtime",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "FocuSense": 85,
+        "Agenda-per-Anna": 80,
+        "SleepMax-Coach": 80
+      }
     },
     {
       "id": "CAP-0063",
@@ -1764,7 +2047,11 @@
       },
       "next_gate": "Consenso e niente spostamento eventi involontario",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "FocuSense": 90,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0064",
@@ -1790,7 +2077,11 @@
       },
       "next_gate": "Non formulare diagnosi mediche",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "SleepMax-Coach": 80,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0065",
@@ -1817,7 +2108,12 @@
       },
       "next_gate": "Test OEM reale multi dispositivo e Doze",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Phone-Guard": 80,
+        "Battery_Guard": 80,
+        "FocuSense": 80
+      }
     },
     {
       "id": "CAP-0066",
@@ -1844,7 +2140,12 @@
       },
       "next_gate": "Pairing fingerprint HTTPS e test rete locale",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Send-to-pc": 60,
+        "Notes-Ecosistema": 60,
+        "Wonderlog": 60
+      }
     },
     {
       "id": "CAP-0067",
@@ -1871,7 +2172,12 @@
       },
       "next_gate": "Artifact build non e device certification",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 80,
+        "AppLab": 80,
+        "Battery_Guard": 80
+      }
     },
     {
       "id": "CAP-0068",
@@ -1898,7 +2204,12 @@
       },
       "next_gate": "Mai inferire device PASS da CI",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "AppLab": 65,
+        "Agenda-per-Anna": 65,
+        "CamperBoss": 65
+      }
     },
     {
       "id": "CAP-0069",
@@ -1925,7 +2236,12 @@
       },
       "next_gate": "Baseline screen e variant certi",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Design-App": 65,
+        "AppLab": 65,
+        "Agenda-per-Anna": 65
+      }
     },
     {
       "id": "CAP-0070",
@@ -1950,7 +2266,10 @@
       },
       "next_gate": "Politica fail closed P0/P1 e review",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "AppLab": 45
+      }
     },
     {
       "id": "CAP-0071",
@@ -1977,7 +2296,12 @@
       },
       "next_gate": "Licenze e hashing versioni pack",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "World-Days": 65,
+        "CamperBoss": 65,
+        "Notes-Ecosistema": 65
+      }
     },
     {
       "id": "CAP-0072",
@@ -2004,7 +2328,12 @@
       },
       "next_gate": "IAP compliance e no premium unlocked falsely",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 60,
+        "TasteAI": 60,
+        "In-Cucina-con-gli-Anime": 60
+      }
     },
     {
       "id": "CAP-0073",
@@ -2031,7 +2360,12 @@
       },
       "next_gate": "Test permessi consent e policy store",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "World-Days": 75,
+        "In-Cucina-con-gli-Anime": 75,
+        "Battery_Guard": 75
+      }
     },
     {
       "id": "CAP-0074",
@@ -2057,7 +2391,11 @@
       },
       "next_gate": "No duplicare trascrizione vocale offline",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65,
+        "Agenda-per-Anna": 65
+      }
     },
     {
       "id": "CAP-0075",
@@ -2089,7 +2427,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 65,
+        "Notes-Ecosistema": 65
+      }
     },
     {
       "id": "CAP-0076",
@@ -2115,7 +2457,11 @@
       },
       "next_gate": "Permissions share sheet e URL originale",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0077",
@@ -2147,7 +2493,13 @@
       "research_refs": [
         "https://github.com/NarYuki/Dextop/tree/5402d091975cdae4f39943b59a3a0131f5a0a543",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
-      ]
+      ],
+      "integration_ease_percent": {
+        "Phone-Guard": 80,
+        "TrailPath": 80,
+        "Battery_Guard": 80,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0078",
@@ -2178,7 +2530,13 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/bilawalsidhu/gods-eye-view/tree/8978801dfd2a88368074883a87bcd05ffb57ef92"
-      ]
+      ],
+      "integration_ease_percent": {
+        "WEB-008": 60,
+        "WEB-012": 60,
+        "WEB-014": 60,
+        "WEB-009": 60
+      }
     },
     {
       "id": "CAP-0079",
@@ -2204,7 +2562,11 @@
       },
       "next_gate": "Fonte fiscale ufficiale e data annuale",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "WEB-004": 60,
+        "Work-Time-Keeper": 60
+      }
     },
     {
       "id": "CAP-0080",
@@ -2231,7 +2593,12 @@
       },
       "next_gate": "Non includere segreti/identita in archivio condiviso",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "CamperBoss": 80,
+        "Notes-Ecosistema": 85,
+        "Home-Assets-Passport": 80
+      }
     },
     {
       "id": "CAP-0081",
@@ -2257,7 +2624,11 @@
       },
       "next_gate": "False-positive risk e test sensori reali",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "Phone-Guard": 75,
+        "Pocket-Guard": 75
+      }
     },
     {
       "id": "CAP-0082",
@@ -2284,7 +2655,12 @@
       },
       "next_gate": "Non generare asset coperti da diritti",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "integration_ease_percent": {
+        "World-Days": 95,
+        "app-fotografia": 95,
+        "Agenda-per-Anna": 95
+      }
     },
     {
       "id": "CAP-0083",
@@ -2316,7 +2692,12 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1wud3go/disktree_shows_you_exactly_whats_eating_your_disk/",
         "https://github.com/tobi/disktree"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Android-Omni-Cleaner": 80,
+        "Downloads-Butler": 80,
+        "Send-to-pc": 80
+      }
     },
     {
       "id": "CAP-0084",
@@ -2349,7 +2730,13 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1xgpvro/it_tools_collection_of_handy_online_tools_for/",
         "https://github.com/CorentinTh/it-tools"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "DevPocket-Tools": 90,
+        "CmdPocket": 90,
+        "Notes-Ecosistema": 90,
+        "WEB-UTILITY": 90
+      }
     },
     {
       "id": "CAP-0085",
@@ -2381,7 +2768,12 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1wqltx4/openwhispr_press_a_hotkey_speak_and_your_words/",
         "https://github.com/OpenWhispr/openwhispr"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 50,
+        "Agenda-per-Anna": 50,
+        "Wonderlog": 50
+      }
     },
     {
       "id": "CAP-0086",
@@ -2414,7 +2806,13 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1wqvy29/voicestudio_a_fully_local_opensource_elevenlabs/",
         "https://github.com/debpalash/VoiceStudio"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 60,
+        "Wonderlog": 60,
+        "App-corpo-umano": 60,
+        "In-Cucina-con-gli-Anime": 60
+      }
     },
     {
       "id": "CAP-0087",
@@ -2447,7 +2845,13 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1wkt8qz/gods_eye_view_a_spysatellite_simulator_in_your/",
         "https://github.com/bilawalsidhu/gods-eye-view"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "TrailPath": 60,
+        "CamperBoss": 60,
+        "Wonderlog": 60,
+        "WEB-014": 60
+      }
     },
     {
       "id": "CAP-0088",
@@ -2479,7 +2883,12 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1wu5tcb/dextop_unlocks_samsung_dex_and_desktop_mode_on/",
         "https://github.com/NarYuki/Dextop"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "EdgeDock": 30,
+        "App-Profiles": 30,
+        "DeskPilot": 30
+      }
     },
     {
       "id": "CAP-0089",
@@ -2511,7 +2920,12 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1wt62lb/openresearch_turn_your_coding_agent_into_a/",
         "https://github.com/alphaXiv/OpenResearch"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "AppLab": 80,
+        "Idee-app-Archivi-riferimenti": 80,
+        "app-fotografia": 80
+      }
     },
     {
       "id": "CAP-0090",
@@ -2543,7 +2957,12 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1x1jike/6_github_repos_that_take_you_from_zero_to/",
         "https://github.com/Shubhamsaboo/awesome-llm-apps"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "AppLab": 80,
+        "Idee-app-Archivi-riferimenti": 80,
+        "App-Factory-Core": 80
+      }
     },
     {
       "id": "CAP-0091",
@@ -2576,7 +2995,13 @@
         "https://www.reddit.com/r/BestGitHubRepos/comments/1wkt8qz/gods_eye_view_a_spysatellite_simulator_in_your/",
         "https://github.com/bilawalsidhu/gods-eye-view"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Wonderlog": 80,
+        "TrailPath": 80,
+        "CamperBoss": 80,
+        "app-fotografia": 80
+      }
     },
     {
       "id": "CAP-0092",
@@ -2607,7 +3032,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://huggingface.co/sayedimran/Ai_Todo_App"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0093",
@@ -2639,7 +3068,11 @@
         "https://huggingface.co/datasets/Srinivasmec26/Structured-Todo-Lists-for-Learning-and-Projects",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 95,
+        "Agenda-per-Anna": 90
+      }
     },
     {
       "id": "CAP-0094",
@@ -2669,7 +3102,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0095",
@@ -2699,7 +3135,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://huggingface.co/spaces/sebasmos/sherlock-project-assistant"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 60
+      }
     },
     {
       "id": "CAP-0096",
@@ -2731,7 +3170,11 @@
         "https://huggingface.co/spaces/Rvwaqas/todoapp",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0097",
@@ -2763,7 +3206,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65
+      }
     },
     {
       "id": "CAP-0098",
@@ -2794,7 +3240,10 @@
         "https://huggingface.co/Abhisingh-18/Vertical.ai",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65
+      }
     },
     {
       "id": "CAP-0099",
@@ -2825,7 +3274,10 @@
         "https://huggingface.co/datasets/Srinivasmec26/Structured-Todo-Lists-for-Learning-and-Projects",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0100",
@@ -2855,7 +3307,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 45
+      }
     },
     {
       "id": "CAP-0101",
@@ -2887,7 +3342,11 @@
         "https://huggingface.co/sayedimran/Ai_Todo_App",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 95,
+        "Agenda-per-Anna": 95
+      }
     },
     {
       "id": "CAP-0102",
@@ -2918,7 +3377,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/datasets/burtenshaw/plan-my-day-results"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0103",
@@ -2948,7 +3411,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/spaces/Agents-MCP-Hackathon/yuga-planner/blob/main/README.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0104",
@@ -2978,7 +3444,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/datasets/MiniAppBench/Dataset"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0105",
@@ -3009,7 +3478,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/datasets/burtenshaw/plan-my-day-results"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0106",
@@ -3041,7 +3514,11 @@
         "https://huggingface.co/spaces/Agents-MCP-Hackathon/yuga-planner/blob/main/README.md",
         "https://huggingface.co/datasets/MiniAppBench/Dataset"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "Agenda-per-Anna": 80
+      }
     },
     {
       "id": "CAP-0107",
@@ -3071,7 +3548,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/spaces/Agents-MCP-Hackathon/yuga-planner/blob/main/README.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0108",
@@ -3101,7 +3581,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/datasets/burtenshaw/plan-my-day-results"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 95
+      }
     },
     {
       "id": "CAP-0109",
@@ -3132,7 +3615,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/datasets/MiniAppBench/Dataset/blob/main/query_validation_100.json"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 95,
+        "FocuSense": 95
+      }
     },
     {
       "id": "CAP-0110",
@@ -3162,7 +3649,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/datasets/MiniAppBench/Dataset/blob/main/query_validation_100.json"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 95
+      }
     },
     {
       "id": "CAP-0111",
@@ -3193,7 +3683,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/datasets/MiniAppBench/Dataset"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 95,
+        "Agenda-per-Anna": 90
+      }
     },
     {
       "id": "CAP-0112",
@@ -3223,7 +3717,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
         "https://huggingface.co/spaces/abc1181/HermesAgent/blob/main/RELEASE_v0.6.0.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0113",
@@ -3256,6 +3753,10 @@
         "ci_ref": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41262693723",
         "physical": "NOT_VERIFIED",
         "release_candidate": "1.0.0-rc.6+116"
+      },
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 95,
+        "Wonderlog": 95
       }
     },
     {
@@ -3288,7 +3789,12 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/spaces/desert-ant-labs/redact-demo"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 80,
+        "Agenda-per-Anna": 80,
+        "PDF-Unifier": 75
+      }
     },
     {
       "id": "CAP-0115",
@@ -3318,7 +3824,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/spaces/sharath88/contradiction-entailment-demo"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65
+      }
     },
     {
       "id": "CAP-0116",
@@ -3348,7 +3857,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/spaces/minishlab/semantic-deduplication"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0117",
@@ -3379,7 +3891,10 @@
         "https://huggingface.co/Srinjoy99/tadpole-0.8b",
         "https://huggingface.co/Srinjoy99/tadpole-0.8b-GGUF"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 35
+      }
     },
     {
       "id": "CAP-0118",
@@ -3410,7 +3925,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://discuss.huggingface.co/t/document-processing-and-comparison-pipeline/172894"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85,
+        "PDF-Unifier": 85
+      }
     },
     {
       "id": "CAP-0119",
@@ -3440,7 +3959,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/spaces/wz258/CiteAudit"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65
+      }
     },
     {
       "id": "CAP-0120",
@@ -3472,7 +3994,12 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/spaces/abhilash88/ai-alt-tag-generator/blob/main/app.py"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 60,
+        "Agenda-per-Anna": 55,
+        "Wonderlog": 55
+      }
     },
     {
       "id": "CAP-0121",
@@ -3503,7 +4030,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/datasets/ndgold/live-linguist-easylanguage-sft"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65,
+        "Agenda-per-Anna": 60
+      }
     },
     {
       "id": "CAP-0122",
@@ -3534,7 +4065,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/spaces/Viraag/Paper2Any/blob/main/README_EN.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65,
+        "PDF-Unifier": 70
+      }
     },
     {
       "id": "CAP-0123",
@@ -3565,7 +4100,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/spaces/MCP-1st-Birthday/gdrive-pdf-translator-mcp/blob/main/README.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 60,
+        "Agenda-per-Anna": 60
+      }
     },
     {
       "id": "CAP-0124",
@@ -3595,7 +4134,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/datasets/SIRIS-Lab/topic-modeling-maps"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      }
     },
     {
       "id": "CAP-0125",
@@ -3626,7 +4168,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/datasets/maurovidal/chart2data-v0"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65,
+        "PDF-Unifier": 70
+      }
     },
     {
       "id": "CAP-0126",
@@ -3656,7 +4202,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/spaces/MCP-1st-Birthday/gdrive-pdf-translator-mcp/blob/main/README.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0127",
@@ -3687,7 +4236,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/abdulshakur/youtube_tutorial/blob/b4f7637fd69dbab34e0fda3edc784918cb4bbb40/README-HF.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 75,
+        "Wonderlog": 80
+      }
     },
     {
       "id": "CAP-0128",
@@ -3718,7 +4271,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/datasets/Voxel51/form_understanding_in_noisy_scanned_documents_plus"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65,
+        "PDF-Unifier": 70
+      }
     },
     {
       "id": "CAP-0129",
@@ -3749,7 +4306,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
         "https://huggingface.co/papers/2606.10677"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 65,
+        "Agenda-per-Anna": 60
+      }
     },
     {
       "id": "CAP-0130",
@@ -3780,7 +4341,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/spaces/Viraag/Paper2Any/blob/main/README_EN.md"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 60,
+        "app-fotografia": 60
+      }
     },
     {
       "id": "CAP-0131",
@@ -3810,7 +4375,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/inYourOwnBrowser/rapid-latex-ocr-onnx"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 35
+      }
     },
     {
       "id": "CAP-0132",
@@ -3842,7 +4410,12 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/ShantyCam/audiodet-ced-mini"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 55,
+        "Wonderlog": 55,
+        "Agenda-per-Anna": 55
+      }
     },
     {
       "id": "CAP-0133",
@@ -3873,7 +4446,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/docs/transformers/model_doc/pp_doclayout_v3"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70,
+        "PDF-Unifier": 70
+      }
     },
     {
       "id": "CAP-0134",
@@ -3905,7 +4482,12 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/vivekkaushal/DocRex"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 95,
+        "Agenda-per-Anna": 85,
+        "PDF-Unifier": 95
+      }
     },
     {
       "id": "CAP-0135",
@@ -3935,7 +4517,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/datasets/TrustworthyComp/ClaimReview2025Q4"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0136",
@@ -3966,7 +4551,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/spaces/Xenova/segment-anything-webgpu"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 60,
+        "app-fotografia": 60
+      }
     },
     {
       "id": "CAP-0137",
@@ -3997,7 +4586,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/spaces/stabilityai/stable-fast-3d"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 15,
+        "Wonderlog": 20
+      }
     },
     {
       "id": "CAP-0138",
@@ -4027,7 +4620,10 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 85
+      }
     },
     {
       "id": "CAP-0139",
@@ -4058,7 +4654,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/spaces/animtex/AIMoCap"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 50,
+        "FocuSense": 45
+      }
     },
     {
       "id": "CAP-0140",
@@ -4089,7 +4689,11 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
         "https://huggingface.co/Gertlek/DetectiveSAM"
       ],
-      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 35,
+        "app-fotografia": 40
+      }
     }
   ]
 }
