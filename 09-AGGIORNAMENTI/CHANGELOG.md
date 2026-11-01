@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Prima compatibilita mirata kit CAP-0134/0114/0138
+- App Notes-Ecosistema `3fd9b0d` analizzata in lettura: Flutter 0.56.3+74, contratti documenti/media/whiteboard/audio, assenza runtime ONNX dichiarato nel pubspec.
+- Tre moduli Dart originali, sei file codice/test: decoder parziale RGB/preprocessing/softmax DocRex, preview email/IBAN parziale, indice stroke-audio e codec versionato. Workflow GitHub di analyze+test; non compilati APK, non importati modelli.
+- Schede dettagliate riscritte con fonte, limiti e file preparati; percentuali di integrazione stimate ricalibrate per Notes/Anna/PDF. Nessuno stato app promosso; `PROPOSTA` resta.
+- [Audit](../13-KIT-INTEGRAZIONE/COMPATIBILITA_2026-11-01.md). Licenza Redact `other`; DocRex FP32 solo tre classi; MOSS 0.9B non integrato.
+
+
 ## 2026-11-01 — Libreria 140 kit, percentuali integrazione e descrizioni per app
 - Creati 140 kit individuali in `13-KIT-INTEGRAZIONE/` con sei documenti ciascuno, note di provenienza e caveat. Stato dei kit `RIFERIMENTI_ACQUISITI`, nessun codice donor estratto e nessuna licenza automaticamente approvata.
 - Aggiunti i valori `integration_ease_percent` per ogni associazione CAP/app (324): stime editoriali iniziali, memorizzate in JSON, per-app, distinte dallo Score e dalla prova reale di compatibilita.

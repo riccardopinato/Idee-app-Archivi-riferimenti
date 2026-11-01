@@ -4,6 +4,10 @@
 
 Ogni kit contiene: `README.md`, `SPECIFICHE.md`, `CODICE_RIFERIMENTO.txt`, `INTEGRAZIONE_FLUTTER.md`, `LICENZE_E_DIPENDENZE.md`, `TEST_E_VALIDAZIONE.md`.
 
+## Prime compatibilità approfondite
+
+[Audit e prove CAP-0134, CAP-0114 e CAP-0138](COMPATIBILITA_2026-11-01.md): codice originale limitato, test Dart, snapshot reale di Notes, licenze e limiti; nessun runtime Flutter/Android certificato.
+
 ## Livelli di preparazione
 
 1. **RIFERIMENTI_ACQUISITI:** link, necessità, specifiche candidate e gate. Tutti i kit attualmente partono da qui.
