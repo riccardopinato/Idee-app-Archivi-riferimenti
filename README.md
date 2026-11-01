@@ -18,7 +18,7 @@
 | [09-AGGIORNAMENTI](09-AGGIORNAMENTI/CHANGELOG.md) | Cronologia modifiche e decisioni |
 | [10-MODELLI](10-MODELLI/SCHEDA_APP.md) | Modelli standard per app, provider e librerie |
 | [11-NUOVE-IDEE](11-NUOVE-IDEE/README.md) | **Nuove proposte**, [inbox](11-NUOVE-IDEE/INBOX_IDEE.md), [audit nuove idee](11-NUOVE-IDEE/CANDIDATI_AUDIT_2026-10-30.md) e candidati non ancora promossi al portafoglio |
-| [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **101 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
+| [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **112 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
 | [90-STORICO](90-STORICO/REGISTRO_MASTER_2026-10-30.txt) | Registro integrale originale, immutato |
 
 ## Versioni centrali: snapshot letto il 30 ottobre 2026
@@ -39,6 +39,7 @@ La Factory centrale governa **regole e Golden**; AppLab governa **QA/orchestrazi
 ## Ricerca Hugging Face per le app delle note
 
 - [12 idee «to do» per Notes-Ecosistema e Anna's Diary](12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md), in proposta: CAP-0092…CAP-0101 e collegamento ai CAP esistenti, senza cambiamenti alle roadmap delle app.
+- [Seconda ricerca: altre 16 idee «to do» (#13–28)](12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md), in proposta: CAP-0102…CAP-0112 e riuso di capability gia catalogate. Totale idee Hugging Face: 28.
 
 ## Capability e nuovi repository (dal 1 novembre 2026)
 

@@ -40,7 +40,10 @@
       },
       "next_gate": "Verificare conflitti e non spostare eventi fissi",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0002",
@@ -763,7 +766,8 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ]
     },
     {
@@ -2040,7 +2044,8 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ]
     },
     {
@@ -2097,7 +2102,8 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/NarYuki/Dextop/tree/5402d091975cdae4f39943b59a3a0131f5a0a543"
+        "https://github.com/NarYuki/Dextop/tree/5402d091975cdae4f39943b59a3a0131f5a0a543",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ]
     },
     {
@@ -2587,7 +2593,8 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://huggingface.co/datasets/Srinivasmec26/Structured-Todo-Lists-for-Learning-and-Projects"
+        "https://huggingface.co/datasets/Srinivasmec26/Structured-Todo-Lists-for-Learning-and-Projects",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     },
@@ -2617,7 +2624,7 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     },
@@ -2678,7 +2685,8 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://huggingface.co/spaces/Rvwaqas/todoapp"
+        "https://huggingface.co/spaces/Rvwaqas/todoapp",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     },
@@ -2768,7 +2776,8 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://huggingface.co/datasets/Srinivasmec26/Structured-Todo-Lists-for-Learning-and-Projects"
+        "https://huggingface.co/datasets/Srinivasmec26/Structured-Todo-Lists-for-Learning-and-Projects",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     },
@@ -2829,7 +2838,344 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://huggingface.co/sayedimran/Ai_Todo_App"
+        "https://huggingface.co/sayedimran/Ai_Todo_App",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0102",
+      "title": "Ripianificazione assistita e confronto piani alternativi",
+      "domain": "pianificazione",
+      "score": 92,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Proporre slot alternativi per task spostabili dopo un imprevisto, conservando eventi fissi, preferenze e possibilita di confrontare due soluzioni.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Verificare task e calendario canonici; strategia locale con vincoli hard/soft e preview delle modifiche, nessuno spostamento o evento scritto senza conferma; fallback no-AI.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/datasets/burtenshaw/plan-my-day-results"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0103",
+      "title": "Grafo delle dipendenze e blocker delle task",
+      "domain": "organizzazione",
+      "score": 87,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Visualizzare task con prerequisiti, segnalare cosa le blocca e riconciliare archi con relazioni canoniche.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Audit CAP-0096 e canvas CAP-0028; relazioni no-cicli, cancellazione/ripristino, undo, accessibilita e filtri; il donor Yuga modella dipendenze in forma sequenziale.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/spaces/Agents-MCP-Hackathon/yuga-planner/blob/main/README.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0104",
+      "title": "Timeline obiettivi e pianificazione a ritroso",
+      "domain": "pianificazione",
+      "score": 87,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Fasi e milestone su timeline drag-and-drop per obiettivi pluriennali, con possibilita di calcolare il calendario a ritroso dalla deadline.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Riutilizzare planner CAP-0099 e task canoniche; date e durate esplicite, vincoli per milestone e opzione backwards come modalita della stessa timeline, non secondo motore.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/datasets/MiniAppBench/Dataset"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0105",
+      "title": "Prioritizzazione trasparente e matrice Eisenhower",
+      "domain": "organizzazione",
+      "score": 85,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Ordinare task per urgenza importanza durata e vincoli con motivazioni leggibili; mostrare gli stessi dati in quadranti Eisenhower.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Controllare priorita/task preesistenti; regole deterministiche configurabili, no score opachi e drag quadranti deve aggiornare le stesse task; evitare classificazioni non richieste.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/datasets/burtenshaw/plan-my-day-results"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0106",
+      "title": "Rilevamento sovraccarico e heatmap riunioni",
+      "domain": "pianificazione",
+      "score": 87,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Confrontare ore disponibili, task stimate e riunioni per giorno/settimana, evidenziando collisioni e intensita in heatmap.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Audit calendar provider, permessi, CAP-0001 e CAP-0101; calcolare solo su dati disponibili e consenso, evitare falsa precisione su durata task e false promesse di sync.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/spaces/Agents-MCP-Hackathon/yuga-planner/blob/main/README.md",
+        "https://huggingface.co/datasets/MiniAppBench/Dataset"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0107",
+      "title": "Import blueprint progetto Markdown in bozze task",
+      "domain": "organizzazione",
+      "score": 87,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Leggere Markdown/README scelti dall'utente e proporre task, fasi, dipendenze e stime collegate al documento sorgente.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Riutilizzare CAP-0093 e Import Center CAP-0075; parsers lightweight locali prima di AI; nessun accesso a file esterni implicito; Yuga richiama Nebius e Timefold, licenze e costi da auditare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/spaces/Agents-MCP-Hackathon/yuga-planner/blob/main/README.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0108",
+      "title": "Confronto durata prevista e reale per task",
+      "domain": "analisi",
+      "score": 84,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 3,
+        "risk_control": 5
+      },
+      "description": "Memorizzare tempo stimato e registrato per task, mostrando scostamenti storici e stime trasparenti locali.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Provenienza dei tempi, pause e interruzioni, import da focus timer opzionale, no raccolta in background e niente telemetria remota; integrazione CAP-0101.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/datasets/burtenshaw/plan-my-day-results"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0109",
+      "title": "Sessioni Focus/Pomodoro collegate a note e protezione opzionale",
+      "domain": "focus",
+      "score": 91,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Timer locale lavoro/pausa con attribuzione alla task o nota attiva e, se disponibile e autorizzato, controlli di riduzione distrazioni.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "FocuSense": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Riutilizzare eventuali timer FocusSense prima del codice; persistenza dopo app pause, gestione lifecycle e background Android, DND soltanto con permesso/azione esplicita; non promettere blocco siti.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/datasets/MiniAppBench/Dataset/blob/main/query_validation_100.json"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0110",
+      "title": "Avvio guidato micro-passo e focus breve",
+      "domain": "focus",
+      "score": 82,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Ridurre volontariamente una task complessa a un primo passo piccolo e avviare una sessione focus breve, senza cambiare la task originaria.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Usare CAP-0109 e CAP-0096; template locali senza AI obbligatoria, scelta editabile e nessuna sovrascrittura della nota; test accessibilita e interruzione.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/datasets/MiniAppBench/Dataset/blob/main/query_validation_100.json"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0111",
+      "title": "Weekly Review con proposte di pulizia e ripianificazione",
+      "domain": "organizzazione",
+      "score": 89,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 5,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Revisione settimanale di task scadute, avanzamenti e impegni con azioni esplicite di conferma/skip e storico.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Riutilizzare dashboard CAP-0101, scheduler esistente e lifecycle; nessuna cancellazione o ripianificazione automatica; Anna in forma Today/diario non PM suite.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/datasets/MiniAppBench/Dataset"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0112",
+      "title": "Flashcard e ripasso dilazionato collegati alle note",
+      "domain": "studio",
+      "score": 73,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Creare domande/flashcard dalle note di studio e pianificare ripassi a intervalli con fonte originale e statistiche locali.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+      },
+      "next_gate": "Riusare note e pianificatore CAP-0099; SRS deterministico, contenuti modificabili, licenza delle skill esterne da verificare; nessun modello AI pesante bundled.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://huggingface.co/spaces/abc1181/HermesAgent/blob/main/RELEASE_v0.6.0.md"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     }

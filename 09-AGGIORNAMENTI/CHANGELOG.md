@@ -1,5 +1,14 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Seconda ricerca Hugging Face «to do»: idee 13–28
+- Conservate 16 ulteriori proposte per Notes-Ecosistema (adattamenti essenziali Anna's Diary/FocuSense) con fonti Hugging Face e distinzione tra funzionalita effettivamente documentate e proposte progettuali.
+- Registro canonico da 101 a **112 CAP**: introdotti 11 nuovi ID CAP-0102…CAP-0112, riusati quelli esistenti per Backward Planning, Eisenhower Board, Alternative Plans, Focus Protection e Meeting Load Heatmap.
+- Nuovo snapshot: 48 app/idee, 273 associazioni, 17 P1, 59 P2, 36 P3; aggiornati ranking, matrice, stati, schede, Inbox, indici e changelog.
+- Fonti: Yuga Planner Apache-2.0 (dipendenze esterne da auditare), Plan My Day Apache-2.0 (dataset sperimentale, pesi modello sotto licenza separata), MiniAppBench (specifiche, non codice prodotto), HermesAgent release notes per flashcard.
+- Ogni nuova feature resta `PROPOSTA`, senza code/device proof, merge automatico in roadmap o modifica di repository app. Nessun codice/modello/dataset esterno incorporato.
+- Scheda: [Seconda ricerca Hugging Face](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md).
+
+
 ## 2026-11-01 — Hugging Face «to do» per Notes-Ecosistema / Anna's Diary
 - Archiviate 12 proposte nella ricerca dedicata, con punteggi originali 0–10, fonti verificate vs link non probanti, licenze e impatto sull'APK.
 - Aggiunte 10 capability uniche CAP-0092…CAP-0101; collegate e riusate CAP-0017/0018/0028/0029/0031/0032/0033/0055/0075 senza duplicarne la responsabilita.
