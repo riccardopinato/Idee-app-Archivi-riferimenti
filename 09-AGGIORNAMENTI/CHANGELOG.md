@@ -1,5 +1,14 @@
 # Changelog dell'archivio
 
+## 2026-11-01 — Archiviazione totale 56 idee Hugging Face Notes (ricerche #29–56)
+- Salvate integralmente **16 idee #29–44** e **12 idee #45–56** in due ricerche nuove, con fonte, URL, score editoriale originale, livello di verifica, limiti e gate per futuri test Flutter/Android.
+- Catalogo ora **140 capability**, 48 app/idee, 324 associazioni, 18 P1 / 72 P2 / 50 P3. Creati CAP-0114…CAP-0140 (27 nuove responsabilita), #45 e #55 sullo stesso CAP di generazione artefatti visuali modificabili.
+- Collegate capability preesistenti senza cancellare o rinumerare ID; aggiornati JSON, ranking, matrice, schede per app, Inbox, README, changelog.
+- Caveat delle fonti: Paper2Any e CiteAudit demo runtime error; Tadpole/Math Ink troppo pesanti per APK base; DocRex Apache-2.0/5.8MB ma 3 classi; FormStruct/FUNSD+ diritti custom; DetectiveSAM `other`; alcune fonti solo pattern di ricerca e non app eseguibili.
+- Nessun codice app, Product Bible, Golden o nuova roadmap modificati; nuove associazioni sempre `PROPOSTA`. Nessun peso, dataset o codice Hugging Face incorporato.
+- Schede: [terza ricerca](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md) e [quarta ricerca](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md); fonte factory `riccardopinato/App-Factory-Core@63dd5e4f703cb23e4095a72beb253720bc1ca9a1`.
+
+
 ## 2026-11-01 — Snapshot incrementale 31 repository e A1/A2 Anna's Diary
 - Enumerati 31 repository del proprietario; nessun nuovo repository rispetto all'inventario. Registrati nome, default branch e SHA HEAD osservati, come baseline metadata per futuri diff, senza dichiarare audit sorgente dei 31 HEAD.
 - CAP-0003 aggiornata da PROPOSTA a SOURCE_CONFIRMED per Agenda-per-Anna: codice `lib/src/event_preparation.dart`, test `test/v107_a2_event_preparation_test.dart` e source SHA `88efdfa9`; score evidenza 2→4 e priorita P3→P2.

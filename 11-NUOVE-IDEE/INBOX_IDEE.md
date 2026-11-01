@@ -76,3 +76,40 @@ Tutte **PROPOSTA** (funzioni, non nuove app). Approfondimento con punteggi, font
 | 28 | **Meeting Load Heatmap** | CAP-0106, CAP-0101 | PROPOSTA — non in roadmap |
 
 Le 16 idee si traducono in 11 nuovi CAP (CAP-0102…CAP-0112) e collegamenti a CAP preesistenti, evitando doppioni. La ricerca originale 1–12 resta nel documento precedente.
+
+## Hugging Face Notes — terza e quarta ricerca: idee #29–56, 01/11/2026
+
+**28 proposte funzionali archiviate, nessuna nuova app approvata.** Schede dettagliate: [idee #29–44](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md) e [idee #45–56](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md); originali #1–28 preservate.
+
+| # | Idea conservata | Stima editoriale | Capability | Stato |
+| --- | --- | --- | --- | --- |
+| 29 | Privacy Shield | 9,9/10 | [CAP-0114](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0114.md) | PROPOSTA / non in roadmap |
+| 30 | Contradiction Finder | 9,8/10 | [CAP-0115](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0115.md) | PROPOSTA / non in roadmap |
+| 31 | Duplicate Notes Cleaner | 9,7/10 | [CAP-0116](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0116.md) | PROPOSTA / non in roadmap |
+| 32 | Sketch-to-Diagram | 9,7/10 | [CAP-0117](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0117.md) | PROPOSTA / non in roadmap |
+| 33 | Document Delta | 9,6/10 | [CAP-0118](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0118.md) | PROPOSTA / non in roadmap |
+| 34 | Citation Integrity Checker | 9,5/10 | [CAP-0119](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0119.md) | PROPOSTA / non in roadmap |
+| 35 | Accessible Image Notes | 9,4/10 | [CAP-0120](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0120.md) | PROPOSTA / non in roadmap |
+| 36 | Easy Reading Mode | 9,4/10 | [CAP-0121](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0121.md) | PROPOSTA / non in roadmap |
+| 37 | Table Capture | 9,3/10 | [CAP-0122](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0122.md) | PROPOSTA / non in roadmap |
+| 38 | Bilingual Notes Reader | 9,2/10 | [CAP-0123](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0123.md) | PROPOSTA / non in roadmap |
+| 39 | Topic Discovery | 9,2/10 | [CAP-0124](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0124.md) | PROPOSTA / non in roadmap |
+| 40 | Chart-to-Data | 9,1/10 | [CAP-0125](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0125.md) | PROPOSTA / non in roadmap |
+| 41 | Living Glossary | 9,0/10 | [CAP-0126](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0126.md) | PROPOSTA / non in roadmap |
+| 42 | Video Chapter Notes | 9,0/10 | [CAP-0127](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0127.md) | PROPOSTA / non in roadmap |
+| 43 | Form-to-Card | 8,9/10 | [CAP-0128](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0128.md) | PROPOSTA / non in roadmap |
+| 44 | Knowledge Freshness | 8,9/10 | [CAP-0129](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0129.md) | PROPOSTA / non in roadmap |
+| 45 | Notes to Slides | 9,8/10 | [CAP-0130](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0130.md) | PROPOSTA / non in roadmap |
+| 46 | Math Ink | 9,7/10 | [CAP-0131](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0131.md) | PROPOSTA / non in roadmap |
+| 47 | Soundscape Journal | 9,6/10 | [CAP-0132](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0132.md) | PROPOSTA / non in roadmap |
+| 48 | Smart Reading Flow | 9,6/10 | [CAP-0133](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0133.md) | PROPOSTA / non in roadmap |
+| 49 | Document Auto-Sorter | 9,5/10 | [CAP-0134](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0134.md) | PROPOSTA / non in roadmap |
+| 50 | Evidence Board | 9,5/10 | [CAP-0135](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0135.md) | PROPOSTA / non in roadmap |
+| 51 | Smart Cutout Canvas | 9,4/10 | [CAP-0136](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0136.md) | PROPOSTA / non in roadmap |
+| 52 | 3D Memory Objects | 9,3/10 | [CAP-0137](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0137.md) | PROPOSTA / non in roadmap |
+| 53 | Audio-Linked Ink | 9,3/10 | [CAP-0138](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0138.md) | PROPOSTA / non in roadmap |
+| 54 | Motion Study Notes | 9,2/10 | [CAP-0139](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0139.md) | PROPOSTA / non in roadmap |
+| 55 | Scientific Figure Studio | 9,1/10 | [CAP-0130](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0130.md) | PROPOSTA / non in roadmap |
+| 56 | Image Authenticity Inspector | 9,0/10 | [CAP-0140](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0140.md) | PROPOSTA / non in roadmap |
+
+Il caso #55 e #45 condivide una sola capability; nessuna delle due idee e stata scartata. Link, licensing, demo offline e impatto APK sono documentati nelle schede di ricerca.

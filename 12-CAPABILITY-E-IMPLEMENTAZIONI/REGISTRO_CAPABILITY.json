@@ -365,7 +365,10 @@
       },
       "next_gate": "Verificare performance e origine dei risultati",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0014",
@@ -474,7 +477,8 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://huggingface.co/AbdulElahGwaith/todo-app-enhanced-repo",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
       ]
     },
     {
@@ -504,7 +508,8 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
       ]
     },
     {
@@ -532,7 +537,10 @@
       },
       "next_gate": "Non uniformare database privacy separati",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0020",
@@ -614,7 +622,10 @@
       },
       "next_gate": "Controllare parita lingua in native notifications",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0023",
@@ -749,7 +760,10 @@
       },
       "next_gate": "Android share intent e consenso senza import occulto",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0028",
@@ -777,7 +791,8 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
       ]
     },
     {
@@ -805,7 +820,9 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
       ]
     },
     {
@@ -864,7 +881,8 @@
         "https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9",
         "https://github.com/debpalash/VoiceStudio/tree/13a5ef774a8f6c212a43ad17707660f45a33ab50",
         "https://huggingface.co/docs/inference-providers/guides/building-first-app",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
       ]
     },
     {
@@ -896,7 +914,8 @@
       "research_refs": [
         "https://github.com/OpenWhispr/openwhispr/tree/b9e9ebefac4b961456c269164a93ddfdd53438b9",
         "https://huggingface.co/spaces/sebasmos/sherlock-project-assistant",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
       ]
     },
     {
@@ -983,7 +1002,11 @@
       },
       "next_gate": "Audit licenza ML Kit e processi media originali",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0036",
@@ -1036,7 +1059,11 @@
       },
       "next_gate": "Verificare motore originale licenza e compatibilita Flutter",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0038",
@@ -1090,7 +1117,11 @@
       },
       "next_gate": "Niente modifica di originali e UI attributi rimossi",
       "reviewed_at": "2026-11-01",
-      "certification": "NOT_VERIFIED_BY_THIS_AUDIT"
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      ]
     },
     {
       "id": "CAP-0040",
@@ -2055,7 +2086,9 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
       ]
     },
     {
@@ -2726,7 +2759,9 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://huggingface.co/spaces/sebasmos/sherlock-project-assistant"
+        "https://huggingface.co/spaces/sebasmos/sherlock-project-assistant",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     },
@@ -2756,7 +2791,8 @@
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
-        "https://huggingface.co/Abhisingh-18/Vertical.ai"
+        "https://huggingface.co/Abhisingh-18/Vertical.ai",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     },
@@ -3221,6 +3257,839 @@
         "physical": "NOT_VERIFIED",
         "release_candidate": "1.0.0-rc.6+116"
       }
+    },
+    {
+      "id": "CAP-0114",
+      "title": "Redazione PII e privacy copy di note e PDF",
+      "domain": "privacy",
+      "score": 85,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Privacy Shield: Individua PII nel testo di note/PDF e propone oscuramenti in una copia esportata, conservando l'originale e la scelta per campo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Non certifica copertura IBAN/credenziali o privacy su tutte le lingue; regex locali e NER opzionale, redaction irreversibile sul file esportato. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/spaces/desert-ant-labs/redact-demo"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0115",
+      "title": "Segnalazione contraddizioni testuali con provenance",
+      "domain": "ricerca",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Contradiction Finder: Evidenzia frasi potenzialmente in conflitto tra note, senza scegliere quale versione sia vera.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "NLI e segnalazione probabilistica, necessita prova sulle negazioni, numeri, date e citazioni; nessuna correzione automatica. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/spaces/sharath88/contradiction-entailment-demo"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0116",
+      "title": "Deduplicazione semantica note con merge reversibile",
+      "domain": "organizzazione",
+      "score": 85,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Duplicate Notes Cleaner: Trova note semanticamente simili e suggerisce confronto/merge mantenendo allegati, riferimenti e cestino.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "SemHash dimostra dedup di testi/dataset, non merge sicuro di note personali. Usare ID e backup canonici. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/spaces/minishlab/semantic-deduplication"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0117",
+      "title": "Da diagramma a grafo editabile sulla canvas",
+      "domain": "canvas",
+      "score": 70,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 4,
+        "risk_control": 2
+      },
+      "description": "Sketch-to-Diagram: Converte un diagramma disegnato a mano in box, etichette e frecce editabili dentro la canvas.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Q4 circa 529 MB + vision encoder circa 205 MB, quindi non nell'APK base; proof su diagrammi italiani e licensing. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/Srinjoy99/tadpole-0.8b",
+        "https://huggingface.co/Srinjoy99/tadpole-0.8b-GGUF"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0118",
+      "title": "Confronto versioni documento e differenze verificabili",
+      "domain": "documenti",
+      "score": 85,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Document Delta: Confronta due versioni dello stesso PDF/testo mettendo in evidenza modifiche puntuali e, se disponibile, differenze di layout.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Il thread spiega diff testuale/semantico, non fornisce un'app donor: pattern di riferimento; attenzione a OCR e riconciliazione pagine. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://discuss.huggingface.co/t/document-processing-and-comparison-pipeline/172894"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0119",
+      "title": "Audit citazioni bibliografiche e fonti",
+      "domain": "ricerca",
+      "score": 67,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Citation Integrity Checker: Controlla esistenza e metadati di citazioni e bibliografie, segnalandone anomalie senza dichiarare falsi positivi come inventati.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "La demo CiteAudit ha runtime error al controllo; verificare Crossref/DOI/ISBN prima di ogni integrazione; offline limitato. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/spaces/wz258/CiteAudit"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0120",
+      "title": "Testi alternativi accessibili per immagini delle note",
+      "domain": "accessibilita",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Accessible Image Notes: Genera bozze di descrizioni accessibili per foto e immagini collegate alle note, modificabili dall'utente.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Il demo usa modelli BLIP/servizi che possono essere pesanti; l'accessibilita non equivale a certificazione WCAG. Test con screen reader. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/spaces/abhilash88/ai-alt-tag-generator/blob/main/app.py"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0121",
+      "title": "Lettura semplificata con originale affiancato",
+      "domain": "accessibilita",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Easy Reading Mode: Crea una versione semplificata affiancata a un documento, senza sostituire il testo originale.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Dataset multilingue Easy-Language come riferimento; rischio di cambiare significato, soprattutto testi legali/medici. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/datasets/ndgold/live-linguist-easylanguage-sft"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0122",
+      "title": "Estrazione di tabelle strutturate da immagini e PDF",
+      "domain": "documenti",
+      "score": 79,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Table Capture: Estrae griglie e valori da tabella fotografata o PDF in celle modificabili con evidenza dei campi incerti.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Paper2Any include extraction di tabelle in PPT, non un modulo Flutter pronto; integrare con CAP-0035 OCR locale e validazione cellule. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/spaces/Viraag/Paper2Any/blob/main/README_EN.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0123",
+      "title": "Lettura bilingue sincronizzata di note e PDF",
+      "domain": "traduzione",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Bilingual Notes Reader: Mostra originale e traduzione affiancati, con navigazione allineata di sezioni/pagine.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Il donor traduce PDF con pipeline e servizi esterni; niente invio implicito di documenti privati; licenza, quote e uso commerciale da verificare. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/spaces/MCP-1st-Birthday/gdrive-pdf-translator-mcp/blob/main/README.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0124",
+      "title": "Scoperta di temi e cluster nell'archivio note",
+      "domain": "organizzazione",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Topic Discovery: Propone collezioni tematiche ricavate dall'intero archivio di note, con cluster approvabili e origine visibile.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "BERTopic/UMAP del progetto riguarda progetti UE, non note personali; modelli e footprint da valutare, fallback tag manuali. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/datasets/SIRIS-Lab/topic-modeling-maps"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0125",
+      "title": "Ricostruzione valori numerici da grafici fotografati",
+      "domain": "documenti",
+      "score": 72,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Chart-to-Data: Stima serie numeriche da immagini di grafici e produce tabelle con incertezza e verifica manuale.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Dataset sintetico di grafici lineari semplici: non dimostra accuratezza su grafici reali complessi; non sostituire dati originali. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/datasets/maurovidal/chart2data-v0"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0126",
+      "title": "Glossario personale contestuale e terminologia",
+      "domain": "organizzazione",
+      "score": 78,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 3,
+        "risk_control": 4
+      },
+      "description": "Living Glossary: Crea glossario personale con definizioni, abbreviazioni e traduzioni consultabili durante la scrittura.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "La fonte descrive un glossario per coerenza nella traduzione, non un glossario automatico di note; revisione editoriale obbligatoria. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/spaces/MCP-1st-Birthday/gdrive-pdf-translator-mcp/blob/main/README.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0127",
+      "title": "Note video navigabili per capitoli e timestamp",
+      "domain": "video",
+      "score": 78,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Video Chapter Notes: Importa link video e crea note con timestamp e capitoli editabili che rinviano a punti specifici.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Fonte descrive tutorial YouTube -> guida con timestamp; accesso a transcript, copyright/ToS e disponibilita offline da verificare. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/abdulshakur/youtube_tutorial/blob/b4f7637fd69dbab34e0fda3edc784918cb4bbb40/README-HF.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0128",
+      "title": "Estrazione campi da form in schede canoniche",
+      "domain": "documenti",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Form-to-Card: Estrae coppie campo-valore da moduli e fatture in schede modificabili con link al file sorgente.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "FUNSD+ contiene annotazioni form con licenza custom; reference per layout, vietato incorporare dataset senza gate diritti. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/datasets/Voxel51/form_understanding_in_noisy_scanned_documents_plus"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0129",
+      "title": "Aggiornamento controllato dei fatti con storia e fonti",
+      "domain": "ricerca",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Knowledge Freshness: Mostra revisioni di affermazioni e fonti nel tempo, proponendo il mantenimento della versione nuova e di quella storica.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+      },
+      "next_gate": "Infini Memory e ricerca per memoria agentica topic-based; l'adattamento a note locali e proposta, non software certificato. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://huggingface.co/papers/2606.10677"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0130",
+      "title": "Generazione di slide e figure tecniche modificabili",
+      "domain": "documenti",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Notes to Slides: Trasforma note selezionate in slide con titoli e impaginazione modificabili, esportando senza alterare le note. Scientific Figure Studio: Crea diagrammi scientifici/figure tecniche modificabili partendo da testi e fonti, usando una pipeline visual-export comune a slide.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "app-fotografia": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "Paper2Any dichiara Paper2PPT e licenza Apache-2.0, ma la demo pubblica era in errore; il backend/AI non va importato automaticamente. | Paper2Any dichiara Paper2Figure e Paper2PPT nella stessa codebase; registrata come modalita dello stesso CAP di Notes-to-Slides. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/spaces/Viraag/Paper2Any/blob/main/README_EN.md"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0131",
+      "title": "Riconoscimento formule a mano e conversione LaTeX",
+      "domain": "canvas",
+      "score": 72,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Math Ink: Riconosce formule manoscritte o fotografate e le converte in LaTeX modificabile e verificabile.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "Re-host MIT di RapidLatexOCR, circa 179 MB ONNX: modello on-demand eventuale, non nell'APK; audit peso e accuratezza. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/inYourOwnBrowser/rapid-latex-ocr-onnx"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0132",
+      "title": "Diario sonoro e classificazione eventi acustici",
+      "domain": "voce",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Soundscape Journal: Associa registrazioni di suoni non verbali e suggerimenti di etichette a note e ricordi.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Wonderlog": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "AudioDet classifica 17 suoni in dominio specifico; accuratezza universale non dimostrata. Nessuna registrazione senza consenso/azione. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/ShantyCam/audiodet-ced-mini"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0133",
+      "title": "Ordine di lettura strutturato dei documenti",
+      "domain": "documenti",
+      "score": 83,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Smart Reading Flow: Ricostruisce ordine di lettura, titoli e sezioni da PDF a piu colonne conservando geometrie e origine.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "La doc descrive PP-DocLayoutV3; integrarlo e inferenza/progetto distinto dall'OCR. Controllare supporto linguistico e runtime mobile. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/docs/transformers/model_doc/pp_doclayout_v3"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0134",
+      "title": "Triage e categorizzazione documenti importati",
+      "domain": "documenti",
+      "score": 98,
+      "priority": "P1",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 5,
+        "evidence_strength": 5,
+        "risk_control": 4
+      },
+      "description": "Document Auto-Sorter: Classifica documenti importati e propone destinazione senza spostarli automaticamente.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti italiani. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/vivekkaushal/DocRex"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0135",
+      "title": "Raccolta delle prove a favore e contro una tesi",
+      "domain": "ricerca",
+      "score": 71,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 2,
+        "risk_control": 4
+      },
+      "description": "Evidence Board: Per una tesi o affermazione raccoglie fonti a favore/contro, passaggi citati e lacune di prova.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "Dataset ClaimReview2025Q4 non risolto nel controllo: conservare il riferimento originale e cercare alternative verificabili prima di donorship. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/datasets/TrustworthyComp/ClaimReview2025Q4"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0136",
+      "title": "Scontorno foto in elementi canvas riutilizzabili",
+      "domain": "canvas",
+      "score": 76,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 4,
+        "risk_control": 3
+      },
+      "description": "Smart Cutout Canvas: Scontorna oggetti da una foto creando sticker/soggetti mobili per composizioni sulla canvas.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "app-fotografia": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "Segment Anything WebGPU demo esiste; runtime Android/offline, peso del modello e licenza degli asset da verificare. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/spaces/Xenova/segment-anything-webgpu"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0137",
+      "title": "Oggetti 3D da fotografie collegati alle note",
+      "domain": "media",
+      "score": 52,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 2,
+        "feasibility": 1,
+        "evidence_strength": 3,
+        "risk_control": 2
+      },
+      "description": "3D Memory Objects: Da una foto produce un oggetto 3D ruotabile associato a una nota, con origine media preservata.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "Stable Fast 3D Space esiste, ma infrastruttura, licenze commerciali e risorse GPU necessitano gate; non promettere offline. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/spaces/stabilityai/stable-fast-3d"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0138",
+      "title": "Ink sincronizzato al tempo di una registrazione",
+      "domain": "canvas",
+      "score": 87,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 4,
+        "risk_control": 4
+      },
+      "description": "Audio-Linked Ink: Collega ogni tratto scritto sulla canvas al timestamp della registrazione audio per navigare la lezione.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "MOSS supporta ASR con timestamp; la sincronizzazione stroke-audio puo essere deterministica ed e proposta indipendente. Consenso registrazione obbligatorio. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0139",
+      "title": "Studio del movimento da video con pose annotate",
+      "domain": "video",
+      "score": 63,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 3,
+        "risk_control": 3
+      },
+      "description": "Motion Study Notes: Dai video estrae pose/fotogrammi di un movimento con annotazioni affiancate nella nota.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "FocuSense": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "AIMoCap demo esiste; accuratezza tecnica e scientifica, privacy dei soggetti e permessi video da testare; non diagnosi medica. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/spaces/animtex/AIMoCap"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
+    },
+    {
+      "id": "CAP-0140",
+      "title": "Analisi forense non conclusiva delle immagini",
+      "domain": "privacy",
+      "score": 63,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 4,
+        "risk_control": 2
+      },
+      "description": "Image Authenticity Inspector: Visualizza aree potenzialmente manipolate di un'immagine, con incertezza e limiti della classificazione.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "app-fotografia": "PROPOSTA"
+      },
+      "source": {
+        "type": "HUGGINGFACE_IDEA_RESEARCH",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md"
+      },
+      "next_gate": "DetectiveSAM ha licenza dichiarata other; non importare/copiare senza chiarimento. Le evidenze di manipolazione non certificano originalita o intenzione. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "reviewed_at": "2026-11-01",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md",
+        "https://huggingface.co/Gertlek/DetectiveSAM"
+      ],
+      "reuse_decision": "CANDIDATE_REFERENCE_ONLY"
     }
   ]
 }
