@@ -6,6 +6,10 @@
 
 [Visualizza analisi completa, fonti sorgenti e facilità per Anna](13-KIT-INTEGRAZIONE/ANNA_FULL_AUDIT_61_2026-11-01.md). Per ciascuna CAP: scheda, stato di compatibilità, codice ispezionato e gate di integrazione; nessuna modifica al codice app.
 
+## Anna's Diary — idee NotebookLM del 02/11/2026
+
+[17 proposte con scoring](11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md), [mappatura reale CAP](12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md), [riuso](06-SINERGIE-E-INTEGRAZIONI/ANNA_NOTEBOOKLM_RIUSO_2026-11-02.md) e [monetizzazione](08-MONETIZZAZIONE/ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md). Stato ricerca non approvata.
+
 ## Libreria kit tecnici
 
 - [140 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.

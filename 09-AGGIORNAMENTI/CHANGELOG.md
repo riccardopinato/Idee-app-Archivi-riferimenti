@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-02 — Valutazione proposte Anna's Diary da NotebookLM
+- Fonte testuale utente SHA-256 0ac109c023523b466f71cfefe53232733d5450b7fb1164da02f560220a6c5613; 17 ID AD-NL26-01…17 con score editoriali, priorità, sovrapposizione source e gate.
+- Corretti nove riferimenti CAP errati nella fonte senza duplicare/modificare le 140 capability canoniche; riferimenti incrociati in 11 idee, 12 capability, 06 sinergie e 08 monetizzazione.
+- Nessuna modifica ad Anna, roadmap, tariffari, Store o Privacy #215 ON HOLD. Fonti esterne per limitazioni widget, abbonamenti e benchmark esplicitamente distinte dal documento.
+
+
 ## 2026-11-02 — Valutazione strutturata lotto idee IA: 100 + 6 extra, 14 fusioni
 - Recuperate e mantenute tutte le idee originali numerate #1–#100, con 100 schede individuali `IA26-001…IA26-100`. Catalogate altre sei idee autonome non numerate (`IA26-E01…E06`), e tutte le 14 fusioni successive con esito motivato.
 - Ciascuna scheda include score U/D/V/M/F/S/R, formula di priorità, MVP proposto, decisione preliminare, collegamento ad app esistenti, monetizzazione, donor/link identificabili, blocchi e prossimo controllo.
