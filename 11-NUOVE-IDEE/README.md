@@ -22,3 +22,12 @@ Anche le idee **scartate o rinviate** rimangono visibili con motivazione e data.
 - [Seconda ricerca Hugging Face «to do»: idee 13–28](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md): 16 nuove proposte funzionali, 11 nuovi CAP e riuso capability esistenti. Stato PROPOSTA.
 - [Terza ricerca Hugging Face #29–44](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md): 16 proposte, riferimenti verificati/non verificati, nessuna promozione.
 - [Quarta ricerca Hugging Face #45–56](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md): 12 proposte, una capability condivisa slide/figure; nessuna promozione.
+
+## Lotto IA del 02/11/2026 — 100 schede + 6 extra
+
+- [Indice delle 100 schede individuali](IA-2026-11-02/INDICE_100_SCHEDE.md), con riferimenti originali #1–#100 e link ai singoli file.
+- [Classifica integrale con 7 metriche](IA-2026-11-02/RANKING_100_COMPLETO.md) e [classifiche per facilità, monetizzazione, viralità, riuso e rischio](IA-2026-11-02/CLASSIFICHE_MULTICRITERIO.md).
+- [Sei idee aggiuntive non numerate](IA-2026-11-02/INDICE_IDEE_EXTRA_NON_NUMERATE.md) e [14 fusioni/riusi analizzati](IA-2026-11-02/FUSIONI_E_RIUSO.md).
+- [Metodologia e provenienza fonti](IA-2026-11-02/METODOLOGIA_E_FONTI.md).
+
+**Stato:** analisi editoriale NON APPROVATA. Nessuna delle 106 proposte ha automaticamente prodotto nuove app, roadmap o CAP; gli score di questo lotto non sono confrontabili direttamente con il ranking dei prodotti in codice.

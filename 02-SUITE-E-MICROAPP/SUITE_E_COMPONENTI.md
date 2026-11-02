@@ -120,3 +120,7 @@ PRINCIPIO DI PACKAGING
 **PDF-Unifier — 🟢 codice reale; PDF Pocket Tools è proposta di ampliamento.** Merge, split, immagini→PDF, lock, rotate, compression, reader, OCR, bookmarking e search in Kotlin; non trattare il nuovo concept come prodotto già certificato.
 
 **SafeShare — 🟡 donor parziale**: EXIF Cleaner è presente in Omni Cleaner ma non la suite con Clean Link/File Metadata. **Downloads Butler — 🟡 donor parziale**: Smart Categories Omni gestisce anche download vecchi, non dimostra un organizer Butler completo.
+
+## 02/11/2026 — Fusioni candidate da fonte IA esterna (solo analisi)
+
+Le 14 fusioni suggerite dall'altra IA sono tutte conservate e valutate in [FUSIONI_E_RIUSO](../11-NUOVE-IDEE/IA-2026-11-02/FUSIONI_E_RIUSO.md). **Non** equivalgono a suite create e non entrano nello storico implementato. Cluster coerenti da considerare: #4+#24 con correzione prezzo barcode, #32+#43+#88 come public speaking, #11+#25 come relazioni; altri cluster richiedono separazione di audience, safety, licenze o provider. I moduli vicini a Phone Guard, Battery Guard, Anna's Diary, TasteAI, FocusSense, SleepMax e Notes restano **proposte feature-first**, con confronto alle roadmap necessario.
