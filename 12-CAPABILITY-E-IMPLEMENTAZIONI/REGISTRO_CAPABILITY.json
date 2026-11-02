@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-02",
   "authority": "Research/portfolio only. Product Bible/roadmap/code/tests/real-device evidence live in app repositories.",
-  "factory_baseline": "riccardopinato/App-Factory-Core@63dd5e4f703cb23e4095a72beb253720bc1ca9a1",
+  "factory_baseline": "riccardopinato/App-Factory-Core@cf931f8031ca973cb0a5467a8e83c865cd1e9def",
   "score_explanation": "Relative 0-100 opportunity estimate: value 35%, cross-app reuse 25%, feasibility 20%, evidence 10%, low risk 10%. Each factor 1-5. P1>=92; P2>=79; otherwise P3. Not an implementation authorization or revenue projection.",
   "statuses": {
     "PROPOSTA": "Idea non approvata / nessun codice verificato qui",
@@ -1124,7 +1124,11 @@
         "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
         "android_physical_test": "NOT_VERIFIED",
         "audit_date": "2026-11-01"
-      }
+      },
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      ]
     },
     {
       "id": "CAP-0024",
@@ -1169,7 +1173,11 @@
         "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
         "android_physical_test": "NOT_VERIFIED",
         "audit_date": "2026-11-01"
-      }
+      },
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      ]
     },
     {
       "id": "CAP-0025",
@@ -2278,7 +2286,9 @@
       "reviewed_at": "2026-11-01",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
       ],
       "integration_ease_percent": {
         "Agenda-per-Anna": 85,
@@ -2826,7 +2836,11 @@
           "play_release": "NOT_VERIFIED",
           "note": "Comparator source/test green; 70 real screenshot pairs missing"
         }
-      }
+      },
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      ]
     },
     {
       "id": "CAP-0070",
@@ -2931,7 +2945,11 @@
         "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
         "android_physical_test": "NOT_VERIFIED",
         "audit_date": "2026-11-01"
-      }
+      },
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      ]
     },
     {
       "id": "CAP-0073",
@@ -5689,6 +5707,374 @@
       "integration_ease_percent": {
         "Notes-Ecosistema": 35,
         "app-fotografia": 40
+      }
+    },
+    {
+      "id": "CAP-0141",
+      "title": "Rituali collaborativi con risposta e rivelazione reciproca",
+      "domain": "relazioni",
+      "score": 79,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Una domanda condivisa con risposte private e rivelazione soltanto dopo la risposta di entrambi, senza pressione alla partecipazione.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "USER_NOTEBOOKLM_TEXT_REVIEW",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      },
+      "next_gate": "Non approvata in roadmap. Prima validare con due account/device, disclosure in cache/push/feed, revoca e privacy #215 ON HOLD; nessuna E2EE implicita.",
+      "reviewed_at": "2026-11-02",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+      ],
+      "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
+      "idea_refs": [
+        "AD-NL26-01"
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 65,
+        "Wonderlog": 35
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/screens/shared_space.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0141/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-02"
+      }
+    },
+    {
+      "id": "CAP-0142",
+      "title": "Capsule e lettere a apertura programmata",
+      "domain": "memorie",
+      "score": 75,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Creazione volontaria di lettere/ricordi personali o condivisi con data di apertura e regole recuperabili.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "USER_NOTEBOOKLM_TEXT_REVIEW",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      },
+      "next_gate": "Nessuna garanzia crittografica del blocco temporale. QA date/fusi/offline/orologio, backup e sync due device; shared dopo Privacy #215.",
+      "reviewed_at": "2026-11-02",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+      ],
+      "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
+      "idea_refs": [
+        "AD-NL26-02",
+        "AD-NL26-03"
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 70,
+        "Wonderlog": 45
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/shared_memories.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0142/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-02"
+      }
+    },
+    {
+      "id": "CAP-0143",
+      "title": "Biglietti ricordo con QR e accesso revocabile",
+      "domain": "condivisione",
+      "score": 62,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Esportazione di un ricordo sotto forma di biglietto stampabile e, solo su scelta, link Web con QR, scadenza e revoca.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Wonderlog": "PROPOSTA",
+        "app-fotografia": "PROPOSTA"
+      },
+      "source": {
+        "type": "USER_NOTEBOOKLM_TEXT_REVIEW",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      },
+      "next_gate": "Blocco disclosure pubblica: mai pubblicare contenuto privato automaticamente. Security review token/noindex/EXIF/URL leak/revoca, termini hosting e Privacy #215.",
+      "reviewed_at": "2026-11-02",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+      ],
+      "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
+      "idea_refs": [
+        "AD-NL26-04"
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 40,
+        "Wonderlog": 35,
+        "app-fotografia": 40
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/shared_invite_qr.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0143/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-02"
+      }
+    },
+    {
+      "id": "CAP-0144",
+      "title": "Widget contestuali privacy-safe per agenda e contenuti condivisi",
+      "domain": "widget",
+      "score": 86,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 2,
+        "risk_control": 3
+      },
+      "description": "Widget OS alimentati da proiezioni canoniche autorizzate: prossimo evento/Crea, countdown e foto opt-in con mascheratura.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "World-Days": "PROPOSTA",
+        "Wonderlog": "PROPOSTA"
+      },
+      "source": {
+        "type": "USER_NOTEBOOKLM_TEXT_REVIEW",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      },
+      "next_gate": "Android launcher e iOS WidgetKit diversi; no claim real-time. PIN/biometria e contenuti riservati su lockscreen richiedono QA fisico; Privacy #215 congelata.",
+      "reviewed_at": "2026-11-02",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+      ],
+      "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
+      "idea_refs": [
+        "AD-NL26-05",
+        "AD-NL26-06",
+        "AD-NL26-11"
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 70,
+        "World-Days": 45,
+        "Wonderlog": 50
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/home_widget_bridge.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0144/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-02"
+      }
+    },
+    {
+      "id": "CAP-0145",
+      "title": "Heatmap locale di ricordi, attività e abitudini volontarie",
+      "domain": "analytics",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Vista aggregata calendar-heatmap delle attività realmente annotate, con dati mancanti distinti da zeri e senza inferenze psicologiche.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA",
+        "FocuSense": "PROPOSTA"
+      },
+      "source": {
+        "type": "USER_NOTEBOOKLM_TEXT_REVIEW",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      },
+      "next_gate": "No health/diagnostic claims, no dati ciclo/Vault in UI ordinaria, no esempi +40% spacciati per risultati; test missingness e permessi.",
+      "reviewed_at": "2026-11-02",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+      ],
+      "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
+      "idea_refs": [
+        "AD-NL26-07"
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 70,
+        "Notes-Ecosistema": 65,
+        "FocuSense": 55
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/planner_views.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0145/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-02"
+      }
+    },
+    {
+      "id": "CAP-0146",
+      "title": "Allegati documentali cifrati per Vault privato",
+      "domain": "sicurezza",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Estensione opzionale del Vault cifrato a PDF/scansioni, con cifratura dei contenuti e gestione robusta della recovery.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "USER_NOTEBOOKLM_TEXT_REVIEW",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      },
+      "next_gate": "Security HIGH: plaintext temporanei/thumbnail/indici, backup/cloud, perdita chiavi, iOS/Web, memoria; Privacy #215 ON HOLD; no claim Keystore universale.",
+      "reviewed_at": "2026-11-02",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+      ],
+      "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
+      "idea_refs": [
+        "AD-NL26-09"
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 30,
+        "Notes-Ecosistema": 20
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/screens/private_vault.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0146/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-02"
+      }
+    },
+    {
+      "id": "CAP-0147",
+      "title": "Home modulare riordinabile con preferenze locali",
+      "domain": "esperienza",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 5,
+        "feasibility": 4,
+        "evidence_strength": 2,
+        "risk_control": 4
+      },
+      "description": "Riordino e visibilità di card esistenti in una Home, rispettando preferenze persistenti e navigazione accessibile.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "CamperBoss": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "USER_NOTEBOOKLM_TEXT_REVIEW",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+      },
+      "next_gate": "No secondo dashboard/data store; screenshot matrix su UI5, contrasto, semantica, performance, account switch e fallback small screen.",
+      "reviewed_at": "2026-11-02",
+      "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
+      "research_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+      ],
+      "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
+      "idea_refs": [
+        "AD-NL26-16"
+      ],
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 65,
+        "CamperBoss": 55,
+        "Notes-Ecosistema": 60
+      },
+      "anna_full_source_audit": {
+        "classification": "PARTIAL_REUSE",
+        "target_repo": "riccardopinato/Agenda-per-Anna",
+        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "source_paths": [
+          "lib/src/app_shell.dart"
+        ],
+        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0147/ANNA_SOURCE_COMPATIBILITA.md",
+        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
+        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "android_physical_test": "NOT_VERIFIED",
+        "audit_date": "2026-11-02"
       }
     }
   ]

@@ -1,0 +1,15 @@
+CAP: CAP-0145
+CAPABILITY: Heatmap locale di ricordi, attività e abitudini volontarie
+FONTE: USER_NOTEBOOKLM_TEXT_REVIEW (testo senza link di codice)
+IDEA_ORIGINE: AD-NL26-07
+APP_DONOR_CANDIDATA: riccardopinato/Agenda-per-Anna
+CODICE_DONOR_POTENZIALE: lib/src/planner_views.dart
+AUDIT_REFERENCE_SHA: 88efdfa9a688f35585cf2760d131f7a6b0b9deb2
+CODICE_ESTRATTO: NO
+CODICE_PRONTO_DA_COPIARE: NO
+BACKEND_O_API_ATTIVATI: NO
+
+ORIGINE_IDEE: https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md
+MAPPATURA_CAP: https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md
+
+La presenza del file donor è stata verificata; il comportamento proposto NON è implementato né certificato. Nessun codice di terze parti copiato, commit di adattamento da pianificare.

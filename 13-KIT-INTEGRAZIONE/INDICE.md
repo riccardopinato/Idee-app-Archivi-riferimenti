@@ -1,4 +1,4 @@
-# Indice — 140 kit
+# Indice — 147 kit
 
 | ID | Capability | App interessate | Kit |
 |---|---|---|---|
@@ -142,3 +142,10 @@
 | CAP-0138 | Ink sincronizzato al tempo di una registrazione | Notes-Ecosistema | [Apri](CAP-0138/README.md) |
 | CAP-0139 | Studio del movimento da video con pose annotate | Notes-Ecosistema, FocuSense | [Apri](CAP-0139/README.md) |
 | CAP-0140 | Analisi forense non conclusiva delle immagini | Notes-Ecosistema, app-fotografia | [Apri](CAP-0140/README.md) |
+| CAP-0141 | Rituali collaborativi con risposta e rivelazione reciproca | Agenda-per-Anna, Wonderlog | [Apri](CAP-0141/README.md) |
+| CAP-0142 | Capsule e lettere a apertura programmata | Agenda-per-Anna, Wonderlog | [Apri](CAP-0142/README.md) |
+| CAP-0143 | Biglietti ricordo con QR e accesso revocabile | Agenda-per-Anna, Wonderlog, app-fotografia | [Apri](CAP-0143/README.md) |
+| CAP-0144 | Widget contestuali privacy-safe per agenda e contenuti condivisi | Agenda-per-Anna, World-Days, Wonderlog | [Apri](CAP-0144/README.md) |
+| CAP-0145 | Heatmap locale di ricordi, attività e abitudini volontarie | Agenda-per-Anna, Notes-Ecosistema, FocuSense | [Apri](CAP-0145/README.md) |
+| CAP-0146 | Allegati documentali cifrati per Vault privato | Agenda-per-Anna, Notes-Ecosistema | [Apri](CAP-0146/README.md) |
+| CAP-0147 | Home modulare riordinabile con preferenze locali | Agenda-per-Anna, CamperBoss, Notes-Ecosistema | [Apri](CAP-0147/README.md) |

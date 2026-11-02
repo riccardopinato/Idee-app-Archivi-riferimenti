@@ -2,7 +2,7 @@
 
 ## Anna's Diary — 15 proposte NotebookLM (02/11/2026)
 
-**Analizzate, non approvate.** [Classifica e valutazioni](ANNA_NOTEBOOKLM_2026-11-02.md); [correzione CAP](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md); [offerta commerciale](../08-MONETIZZAZIONE/ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md). P1: domanda Noi, lettera futura, capsula, widget Oggi. Privacy #215 congelata.
+**Analizzate e mappate su 7 nuove CAP + 5 estensioni, non approvate in roadmap.** [Classifica e valutazioni](ANNA_NOTEBOOKLM_2026-11-02.md); [correzione CAP](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md); [offerta commerciale](../08-MONETIZZAZIONE/ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md). P1: domanda Noi, lettera futura, capsula, widget Oggi. Privacy #215 congelata.
 
 
 | Nome | Categoria | Stato | Prossimo controllo |

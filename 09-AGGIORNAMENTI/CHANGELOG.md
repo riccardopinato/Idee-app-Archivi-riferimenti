@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-02 — 15 idee Anna formalizzate come CAP, con deduplicazione
+- Risolti 15 ID AD-NL26: 7 nuove capability CAP-0141…0147 e 5 ampliamenti/riusi CAP-0023, CAP-0024, CAP-0055, CAP-0069, CAP-0072. Score tecnico canonico separato da priorità editoriale idea (4 P1, 11 P2).
+- Registro JSON da 140 a **147 CAP**, 7 kit livello 1 con 6 file canonici ciascuno e compatibilità Anna preliminare; rigenerate viste, matrice, ranking, schede per app e indice kit. Tutte le nuove app_states PROPOSTA; source paths esistenti non equivalgono a funzione implementata.
+- Precedenti due P3 scartate non reinserite. Privacy #215 resta DRAFT/ON HOLD e nessun codice app, prodotto, licenza o prezzo modificato.
+
+
 ## 2026-11-02 — Esclusione delle due proposte NotebookLM P3 dal catalogo attivo
 - Su richiesta dell'utente, rimosse le due idee P3 dal dossier Anna e dalle relative mappature. Classifica attiva: 15 idee, 4 P1 e 11 P2.
 - Aggiornati indici, collegamenti e conteggi, senza cambiare le 140 CAP canoniche. L'importazione iniziale rimane nella cronologia Git; nessuna riscrittura della storia.

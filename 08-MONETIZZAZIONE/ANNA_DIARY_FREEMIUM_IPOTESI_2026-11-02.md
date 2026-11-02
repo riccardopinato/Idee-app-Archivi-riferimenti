@@ -16,3 +16,7 @@
 **Misure prima della decisione:** activation, pairing completato, weekly active duo, retention D7/D30, trial start, conversione pagante, acquisti/ripristini, churn, rimborso e margine netto dopo cloud/store. Tutte da raccogliere, nessun dato già osservato.
 
 **Critica:** l'affermazione del testo che app per coppie abbiano le conversioni più alte non ha citazioni. [RevenueCat SOA 2026](https://www.revenuecat.com/state-of-subscription-apps) non fornisce prova specifica Paired/Between/Locket. [Google Play](https://support.google.com/googleplay/android-developer/answer/18265346) e [Apple](https://developer.apple.com/app-store/review/guidelines/) richiedono valore continuativo per abbonamenti e termini chiari. L'entitlement in codice non costituisce acquisto Play/Store certificato.
+
+## Mappatura capability
+
+L'idea prezzo AD-NL26-17 è collegata a **CAP-0072** (entitlement RevenueCat provider truth). Non è necessario creare un'altra capability per tre ipotesi di prezzo; SKU, trial, lifetime e cloud cost sono test commerciali e Store QA **non approvati**.

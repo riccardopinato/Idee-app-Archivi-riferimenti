@@ -8,11 +8,11 @@
 
 ## Anna's Diary — idee NotebookLM del 02/11/2026
 
-[15 proposte con scoring](11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md), [mappatura reale CAP](12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md), [riuso](06-SINERGIE-E-INTEGRAZIONI/ANNA_NOTEBOOKLM_RIUSO_2026-11-02.md) e [monetizzazione](08-MONETIZZAZIONE/ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md). Stato ricerca non approvata.
+[15 proposte con scoring](11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md), [mappatura reale CAP](12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md), [riuso](06-SINERGIE-E-INTEGRAZIONI/ANNA_NOTEBOOKLM_RIUSO_2026-11-02.md) e [monetizzazione](08-MONETIZZAZIONE/ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md). [Mappatura formale: 7 nuove CAP e 5 estensioni](12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md). Stato ricerca non approvata.
 
 ## Libreria kit tecnici
 
-- [140 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.
+- [147 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.
 - [Stima facilità per app](13-KIT-INTEGRAZIONE/METODOLOGIA_FACILITA.md): nelle [tabelle delle singole app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/) figurano le colonne **Facilita integrazione (%)**, **Descrizione breve** e **Kit tecnico**, di fianco allo Score.
 
 ## Navigazione
@@ -31,7 +31,7 @@
 | [09-AGGIORNAMENTI](09-AGGIORNAMENTI/CHANGELOG.md) | Cronologia modifiche e decisioni |
 | [10-MODELLI](10-MODELLI/SCHEDA_APP.md) | Modelli standard per app, provider e librerie |
 | [11-NUOVE-IDEE](11-NUOVE-IDEE/README.md) | **Nuove proposte**, [inbox](11-NUOVE-IDEE/INBOX_IDEE.md), [audit nuove idee](11-NUOVE-IDEE/CANDIDATI_AUDIT_2026-10-30.md) e candidati non ancora promossi al portafoglio |
-| [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **140 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
+| [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **147 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
 | [90-STORICO](90-STORICO/REGISTRO_MASTER_2026-10-30.txt) | Registro integrale originale, immutato |
 
 ## Versioni centrali: snapshot letto il 30 ottobre 2026
