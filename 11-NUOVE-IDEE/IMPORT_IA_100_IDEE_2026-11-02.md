@@ -106,3 +106,28 @@ Lotto di 100 idee numerate dall'utente, da sottoporre a analisi e deduplicazione
 | 83 | Valutatore Affidabilità Notizie |
 | 84 | Generatore Meme Reattivi |
 | 85 | Avatar Pixel-Art Evolutivo |
+
+## Originali #86–#100
+
+| # | Idea |
+|---|---|
+| 86 | Custode Password Mascherato |
+| 87 | Mappa Sonora Rilassamento |
+| 88 | Contatore Parole Parlare in Pubblico |
+| 89 | Scelte Musicali di Gruppo |
+| 90 | Organizzatore Valigie |
+| 91 | Radar Sconti Ultimo Minuto |
+| 92 | Scanner Spesa Trasparente |
+| 93 | Timer Micro-Obiettivi Quotidiani |
+| 94 | Identikit Rumori di Casa |
+| 95 | Diario Stati d'Animo Cromatici |
+| 96 | Playlist da Umore Visivo |
+| 97 | Scanner Etichette Abbigliamento |
+| 98 | Rilevatore Vocale Ansia/Panico |
+| 99 | Risposte Recensioni B2B |
+| 100 | Custode delle Piante Visivo |
+
+## Note su provenienza
+- Titoli abbreviati, numeri originali invariati.
+- Nel materiale si trovano anche idee senza numero e quattordici fusioni elaborate successivamente: sono da valutare, non nuove app.
+- Registrazione editoriale, non validazione di domanda, competitor, licenze o fattibilità di rilascio.
