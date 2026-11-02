@@ -1,0 +1,26 @@
+# Lotto 76-100, stesso contratto DATI_001_025.txt
+76|REL|H|-|5,6,8,4,3,4,10|Mostra solo parametri misurabili e consensuali della conversazione|Tono di voce non rivela umore né responsabilità di coppia|noise_meter
+77|DEV|R|-|8,8,8,7,3,6,9|Filtro spoiler solo su contenuti incollati o browser dedicato|Non è possibile intercettare liberamente tutte le app social|AccessibilityService
+78|SEC|R|PDF-Unifier|8,7,7,7,5,7,8|Sintesi termini forniti dall'utente con citazioni puntuali|LLM può omettere clausole; privacy e contenuti lunghi|OCR,LLM
+79|FIN|F|CashMate AI|7,7,8,5,8,10,3|Riepiloghi finanziari ironici basati su dati scelti|Non minimizzare difficoltà finanziarie|fl_chart
+80|SOC|R|-|4,6,9,4,8,3,9|Generatore di immagini umoristiche chiaramente fittizie|Escludere prove fotografiche false per ingannare terzi|screenshot
+81|FOC|F|FocusSense|7,7,7,6,5,8,7|Promemoria vocali e check-in volontari|Non promettere ascolto/motivazione h24|speech_to_text
+82|MED|R|Cooking Anime|8,8,8,7,5,7,8|Fiabe da scelte guidate e libreria editoriale|Tutela minori, qualità e costi generazione|LLM,TTS
+83|EDU|R|-|9,8,9,7,3,5,10|Evidenzia fonti e incongruenze senza verdetto automatico|Un LLM non è servizio di fact-checking certificato|OCR,LLM
+84|MED|S|Design-App|7,8,10,6,8,7,5|Template meme da foto fornite e trigger manuali|Licenza meme, immagini e privacy volto|camera,screenshot
+85|SOC|F|Focus Kingdom|7,7,9,6,7,9,4|Avatar pixel evolutivo basato su progressi espliciti|Evita doppiaggio della gamification esistente|hive
+86|SEC|H|Document Vault|9,8,5,9,2,7,10|Vault cifrato reale con recovery, non finta sicurezza|Password manager necessita threat model e audit rigoroso|local_auth,secure_storage
+87|HLT|F|SleepMax Coach|7,7,7,6,8,10,4|Mappa di ambienti sonori e mix rilassanti|Contenuti audio originali e diritti|audioplayers
+88|EDU|C|Parla Chiaro (#32,#43)|8,7,6,7,7,9,4|Misura parole/minuto in registrazioni volontarie|La precisione della trascrizione va misurata|speech_to_text
+89|SOC|S|-|8,7,9,7,6,6,6|Votazione playlist per party con playlist condivise|API Spotify/YouTube, permessi riproduzione|supabase_flutter
+90|NAV|F|CamperBoss|8,8,5,7,8,10,4|Valigia checklist meteo/attività con modelli offline|Non promettere meteo offline aggiornato|open-meteo
+91|FOD|H|-|8,8,9,7,3,6,10|Lista offerte solo per partner/dati realmente disponibili|Senza retailer data feed l'app non ha inventario offerte|API retailer
+92|FOD|F|TasteAI|9,8,7,7,7,9,7|Scanner etichetta con dati verificabili|Risultati incompleti e claims sanitari da evitare|mobile_scanner,openfoodfacts
+93|FOC|F|FocusSense|7,7,6,6,10,10,3|Timer obiettivi 2-10 min con streak|Riusa FocusSense/Notes invece di un nuovo clone|shared_preferences
+94|SEC|R|-|8,7,8,7,3,4,9|Classifica solo rumori registrati volontariamente|Background mic e false allerta sicurezza|noise_meter
+95|HLT|F|Anna's Diary|7,7,8,6,9,10,3|Mood tracker a palette con esportazione|Anna ha già journaling; no deduzioni cliniche|hive,fl_chart
+96|MED|R|FrameLab|6,7,8,5,5,7,7|Crea moodboard visiva per suggerire musica manuale|Licenze streaming e API musicali|camera
+97|FOD|F|CuraVestiti|8,8,6,7,7,10,5|Lettore etichette per spiegare simboli tessili|Non stimare la durata del tessuto da una foto|google_ml_kit
+98|HLT|H|-|8,8,8,6,2,4,10|Esercizi guidati per autocalmarsi senza diagnosi|Voce non identifica attacchi di panico in modo affidabile|noise_meter
+99|COM|B|-|8,8,6,9,7,6,6|Bozze di risposte recensioni da testo incollato|Mercato B2B, costi API e supervisione contenuti|LLM
+100|FOD|S|-|8,8,8,7,8,7,5|Diario piante, foto, calendario cure e reminder|Diagnosi fotografica e irrigazione automatica escluse|camera,flutter_local_notifications
