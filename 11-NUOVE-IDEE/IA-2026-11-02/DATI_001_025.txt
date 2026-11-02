@@ -1,0 +1,25 @@
+# Dati di valutazione del lotto IA 2026-11-02; separatore |; 1-25
+# id|cluster|decisione|app_riuso|U,D,V,M,F,S,R (scala 1-10)|MVP verificabile|gate principale|tecnologie citate nella fonte
+1|MED|S|-|7,6,9,5,10,6,3|Riproduci e condividi clip audio con licenze verificabili|Diritti su meme e marchi|audioplayers,share_plus
+2|FOC|S|-|8,7,7,7,10,7,2|Registra in un tocco micro-successi e crea riepiloghi|Distinguerla dai normali habit tracker|hive,flutter_confetti
+3|NAV|F|CamperBoss|8,7,4,6,8,9,5|Schede emergenza e frasi offline verificate per paese|Numeri, frasi, cambio valute devono avere data e fonte|flutter_localizations
+4|FIN|S|CashMate AI|9,8,7,8,9,7,3|Rimanda acquisti 48 ore e monitora risparmio solo potenziale|No denaro realmente messo da parte senza integrazione|fl_chart,shared_preferences
+5|REL|F|Anna's Diary|8,7,6,7,9,9,3|Domanda random giornaliera con foto e ricordo|Notifiche resilienti e confini dati familiari|flutter_local_notifications,hive
+6|MED|S|-|7,7,8,6,8,6,4|Card con QR e dedica ospitata o locale|QR remoto implica hosting e durata URL|qr_flutter,screenshot
+7|SOC|R|-|7,7,9,6,4,5,8|Finta chiamata con timer avviato volontariamente|Ascolto background e full-screen intent Play|vosk,flutter_local_notifications
+8|FOC|F|FocusSense|7,6,4,5,10,8,2|Timer microattività e suggerimenti offline|Differenziazione rispetto a timer comuni|shared_preferences
+9|HLT|F|Anna's Diary|7,7,3,6,9,8,4|Registro emoji di energia, sintomi e routine|Dati sensibili, nessuna inferenza clinica|hive
+10|FOC|S|-|8,7,6,7,10,7,2|Slider 5–60 minuti con attività personalizzate offline|Un catalogo statico non giustifica abbonamento|flutter_xlider
+11|REL|C|Anello Amici (#25)|8,7,7,7,9,9,3|Seleziona contatti e propone check-in volontari|Non inviare mai messaggi automaticamente|url_launcher,flutter_local_notifications
+12|FOD|F|TasteAI|8,8,6,7,8,10,4|Filtra ricette secondo ingredienti posseduti|TasteAI copre già anti-spreco; prezzi provider|flutter_chips_input,Spoonacular
+13|REL|S|-|8,6,5,7,7,7,5|Vocabolario privato delle parole inventate dai figli|Accessi nonni/babysitter e dati di minori|supabase_flutter
+14|FIN|S|-|9,7,5,8,10,7,3|Traccia prestiti di denaro/oggetti e scadenze|Proteggere privacy e chiarire assenza tutela legale|hive,flutter_local_notifications
+15|EDU|S|-|7,6,9,6,7,5,5|Screenshot meme con traduzione slang e flashcard|Diritti meme e qualità dizionari slang|google_ml_kit,Anki
+16|REL|S|-|7,7,8,7,7,7,5|Compiti familiari con punti e coupon grattabili|Consenso multiutente, regole condivise|supabase_flutter,flutter_scratchcard
+17|NAV|S|Wonderlog|8,7,8,7,6,8,6|Tour di set cinematografici verificati per città|Dataset coordinate e diritti immagini|flutter_map,geolocator
+18|COM|B|-|7,6,4,8,7,5,6|Badge di gratitudine tra colleghi con dashboard|Distribuzione B2B, privacy e moderazione|badges,supabase_flutter
+19|FOD|R|TasteAI|9,8,6,7,4,8,9|Mostra ingredienti e allergeni come dati con fonte|No rassicurazioni allergiche generate da LLM|mobile_scanner,openfoodfacts
+20|COM|H|-|8,6,4,8,4,4,9|Evidenzia clausole e invita alla verifica legale|Responsabilità professionale e riservatezza|Tesseract
+21|SOC|R|-|6,6,10,6,3,5,9|Poc Android WiFi e creature 2D prima dell'AR|connectivity_plus non effettua scansioni WiFi|connectivity_plus,ARCore
+22|FIN|R|-|8,7,4,8,4,5,8|Registro manuale margini rivendite con costi|API e ToS Vinted/eBay e fiscalità|API eBay
+23|MED|R|FrameLab|7,8,9,7,4,7,8|Guardaroba foto e suggerimenti manuali meteo|Visione artificiale e export video non banali|YOLO,open-meteo
