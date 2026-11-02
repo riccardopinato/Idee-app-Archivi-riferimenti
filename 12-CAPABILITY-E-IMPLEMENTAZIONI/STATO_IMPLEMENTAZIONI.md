@@ -1,23 +1,26 @@
-# Stato delle implementazioni — audit 2026-11-01
+# Stato delle implementazioni — audit 2026-11-02
 
 Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/audit consultata, non esecuzione del codice ne CI/DEVICE PASS verificati in questa sessione.
 
 | Stato | Associamenti app-capability | Interpretazione |
 | --- | --- | --- |
-| PROPOSTA | 219 | Idea non approvata / nessun codice verificato qui |
-| ROADMAP_STORICA | 16 | Indicata in roadmap o decisione storica; richiede verifica live |
+| PROPOSTA | 214 | Idea non approvata / nessun codice verificato qui |
+| ROADMAP_STORICA | 15 | Indicata in roadmap o decisione storica; richiede verifica live |
 | SOURCE_REPORTED | 85 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
 | DONOR_REPORTED | 2 | Repo donor documentato; riuso non ancora validato |
-| SOURCE_CONFIRMED | 2 | Implementazione verificata con riferimento puntuale a codice e commit |
-| CI_VERIFIED | 0 | CI exact-head verde per questa capability nel repository autorevole |
+| SOURCE_CONFIRMED | 0 | Implementazione verificata con riferimento puntuale a codice e commit |
+| CI_VERIFIED | 8 | CI exact-head verde per questa capability nel repository autorevole |
 | DEVICE_VERIFIED | 0 | Test su dispositivo con artifact e SHA identificati |
 | RELEASE | 0 | Distribuzione verificata nel canale dichiarato, non inferita dalla build |
 | BLOCKED | 0 | Blocco concreto con causa e riferimento; mantenere l'idea nel catalogo |
 
 | Capability con donor o sorgente documentata | App | Prova |
 | --- | --- | --- |
-| CAP-0003 Preparazione contestuale appuntamento | Agenda-per-Anna (SOURCE_CONFIRMED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_preparation.dart |
+| CAP-0001 Pianificazione di slot liberi | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/calendar_free_slots.dart |
+| CAP-0002 Creazione eventi da linguaggio naturale | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/natural_event_parser.dart |
+| CAP-0003 Preparazione contestuale appuntamento | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_preparation.dart |
 | CAP-0004 Overlay calendari esterni read-only | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
+| CAP-0005 Esportazione esplicita eventi verso calendario | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/android_calendar_sync.dart |
 | CAP-0006 Lista della spesa privata e condivisa | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0007 Scheda workout e storico multisport | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0008 Import foto PDF delle schede workout | PDF-Unifier (DONOR_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
@@ -61,15 +64,16 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | CAP-0066 Trasferimento LAN QR HTTPS fidato | Send-to-pc (SOURCE_REPORTED) | https://github.com/riccardopinato/Send-to-pc/blob/main/ROADMAP.md |
 | CAP-0067 Release Android firmato artifact provenance | Agenda-per-Anna (SOURCE_REPORTED), AppLab (SOURCE_REPORTED), Battery_Guard (SOURCE_REPORTED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md |
 | CAP-0068 AppLab evidence ladder exact SHA | AppLab (SOURCE_REPORTED), Agenda-per-Anna (SOURCE_REPORTED), CamperBoss (SOURCE_REPORTED) | https://github.com/riccardopinato/AppLab/blob/main/ROADMAP.md |
-| CAP-0069 Automated screenshot visual regression | Design-App (SOURCE_REPORTED), AppLab (SOURCE_REPORTED) | https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml |
+| CAP-0069 Automated screenshot visual regression | Design-App (SOURCE_REPORTED), AppLab (SOURCE_REPORTED), Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/tool/compare_visual_baselines.py |
 | CAP-0070 AppLab autonomous bounded repair | AppLab (SOURCE_REPORTED) | https://github.com/riccardopinato/AppLab/blob/main/ROADMAP.md |
 | CAP-0071 Offline content packs incremental sync | World-Days (SOURCE_REPORTED), CamperBoss (SOURCE_REPORTED), Notes-Ecosistema (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md |
 | CAP-0072 Entitlement RevenueCat provider truth | Agenda-per-Anna (SOURCE_REPORTED), TasteAI (SOURCE_REPORTED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md |
 | CAP-0073 AdMob UMP consent gating | World-Days (SOURCE_REPORTED), In-Cucina-con-gli-Anime (SOURCE_REPORTED), Battery_Guard (SOURCE_REPORTED) | https://github.com/riccardopinato/World-Days/blob/main/ROADMAP.md |
-| CAP-0077 Health check permessi nativi per-capability | Phone-Guard (SOURCE_REPORTED), Battery_Guard (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md |
+| CAP-0077 Health check permessi nativi per-capability | Phone-Guard (SOURCE_REPORTED), Battery_Guard (SOURCE_REPORTED), Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/capability_health.dart |
 | CAP-0080 Document expiry and asset passport | CamperBoss (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0081 Phone protection sensitivity adviser | Phone-Guard (SOURCE_REPORTED) | https://github.com/riccardopinato/Phone-Guard/blob/main/ROADMAP.md |
 | CAP-0082 Deterministic UI design artwork | World-Days (SOURCE_REPORTED) | https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml |
-| CAP-0113 Da appuntamento passato a ricordo privato | Agenda-per-Anna (SOURCE_CONFIRMED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_memory_capture.dart |
+| CAP-0111 Weekly Review con proposte di pulizia e ripianificazione | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/weekly_review.dart |
+| CAP-0113 Da appuntamento passato a ricordo privato | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_memory_capture.dart |
 
 Non promuovere a `CI_VERIFIED`, `DEVICE_VERIFIED` o `RELEASE` senza evidence esatta del repo e della build pertinente.

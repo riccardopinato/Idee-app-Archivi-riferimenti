@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-02 — Incrementale 31 repository, 8 capability Anna CI exact-head
+- Inventario: 31 repository accessibili, nessun nuovo repository o default branch modificato; 3 SHA variati (Anna's Diary, App-Factory-Core, archivio stesso). Il self SHA e' volutamente pre-PR. Factory CURRENT resta Master v27 / Golden v23; commit osservato `63dd5e4f`, solo ledger di observability nel diff.
+- Anna's Diary: 7 commit nuovi da `88efdfa9` a `fb476545426fb6bf290e74f53e735fa13616e4e9`. Confermati sorgenti, test e check CI exact-head per CAP-0001, CAP-0002, CAP-0003, CAP-0005, CAP-0069, CAP-0077, CAP-0111 e CAP-0113; stato Anna promosso a `CI_VERIFIED`, senza toccare gli stati delle altre app. PR sorgenti #186, #188, #191, #193, #195, #201, #203 e #204.
+- Nuove quick wins Anna PR #206: duplicazione in bozza, rinvio task, recupero scaduti, anteprima domani e avvisi sovrapposizione. Riutilizzano responsabilita' gia presenti nel catalogo; non assegnati nuovi CAP e non attribuito il livello CI a capability piu' ampie non interamente coperte (CAP-0101/0102).
+- Scoring: rafforzata la sola evidenza documentata per CAP-0001, CAP-0002 e CAP-0111; punteggi ricalcolati dal modello canonico. Provenienza storica conservata come `origin_source` quando la fonte primaria e' passata al codice esatto.
+- Limiti: Weekly Review +118 ha accettazione generale utente ma non matrice tecnica device; C2 non ha 70 coppie screenshot approvate; C1 richiede prova permessi su telefono; Google Calendar diretto PR #199 e privacy PR #200 restano draft/bloccate. Build +120 predisposta, non certificata. Nessun `DEVICE_VERIFIED`, `RELEASE` o approvazione di nuova roadmap.
+
 ## 2026-11-01 — Audit completo delle 61 capability Anna's Diary
 - Copertura 61/61 associazioni del registro Anna allo SHA `Agenda-per-Anna@88efdfa9` con percorso sorgente per CAP e scheda di compatibilità individuale; totale 62 documenti di audit.
 - Classificazione: 26 sorgenti coerenti, 21 riusi parziali, 2 nuove candidate, 8 fuori scope, 2 pianificate, 2 infrastrutturali. Presenza di file ≠ test runtime.
