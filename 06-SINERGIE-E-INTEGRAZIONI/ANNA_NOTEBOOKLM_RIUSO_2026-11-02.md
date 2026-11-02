@@ -13,3 +13,7 @@
 | Monetizzazione | RevenueCat e contratti entitlement | Test prezzi e capacità Premium | Store sandbox, costi cloud, quote e restore |
 
 Nessuna nuova IA, backend obbligatorio, nuova pagina pubblica o modifica alla PR #215 autorizzata da questa ricerca. Conservare origine, consenso, sicurezza e test.
+
+## Mappa CAP formalizzata
+
+[15 idee -> 7 nuove CAP + 5 estensioni](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md). Le CAP nuove restano PROPOSTA; il riferimento a un donor non attribuisce implementazione alla nuova funzione. Le due idee P3 precedentemente escluse non rientrano.

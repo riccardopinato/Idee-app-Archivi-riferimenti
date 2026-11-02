@@ -35,3 +35,5 @@ Anche le idee **scartate o rinviate** rimangono visibili con motivazione e data.
 ## Anna's Diary — 15 proposte NotebookLM del 02/11/2026
 
 [Ranking e dossier](ANNA_NOTEBOOKLM_2026-11-02.md), [mappatura CAP reali](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md), [riuso](../06-SINERGIE-E-INTEGRAZIONI/ANNA_NOTEBOOKLM_RIUSO_2026-11-02.md) e [prezzi ipotetici](../08-MONETIZZAZIONE/ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md). Nessuna idea promossa in roadmap o nel registro CAP.
+
+**Registrazione capability 02/11:** [mappatura 15 idee / 7 CAP nuove / 5 estensioni](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md). Nessun progetto/app/feature promosso automaticamente.

@@ -4,6 +4,10 @@
 
 Confronto con Anna's Diary main 827bb61620960d8867eb03e453d142013aada786 (Product Bible, roadmap, UI5, widget bridge, Vault, Weekly Review, RevenueCat). Factory Core cf931f8031ca973cb0a5467a8e83c865cd1e9def, Master 27 / Golden Index 23. Privacy #215 resta Draft **ON HOLD**.
 
+## Mappatura capability formalizzata
+
+[Apri la matrice canonica delle 15 idee](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md): 7 CAP nuove (0141…0147), 5 estensioni di CAP esistenti. Identificativi editoriali AD-NL26 e priorità originali conservati; nessuna idea P3 esclusa reinserita. Le nuove CAP possono ricevere priorità tecnica diversa secondo lo score ufficiale.
+
 ## Classifica e categorie
 
 Score editoriale 0–100: U=utilità, D=domanda ipotizzata, V=viralità, M=monetizzabilità, F=fattibilità, S=sinergia, R=rischio (10=alto). Assi 1–10; formula della raccolta IA 02/11: round(2.4U + 2D + 1.2V + 1.8M + 1.6F + S − 2 max(0,R−5)). Classi **solo per questo lotto** P1 >=75; P2 60–74. La classifica attiva comprende soltanto P1 e P2. Non confrontare con gli score delle CAP, né usare P1 come autorizzazione.

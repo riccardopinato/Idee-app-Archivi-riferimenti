@@ -1,6 +1,6 @@
 # Catalogo centrale capability — App Factory
 
-**140 capability individuali, 48 app/idee beneficiarie e 324 associazioni app-capability**, stato catalogo 01/11/2026 (audit iniziale + ricerche incrementali).
+**147 capability individuali, 48 app/idee beneficiarie e 342 associazioni app-capability**, stato catalogo 01/11/2026 (audit iniziale + ricerche incrementali).
 
 - [Classifica globale](CLASSIFICA_PRIORITA.md)
 - [Matrice per app](MATRICE_APP.md)
@@ -8,7 +8,7 @@
 - [Stato implementazioni](STATO_IMPLEMENTAZIONI.md)
 - [Schede individuali](REGISTRO_CAPABILITY/)
 - [JSON canonico](REGISTRO_CAPABILITY.json)
-- [140 kit tecnici](../13-KIT-INTEGRAZIONE/README.md) e [indice](../13-KIT-INTEGRAZIONE/INDICE.md)
+- [147 kit tecnici](../13-KIT-INTEGRAZIONE/README.md) e [indice](../13-KIT-INTEGRAZIONE/INDICE.md)
 - [Metodologia percentuali facilità](../13-KIT-INTEGRAZIONE/METODOLOGIA_FACILITA.md)
 - [Audit fonti e copertura](AUDIT_TRASVERSALE_2026-11-01.md)
 - [Ricerca r/BestGitHubRepos 01/11](RICERCA_REDDIT_BESTGITHUBREPOS_2026-11-01.md)
@@ -17,6 +17,7 @@
 - [Terza ricerca Hugging Face: idee #29–44](RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md)
 - [Quarta ricerca Hugging Face: idee #45–56](RICERCA_HUGGINGFACE_NOTE_IDEE_45_56_2026-11-01.md)
 - [Automazione incrementale](AUTOMAZIONE_E_REGOLE.md)
+- [Anna NotebookLM: 15 idee -> 7 CAP nuove + 5 estensioni](RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md)
 
 ## Regole
 
@@ -43,3 +44,7 @@ Ogni tabella delle app presenta Score, **Facilita integrazione (%)**, **Descrizi
 `python3 scripts/build_catalog.py` genera pagine e schede. 
 `python3 scripts/build_catalog.py --check` controlla che nulla derivi da un JSON obsoleto.
 Le PR sono validate tramite GitHub Actions. Il monitoraggio inter-repository usa un task ChatGPT con accesso GitHub esplicitamente autorizzato: il token `GITHUB_TOKEN` di questo repository **non ha** accesso ai repository privati altrui. Aggiornamento programmato = differito al prossimo controllo, non webhook istantaneo.
+
+## Estensione NotebookLM 02/11/2026
+
+Le sette nuove CAP sono **PROPOSTA**, non integrazioni. La classifica originale di 15 idee conserva priorità editoriali P1/P2; il ranking tecnico CAP impiega un'altra formula e può assegnare P3 a proposte con rischi o scarsa evidenza. La vecchia matrice 61/61 di Anna è uno **snapshot storico**, non include le nuove candidature.
