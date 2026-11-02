@@ -1,4 +1,4 @@
-# Classifica capability — snapshot 2026-11-02
+# Classifica capability — snapshot 2026-11-03
 
 **Ranking tecnico-editoriale relativo, NON approvazione di roadmap.** P1: >=92, P2: 79–91, P3: <79. P0 e riservato ai veri incidenti di sicurezza/dati, non alla ricerca di idee.
 
