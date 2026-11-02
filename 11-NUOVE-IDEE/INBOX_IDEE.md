@@ -1,5 +1,10 @@
 # Inbox nuove idee — da valutare e conservare
 
+## Anna's Diary — 17 proposte NotebookLM (02/11/2026)
+
+**Analizzate, non approvate.** [Classifica e valutazioni](ANNA_NOTEBOOKLM_2026-11-02.md); [correzione CAP](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md); [offerta commerciale](../08-MONETIZZAZIONE/ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md). P1: domanda Noi, lettera futura, capsula, widget Oggi. Fake PIN scartato nella forma proposta, correlazioni rinviate. Privacy #215 congelata.
+
+
 | Nome | Categoria | Stato | Prossimo controllo |
 |---|---|---|---|
 | PDF Pocket Tools | utility | candidato con donor `PDF-Unifier` in codice | valutare estensione commerciale e licenze PDF, non partire da zero |

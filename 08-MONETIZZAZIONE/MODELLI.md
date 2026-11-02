@@ -13,3 +13,7 @@ L'obiettivo non è trattenere artificialmente l'utente: massimizzare valore e en
 ## Lotto idee IA 02/11/2026 — modelli in ipotesi, non ricavi verificati
 
 Il ranking [monetizzabilità stimata](../11-NUOVE-IDEE/IA-2026-11-02/CLASSIFICHE_MULTICRITERIO.md) classifica le 100 proposte ma **non dimostra disponibilità a pagare**. Micro-utility offline: test lifetime (€2,99–4,99 indicativi) o freemium; contenuti visivi/giochi: pack IAP e ads non invasive; collaboration/community: backend sostenibile e moderazione; B2B: abbonamento solo dopo validazione commerciale. Su Google Play un abbonamento deve fornire valore continuativo: [policy ufficiale](https://support.google.com/googleplay/android-developer/answer/18265346).
+
+## Anna's Diary — NotebookLM (02/11/2026)
+
+[Prezzi e packaging in sola ipotesi](ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md); nessun prodotto attivato.
