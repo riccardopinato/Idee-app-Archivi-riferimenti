@@ -55,3 +55,7 @@ La Factory centrale governa **regole e Golden**; AppLab governa **QA/orchestrazi
 ## Capability e nuovi repository (dal 1 novembre 2026)
 
 Le **idee di nuove app** continuano a entrare in `11-NUOVE-IDEE`; i **miglioramenti o motori riusabili** entrano in `12-CAPABILITY-E-IMPLEMENTAZIONI` con ID CAP stabile, fonte e stato *per app*. L'inventario dei repo è aggiornabile automaticamente da un controllo periodico ChatGPT/GitHub autorizzato; non è una sincronizzazione istantanea o un'autorizzazione a modificare i singoli prodotti.
+
+## Studio di 100 nuove idee IA — 2 novembre 2026
+
+Archiviate **100 schede individuali**, **6 proposte extra senza numero** e **14 fusioni analizzate**; nessuna approvazione o modifica alle app. Per la navigazione usare [indice delle schede](11-NUOVE-IDEE/IA-2026-11-02/INDICE_100_SCHEDE.md), [ranking 100](11-NUOVE-IDEE/IA-2026-11-02/RANKING_100_COMPLETO.md), [classifiche tematiche](11-NUOVE-IDEE/IA-2026-11-02/CLASSIFICHE_MULTICRITERIO.md), [fusioni](11-NUOVE-IDEE/IA-2026-11-02/FUSIONI_E_RIUSO.md) e [metodologia](11-NUOVE-IDEE/IA-2026-11-02/METODOLOGIA_E_FONTI.md).
