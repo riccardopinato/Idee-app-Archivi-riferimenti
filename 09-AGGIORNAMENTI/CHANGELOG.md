@@ -1,8 +1,14 @@
 # Changelog dell'archivio
 
+## 2026-11-02 — Esclusione delle due proposte NotebookLM P3 dal catalogo attivo
+- Su richiesta dell'utente, rimosse le due idee P3 dal dossier Anna e dalle relative mappature. Classifica attiva: 15 idee, 4 P1 e 11 P2.
+- Aggiornati indici, collegamenti e conteggi, senza cambiare le 140 CAP canoniche. L'importazione iniziale rimane nella cronologia Git; nessuna riscrittura della storia.
+- Nessuna modifica ad Anna, roadmap, pricing o PR Privacy #215 in sospeso.
+
+
 ## 2026-11-02 — Valutazione proposte Anna's Diary da NotebookLM
-- Fonte testuale utente SHA-256 0ac109c023523b466f71cfefe53232733d5450b7fb1164da02f560220a6c5613; 17 ID AD-NL26-01…17 con score editoriali, priorità, sovrapposizione source e gate.
-- Corretti nove riferimenti CAP errati nella fonte senza duplicare/modificare le 140 capability canoniche; riferimenti incrociati in 11 idee, 12 capability, 06 sinergie e 08 monetizzazione.
+- Fonte testuale utente SHA-256 0ac109c023523b466f71cfefe53232733d5450b7fb1164da02f560220a6c5613; 15 proposte P1/P2 con score editoriali, priorità, sovrapposizione source e gate.
+- Mappati i riferimenti CAP rimasti nella fonte senza duplicare/modificare le 140 capability canoniche; riferimenti incrociati in 11 idee, 12 capability, 06 sinergie e 08 monetizzazione.
 - Nessuna modifica ad Anna, roadmap, tariffari, Store o Privacy #215 ON HOLD. Fonti esterne per limitazioni widget, abbonamenti e benchmark esplicitamente distinte dal documento.
 
 
