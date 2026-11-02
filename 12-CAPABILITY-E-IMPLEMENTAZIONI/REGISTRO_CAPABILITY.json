@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02",
+  "updated_at": "2026-11-03",
   "authority": "Research/portfolio only. Product Bible/roadmap/code/tests/real-device evidence live in app repositories.",
-  "factory_baseline": "riccardopinato/App-Factory-Core@cf931f8031ca973cb0a5467a8e83c865cd1e9def",
+  "factory_baseline": "riccardopinato/App-Factory-Core@a3c65963e9f060f1a02de96ade1b0985a4adcdab",
   "score_explanation": "Relative 0-100 opportunity estimate: value 35%, cross-app reuse 25%, feasibility 20%, evidence 10%, low risk 10%. Each factor 1-5. P1>=92; P2>=79; otherwise P3. Not an implementation authorization or revenue projection.",
   "statuses": {
     "PROPOSTA": "Idea non approvata / nessun codice verificato qui",
@@ -678,33 +678,37 @@
       },
       "description": "Proporre ricordo da evento passato senza scrittura automatica",
       "app_states": {
-        "Agenda-per-Anna": "PROPOSTA",
+        "Agenda-per-Anna": "CI_VERIFIED",
         "Wonderlog": "PROPOSTA"
       },
       "source": {
-        "type": "PROJECT_ATTACHMENT",
-        "ref": "Anna's Diary.txt"
+        "type": "SOURCE_CODE_EXACT_SHA_WITH_EXACT_HEAD_CI",
+        "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/827bb61620960d8867eb03e453d142013aada786/lib/src/event_memory_capture.dart"
       },
       "next_gate": "Conversione evento a ricordo sempre esplicita",
-      "reviewed_at": "2026-11-01",
+      "reviewed_at": "2026-11-03",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "integration_ease_percent": {
         "Agenda-per-Anna": 80,
         "Wonderlog": 85
       },
       "anna_full_source_audit": {
-        "classification": "PARTIAL_REUSE",
+        "classification": "EXISTING_SOURCE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "827bb61620960d8867eb03e453d142013aada786",
         "source_paths": [
-          "lib/src/event_memory_capture.dart"
+          "lib/src/event_memory_capture.dart",
+          "test/v107_a1_event_to_memory_test.dart"
         ],
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0014/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped source inspection and product-policy mapping",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "method": "Event-to-memory tests executed in the complete exact-head Development checks run 41458618496, main@827bb616. No device QA.",
+        "app_flutter_build": "EXACT_HEAD_DEV_CHECKS_SUCCESS_SOURCE_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-01"
-      }
+        "audit_date": "2026-11-03"
+      },
+      "research_refs": [
+        "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41458618496"
+      ]
     },
     {
       "id": "CAP-0015",
@@ -1272,7 +1276,7 @@
       "description": "Salvare contenuti da altre app nel dominio canonico",
       "app_states": {
         "Notes-Ecosistema": "PROPOSTA",
-        "Agenda-per-Anna": "PROPOSTA",
+        "Agenda-per-Anna": "SOURCE_CONFIRMED",
         "Wonderlog": "PROPOSTA"
       },
       "source": {
@@ -1280,10 +1284,11 @@
         "ref": "https://aivalley.ai/"
       },
       "next_gate": "Android share intent e consenso senza import occulto",
-      "reviewed_at": "2026-11-01",
+      "reviewed_at": "2026-11-03",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md",
+        "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41458618496"
       ],
       "integration_ease_percent": {
         "Notes-Ecosistema": 85,
@@ -1293,15 +1298,16 @@
       "anna_full_source_audit": {
         "classification": "EXISTING_SOURCE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "827bb61620960d8867eb03e453d142013aada786",
         "source_paths": [
-          "lib/share_capture_service.dart"
+          "lib/share_capture_service.dart",
+          "test/v098_capture_everywhere_test.dart"
         ],
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0027/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped source inspection and product-policy mapping",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "method": "Share entry source path and routing source-contract tests observed at main@827bb616; no physical Android share-target proof.",
+        "app_flutter_build": "EXACT_HEAD_DEV_CHECKS_SUCCESS_SOURCE_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-01"
+        "audit_date": "2026-11-03"
       }
     },
     {
@@ -2274,7 +2280,7 @@
       },
       "description": "Scheduled reminders con diagnosi scheduling e OS",
       "app_states": {
-        "Agenda-per-Anna": "SOURCE_REPORTED",
+        "Agenda-per-Anna": "SOURCE_CONFIRMED",
         "World-Days": "SOURCE_REPORTED",
         "Notification-Control": "SOURCE_REPORTED"
       },
@@ -2283,12 +2289,13 @@
         "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md"
       },
       "next_gate": "Permesso non equivale consegna reale",
-      "reviewed_at": "2026-11-01",
+      "reviewed_at": "2026-11-03",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41458618496"
       ],
       "integration_ease_percent": {
         "Agenda-per-Anna": 85,
@@ -2298,15 +2305,16 @@
       "anna_full_source_audit": {
         "classification": "EXISTING_SOURCE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "827bb61620960d8867eb03e453d142013aada786",
         "source_paths": [
-          "lib/notification_service.dart"
+          "lib/notification_service.dart",
+          "test/v063_creative_reminders_test.dart"
         ],
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0055/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped source inspection and product-policy mapping",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "method": "Android notification action/snooze source and static contract tests observed; delivery and app-killed callbacks not physically verified.",
+        "app_flutter_build": "EXACT_HEAD_DEV_CHECKS_SUCCESS_SOURCE_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-01"
+        "audit_date": "2026-11-03"
       }
     },
     {
@@ -2798,7 +2806,7 @@
         "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/tool/compare_visual_baselines.py"
       },
       "next_gate": "Anna: acquisire e approvare 70 coppie screenshot e verificare il comparatore su baseline reali; CI del tool non equivale a visual/device PASS.",
-      "reviewed_at": "2026-11-02",
+      "reviewed_at": "2026-11-03",
       "certification": "CI_EXACT_HEAD_VERIFIED_DEVICE_PENDING",
       "integration_ease_percent": {
         "Design-App": 65,
@@ -2806,17 +2814,18 @@
         "Agenda-per-Anna": 65
       },
       "anna_full_source_audit": {
-        "classification": "ROADMAP_PLANNED",
+        "classification": "EXISTING_SOURCE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "827bb61620960d8867eb03e453d142013aada786",
         "source_paths": [
-          "lib/src/ios_journal_design.dart"
+          "tool/compare_visual_baselines.py",
+          "test/v107_c2_visual_regression_matrix_test.dart"
         ],
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0069/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped source inspection and product-policy mapping",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "method": "Comparator tooling and exact-head tests; 70 authentic visual baseline/candidate pairs remain unapproved.",
+        "app_flutter_build": "EXACT_HEAD_DEV_CHECKS_SUCCESS_SOURCE_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-01"
+        "audit_date": "2026-11-03"
       },
       "origin_source": {
         "type": "REGISTRO_REPO",
@@ -2839,7 +2848,8 @@
       },
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41458618496"
       ]
     },
     {
@@ -3143,11 +3153,12 @@
         "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/capability_health.dart"
       },
       "next_gate": "Anna: QA Android reale per revoca permessi, canali, OEM exact alarm, calendario e push; stato AVAILABLE non dimostra consegna.",
-      "reviewed_at": "2026-11-02",
+      "reviewed_at": "2026-11-03",
       "certification": "CI_EXACT_HEAD_VERIFIED_DEVICE_PENDING",
       "research_refs": [
         "https://github.com/NarYuki/Dextop/tree/5402d091975cdae4f39943b59a3a0131f5a0a543",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
+        "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41458618496"
       ],
       "integration_ease_percent": {
         "Phone-Guard": 80,
@@ -3156,17 +3167,18 @@
         "Agenda-per-Anna": 70
       },
       "anna_full_source_audit": {
-        "classification": "ROADMAP_PLANNED",
+        "classification": "EXISTING_SOURCE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "827bb61620960d8867eb03e453d142013aada786",
         "source_paths": [
-          "lib/notification_service.dart"
+          "lib/src/capability_health.dart",
+          "test/v107_c1_capability_health_test.dart"
         ],
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0077/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped source inspection and product-policy mapping",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "method": "Permission diagnostics source verified; permission is not a successful native service or OEM delivery.",
+        "app_flutter_build": "EXACT_HEAD_DEV_CHECKS_SUCCESS_SOURCE_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-01"
+        "audit_date": "2026-11-03"
       },
       "origin_source": {
         "type": "RIUSO_REPO_20261030",
@@ -4489,11 +4501,12 @@
         "ref": "https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/weekly_review.dart"
       },
       "next_gate": "Anna: accettazione generale utente su APK +118 documentata, ma matrice fisica tecnica, reminder, backup/restore, sync multi-device e release Play NON VERIFICATI; altre app solo proposte.",
-      "reviewed_at": "2026-11-02",
+      "reviewed_at": "2026-11-03",
       "certification": "CI_EXACT_HEAD_VERIFIED_DEVICE_PENDING",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
-        "https://huggingface.co/datasets/MiniAppBench/Dataset"
+        "https://huggingface.co/datasets/MiniAppBench/Dataset",
+        "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/41458618496"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
@@ -4509,17 +4522,18 @@
         "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
       },
       "anna_full_source_audit": {
-        "classification": "PARTIAL_REUSE",
+        "classification": "EXISTING_SOURCE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "827bb61620960d8867eb03e453d142013aada786",
         "source_paths": [
-          "lib/src/domain_models.dart"
+          "lib/src/weekly_review.dart",
+          "test/v111_weekly_review_test.dart"
         ],
         "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0111/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped source inspection and product-policy mapping",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "method": "Weekly Review source and direct tests; general user acceptance does not certify native reminders or backups.",
+        "app_flutter_build": "EXACT_HEAD_DEV_CHECKS_SUCCESS_SOURCE_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-01"
+        "audit_date": "2026-11-03"
       },
       "origin_source": {
         "type": "HUGGINGFACE_IDEA_RESEARCH",

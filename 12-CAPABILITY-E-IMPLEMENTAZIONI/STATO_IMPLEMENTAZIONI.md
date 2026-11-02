@@ -1,15 +1,15 @@
-# Stato delle implementazioni — audit 2026-11-02
+# Stato delle implementazioni — audit 2026-11-03
 
 Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/audit consultata, non esecuzione del codice ne CI/DEVICE PASS verificati in questa sessione.
 
 | Stato | Associamenti app-capability | Interpretazione |
 | --- | --- | --- |
-| PROPOSTA | 232 | Idea non approvata / nessun codice verificato qui |
+| PROPOSTA | 230 | Idea non approvata / nessun codice verificato qui |
 | ROADMAP_STORICA | 15 | Indicata in roadmap o decisione storica; richiede verifica live |
-| SOURCE_REPORTED | 85 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
+| SOURCE_REPORTED | 84 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
 | DONOR_REPORTED | 2 | Repo donor documentato; riuso non ancora validato |
-| SOURCE_CONFIRMED | 0 | Implementazione verificata con riferimento puntuale a codice e commit |
-| CI_VERIFIED | 8 | CI exact-head verde per questa capability nel repository autorevole |
+| SOURCE_CONFIRMED | 2 | Implementazione verificata con riferimento puntuale a codice e commit |
+| CI_VERIFIED | 9 | CI exact-head verde per questa capability nel repository autorevole |
 | DEVICE_VERIFIED | 0 | Test su dispositivo con artifact e SHA identificati |
 | RELEASE | 0 | Distribuzione verificata nel canale dichiarato, non inferita dalla build |
 | BLOCKED | 0 | Blocco concreto con causa e riferimento; mantenere l'idea nel catalogo |
@@ -29,6 +29,7 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | CAP-0011 Life Threads narrativi | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0012 Year in Review deterministico | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0013 Collection e ricerca locale | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
+| CAP-0014 Cattura rapida contestuale da calendario | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/827bb61620960d8867eb03e453d142013aada786/lib/src/event_memory_capture.dart |
 | CAP-0015 Ricerca globale ordinabile e un carattere | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md |
 | CAP-0016 Inbox con categorie modificabili | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/ROADMAP.md |
 | CAP-0017 Universal Delete Trash e lifecycle audit | Agenda-per-Anna (SOURCE_REPORTED), Notes-Ecosistema (SOURCE_REPORTED) | Backlog idee app.txt |
@@ -41,6 +42,7 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | CAP-0024 Motion reduced-motion e microinterazioni | Design-App (SOURCE_REPORTED), Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml |
 | CAP-0025 Schermate responsive rail e split view | Design-App (SOURCE_REPORTED), Agenda-per-Anna (SOURCE_REPORTED), app-fotografia (SOURCE_REPORTED) | https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml |
 | CAP-0026 Sound feedback semantico opzionale | Design-App (SOURCE_REPORTED) | https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml |
+| CAP-0027 Cattura universale condividi link testo immagine | Agenda-per-Anna (SOURCE_CONFIRMED) | https://aivalley.ai/ |
 | CAP-0029 Canvas ibrida sketch sotto note | Notes-Ecosistema (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0033 Modello Needle 3 on demand Plus | Notes-Ecosistema (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0035 OCR immagini e documenti on device | PDF-Unifier (SOURCE_REPORTED), Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md |
@@ -54,7 +56,7 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | CAP-0048 Routing sentieri trace snap affidabile | TrailPath (SOURCE_REPORTED) | https://github.com/riccardopinato/TrailPath/blob/main/docs/ROADMAP.md |
 | CAP-0049 Offline map engine e routing camper | TrailPath (SOURCE_REPORTED) | https://github.com/riccardopinato/CamperBoss/blob/main/ROADMAP.md |
 | CAP-0051 Mappe luoghi ricordi condivisi con ponte | Wonderlog (SOURCE_REPORTED), Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md |
-| CAP-0055 Notifiche affidabili e diagnostics truth | Agenda-per-Anna (SOURCE_REPORTED), World-Days (SOURCE_REPORTED), Notification-Control (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md |
+| CAP-0055 Notifiche affidabili e diagnostics truth | Agenda-per-Anna (SOURCE_CONFIRMED), World-Days (SOURCE_REPORTED), Notification-Control (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/06-SINERGIE-E-INTEGRAZIONI/OPPORTUNITA_RIUSO_2026-10-30.md |
 | CAP-0056 Notification listener multi-modulo | Notification-Control (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0057 Allarme protezione Table Pocket Bag Journey | Phone-Guard (SOURCE_REPORTED), Pocket-Guard (SOURCE_REPORTED), Tabletop-Motion-Alarm (SOURCE_REPORTED) | https://github.com/riccardopinato/Phone-Guard/blob/main/ROADMAP.md |
 | CAP-0058 Quick settings overlay rotazione 180 | 180FlipCharge (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |

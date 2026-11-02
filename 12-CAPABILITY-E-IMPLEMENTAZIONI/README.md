@@ -48,3 +48,7 @@ Le PR sono validate tramite GitHub Actions. Il monitoraggio inter-repository usa
 ## Estensione NotebookLM 02/11/2026
 
 Le sette nuove CAP sono **PROPOSTA**, non integrazioni. La classifica originale di 15 idee conserva priorità editoriali P1/P2; il ranking tecnico CAP impiega un'altra formula e può assegnare P3 a proposte con rischi o scarsa evidenza. La vecchia matrice 61/61 di Anna è uno **snapshot storico**, non include le nuove candidature.
+
+## Audit Anna's Diary — 03/11/2026
+
+[Stati CAP riconciliati con evidenze e Factory Golden Index v26](AUDIT_ANNA_CAP_2026-11-03.md). Fonte autonoma del prodotto: Anna Product Bible, Roadmap, commit e CI. Non equivale a QA su dispositivo o release.
