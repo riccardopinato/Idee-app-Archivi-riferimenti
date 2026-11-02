@@ -1,0 +1,26 @@
+# Lotto 51-75, stesso contratto DATI_001_025.txt
+51|DEV|R|-|9,8,6,7,3,6,9|Importa clip testuali tramite Condividi o tastiera|Clipboard app terze in background non accessibile Android 10+|clipboard
+52|MED|R|Soundboard (#1)|5,6,9,5,9,6,6|Rumori preregistrati per sketch da riprodurre|Non iniettare audio nelle telefonate; copyright|audioplayers
+53|HLT|R|-|6,7,7,5,7,5,7|Visualizza attività e movimento senza colpevolizzare cibo|Passi non compensano universalmente calorie ingerite|pedometer
+54|SOC|R|-|7,7,9,6,5,6,7|Sfida settimanale con screenshot uso app volontario|Niente accesso silenzioso a screen time/altri account|home_widget,share_plus
+55|MED|S|Design-App|7,7,10,7,9,7,3|Badge futuristici con selfie consenziente|Design originale, no documenti plausibili reali|camera,screenshot
+56|COM|H|-|5,7,10,4,4,3,10|Nessun MVP pubblico anonimo per minori senza governance|Cyberbullismo, moderazione e geo-falsificazione|supabase_flutter
+57|SOC|S|-|6,7,10,4,7,5,6|Misura urlo volontario e mappa aggregata senza localizzazione precisa|Moderazione feed, gestione audio e abuso|noise_meter,flutter_map
+58|REL|S|Anna's Diary|7,7,8,6,6,7,6|Timer di presenza condivisa con consenso|Stato cloud non indica attività reale/sonno|supabase_flutter,percent_indicator
+59|MED|S|World Days|8,7,9,7,8,8,5|Curiosità positive editoriali da svelare ogni giorno|Vere notizie richiedono verifica continua; widget nativo|flutter_scratchcard,home_widget
+60|SOC|S|-|6,7,10,5,8,5,5|Test umoristico basato su dati autorizzati e non invasivi|Niente lettura tab browser/foto senza accessi reali|battery_plus,device_info_plus
+61|REL|F|Anna's Diary|9,8,10,7,4,8,7|Scambio disegni in app con widget a refresh realistico|Widget iOS non ha aggiornamento immediato garantito|home_widget,supabase_flutter
+62|SEC|F|Phone Guard|8,8,9,6,8,10,4|Allarme se il telefono sul tavolo viene spostato|Tabletop Motion Alarm già implementato|sensors_plus,audioplayers
+63|SOC|S|Focus Kingdom|8,8,9,8,6,7,4|Contapassi RPG offline con risorse e missioni|Sincronizzazione passi, reset giornaliero e anti-cheat|pedometer,hive
+64|SOC|S|-|6,6,10,6,6,5,8|Chat effimera consensuale con cancellazione verificabile|Le chat non sono criptate solo perché scompaiono dalla UI|supabase_flutter,animated_text_kit
+65|SOC|R|-|4,6,9,4,8,4,8|Compatibilità fittizia solo da nomi immessi manualmente|No lettura rubrica o etichette tossicità su reali contatti|flutter_contacts,fl_chart
+66|FOC|F|Focus Kingdom|7,7,9,6,6,9,6|Mascotte widget con progressi basati su check-in|Conteggio sblocchi OS richiede API/permessi specifici|home_widget
+67|REL|S|Battery Guard|8,8,9,7,6,7,6|Avviso batteria partner solo da consenso esplicito|Realtime/FCM/Doze e trattamento dati familiari|battery_plus,supabase_flutter
+68|REL|R|-|6,6,9,5,4,4,9|Party game su parola vietata durante sessione attiva|No ascolto passivo continuativo nascosto|speech_to_text,audioplayers
+69|REL|S|Anna's Diary|6,6,7,5,6,8,7|Diario privato di sogni con condivisione selettiva|Nessuna interpretazione psicologica fattuale|hive,supabase_flutter
+70|DEV|R|SleepMax Coach|7,7,8,6,5,7,8|Sfida sveglia con attività da completare da svegli|Non penalizzare terzi automaticamente o evitare emergenze|sensors_plus
+71|REL|S|Anna's Diary|8,7,9,6,8,7,4|Indicatore manuale energia sociale condivisibile|No deduzione del benessere mentale dai sensori|home_widget,shared_preferences
+72|MED|F|FrameLab|7,8,9,7,8,9,3|Filtri polaroid con export originale|Diritti foto e distinguere da falsi ricordi|camera,screenshot
+73|HLT|R|Phone Health Check|7,8,8,5,4,6,9|Promemoria ergonomia attivo solo durante sessione|Camera frontale continua impossibile come promessa generalizzata|camera
+74|REL|R|-|8,8,9,7,5,5,8|Assistente che propone alternative di risposta su testo incollato|Privacy screenshot chat e rischio suggerimenti dannosi|google_ml_kit
+75|MED|R|Design-App|6,7,9,6,4,6,7|Crea arte retro di sogni con template prima di API AI|Inferenza immagini costosa e contenuti sensibili|AI image API
