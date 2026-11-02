@@ -61,3 +61,33 @@ Lotto di 100 idee numerate dall'utente, da sottoporre a analisi e deduplicazione
 | 48 | Gioco Telefono Immobile |
 | 49 | Widget Saldo Visivo |
 | 50 | Allarme Anti-Borseggio |
+
+## Originali #51–#75
+
+| # | Idea |
+|---|---|
+| 51 | Custode Copia-Incolla |
+| 52 | Generatore Scuse Audio Ambientali |
+| 53 | Contatore Passi al Contrario |
+| 54 | Screen-Time Roulette |
+| 55 | Identità Cyberpunk |
+| 56 | Radar Pensieri Anonimi di Classe |
+| 57 | Scatola Urla Digitali |
+| 58 | Timer Silenzio di Coppia |
+| 59 | Widget Gratta e Vinci Buone Notizie |
+| 60 | Telefono che Ti Giudica |
+| 61 | Lavagna Segreta Lock Screen |
+| 62 | Allarme Telefono Toccato |
+| 63 | Contatore Passi Sopravvivenza |
+| 64 | Ghost Chat |
+| 65 | Affinità Astrale dei Contatti |
+| 66 | Widget Portafortuna Vivente |
+| 67 | Allarme Batteria Amico/Partner |
+| 68 | Contatore Parole Vietate di Coppia |
+| 69 | Diario Sogni Condivisi |
+| 70 | Timer Vendetta della Sveglia |
+| 71 | Radar Batteria Sociale |
+| 72 | Polaroid del Passato |
+| 73 | Allarme Telefono Vicino agli Occhi |
+| 74 | Antidoto Discussioni Tossiche |
+| 75 | Traduttore Sogni in Arte Retro |
