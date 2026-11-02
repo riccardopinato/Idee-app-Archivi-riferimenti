@@ -4,7 +4,7 @@ Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazion
 
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [CAP-0077](../REGISTRO_CAPABILITY/CAP-0077.md) | Health check permessi nativi per-capability | P1 | 94 | 80% | Diagnosi degli stati di sensori accessi e notifiche | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0077/README.md) | PROPOSTA | Permesso concesso non prova capability operativa |
+| [CAP-0077](../REGISTRO_CAPABILITY/CAP-0077.md) | Health check permessi nativi per-capability | P1 | 94 | 80% | Diagnosi degli stati di sensori accessi e notifiche | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0077/README.md) | PROPOSTA | Anna: QA Android reale per revoca permessi, canali, OEM exact alarm, calendario e push; stato AVAILABLE non dimostra consegna. |
 | [CAP-0053](../REGISTRO_CAPABILITY/CAP-0053.md) | Sun Moon calcolo locale | P1 | 93 | 95% | Alba tramonto golden hour luna | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0053/README.md) | PROPOSTA | Calcolo locale SunCalc con timezone corretto |
 | [CAP-0020](../REGISTRO_CAPABILITY/CAP-0020.md) | Shared Ecosystem Bridge COPY LINK | P2 | 88 | 60% | Trasferimento esplicito con provenance senza sincronizzazione implicita | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0020/README.md) | PROPOSTA | Verificare roundtrip reale e contratti consumer per versione |
 | [CAP-0047](../REGISTRO_CAPABILITY/CAP-0047.md) | POI offline versionati e provenienza | P2 | 88 | 60% | Pack di punti di interesse offline con fonte e versionamento | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0047/README.md) | PROPOSTA | Licenze ODbL provider e freshness; non scaricare tile pubblici |
