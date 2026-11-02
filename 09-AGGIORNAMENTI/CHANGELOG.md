@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-02 — Valutazione strutturata lotto idee IA: 100 + 6 extra, 14 fusioni
+- Recuperate e mantenute tutte le idee originali numerate #1–#100, con 100 schede individuali `IA26-001…IA26-100`. Catalogate altre sei idee autonome non numerate (`IA26-E01…E06`), e tutte le 14 fusioni successive con esito motivato.
+- Ciascuna scheda include score U/D/V/M/F/S/R, formula di priorità, MVP proposto, decisione preliminare, collegamento ad app esistenti, monetizzazione, donor/link identificabili, blocchi e prossimo controllo.
+- Create classifica completa, ranking tematici (facilità, monetizzazione, viralità, riuso, rischio), indice navigabile e metodologia con provenienza degli allegati/hashes e fonti esterne.
+- Tutte le idee restano PROPOSTA/ANALISI NON APPROVATA; nessuna app, Product Bible, roadmap, CAP o repository codice modificato. Scoring comparativo editoriale, senza misure di domanda/fatturato.
+
+
 ## 2026-11-02 — Incrementale 31 repository, 8 capability Anna CI exact-head
 - Inventario: 31 repository accessibili, nessun nuovo repository o default branch modificato; 3 SHA variati (Anna's Diary, App-Factory-Core, archivio stesso). Il self SHA e' volutamente pre-PR. Factory CURRENT resta Master v27 / Golden v23; commit osservato `63dd5e4f`, solo ledger di observability nel diff.
 - Anna's Diary: 7 commit nuovi da `88efdfa9` a `fb476545426fb6bf290e74f53e735fa13616e4e9`. Confermati sorgenti, test e check CI exact-head per CAP-0001, CAP-0002, CAP-0003, CAP-0005, CAP-0069, CAP-0077, CAP-0111 e CAP-0113; stato Anna promosso a `CI_VERIFIED`, senza toccare gli stati delle altre app. PR sorgenti #186, #188, #191, #193, #195, #201, #203 e #204.
