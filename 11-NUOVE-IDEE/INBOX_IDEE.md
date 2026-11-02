@@ -113,3 +113,11 @@ Le 16 idee si traducono in 11 nuovi CAP (CAP-0102…CAP-0112) e collegamenti a C
 | 56 | Image Authenticity Inspector | 9,0/10 | [CAP-0140](../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0140.md) | PROPOSTA / non in roadmap |
 
 Il caso #55 e #45 condivide una sola capability; nessuna delle due idee e stata scartata. Link, licensing, demo offline e impatto APK sono documentati nelle schede di ricerca.
+
+## Importazione IA 02/11/2026 — idee in analisi (non promosse)
+
+| Lotto | Natura | Stato | Schede e ranking | Prossimo gate |
+|---|---|---|---|---|
+| IA26-001…IA26-100 | 100 idee originali #1–#100; nessun ID app nuovo | ANALISI / NON APPROVATE | [Indice 100](IA-2026-11-02/INDICE_100_SCHEDE.md) · [ranking](IA-2026-11-02/RANKING_100_COMPLETO.md) | concorrenza, review codice, licenze, policy |
+| IA26-E01…E06 | 6 idee non numerate, conservate separatamente | ANALISI / NON APPROVATE | [Indice extra](IA-2026-11-02/INDICE_IDEE_EXTRA_NON_NUMERATE.md) | prototipi tecnici, target, domanda |
+| 14 fusioni della fonte | valutazione combinazioni, nessun prodotto fuso approvato | ANALISI | [Fusioni e reuse](IA-2026-11-02/FUSIONI_E_RIUSO.md) | gate di coerenza prodotto e donor |
