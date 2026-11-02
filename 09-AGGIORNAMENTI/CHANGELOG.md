@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-03 — Anna CAP evidence audit / Golden Index 26
+- Factory baseline aggiornata a `App-Factory-Core@a3c65963` (Master 27, Golden Index v26); nessuna riscrittura della fonte Factory.
+- Stati di Anna verificati nel registro canonico per CAP-0014 (CI_VERIFIED), CAP-0027 e CAP-0055 (SOURCE_CONFIRMED); CAP-0069/0077/0111 mantengono CI_VERIFIED ma con path/evidenze aggiornati. 147 CAP totali.
+- Viste e schede derivate rigenerate; report [AUDIT_ANNA_CAP_2026-11-03.md](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_ANNA_CAP_2026-11-03.md).
+- Nessuna promozione artificiale a DEVICE_VERIFIED/RELEASE; #215 Privacy V2 resta DRAFT/ON HOLD. Le due idee P3 scartate restano fuori.
+
+
 ## 2026-11-02 — 15 idee Anna formalizzate come CAP, con deduplicazione
 - Risolti 15 ID AD-NL26: 7 nuove capability CAP-0141…0147 e 5 ampliamenti/riusi CAP-0023, CAP-0024, CAP-0055, CAP-0069, CAP-0072. Score tecnico canonico separato da priorità editoriale idea (4 P1, 11 P2).
 - Registro JSON da 140 a **147 CAP**, 7 kit livello 1 con 6 file canonici ciascuno e compatibilità Anna preliminare; rigenerate viste, matrice, ranking, schede per app e indice kit. Tutte le nuove app_states PROPOSTA; source paths esistenti non equivalgono a funzione implementata.
