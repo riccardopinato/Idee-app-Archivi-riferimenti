@@ -1,0 +1,26 @@
+# Lotto 26-50, stesso contratto DATI_001_025.txt
+26|REL|F|Anna's Diary|8,7,6,7,9,9,2|Registra prime volte con foto e timeline privata|Evita doppio archivio ricordi|hive,flutter_swiper
+27|FOC|F|Notes-Ecosistema|8,7,6,7,10,10,2|Idee congelate 7 giorni e riesame assistito|Feature Notes prima di standalone|shared_preferences,flutter_countdown_timer
+28|HLT|S|-|7,6,7,5,9,6,2|Sfide di gentilezza con azione giornaliera|Niente impatto sociale dichiarato senza prova|sensors_plus,audioplayers
+29|HLT|F|SleepMax Coach|7,7,3,6,8,10,4|Mixer rumori notturni con fade-out|Diritti audio e audio background|audioplayers
+30|FOC|S|-|8,7,8,7,6,6,6|Gruppi privati per abitudini con foto volontarie|Verifica foto non prova comportamento; moderazione|supabase_flutter,camera
+31|FOC|S|-|7,6,6,5,10,6,3|Scelta casuale e diario reazione soggettiva|Non presentarla come test psicologico validato|animated_text_kit,shared_preferences
+32|EDU|C|Parla Chiaro (#43,#88)|8,7,6,8,7,8,5|Allenatore voce durante sessioni volontarie|Audio non misura emozioni; elaborazione locale da verificare|speech_to_text,noise_meter
+33|COM|B|-|8,6,5,7,6,6,6|Bacheca oggetti persi riservata a un condominio|Verifica residenti e moderazione|supabase_flutter,flutter_chat_ui
+34|HLT|R|-|5,6,8,4,7,5,9|Mostra intensità acustica senza dedurre tensione|Volume non determina stato emotivo|noise_meter,fl_chart
+35|MED|F|FrameLab|7,8,9,7,9,9,4|Draping palette manuale sulla fotocamera|Non è classificazione scientifica di armocromia|camera
+36|NAV|R|Wonderlog|8,7,8,7,5,7,8|Punti storici georeferenziati su piccola area|Dataset storici validi e con diritto di riuso|geolocator,flutter_map
+37|REL|F|Anna's Diary|8,7,7,6,7,10,3|Mappa privata di ricordi geotaggati|Anna contiene già Memories Map|flutter_map,supabase_flutter
+38|FIN|C|Pausa Acquisti (#4)|8,7,7,6,10,8,2|Converti prezzo in ore lavorate usando netto orario|Distinguere ore lavorate da reale costo vita|shared_preferences
+39|SEC|F|Anna's Diary|7,7,6,7,5,9,8|Diario privato con biometria e vault reale|Finta calcolatrice non sostituisce cifratura|hive,local_auth
+40|HLT|F|SleepMax Coach|8,8,5,7,8,10,3|Coerenza orario sonno con streak|Report auto-dichiarati, non misura del sonno|shared_preferences,percent_indicator
+41|HLT|F|SleepMax Coach|7,7,6,6,9,9,4|Mix rumori domestici originali e sleep timer|Audio sotto licenza, playback background|audioplayers
+42|REL|S|-|7,7,9,7,6,7,5|Capsule digitali con data di apertura e link|Blocco data locale aggirabile, storage remoto|flutter_countdown_timer,hive
+43|EDU|C|Parla Chiaro (#32,#88)|8,7,7,7,7,9,4|Conta intercalari in una registrazione esplicita|Speech recognition trascura riempitivi, dati incompleti|speech_to_text
+44|DEV|F|Battery Guard|8,8,5,7,8,10,3|Alert soglia carica con controllo reale Android|Battery Guard esiste, battery_plus non garantisce polling chiuso|battery_plus,audioplayers
+45|FOC|F|FocusSense|8,7,7,7,6,9,6|Avvia focus quando il telefono è capovolto|Non promettere disattivazione notifiche senza DND access|sensors_plus
+46|DEV|R|SleepMax Coach|8,8,8,7,6,7,7|Sveglia che richiede movimento calibrato|AlarmManager/OEM/permessi e sicurezza fisica|sensors_plus
+47|DEV|H|App Profiles|7,7,6,5,2,7,10|Scorciatoia a impostazioni rete, non toggling autonomo|App normale non può disabilitare rete o modalità aereo|connectivity_plus
+48|SOC|F|Phone Guard|7,7,8,5,8,9,3|Party game telefono immobile con penitenze|Motore sensori già presente Phone Guard|sensors_plus
+49|FIN|F|CashMate AI|8,8,7,7,8,10,4|Widget percentuale budget da dati volontari|Privacy widget e sincronizzazione opzionale|home_widget,percent_indicator
+50|SEC|F|Phone Guard|9,8,7,8,6,10,6|Allarme anti-estrazione tasca|Motore Pocket Guard già sviluppato|sensors_plus,local_auth
