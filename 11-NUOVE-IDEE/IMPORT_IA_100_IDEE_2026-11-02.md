@@ -91,3 +91,18 @@ Lotto di 100 idee numerate dall'utente, da sottoporre a analisi e deduplicazione
 | 73 | Allarme Telefono Vicino agli Occhi |
 | 74 | Antidoto Discussioni Tossiche |
 | 75 | Traduttore Sogni in Arte Retro |
+
+## Originali #76–#85
+
+| # | Idea |
+|---|---|
+| 76 | Monitor Umore Voce di Coppia |
+| 77 | Filtro Anti-Spoiler Social |
+| 78 | Riassuntore Termini di Servizio |
+| 79 | Diario Comico Finanza |
+| 80 | Scuse Visive per il Ritardo (da revisionare) |
+| 81 | Coach Anti-Procrastinazione Vocale |
+| 82 | Fiabe Personalizzate |
+| 83 | Valutatore Affidabilità Notizie |
+| 84 | Generatore Meme Reattivi |
+| 85 | Avatar Pixel-Art Evolutivo |
