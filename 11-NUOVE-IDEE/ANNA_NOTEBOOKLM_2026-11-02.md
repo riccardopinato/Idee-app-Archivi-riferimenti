@@ -1,4 +1,4 @@
-# Anna's Diary — 17 proposte NotebookLM (02/11/2026)
+# Anna's Diary — 15 proposte NotebookLM (02/11/2026)
 
 **PROPOSTE / ANALISI NON APPROVATA**. Esclusa IA per l'agenda, nessuna modifica alla roadmap o a RevenueCat. Fonte: "Nuovo Documento di testo (4).txt", 113 righe, SHA-256 0ac109c023523b466f71cfefe53232733d5450b7fb1164da02f560220a6c5613. Nessun link alle affermazioni di mercato nell'originale.
 
@@ -6,7 +6,7 @@ Confronto con Anna's Diary main 827bb61620960d8867eb03e453d142013aada786 (Produc
 
 ## Classifica e categorie
 
-Score editoriale 0–100: U=utilità, D=domanda ipotizzata, V=viralità, M=monetizzabilità, F=fattibilità, S=sinergia, R=rischio (10=alto). Assi 1–10; formula della raccolta IA 02/11: round(2.4U + 2D + 1.2V + 1.8M + 1.6F + S − 2 max(0,R−5)). Classi **solo per questo lotto** P1 >=75; P2 60–74; P3 <60. Non confrontare con gli score delle CAP, né usare P1 come autorizzazione.
+Score editoriale 0–100: U=utilità, D=domanda ipotizzata, V=viralità, M=monetizzabilità, F=fattibilità, S=sinergia, R=rischio (10=alto). Assi 1–10; formula della raccolta IA 02/11: round(2.4U + 2D + 1.2V + 1.8M + 1.6F + S − 2 max(0,R−5)). Classi **solo per questo lotto** P1 >=75; P2 60–74. La classifica attiva comprende soltanto P1 e P2. Non confrontare con gli score delle CAP, né usare P1 come autorizzazione.
 
 | Rang | ID idea | Sezione | Proposta | U/D/V/M/F/S/R | Score | Priorità | Esito |
 |---:|---|---|---|---|---:|---|---|
@@ -25,8 +25,6 @@ Score editoriale 0–100: U=utilità, D=domanda ipotizzata, V=viralità, M=monet
 | 13 | AD-NL26-17 | Monetizzazione | Freemium, abbonamenti e lifetime | 8/7/4/9/7/9/7 | 70 | P2 | Business test, non attivare |
 | 14 | AD-NL26-06 | Noi/widget | Foto quotidiana del partner | 7/8/9/7/5/8/8 | 66 | P2 | Rinvio: privacy/consenso |
 | 15 | AD-NL26-09 | Vault | Documenti PDF cifrati | 8/7/4/8/5/8/8 | 62 | P2 | Rinvio: threat model |
-| 16 | AD-NL26-08 | Analytics | Correlazioni umore/attività | 5/6/5/5/5/7/8 | 48 | P3 | Rinvio: dati e bias |
-| 17 | AD-NL26-10 | Vault | Decoy PIN / Fake Vault | 3/4/4/5/3/4/10 | 28 | P3 | SCARTARE come proposto |
 
 ## Valutazione e MVP di ogni idea
 
@@ -44,11 +42,9 @@ Score editoriale 0–100: U=utilità, D=domanda ipotizzata, V=viralità, M=monet
 
 **AD-NL26-07 Heatmap:** visualizzare solo task/diario/gratitudine realmente tracciati, distinguendo nessun dato da valore zero. Mood solo se inserito volontariamente. Nessun dato ciclo del Vault in analytics aperta.
 
-**AD-NL26-08 Correlazioni:** esempio NotebookLM «+40% mood dopo workout» NON è misura. No causalità da campioni ridotti, definire missingness, dimensione minima e descrizione di incertezza; senza dataset solido, non sviluppare.
 
 **AD-NL26-09 PDF Vault:** ambito potenzialmente vendibile ma ad alto rischio: file temporanei in chiaro, thumbnail, stream decryption, backup/recovery, Web/iOS, limiti file, perdita chiavi e sicurezza locale. Non promettere cifratura hardware per ogni dato.
 
-**AD-NL26-10 Fake PIN:** esperienza di coercizione, disclosure e false garanzie; complessità di recovery e errori umani. Non è un «quick premium». Scartata questa proposta, eventuale security research solo separata.
 
 **AD-NL26-11 Widget Oggi/Crea:** timeline, cattura e widget bridge già esistono; riusare prossimo evento e un deeplink per cattura, senza replicare tutta timeline 00–24. Dati privati sempre mascherati, test idempotenza e launcher.
 
@@ -66,7 +62,7 @@ Score editoriale 0–100: U=utilità, D=domanda ipotizzata, V=viralità, M=monet
 
 ## Errori e fonti critiche
 
-Il documento attribuisce nomi ERRATI ai CAP: 0041 è palette foto (non E2EE); 0052 meteo outdoor (non lockscreen widget); 0038 PDF Pocket Tools (non Time Lock); 0012 Year in Review (non QR Generator); 0015 ricerca globale (non charts); 0042 catalogo offline (non Vault); 0084 toolbox conversioni (non Fake PIN); 0022 localizzazione (non Unified Capture); 0063 focus calendar (non notifiche interattive). La mappatura corretta è nel dossier di sezione 12.
+Il documento attribuisce nomi ERRATI ai CAP: 0041 è palette foto (non E2EE); 0052 meteo outdoor (non lockscreen widget); 0038 PDF Pocket Tools (non Time Lock); 0012 Year in Review (non QR Generator); 0015 ricerca globale (non charts); 0042 catalogo offline (non Vault); 0022 localizzazione (non Unified Capture); 0063 focus calendar (non notifiche interattive). La mappatura corretta è nel dossier di sezione 12.
 
 RevenueCat [State of Subscription Apps 2026](https://www.revenuecat.com/state-of-subscription-apps) dà benchmark aggregati, NON prova che Paired/Between/Locket convertano più di altre categorie o che Anna avrà tali tassi. [Android widget](https://developer.android.com/develop/ui/views/appwidgets/advanced) aggiorna periodicamente non sotto 30 minuti con updatePeriodMillis; [WidgetKit](https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date) ha budget OS. [Google Play](https://support.google.com/googleplay/android-developer/answer/18265346) e [Apple](https://developer.apple.com/app-store/review/guidelines/) richiedono per abbonamenti valore continuativo, trasparenza e restore.
 

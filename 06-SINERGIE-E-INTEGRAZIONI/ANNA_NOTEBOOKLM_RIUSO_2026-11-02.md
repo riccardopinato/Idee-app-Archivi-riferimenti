@@ -1,6 +1,6 @@
 # Anna's Diary — Sinergie NotebookLM / 02/11/2026
 
-[Fonte e valutazione di 17 proposte](../11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md). Sono potenziali **feature dell'app esistente**, non 17 nuove app standalone.
+[Fonte e valutazione di 15 proposte](../11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md). Sono potenziali **feature dell'app esistente**, non 15 nuove app standalone.
 
 | Area | Asset esistenti da estendere, non duplicare | MVP candidato | Dipendenza |
 |---|---|---|---|
