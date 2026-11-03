@@ -5,6 +5,7 @@ No network, PAT, GitHub Project or app repository required to run these tests.
 import json
 import sys
 import unittest
+from unittest.mock import patch
 from collections import Counter
 from pathlib import Path
 
@@ -148,6 +149,37 @@ class ProjectsMirrorContractTests(unittest.TestCase):
         self.assertEqual(len(second), len(self.rows) - len(batch))
         self.assertFalse({mirror.row_key(x) for x in batch} &
                          {mirror.row_key(x) for x in second})
+
+    def test_eventual_consistency_does_not_recreate_pilot_items(self):
+        rows = mirror.pilot_rows(self.rows)
+        fields = fake_fields()
+        fully_indexed = {}
+        for idx, row in enumerate(rows):
+            desired = mirror.desired_fields(row, fields)
+            fully_indexed[mirror.row_key(row)] = {
+                "item_id": "PV_" + str(idx),
+                "values": {name: next(iter(value.values()))
+                           for name, value in desired.items()},
+            }
+        missing_last = dict(fully_indexed)
+        missing_last.pop(mirror.row_key(rows[-1]))
+        with patch.object(mirror, "read_project_items",
+                          side_effect=[missing_last, fully_indexed]) as remote_read, \
+             patch.object(mirror.time, "sleep") as sleep:
+            verified = mirror.assert_remote(None, 1, rows, fields)
+        self.assertEqual(verified, fully_indexed)
+        self.assertEqual(remote_read.call_count, 2)
+        sleep.assert_called_once()
+
+    def test_verification_fails_without_mutations_if_remote_never_settles(self):
+        rows = mirror.pilot_rows(self.rows)
+        with patch.object(mirror, "read_project_items",
+                          return_value={}) as remote_read, \
+             patch.object(mirror.time, "sleep") as sleep:
+            with self.assertRaisesRegex(RuntimeError, "did not settle"):
+                mirror.assert_remote(None, 1, rows, fake_fields(), max_attempts=3)
+        self.assertEqual(remote_read.call_count, 3)
+        self.assertEqual(sleep.call_count, 2)
 
     def test_changes_only_update_owned_fields(self):
         client = FakeMutationClient()
