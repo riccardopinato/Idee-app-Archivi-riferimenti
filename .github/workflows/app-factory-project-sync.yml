@@ -20,7 +20,7 @@ on:
       - "scripts/projects_sync.py"
       - ".github/workflows/app-factory-project-sync.yml"
   schedule:
-    - cron: "20 9 * * *"
+    - cron: "20 */4 * * *"
 
 permissions:
   contents: read
@@ -60,4 +60,4 @@ jobs:
 
           MODE="${REQUESTED_MODE:-bootstrap}"
           python3 scripts/projects_sync.py --mode "$MODE"
-          echo "PROJECT_SYNC_VERIFIED — Completed mode $MODE without deleting source records or other project items." >> "$GITHUB_STEP_SUMMARY"
+          echo "PROJECT_SYNC_RUN_FINISHED — See logs for BATCH_SYNC_PASS or FULL_SYNC_PASS. No deletions performed." >> "$GITHUB_STEP_SUMMARY"
