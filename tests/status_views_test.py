@@ -66,7 +66,7 @@ class OperationalStatusViewTests(unittest.TestCase):
                     content = views[folder + state + ".md"]
                     # Each data row begins with its own canonical CAP link.
                     import re
-                    ids = set(re.findall(r"^\\| \\[CAP-(\\d{4})\\]", content, re.M))
+                    ids = set(re.findall(r"^\| \[CAP-(\d{4})\]", content, re.M))
                     groups[state] = {"CAP-" + code for code in ids}
                     self.assertEqual(
                         len(ids), content.count("](../../REGISTRO_CAPABILITY/"))
