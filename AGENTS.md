@@ -26,3 +26,14 @@
 - Ogni CAP deve avere una cartella `13-KIT-INTEGRAZIONE/CAP-NNNN/` con sei file canonici; un link al donor non rende codice licenziato, estratto o riutilizzabile. Non promuovere kit oltre `RIFERIMENTI_ACQUISITI` senza SHA/file/licenza e prove.
 - Ogni associazione app nel registro ha una stima `integration_ease_percent` 0–100, euristica e app-specifica. Dopo un vero audit, aggiornarla nel JSON e documentare la motivazione nel kit; non trattarla come prova runtime.
 - Rigenerare le tabelle e verificare `python3 scripts/build_catalog.py --check` prima di merge; mantenere Score, stima di facilita, evidence e kit come dimensioni distinte.
+
+## Operatività: escludere le idee già integrate dalle proposte
+
+- Quando l'utente chiede "le idee con priorità X+ / facilità Y+" o un elenco di prossime implementazioni, **partire da `DA_VALUTARE.md`** (coda per app), non dal ranking storico CAP o dalle vecchie schede IA26.
+- `GIA_INTEGRATI.md` è il registro degli elementi confermati implementati con collegamento a **codice puntuale**. Non riproporli per la medesima app; la stessa capability in un'altra app può restare da valutare.
+- `SOURCE_REPORTED`, `DONOR_REPORTED` o altre fonti non sufficienti restano in **Verifica stato**: prima controllare sorgenti main/PR, esatto SHA e copertura funzionale. Non considerarli nuovi lavori né dichiararli completati senza prove.
+- Le idee parzialmente integrate richiedono un confronto *delta funzionale*; non duplicare un core esistente. Nella raccolta IA26 aggiornare `11-NUOVE-IDEE/IA-2026-11-02/INTEGRATION_STATUS.json` con `INTEGRATED` solo dopo evidenza di codice e match del requisito originale; le idee non elencate sono ancora candidate.
+- Ogni cambio di `REGISTRO_CAPABILITY.json`, `INTEGRATION_STATUS.json` o delle scorecard canoniche richiede `python3 scripts/build_catalog.py`, poi `python3 scripts/build_catalog.py --check`; entrambi i file operativi devono risultare coerenti.
+- Se il filtro operativo non restituisce opportunità ma i record sono tutti **integrati**, rispondere esplicitamente che le idee filtrate sono state già integrate e proporre di rivederle; se restano casi **da verificare**, distinguere i due esiti senza dire erroneamente "tutto integrato".
+- Le classifiche storiche continuano a includere le idee sviluppate per tracciabilità, ma non sono più code di lavoro.
+
