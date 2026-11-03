@@ -5,6 +5,8 @@ Only confirmed exact-scope source evidence goes to GIA_INTEGRATI.
 Historical score tables remain immutable; this script splits the working queue.
 """
 import argparse
+import csv
+import io
 import json
 import re
 from pathlib import Path
@@ -85,6 +87,8 @@ def render():
             audit_class = (audit or {}).get("classification", "")
             if audit_class in {"PARTIAL_REUSE", "OUT_OF_SCOPE", "EXISTING_SOURCE", "INFRA_SOURCE"}:
                 item["state"] = state + " / " + audit_class
+            if audit and audit.get("evidence"):
+                item["audit_url"] = audit["evidence"]
             url = proven_cap(c, app, state)
             if url:
                 item["url"] = url
@@ -188,7 +192,121 @@ def render():
         + "[Da valutare](DA_VALUTARE.md) · "
         "[Stato tecnico originario](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md)\n"
     )
-    return {"DA_VALUTARE.md": remaining, "GIA_INTEGRATI.md": done}
+    # Per-app operational subsets are derived from the SAME partition as the
+    # global queues. A single capability is classified independently per app.
+    views = {"DA_VALUTARE.md": remaining, "GIA_INTEGRATI.md": done}
+    app_names = sorted(
+        {item["app"] for item in cap_done + cap_pending + cap_review},
+        key=lambda name: (name.casefold(), name),
+    )
+    app_summaries = []
+    per_app_root = "12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP"
+
+    def per_app_rows(items, classification):
+        rows = []
+        for item in items:
+            code = item["id"]
+            kit = "../../../13-KIT-INTEGRAZIONE/" + code + "/README.md"
+            evidence = item.get("url") if classification == "GIA_INTEGRATI" else None
+            if evidence:
+                reference = "[Codice verificato](" + evidence + ")"
+            elif item.get("audit_url"):
+                reference = "[Audit di sorgente](" + item["audit_url"] + ")"
+            else:
+                reference = "[Kit tecnico](" + kit + ")"
+            rows.append([
+                "[" + code + "](../../REGISTRO_CAPABILITY/" + code + ".md)",
+                item["title"], str(item["score"]), str(item["ease"]) + "%",
+                item["state"], reference,
+                item["gate"] if classification != "GIA_INTEGRATI"
+                else "Ulteriori QA/test richiesti secondo lo stato evidenze",
+            ])
+        return rows
+
+    per_app_cols = [
+        "CAP ID", "Capability", "Priorità", "Facilità",
+        "Stato per app", "Fonte / prova", "Prossimo controllo",
+    ]
+    for app in app_names:
+        d = [row for row in cap_done if row["app"] == app]
+        p = [row for row in cap_pending if row["app"] == app]
+        v = [row for row in cap_review if row["app"] == app]
+        count = len(d) + len(p) + len(v)
+        folder = per_app_root + "/" + app
+        links = (
+            "[Da valutare](DA_VALUTARE.md) · "
+            "[Già integrati](GIA_INTEGRATI.md) · "
+            "[Da verificare](DA_VERIFICARE.md) · "
+            "[CSV ordinabile in Excel](TABELLA.csv) · "
+            "[Scheda storica](../" + app + ".md)"
+        )
+        sections = [
+            ("DA_VALUTARE", p, "Candidate ancora aperte, senza soglie di score.",
+             "Non comprende integrazioni parziali, dichiarate o verificate."),
+            ("GIA_INTEGRATI", d, "Equivalenti già dimostrati da prova puntuale di codice.",
+             "CI non significa test fisico o pubblicazione."),
+            ("DA_VERIFICARE", v, "Riuso parziale, sorgente dichiarata oppure perimetro incerto.",
+             "Non proporre il lavoro da zero: prima confrontare il delta funzionale."),
+        ]
+        for category, items, explanation, warning in sections:
+            label = {"DA_VALUTARE": "Da valutare",
+                     "GIA_INTEGRATI": "Già integrati",
+                     "DA_VERIFICARE": "Stato da verificare"}[category]
+            md = (
+                "# " + app + " — " + label + " (" + str(len(items)) + ")\n\n"
+                "Derivato dal registro canonico per la **singola app**. " +
+                explanation + " " + warning + "\n\n"
+                + links + "\n\n"
+                + table(per_app_cols, per_app_rows(items, category))
+                + "\n**Totale associazioni app:** " + str(count)
+                + ". Nessuna modifica alla roadmap o al codice dell'app.\n"
+            )
+            views[folder + "/" + category + ".md"] = md
+
+        output = io.StringIO(newline="")
+        writer = csv.writer(output, lineterminator="\n")
+        writer.writerow([
+            "App", "Categoria", "CAP_ID", "Capability", "Priorita",
+            "Facilita_percento", "Stato", "Prossimo_gate",
+            "Prova_codice_URL", "Kit_tecnico_URL",
+        ])
+        for category, items, _, _ in sections:
+            for item in items:
+                writer.writerow([
+                    app, category, item["id"], item["title"],
+                    item["score"], item["ease"], item["state"], item["gate"],
+                    item.get("url", ""),
+                    "https://github.com/riccardopinato/"
+                    "Idee-app-Archivi-riferimenti/blob/main/"
+                    "13-KIT-INTEGRAZIONE/" + item["id"] + "/README.md",
+                ])
+        views[folder + "/TABELLA.csv"] = output.getvalue()
+        app_summaries.append([
+            "[" + app + "](" + app + ".md)",
+            str(count),
+            "[" + str(len(p)) + "](" + app + "/DA_VALUTARE.md)",
+            "[" + str(len(d)) + "](" + app + "/GIA_INTEGRATI.md)",
+            "[" + str(len(v)) + "](" + app + "/DA_VERIFICARE.md)",
+            "[CSV](" + app + "/TABELLA.csv)",
+        ])
+
+    views[per_app_root + "/README.md"] = (
+        "# App Factory — indici per singola app\n\n"
+        "Questa cartella contiene schede storiche e, per ogni app, tre viste "
+        "operative distinte: **da valutare**, **già integrati con codice provato**, "
+        "**da verificare** (source riportato, riuso parziale o fuori perimetro). "
+        "Le tabelle CSV si possono cercare nell'anteprima GitHub e scaricare "
+        "per riordinarle in Excel. Le tabelle Markdown non si ordinano "
+        "cliccando sulle intestazioni.\n\n"
+        + "[Da valutare (tutte le app)](../../DA_VALUTARE.md) · "
+        "[Già integrati (tutte le app)](../../GIA_INTEGRATI.md)\n\n"
+        + table(["App", "Totale", "Da valutare",
+                 "Già integrati", "Da verificare", "CSV"], app_summaries)
+        + "\n**Regola:** classificazione per coppia CAP/app. "
+        "Nessuna soglia di priorità o facilità preimpostata. "
+        "Le viste sono generate, non editare manualmente.\n"
+    )
+    return views
 
 
 def main(check=None):
