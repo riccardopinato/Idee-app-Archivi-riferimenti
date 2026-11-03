@@ -11,7 +11,7 @@ La rigenerazione è inclusa in `python3 scripts/build_catalog.py`; `--check` con
 
 - [Classifica globale](CLASSIFICA_PRIORITA.md)
 - [Matrice per app](MATRICE_APP.md)
-- [Schede per singola app](PER_APP/)
+- [Schede per singola app](PER_APP/) — tre tabelle operative per app: **Da valutare**, **Già integrati**, **Da verificare**, più **CSV** ricercabile su GitHub e ordinabile in Excel. Lo storico `PER_APP/<app>.md` rimane consultabile.
 - [Stato implementazioni](STATO_IMPLEMENTAZIONI.md)
 - [Schede individuali](REGISTRO_CAPABILITY/)
 - [JSON canonico](REGISTRO_CAPABILITY.json)
