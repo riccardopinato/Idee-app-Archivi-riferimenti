@@ -27,3 +27,11 @@ Il registro conserva **147 CAP**, con **68 associate ad Anna**. I due vecchi sug
 5. Release: aumentare `versionCode` da 120 soltanto dopo source merge e controlli; APK firmato, artifact SHA e dispositivo restano gate distinti.
 
 **Non sono autorizzati** merge Privacy #215, Google Calendar diretto #199, cambi Billing/AI/cloud, nuovi account o pubblicazione Play.
+
+## Addendum post-merge #216–#219
+
+- `CAP-0102` -> `CI_VERIFIED` for the *bounded assisted task rescheduling* implemented by PR #217, with direct deterministic slot tests. UI and provider/device certification remain distinct.
+- `CAP-0142` -> `SOURCE_CONFIRMED` only for the *personal future-letter* subset from PR #218, including canonical DayJournal/Trash and optional early viewing. Shared capsules, true time-lock and automatic delivery reminders are **not implemented**.
+- `CAP-0144` remains `PROPOSTA` as an **extended capability**. The existing launcher widget gained masked/account-scoped projection via PR #216; countdown and shared-photo widgets are still not implemented.
+- Build `+121` from PR #219 is a separate Android release-evidence gate, not an automatic promotion to device or store.
+- Evidence SHA: `Agenda-per-Anna@cb477cbecc85c1b1c415c60fd69bbd128fb82904`. Exact-head PR Development checks successful; Android device testing pending.
