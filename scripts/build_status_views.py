@@ -89,7 +89,7 @@ def render():
                 cap_review.append(item)
             else:
                 cap_pending.append(item)
-    sort_cap = lambda x: (-x["score"], -x["ease"], x["id"], x["app"])
+    sort_cap = lambda x: (-x["score"], -x["ease"], x["id"], x["app"].casefold())
     for arr in (cap_done, cap_pending, cap_review):
         arr.sort(key=sort_cap)
 
