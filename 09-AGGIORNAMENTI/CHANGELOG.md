@@ -1,8 +1,14 @@
 # Changelog dell'archivio
 
+## 2026-11-03 — Correzione: nessuna soglia fissa per le idee da valutare
+- La soglia **85/85** citata in precedenza era soltanto un esempio dell’utente e **non è un criterio operativo permanente**.
+- `DA_VALUTARE.md` ora comprende tutte le combinazioni app-capability non integrate, ordinate per Score e facilità come due dimensioni indipendenti; esempi reali 94/80 e 90/80 non vengono più relegati in una categoria di minor interesse.
+- Filtri numerici applicati solo su esplicita richiesta; preservate la separazione per app, le prove `GIA_INTEGRATI.md`, i casi di riuso parziale e l’archivio storico. Aggiunto test di regressione.
+
+
 ## 2026-11-03 — Classifiche operative integrate vs da valutare
 - Aggiunte due viste principali: `DA_VALUTARE.md` e `GIA_INTEGRATI.md`. Lo storico CAP/IA resta completo ma non viene più interpretato come coda di nuove implementazioni.
-- Classificazione **per associazione app-capability**, con spotlight dinamico Score >=85 e Facilità >=85%. Separati i record `SOURCE_REPORTED` o con prova insufficiente, da verificare prima di suggerirne lo sviluppo.
+- Classificazione **per associazione app-capability**, con spotlight iniziale Score >=85 / Facilità >=85% poi superato dalla correzione senza soglie predefinite. Separati i record `SOURCE_REPORTED` o con prova insufficiente, da verificare prima di suggerirne lo sviluppo.
 - Registro `IA-2026-11-02/INTEGRATION_STATUS.json`: Phone Guard #50/#62 confermati in codice, #44 Battery Guard con source dichiarata e gate codice, #12 TasteAI e #39 Anna parziali, #37 Anna con source riportata.
 - Generatore `scripts/build_status_views.py`, integrato nel normale `scripts/build_catalog.py` e nel gate CI; test per preservare tutte le 100 idee ed escludere quelle con codice verificato.
 - Nessuna modifica a repository app, Product Bible, roadmap, CAP source of truth o classifiche storiche. Master corrente v27 / Golden Index v28 letto da CURRENT.yaml, 03/11/2026.
