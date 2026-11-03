@@ -4,12 +4,12 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 
 | Stato | Associamenti app-capability | Interpretazione |
 | --- | --- | --- |
-| PROPOSTA | 230 | Idea non approvata / nessun codice verificato qui |
+| PROPOSTA | 228 | Idea non approvata / nessun codice verificato qui |
 | ROADMAP_STORICA | 15 | Indicata in roadmap o decisione storica; richiede verifica live |
 | SOURCE_REPORTED | 84 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
 | DONOR_REPORTED | 2 | Repo donor documentato; riuso non ancora validato |
-| SOURCE_CONFIRMED | 2 | Implementazione verificata con riferimento puntuale a codice e commit |
-| CI_VERIFIED | 9 | CI exact-head verde per questa capability nel repository autorevole |
+| SOURCE_CONFIRMED | 3 | Implementazione verificata con riferimento puntuale a codice e commit |
+| CI_VERIFIED | 10 | CI exact-head verde per questa capability nel repository autorevole |
 | DEVICE_VERIFIED | 0 | Test su dispositivo con artifact e SHA identificati |
 | RELEASE | 0 | Distribuzione verificata nel canale dichiarato, non inferita dalla build |
 | BLOCKED | 0 | Blocco concreto con causa e riferimento; mantenere l'idea nel catalogo |
@@ -75,7 +75,9 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | CAP-0080 Document expiry and asset passport | CamperBoss (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/01-PORTAFOGLIO/AUDIT_OPPORTUNITA_2026-10-30.md |
 | CAP-0081 Phone protection sensitivity adviser | Phone-Guard (SOURCE_REPORTED) | https://github.com/riccardopinato/Phone-Guard/blob/main/ROADMAP.md |
 | CAP-0082 Deterministic UI design artwork | World-Days (SOURCE_REPORTED) | https://github.com/riccardopinato/Design-App/blob/main/registry/DESIGN_REGISTRY.yaml |
+| CAP-0102 Ripianificazione assistita e confronto piani alternativi | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md |
 | CAP-0111 Weekly Review con proposte di pulizia e ripianificazione | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/weekly_review.dart |
 | CAP-0113 Da appuntamento passato a ricordo privato | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_memory_capture.dart |
+| CAP-0142 Capsule e lettere a apertura programmata | Agenda-per-Anna (SOURCE_CONFIRMED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md |
 
 Non promuovere a `CI_VERIFIED`, `DEVICE_VERIFIED` o `RELEASE` senza evidence esatta del repo e della build pertinente.
