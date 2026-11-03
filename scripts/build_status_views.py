@@ -195,8 +195,16 @@ def main(check=None):
     for name, contents in rendered.items():
         p = ROOT / name
         if check:
-            if not p.exists() or p.read_text(encoding="utf-8") != contents:
+            actual = p.read_text(encoding="utf-8") if p.exists() else ""
+            if actual != contents:
                 mismatches.append(name)
+                first = next((k for k, (a, b) in enumerate(zip(actual, contents))
+                              if a != b), min(len(actual), len(contents)))
+                print("DRIFT " + name + " at char " + str(first)
+                      + ", actual-length=" + str(len(actual))
+                      + ", expected-length=" + str(len(contents)))
+                print("ACTUAL: " + repr(actual[max(0, first-55):first+90]))
+                print("EXPECTED: " + repr(contents[max(0, first-55):first+90]))
         else:
             p.write_text(contents, encoding="utf-8")
     if mismatches:
