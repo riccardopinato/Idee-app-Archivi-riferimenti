@@ -2,11 +2,11 @@
 
 ## Classifiche operative — cosa fare adesso
 
-- **[Da valutare](DA_VALUTARE.md)**: opportunità **non ancora integrate** con priorità/facilità per app, prima la fascia **85+/85+**. Le voci che potrebbero essere già implementate stanno in **Verifica stato**, non nella coda di nuove implementazioni.
+- **[Da valutare](DA_VALUTARE.md)**: opportunità **non ancora integrate** con priorità/facilità per app, mostrandole **tutte**, senza soglie predefinite. Le voci che potrebbero essere già implementate stanno in **Verifica stato**, non nella coda di nuove implementazioni.
 - **[Già integrati](GIA_INTEGRATI.md)**: elementi per cui esiste evidenza di codice nella specifica app; mantenuti consultabili con prova, senza proporli di nuovo.
 - Le **classifiche storiche** e tutte le schede restano immutate. Il comando `python3 scripts/build_catalog.py` rigenera entrambe le viste; `--check` ne verifica la coerenza.
 
-Per le richieste "priorità 85+ / facilità 85+" usare **prima** `DA_VALUTARE.md`, non la classifica storica. Una capability può risultare integrata in Anna ma ancora da valutare in Notes: classificazione **per app**.
+Per le ricerche operative usare **prima** `DA_VALUTARE.md`, non la classifica storica. **Priorità e facilità sono indicatori indipendenti:** anche 90/82, 82/95 o altre combinazioni rimangono visibili. Applicare soglie numeriche soltanto quando l’utente le richiede esplicitamente, senza cancellare le altre idee. Una capability può risultare integrata in Anna ma ancora da valutare in Notes: classificazione **per app**.
 
 
 **Archivio organizzato** per idee app, classifiche, descrizioni cliente, suite, micro-utility, fonti dati, librerie, repository, commercializzazione e aggiornamenti. Il repository non contiene il codice delle app.
