@@ -162,6 +162,12 @@ def main():
         versions[f"PER_APP/{app}.md"] = (
             f"# {app} — capability e priorita\n\n"
             "Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.\n\n"
+            "**Viste operative per questa app:** "
+            f"[Da valutare]({app}/DA_VALUTARE.md) · "
+            f"[Già integrati]({app}/GIA_INTEGRATI.md) · "
+            f"[Da verificare]({app}/DA_VERIFICARE.md) · "
+            f"[Tabella CSV]({app}/TABELLA.csv). "
+            "Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.\n\n"
             + md_table(headers, rows)
             + f"\n**Totale associazioni:** {len(items)}. Non modificare automaticamente la roadmap del prodotto.\n"
         )
