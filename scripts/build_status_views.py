@@ -81,11 +81,16 @@ def render():
                 "score": c["score"], "ease": c["integration_ease_percent"][app],
                 "state": state, "gate": c["next_gate"],
             }
+            audit = c.get("anna_full_source_audit") if app == "Agenda-per-Anna" else None
+            audit_class = (audit or {}).get("classification", "")
+            if audit_class in {"PARTIAL_REUSE", "OUT_OF_SCOPE", "EXISTING_SOURCE", "INFRA_SOURCE"}:
+                item["state"] = state + " / " + audit_class
             url = proven_cap(c, app, state)
             if url:
                 item["url"] = url
                 cap_done.append(item)
-            elif state in VERIFIED or state in REPORTED:
+            elif (state in VERIFIED or state in REPORTED
+                  or audit_class in {"PARTIAL_REUSE", "OUT_OF_SCOPE", "EXISTING_SOURCE", "INFRA_SOURCE"}):
                 cap_review.append(item)
             else:
                 cap_pending.append(item)
