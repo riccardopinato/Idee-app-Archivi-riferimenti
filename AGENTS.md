@@ -37,3 +37,9 @@
 - Se il filtro operativo non restituisce opportunità ma i record sono tutti **integrati**, rispondere esplicitamente che le idee filtrate sono state già integrate e proporre di rivederle; se restano casi **da verificare**, distinguere i due esiti senza dire erroneamente "tutto integrato".
 - Le classifiche storiche continuano a includere le idee sviluppate per tracciabilità, ma non sono più code di lavoro.
 
+
+## Viste per singola app
+
+- Per ciascuna app, usare le viste generate `12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/<app>/DA_VALUTARE.md`, `GIA_INTEGRATI.md` e `DA_VERIFICARE.md`; l'indice è `PER_APP/README.md`.
+- I relativi `TABELLA.csv` servono a ricercare su GitHub e a ordinare esternamente in Excel; non sono un secondo database canonico. Le tabelle Markdown non supportano ordinamento interattivo delle intestazioni.
+- Tutte le viste si derivano unicamente da `REGISTRO_CAPABILITY.json` e dalle evidenze già registrate mediante `scripts/build_status_views.py`; nessun filtro numerico predefinito e nessuna duplicazione di feature integrata nella stessa app.
