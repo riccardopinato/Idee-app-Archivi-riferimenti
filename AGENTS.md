@@ -47,6 +47,6 @@
 ## GitHub Projects V2 — mirror consultivo, NON source of truth
 
 - Script `scripts/projects_sync.py`, workflow `.github/workflows/app-factory-project-sync.yml`, istruzioni `12-CAPABILITY-E-IMPLEMENTAZIONI/GITHUB_PROJECTS_MIRROR.md`.
-- Modalità predefinita solo `dry-run`, senza token/network. Mutazioni live autorizzate solo quando il segreto GitHub Actions `APP_FACTORY_PROJECT_TOKEN` è presente; su `bootstrap`, pilot di 6 esempi rappresentativi e controllo lettura da API **prima** di import completo per tutte le app.
+- Modalità predefinita solo `dry-run`, senza token/network. Mutazioni live autorizzate solo quando il segreto GitHub Actions `APP_FACTORY_PROJECT_TOKEN` è presente; su `bootstrap`, pilot di 6 esempi rappresentativi e controllo lettura da API **prima** di estensione automatica in batch limitati a 180 associazioni/run. `BATCH_SYNC_PASS` non equivale a `FULL_SYNC_PASS`; il cron riprende senza cancellare.
 - Mai cancellare, archiviare o alterare sorgenti, issue esistenti, proprietà dei progetti app, record non marcati o viste personalizzate. L'esistenza del codice di sync NON equivale all'esistenza del Project reale.
 - Prove di successo: URL live, `PILOT_PASS`, `FULL_SYNC_PASS` e verifica conteggi. Se non ci sono permessi GitHub Projects, riferire `BLOCKED` e lasciare i repository invariati.
