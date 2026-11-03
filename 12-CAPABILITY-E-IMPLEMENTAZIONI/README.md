@@ -1,5 +1,12 @@
 # Catalogo centrale capability — App Factory
 
+## Priorità da fare vs già integrate
+
+**[DA_VALUTARE.md](../DA_VALUTARE.md)** separa le capability ancora proposte da quelle da verificare, e mostra per prime solo le combinazioni **Score ≥85 / Facilità ≥85%** della specifica app. **[GIA_INTEGRATI.md](../GIA_INTEGRATI.md)** elenca le implementazioni con prova puntuale (SHA/PR/CI dove disponibile). Il ranking globale qui rimane *storico/analitico* e non va usato per creare una coda di lavoro senza il filtro stati.
+
+La rigenerazione è inclusa in `python3 scripts/build_catalog.py`; `--check` controlla che i due file non siano obsoleti.
+
+
 **147 capability individuali, 48 app/idee beneficiarie e 342 associazioni app-capability**, stato catalogo 01/11/2026 (audit iniziale + ricerche incrementali).
 
 - [Classifica globale](CLASSIFICA_PRIORITA.md)

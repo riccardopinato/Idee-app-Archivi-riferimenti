@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-03",
+  "description": "Status per idea numerata: INTEGRATED only on exact matching scope with code evidence. PARTIAL and SOURCE_REPORTED are excluded from new implementation suggestions until scope reconciliation. Unlisted ideas remain to evaluate.",
+  "records": [
+    {
+      "id": "IA26-044",
+      "state": "SOURCE_REPORTED",
+      "app": "Battery_Guard",
+      "evidence_url": "https://github.com/riccardopinato/Battery_Guard/blob/main/README.md",
+      "scope": "Ricarica e allarmi soglia presenti nel prodotto, confermati dalla documentazione; verifica puntuale handler/notification native ancora richiesta",
+      "remaining_gate": "Verificare esatto percorso codice allarme, CI e device/OEM",
+      "as_of": "2026-11-03"
+    },
+    {
+      "id": "IA26-050",
+      "state": "INTEGRATED",
+      "app": "Phone-Guard",
+      "evidence_url": "https://github.com/riccardopinato/Phone-Guard/blob/ba377aa0fadbe2d7e5ec603f5abd4b69d411ed3c/app/src/main/java/com/riccardopinato/phoneguard/protection/PocketProtectionController.kt",
+      "scope": "Modalità Pocket anti-borseggio via sensori presente in codice",
+      "remaining_gate": "Device/OEM/Play QA, non implementazione di altra app",
+      "as_of": "2026-11-03"
+    },
+    {
+      "id": "IA26-062",
+      "state": "INTEGRATED",
+      "app": "Phone-Guard",
+      "evidence_url": "https://github.com/riccardopinato/Phone-Guard/blob/ba377aa0fadbe2d7e5ec603f5abd4b69d411ed3c/app/src/main/java/com/riccardopinato/phoneguard/service/ProtectionForegroundService.kt",
+      "scope": "Modalità Table: rilevamento movimento telefono sulla superficie",
+      "remaining_gate": "Device/OEM/Play QA, non implementazione di altra app",
+      "as_of": "2026-11-03"
+    },
+    {
+      "id": "IA26-012",
+      "state": "PARTIAL",
+      "app": "TasteAI",
+      "evidence_url": "https://github.com/riccardopinato/TasteAI/blob/99e93784db403c9da65c8753c6bbcc802d01180e/lib/domain/anti_waste/anti_waste_engine.dart",
+      "scope": "Motore anti-spreco da ingredienti presente; scansione/riconoscimento visivo non dimostrato",
+      "remaining_gate": "Validare il requisito visivo prima di proporre estensione, NON ricreare AntiWasteEngine",
+      "as_of": "2026-11-03"
+    },
+    {
+      "id": "IA26-037",
+      "state": "SOURCE_REPORTED",
+      "app": "Agenda-per-Anna",
+      "evidence_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/main/README.md",
+      "scope": "Memories Map riportata nella documentazione/storico; equivalenza completa dell'idea Mappa Posti del Cuore non dimostrata",
+      "remaining_gate": "Mappare requisito a file, feature e prova su main",
+      "as_of": "2026-11-03"
+    },
+    {
+      "id": "IA26-039",
+      "state": "PARTIAL",
+      "app": "Agenda-per-Anna",
+      "evidence_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/cb477cbecc85c1b1c415c60fd69bbd128fb82904/lib/vault_service.dart",
+      "scope": "Private Vault reale già in codice; travestimento a calcolatrice non provato né consigliato senza analisi",
+      "remaining_gate": "Non proporre nuova app vault senza test differenziale, rivedere solo UX autorizzata",
+      "as_of": "2026-11-03"
+    }
+  ]
+}

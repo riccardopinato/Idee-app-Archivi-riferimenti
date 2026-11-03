@@ -1,5 +1,14 @@
 # Changelog dell'archivio
 
+## 2026-11-03 — Classifiche operative integrate vs da valutare
+- Aggiunte due viste principali: `DA_VALUTARE.md` e `GIA_INTEGRATI.md`. Lo storico CAP/IA resta completo ma non viene più interpretato come coda di nuove implementazioni.
+- Classificazione **per associazione app-capability**, con spotlight dinamico Score >=85 e Facilità >=85%. Separati i record `SOURCE_REPORTED` o con prova insufficiente, da verificare prima di suggerirne lo sviluppo.
+- Registro `IA-2026-11-02/INTEGRATION_STATUS.json`: Phone Guard #50/#62 confermati in codice, #44 Battery Guard con source dichiarata e gate codice, #12 TasteAI e #39 Anna parziali, #37 Anna con source riportata.
+- Generatore `scripts/build_status_views.py`, integrato nel normale `scripts/build_catalog.py` e nel gate CI; test per preservare tutte le 100 idee ed escludere quelle con codice verificato.
+- Nessuna modifica a repository app, Product Bible, roadmap, CAP source of truth o classifiche storiche. Master corrente v27 / Golden Index v28 letto da CURRENT.yaml, 03/11/2026.
+
+
+
 ## 2026-11-03 — Anna CAP evidence audit / Golden Index 26
 - Factory baseline aggiornata a `App-Factory-Core@a3c65963` (Master 27, Golden Index v26); nessuna riscrittura della fonte Factory.
 - Stati di Anna verificati nel registro canonico per CAP-0014 (CI_VERIFIED), CAP-0027 e CAP-0055 (SOURCE_CONFIRMED); CAP-0069/0077/0111 mantengono CI_VERIFIED ma con path/evidenze aggiornati. 147 CAP totali.

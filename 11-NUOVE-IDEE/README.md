@@ -1,5 +1,10 @@
 # Nuove idee — area dedicata
 
+## Viste operative: ancora da valutare oppure già integrato
+
+Consultare [DA_VALUTARE](../DA_VALUTARE.md) per le opportunità attive, e [GIA_INTEGRATI](../GIA_INTEGRATI.md) per i riusi effettivamente confermati in codice. Le 100 schede IA26 rimangono archiviate anche dopo integrazione: il campo di stato conservativo si trova in [INTEGRATION_STATUS.json](IA-2026-11-02/INTEGRATION_STATUS.json). Una fusione o la semplice somiglianza con un'app non basta a classificarla come integrata.
+
+
 Questa cartella raccoglie **solo le idee ancora in valutazione**, separate dal catalogo delle app già registrate in [01-PORTAFOGLIO](../01-PORTAFOGLIO/CATALOGO_APP.md).
 
 ## Dove scrivere

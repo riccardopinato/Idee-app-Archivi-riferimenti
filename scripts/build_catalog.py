@@ -195,3 +195,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # Complete archive: keep operational queues synchronized. Legacy isolated
+    # catalogue fixtures contain none of these optional idea-status sources.
+    from pathlib import Path
+    import sys
+    root = Path(__file__).resolve().parents[1]
+    status_sources = [
+        root / "scripts" / "build_status_views.py",
+        root / "11-NUOVE-IDEE" / "IA-2026-11-02" / "INTEGRATION_STATUS.json",
+        root / "11-NUOVE-IDEE" / "IA-2026-11-02" / "RANKING_100_COMPLETO.md",
+    ]
+    found = [p.is_file() for p in status_sources]
+    if all(found):
+        from build_status_views import main as build_status_views
+        build_status_views(check="--check" in sys.argv)
+    elif any(found):
+        raise SystemExit("Operational view inputs incomplete: "
+                         + ", ".join(str(p) for p, ok in zip(status_sources, found)
+                                     if not ok))
