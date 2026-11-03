@@ -305,6 +305,10 @@ def ensure_fields(api, project):
 def ensure_views(api, project):
     meta = get_metadata(api, project["number"])
     views = {v["name"]: v for v in meta["views"]["nodes"]}
+    visible = [
+        item["id"] for item in meta["fields"]["nodes"]
+        if item and item.get("name") in ("Title", "App", "Priorità", "Facilità", "Fase")
+    ]
     for name, filter_text in VIEW_NAMES.items():
         if name in views:
             current = views[name].get("filter") or ""
@@ -332,7 +336,8 @@ def ensure_views(api, project):
               projectV2View { id name }
             }
           }""", {"input": {"projectId": project["id"],
-                             "name": name, "layout": "TABLE_LAYOUT"}})
+                             "name": name, "layout": "TABLE_LAYOUT",
+                             "configuration": {"visibleFieldIds": visible}}})
         view_id = result["createProjectV2View"]["projectV2View"]["id"]
         if filter_text:
             api.call("""
