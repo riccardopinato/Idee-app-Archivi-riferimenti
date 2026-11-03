@@ -29,7 +29,7 @@
 
 ## Operatività: escludere le idee già integrate dalle proposte
 
-- Quando l'utente chiede "le idee con priorità X+ / facilità Y+" o un elenco di prossime implementazioni, **partire da `DA_VALUTARE.md`** (coda per app), non dal ranking storico CAP o dalle vecchie schede IA26.
+- Per ogni richiesta di idee o prossime implementazioni, **partire da `DA_VALUTARE.md`** (coda per app), non dal ranking storico CAP o dalle schede IA26. Mostrare l’intero insieme delle idee non integrate, ordinate per priorità (facilità a parità): **NON applicare soglie predefinite** come 85/85. Se l’utente specifica davvero una soglia numerica o un intervallo, applicare quel filtro alla richiesta, senza alterare/escludere i record canonici. Non perdere combinazioni sbilanciate come priorità 90 / facilità 82.
 - `GIA_INTEGRATI.md` è il registro degli elementi confermati implementati con collegamento a **codice puntuale**. Non riproporli per la medesima app; la stessa capability in un'altra app può restare da valutare.
 - `SOURCE_REPORTED`, `DONOR_REPORTED` o altre fonti non sufficienti restano in **Verifica stato**: prima controllare sorgenti main/PR, esatto SHA e copertura funzionale. Non considerarli nuovi lavori né dichiararli completati senza prove.
 - Le idee parzialmente integrate richiedono un confronto *delta funzionale*; non duplicare un core esistente. Nella raccolta IA26 aggiornare `11-NUOVE-IDEE/IA-2026-11-02/INTEGRATION_STATUS.json` con `INTEGRATED` solo dopo evidenza di codice e match del requisito originale; le idee non elencate sono ancora candidate.
