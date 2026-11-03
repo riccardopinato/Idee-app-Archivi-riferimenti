@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-04 — GitHub Projects: correzione collaudo live
+- Creato realmente il GitHub Project personale `App Factory — Capability Dashboard` (Project #1) con campi e quattro viste, grazie al secret `APP_FACTORY_PROJECT_TOKEN`.
+- Primo run live: sei record pilota creati, ma la lettura API immediata non riportava ancora l'ultima coppia `Android-Omni-Cleaner / CAP-0039`; il gate ha correttamente impedito l'import massivo.
+- La verifica di lettura ora effettua tentativi con intervalli progressivi **senza effettuare nuove scritture durante la verifica**; mai dichiarare `PILOT_PASS` o `FULL_SYNC_PASS` finché il riscontro API non è positivo.
+- Test di regressione per indicizzazione ritardata e fail-closed senza duplicazioni; nessuna cancellazione, modificazione del registro canonico o repo app.
+
+
 ## 2026-11-03 — Contenimento rate limit GitHub Projects
 - Caricamento limitato a 180 coppie CAP/app per run, intervallo minimo 1,3 secondi tra mutation GraphQL, ripresa incrementale automatica nei run successivi. Distinguere `BATCH_SYNC_PASS` da `FULL_SYNC_PASS`; non promettere import completo quando il batch è ancora parziale.
 - Cron ogni quattro ore, test su ripartenza batch senza duplicazioni. Il Project live resta BLOCCATO fino alla configurazione sicura del token `APP_FACTORY_PROJECT_TOKEN`.
