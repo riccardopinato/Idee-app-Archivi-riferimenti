@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-03 — Contenimento rate limit GitHub Projects
+- Caricamento limitato a 180 coppie CAP/app per run, intervallo minimo 1,3 secondi tra mutation GraphQL, ripresa incrementale automatica nei run successivi. Distinguere `BATCH_SYNC_PASS` da `FULL_SYNC_PASS`; non promettere import completo quando il batch è ancora parziale.
+- Cron ogni quattro ore, test su ripartenza batch senza duplicazioni. Il Project live resta BLOCCATO fino alla configurazione sicura del token `APP_FACTORY_PROJECT_TOKEN`.
+
+
 ## 2026-11-03 — GitHub Projects V2 (pilota e mirror automatico non distruttivo)
 - Introdotti `scripts/projects_sync.py`, regression test e workflow manuale/push/cron per un solo Project riutilizzabile attraverso tutte le 48 app, su 342 combinazioni CAP/app.
 - Creazione/ripresa Progetto V2 e 4 campi ordinabili tramite GraphQL, 4 viste; primo pilot di 6 elementi su 3 stati con rilettura, poi estensione automatica a tutte le coppie quando i gate live passano.
