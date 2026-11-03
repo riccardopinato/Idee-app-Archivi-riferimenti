@@ -195,3 +195,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # Keep operational queues in sync whenever canonical capability views are built.
+    from build_status_views import main as build_status_views
+    import sys
+    build_status_views(check="--check" in sys.argv)
