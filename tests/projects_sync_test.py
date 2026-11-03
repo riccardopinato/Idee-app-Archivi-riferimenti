@@ -123,6 +123,32 @@ class ProjectsMirrorContractTests(unittest.TestCase):
         self.assertEqual(client.writes, full_writes)
         self.assertEqual(len(client.items), len(self.rows))
 
+    def test_rate_limited_batches_cover_all_342_without_duplicates(self):
+        fields = fake_fields()
+        project_id = "PROJECT_TEST"
+        empty = {}
+        batch, remaining = mirror.select_pending(
+            self.rows, empty, fields, project_id)
+        self.assertEqual(len(batch), mirror.MAX_ITEMS_PER_RUN)
+        self.assertEqual(remaining, len(self.rows))
+        self.assertEqual(mirror.MAX_ITEMS_PER_RUN, 180)
+        self.assertGreaterEqual(mirror.MUTATION_INTERVAL_SECONDS, 1.0)
+
+        existing = {}
+        for idx, row in enumerate(batch):
+            fields_for_row = mirror.desired_fields(row, fields)
+            existing[mirror.row_key(row)] = {
+                "item_id": "PV_" + str(idx),
+                "values": {key: next(iter(value.values()))
+                           for key, value in fields_for_row.items()},
+            }
+        second, count = mirror.select_pending(
+            self.rows, existing, fields, project_id)
+        self.assertEqual(count, len(self.rows) - len(batch))
+        self.assertEqual(len(second), len(self.rows) - len(batch))
+        self.assertFalse({mirror.row_key(x) for x in batch} &
+                         {mirror.row_key(x) for x in second})
+
     def test_changes_only_update_owned_fields(self):
         client = FakeMutationClient()
         fields, project, existing = fake_fields(), {"id": "PROJECT_TEST"}, {}
