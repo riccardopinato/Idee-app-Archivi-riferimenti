@@ -169,7 +169,11 @@ class GitHubGraphQL:
                      "Content-Type": "application/json",
                      "X-GitHub-Api-Version": "2022-11-28"},
         )
-        for attempt in range(3):
+        # Retrying an unknown-result mutation can duplicate a newly-created item.
+        # Only reads can be retried; on mutation failure the next run re-reads.
+        is_mutation = query.lstrip().startswith("mutation")
+        max_attempts = 1 if is_mutation else 3
+        for attempt in range(max_attempts):
             try:
                 with urlopen(req, timeout=35) as response:
                     result = json.loads(response.read().decode("utf-8"))
@@ -179,12 +183,12 @@ class GitHubGraphQL:
                                        str(result["errors"])[:950])
                 return result["data"]
             except HTTPError as error:
-                if error.code in (429, 502, 503, 504) and attempt < 2:
+                if error.code in (429, 502, 503, 504) and attempt < max_attempts - 1:
                     time.sleep(2 ** attempt * 3)
                     continue
                 raise RuntimeError("GitHub API HTTP " + str(error.code)) from None
             except URLError as error:
-                if attempt < 2:
+                if attempt < max_attempts - 1:
                     time.sleep(2 ** attempt * 3)
                     continue
                 raise RuntimeError("GitHub API connection unavailable") from None
@@ -303,7 +307,24 @@ def ensure_views(api, project):
     views = {v["name"]: v for v in meta["views"]["nodes"]}
     for name, filter_text in VIEW_NAMES.items():
         if name in views:
-            # Respect pre-existing user-saved views; never overwrite their settings.
+            current = views[name].get("filter") or ""
+            if current == filter_text:
+                continue
+            if current:
+                # Keep user-defined filters untouched. The script owns no
+                # permission to replace manually customized views.
+                print("VIEW_FILTER_UNCHANGED", name)
+                continue
+            if filter_text:
+                # Recover a view created before an interrupted filter update.
+                api.call("""
+                  mutation($input:UpdateProjectV2ViewInput!) {
+                    updateProjectV2View(input:$input) {
+                      projectV2View { id filter }
+                    }
+                  }""", {"input": {"viewId": views[name]["id"],
+                                   "filter": filter_text}})
+                print("VIEW_FILTER_REPAIRED", name)
             continue
         result = api.call("""
           mutation($input:CreateProjectV2ViewInput!) {
@@ -426,6 +447,7 @@ def set_fields(api, inputs):
 
 def upsert(api, project, fields, rows, existing):
     adds, others = project_plan(rows, existing)
+    adding = {row_key(row) for row in adds}
     created = updated = unchanged = 0
     for row in rows:
         key = row_key(row)
@@ -451,9 +473,9 @@ def upsert(api, project, fields, rows, existing):
             set_fields(api, changes)
             for name, value in desired_fields(row, fields).items():
                 item["values"][name] = next(iter(value.values()))
-            if key not in {row_key(r) for r in adds}:
+            if key not in adding:
                 updated += 1
-        elif key not in {row_key(r) for r in adds}:
+        elif key not in adding:
             unchanged += 1
     print("SYNC_SUMMARY", json.dumps(
         {"requested": len(rows), "created": created, "updated": updated,
