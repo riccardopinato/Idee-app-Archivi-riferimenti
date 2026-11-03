@@ -4141,18 +4141,19 @@
       "description": "Proporre slot alternativi per task spostabili dopo un imprevisto, conservando eventi fissi, preferenze e possibilita di confrontare due soluzioni.",
       "app_states": {
         "Notes-Ecosistema": "PROPOSTA",
-        "Agenda-per-Anna": "PROPOSTA"
+        "Agenda-per-Anna": "CI_VERIFIED"
       },
       "source": {
         "type": "HUGGINGFACE_IDEA_RESEARCH",
         "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md"
       },
       "next_gate": "Verificare task e calendario canonici; strategia locale con vincoli hard/soft e preview delle modifiche, nessuno spostamento o evento scritto senza conferma; fallback no-AI.",
-      "reviewed_at": "2026-11-01",
+      "reviewed_at": "2026-11-03",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md",
-        "https://huggingface.co/datasets/burtenshaw/plan-my-day-results"
+        "https://huggingface.co/datasets/burtenshaw/plan-my-day-results",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/217"
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
@@ -4168,17 +4169,19 @@
         "note": "All per-app percentages remain preliminary editorial estimates; no implementation or device verification."
       },
       "anna_full_source_audit": {
-        "classification": "PARTIAL_REUSE",
+        "classification": "EXISTING_SOURCE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "cb477cbecc85c1b1c415c60fd69bbd128fb82904",
         "source_paths": [
-          "lib/src/calendar_free_slots.dart"
+          "lib/src/today_quick_wins.dart",
+          "lib/src/calendar_free_slots.dart",
+          "test/v107_quick_wins_test.dart"
         ],
-        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0102/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped source inspection and product-policy mapping",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "evidence": "https://github.com/riccardopinato/Agenda-per-Anna/pull/217",
+        "method": "Implemented from PR #217, exact-head Development checks 41545782802 SUCCESS. Opt-in 3-day deterministic free-slot suggestions and explicit confirmation. Native/device unverified.",
+        "app_flutter_build": "EXACT_HEAD_DEVELOPMENT_CHECKS_SUCCESS_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-01"
+        "audit_date": "2026-11-03"
       }
     },
     {
@@ -5789,7 +5792,7 @@
       },
       "description": "Creazione volontaria di lettere/ricordi personali o condivisi con data di apertura e regole recuperabili.",
       "app_states": {
-        "Agenda-per-Anna": "PROPOSTA",
+        "Agenda-per-Anna": "SOURCE_CONFIRMED",
         "Wonderlog": "PROPOSTA"
       },
       "source": {
@@ -5797,11 +5800,12 @@
         "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
       },
       "next_gate": "Nessuna garanzia crittografica del blocco temporale. QA date/fusi/offline/orologio, backup e sync due device; shared dopo Privacy #215.",
-      "reviewed_at": "2026-11-02",
+      "reviewed_at": "2026-11-03",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/218"
       ],
       "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
       "idea_refs": [
@@ -5815,15 +5819,17 @@
       "anna_full_source_audit": {
         "classification": "PARTIAL_REUSE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "cb477cbecc85c1b1c415c60fd69bbd128fb82904",
         "source_paths": [
-          "lib/src/shared_memories.dart"
+          "lib/src/diary/diary_memories.dart",
+          "lib/src/screens/more_screen.dart",
+          "test/v105b0_memories_3_core_test.dart"
         ],
-        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0142/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "evidence": "https://github.com/riccardopinato/Agenda-per-Anna/pull/218",
+        "method": "Personal future-letter sub-scope implemented in PR #218, Development checks 41547912984 SUCCESS (675 tests). Shared/two-person mode and automatic delivery reminders NOT IMPLEMENTED; ordinary diary entries are not locked/encrypted; this CAP remains only PARTIAL overall.",
+        "app_flutter_build": "EXACT_HEAD_DEVELOPMENT_CHECKS_SUCCESS_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-02"
+        "audit_date": "2026-11-03"
       }
     },
     {
@@ -5903,11 +5909,12 @@
         "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md"
       },
       "next_gate": "Android launcher e iOS WidgetKit diversi; no claim real-time. PIN/biometria e contenuti riservati su lockscreen richiedono QA fisico; Privacy #215 congelata.",
-      "reviewed_at": "2026-11-02",
+      "reviewed_at": "2026-11-03",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md",
-        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md"
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/216"
       ],
       "reuse_decision": "REBUILD_CANDIDATE_NO_CODE",
       "idea_refs": [
@@ -5923,15 +5930,17 @@
       "anna_full_source_audit": {
         "classification": "PARTIAL_REUSE",
         "target_repo": "riccardopinato/Agenda-per-Anna",
-        "target_sha": "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
+        "target_sha": "cb477cbecc85c1b1c415c60fd69bbd128fb82904",
         "source_paths": [
-          "lib/src/home_widget_bridge.dart"
+          "lib/src/home_widget_bridge.dart",
+          "tool/prepare_android_platform.py",
+          "test/v056_home_widget_test.dart"
         ],
-        "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0144/ANNA_SOURCE_COMPATIBILITA.md",
-        "method": "Scoped preexisting source path availability only; proposed behavior not verified or implemented",
-        "app_flutter_build": "NOT_RUN_IN_THIS_AUDIT",
+        "evidence": "https://github.com/riccardopinato/Agenda-per-Anna/pull/216",
+        "method": "Base next-event widget plus privacy masking/account cache clearing implemented PR #216, Development checks 41544635259 SUCCESS, native Android compile 41544635160 SUCCESS. Extended CAP countdown/shared-photo widgets not implemented. Physical launcher runtime pending.",
+        "app_flutter_build": "EXACT_HEAD_DEVELOPMENT_CHECKS_SUCCESS_SCOPE",
         "android_physical_test": "NOT_VERIFIED",
-        "audit_date": "2026-11-02"
+        "audit_date": "2026-11-03"
       }
     },
     {

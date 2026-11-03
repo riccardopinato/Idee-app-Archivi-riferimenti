@@ -151,6 +151,7 @@ def main():
                 if audit.get("target_sha") not in {
                     "88efdfa9a688f35585cf2760d131f7a6b0b9deb2",
                     "827bb61620960d8867eb03e453d142013aada786",
+                    "cb477cbecc85c1b1c415c60fd69bbd128fb82904",
                 }:
                     raise SystemExit("Anna audit wrong baseline " + rec["id"])
                 row.extend([audit["classification"],
