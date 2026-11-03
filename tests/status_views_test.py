@@ -34,6 +34,19 @@ class OperationalStatusViewTests(unittest.TestCase):
         self.assertIn("CAP-0001.md", views["GIA_INTEGRATI.md"])
         self.assertIn("CAP-0001.md", views["DA_VALUTARE.md"])
 
+    def test_unbalanced_scores_remain_in_operational_queue(self):
+        text = render()["DA_VALUTARE.md"]
+        pending = text.split("## Tutte le capability ancora da valutare (", 1)[1].split(
+            "## Verificare lo stato", 1)[0]
+        self.assertNotIn("## Priorità alta: almeno 85/85", text)
+        self.assertNotIn("## Altre capability ancora da valutare", text)
+        # Both are high-priority proposals below the old 85% ease cutoff.
+        self.assertIn("| CamperBoss | [CAP-0017]", pending)
+        self.assertIn("| Wonderlog | [CAP-0017]", pending)
+        self.assertIn("| 94 | 80% | PROPOSTA |", pending)
+        # Verified source integrations are still excluded.
+        self.assertNotIn("| Agenda-per-Anna | [CAP-0001]", pending)
+
     def test_repository_views_match_generator(self):
         for name, expected in render().items():
             with self.subTest(view=name):

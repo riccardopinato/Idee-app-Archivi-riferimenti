@@ -145,20 +145,21 @@ def render():
     idea_headers = ["Idea", "Priorità", "Facilità", "App correlata", "Stato", "Prova"]
     idea_pending_headers = ["Idea", "Priorità", "Facilità", "App correlata", "Stato", "Prossimo gate"]
 
-    spotlight = [x for x in cap_pending if x["score"] >= 85 and x["ease"] >= 85]
-    other = [x for x in cap_pending if x not in spotlight]
     remaining = (
         "# Da valutare — coda operativa App Factory\n\n"
         "> Generato da REGISTRO_CAPABILITY.json e dallo storico delle 100 idee. "
         "Non modifica alcuna roadmap o app. Snapshot dei dati del repository; "
         "non è una scansione live dei dispositivi.\n\n"
-        "**Regola filtro:** priorità >=85 e facilità >=85 sono misurate **per singola app**. "
-        "Elementi già confermati nel codice sono esclusi; elementi con sola prova "
-        "documentale vanno in **Verifica stato**, non sono nuove implementazioni da suggerire.\n\n"
-        "## Priorità alta: almeno 85/85 — da valutare (" + str(len(spotlight)) + ")\n\n"
-        + table(pend_headers, cap_rows(spotlight)) + "\n"
-        + "## Altre capability ancora da valutare (" + str(len(other)) + ")\n\n"
-        + table(pend_headers, cap_rows(other)) + "\n"
+        "**Nessuna soglia numerica predefinita:** tutte le opportunità non confermate "
+        "integrate restano visibili, anche con punteggi sbilanciati "
+        "(es. priorità 90 e facilità 82). Le soglie come 85/85 sono soltanto "
+        "filtri facoltativi, se richiesti esplicitamente, mai criteri di esclusione "
+        "dal catalogo. Le due dimensioni restano indipendenti e per singola app. "
+        "Ordine: priorità decrescente; facilità decrescente a parità di priorità. "
+        "Le voci con codice non provato, parziale o già riportato in audit "
+        "rimangono in **Verifica stato**, non nella coda delle nuove implementazioni.\n\n"
+        "## Tutte le capability ancora da valutare (" + str(len(cap_pending)) + ")\n\n"
+        + table(pend_headers, cap_rows(cap_pending)) + "\n"
         + "## Verificare lo stato prima di proporre sviluppo (" + str(len(cap_review)) + ")\n\n"
         + "Queste voci potrebbero essere **già in codice**. Non proporle come nuove feature "
         "finché non si controllano app, codice, SHA e test.\n\n"
