@@ -1,0 +1,18 @@
+# PDF-Unifier — Da valutare (8)
+
+Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, senza soglie di score. Non comprende integrazioni parziali, dichiarate o verificate.
+
+[Da valutare](DA_VALUTARE.md) · [Già integrati](GIA_INTEGRATI.md) · [Da verificare](DA_VERIFICARE.md) · [CSV ordinabile in Excel](TABELLA.csv) · [Scheda storica](../PDF-Unifier.md)
+
+| CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
+| --- | --- | --- | --- | --- | --- | --- |
+| [CAP-0134](../../REGISTRO_CAPABILITY/CAP-0134.md) | Triage e categorizzazione documenti importati | 98 | 65% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0134/README.md) | DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti italiani. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0118](../../REGISTRO_CAPABILITY/CAP-0118.md) | Confronto versioni documento e differenze verificabili | 85 | 85% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0118/README.md) | Il thread spiega diff testuale/semantico, non fornisce un'app donor: pattern di riferimento; attenzione a OCR e riconciliazione pagine. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0114](../../REGISTRO_CAPABILITY/CAP-0114.md) | Redazione PII e privacy copy di note e PDF | 85 | 40% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0114/README.md) | Non certifica copertura IBAN/credenziali o privacy su tutte le lingue; regex locali e NER opzionale, redaction irreversibile sul file esportato. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0133](../../REGISTRO_CAPABILITY/CAP-0133.md) | Ordine di lettura strutturato dei documenti | 83 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0133/README.md) | La doc descrive PP-DocLayoutV3; integrarlo e inferenza/progetto distinto dall'OCR. Controllare supporto linguistico e runtime mobile. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0128](../../REGISTRO_CAPABILITY/CAP-0128.md) | Estrazione campi da form in schede canoniche | 81 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0128/README.md) | FUNSD+ contiene annotazioni form con licenza custom; reference per layout, vietato incorporare dataset senza gate diritti. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0122](../../REGISTRO_CAPABILITY/CAP-0122.md) | Estrazione di tabelle strutturate da immagini e PDF | 79 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0122/README.md) | Paper2Any include extraction di tabelle in PPT, non un modulo Flutter pronto; integrare con CAP-0035 OCR locale e validazione cellule. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0030](../../REGISTRO_CAPABILITY/CAP-0030.md) | Professional Wallet CV attestati QR vCard | 75 | 85% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0030/README.md) | Integrare Document Workspace senza wallet parallelo |
+| [CAP-0125](../../REGISTRO_CAPABILITY/CAP-0125.md) | Ricostruzione valori numerici da grafici fotografati | 72 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0125/README.md) | Dataset sintetico di grafici lineari semplici: non dimostra accuratezza su grafici reali complessi; non sostituire dati originali. Verificare architettura e licensing nel Product Bible prima di integrare. |
+
+**Totale associazioni app:** 12. Nessuna modifica alla roadmap o al codice dell'app.

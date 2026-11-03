@@ -1,0 +1,3 @@
+App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
+WEB-012,DA_VALUTARE,CAP-0053,Sun Moon calcolo locale,93,95,PROPOSTA,Calcolo locale SunCalc con timezone corretto,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0053/README.md
+WEB-012,DA_VALUTARE,CAP-0078,Web utility location market provider adapter,81,60,PROPOSTA,Lingua diversa dal mercato e diritti provider,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0078/README.md

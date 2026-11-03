@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](In-Cucina-con-gli-Anime/DA_VALUTARE.md) · [Già integrati](In-Cucina-con-gli-Anime/GIA_INTEGRATI.md) · [Da verificare](In-Cucina-con-gli-Anime/DA_VERIFICARE.md) · [Tabella CSV](In-Cucina-con-gli-Anime/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0044](../REGISTRO_CAPABILITY/CAP-0044.md) | Ricette anti-spreco da ingredienti | P1 | 95 | 95% | Suggerire ricette fattibili usando ingredienti disponibili | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0044/README.md) | PROPOSTA | Non clonare TasteAI; validare differenziazione |

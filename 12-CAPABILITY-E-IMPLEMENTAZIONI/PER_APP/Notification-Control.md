@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](Notification-Control/DA_VALUTARE.md) · [Già integrati](Notification-Control/GIA_INTEGRATI.md) · [Da verificare](Notification-Control/DA_VERIFICARE.md) · [Tabella CSV](Notification-Control/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0055](../REGISTRO_CAPABILITY/CAP-0055.md) | Notifiche affidabili e diagnostics truth | P1 | 94 | 80% | Scheduled reminders con diagnosi scheduling e OS | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0055/README.md) | SOURCE_REPORTED | Permesso non equivale consegna reale |

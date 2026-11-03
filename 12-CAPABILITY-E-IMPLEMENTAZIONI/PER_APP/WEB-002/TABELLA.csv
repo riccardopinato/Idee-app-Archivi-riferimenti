@@ -1,0 +1,2 @@
+App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
+WEB-002,DA_VALUTARE,CAP-0054,Prezzi carburanti ufficiali,76,60,PROPOSTA,Dati nazionali diritti timestamp e valuta,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0054/README.md

@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](Agenda-per-Anna/DA_VALUTARE.md) · [Già integrati](Agenda-per-Anna/GIA_INTEGRATI.md) · [Da verificare](Agenda-per-Anna/DA_VERIFICARE.md) · [Tabella CSV](Agenda-per-Anna/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate | Esito sorgente Anna | Analisi compatibilita |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0134](../REGISTRO_CAPABILITY/CAP-0134.md) | Triage e categorizzazione documenti importati | P1 | 98 | 25% | Document Auto-Sorter: Classifica documenti importati e propone destinazione senza spostarli automaticamente. | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0134/README.md) | PROPOSTA | DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti italiani. Verificare architettura e licensing nel Product Bible prima di integrare. | OUT_OF_SCOPE | [Verifica](../../13-KIT-INTEGRAZIONE/CAP-0134/ANNA_SOURCE_COMPATIBILITA.md) |

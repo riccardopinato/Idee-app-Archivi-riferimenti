@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](World-Days/DA_VALUTARE.md) · [Già integrati](World-Days/GIA_INTEGRATI.md) · [Da verificare](World-Days/DA_VERIFICARE.md) · [Tabella CSV](World-Days/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0022](../REGISTRO_CAPABILITY/CAP-0022.md) | Localizzazione cinque o piu lingue | P1 | 94 | 80% | Fallback lingua dispositivo manuale e stringhe corrette | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0022/README.md) | SOURCE_REPORTED | Controllare parita lingua in native notifications |

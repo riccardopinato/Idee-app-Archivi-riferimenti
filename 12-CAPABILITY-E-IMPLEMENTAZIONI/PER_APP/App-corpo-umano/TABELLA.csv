@@ -1,0 +1,2 @@
+App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
+App-corpo-umano,DA_VALUTARE,CAP-0086,Sintesi vocale locale di note e contenuti editoriali,72,60,PROPOSTA,"Prima valutare Android TextToSpeech sistema e licenze voci; modelli scaricabili solo opt-in; VoiceStudio AGPL: pattern solo, no code copy closed-source; nessuna imitazione vocale senza consenso.",,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0086/README.md

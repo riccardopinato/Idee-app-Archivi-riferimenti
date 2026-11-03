@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](FocuSense/DA_VALUTARE.md) · [Già integrati](FocuSense/GIA_INTEGRATI.md) · [Da verificare](FocuSense/DA_VERIFICARE.md) · [Tabella CSV](FocuSense/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0065](../REGISTRO_CAPABILITY/CAP-0065.md) | Routine wearable e battery optimization audit | P1 | 94 | 80% | Matrice dei limiti foreground service batteria sensori | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0065/README.md) | PROPOSTA | Test OEM reale multi dispositivo e Doze |

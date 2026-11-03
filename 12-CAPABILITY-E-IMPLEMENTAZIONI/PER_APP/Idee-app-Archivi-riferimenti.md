@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](Idee-app-Archivi-riferimenti/DA_VALUTARE.md) · [Già integrati](Idee-app-Archivi-riferimenti/GIA_INTEGRATI.md) · [Da verificare](Idee-app-Archivi-riferimenti/DA_VERIFICARE.md) · [Tabella CSV](Idee-app-Archivi-riferimenti/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0090](../REGISTRO_CAPABILITY/CAP-0090.md) | Controllo scope creep e dipendenze nelle PR | P1 | 92 | 80% | Segnalare file e comportamenti fuori dallo scope autorizzato prima del merge. | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0090/README.md) | PROPOSTA | Verificare se AppLab copre gia la stessa responsabilita: solo gate advisory a diff bounded confrontato con PR scope, niente agente ulteriore o trigger duplicati. Controllare licenza di ogni skill e le sue dipendenze. |
