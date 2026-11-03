@@ -2,7 +2,7 @@
 
 ## Priorità da fare vs già integrate
 
-**[DA_VALUTARE.md](../DA_VALUTARE.md)** separa le capability ancora proposte da quelle da verificare, e mostra per prime solo le combinazioni **Score ≥85 / Facilità ≥85%** della specifica app. **[GIA_INTEGRATI.md](../GIA_INTEGRATI.md)** elenca le implementazioni con prova puntuale (SHA/PR/CI dove disponibile). Il ranking globale qui rimane *storico/analitico* e non va usato per creare una coda di lavoro senza il filtro stati.
+**[DA_VALUTARE.md](../DA_VALUTARE.md)** separa le capability ancora proposte da quelle da verificare e mostra **tutte le associazioni app-capability non integrate**, ordinate per Score di priorità e, a parità, per facilità. **Nessuna soglia 85/85 fissa:** valori diversi sono sempre inclusi; le soglie sono filtri applicabili solo su richiesta. **[GIA_INTEGRATI.md](../GIA_INTEGRATI.md)** elenca le implementazioni con prova puntuale (SHA/PR/CI dove disponibile). Il ranking globale qui rimane *storico/analitico* e non va usato per creare una coda di lavoro senza il filtro stati.
 
 La rigenerazione è inclusa in `python3 scripts/build_catalog.py`; `--check` controlla che i due file non siano obsoleti.
 
