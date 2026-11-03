@@ -6,12 +6,24 @@ on:
     paths:
       - "12-CAPABILITY-E-IMPLEMENTAZIONI/**"
       - "scripts/build_catalog.py"
+      - "scripts/build_status_views.py"
+      - "tests/status_views_test.py"
+      - "11-NUOVE-IDEE/IA-2026-11-02/INTEGRATION_STATUS.json"
+      - "11-NUOVE-IDEE/IA-2026-11-02/RANKING_100_COMPLETO.md"
+      - "DA_VALUTARE.md"
+      - "GIA_INTEGRATI.md"
       - ".github/workflows/capability-catalog.yml"
   pull_request:
     branches: [main]
     paths:
       - "12-CAPABILITY-E-IMPLEMENTAZIONI/**"
       - "scripts/build_catalog.py"
+      - "scripts/build_status_views.py"
+      - "tests/status_views_test.py"
+      - "11-NUOVE-IDEE/IA-2026-11-02/INTEGRATION_STATUS.json"
+      - "11-NUOVE-IDEE/IA-2026-11-02/RANKING_100_COMPLETO.md"
+      - "DA_VALUTARE.md"
+      - "GIA_INTEGRATI.md"
       - ".github/workflows/capability-catalog.yml"
   workflow_dispatch:
 
@@ -29,3 +41,5 @@ jobs:
         run: python3 scripts/build_catalog.py --check
       - name: Test evidence state promotions
         run: python3 -m unittest discover -s tests -p 'capability_registry_test.py' -v
+      - name: Test integration-vs-pending partition
+        run: python3 -m unittest discover -s tests -p 'status_views_test.py' -v
