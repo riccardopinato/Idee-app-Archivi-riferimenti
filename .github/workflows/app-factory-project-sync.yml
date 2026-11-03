@@ -1,0 +1,63 @@
+name: App Factory Project mirror (non-destructive)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Pilot only, or pilot + automatic full import
+        type: choice
+        required: true
+        default: bootstrap
+        options:
+          - pilot
+          - bootstrap
+          - full
+  push:
+    branches: [main]
+    paths:
+      - "12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY.json"
+      - "12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/**/TABELLA.csv"
+      - "scripts/projects_sync.py"
+      - ".github/workflows/app-factory-project-sync.yml"
+  schedule:
+    - cron: "20 9 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: app-factory-projects-canonical-mirror
+  cancel-in-progress: false
+
+jobs:
+  project-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout source without writing repository data
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Validate complete canon and 48 per-app views
+        run: python3 scripts/build_catalog.py --check
+
+      - name: Offline pilot and reconciliation tests
+        run: python3 -m unittest discover -s tests -p 'projects_sync_test.py' -v
+
+      - name: Full registry dry-run (no project permissions needed)
+        run: python3 scripts/projects_sync.py --mode dry-run
+
+      - name: Sync GitHub Project when authorized
+        env:
+          APP_FACTORY_PROJECT_TOKEN: ${{ secrets.APP_FACTORY_PROJECT_TOKEN }}
+          REQUESTED_MODE: ${{ github.event.inputs.mode }}
+        shell: bash
+        run: |
+          if [ -z "$APP_FACTORY_PROJECT_TOKEN" ]; then
+            echo "::notice::PROJECT_SYNC_BLOCKED: missing repository secret APP_FACTORY_PROJECT_TOKEN; source files preserved"
+            echo "PROJECT_SYNC_BLOCKED — The project has not been created or synced. Add a token with GitHub Projects write permission to repository Actions secrets." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          MODE="${REQUESTED_MODE:-bootstrap}"
+          python3 scripts/projects_sync.py --mode "$MODE"
+          echo "PROJECT_SYNC_VERIFIED — Completed mode $MODE without deleting source records or other project items." >> "$GITHUB_STEP_SUMMARY"

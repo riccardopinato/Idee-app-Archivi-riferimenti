@@ -1,5 +1,9 @@
 # Idee app — archivio e riferimenti
 
+## GitHub Projects — dashboard interattiva opzionale
+
+[Setup, pilota di sei elementi e sincronizzazione conservativa](12-CAPABILITY-E-IMPLEMENTAZIONI/GITHUB_PROJECTS_MIRROR.md). Uno script e un workflow testabili offline preparano un solo Project con campi numerici e viste per stato, alimentato da tutte le 48 app/342 associazioni. **Il Project live si attiva soltanto dopo aver configurato il segreto `APP_FACTORY_PROJECT_TOKEN` con permesso GitHub Projects**; senza credenziali, nessuna creazione o import è dichiarato eseguito. Nessun file o cartella dell'archivio viene eliminato.
+
 ## Classifiche operative — cosa fare adesso
 
 - **[Da valutare](DA_VALUTARE.md)**: opportunità **non ancora integrate** con priorità/facilità per app, mostrandole **tutte**, senza soglie predefinite. Le voci che potrebbero essere già implementate stanno in **Verifica stato**, non nella coda di nuove implementazioni.

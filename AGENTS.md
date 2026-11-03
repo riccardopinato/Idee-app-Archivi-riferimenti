@@ -43,3 +43,10 @@
 - Per ciascuna app, usare le viste generate `12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/<app>/DA_VALUTARE.md`, `GIA_INTEGRATI.md` e `DA_VERIFICARE.md`; l'indice è `PER_APP/README.md`.
 - I relativi `TABELLA.csv` servono a ricercare su GitHub e a ordinare esternamente in Excel; non sono un secondo database canonico. Le tabelle Markdown non supportano ordinamento interattivo delle intestazioni.
 - Tutte le viste si derivano unicamente da `REGISTRO_CAPABILITY.json` e dalle evidenze già registrate mediante `scripts/build_status_views.py`; nessun filtro numerico predefinito e nessuna duplicazione di feature integrata nella stessa app.
+
+## GitHub Projects V2 — mirror consultivo, NON source of truth
+
+- Script `scripts/projects_sync.py`, workflow `.github/workflows/app-factory-project-sync.yml`, istruzioni `12-CAPABILITY-E-IMPLEMENTAZIONI/GITHUB_PROJECTS_MIRROR.md`.
+- Modalità predefinita solo `dry-run`, senza token/network. Mutazioni live autorizzate solo quando il segreto GitHub Actions `APP_FACTORY_PROJECT_TOKEN` è presente; su `bootstrap`, pilot di 6 esempi rappresentativi e controllo lettura da API **prima** di import completo per tutte le app.
+- Mai cancellare, archiviare o alterare sorgenti, issue esistenti, proprietà dei progetti app, record non marcati o viste personalizzate. L'esistenza del codice di sync NON equivale all'esistenza del Project reale.
+- Prove di successo: URL live, `PILOT_PASS`, `FULL_SYNC_PASS` e verifica conteggi. Se non ci sono permessi GitHub Projects, riferire `BLOCKED` e lasciare i repository invariati.

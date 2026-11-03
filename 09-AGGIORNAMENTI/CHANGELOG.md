@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-03 — GitHub Projects V2 (pilota e mirror automatico non distruttivo)
+- Introdotti `scripts/projects_sync.py`, regression test e workflow manuale/push/cron per un solo Project riutilizzabile attraverso tutte le 48 app, su 342 combinazioni CAP/app.
+- Creazione/ripresa Progetto V2 e 4 campi ordinabili tramite GraphQL, 4 viste; primo pilot di 6 elementi su 3 stati con rilettura, poi estensione automatica a tutte le coppie quando i gate live passano.
+- Source of truth non cambia. Nessuna cancellazione, archiviazione o modifica di cartelle storiche; nessuna app toccata. `APP_FACTORY_PROJECT_TOKEN` richiesto per esecuzione live: prima dell'attivazione il sistema esegue **solo test offline/dry-run**, nessuna creazione Projects dichiarata.
+- Riferimento operativo: `12-CAPABILITY-E-IMPLEMENTAZIONI/GITHUB_PROJECTS_MIRROR.md`.
+
+
 ## 2026-11-03 — Sottocataloghi per app con stati distinti
 - Sotto `12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/` ogni app ha tre file generati: `DA_VALUTARE.md`, `GIA_INTEGRATI.md`, `DA_VERIFICARE.md`, più `TABELLA.csv` con punteggi numerici esportabili e ricercabili nell'anteprima GitHub.
 - Le schede storiche `PER_APP/<app>.md` non sono eliminate e puntano alle viste operative. Indice `PER_APP/README.md` con conteggi per app.

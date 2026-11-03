@@ -1,5 +1,9 @@
 # Catalogo centrale capability — App Factory
 
+## GitHub Projects — dashboard interattiva
+
+[Sincronizzazione unidirezionale, test pilota e procedura di attivazione](GITHUB_PROJECTS_MIRROR.md). Script `scripts/projects_sync.py`: verifica tutte le 48 app, primo test su 6 associazioni, estensione automatica all'intero catalogo soltanto dopo riscontro live e credenziali Projects autorizzate. Le schede e tutti i dati originali restano invariati.
+
 ## Priorità da fare vs già integrate
 
 **[DA_VALUTARE.md](../DA_VALUTARE.md)** separa le capability ancora proposte da quelle da verificare e mostra **tutte le associazioni app-capability non integrate**, ordinate per Score di priorità e, a parità, per facilità. **Nessuna soglia 85/85 fissa:** valori diversi sono sempre inclusi; le soglie sono filtri applicabili solo su richiesta. **[GIA_INTEGRATI.md](../GIA_INTEGRATI.md)** elenca le implementazioni con prova puntuale (SHA/PR/CI dove disponibile). Il ranking globale qui rimane *storico/analitico* e non va usato per creare una coda di lavoro senza il filtro stati.
