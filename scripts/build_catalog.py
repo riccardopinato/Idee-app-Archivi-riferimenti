@@ -192,8 +192,10 @@ def main():
         problems.extend(sorted(actual_cards-expected_cards))
     actual_apps = {p.name for p in (BASE/"PER_APP").glob("*.md")}
     expected_apps = {app + ".md" for app in apps}
-    if actual_apps - expected_apps:
-        problems.extend(sorted(actual_apps-expected_apps))
+    # PER_APP/README.md is the generated status-view directory index.
+    allowed_app_files = expected_apps | {"README.md"}
+    if actual_apps - allowed_app_files:
+        problems.extend(sorted(actual_apps-allowed_app_files))
     if problems:
         raise SystemExit("Catalogue drift:\n" + "\n".join(problems[:30]))
     print(f"VALID: {len(records)} capabilities, {len(apps)} app names, "
