@@ -505,18 +505,37 @@ def select_pending(rows, existing, fields, project_id, limit=MAX_ITEMS_PER_RUN):
     return changed[:limit], len(changed)
 
 
-def assert_remote(api, number, rows, fields):
-    existing = read_project_items(api, number)
-    for row in rows:
-        item = existing.get(row_key(row))
-        if not item:
-            raise RuntimeError("Pilot/full verification missing pair " + repr(row_key(row)))
-        changes = changed_inputs(row, item, fields, "verify")
-        if changes:
-            raise RuntimeError("Pilot/full verification field mismatch " +
-                               repr(row_key(row)))
-    print("REMOTE_VERIFIED", len(rows))
-    return existing
+def assert_remote(api, number, rows, fields, max_attempts=8):
+    """Verify remote read-after-write, tolerating eventual Project indexing.
+
+    NEVER re-create or update any items inside this verification loop. GitHub
+    Projects may initially omit a just-created draft from item queries; wait
+    for the remote state to settle instead of treating it as missing forever.
+    """
+    for attempt in range(max_attempts):
+        existing = read_project_items(api, number)
+        problems = []
+        for row in rows:
+            item = existing.get(row_key(row))
+            if not item:
+                problems.append("missing " + repr(row_key(row)))
+                continue
+            changes = changed_inputs(row, item, fields, "verify")
+            if changes:
+                problems.append("field mismatch " + repr(row_key(row)))
+        if not problems:
+            print("REMOTE_VERIFIED", len(rows))
+            return existing
+        if attempt == max_attempts - 1:
+            raise RuntimeError(
+                "Pilot/full verification did not settle after " +
+                str(max_attempts) + " reads: " + "; ".join(problems[:8])
+            )
+        delay = min(3 + attempt * 2, 12)
+        print("REMOTE_NOT_YET_CONSISTENT",
+              "attempt", attempt + 1, "of", max_attempts,
+              "pending", len(problems), "sleep_seconds", delay)
+        time.sleep(delay)
 
 
 def main(argv=None):
