@@ -8,8 +8,8 @@ No delete, archive, close, issue creation or visibility-change mutation exists h
 Modes:
   dry-run   Validate every app/CAP pair, print counts and sample without any API.
   pilot     Upsert 6 category-spanning records and read them back.
-  bootstrap Pilot + verify, then upsert and verify ALL source records.
-  full      Reconcile every source pair, without removing old project items.
+  bootstrap Pilot + verify, then upsert a safe bounded batch; resume on next run.
+  full      Reconcile a safe bounded batch, without removing old project items.
 
 Live use requires APP_FACTORY_PROJECT_TOKEN (classic PAT with 'project' scope,
 or an appropriately privileged GitHub App installation token).
@@ -32,6 +32,8 @@ REGISTRY = BASE / "REGISTRO_CAPABILITY.json"
 PROJECT_TITLE = "App Factory — Capability Dashboard"
 OWNER = "riccardopinato"
 TOKEN_ENV = "APP_FACTORY_PROJECT_TOKEN"
+MAX_ITEMS_PER_RUN = 180  # Respect GitHub secondary hourly content-creation limits.
+MUTATION_INTERVAL_SECONDS = 1.30  # >=1 second between mutative API requests.
 CATEGORIES = {
     "DA_VALUTARE": "Da valutare",
     "GIA_INTEGRATI": "Già integrati",
@@ -159,6 +161,7 @@ class GitHubGraphQL:
         if not token:
             raise ValueError("Missing " + TOKEN_ENV)
         self.token = token
+        self.last_mutation = 0.0
 
     def call(self, query, variables=None):
         body = json.dumps({"query": query, "variables": variables or {}}).encode("utf-8")
@@ -172,6 +175,11 @@ class GitHubGraphQL:
         # Retrying an unknown-result mutation can duplicate a newly-created item.
         # Only reads can be retried; on mutation failure the next run re-reads.
         is_mutation = query.lstrip().startswith("mutation")
+        if is_mutation:
+            elapsed = time.monotonic() - self.last_mutation
+            if elapsed < MUTATION_INTERVAL_SECONDS:
+                time.sleep(MUTATION_INTERVAL_SECONDS - elapsed)
+            self.last_mutation = time.monotonic()
         max_attempts = 1 if is_mutation else 3
         for attempt in range(max_attempts):
             try:
@@ -487,6 +495,16 @@ def upsert(api, project, fields, rows, existing):
          "unchanged": unchanged, "deleted": 0}, ensure_ascii=False))
 
 
+def select_pending(rows, existing, fields, project_id, limit=MAX_ITEMS_PER_RUN):
+    """Only send records that are absent or have out-of-date owned field values."""
+    changed = [
+        row for row in rows
+        if row_key(row) not in existing or
+        changed_inputs(row, existing[row_key(row)], fields, project_id)
+    ]
+    return changed[:limit], len(changed)
+
+
 def assert_remote(api, number, rows, fields):
     existing = read_project_items(api, number)
     for row in rows:
@@ -531,9 +549,25 @@ def main(argv=None):
         if args.mode == "pilot":
             return
     if args.mode in ("bootstrap", "full"):
-        upsert(api, project, fields, rows, existing)
-        assert_remote(api, project["number"], rows, fields)
-        print("FULL_SYNC_PASS", len(rows), project["url"])
+        if args.mode == "full":
+            # Do not bypass the already-tested category-spanning pilot.
+            assert_remote(api, project["number"], sample, fields)
+        batch, pending_total = select_pending(
+            rows, existing, fields, project["id"]
+        )
+        if batch:
+            upsert(api, project, fields, batch, existing)
+            assert_remote(api, project["number"], batch, fields)
+        remainder = pending_total - len(batch)
+        if remainder:
+            # GitHub's secondary hourly content-generation limits make a
+            # single 342-item creation burst unsafe. Future scheduled runs
+            # resume from the saved stable markers, never deleting records.
+            print("BATCH_SYNC_PASS", len(batch), "REMAINING", remainder,
+                  "PROJECT", project["url"])
+        else:
+            assert_remote(api, project["number"], rows, fields)
+            print("FULL_SYNC_PASS", len(rows), project["url"])
 
 
 if __name__ == "__main__":
