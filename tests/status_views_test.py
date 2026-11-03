@@ -1,4 +1,6 @@
 """Regression tests for working-list vs source-integrated separation."""
+import csv
+import io
 import json
 import sys
 import unittest
@@ -46,6 +48,52 @@ class OperationalStatusViewTests(unittest.TestCase):
         self.assertIn("| 94 | 80% | PROPOSTA |", pending)
         # Verified source integrations are still excluded.
         self.assertNotIn("| Agenda-per-Anna | [CAP-0001]", pending)
+
+    def test_every_app_is_partitioned_once_and_exported(self):
+        data = json.loads((ROOT / "12-CAPABILITY-E-IMPLEMENTAZIONI"
+                           / "REGISTRO_CAPABILITY.json").read_text(encoding="utf-8"))
+        expected_by_app = {}
+        for rec in data["records"]:
+            for app in rec["app_states"]:
+                expected_by_app.setdefault(app, set()).add(rec["id"])
+        views = render()
+        self.assertIn("12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/README.md", views)
+        for app, expected_ids in expected_by_app.items():
+            with self.subTest(app=app):
+                folder = "12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/" + app + "/"
+                groups = {}
+                for state in ("DA_VALUTARE", "GIA_INTEGRATI", "DA_VERIFICARE"):
+                    content = views[folder + state + ".md"]
+                    # Each data row begins with its own canonical CAP link.
+                    import re
+                    ids = set(re.findall(r"^\| \[CAP-(\d{4})\]", content, re.M))
+                    groups[state] = {"CAP-" + code for code in ids}
+                    self.assertEqual(
+                        len(ids), content.count("](../../REGISTRO_CAPABILITY/"))
+                self.assertEqual(
+                    set.union(*groups.values()), expected_ids)
+                for left in groups:
+                    for right in groups:
+                        if left != right:
+                            self.assertFalse(groups[left] & groups[right])
+                with io.StringIO(views[folder + "TABELLA.csv"]) as stream:
+                    exported = list(csv.DictReader(stream))
+                self.assertEqual(len(exported), len(expected_ids))
+                self.assertEqual({r["CAP_ID"] for r in exported}, expected_ids)
+                self.assertEqual({r["Categoria"] for r in exported},
+                                 {k for k, v in groups.items() if v})
+
+    def test_one_app_integrated_does_not_mark_other_app_integrated(self):
+        views = render()
+        base = "12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/"
+        anna = views[base + "Agenda-per-Anna/GIA_INTEGRATI.md"]
+        focus = views[base + "FocuSense/DA_VALUTARE.md"]
+        self.assertIn("CAP-0001", anna)
+        self.assertIn("CAP-0001", focus)
+        self.assertIn("CAP-0075",
+                      views[base + "Agenda-per-Anna/DA_VERIFICARE.md"])
+        self.assertNotIn("CAP-0075",
+                         views[base + "Agenda-per-Anna/DA_VALUTARE.md"])
 
     def test_repository_views_match_generator(self):
         for name, expected in render().items():

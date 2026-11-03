@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](Design-App/DA_VALUTARE.md) · [Già integrati](Design-App/GIA_INTEGRATI.md) · [Da verificare](Design-App/DA_VERIFICARE.md) · [Tabella CSV](Design-App/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0023](../REGISTRO_CAPABILITY/CAP-0023.md) | Design System Flutter token-first | P2 | 89 | 80% | Tokens tema componenti tipografia spacing e radius | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0023/README.md) | SOURCE_REPORTED | Riuso pattern non diventa Golden automaticamente |

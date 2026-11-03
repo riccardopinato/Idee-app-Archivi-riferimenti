@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](BeerClass-AI/DA_VALUTARE.md) · [Già integrati](BeerClass-AI/GIA_INTEGRATI.md) · [Da verificare](BeerClass-AI/DA_VERIFICARE.md) · [Tabella CSV](BeerClass-AI/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0035](../REGISTRO_CAPABILITY/CAP-0035.md) | OCR immagini e documenti on device | P1 | 92 | 80% | Motore OCR condivisibile senza creare servizio cloud | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0035/README.md) | PROPOSTA | Audit licenza ML Kit e processi media originali |

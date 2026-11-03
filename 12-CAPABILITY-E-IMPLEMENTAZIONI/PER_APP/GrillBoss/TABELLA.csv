@@ -1,0 +1,2 @@
+App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
+GrillBoss,DA_VALUTARE,CAP-0052,Meteo contestuale finestre outdoor,85,75,PROPOSTA,API gratuita meteo non commerciale non usare con Ads,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0052/README.md

@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](AppLab/DA_VALUTARE.md) · [Già integrati](AppLab/GIA_INTEGRATI.md) · [Da verificare](AppLab/DA_VERIFICARE.md) · [Tabella CSV](AppLab/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0067](../REGISTRO_CAPABILITY/CAP-0067.md) | Release Android firmato artifact provenance | P1 | 94 | 80% | Workflow build firma stabile SHA e manifest | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0067/README.md) | SOURCE_REPORTED | Artifact build non e device certification |

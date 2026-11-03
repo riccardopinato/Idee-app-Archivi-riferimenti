@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](CashMate-AI/DA_VALUTARE.md) · [Già integrati](CashMate-AI/GIA_INTEGRATI.md) · [Da verificare](CashMate-AI/DA_VERIFICARE.md) · [Tabella CSV](CashMate-AI/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0034](../REGISTRO_CAPABILITY/CAP-0034.md) | OCR scontrino e parsing spese | P2 | 90 | 80% | Estrarre data totale negozio da scontrino | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0034/README.md) | PROPOSTA | OCR locale poi conferma prima di transazione |

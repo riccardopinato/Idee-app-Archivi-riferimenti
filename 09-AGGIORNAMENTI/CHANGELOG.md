@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-03 — Sottocataloghi per app con stati distinti
+- Sotto `12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/` ogni app ha tre file generati: `DA_VALUTARE.md`, `GIA_INTEGRATI.md`, `DA_VERIFICARE.md`, più `TABELLA.csv` con punteggi numerici esportabili e ricercabili nell'anteprima GitHub.
+- Le schede storiche `PER_APP/<app>.md` non sono eliminate e puntano alle viste operative. Indice `PER_APP/README.md` con conteggi per app.
+- Una singola classificazione per coppia app/CAP, nessuna soglia arbitraria e gestione prudente di source riportate/riuso parziale. Test di regressione coprono inventario e mutua esclusione delle tre categorie.
+- Nessun cambio di stato o di codice delle app: è riorganizzazione derivata dal registro canonico.
+
+
 ## 2026-11-03 — Correzione: nessuna soglia fissa per le idee da valutare
 - La soglia **85/85** citata in precedenza era soltanto un esempio dell’utente e **non è un criterio operativo permanente**.
 - `DA_VALUTARE.md` ora comprende tutte le combinazioni app-capability non integrate, ordinate per Score e facilità come due dimensioni indipendenti; esempi reali 94/80 e 90/80 non vengono più relegati in una categoria di minor interesse.

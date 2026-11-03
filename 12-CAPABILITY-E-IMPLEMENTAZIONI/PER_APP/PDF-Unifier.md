@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](PDF-Unifier/DA_VALUTARE.md) · [Già integrati](PDF-Unifier/GIA_INTEGRATI.md) · [Da verificare](PDF-Unifier/DA_VERIFICARE.md) · [Tabella CSV](PDF-Unifier/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0037](../REGISTRO_CAPABILITY/CAP-0037.md) | Operazioni PDF split merge rotate lock | P1 | 98 | 95% | PDF engine riusabile per operazioni locali | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0037/README.md) | SOURCE_REPORTED | Verificare motore originale licenza e compatibilita Flutter |

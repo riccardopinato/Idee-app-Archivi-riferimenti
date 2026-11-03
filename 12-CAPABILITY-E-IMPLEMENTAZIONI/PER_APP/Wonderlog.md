@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](Wonderlog/DA_VALUTARE.md) · [Già integrati](Wonderlog/GIA_INTEGRATI.md) · [Da verificare](Wonderlog/DA_VERIFICARE.md) · [Tabella CSV](Wonderlog/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0017](../REGISTRO_CAPABILITY/CAP-0017.md) | Universal Delete Trash e lifecycle audit | P1 | 94 | 80% | Delete soft restore purge riferimenti cascata reminder media | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0017/README.md) | PROPOSTA | Regression entita-per-entita e file orfani; niente duplicazione lifecycle |

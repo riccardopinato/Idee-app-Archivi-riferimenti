@@ -2,6 +2,8 @@
 
 Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.
 
+**Viste operative per questa app:** [Da valutare](TrailPath/DA_VALUTARE.md) · [Già integrati](TrailPath/GIA_INTEGRATI.md) · [Da verificare](TrailPath/DA_VERIFICARE.md) · [Tabella CSV](TrailPath/TABELLA.csv). Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.
+
 | ID | Capability | Priorita | Score | Facilita integrazione (%) | Descrizione breve | Kit tecnico | Stato nell'app | Prossimo gate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0077](../REGISTRO_CAPABILITY/CAP-0077.md) | Health check permessi nativi per-capability | P1 | 94 | 80% | Diagnosi degli stati di sensori accessi e notifiche | [Apri](../../13-KIT-INTEGRAZIONE/CAP-0077/README.md) | PROPOSTA | Anna: QA Android reale per revoca permessi, canali, OEM exact alarm, calendario e push; stato AVAILABLE non dimostra consegna. |

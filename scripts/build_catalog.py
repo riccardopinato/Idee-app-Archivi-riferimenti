@@ -162,6 +162,12 @@ def main():
         versions[f"PER_APP/{app}.md"] = (
             f"# {app} — capability e priorita\n\n"
             "Fonte canonica: `../REGISTRO_CAPABILITY.json`. Stati di audit, non certificazioni.\n\n"
+            "**Viste operative per questa app:** "
+            f"[Da valutare]({app}/DA_VALUTARE.md) · "
+            f"[Già integrati]({app}/GIA_INTEGRATI.md) · "
+            f"[Da verificare]({app}/DA_VERIFICARE.md) · "
+            f"[Tabella CSV]({app}/TABELLA.csv). "
+            "Lo storico seguente conserva tutte le associazioni ma non è la coda di nuove implementazioni.\n\n"
             + md_table(headers, rows)
             + f"\n**Totale associazioni:** {len(items)}. Non modificare automaticamente la roadmap del prodotto.\n"
         )
@@ -186,8 +192,10 @@ def main():
         problems.extend(sorted(actual_cards-expected_cards))
     actual_apps = {p.name for p in (BASE/"PER_APP").glob("*.md")}
     expected_apps = {app + ".md" for app in apps}
-    if actual_apps - expected_apps:
-        problems.extend(sorted(actual_apps-expected_apps))
+    # PER_APP/README.md is the generated status-view directory index.
+    allowed_app_files = expected_apps | {"README.md"}
+    if actual_apps - allowed_app_files:
+        problems.extend(sorted(actual_apps-allowed_app_files))
     if problems:
         raise SystemExit("Catalogue drift:\n" + "\n".join(problems[:30]))
     print(f"VALID: {len(records)} capabilities, {len(apps)} app names, "

@@ -1,0 +1,3 @@
+App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
+Notification-Control,DA_VERIFICARE,CAP-0055,Notifiche affidabili e diagnostics truth,94,80,SOURCE_REPORTED,Permesso non equivale consegna reale,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0055/README.md
+Notification-Control,DA_VERIFICARE,CAP-0056,Notification listener multi-modulo,76,60,SOURCE_REPORTED,Non accedere a messaggi privati fuori scopo,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0056/README.md

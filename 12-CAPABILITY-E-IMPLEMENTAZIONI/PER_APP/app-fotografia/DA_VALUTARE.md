@@ -1,0 +1,22 @@
+# app-fotografia — Da valutare (12)
+
+Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, senza soglie di score. Non comprende integrazioni parziali, dichiarate o verificate.
+
+[Da valutare](DA_VALUTARE.md) · [Già integrati](GIA_INTEGRATI.md) · [Da verificare](DA_VERIFICARE.md) · [CSV ordinabile in Excel](TABELLA.csv) · [Scheda storica](../app-fotografia.md)
+
+| CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
+| --- | --- | --- | --- | --- | --- | --- |
+| [CAP-0039](../../REGISTRO_CAPABILITY/CAP-0039.md) | EXIF privacy safe copy | 98 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0039/README.md) | Niente modifica di originali e UI attributi rimossi |
+| [CAP-0053](../../REGISTRO_CAPABILITY/CAP-0053.md) | Sun Moon calcolo locale | 93 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0053/README.md) | Calcolo locale SunCalc con timezone corretto |
+| [CAP-0040](../../REGISTRO_CAPABILITY/CAP-0040.md) | Deduplicazione foto per hash percettivo | 87 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0040/README.md) | Verificare algoritmo reale e precisione duplicati quasi identici |
+| [CAP-0089](../../REGISTRO_CAPABILITY/CAP-0089.md) | Registro locale esperimenti con ipotesi e risultato | 87 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0089/README.md) | Riutilizzare evidence/versioning AppLab e Git; nuovi record solo per ipotesi, misura, input baseline, output e decisione, senza seconda authority CI o agent runtime. |
+| [CAP-0041](../../REGISTRO_CAPABILITY/CAP-0041.md) | Palette da foto e golden hour | 86 | 95% | ROADMAP_STORICA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0041/README.md) | SunCalc locale e colori originali con file donor verificato |
+| [CAP-0052](../../REGISTRO_CAPABILITY/CAP-0052.md) | Meteo contestuale finestre outdoor | 85 | 75% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0052/README.md) | API gratuita meteo non commerciale non usare con Ads |
+| [CAP-0130](../../REGISTRO_CAPABILITY/CAP-0130.md) | Generazione di slide e figure tecniche modificabili | 81 | 60% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0130/README.md) | Paper2Any dichiara Paper2PPT e licenza Apache-2.0, ma la demo pubblica era in errore; il backend/AI non va importato automaticamente. / Paper2Any dichiara Paper2Figure e Paper2PPT nella stessa codebase; registrata come modalita dello stesso CAP di Notes-to-Slides. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0082](../../REGISTRO_CAPABILITY/CAP-0082.md) | Deterministic UI design artwork | 79 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0082/README.md) | Non generare asset coperti da diritti |
+| [CAP-0091](../../REGISTRO_CAPABILITY/CAP-0091.md) | Snapshot condivisibile della vista mappa senza dati privati | 78 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0091/README.md) | Distinguere view state (camera, zoom, layers) da percorso/ricordi privati; share URL/file su azione volontaria, nessuna chiave API, token o posizione personale inclusa. |
+| [CAP-0136](../../REGISTRO_CAPABILITY/CAP-0136.md) | Scontorno foto in elementi canvas riutilizzabili | 76 | 60% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0136/README.md) | Segment Anything WebGPU demo esiste; runtime Android/offline, peso del modello e licenza degli asset da verificare. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0140](../../REGISTRO_CAPABILITY/CAP-0140.md) | Analisi forense non conclusiva delle immagini | 63 | 40% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0140/README.md) | DetectiveSAM ha licenza dichiarata other; non importare/copiare senza chiarimento. Le evidenze di manipolazione non certificano originalita o intenzione. Verificare architettura e licensing nel Product Bible prima di integrare. |
+| [CAP-0143](../../REGISTRO_CAPABILITY/CAP-0143.md) | Biglietti ricordo con QR e accesso revocabile | 62 | 40% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0143/README.md) | Blocco disclosure pubblica: mai pubblicare contenuto privato automaticamente. Security review token/noindex/EXIF/URL leak/revoca, termini hosting e Privacy #215. |
+
+**Totale associazioni app:** 16. Nessuna modifica alla roadmap o al codice dell'app.
