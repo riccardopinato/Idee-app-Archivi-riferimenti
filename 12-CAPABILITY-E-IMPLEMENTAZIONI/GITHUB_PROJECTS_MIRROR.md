@@ -20,8 +20,8 @@ Le 48 app si consultano filtrando il campo `App`; non creare 48 pannelli permane
 `scripts/projects_sync.py` offre quattro modalità:
 - `--mode dry-run` (default): legge tutti i CSV derivati per app, incrocia ID, nomi, punteggi e facilità contro il JSON canonico; **non necessita token** e non chiama GitHub.
 - `--mode pilot`: crea/recupera il Project, assicura campi/viste, importa **6 associazioni** che coprono le tre categorie, rileggendo da API Project i valori e fallendo se non corrispondono.
-- `--mode bootstrap`: esegue lo stesso pilota e, **solo dopo PILOT_PASS**, estende automaticamente l'import a tutte le associazioni canoniche e le rilegge.
-- `--mode full`: sincronizzazione incrementale di tutte le righe; non elimina elementi non più presenti nell'archivio.
+- `--mode bootstrap`: esegue lo stesso pilota e, **solo dopo PILOT_PASS**, avvia un batch di massimo **180 associazioni** da aggiungere/aggiornare. A import incompleto stampa `BATCH_SYNC_PASS ... REMAINING N`; i run successivi riprendono automaticamente dalle chiavi stabili. `FULL_SYNC_PASS` compare solo al completamento effettivo di tutte le associazioni e della rilettura API.
+- `--mode full`: sincronizzazione incrementale di un batch di massimo 180 righe, consentita soltanto dopo un pilot già verificato; non elimina elementi non più presenti nell'archivio.
 
 Il parser usa soltanto `PER_APP/<app>/TABELLA.csv` già generato da `scripts/build_catalog.py` e prima richiede `--check`; nessun punteggio minimo arbitrario (85/85 non è un criterio automatico).
 
@@ -31,16 +31,17 @@ Stato al momento della prima implementazione: **147 CAP**, **48 app**, **342 ass
 
 1. Su GitHub creare un **personal access token (classic)** con scope `project` oppure un token GitHub App con autorizzazione Projects scrittura. Meglio privilegi minimi compatibili; NON inserire il token nel repository o in chat.
 2. Nel repository `riccardopinato/Idee-app-Archivi-riferimenti`, aprire **Settings → Secrets and variables → Actions → New repository secret**, nome `APP_FACTORY_PROJECT_TOKEN`, valore del token.
-3. Aprire **Actions → App Factory Project mirror (non-destructive) → Run workflow**, modalità `bootstrap`; in alternativa il cron/push attiva automaticamente `bootstrap` quando il segreto esiste.
-4. Verificare l'URL del Project nel log di Actions, `PILOT_PASS`, `REMOTE_VERIFIED`, `FULL_SYNC_PASS` e il conteggio delle righe. Se l'API è bloccata, il processo termina senza fingere un import eseguito.
+3. Aprire **Actions → App Factory Project mirror (non-destructive) → Run workflow**, modalità `bootstrap`; in alternativa il cron/push attiva automaticamente `bootstrap` quando il segreto esiste. Il primo passaggio può essere soltanto parziale per rispettare i limiti di GitHub; senza interventi ulteriori, il cron riprende dal batch precedente.
+4. Verificare l'URL del Project nel log di Actions e `PILOT_PASS`; `BATCH_SYNC_PASS ... REMAINING N` indica un import ancora **parziale**. Solo `FULL_SYNC_PASS` e `REMOTE_VERIFIED` su tutte le righe attestano completamento. Se l'API è bloccata, il processo termina senza fingere un import eseguito.
 
 La connessione GitHub integrata in ChatGPT espone repo/PR/file/Actions, **non le mutation GitHub Projects V2**: non può creare il Project senza credenziali addizionali. Il token rimane solo nei Secrets GitHub Actions.
 
 ## Automatismi e sicurezza
 
 - Workflow: `.github/workflows/app-factory-project-sync.yml`.
-- Trigger: **push su main** che modifica il registro o i CSV per-app, **cron giornaliero 09:20 UTC**, o **workflow_dispatch**.
+- Trigger: **push su main** che modifica il registro o i CSV per-app, **cron ogni quattro ore al minuto 20 UTC**, o **workflow_dispatch**. Non è un processo ChatGPT in background; è un workflow GitHub Actions realmente configurato.
 - Nessuna chiamata API su PR non fidate o senza segreto. I test CI eseguono solo modalità dry-run e fake API.
+- Limite di sicurezza: al massimo **180 associazioni** per run, pause di almeno 1,3 secondi tra mutation GraphQL, per ridurre il rischio di secondary rate limit GitHub (80 richieste che creano contenuti/min, 500/ora secondo la documentazione; limiti soggetti a modifiche). La sincronizzazione di 342 coppie può richiedere più run: nessun dato è perso e nessun elemento viene cancellato.
 - Interruzione: il successivo run recupera i draft già importati dal marker `<!-- APP_FACTORY_CAP_PAIR:<app>|<CAP> -->` senza duplicare.
 - Nessuna mutation di eliminazione/archiviazione; gli item estranei senza marker non vengono mai modificati; i campi di altre persone non vengono aggiornati.
 - Schema/campo ambiguo, ID duplicati, dati incompleti, errori GraphQL o controllo live fallito: **fail closed** e niente fase successiva.
