@@ -90,9 +90,17 @@ class AnnaEvaluationAdmissionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             admitted_product_evaluation(
                 record, "Agenda-per-Anna", "PROPOSTA", "OUT_OF_SCOPE")
+        # Missing admission for a different app is an ordinary non-admission.
+        self.assertIsNone(admitted_product_evaluation(
+            record, "Notes-Ecosistema", "PROPOSTA", "PARTIAL_REUSE"))
+        # A forged cross-app admission must be rejected instead.
+        forged = dict(record)
+        forged["app_evaluation_admissions"] = {
+            "Notes-Ecosistema": record["app_evaluation_admissions"]["Agenda-per-Anna"]
+        }
         with self.assertRaises(ValueError):
             admitted_product_evaluation(
-                record, "Notes-Ecosistema", "PROPOSTA", "PARTIAL_REUSE")
+                forged, "Notes-Ecosistema", "PROPOSTA", "PARTIAL_REUSE")
         self.assertIsNone(admitted_product_evaluation(
             record, "FocuSense", "PROPOSTA", "PARTIAL_REUSE"))
 
