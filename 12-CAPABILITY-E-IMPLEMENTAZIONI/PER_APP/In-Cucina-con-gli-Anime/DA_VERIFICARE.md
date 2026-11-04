@@ -11,4 +11,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | [CAP-0073](../../REGISTRO_CAPABILITY/CAP-0073.md) | AdMob UMP consent gating | 92 | 75% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0073/README.md) | Test permessi consent e policy store |
 | [CAP-0043](../../REGISTRO_CAPABILITY/CAP-0043.md) | Raccolta fonti contenuti e audit artwork | 85 | 65% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0043/README.md) | Rispettare copyright e revisioni umane obbligatorie |
 
-**Totale associazioni app:** 10. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 12. Nessuna modifica alla roadmap o al codice dell'app.

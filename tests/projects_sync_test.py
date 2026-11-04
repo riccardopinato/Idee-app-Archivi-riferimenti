@@ -147,9 +147,22 @@ class ProjectsMirrorContractTests(unittest.TestCase):
         second, count = mirror.select_pending(
             self.rows, existing, fields, project_id)
         self.assertEqual(count, len(self.rows) - len(batch))
-        self.assertEqual(len(second), len(self.rows) - len(batch))
+        self.assertEqual(len(second),
+                         min(mirror.MAX_ITEMS_PER_RUN, len(self.rows) - len(batch)))
         self.assertFalse({mirror.row_key(x) for x in batch} &
                          {mirror.row_key(x) for x in second})
+        # More than two batches may now be required (the ML23 catalogue
+        # expands from 346 to 385 app/CAP pairs). Never lift the rate limit.
+        seen = {mirror.row_key(row) for row in batch}
+        for row in second:
+            seen.add(mirror.row_key(row))
+        cursor = len(batch)
+        while cursor < len(self.rows):
+            current = self.rows[cursor:cursor + mirror.MAX_ITEMS_PER_RUN]
+            for row in current:
+                seen.add(mirror.row_key(row))
+            cursor += len(current)
+        self.assertEqual(len(seen), len(self.rows))
 
     def test_eventual_consistency_does_not_recreate_pilot_items(self):
         rows = mirror.pilot_rows(self.rows)

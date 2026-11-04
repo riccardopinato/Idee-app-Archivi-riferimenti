@@ -31,6 +31,14 @@ class OperationalStatusViewTests(unittest.TestCase):
         self.assertIn("IA26-050.md", views["GIA_INTEGRATI.md"])
         self.assertIn("IA26-062.md", views["GIA_INTEGRATI.md"])
 
+    def test_new_anna_e0_capability_has_explicit_no_source_audit(self):
+        # New E0 proposals are allowed without forged historical source SHAs.
+        # They must remain unaudited and never enter the integrated queue.
+        anna = (ROOT / "12-CAPABILITY-E-IMPLEMENTAZIONI" /
+                "PER_APP" / "Agenda-per-Anna.md").read_text(encoding="utf-8")
+        self.assertIn("NEW_E0_NO_SOURCE_AUDIT", anna)
+        self.assertIn("CAP-0152", anna)
+
     def test_capability_status_is_app_scoped(self):
         views = render()
         self.assertIn("CAP-0001.md", views["GIA_INTEGRATI.md"])

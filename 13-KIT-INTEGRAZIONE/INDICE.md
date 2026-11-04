@@ -1,4 +1,4 @@
-# Indice — 150 kit
+# Indice — 160 kit
 
 | ID | Capability | App interessate | Kit |
 |---|---|---|---|
@@ -152,3 +152,14 @@
 | CAP-0148 | Smart Inbox verificabile da fonte ad azione canonica | Notes-Ecosistema | [Apri](CAP-0148/README.md) |
 | CAP-0149 | Interoperabilita JSON Canvas v1 con report di perdita | Notes-Ecosistema | [Apri](CAP-0149/README.md) |
 | CAP-0150 | Daily Note Hub derivato opzionale | Notes-Ecosistema | [Apri](CAP-0150/README.md) |
+
+| CAP-0151 | Riassunti estrattivi di note con TextRank e citazioni | Notes-Ecosistema, Agenda-per-Anna, Wonderlog, PDF-Unifier | [Apri](CAP-0151/README.md) |
+| CAP-0152 | Ricerca fuzzy offline per refusi e alias | Notes-Ecosistema, Agenda-per-Anna, Wonderlog, PDF-Unifier | [Apri](CAP-0152/README.md) |
+| CAP-0153 | Previsione prudente di completamento studio e progetti | Notes-Ecosistema, Agenda-per-Anna, FocuSense | [Apri](CAP-0153/README.md) |
+| CAP-0154 | Routine predittive con Markov solo opt-in | Agenda-per-Anna, Notes-Ecosistema, SleepMax-Coach, FocuSense | [Apri](CAP-0154/README.md) |
+| CAP-0155 | Associazioni ingredienti e ricette offline con Apriori | TasteAI, In-Cucina-con-gli-Anime, MealMate | [Apri](CAP-0155/README.md) |
+| CAP-0156 | Semplificazione reversibile di tracce e polilinee GPX | TrailPath, Wonderlog, CamperBoss | [Apri](CAP-0156/README.md) |
+| CAP-0157 | Gesti volontari locali tramite Dynamic Time Warping | Phone-Guard, Pocket-Guard, Tabletop-Motion-Alarm, FocuSense | [Apri](CAP-0157/README.md) |
+| CAP-0158 | Soglie adattive con isteresi per luce e prossimità | Pocket-Guard, Phone-Guard, FocuSense, Tabletop-Motion-Alarm | [Apri](CAP-0158/README.md) |
+| CAP-0159 | Clustering spaziale privacy-safe per ricordi e POI | Wonderlog, TrailPath, CamperBoss, Agenda-per-Anna | [Apri](CAP-0159/README.md) |
+| CAP-0160 | Estrazione TF-IDF di parole chiave e tag suggeriti | Notes-Ecosistema, Agenda-per-Anna, Wonderlog, PDF-Unifier | [Apri](CAP-0160/README.md) |

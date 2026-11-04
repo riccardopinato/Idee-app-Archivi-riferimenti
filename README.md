@@ -80,3 +80,7 @@ Archiviate **100 schede individuali**, **6 proposte extra senza numero** e **14 
 ## Re-audit Factory Golden v28 — 04/11/2026
 
 [150 CAP e 346 associazioni](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_RIPRIORITIZZAZIONE_GOLDEN_V28_2026-11-04.md); numeri unchanged quando manca nuova evidenza.
+
+## Motori ML on-device replicabili — audit 04/11/2026
+
+[Audit ML23 / Golden](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md) con 10 nuove CAP e grafo dipendenze che abilita riuso a catena. Nessun import in app per effetto del catalogo.

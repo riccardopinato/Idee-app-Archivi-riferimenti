@@ -65,4 +65,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | [CAP-0074](../../REGISTRO_CAPABILITY/CAP-0074.md) | Companion voice note organizer | 67 | 55% | PROPOSTA / PARTIAL_REUSE | [Audit di sorgente](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0074/ANNA_SOURCE_COMPATIBILITA.md) | No duplicare trascrizione vocale offline |
 | [CAP-0143](../../REGISTRO_CAPABILITY/CAP-0143.md) | Biglietti ricordo con QR e accesso revocabile | 62 | 40% | PROPOSTA / PARTIAL_REUSE | [Audit di sorgente](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0143/ANNA_SOURCE_COMPATIBILITA.md) | Blocco disclosure pubblica: mai pubblicare contenuto privato automaticamente. Security review token/noindex/EXIF/URL leak/revoca, termini hosting e Privacy #215. |
 
-**Totale associazioni app:** 68. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 74. Nessuna modifica alla roadmap o al codice dell'app.

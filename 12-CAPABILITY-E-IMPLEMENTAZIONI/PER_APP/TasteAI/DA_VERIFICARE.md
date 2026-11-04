@@ -9,4 +9,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | [CAP-0044](../../REGISTRO_CAPABILITY/CAP-0044.md) | Ricette anti-spreco da ingredienti | 95 | 95% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0044/README.md) | Non clonare TasteAI; validare differenziazione |
 | [CAP-0072](../../REGISTRO_CAPABILITY/CAP-0072.md) | Entitlement RevenueCat provider truth | 88 | 60% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0072/README.md) | IAP compliance e no premium unlocked falsely |
 
-**Totale associazioni app:** 7. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 9. Nessuna modifica alla roadmap o al codice dell'app.

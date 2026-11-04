@@ -1,4 +1,4 @@
-# CamperBoss — Da valutare (13)
+# CamperBoss — Da valutare (15)
 
 Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, senza soglie di score. Non comprende integrazioni parziali, dichiarate o verificate.
 
@@ -8,7 +8,9 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0017](../../REGISTRO_CAPABILITY/CAP-0017.md) | Universal Delete Trash e lifecycle audit | 94 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0017/README.md) | Regression entita-per-entita e file orfani; niente duplicazione lifecycle |
 | [CAP-0053](../../REGISTRO_CAPABILITY/CAP-0053.md) | Sun Moon calcolo locale | 93 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0053/README.md) | Calcolo locale SunCalc con timezone corretto |
+| [CAP-0156](../../REGISTRO_CAPABILITY/CAP-0156.md) | Semplificazione reversibile di tracce e polilinee GPX | 89 | 86% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0156/README.md) | Lat/lon finiti, antimeridiano e poli, endpoint/waypoint protetti, errore massimo verificato, nessuna mutazione dello storico. |
 | [CAP-0047](../../REGISTRO_CAPABILITY/CAP-0047.md) | POI offline versionati e provenienza | 88 | 60% | ROADMAP_STORICA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0047/README.md) | Licenze ODbL provider e freshness; non scaricare tile pubblici |
+| [CAP-0159](../../REGISTRO_CAPABILITY/CAP-0159.md) | Clustering spaziale privacy-safe per ricordi e POI | 85 | 82% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0159/README.md) | Antimeridiano/poli, GPS nullo/non finito, raggio geodesico, permesso luoghi condivisi, dati privati non esportabili per default. |
 | [CAP-0050](../../REGISTRO_CAPABILITY/CAP-0050.md) | Riorganizzazione tappe e tempi itinerario | 85 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0050/README.md) | Tempi da routing verificato e controllo manuale ordine |
 | [CAP-0052](../../REGISTRO_CAPABILITY/CAP-0052.md) | Meteo contestuale finestre outdoor | 85 | 75% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0052/README.md) | API gratuita meteo non commerciale non usare con Ads |
 | [CAP-0060](../../REGISTRO_CAPABILITY/CAP-0060.md) | Protezione batteria avvisi e sessioni | 84 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0060/README.md) | Distingue salute stimata da misure disponibili |
@@ -20,4 +22,4 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 | [CAP-0091](../../REGISTRO_CAPABILITY/CAP-0091.md) | Snapshot condivisibile della vista mappa senza dati privati | 78 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0091/README.md) | Distinguere view state (camera, zoom, layers) da percorso/ricordi privati; share URL/file su azione volontaria, nessuna chiave API, token o posizione personale inclusa. |
 | [CAP-0054](../../REGISTRO_CAPABILITY/CAP-0054.md) | Prezzi carburanti ufficiali | 76 | 60% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0054/README.md) | Dati nazionali diritti timestamp e valuta |
 
-**Totale associazioni app:** 17. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 19. Nessuna modifica alla roadmap o al codice dell'app.

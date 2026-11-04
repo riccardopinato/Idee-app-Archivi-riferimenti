@@ -1,6 +1,6 @@
 # Kit di integrazione — App Factory
 
-**150 cartelle kit, una per capability CAP.** [Indice](INDICE.md) · [Facilità integrazione](METODOLOGIA_FACILITA.md).
+**160 cartelle kit, una per capability CAP.** [Indice](INDICE.md) · [Facilità integrazione](METODOLOGIA_FACILITA.md).
 
 Ogni kit contiene: `README.md`, `SPECIFICHE.md`, `CODICE_RIFERIMENTO.txt`, `INTEGRAZIONE_FLUTTER.md`, `LICENZE_E_DIPENDENZE.md`, `TEST_E_VALIDAZIONE.md`.
 
@@ -32,3 +32,7 @@ Le schede di questo commit NON attestano i livelli 2, 3 o 4. Nessun codice OSS v
 ## Audit Golden v28 04/11/2026
 
 Tre nuovi kit CAP-0148...0150 sono soltanto proposte. Rapporto completo in cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.
+
+## 10 nuovi kit algortimi ML26 — 04/11/2026
+
+[Audit Golden cross-app](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md). Tutti livello 1 (E0), nessun donor/certificazione runtime ottenuta dall'ammissione.

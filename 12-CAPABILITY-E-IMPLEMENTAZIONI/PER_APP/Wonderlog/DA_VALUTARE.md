@@ -1,4 +1,4 @@
-# Wonderlog — Da valutare (26)
+# Wonderlog — Da valutare (31)
 
 Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, senza soglie di score. Non comprende integrazioni parziali, dichiarate o verificate.
 
@@ -6,13 +6,18 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 
 | CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
 | --- | --- | --- | --- | --- | --- | --- |
+| [CAP-0152](../../REGISTRO_CAPABILITY/CAP-0152.md) | Ricerca fuzzy offline per refusi e alias | 96 | 88% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0152/README.md) | Top-K bounded, grapheme, token di 1 carattere, soglie false-match, 500/5000 record e nessuna fuga da Shared Spaces. |
 | [CAP-0017](../../REGISTRO_CAPABILITY/CAP-0017.md) | Universal Delete Trash e lifecycle audit | 94 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0017/README.md) | Regression entita-per-entita e file orfani; niente duplicazione lifecycle |
+| [CAP-0160](../../REGISTRO_CAPABILITY/CAP-0160.md) | Estrazione TF-IDF di parole chiave e tag suggeriti | 91 | 84% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0160/README.md) | Tokenizzazione IT/EN/ES/FR/DE/PT, stopwords, IDF stabile, shared ACL, gestione corpus piccolo, preview prima di tag writer. |
 | [CAP-0027](../../REGISTRO_CAPABILITY/CAP-0027.md) | Cattura universale condividi link testo immagine | 90 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0027/README.md) | Android share intent e consenso senza import occulto |
+| [CAP-0156](../../REGISTRO_CAPABILITY/CAP-0156.md) | Semplificazione reversibile di tracce e polilinee GPX | 89 | 89% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0156/README.md) | Lat/lon finiti, antimeridiano e poli, endpoint/waypoint protetti, errore massimo verificato, nessuna mutazione dello storico. |
 | [CAP-0047](../../REGISTRO_CAPABILITY/CAP-0047.md) | POI offline versionati e provenienza | 88 | 60% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0047/README.md) | Licenze ODbL provider e freshness; non scaricare tile pubblici |
 | [CAP-0144](../../REGISTRO_CAPABILITY/CAP-0144.md) | Widget contestuali privacy-safe per agenda e contenuti condivisi | 88 | 50% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0144/README.md) | Android launcher e iOS WidgetKit diversi; no claim real-time. PIN/biometria e contenuti riservati su lockscreen richiedono QA fisico; Privacy #215 congelata. |
 | [CAP-0040](../../REGISTRO_CAPABILITY/CAP-0040.md) | Deduplicazione foto per hash percettivo | 87 | 77% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0040/README.md) | Verificare algoritmo reale e precisione duplicati quasi identici |
 | [CAP-0031](../../REGISTRO_CAPABILITY/CAP-0031.md) | Trascrizione vocale offline opzionale | 86 | 65% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0031/README.md) | Licenza modello footprint benchmark 5 lingue e download opt-in |
+| [CAP-0159](../../REGISTRO_CAPABILITY/CAP-0159.md) | Clustering spaziale privacy-safe per ricordi e POI | 85 | 88% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0159/README.md) | Antimeridiano/poli, GPS nullo/non finito, raggio geodesico, permesso luoghi condivisi, dati privati non esportabili per default. |
 | [CAP-0050](../../REGISTRO_CAPABILITY/CAP-0050.md) | Riorganizzazione tappe e tempi itinerario | 85 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0050/README.md) | Tempi da routing verificato e controllo manuale ordine |
+| [CAP-0151](../../REGISTRO_CAPABILITY/CAP-0151.md) | Riassunti estrattivi di note con TextRank e citazioni | 85 | 73% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0151/README.md) | Segmentazione multilingua, citazioni/negazioni, source-revision, test di frasi non inventate, fallback a estratto lineare. |
 | [CAP-0010](../../REGISTRO_CAPABILITY/CAP-0010.md) | Ricordi Then and Now | 83 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0010/README.md) | Usare media canonici e consenso foto |
 | [CAP-0066](../../REGISTRO_CAPABILITY/CAP-0066.md) | Trasferimento LAN QR HTTPS fidato | 83 | 60% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0066/README.md) | Pairing fingerprint HTTPS e test rete locale |
 | [CAP-0011](../../REGISTRO_CAPABILITY/CAP-0011.md) | Life Threads narrativi | 82 | 85% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0011/README.md) | Non introdurre archivio parallelo |
@@ -33,4 +38,4 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 | [CAP-0143](../../REGISTRO_CAPABILITY/CAP-0143.md) | Biglietti ricordo con QR e accesso revocabile | 62 | 35% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0143/README.md) | Blocco disclosure pubblica: mai pubblicare contenuto privato automaticamente. Security review token/noindex/EXIF/URL leak/revoca, termini hosting e Privacy #215. |
 | [CAP-0137](../../REGISTRO_CAPABILITY/CAP-0137.md) | Oggetti 3D da fotografie collegati alle note | 52 | 20% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0137/README.md) | Stable Fast 3D Space esiste, ma infrastruttura, licenze commerciali e risorse GPU necessitano gate; non promettere offline. Verificare architettura e licensing nel Product Bible prima di integrare. |
 
-**Totale associazioni app:** 30. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 35. Nessuna modifica alla roadmap o al codice dell'app.

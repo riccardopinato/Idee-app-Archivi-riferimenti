@@ -8,4 +8,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0057](../../REGISTRO_CAPABILITY/CAP-0057.md) | Allarme protezione Table Pocket Bag Journey | 83 | 60% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0057/README.md) | Test multi OEM FGS false-positive e batteria |
 
-**Totale associazioni app:** 2. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 4. Nessuna modifica alla roadmap o al codice dell'app.

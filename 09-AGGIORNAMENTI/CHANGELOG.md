@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-04 — Ammissione completa ML23 a capability e Golden readiness
+- Convertite 10 idee ML26 in CAP-0151...0160, 60 file kit E0, mappa 23/23 con 13 riusi CAP, cross-app score e facilità per 160 CAP e 385 associazioni.
+- Cinque engine family con dipendenze a catena, contratti E0->E5, baseline Core @6cbb3449; nessun Golden o runtime app falsamente promosso.
+- Vista e classifica rigenerate dal solo REGISTRO_CAPABILITY.json; catalogo storico ML conservato con collegamento.
+
 ## 2026-11-04 — Intake 23 algoritmi ML classico/on-device
 - Analizzato Machine Learning.txt e verificato con documentazione ufficiale Android e scikit-learn; identificati 23 pattern, di cui 10 candidature di comportamento distinte e 13 riusi/estensioni di CAP esistenti.
 - Aggiornata l'INBOX con ID ML26-001…023 e creato catalogo di fattibilità, rischi, priorità di analisi e stime per app; nessuna promozione CAP o certificazione app/Golden.

@@ -1,3 +1,4 @@
 App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
 SleepMax-Coach,DA_VALUTARE,CAP-0062,Best Conditions Engine sensori,80,76,PROPOSTA,Score sensori non diagnosi e test runtime,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0062/README.md
 SleepMax-Coach,DA_VALUTARE,CAP-0064,Sonno routine e reminder adattivi,73,80,ROADMAP_STORICA,Non formulare diagnosi mediche,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0064/README.md
+SleepMax-Coach,DA_VALUTARE,CAP-0154,Routine predittive con Markov solo opt-in,71,63,PROPOSTA,"Opt-in, minimal retention, cancellazione, min-sample, divieto inferenze sensibili e zero notifiche automatiche.",,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0154/README.md

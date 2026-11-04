@@ -11,7 +11,7 @@
 La rigenerazione è inclusa in `python3 scripts/build_catalog.py`; `--check` controlla che i due file non siano obsoleti.
 
 
-**150 capability individuali, 48 app/idee beneficiarie e 346 associazioni app-capability**, ri-audit 04/11/2026 (audit iniziale + ricerche incrementali).
+**160 capability individuali, 48 app/idee beneficiarie e 385 associazioni app-capability**, ri-audit 04/11/2026 (audit iniziale + ricerche incrementali).
 
 - [Classifica globale](CLASSIFICA_PRIORITA.md)
 - [Matrice per app](MATRICE_APP.md)
@@ -19,7 +19,7 @@ La rigenerazione è inclusa in `python3 scripts/build_catalog.py`; `--check` con
 - [Stato implementazioni](STATO_IMPLEMENTAZIONI.md)
 - [Schede individuali](REGISTRO_CAPABILITY/)
 - [JSON canonico](REGISTRO_CAPABILITY.json)
-- [150 kit tecnici](../13-KIT-INTEGRAZIONE/README.md) e [indice](../13-KIT-INTEGRAZIONE/INDICE.md)
+- [160 kit tecnici](../13-KIT-INTEGRAZIONE/README.md) e [indice](../13-KIT-INTEGRAZIONE/INDICE.md)
 - [Metodologia percentuali facilità](../13-KIT-INTEGRAZIONE/METODOLOGIA_FACILITA.md)
 - [Audit fonti e copertura](AUDIT_TRASVERSALE_2026-11-01.md)
 - [Ricerca r/BestGitHubRepos 01/11](RICERCA_REDDIT_BESTGITHUBREPOS_2026-11-01.md)
@@ -67,3 +67,7 @@ Le sette nuove CAP sono **PROPOSTA**, non integrazioni. La classifica originale 
 ## Score Golden v28 — 04/11/2026
 
 [Rapporto audit completo](AUDIT_RIPRIORITIZZAZIONE_GOLDEN_V28_2026-11-04.md); due CSV includono ogni CAP e associazione, anche invariata.
+
+## Audit ML23 / Golden reuse — 04/11/2026
+
+[23 algoritmi mappati a 160 CAP](./AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md) e [grafo dipendenze](CATENE_MOTORI_ML_2026-11-04.json). Questa e catalogazione E0, non codice certificato.

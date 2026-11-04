@@ -6,4 +6,4 @@ Derivato dal registro canonico per la **singola app**. Equivalenti già dimostra
 
 _Nessuna voce in questa sezione._
 
-**Totale associazioni app:** 10. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 12. Nessuna modifica alla roadmap o al codice dell'app.
