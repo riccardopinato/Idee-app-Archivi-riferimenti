@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-04 — ML10 P1/P2/P3, consumer Notes/TasteAI e revisione 160/385
+- Core #71/#73: motori numerici reference local-only con CI; Core #74/#75: evidenze e cinque Golden DRAFT con date Registry allineate, nessuna promozione E5.
+- Catalogo #37: audit 160 CAP/385 app-link, quattro score, venti stime iniziali e tre prove sorgente parziali; nessuna percentuale senza motivazione.
+- Notes #57: MinHash/LSH suggerimenti duplicati read-only con conferma apri-editor, non merge; TasteAI #2: kNN ricette correlate con vincolo Premium e cinque lingue.
+- Aggiornamento postmerge: CAP-0116 Notes SOURCE_REPORTED e stima 83→85; TasteAI CAP-0044 evidence scoped senza alterare lo score/anti-spreco; 160 CAP e 385 associazioni conservate.
+- Vision/audio: [screening tecniche e modelli](../12-CAPABILITY-E-IMPLEMENTAZIONI/ML10_MODEL_SCREENING_2026-11-04.md), licenze e test OEM restano gate aperti. Nessun nuovo peso o store release.
+
+
 ## 2026-11-04 — Ammissione completa ML23 a capability e Golden readiness
 - Convertite 10 idee ML26 in CAP-0151...0160, 60 file kit E0, mappa 23/23 con 13 riusi CAP, cross-app score e facilità per 160 CAP e 385 associazioni.
 - Cinque engine family con dipendenze a catena, contratti E0->E5, baseline Core @6cbb3449; nessun Golden o runtime app falsamente promosso.

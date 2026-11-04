@@ -146,3 +146,7 @@ Fonte: messaggio utente 04/11 con elenchi ripetuti. Dieci famiglie distinte: Iso
 ## ML10 — esecuzione P1/P2/P3 e revisione generale (04/11/2026)
 
 I motori puramente matematici ora esistono come reference implementation in [Core #71](https://github.com/riccardopinato/App-Factory-Core/pull/71) e [Core #73](https://github.com/riccardopinato/App-Factory-Core/pull/73), con CI Dart/Factory verde; **non** significa modelli ML addestrati né motori certificati sul dispositivo. Il classificatore Vision/Audio resta bloccato per mancanza di checkpoint/licenze/benchmark. [Audit completo 160 CAP / 385 associazioni](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_ML10_2026-11-04.md) ricalcola le priorità e la facilità per app soltanto dove nuove prove giustificano la modifica; nessuna nuova CAP duplicata.
+
+## ML10 consumer delta verificato — 04/11/2026
+
+App Factory Core resta source of truth delle Golden Rules; Ideas mantiene il registro a 160 CAP e le 385 associazioni. [Notes #57](https://github.com/riccardopinato/Notes-Ecosistema/pull/57) è un consumer MinHash/LSH read-only, non merge reversibile; [TasteAI #2](https://github.com/riccardopinato/TasteAI/pull/2) un consumer P2 kNN ricette correlate, non prova di migliori risultati anti-spreco. [Registro con delta app e sorgenti](../12-CAPABILITY-E-IMPLEMENTAZIONI/ML10_CONSUMER_POSTMERGE_2026-11-04.md), [screening modelli P3](../12-CAPABILITY-E-IMPLEMENTAZIONI/ML10_MODEL_SCREENING_2026-11-04.md). Nessuna nuova CAP, nessuna promozione Golden/Store.

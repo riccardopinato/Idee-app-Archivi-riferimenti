@@ -79,3 +79,9 @@ Le sette nuove CAP sono **PROPOSTA**, non integrazioni. La classifica originale 
 ## Full-scope ML10 capability re-audit — 04/11/2026
 
 [Audit ricalcolato di tutte le 160 CAP e 385 associazioni per 48 app](AUDIT_COMPLETO_ML10_2026-11-04.md) con [CSV integrale per capability](AUDIT_COMPLETO_CAP_ML10_2026-11-04.csv), [CSV integrale per app](AUDIT_COMPLETO_APP_ML10_2026-11-04.csv), motivazione individuale nel registro canonico e viste per-app rigenerate. Le variazioni sono evidence-gated, non automatiche né probabilità di successo. [Core P1–P3 #73](https://github.com/riccardopinato/App-Factory-Core/pull/73) matematici PASS; modelli Vision/Audio ancora bloccati su diritti, modello e QA. Golden v28 non promosso.
+
+## ML10: implementazioni consumer e P3 model gate — 04/11/2026
+
+- [Ammissione scoped postmerge Notes #57 e TasteAI #2](ML10_CONSUMER_POSTMERGE_2026-11-04.md). Il registro canonico conserva 160 capability e 385 associazioni; CAP-0116 Notes ora SOURCE_REPORTED con stima di facilità 85%, ma merge reversibile e dispositivi non sono certificati.
+- [Analisi dei modelli Vision/Audio (EfficientNet-Lite0 e YAMNet)](ML10_MODEL_SCREENING_2026-11-04.md): ricerca P3 con fonti provider, **non** modello licenziato/distribuito.
+- [Audit completo con delta prima/dopo](AUDIT_COMPLETO_ML10_2026-11-04.md) e [secondo lotto tecnico](ML10_AUDIT_DONOR_GOLDEN_2026-11-04.md). Ogni stato per app deve restare distinto dal grado di evidenza E3/E4/E5.
