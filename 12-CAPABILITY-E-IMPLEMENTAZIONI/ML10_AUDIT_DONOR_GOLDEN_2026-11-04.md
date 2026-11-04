@@ -146,3 +146,11 @@ Documentazione esterna per metodologia:
 - Due motori nel Core PR #71 **in implementazione/validazione separata**, non ancora `CERTIFIED DONOR` al momento di questo documento. I file e i test proposti non sono certificazione runtime.
 - App da integrare **solo con PR separate** e secondo Product Bible: Notes #48 per duplicati, editor tag per NB, Pocket/FocusSense in shadow se realmente utile, Cooking Anime ingredient catalog solo dopo ricerca QA.
 - Nuova CAP soltanto se una responsabilità consumer non risulta già coperta, con aggiornamento del JSON canonico, kit a 6 file, generator e `--check`; non creare capability per ciascun nome di algoritmo.
+
+## Aggiornamento esecuzione motori P1/P2/P3 e catalogo — 04/11/2026
+
+- [Core PR #73 merged](https://github.com/riccardopinato/App-Factory-Core/pull/73), main `02f3cd94f0ee6f19bc06fc0cb329fdf5398a739b`, [reference-Dart main CI SUCCESS](https://github.com/riccardopinato/App-Factory-Core/actions/runs/41838055370) e [Factory validation SUCCESS](https://github.com/riccardopinato/App-Factory-Core/actions/runs/41838055475). Implementazioni **reference math** per EWMA/Holt/Winters, kNN, regressione logistica, LOF, isolation-path proxy, HMM Viterbi, HAC bounded e PCA/TruncatedSVD approssimate. Nessuna inferenza personalizzata certificata.
+- Precedente [Core PR #71](https://github.com/riccardopinato/App-Factory-Core/pull/71) e [CI main](https://github.com/riccardopinato/App-Factory-Core/actions/runs/41833497699): MinHash/LSH e Naive Bayes pure-Dart. EWMA+hysteresis resta donor math nel precedente ML23, senza nuovo alarm decision path.
+- [Notes PR #57](https://github.com/riccardopinato/Notes-Ecosistema/pull/57): candidato consumer solo **read-only** CAP-0116; non equivalente al merge reversibile richiesto dall'issue #48, stato e main CI da verificare separatamente.
+- Vision/audio LiteRT/CoreML: **NON IMPLEMENTATO**; mancano modello/versione/license/footprint e precision-device test. Tutti gli algoritmi matematici restano senza dipendenze ML esterne.
+- [Audit quantitative full-scope 160/385](AUDIT_COMPLETO_ML10_2026-11-04.md) usa HEAD dei 31 repo censiti; 17 app/idee fuori inventario non sono dichiarate source-verified.
