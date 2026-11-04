@@ -221,3 +221,8 @@
 - Nessuna applicazione modificata, nessuna fonte dati integrata in codice e nessuna certificazione ottenuta.
 
 Nuove voci changelog: data, file/ID, fonte e tipo evidenza, decisione, impatto, link PR/commit.
+
+## 2026-11-04 — Anna's Diary: audit profondo delle 58 voci da verificare
+- Verificato lo stato di Anna main `ab5360b78187a643e2b101be21e6951441406059`, Product Bible, roadmap attiva/issue, App Factory Core main `8052b45b771bf3c5694fc6dd8d037bd83233b37a` e Golden/Donor per capacità.
+- [Dossier con verdetto di tutte le 58 CAP](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_ANNA_58_DA_VERIFICARE_2026-11-04.md): promosse **solo nella coda di valutazione di prodotto** le CAP-0092, 0093, 0101, 0120, 0145, 0147, tutte con `PROPOSTA / PARTIAL_REUSE` conservato.
+- Ripartizione Anna: 8→14 da valutare, 58→52 da verificare, già integrati invariati a 8; 74 associazioni Anna e 160 CAP/385 associazioni totali inalterate. Generatore e test fail-closed per distinguere valutazione e prove di codice; nessun deployment/Golden/stato prodotto implicito.
