@@ -2,6 +2,7 @@
 """One-time, idempotent 23-ML-to-CAP admission with evidence-preserving Golden map."""
 import json, re
 # E0 proposals for Anna are intentionally not assigned invented source-audit paths.
+# GitHub Projects mirror batch tests must remain bounded as proposal count grows.
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
