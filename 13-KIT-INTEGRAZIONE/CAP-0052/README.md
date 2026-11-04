@@ -28,3 +28,8 @@ Suggerire finestre attività con data provider e incertezza
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0052.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 85/100 (non release priority).
+Facilita GrillBoss: 75% -> 71%. No app source listed in 31-repo inventory; add conservative bootstrap/verification friction.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

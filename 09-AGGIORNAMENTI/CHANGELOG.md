@@ -1,5 +1,15 @@
 # Changelog dell'archivio
 
+## 2026-11-04 — Audit integrale Golden v28, tutte le app
+- Revisione 147 CAP, 342 associazioni storiche e 31 repository reali, con 10 score e 67 valori facilita ricalibrati sulla nuova evidenza; altri valori conservati.
+- Tre CAP nuove (0148 Smart Inbox, 0149 JSON Canvas, 0150 Daily Hub), un consumer parziale Wonderlog, kit e indici rigenerati.
+- Provenienza SHA e delta conservati nel registro e nei CSV; nessuna nuova certificazione device/Store/Golden.
+
+## 2026-11-04 — Notes: audit 4 fonti, crosswalk con stato codice
+- Importati nell'Inbox i nove identificativi stabili NOTES-AUD4-001…009 e la mappatura CAP/issue per Notes, conservando le ricerche precedenti.
+- Distinti MVP già su main, delta ancora aperti e nuove responsabilità (JSON Canvas); registrate le quattro fonti AI Valley, Hugging Face, GitHub e GitLab senza clonare codice, modelli o UX proprietarie.
+- Registro canonico e viste operative lasciati invariati: necessaria una riconciliazione successiva con source SHA, scope CAP e rigenerazione `build_catalog.py --check` prima di qualsiasi promozione stato.
+
 ## 2026-11-04 — GitHub Projects: correzione collaudo live
 - Creato realmente il GitHub Project personale `App Factory — Capability Dashboard` (Project #1) con campi e quattro viste, grazie al secret `APP_FACTORY_PROJECT_TOKEN`.
 - Primo run live: sei record pilota creati, ma la lettura API immediata non riportava ancora l'ultima coppia `Android-Omni-Cleaner / CAP-0039`; il gate ha correttamente impedito l'import massivo.

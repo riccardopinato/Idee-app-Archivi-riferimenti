@@ -1,3 +1,3 @@
 App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
-PDF-Pocket-Tools,DA_VALUTARE,CAP-0037,Operazioni PDF split merge rotate lock,98,90,PROPOSTA,Verificare motore originale licenza e compatibilita Flutter,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0037/README.md
+PDF-Pocket-Tools,DA_VALUTARE,CAP-0037,Operazioni PDF split merge rotate lock,98,86,PROPOSTA,Verificare motore originale licenza e compatibilita Flutter,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0037/README.md
 PDF-Pocket-Tools,DA_VALUTARE,CAP-0038,PDF Pocket Tools packaging standalone,75,80,ROADMAP_STORICA,Non creare secondo motore per packaging,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0038/README.md

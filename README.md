@@ -2,7 +2,7 @@
 
 ## GitHub Projects — dashboard interattiva opzionale
 
-[Setup, pilota di sei elementi e sincronizzazione conservativa](12-CAPABILITY-E-IMPLEMENTAZIONI/GITHUB_PROJECTS_MIRROR.md). Uno script e un workflow testabili offline preparano un solo Project con campi numerici e viste per stato, alimentato da tutte le 48 app/342 associazioni. **Il Project live si attiva soltanto dopo aver configurato il segreto `APP_FACTORY_PROJECT_TOKEN` con permesso GitHub Projects**; senza credenziali, nessuna creazione o import è dichiarato eseguito. Nessun file o cartella dell'archivio viene eliminato.
+[Setup, pilota di sei elementi e sincronizzazione conservativa](12-CAPABILITY-E-IMPLEMENTAZIONI/GITHUB_PROJECTS_MIRROR.md). Uno script e un workflow testabili offline preparano un solo Project con campi numerici e viste per stato, alimentato da tutte le 48 app/346 associazioni. **Il Project live si attiva soltanto dopo aver configurato il segreto `APP_FACTORY_PROJECT_TOKEN` con permesso GitHub Projects**; senza credenziali, nessuna creazione o import è dichiarato eseguito. Nessun file o cartella dell'archivio viene eliminato.
 
 ## Classifiche operative — cosa fare adesso
 
@@ -25,7 +25,7 @@ Per le ricerche operative usare **prima** `DA_VALUTARE.md`, non la classifica st
 
 ## Libreria kit tecnici
 
-- [147 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.
+- [150 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.
 - [Stima facilità per app](13-KIT-INTEGRAZIONE/METODOLOGIA_FACILITA.md): nelle [tabelle delle singole app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/) figurano le colonne **Facilita integrazione (%)**, **Descrizione breve** e **Kit tecnico**, di fianco allo Score.
 
 ## Navigazione
@@ -76,3 +76,7 @@ Le **idee di nuove app** continuano a entrare in `11-NUOVE-IDEE`; i **migliorame
 ## Studio di 100 nuove idee IA — 2 novembre 2026
 
 Archiviate **100 schede individuali**, **6 proposte extra senza numero** e **14 fusioni analizzate**; nessuna approvazione o modifica alle app. Per la navigazione usare [indice delle schede](11-NUOVE-IDEE/IA-2026-11-02/INDICE_100_SCHEDE.md), [ranking 100](11-NUOVE-IDEE/IA-2026-11-02/RANKING_100_COMPLETO.md), [classifiche tematiche](11-NUOVE-IDEE/IA-2026-11-02/CLASSIFICHE_MULTICRITERIO.md), [fusioni](11-NUOVE-IDEE/IA-2026-11-02/FUSIONI_E_RIUSO.md) e [metodologia](11-NUOVE-IDEE/IA-2026-11-02/METODOLOGIA_E_FONTI.md).
+
+## Re-audit Factory Golden v28 — 04/11/2026
+
+[150 CAP e 346 associazioni](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_RIPRIORITIZZAZIONE_GOLDEN_V28_2026-11-04.md); numeri unchanged quando manca nuova evidenza.

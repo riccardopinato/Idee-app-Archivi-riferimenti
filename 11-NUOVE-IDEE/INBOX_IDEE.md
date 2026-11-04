@@ -1,5 +1,11 @@
 # Inbox nuove idee — da valutare e conservare
 
+## Notes-Ecosistema — audit 4 fonti e delta implementativi (04/11/2026)
+
+Origine: audit condiviso dall'utente su **AI Valley, Hugging Face, GitHub/JSON Canvas e GitLab**. Le proposte **NOTES-AUD4-001…009** sono state ricondotte alle CAP canoniche esistenti quando pertinente; Smart Inbox action flow, JSON Canvas e Daily Note Hub non vanno assimilati a CAP solo simili. [Crosswalk con evidenze GitHub e roadmap ancora aperta](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_QUATTRO_FONTI_NOTES_2026-11-04.md).
+
+**Stato:** audit/intake e delta di funzioni parziali; nessuna nuova app. Non promuove il registro CAP né cambia gli stati generati. Priorità operative: Smart Inbox #46, Project blockers #51, quindi Study #47, Duplicate Review #48 e JSON Canvas #49.
+
 ## Anna's Diary — 15 proposte NotebookLM (02/11/2026)
 
 **Analizzate e mappate su 7 nuove CAP + 5 estensioni, non approvate in roadmap.** [Classifica e valutazioni](ANNA_NOTEBOOKLM_2026-11-02.md); [correzione CAP](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_ANNA_NOTEBOOKLM_2026-11-02.md); [offerta commerciale](../08-MONETIZZAZIONE/ANNA_DIARY_FREEMIUM_IPOTESI_2026-11-02.md). P1: domanda Noi, lettera futura, capsula, widget Oggi. Privacy #215 congelata.

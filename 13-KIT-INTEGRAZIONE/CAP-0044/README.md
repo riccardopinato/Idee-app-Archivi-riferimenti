@@ -27,3 +27,8 @@ Suggerire ricette fattibili usando ingredienti disponibili
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0044.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P1 95/100 (non release priority).
+Facilita MealMate: 95% -> 91%. No app source listed in 31-repo inventory; add conservative bootstrap/verification friction.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

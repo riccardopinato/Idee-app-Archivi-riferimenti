@@ -31,3 +31,11 @@ Ricerca per significato on device solo se migliora FTS
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0032.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 79/100 (non release priority).
+Motivo score: Notes semantic retrieval and independent limited Wonderlog hybrid consumer verified by source.
+Facilita Notes-Ecosistema: 55% -> 62%. Limited Notes/Wonderlog local retrieval reference; not a trained model or hardware guarantee.
+Facilita TasteAI: 50% -> 52%. Limited Notes/Wonderlog local retrieval reference; not a trained model or hardware guarantee.
+Facilita Agenda-per-Anna: 40% -> 42%. Limited Notes/Wonderlog local retrieval reference; not a trained model or hardware guarantee.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

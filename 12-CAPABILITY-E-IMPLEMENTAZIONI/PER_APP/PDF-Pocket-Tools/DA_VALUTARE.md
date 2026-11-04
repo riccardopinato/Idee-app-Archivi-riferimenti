@@ -6,7 +6,7 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 
 | CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CAP-0037](../../REGISTRO_CAPABILITY/CAP-0037.md) | Operazioni PDF split merge rotate lock | 98 | 90% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0037/README.md) | Verificare motore originale licenza e compatibilita Flutter |
+| [CAP-0037](../../REGISTRO_CAPABILITY/CAP-0037.md) | Operazioni PDF split merge rotate lock | 98 | 86% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0037/README.md) | Verificare motore originale licenza e compatibilita Flutter |
 | [CAP-0038](../../REGISTRO_CAPABILITY/CAP-0038.md) | PDF Pocket Tools packaging standalone | 75 | 80% | ROADMAP_STORICA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0038/README.md) | Non creare secondo motore per packaging |
 
 **Totale associazioni app:** 2. Nessuna modifica alla roadmap o al codice dell'app.

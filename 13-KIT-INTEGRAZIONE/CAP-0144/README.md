@@ -30,3 +30,10 @@ Widget OS alimentati da proiezioni canoniche autorizzate: prossimo evento/Crea, 
 **Gate:** Android launcher e iOS WidgetKit diversi; no claim real-time. PIN/biometria e contenuti riservati su lockscreen richiedono QA fisico; Privacy #215 congelata.
 
 [CAP canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0144.md). Priorità CAP tecnica `P2 86/100` diversa dalla priorità idea editoriale. Nessuno sviluppo approvato.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 88/100 (non release priority).
+Motivo score: Anna private home-widget masking/source tested, OEM physical pending.
+Facilita Agenda-per-Anna: 70% -> 73%. Anna/World-Days widget source and privacy gating, device QA pending.
+Facilita World-Days: 45% -> 47%. Anna/World-Days widget source and privacy gating, device QA pending.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

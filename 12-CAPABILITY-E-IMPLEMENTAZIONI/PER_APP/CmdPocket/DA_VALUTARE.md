@@ -6,6 +6,6 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 
 | CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CAP-0084](../../REGISTRO_CAPABILITY/CAP-0084.md) | Toolbox locale conversioni testo dati e QR | 89 | 90% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0084/README.md) | Selezionare 5 utility davvero richieste (JSON, Base64, URL, UUID, QR) con test input sensibili offline; GPLv3: clean-room o conformita copyleft; evitare duplicazione CmdPocket e PDF-Unifier. |
+| [CAP-0084](../../REGISTRO_CAPABILITY/CAP-0084.md) | Toolbox locale conversioni testo dati e QR | 89 | 86% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0084/README.md) | Selezionare 5 utility davvero richieste (JSON, Base64, URL, UUID, QR) con test input sensibili offline; GPLv3: clean-room o conformita copyleft; evitare duplicazione CmdPocket e PDF-Unifier. |
 
 **Totale associazioni app:** 1. Nessuna modifica alla roadmap o al codice dell'app.

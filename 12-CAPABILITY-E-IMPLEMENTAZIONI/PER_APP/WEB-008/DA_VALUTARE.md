@@ -6,6 +6,6 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 
 | CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CAP-0078](../../REGISTRO_CAPABILITY/CAP-0078.md) | Web utility location market provider adapter | 81 | 60% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0078/README.md) | Lingua diversa dal mercato e diritti provider |
+| [CAP-0078](../../REGISTRO_CAPABILITY/CAP-0078.md) | Web utility location market provider adapter | 81 | 56% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0078/README.md) | Lingua diversa dal mercato e diritti provider |
 
 **Totale associazioni app:** 1. Nessuna modifica alla roadmap o al codice dell'app.

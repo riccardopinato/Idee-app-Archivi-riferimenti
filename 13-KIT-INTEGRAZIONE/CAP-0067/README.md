@@ -27,3 +27,9 @@ Workflow build firma stabile SHA e manifest
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0067.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P1 94/100 (non release priority).
+Facilita AppLab: 80% -> 82%. Signed Anna +122 artifact now exists but independent app release remains gated.
+Facilita Battery_Guard: 80% -> 83%. Signed Anna +122 artifact now exists but independent app release remains gated.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

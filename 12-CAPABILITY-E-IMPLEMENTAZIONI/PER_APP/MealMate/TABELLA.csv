@@ -1,3 +1,3 @@
 App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
-MealMate,DA_VALUTARE,CAP-0044,Ricette anti-spreco da ingredienti,95,95,PROPOSTA,Non clonare TasteAI; validare differenziazione,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0044/README.md
-MealMate,DA_VALUTARE,CAP-0045,Meal plan e spesa derivata,82,80,PROPOSTA,Lista derivata con consenso e separazione proprieta dati,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0045/README.md
+MealMate,DA_VALUTARE,CAP-0044,Ricette anti-spreco da ingredienti,95,91,PROPOSTA,Non clonare TasteAI; validare differenziazione,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0044/README.md
+MealMate,DA_VALUTARE,CAP-0045,Meal plan e spesa derivata,82,76,PROPOSTA,Lista derivata con consenso e separazione proprieta dati,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0045/README.md

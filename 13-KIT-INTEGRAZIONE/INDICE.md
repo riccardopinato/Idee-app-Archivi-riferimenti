@@ -1,4 +1,4 @@
-# Indice — 147 kit
+# Indice — 150 kit
 
 | ID | Capability | App interessate | Kit |
 |---|---|---|---|
@@ -149,3 +149,6 @@
 | CAP-0145 | Heatmap locale di ricordi, attività e abitudini volontarie | Agenda-per-Anna, Notes-Ecosistema, FocuSense | [Apri](CAP-0145/README.md) |
 | CAP-0146 | Allegati documentali cifrati per Vault privato | Agenda-per-Anna, Notes-Ecosistema | [Apri](CAP-0146/README.md) |
 | CAP-0147 | Home modulare riordinabile con preferenze locali | Agenda-per-Anna, CamperBoss, Notes-Ecosistema | [Apri](CAP-0147/README.md) |
+| CAP-0148 | Smart Inbox verificabile da fonte ad azione canonica | Notes-Ecosistema | [Apri](CAP-0148/README.md) |
+| CAP-0149 | Interoperabilita JSON Canvas v1 con report di perdita | Notes-Ecosistema | [Apri](CAP-0149/README.md) |
+| CAP-0150 | Daily Note Hub derivato opzionale | Notes-Ecosistema | [Apri](CAP-0150/README.md) |

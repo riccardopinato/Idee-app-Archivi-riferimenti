@@ -27,3 +27,9 @@ Mappa mentale interattiva da nodi estratti da note/fonti, con zoom pan e tap che
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0098.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P3 78/100 (non release priority).
+Motivo score: Knowledge Graph and canvas reduce effort, not complete derived mind map.
+Facilita Notes-Ecosistema: 65% -> 70%. Existing derived Knowledge Graph reduces mind-map work, not a finished UX.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

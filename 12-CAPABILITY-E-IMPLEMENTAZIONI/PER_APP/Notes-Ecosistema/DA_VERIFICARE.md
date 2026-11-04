@@ -1,4 +1,4 @@
-# Notes-Ecosistema — Stato da verificare (6)
+# Notes-Ecosistema — Stato da verificare (13)
 
 Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente dichiarata oppure perimetro incerto. Non proporre il lavoro da zero: prima confrontare il delta funzionale.
 
@@ -6,11 +6,18 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 
 | CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CAP-0017](../../REGISTRO_CAPABILITY/CAP-0017.md) | Universal Delete Trash e lifecycle audit | 94 | 80% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0017/README.md) | Regression entita-per-entita e file orfani; niente duplicazione lifecycle |
+| [CAP-0093](../../REGISTRO_CAPABILITY/CAP-0093.md) | Da note a checklist strutturate | 96 | 97% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0093/README.md) | Audit note/task esistenti, implementare parsing deterministico e preview multi-selezione; dataset NC reference only, test su ambiguita e nessuna creazione implicita. |
+| [CAP-0017](../../REGISTRO_CAPABILITY/CAP-0017.md) | Universal Delete Trash e lifecycle audit | 94 | 82% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0017/README.md) | Regression entita-per-entita e file orfani; niente duplicazione lifecycle |
+| [CAP-0071](../../REGISTRO_CAPABILITY/CAP-0071.md) | Offline content packs incremental sync | 90 | 67% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0071/README.md) | Licenze e hashing versioni pack |
 | [CAP-0018](../../REGISTRO_CAPABILITY/CAP-0018.md) | Backup restore con staging e rollback | 90 | 65% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0018/README.md) | Audit formati e test corrupt archive per consumer |
-| [CAP-0071](../../REGISTRO_CAPABILITY/CAP-0071.md) | Offline content packs incremental sync | 90 | 65% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0071/README.md) | Licenze e hashing versioni pack |
+| [CAP-0103](../../REGISTRO_CAPABILITY/CAP-0103.md) | Grafo delle dipendenze e blocker delle task | 87 | 91% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0103/README.md) | Audit CAP-0096 e canvas CAP-0028; relazioni no-cicli, cancellazione/ripristino, undo, accessibilita e filtri; il donor Yuga modella dipendenze in forma sequenziale. |
+| [CAP-0106](../../REGISTRO_CAPABILITY/CAP-0106.md) | Rilevamento sovraccarico e heatmap riunioni | 87 | 91% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0106/README.md) | Audit calendar provider, permessi, CAP-0001 e CAP-0101; calcolare solo su dati disponibili e consenso, evitare falsa precisione su durata task e false promesse di sync. |
+| [CAP-0029](../../REGISTRO_CAPABILITY/CAP-0029.md) | Canvas ibrida sketch sotto note | 84 | 76% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0029/README.md) | Verificare gesto pennello undo save e restore device |
 | [CAP-0019](../../REGISTRO_CAPABILITY/CAP-0019.md) | Store media content addressed e GC | 81 | 65% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0019/README.md) | Non uniformare database privacy separati |
-| [CAP-0029](../../REGISTRO_CAPABILITY/CAP-0029.md) | Canvas ibrida sketch sotto note | 80 | 70% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0029/README.md) | Verificare gesto pennello undo save e restore device |
+| [CAP-0096](../../REGISTRO_CAPABILITY/CAP-0096.md) | Gerarchie task ricorrenze e relazioni alle note | 80 | 89% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0096/README.md) | Audit funzioni task e recurrence gia presenti; non introdurre secondo scheduler o storage; test eccezioni ricorrenza, delete e restore. |
+| [CAP-0032](../../REGISTRO_CAPABILITY/CAP-0032.md) | Indicizzazione ricerca semantica locale | 79 | 62% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0032/README.md) | Modello multilingue licenza footprint e benchmark; non inserire pack base |
+| [CAP-0098](../../REGISTRO_CAPABILITY/CAP-0098.md) | Mind map navigabile derivata da note e documenti | 78 | 70% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0098/README.md) | Riutilizzare canvas e connettori, audit licenza Vertical.ai; evitare dipendenze RAG cloud o Neo4j introdotte solo per il concept. |
 | [CAP-0033](../../REGISTRO_CAPABILITY/CAP-0033.md) | Modello Needle 3 on demand Plus | 76 | 60% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0033/README.md) | Play delivery benchmark e entitlement non auto concesso |
+| [CAP-0112](../../REGISTRO_CAPABILITY/CAP-0112.md) | Flashcard e ripasso dilazionato collegati alle note | 75 | 91% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0112/README.md) | Riusare note e pianificatore CAP-0099; SRS deterministico, contenuti modificabili, licenza delle skill esterne da verificare; nessun modello AI pesante bundled. |
 
-**Totale associazioni app:** 80. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 83. Nessuna modifica alla roadmap o al codice dell'app.

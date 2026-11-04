@@ -30,3 +30,8 @@ Diagnosi degli stati di sensori accessi e notifiche
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0077.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P1 94/100 (non release priority).
+Facilita Battery_Guard: 80% -> 82%. Scoped permission/service health donor contracts; native OEM validation pending.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

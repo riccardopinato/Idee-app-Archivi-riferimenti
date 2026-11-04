@@ -580,7 +580,7 @@ def main(argv=None):
         remainder = pending_total - len(batch)
         if remainder:
             # GitHub's secondary hourly content-generation limits make a
-            # single 342-item creation burst unsafe. Future scheduled runs
+            # a full-catalogue creation burst is unsafe. Future scheduled runs
             # resume from the saved stable markers, never deleting records.
             print("BATCH_SYNC_PASS", len(batch), "REMAINING", remainder,
                   "PROJECT", project["url"])

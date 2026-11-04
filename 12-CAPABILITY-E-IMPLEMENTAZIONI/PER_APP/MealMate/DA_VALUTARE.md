@@ -6,7 +6,7 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 
 | CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CAP-0044](../../REGISTRO_CAPABILITY/CAP-0044.md) | Ricette anti-spreco da ingredienti | 95 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0044/README.md) | Non clonare TasteAI; validare differenziazione |
-| [CAP-0045](../../REGISTRO_CAPABILITY/CAP-0045.md) | Meal plan e spesa derivata | 82 | 80% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0045/README.md) | Lista derivata con consenso e separazione proprieta dati |
+| [CAP-0044](../../REGISTRO_CAPABILITY/CAP-0044.md) | Ricette anti-spreco da ingredienti | 95 | 91% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0044/README.md) | Non clonare TasteAI; validare differenziazione |
+| [CAP-0045](../../REGISTRO_CAPABILITY/CAP-0045.md) | Meal plan e spesa derivata | 82 | 76% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0045/README.md) | Lista derivata con consenso e separazione proprieta dati |
 
 **Totale associazioni app:** 2. Nessuna modifica alla roadmap o al codice dell'app.
