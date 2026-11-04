@@ -1,1 +1,2 @@
 One-shot generation for six Anna product-evaluation admissions from 58 archived DA_VERIFICARE; preserve scores/states/source and totals 160/385. 2026-11-04.
+Rerun after correcting test to fail only on a forged cross-app admission.
