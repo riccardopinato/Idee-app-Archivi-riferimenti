@@ -7,7 +7,7 @@ Questa cartella contiene schede storiche e, per ogni app, tre viste operative di
 | App | Totale | Da valutare | Già integrati | Da verificare | CSV |
 | --- | --- | --- | --- | --- | --- |
 | [180FlipCharge](180FlipCharge.md) | 1 | [0](180FlipCharge/DA_VALUTARE.md) | [0](180FlipCharge/GIA_INTEGRATI.md) | [1](180FlipCharge/DA_VERIFICARE.md) | [CSV](180FlipCharge/TABELLA.csv) |
-| [Agenda-per-Anna](Agenda-per-Anna.md) | 74 | [8](Agenda-per-Anna/DA_VALUTARE.md) | [8](Agenda-per-Anna/GIA_INTEGRATI.md) | [58](Agenda-per-Anna/DA_VERIFICARE.md) | [CSV](Agenda-per-Anna/TABELLA.csv) |
+| [Agenda-per-Anna](Agenda-per-Anna.md) | 74 | [14](Agenda-per-Anna/DA_VALUTARE.md) | [8](Agenda-per-Anna/GIA_INTEGRATI.md) | [52](Agenda-per-Anna/DA_VERIFICARE.md) | [CSV](Agenda-per-Anna/TABELLA.csv) |
 | [Android-Omni-Cleaner](Android-Omni-Cleaner.md) | 3 | [1](Android-Omni-Cleaner/DA_VALUTARE.md) | [0](Android-Omni-Cleaner/GIA_INTEGRATI.md) | [2](Android-Omni-Cleaner/DA_VERIFICARE.md) | [CSV](Android-Omni-Cleaner/TABELLA.csv) |
 | [App-corpo-umano](App-corpo-umano.md) | 1 | [1](App-corpo-umano/DA_VALUTARE.md) | [0](App-corpo-umano/GIA_INTEGRATI.md) | [0](App-corpo-umano/DA_VERIFICARE.md) | [CSV](App-corpo-umano/TABELLA.csv) |
 | [App-Factory-Core](App-Factory-Core.md) | 1 | [1](App-Factory-Core/DA_VALUTARE.md) | [0](App-Factory-Core/GIA_INTEGRATI.md) | [0](App-Factory-Core/DA_VERIFICARE.md) | [CSV](App-Factory-Core/TABELLA.csv) |
