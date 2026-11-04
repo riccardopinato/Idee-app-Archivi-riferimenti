@@ -79,7 +79,9 @@ def main():
 
     inventory = json.loads(INV.read_text(encoding="utf-8"))
     by_repo = {row["name"]: row for row in inventory["repositories"]}
-    for name, sha in (("Notes-Ecosistema", NOTE_SHA), ("TasteAI", TASTE_SHA)):
+    for name, sha in (("Notes-Ecosistema", NOTE_SHA), ("TasteAI", TASTE_SHA),
+                      ("App-Factory-Core", "1229d8c4d411fda76ccc58a6ed0118da1f7245e4"),
+                      ("Idee-app-Archivi-riferimenti", "54705d4c5317e88d2a183cc5a47aa6e64ec886fc")):
         if name not in by_repo:
             raise SystemExit("Missing observed repo " + name)
         by_repo[name]["head_sha"] = sha
