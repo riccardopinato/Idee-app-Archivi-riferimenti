@@ -34,5 +34,12 @@ jobs:
           git add 11-NUOVE-IDEE 12-CAPABILITY-E-IMPLEMENTAZIONI 13-KIT-INTEGRAZIONE README.md DA_VALUTARE.md GIA_INTEGRATI.md 09-AGGIORNAMENTI/CHANGELOG.md
           if ! git diff --cached --quiet; then
             git commit -m "data(catalog): admit 10 ML capability engines and all 23 crosswalks"
-            git push origin HEAD:feat/ml23-capabilities-golden-roadmap-20261104
+            for attempt in 1 2 3 4; do
+              if git push origin HEAD:feat/ml23-capabilities-golden-roadmap-20261104; then
+                exit 0
+              fi
+              sleep $((attempt * 5))
+            done
+            echo "Failed to push generated catalog after bounded retries"
+            exit 1
           fi
