@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """One-time, idempotent 23-ML-to-CAP admission with evidence-preserving Golden map."""
 import json, re
+# E0 proposals for Anna are intentionally not assigned invented source-audit paths.
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
