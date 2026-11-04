@@ -1,1 +1,0 @@
-ML10 consumer evidence regenerate only after Notes #57 and TasteAI #2 merge, exact head CI verified: 2026-11-04.
