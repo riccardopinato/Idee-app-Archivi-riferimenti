@@ -32,7 +32,7 @@ Questa cartella contiene schede storiche e, per ogni app, tre viste operative di
 | [Idee-app-Archivi-riferimenti](Idee-app-Archivi-riferimenti.md) | 2 | [2](Idee-app-Archivi-riferimenti/DA_VALUTARE.md) | [0](Idee-app-Archivi-riferimenti/GIA_INTEGRATI.md) | [0](Idee-app-Archivi-riferimenti/DA_VERIFICARE.md) | [CSV](Idee-app-Archivi-riferimenti/TABELLA.csv) |
 | [In-Cucina-con-gli-Anime](In-Cucina-con-gli-Anime.md) | 10 | [6](In-Cucina-con-gli-Anime/DA_VALUTARE.md) | [0](In-Cucina-con-gli-Anime/GIA_INTEGRATI.md) | [4](In-Cucina-con-gli-Anime/DA_VERIFICARE.md) | [CSV](In-Cucina-con-gli-Anime/TABELLA.csv) |
 | [MealMate](MealMate.md) | 2 | [2](MealMate/DA_VALUTARE.md) | [0](MealMate/GIA_INTEGRATI.md) | [0](MealMate/DA_VERIFICARE.md) | [CSV](MealMate/TABELLA.csv) |
-| [Notes-Ecosistema](Notes-Ecosistema.md) | 80 | [74](Notes-Ecosistema/DA_VALUTARE.md) | [0](Notes-Ecosistema/GIA_INTEGRATI.md) | [6](Notes-Ecosistema/DA_VERIFICARE.md) | [CSV](Notes-Ecosistema/TABELLA.csv) |
+| [Notes-Ecosistema](Notes-Ecosistema.md) | 83 | [70](Notes-Ecosistema/DA_VALUTARE.md) | [0](Notes-Ecosistema/GIA_INTEGRATI.md) | [13](Notes-Ecosistema/DA_VERIFICARE.md) | [CSV](Notes-Ecosistema/TABELLA.csv) |
 | [Notification-Control](Notification-Control.md) | 2 | [0](Notification-Control/DA_VALUTARE.md) | [0](Notification-Control/GIA_INTEGRATI.md) | [2](Notification-Control/DA_VERIFICARE.md) | [CSV](Notification-Control/TABELLA.csv) |
 | [PDF-Pocket-Tools](PDF-Pocket-Tools.md) | 2 | [2](PDF-Pocket-Tools/DA_VALUTARE.md) | [0](PDF-Pocket-Tools/GIA_INTEGRATI.md) | [0](PDF-Pocket-Tools/DA_VERIFICARE.md) | [CSV](PDF-Pocket-Tools/TABELLA.csv) |
 | [PDF-Unifier](PDF-Unifier.md) | 12 | [8](PDF-Unifier/DA_VALUTARE.md) | [0](PDF-Unifier/GIA_INTEGRATI.md) | [4](PDF-Unifier/DA_VERIFICARE.md) | [CSV](PDF-Unifier/TABELLA.csv) |
@@ -51,7 +51,7 @@ Questa cartella contiene schede storiche e, per ogni app, tre viste operative di
 | [WEB-012](WEB-012.md) | 2 | [2](WEB-012/DA_VALUTARE.md) | [0](WEB-012/GIA_INTEGRATI.md) | [0](WEB-012/DA_VERIFICARE.md) | [CSV](WEB-012/TABELLA.csv) |
 | [WEB-014](WEB-014.md) | 2 | [2](WEB-014/DA_VALUTARE.md) | [0](WEB-014/GIA_INTEGRATI.md) | [0](WEB-014/DA_VERIFICARE.md) | [CSV](WEB-014/TABELLA.csv) |
 | [WEB-UTILITY](WEB-UTILITY.md) | 1 | [1](WEB-UTILITY/DA_VALUTARE.md) | [0](WEB-UTILITY/GIA_INTEGRATI.md) | [0](WEB-UTILITY/DA_VERIFICARE.md) | [CSV](WEB-UTILITY/TABELLA.csv) |
-| [Wonderlog](Wonderlog.md) | 29 | [26](Wonderlog/DA_VALUTARE.md) | [0](Wonderlog/GIA_INTEGRATI.md) | [3](Wonderlog/DA_VERIFICARE.md) | [CSV](Wonderlog/TABELLA.csv) |
+| [Wonderlog](Wonderlog.md) | 30 | [26](Wonderlog/DA_VALUTARE.md) | [0](Wonderlog/GIA_INTEGRATI.md) | [4](Wonderlog/DA_VERIFICARE.md) | [CSV](Wonderlog/TABELLA.csv) |
 | [Work-Time-Keeper](Work-Time-Keeper.md) | 1 | [1](Work-Time-Keeper/DA_VALUTARE.md) | [0](Work-Time-Keeper/GIA_INTEGRATI.md) | [0](Work-Time-Keeper/DA_VERIFICARE.md) | [CSV](Work-Time-Keeper/TABELLA.csv) |
 | [World-Days](World-Days.md) | 10 | [3](World-Days/DA_VALUTARE.md) | [0](World-Days/GIA_INTEGRATI.md) | [7](World-Days/DA_VERIFICARE.md) | [CSV](World-Days/TABELLA.csv) |
 

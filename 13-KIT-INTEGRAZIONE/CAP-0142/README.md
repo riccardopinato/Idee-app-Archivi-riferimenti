@@ -29,3 +29,9 @@ Creazione volontaria di lettere/ricordi personali o condivisi con data di apertu
 **Gate:** Nessuna garanzia crittografica del blocco temporale. QA date/fusi/offline/orologio, backup e sync due device; shared dopo Privacy #215.
 
 [CAP canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0142.md). Priorità CAP tecnica `P3 75/100` diversa dalla priorità idea editoriale. Nessuno sviluppo approvato.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P3 77/100 (non release priority).
+Motivo score: Anna future-letter source merged but shared capsules still not proven.
+Facilita Agenda-per-Anna: 70% -> 77%. Anna personal future letters merged; shared capsule still pending.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

@@ -27,3 +27,9 @@ Estrarre data totale negozio da scontrino
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0034.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 90/100 (non release priority).
+Facilita CashMate-AI: 80% -> 76%. No app source listed in 31-repo inventory; add conservative bootstrap/verification friction.
+Facilita BeerClass-AI: 80% -> 76%. No app source listed in 31-repo inventory; add conservative bootstrap/verification friction.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

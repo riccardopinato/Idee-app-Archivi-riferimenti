@@ -27,3 +27,9 @@ Pacchetti contenuti verificabili e localizzabili
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0042.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P1 94/100 (non release priority).
+Facilita World-Days: 80% -> 85%. World-Days multilingual editorial catalog and reusable editorial reference.
+Facilita In-Cucina-con-gli-Anime: 80% -> 82%. World-Days multilingual editorial catalog and reusable editorial reference.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

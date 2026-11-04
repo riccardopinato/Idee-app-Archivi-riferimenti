@@ -7,6 +7,6 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
 | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0039](../../REGISTRO_CAPABILITY/CAP-0039.md) | EXIF privacy safe copy | 98 | 90% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0039/README.md) | Niente modifica di originali e UI attributi rimossi |
-| [CAP-0040](../../REGISTRO_CAPABILITY/CAP-0040.md) | Deduplicazione foto per hash percettivo | 87 | 80% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0040/README.md) | Verificare algoritmo reale e precisione duplicati quasi identici |
+| [CAP-0040](../../REGISTRO_CAPABILITY/CAP-0040.md) | Deduplicazione foto per hash percettivo | 87 | 77% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0040/README.md) | Verificare algoritmo reale e precisione duplicati quasi identici |
 
 **Totale associazioni app:** 3. Nessuna modifica alla roadmap o al codice dell'app.

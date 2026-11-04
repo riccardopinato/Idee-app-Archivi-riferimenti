@@ -1,6 +1,6 @@
 # Kit di integrazione — App Factory
 
-**147 cartelle kit, una per capability CAP.** [Indice](INDICE.md) · [Facilità integrazione](METODOLOGIA_FACILITA.md).
+**150 cartelle kit, una per capability CAP.** [Indice](INDICE.md) · [Facilità integrazione](METODOLOGIA_FACILITA.md).
 
 Ogni kit contiene: `README.md`, `SPECIFICHE.md`, `CODICE_RIFERIMENTO.txt`, `INTEGRAZIONE_FLUTTER.md`, `LICENZE_E_DIPENDENZE.md`, `TEST_E_VALIDAZIONE.md`.
 
@@ -28,3 +28,7 @@ Le schede di questo commit NON attestano i livelli 2, 3 o 4. Nessun codice OSS v
 ## Proposte Anna NotebookLM 02/11/2026
 
 [7 kit nuovi CAP-0141…0147](INDICE.md): solo **RIFERIMENTI_ACQUISITI** e compatibilità preliminare, nessun codice estratto o compilato. Tutte le feature richiedono separata approvazione prodotto.
+
+## Audit Golden v28 04/11/2026
+
+Tre nuovi kit CAP-0148...0150 sono soltanto proposte. Rapporto completo in cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

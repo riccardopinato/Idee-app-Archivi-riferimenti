@@ -1,0 +1,5 @@
+CAP: CAP-0148
+FONTE: https://github.com/riccardopinato/Notes-Ecosistema/issues/46
+CODICE_ACQUISITO: NO
+DONOR_E3: NON CERTIFICATO
+APP_NOTES_QA: NON VERIFICATO

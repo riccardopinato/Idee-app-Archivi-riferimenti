@@ -18,3 +18,8 @@
 **Gate di prodotto:** Nessuna nuova funzione e approvata nella roadmap corrente; questo e un kit per futuri esperimenti, non una modifica all'app o ai dati. Gli stati app restano PROPOSTA.
 
 [Specifiche](SPECIFICHE.md) · [Codice e provenienza](CODICE_RIFERIMENTO.txt) · [Integrazione Flutter](INTEGRAZIONE_FLUTTER.md) · [Licenze](LICENZE_E_DIPENDENZE.md) · [Test](TEST_E_VALIDAZIONE.md)
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P1 92/100 (non release priority).
+Facilita Agenda-per-Anna: 70% -> 76%. Anna assisted replanning source #217 merged; full alternative plans pending.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

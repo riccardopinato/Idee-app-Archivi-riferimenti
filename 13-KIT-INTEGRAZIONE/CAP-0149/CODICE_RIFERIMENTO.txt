@@ -1,0 +1,5 @@
+CAP: CAP-0149
+FONTE: https://github.com/obsidianmd/jsoncanvas/blob/main/spec/1.0.md
+CODICE_ACQUISITO: NO
+DONOR_E3: NON CERTIFICATO
+APP_NOTES_QA: NON VERIFICATO

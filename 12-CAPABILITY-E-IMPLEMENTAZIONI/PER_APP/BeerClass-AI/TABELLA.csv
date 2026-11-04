@@ -1,4 +1,4 @@
 App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
-BeerClass-AI,DA_VALUTARE,CAP-0035,OCR immagini e documenti on device,92,80,PROPOSTA,Audit licenza ML Kit e processi media originali,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0035/README.md
-BeerClass-AI,DA_VALUTARE,CAP-0034,OCR scontrino e parsing spese,90,80,PROPOSTA,OCR locale poi conferma prima di transazione,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0034/README.md
-BeerClass-AI,DA_VALUTARE,CAP-0036,Riconoscimento etichette senza barcode,78,80,PROPOSTA,Conferma manuale prodotto gradazione ingredienti,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0036/README.md
+BeerClass-AI,DA_VALUTARE,CAP-0035,OCR immagini e documenti on device,92,76,PROPOSTA,Audit licenza ML Kit e processi media originali,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0035/README.md
+BeerClass-AI,DA_VALUTARE,CAP-0034,OCR scontrino e parsing spese,90,76,PROPOSTA,OCR locale poi conferma prima di transazione,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0034/README.md
+BeerClass-AI,DA_VALUTARE,CAP-0036,Riconoscimento etichette senza barcode,78,76,PROPOSTA,Conferma manuale prodotto gradazione ingredienti,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0036/README.md

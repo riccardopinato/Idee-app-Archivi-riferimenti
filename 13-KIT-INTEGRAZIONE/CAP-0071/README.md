@@ -27,3 +27,10 @@ Pack scaricabili opzionali con update e verifica
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0071.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 90/100 (non release priority).
+Facilita World-Days: 65% -> 69%. Versioned offline packs and consumer source available, actual device delivery distinct.
+Facilita CamperBoss: 65% -> 67%. Versioned offline packs and consumer source available, actual device delivery distinct.
+Facilita Notes-Ecosistema: 65% -> 67%. Versioned offline packs and consumer source available, actual device delivery distinct.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

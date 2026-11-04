@@ -26,3 +26,9 @@ Duplicate Notes Cleaner: Trova note semanticamente simili e suggerisce confronto
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0116.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 79/100 (non release priority).
+Motivo score: Similarity/duplicate Golden still design-only; safe personal-note merge not proven.
+Facilita Notes-Ecosistema: 85% -> 77%. Golden similarity review still design-only, safe merge/undo absent.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

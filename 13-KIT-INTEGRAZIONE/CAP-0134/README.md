@@ -24,3 +24,11 @@ App `riccardopinato/Notes-Ecosistema@3fd9b0df5ab3b7470c65721b4bad7f3fd8c59e6c`, 
 [Specifiche](SPECIFICHE.md) · [Provenienza](CODICE_RIFERIMENTO.txt) · [Piano Flutter](INTEGRAZIONE_FLUTTER.md) · [Licenze](LICENZE_E_DIPENDENZE.md) · [Test](TEST_E_VALIDAZIONE.md)
 
 **Per-app ease (dopo audit):** Notes 70%, Anna 55%, PDF-Unifier 65%. Stime revisionate per modello e nuovo runtime, non misure runtime.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 84/100 (non release priority).
+Motivo score: DocRex 3-class scope lacks Italian mobile validation despite former 98 score.
+Facilita Notes-Ecosistema: 70% -> 58%. No supported Italian Android benchmark for constrained 3-class DocRex.
+Facilita Agenda-per-Anna: 25% -> 17%. No supported Italian Android benchmark for constrained 3-class DocRex.
+Facilita PDF-Unifier: 65% -> 54%. No supported Italian Android benchmark for constrained 3-class DocRex.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

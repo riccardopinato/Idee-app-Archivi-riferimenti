@@ -28,3 +28,11 @@ Trasferimento esplicito con provenance senza sincronizzazione implicita
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0020.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 88/100 (non release priority).
+Facilita Agenda-per-Anna: 60% -> 58%. Cross-app paired installed-device transport has no end-to-end physical proof.
+Facilita Wonderlog: 60% -> 58%. Cross-app paired installed-device transport has no end-to-end physical proof.
+Facilita Notes-Ecosistema: 60% -> 58%. Cross-app paired installed-device transport has no end-to-end physical proof.
+Facilita TrailPath: 60% -> 58%. Cross-app paired installed-device transport has no end-to-end physical proof.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

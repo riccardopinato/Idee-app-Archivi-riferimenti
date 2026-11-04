@@ -28,3 +28,9 @@ Layer di disegno persistente sotto le schede
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0029.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 84/100 (non release priority).
+Motivo score: Ink/viewport pure reference now exists, but consumer pen/device remains pending.
+Facilita Notes-Ecosistema: 70% -> 76%. Golden ink reference and Notes canvas core present, device stylus pending.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.

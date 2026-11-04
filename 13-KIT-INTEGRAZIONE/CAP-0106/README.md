@@ -28,3 +28,8 @@ Confrontare ore disponibili, task stimate e riunioni per giorno/settimana, evide
 [Capability canonica](../../12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0106.md). Consultare la [metodologia facilità %](../METODOLOGIA_FACILITA.md).
 
 **Stato:** fonte archiviata; codice esterno NON copiato; licenze NON certificate in questo kit.
+
+## Re-audit v28 — 04/11/2026
+Priorita corrente P2 87/100 (non release priority).
+Facilita Notes-Ecosistema: 85% -> 91%. Notes workload/WIP merged #45, meeting heatmap unimplemented.
+Riferimento: audit globale Factory Golden v28 nella cartella 12-CAPABILITY-E-IMPLEMENTAZIONI.
