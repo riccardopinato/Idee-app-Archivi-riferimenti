@@ -7,6 +7,12 @@
 - **Stato:** implementazione del sincronizzatore e collaudo offline; la creazione **reale** del Project richiede il segreto `APP_FACTORY_PROJECT_TOKEN`, non disponibile dalla connessione GitHub del solo Chat. Non dichiarare creato un Project finché l'Actions run live non mostra `PROJECT_CREATED`/`PROJECT_REUSED`, `PILOT_PASS` e `FULL_SYNC_PASS` con URL.
 - **Assenza di operazioni distruttive:** nessuna cancellazione di file, issue o item, nessuna archiviazione, nessuna modifica ai repository app, nessuna variazione di visibilità e nessuna scrittura di stati nel registro canonico.
 
+## Snapshot catalogo 04/11/2026
+
+- Registro canonico ricalibrato: **150 CAP / 48 app / 346 associazioni**; le 342 associazioni menzionate nello storico sotto sono il precedente snapshot, non un limite del sync.
+- Il mirror ricalcola i campi dai dati canonicali: non elimina gli item legacy, non promuove uno stato app in base al solo CI e non interpreta facilità come probabilità.
+- Un precedente Pilot/Batch/Full PASS per 342 righe **non certifica** la presenza di tutte le 346 righe: serve una nuova lettura remota dopo il cambio catalogo.
+
 ## Campi e viste
 
 Campi: `App` (testo), `Priorità` (numero 0–100), `Facilità` (numero 0–100), `Fase` (menu: Da valutare, Già integrati, Da verificare). Il titolo del draft include CAP + app + descrizione.
