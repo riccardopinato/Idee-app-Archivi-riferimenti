@@ -1,4 +1,4 @@
-# Pocket-Guard — Da valutare (3)
+# Pocket-Guard — Da valutare (2)
 
 Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, senza soglie di score. Non comprende integrazioni parziali, dichiarate o verificate.
 
@@ -6,7 +6,6 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 
 | CAP ID | Capability | Priorità | Facilità | Stato per app | Fonte / prova | Prossimo controllo |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CAP-0158](../../REGISTRO_CAPABILITY/CAP-0158.md) | Soglie adattive con isteresi per luce e prossimità | 96 | 91% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0158/README.md) | Sensor availability/health, luce coperta, prossimità binaria, calibrazione, consumo e verifica real-device OEM. |
 | [CAP-0081](../../REGISTRO_CAPABILITY/CAP-0081.md) | Phone protection sensitivity adviser | 73 | 75% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0081/README.md) | False-positive risk e test sensori reali |
 | [CAP-0157](../../REGISTRO_CAPABILITY/CAP-0157.md) | Gesti volontari locali tramite Dynamic Time Warping | 72 | 72% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0157/README.md) | Template locali e soglia calibrata, bounded samples, falso positivo sui device, Android background/permission, no cattura audio implicita. |
 

@@ -75,3 +75,7 @@ Le sette nuove CAP sono **PROPOSTA**, non integrazioni. La classifica originale 
 ## Audit ML10 secondo lotto — 04/11/2026
 
 [Audit profondo di 10 famiglie on-device, crosswalk CAP e percorsi Donor/Golden](ML10_AUDIT_DONOR_GOLDEN_2026-11-04.md). Nessuna CAP duplicata: i modelli sono tecniche alternative/estensioni per capability già censite. [Core PR #71](https://github.com/riccardopinato/App-Factory-Core/pull/71) ha integrato due reference engine pure Dart: [Dart CI main SUCCESS](https://github.com/riccardopinato/App-Factory-Core/actions/runs/41833497699). Sono verificati in Core, **non** donor di un'app consumatrice né Golden. [Gate E5/Golden #72](https://github.com/riccardopinato/App-Factory-Core/issues/72). Il registro 160 CAP / 385 associazioni resta invariato.
+
+## Full-scope ML10 capability re-audit — 04/11/2026
+
+[Audit ricalcolato di tutte le 160 CAP e 385 associazioni per 48 app](AUDIT_COMPLETO_ML10_2026-11-04.md) con [CSV integrale per capability](AUDIT_COMPLETO_CAP_ML10_2026-11-04.csv), [CSV integrale per app](AUDIT_COMPLETO_APP_ML10_2026-11-04.csv), motivazione individuale nel registro canonico e viste per-app rigenerate. Le variazioni sono evidence-gated, non automatiche né probabilità di successo. [Core P1–P3 #73](https://github.com/riccardopinato/App-Factory-Core/pull/73) matematici PASS; modelli Vision/Audio ancora bloccati su diritti, modello e QA. Golden v28 non promosso.
