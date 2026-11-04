@@ -1,0 +1,38 @@
+name: One-time capability audit regeneration
+on:
+  push:
+    branches:
+      - docs/notes-four-sources-audit-crosswalk-20261104
+    paths:
+      - scripts/reprioritize_catalog_v28_20261104.py
+      - .github/workflows/audit-catalog-rebuild-once.yml
+permissions:
+  contents: write
+jobs:
+  audited-rebuild:
+    if: github.repository == 'riccardopinato/Idee-app-Archivi-riferimenti'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout audited branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: true
+      - name: Reassess every capability and integration estimate
+        run: python3 scripts/reprioritize_catalog_v28_20261104.py
+      - name: Generate all canonical catalogue views
+        run: python3 scripts/build_catalog.py
+      - name: Verify exact regenerated views and partitions
+        run: |
+          python3 scripts/build_catalog.py --check
+          python3 -m unittest discover -s tests -p 'capability_registry_test.py' -v
+          python3 -m unittest discover -s tests -p 'status_views_test.py' -v
+      - name: Commit generated audit and derived outputs
+        run: |
+          git config user.name "app-factory-audit[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 12-CAPABILITY-E-IMPLEMENTAZIONI 13-KIT-INTEGRAZIONE 09-AGGIORNAMENTI/CHANGELOG.md README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "data(catalog): recalculate all v28 capabilities and per-app effort"
+            git push origin HEAD:docs/notes-four-sources-audit-crosswalk-20261104
+          fi
