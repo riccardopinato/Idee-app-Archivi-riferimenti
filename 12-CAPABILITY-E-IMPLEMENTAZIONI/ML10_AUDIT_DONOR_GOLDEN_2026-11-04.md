@@ -4,7 +4,7 @@
 **Origine:** messaggio utente del 04/11/2026, che ripete tre volte due liste equivalenti. Il lotto deduplicato conta **10 famiglie**, con varianti metodologiche non equivalenti.
 **Factory baseline fissata:** `riccardopinato/App-Factory-Core@21afcd78606dfcf49a0f43886d8a6f5bbc1858cf`, CURRENT.yaml Master 27 / Golden Index 28 / Registry 2.
 **Catalogo corrente:** 160 CAP e 385 associazioni. Nessuna nuova CAP canonica in questo audit: per ogni scenario si individua un owner funzionale già registrato. Il numero di algoritmi non corrisponde al numero di capability di prodotto.
-**Code track:** [App-Factory-Core PR #71](https://github.com/riccardopinato/App-Factory-Core/pull/71) — *candidati* MinHash/LSH e Multinomial Naive Bayes, prove CI/verifica Golden distinte. Non dichiara una integrazione consumer.
+**Code track E3 matematico verificato:** [App-Factory-Core PR #71](https://github.com/riccardopinato/App-Factory-Core/pull/71) **MERGED**, source `f5dad948dcc1096864cd4b9db84b9f0d86c9cb03`; [Dart full tests e analyze main SUCCESS](https://github.com/riccardopinato/App-Factory-Core/actions/runs/41833497699), [Factory validation main SUCCESS](https://github.com/riccardopinato/App-Factory-Core/actions/runs/41833497896). Sono **reference engine testati in Core**, non donor applicativi E3 né Golden o consumer E5. [Issue E5/Golden #72](https://github.com/riccardopinato/App-Factory-Core/issues/72).
 
 ## Correzione delle premesse e provenienza
 
