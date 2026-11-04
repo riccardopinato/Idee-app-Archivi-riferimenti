@@ -23,6 +23,8 @@ Anche le idee **scartate o rinviate** rimangono visibili con motivazione e data.
 
 ## Ricerche di nuove funzionalita (non nuove app)
 
+- [Algoritmi on-device e ML classico — 23 tecniche e 10 candidature](CATALOGO_ALGORITMI_ON_DEVICE_2026-11-04.md), audit 04/11/2026 con mappatura CAP/Golden e vincoli CPU, privacy e licenze.
+
 - [Audit Notes 4 fonti / crosswalk 04-11-2026](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_QUATTRO_FONTI_NOTES_2026-11-04.md): AI Valley, Hugging Face, GitHub JSON Canvas, GitLab; 9 gap di cui diversi già parzialmente in codice, stati CAP da riconciliare senza false integrazioni.
 
 - [12 idee Hugging Face «to do» per Notes e Anna](../12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_NOTE_2026-11-01.md): ingressi da Inbox, catalogazione canonica CAP-0092…0101 e riuso dei CAP preesistenti. Stato: PROPOSTA.

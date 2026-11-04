@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-04 — Intake 23 algoritmi ML classico/on-device
+- Analizzato Machine Learning.txt e verificato con documentazione ufficiale Android e scikit-learn; identificati 23 pattern, di cui 10 candidature di comportamento distinte e 13 riusi/estensioni di CAP esistenti.
+- Aggiornata l'INBOX con ID ML26-001…023 e creato catalogo di fattibilità, rischi, priorità di analisi e stime per app; nessuna promozione CAP o certificazione app/Golden.
+- Baseline Factory @6cbb3449… (Master 27, Golden v28). Nessuna modifica al registro canonico, ai punteggi esistenti o alle app.
+
 ## 2026-11-04 — Audit integrale Golden v28, tutte le app
 - Revisione 147 CAP, 342 associazioni storiche e 31 repository reali, con 10 score e 67 valori facilita ricalibrati sulla nuova evidenza; altri valori conservati.
 - Tre CAP nuove (0148 Smart Inbox, 0149 JSON Canvas, 0150 Daily Hub), un consumer parziale Wonderlog, kit e indici rigenerati.
