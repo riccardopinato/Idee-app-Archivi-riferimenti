@@ -32,12 +32,12 @@ Questa cartella contiene schede storiche e, per ogni app, tre viste operative di
 | [Idee-app-Archivi-riferimenti](Idee-app-Archivi-riferimenti.md) | 2 | [2](Idee-app-Archivi-riferimenti/DA_VALUTARE.md) | [0](Idee-app-Archivi-riferimenti/GIA_INTEGRATI.md) | [0](Idee-app-Archivi-riferimenti/DA_VERIFICARE.md) | [CSV](Idee-app-Archivi-riferimenti/TABELLA.csv) |
 | [In-Cucina-con-gli-Anime](In-Cucina-con-gli-Anime.md) | 12 | [8](In-Cucina-con-gli-Anime/DA_VALUTARE.md) | [0](In-Cucina-con-gli-Anime/GIA_INTEGRATI.md) | [4](In-Cucina-con-gli-Anime/DA_VERIFICARE.md) | [CSV](In-Cucina-con-gli-Anime/TABELLA.csv) |
 | [MealMate](MealMate.md) | 3 | [3](MealMate/DA_VALUTARE.md) | [0](MealMate/GIA_INTEGRATI.md) | [0](MealMate/DA_VERIFICARE.md) | [CSV](MealMate/TABELLA.csv) |
-| [Notes-Ecosistema](Notes-Ecosistema.md) | 88 | [75](Notes-Ecosistema/DA_VALUTARE.md) | [0](Notes-Ecosistema/GIA_INTEGRATI.md) | [13](Notes-Ecosistema/DA_VERIFICARE.md) | [CSV](Notes-Ecosistema/TABELLA.csv) |
+| [Notes-Ecosistema](Notes-Ecosistema.md) | 88 | [73](Notes-Ecosistema/DA_VALUTARE.md) | [0](Notes-Ecosistema/GIA_INTEGRATI.md) | [15](Notes-Ecosistema/DA_VERIFICARE.md) | [CSV](Notes-Ecosistema/TABELLA.csv) |
 | [Notification-Control](Notification-Control.md) | 2 | [0](Notification-Control/DA_VALUTARE.md) | [0](Notification-Control/GIA_INTEGRATI.md) | [2](Notification-Control/DA_VERIFICARE.md) | [CSV](Notification-Control/TABELLA.csv) |
 | [PDF-Pocket-Tools](PDF-Pocket-Tools.md) | 2 | [2](PDF-Pocket-Tools/DA_VALUTARE.md) | [0](PDF-Pocket-Tools/GIA_INTEGRATI.md) | [0](PDF-Pocket-Tools/DA_VERIFICARE.md) | [CSV](PDF-Pocket-Tools/TABELLA.csv) |
 | [PDF-Unifier](PDF-Unifier.md) | 15 | [11](PDF-Unifier/DA_VALUTARE.md) | [0](PDF-Unifier/GIA_INTEGRATI.md) | [4](PDF-Unifier/DA_VERIFICARE.md) | [CSV](PDF-Unifier/TABELLA.csv) |
 | [Phone-Guard](Phone-Guard.md) | 7 | [4](Phone-Guard/DA_VALUTARE.md) | [0](Phone-Guard/GIA_INTEGRATI.md) | [3](Phone-Guard/DA_VERIFICARE.md) | [CSV](Phone-Guard/TABELLA.csv) |
-| [Pocket-Guard](Pocket-Guard.md) | 4 | [3](Pocket-Guard/DA_VALUTARE.md) | [0](Pocket-Guard/GIA_INTEGRATI.md) | [1](Pocket-Guard/DA_VERIFICARE.md) | [CSV](Pocket-Guard/TABELLA.csv) |
+| [Pocket-Guard](Pocket-Guard.md) | 4 | [2](Pocket-Guard/DA_VALUTARE.md) | [0](Pocket-Guard/GIA_INTEGRATI.md) | [2](Pocket-Guard/DA_VERIFICARE.md) | [CSV](Pocket-Guard/TABELLA.csv) |
 | [SafeShare](SafeShare.md) | 1 | [1](SafeShare/DA_VALUTARE.md) | [0](SafeShare/GIA_INTEGRATI.md) | [0](SafeShare/DA_VERIFICARE.md) | [CSV](SafeShare/TABELLA.csv) |
 | [Send-to-pc](Send-to-pc.md) | 3 | [2](Send-to-pc/DA_VALUTARE.md) | [0](Send-to-pc/GIA_INTEGRATI.md) | [1](Send-to-pc/DA_VERIFICARE.md) | [CSV](Send-to-pc/TABELLA.csv) |
 | [SleepMax-Coach](SleepMax-Coach.md) | 3 | [3](SleepMax-Coach/DA_VALUTARE.md) | [0](SleepMax-Coach/GIA_INTEGRATI.md) | [0](SleepMax-Coach/DA_VERIFICARE.md) | [CSV](SleepMax-Coach/TABELLA.csv) |

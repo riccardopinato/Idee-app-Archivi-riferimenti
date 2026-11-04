@@ -49,7 +49,7 @@
       "name": "App-Factory-Core",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": "cea0a6d9ecbf17aabd1f7df177043fd863b3f754",
+      "head_sha": "02f3cd94f0ee6f19bc06fc0cb329fdf5398a739b",
       "head_observed_at": "2026-11-04"
     },
     {
@@ -126,7 +126,7 @@
       "name": "Idee-app-Archivi-riferimenti",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": "9b7c470a8b4392c679a483d6ae30e9be354057cd",
+      "head_sha": "b61934710e4f69301d338c890cae53d16d480c24",
       "head_observed_at": "2026-11-04"
     },
     {
@@ -147,7 +147,7 @@
       "name": "Notes-Ecosistema",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": "cd3e28f3a22bbd9cd25bf8c6b76b44dc66bdb4f7",
+      "head_sha": "ab254e7a8927778498bc3035d1b97bf21d323fcc",
       "head_observed_at": "2026-11-04"
     },
     {
@@ -175,7 +175,7 @@
       "name": "Pocket-Guard",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": "b7b1c74de66e047c32083365b44561e42237b4fc",
+      "head_sha": "dcec7d82e374e955f1e06c2c8d0a9143c418b6d7",
       "head_observed_at": "2026-11-04"
     },
     {
