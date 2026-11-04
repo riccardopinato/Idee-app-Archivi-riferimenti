@@ -71,3 +71,7 @@ Le sette nuove CAP sono **PROPOSTA**, non integrazioni. La classifica originale 
 ## Audit ML23 / Golden reuse — 04/11/2026
 
 [23 algoritmi mappati a 160 CAP](./AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md) e [grafo dipendenze](CATENE_MOTORI_ML_2026-11-04.json). Questa e catalogazione E0, non codice certificato.
+
+## Audit ML10 secondo lotto — 04/11/2026
+
+[Audit profondo di 10 famiglie on-device, crosswalk CAP e percorsi Donor/Golden](ML10_AUDIT_DONOR_GOLDEN_2026-11-04.md). Nessuna CAP duplicata: i modelli sono tecniche alternative/estensioni per capability già censite. [Core PR #71](https://github.com/riccardopinato/App-Factory-Core/pull/71) contiene due source candidate pure-Dart, ma lo stato del donor e il Golden restano subordinati a CI exact-head e gate E5. Il registro 160 CAP / 385 associazioni resta invariato.

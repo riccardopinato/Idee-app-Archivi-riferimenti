@@ -138,3 +138,7 @@ Il caso #55 e #45 condivide una sola capability; nessuna delle due idee e stata 
 | IA26-001…IA26-100 | 100 idee originali #1–#100; nessun ID app nuovo | ANALISI / NON APPROVATE | [Indice 100](IA-2026-11-02/INDICE_100_SCHEDE.md) · [ranking](IA-2026-11-02/RANKING_100_COMPLETO.md) | concorrenza, review codice, licenze, policy |
 | IA26-E01…E06 | 6 idee non numerate, conservate separatamente | ANALISI / NON APPROVATE | [Indice extra](IA-2026-11-02/INDICE_IDEE_EXTRA_NON_NUMERATE.md) | prototipi tecnici, target, domanda |
 | 14 fusioni della fonte | valutazione combinazioni, nessun prodotto fuso approvato | ANALISI | [Fusioni e reuse](IA-2026-11-02/FUSIONI_E_RIUSO.md) | gate di coerenza prodotto e donor |
+
+## Secondo lotto ML10 on-device — 04/11/2026
+
+Fonte: messaggio utente 04/11 con elenchi ripetuti. Dieci famiglie distinte: Isolation Forest/LOF, MinHash+LSH, agglomerative clustering, HMM, PCA/TruncatedSVD, Naive Bayes, kNN, logistic regression, visione/audio LiteRT/Core ML, exponential smoothing/Holt-Winters. Tutte mappate a CAP esistenti, senza nuova app o duplicazione CAP. [Audit approfondito e scelte](../12-CAPABILITY-E-IMPLEMENTAZIONI/ML10_AUDIT_DONOR_GOLDEN_2026-11-04.md). Due donor puri proposti in [Core PR #71](https://github.com/riccardopinato/App-Factory-Core/pull/71), senza modifica ai prodotti; status non certificato finché mancano gate CI/consumer.
