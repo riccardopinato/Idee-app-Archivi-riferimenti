@@ -1,5 +1,9 @@
 # Inbox nuove idee — da valutare e conservare
 
+## Algoritmi ML leggeri, zero API e on-device — 04/11/2026
+
+[Catalogo decisionale di 23 tecniche, 10 candidature nuove e mappa verso CAP/Golden](./CATALOGO_ALGORITMI_ON_DEVICE_2026-11-04.md). Fonte: Machine Learning.txt dell'utente. ID stabili ML26-001…023. Nessun modello o codice integrato; 10 voci NUOVA CANDIDATA sono intake, non CAP canoniche e non modificano ranking esistenti.
+
 ## Notes-Ecosistema — audit 4 fonti e delta implementativi (04/11/2026)
 
 Origine: audit condiviso dall'utente su **AI Valley, Hugging Face, GitHub/JSON Canvas e GitLab**. Le proposte **NOTES-AUD4-001…009** sono state ricondotte alle CAP canoniche esistenti quando pertinente; Smart Inbox action flow, JSON Canvas e Daily Note Hub non vanno assimilati a CAP solo simili. [Crosswalk con evidenze GitHub e roadmap ancora aperta](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_QUATTRO_FONTI_NOTES_2026-11-04.md).
