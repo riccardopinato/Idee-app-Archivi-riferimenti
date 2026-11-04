@@ -1,8 +1,10 @@
 # Idee app — archivio e riferimenti
 
+**ML10 04/11/2026:** [audit 160 capability/385 associazioni](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_ML10_2026-11-04.md), [consumer Notes e TasteAI](12-CAPABILITY-E-IMPLEMENTAZIONI/ML10_CONSUMER_POSTMERGE_2026-11-04.md) e [due diligence Vision/Audio](12-CAPABILITY-E-IMPLEMENTAZIONI/ML10_MODEL_SCREENING_2026-11-04.md). Score euristici e prove sorgente non equivalgono a device/Store PASS.
+
 ## GitHub Projects — dashboard interattiva opzionale
 
-[Setup, pilota di sei elementi e sincronizzazione conservativa](12-CAPABILITY-E-IMPLEMENTAZIONI/GITHUB_PROJECTS_MIRROR.md). Uno script e un workflow testabili offline preparano un solo Project con campi numerici e viste per stato, alimentato da tutte le 48 app/346 associazioni. **Il Project live si attiva soltanto dopo aver configurato il segreto `APP_FACTORY_PROJECT_TOKEN` con permesso GitHub Projects**; senza credenziali, nessuna creazione o import è dichiarato eseguito. Nessun file o cartella dell'archivio viene eliminato.
+[Setup, pilota di sei elementi e sincronizzazione conservativa](12-CAPABILITY-E-IMPLEMENTAZIONI/GITHUB_PROJECTS_MIRROR.md). Uno script e un workflow testabili offline preparano un solo Project con campi numerici e viste per stato, alimentato da tutte le 48 app/385 associazioni. **Il Project live si attiva soltanto dopo aver configurato il segreto `APP_FACTORY_PROJECT_TOKEN` con permesso GitHub Projects**; senza credenziali, nessuna creazione o import è dichiarato eseguito. Nessun file o cartella dell'archivio viene eliminato.
 
 ## Classifiche operative — cosa fare adesso
 
