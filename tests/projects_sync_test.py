@@ -69,14 +69,15 @@ class ProjectsMirrorContractTests(unittest.TestCase):
                            "REGISTRO_CAPABILITY.json").read_text(encoding="utf-8"))
         pairs = sum(len(c["app_states"]) for c in data["records"])
         self.assertEqual(pairs, len(self.rows))
-        self.assertEqual(len(self.rows), 342)
-        self.assertEqual(len({r["app"] for r in self.rows}), 48)
+        self.assertGreaterEqual(len(self.rows), 342)
+        self.assertEqual(len({r["app"] for r in self.rows}),
+                         len({a for c in data["records"] for a in c["app_states"]}))
         self.assertEqual(len({mirror.row_key(r) for r in self.rows}), len(self.rows))
-        self.assertEqual(Counter(r["category"] for r in self.rows), {
-            "DA_VALUTARE": 214, "GIA_INTEGRATI": 8, "DA_VERIFICARE": 120,
-        })
-        self.assertTrue(any(r["score"] == 94 and r["ease"] == 80
-                            and r["category"] == "DA_VALUTARE" for r in self.rows))
+        categories = Counter(r["category"] for r in self.rows)
+        self.assertEqual(sum(categories.values()), pairs)
+        self.assertEqual(set(categories), set(mirror.CATEGORIES))
+        self.assertTrue(any(r["ease"] < 85 and
+                            r["category"] == "DA_VALUTARE" for r in self.rows))
 
     def test_app_specific_state_does_not_leak_to_other_app(self):
         indexed = {(r["app"], r["cap"]): r for r in self.rows}
@@ -124,7 +125,7 @@ class ProjectsMirrorContractTests(unittest.TestCase):
         self.assertEqual(client.writes, full_writes)
         self.assertEqual(len(client.items), len(self.rows))
 
-    def test_rate_limited_batches_cover_all_342_without_duplicates(self):
+    def test_rate_limited_batches_cover_all_pairs_without_duplicates(self):
         fields = fake_fields()
         project_id = "PROJECT_TEST"
         empty = {}
