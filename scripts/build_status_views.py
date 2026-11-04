@@ -48,6 +48,27 @@ def proven_cap(c, app, state):
     return None
 
 
+def admitted_product_evaluation(record, app, state, audit_class):
+    """Opt-in *product evaluation* lane, distinct from source evidence/status.
+
+    A scoped Anna proposal may have reusable existing code without being a
+    production implementation. Never reclassify SOURCE_*/CI_VERIFIED or
+    OUT_OF_SCOPE cases, and never turn an admission into product approval.
+    """
+    admission = record.get("app_evaluation_admissions", {}).get(app)
+    if admission is None:
+        return None
+    if (app != "Agenda-per-Anna" or state != "PROPOSTA"
+            or audit_class != "PARTIAL_REUSE"
+            or admission.get("decision") != "READY_FOR_PRODUCT_EVALUATION"
+            or not all(admission.get(k) for k in (
+                "assessed_at", "factory_sha", "app_sha",
+                "scope", "rationale", "next_gate", "report"))):
+        raise ValueError("Invalid or unscoped product-evaluation admission: "
+                         + record["id"] + " / " + app)
+    return admission
+
+
 def parse_ideas():
     result = []
     for line in RANKING.read_text(encoding="utf-8").splitlines():
@@ -89,10 +110,22 @@ def render():
                 item["state"] = state + " / " + audit_class
             if audit and audit.get("evidence"):
                 item["audit_url"] = audit["evidence"]
+            admission = admitted_product_evaluation(c, app, state, audit_class)
+            if admission:
+                item["gate"] = admission["next_gate"]
+                item["audit_url"] = ("https://github.com/riccardopinato/"
+                    "Idee-app-Archivi-riferimenti/blob/main/"
+                    + admission["report"])
             url = proven_cap(c, app, state)
             if url:
+                if admission:
+                    raise ValueError("Cannot evaluate already integrated " + c["id"])
                 item["url"] = url
                 cap_done.append(item)
+            elif admission:
+                # Product decision queue only: original status and source
+                # classification remain unchanged and visible in the row.
+                cap_pending.append(item)
             elif (state in VERIFIED or state in REPORTED
                   or audit_class in {"PARTIAL_REUSE", "OUT_OF_SCOPE", "EXISTING_SOURCE", "INFRA_SOURCE"}):
                 cap_review.append(item)
@@ -240,9 +273,20 @@ def render():
             "[CSV ordinabile in Excel](TABELLA.csv) · "
             "[Scheda storica](../" + app + ".md)"
         )
+        if app == "Agenda-per-Anna":
+            evaluate_explanation = (
+                "Proposte nuove e candidature esplicitamente ammesse da audit "
+                "alla sola valutazione di prodotto; anche quando riusano "
+                "codice parziale, il loro stato sorgente non cambia.")
+            evaluate_warning = (
+                "Non sono approvate in Product Bible/roadmap e non sono "
+                "implementate per effetto di questa classificazione.")
+        else:
+            evaluate_explanation = "Candidate ancora aperte, senza soglie di score."
+            evaluate_warning = (
+                "Non comprende integrazioni parziali, dichiarate o verificate.")
         sections = [
-            ("DA_VALUTARE", p, "Candidate ancora aperte, senza soglie di score.",
-             "Non comprende integrazioni parziali, dichiarate o verificate."),
+            ("DA_VALUTARE", p, evaluate_explanation, evaluate_warning),
             ("GIA_INTEGRATI", d, "Equivalenti già dimostrati da prova puntuale di codice.",
              "CI non significa test fisico o pubblicazione."),
             ("DA_VERIFICARE", v, "Riuso parziale, sorgente dichiarata oppure perimetro incerto.",
