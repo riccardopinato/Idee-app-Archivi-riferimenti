@@ -1,4 +1,4 @@
-# Notes-Ecosistema — Da valutare (73)
+# Notes-Ecosistema — Da valutare (72)
 
 Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, senza soglie di score. Non comprende integrazioni parziali, dichiarate o verificate.
 
@@ -35,7 +35,6 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 | [CAP-0101](../../REGISTRO_CAPABILITY/CAP-0101.md) | Dashboard produttivita locale da task canoniche | 84 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0101/README.md) | Verificare report gia esistenti; calcolare su task non cestinate; metriche semplici e leggibili con limiti e no analytics privacy-invasive. |
 | [CAP-0108](../../REGISTRO_CAPABILITY/CAP-0108.md) | Confronto durata prevista e reale per task | 84 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0108/README.md) | Provenienza dei tempi, pause e interruzioni, import da focus timer opzionale, no raccolta in background e niente telemetria remota; integrazione CAP-0101. |
 | [CAP-0134](../../REGISTRO_CAPABILITY/CAP-0134.md) | Triage e categorizzazione documenti importati | 84 | 58% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0134/README.md) | DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti italiani. Verificare architettura e licensing nel Product Bible prima di integrare. |
-| [CAP-0116](../../REGISTRO_CAPABILITY/CAP-0116.md) | Deduplicazione semantica note con merge reversibile | 83 | 83% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0116/README.md) | SemHash dimostra dedup di testi/dataset, non merge sicuro di note personali. Usare ID e backup canonici. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0133](../../REGISTRO_CAPABILITY/CAP-0133.md) | Ordine di lettura strutturato dei documenti | 83 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0133/README.md) | La doc descrive PP-DocLayoutV3; integrarlo e inferenza/progetto distinto dall'OCR. Controllare supporto linguistico e runtime mobile. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0066](../../REGISTRO_CAPABILITY/CAP-0066.md) | Trasferimento LAN QR HTTPS fidato | 83 | 60% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0066/README.md) | Pairing fingerprint HTTPS e test rete locale |
 | [CAP-0110](../../REGISTRO_CAPABILITY/CAP-0110.md) | Avvio guidato micro-passo e focus breve | 82 | 95% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0110/README.md) | Usare CAP-0109 e CAP-0096; template locali senza AI obbligatoria, scelta editabile e nessuna sovrascrittura della nota; test accessibilita e interruzione. |

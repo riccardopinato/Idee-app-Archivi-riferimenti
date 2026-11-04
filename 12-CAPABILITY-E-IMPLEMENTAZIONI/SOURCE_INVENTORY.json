@@ -49,7 +49,7 @@
       "name": "App-Factory-Core",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": "02f3cd94f0ee6f19bc06fc0cb329fdf5398a739b",
+      "head_sha": "1229d8c4d411fda76ccc58a6ed0118da1f7245e4",
       "head_observed_at": "2026-11-04"
     },
     {
@@ -126,7 +126,7 @@
       "name": "Idee-app-Archivi-riferimenti",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": "b61934710e4f69301d338c890cae53d16d480c24",
+      "head_sha": "54705d4c5317e88d2a183cc5a47aa6e64ec886fc",
       "head_observed_at": "2026-11-04"
     },
     {
@@ -147,7 +147,7 @@
       "name": "Notes-Ecosistema",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": "ab254e7a8927778498bc3035d1b97bf21d323fcc",
+      "head_sha": "e10b058a43e3b238e59eb946138540287756d784",
       "head_observed_at": "2026-11-04"
     },
     {
@@ -196,7 +196,7 @@
       "name": "TasteAI",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": "99e93784db403c9da65c8753c6bbcc802d01180e",
+      "head_sha": "fc2f80e43f91b441863f8e3a77ae7196251979cf",
       "head_observed_at": "2026-11-04"
     },
     {

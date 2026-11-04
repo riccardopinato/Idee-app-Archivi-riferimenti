@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-04",
   "authority": "Research/portfolio only. Product Bible/roadmap/code/tests/real-device evidence live in app repositories.",
-  "factory_baseline": "riccardopinato/App-Factory-Core@02f3cd94f0ee6f19bc06fc0cb329fdf5398a739b",
+  "factory_baseline": "riccardopinato/App-Factory-Core@1229d8c4d411fda76ccc58a6ed0118da1f7245e4",
   "score_explanation": "Relative 0-100 opportunity estimate: value 35%, cross-app reuse 25%, feasibility 20%, evidence 10%, low risk 10%. Each factor 1-5. P1>=92; P2>=79; otherwise P3. Not an implementation authorization or revenue projection.",
   "statuses": {
     "PROPOSTA": "Idea non approvata / nessun codice verificato qui",
@@ -5212,6 +5212,20 @@
           "after_state": "PROPOSTA",
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
+        }
+      },
+      "partial_source_evidence_ml10": {
+        "TasteAI": {
+          "source_sha": "fc2f80e43f91b441863f8e3a77ae7196251979cf",
+          "source_path": "lib/domain/search/local_recipe_nearest_neighbors.dart",
+          "consumer_path": "lib/features/recipes/recipe_widgets.dart",
+          "test_path": "test/local_recipe_nearest_neighbors_test.dart",
+          "pr": "https://github.com/riccardopinato/TasteAI/pull/2",
+          "ci": "https://github.com/riccardopinato/TasteAI/actions/runs/41842952989",
+          "scope": "Adjacent related-recipes suggestion using canonical recipe IDs and Premium entitlement; not new anti-waste quality evidence",
+          "full_capability_complete": false,
+          "device_pass": false,
+          "golden_e5": false
         }
       }
     },
@@ -13128,13 +13142,13 @@
       },
       "description": "Duplicate Notes Cleaner: Trova note semanticamente simili e suggerisce confronto/merge mantenendo allegati, riferimenti e cestino.",
       "app_states": {
-        "Notes-Ecosistema": "PROPOSTA"
+        "Notes-Ecosistema": "SOURCE_REPORTED"
       },
       "source": {
         "type": "HUGGINGFACE_IDEA_RESEARCH",
         "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md"
       },
-      "next_gate": "SemHash dimostra dedup di testi/dataset, non merge sicuro di note personali. Usare ID e backup canonici. Verificare architettura e licensing nel Product Bible prima di integrare.",
+      "next_gate": "User-visible source and attachment diff; explicit KEEP/VARIANT/merge with reversible canonical writes, role/account-switch ACL and revision conflict tests; quantified device quality before Golden.",
       "reviewed_at": "2026-11-04",
       "certification": "NOT_VERIFIED_BY_THIS_AUDIT",
       "research_refs": [
@@ -13143,7 +13157,7 @@
       ],
       "reuse_decision": "CANDIDATE_REFERENCE_ONLY",
       "integration_ease_percent": {
-        "Notes-Ecosistema": 83
+        "Notes-Ecosistema": 85
       },
       "original_reviewed_at": "2026-11-01",
       "priority_audit_v28": {
@@ -13192,6 +13206,28 @@
           "after_state": "PROPOSTA",
           "rationale": "Core ML10 MinHash reference and candidate preview reduce lexical implementation effort; source permissions and merge/undo remain unproven.",
           "measured": false
+        }
+      },
+      "partial_source_evidence_ml10": {
+        "Notes-Ecosistema": {
+          "source_sha": "e10b058a43e3b238e59eb946138540287756d784",
+          "source_path": "flutter_app/lib/src/domain/note_duplicate_review.dart",
+          "consumer_path": "flutter_app/lib/src/screens/notes_screen.dart",
+          "test_path": "flutter_app/test/note_duplicate_review_test.dart",
+          "pr": "https://github.com/riccardopinato/Notes-Ecosistema/pull/57",
+          "ci": "https://github.com/riccardopinato/Notes-Ecosistema/actions/runs/41840769025",
+          "scope": "Read-only filtered MinHash/LSH candidate preview and canonical-editor open; does NOT implement reversible merge/undo",
+          "full_capability_complete": false,
+          "device_pass": false,
+          "golden_e5": false
+        }
+      },
+      "ml10_consumer_revisions": {
+        "Notes-Ecosistema": {
+          "before": 83,
+          "after": 85,
+          "reason": "Source-backed read-only duplicate review now merged; reversible merge, attachment diff and account ACL not completed.",
+          "not_success_probability": true
         }
       }
     },
@@ -17915,5 +17951,6 @@
   "ml_golden_audit_stamp": "ML23_CAP_ADMISSION_2026-11-04",
   "ml_golden_audit_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
   "ml10_full_audit_stamp": "ML10_160_CAP_385_LINKS_2026-11-04",
-  "ml10_full_audit_report": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_ML10_2026-11-04.md"
+  "ml10_full_audit_report": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_ML10_2026-11-04.md",
+  "ml10_consumer_admission_stamp": "ML10_CONSUMER_ADMISSIONS_2026-11-04"
 }

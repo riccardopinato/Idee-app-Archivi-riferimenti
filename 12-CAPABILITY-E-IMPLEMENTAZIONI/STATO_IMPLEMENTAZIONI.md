@@ -4,9 +4,9 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 
 | Stato | Associamenti app-capability | Interpretazione |
 | --- | --- | --- |
-| PROPOSTA | 259 | Idea non approvata / nessun codice verificato qui |
+| PROPOSTA | 258 | Idea non approvata / nessun codice verificato qui |
 | ROADMAP_STORICA | 15 | Indicata in roadmap o decisione storica; richiede verifica live |
-| SOURCE_REPORTED | 97 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
+| SOURCE_REPORTED | 98 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
 | DONOR_REPORTED | 2 | Repo donor documentato; riuso non ancora validato |
 | SOURCE_CONFIRMED | 2 | Implementazione verificata con riferimento puntuale a codice e commit |
 | CI_VERIFIED | 10 | CI exact-head verde per questa capability nel repository autorevole |
@@ -85,6 +85,7 @@ Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/aud
 | CAP-0111 Weekly Review con proposte di pulizia e ripianificazione | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/weekly_review.dart |
 | CAP-0112 Flashcard e ripasso dilazionato collegati alle note | Notes-Ecosistema (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_TODO_SECONDA_RICERCA_2026-11-01.md |
 | CAP-0113 Da appuntamento passato a ricordo privato | Agenda-per-Anna (CI_VERIFIED) | https://github.com/riccardopinato/Agenda-per-Anna/blob/88efdfa9a688f35585cf2760d131f7a6b0b9deb2/lib/src/event_memory_capture.dart |
+| CAP-0116 Deduplicazione semantica note con merge reversibile | Notes-Ecosistema (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/RICERCA_HUGGINGFACE_NOTE_IDEE_29_44_2026-11-01.md |
 | CAP-0142 Capsule e lettere a apertura programmata | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md |
 | CAP-0144 Widget contestuali privacy-safe per agenda e contenuti condivisi | Agenda-per-Anna (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/ANNA_NOTEBOOKLM_2026-11-02.md |
 | CAP-0152 Ricerca fuzzy offline per refusi e alias | Notes-Ecosistema (SOURCE_REPORTED) | https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/11-NUOVE-IDEE/CATALOGO_ALGORITMI_ON_DEVICE_2026-11-04.md |

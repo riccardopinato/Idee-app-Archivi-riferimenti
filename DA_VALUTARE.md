@@ -4,7 +4,7 @@
 
 **Nessuna soglia numerica predefinita:** tutte le opportunità non confermate integrate restano visibili, anche con punteggi sbilanciati (es. priorità 90 e facilità 82). Le soglie come 85/85 sono soltanto filtri facoltativi, se richiesti esplicitamente, mai criteri di esclusione dal catalogo. Le due dimensioni restano indipendenti e per singola app. Ordine: priorità decrescente; facilità decrescente a parità di priorità. Le voci con codice non provato, parziale o già riportato in audit rimangono in **Verifica stato**, non nella coda delle nuove implementazioni.
 
-## Tutte le capability ancora da valutare (246)
+## Tutte le capability ancora da valutare (245)
 
 | App | Capability | Priorità | Facilità | Stato | Prossimo gate |
 | --- | --- | --- | --- | --- | --- |
@@ -124,7 +124,6 @@
 | PDF-Unifier | [CAP-0134](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0134.md) Triage e categorizzazione documenti importati | 84 | 54% | PROPOSTA | DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti ita |
 | TasteAI | [CAP-0006](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0006.md) Lista della spesa privata e condivisa | 83 | 95% | PROPOSTA | Verificare test v0.71 e riuso senza database condiviso |
 | Wonderlog | [CAP-0010](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0010.md) Ricordi Then and Now | 83 | 95% | PROPOSTA | Usare media canonici e consenso foto |
-| Notes-Ecosistema | [CAP-0116](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0116.md) Deduplicazione semantica note con merge reversibile | 83 | 83% | PROPOSTA | SemHash dimostra dedup di testi/dataset, non merge sicuro di note personali. Usare ID e backup canonici. Verificare architett |
 | Notes-Ecosistema | [CAP-0133](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0133.md) Ordine di lettura strutturato dei documenti | 83 | 70% | PROPOSTA | La doc descrive PP-DocLayoutV3; integrarlo e inferenza/progetto distinto dall'OCR. Controllare supporto linguistico e runtime |
 | PDF-Unifier | [CAP-0133](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0133.md) Ordine di lettura strutturato dei documenti | 83 | 70% | PROPOSTA | La doc descrive PP-DocLayoutV3; integrarlo e inferenza/progetto distinto dall'OCR. Controllare supporto linguistico e runtime |
 | Notes-Ecosistema | [CAP-0066](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0066.md) Trasferimento LAN QR HTTPS fidato | 83 | 60% | PROPOSTA | Pairing fingerprint HTTPS e test rete locale |
@@ -255,7 +254,7 @@
 | DeskPilot | [CAP-0088](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0088.md) Workspace Android desktop virtuale con capability probe | 45 | 26% | PROPOSTA | Rimandato: Dextop GPLv3, usa hidden API e runtime privilegiati; Samsung OneUI moderno prevalente, Xiaomi/HyperOS disabilitato |
 | EdgeDock | [CAP-0088](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0088.md) Workspace Android desktop virtuale con capability probe | 45 | 26% | PROPOSTA | Rimandato: Dextop GPLv3, usa hidden API e runtime privilegiati; Samsung OneUI moderno prevalente, Xiaomi/HyperOS disabilitato |
 
-## Verificare lo stato prima di proporre sviluppo (131)
+## Verificare lo stato prima di proporre sviluppo (132)
 
 Queste voci potrebbero essere **già in codice**. Non proporle come nuove feature finché non si controllano app, codice, SHA e test.
 
@@ -335,6 +334,7 @@ Queste voci potrebbero essere **già in codice**. Non proporle come nuove featur
 | Agenda-per-Anna | [CAP-0134](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0134.md) Triage e categorizzazione documenti importati | 84 | 17% | PROPOSTA / OUT_OF_SCOPE | DocRex Apache-2.0, ~5,8 MB FP32, solo bank_statement/invoice/other, int8 1,7 MB non raccomandato; serve test su documenti ita |
 | Agenda-per-Anna | [CAP-0006](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0006.md) Lista della spesa privata e condivisa | 83 | 95% | SOURCE_REPORTED / EXISTING_SOURCE | Verificare test v0.71 e riuso senza database condiviso |
 | Agenda-per-Anna | [CAP-0010](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0010.md) Ricordi Then and Now | 83 | 95% | SOURCE_REPORTED / EXISTING_SOURCE | Usare media canonici e consenso foto |
+| Notes-Ecosistema | [CAP-0116](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0116.md) Deduplicazione semantica note con merge reversibile | 83 | 85% | SOURCE_REPORTED | User-visible source and attachment diff; explicit KEEP/VARIANT/merge with reversible canonical writes, role/account-switch AC |
 | Pocket-Guard | [CAP-0057](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0057.md) Allarme protezione Table Pocket Bag Journey | 83 | 61% | SOURCE_REPORTED | Test multi OEM FGS false-positive e batteria |
 | Phone-Guard | [CAP-0057](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0057.md) Allarme protezione Table Pocket Bag Journey | 83 | 60% | SOURCE_REPORTED | Test multi OEM FGS false-positive e batteria |
 | Tabletop-Motion-Alarm | [CAP-0057](12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY/CAP-0057.md) Allarme protezione Table Pocket Bag Journey | 83 | 60% | SOURCE_REPORTED | Test multi OEM FGS false-positive e batteria |

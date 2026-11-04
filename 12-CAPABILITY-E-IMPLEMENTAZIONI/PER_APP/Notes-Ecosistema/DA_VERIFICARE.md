@@ -1,4 +1,4 @@
-# Notes-Ecosistema — Stato da verificare (15)
+# Notes-Ecosistema — Stato da verificare (16)
 
 Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente dichiarata oppure perimetro incerto. Non proporre il lavoro da zero: prima confrontare il delta funzionale.
 
@@ -15,6 +15,7 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | [CAP-0103](../../REGISTRO_CAPABILITY/CAP-0103.md) | Grafo delle dipendenze e blocker delle task | 87 | 91% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0103/README.md) | Audit CAP-0096 e canvas CAP-0028; relazioni no-cicli, cancellazione/ripristino, undo, accessibilita e filtri; il donor Yuga modella dipendenze in forma sequenziale. |
 | [CAP-0106](../../REGISTRO_CAPABILITY/CAP-0106.md) | Rilevamento sovraccarico e heatmap riunioni | 87 | 91% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0106/README.md) | Audit calendar provider, permessi, CAP-0001 e CAP-0101; calcolare solo su dati disponibili e consenso, evitare falsa precisione su durata task e false promesse di sync. |
 | [CAP-0029](../../REGISTRO_CAPABILITY/CAP-0029.md) | Canvas ibrida sketch sotto note | 84 | 76% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0029/README.md) | Verificare gesto pennello undo save e restore device |
+| [CAP-0116](../../REGISTRO_CAPABILITY/CAP-0116.md) | Deduplicazione semantica note con merge reversibile | 83 | 85% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0116/README.md) | User-visible source and attachment diff; explicit KEEP/VARIANT/merge with reversible canonical writes, role/account-switch ACL and revision conflict tests; quantified device quality before Golden. |
 | [CAP-0019](../../REGISTRO_CAPABILITY/CAP-0019.md) | Store media content addressed e GC | 81 | 65% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0019/README.md) | Non uniformare database privacy separati |
 | [CAP-0096](../../REGISTRO_CAPABILITY/CAP-0096.md) | Gerarchie task ricorrenze e relazioni alle note | 80 | 89% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0096/README.md) | Audit funzioni task e recurrence gia presenti; non introdurre secondo scheduler o storage; test eccezioni ricorrenza, delete e restore. |
 | [CAP-0032](../../REGISTRO_CAPABILITY/CAP-0032.md) | Indicizzazione ricerca semantica locale | 79 | 63% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0032/README.md) | Modello multilingue licenza footprint e benchmark; non inserire pack base |
