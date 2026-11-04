@@ -40,6 +40,8 @@ def main():
     previous_ease = notes["integration_ease_percent"]["Notes-Ecosistema"]
     notes["integration_ease_percent"]["Notes-Ecosistema"] = min(100, previous_ease + 2)
     notes["reviewed_at"] = "2026-11-04"
+    notes["next_gate"] = ("User-visible source and attachment diff; explicit KEEP/VARIANT/merge with reversible canonical writes, "
+                          "role/account-switch ACL and revision conflict tests; quantified device quality before Golden.")
     notes.setdefault("partial_source_evidence_ml10", {})["Notes-Ecosistema"] = {
         "source_sha": NOTE_SHA,
         "source_path": "flutter_app/lib/src/domain/note_duplicate_review.dart",
