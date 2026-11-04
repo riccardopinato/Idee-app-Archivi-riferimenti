@@ -3,6 +3,10 @@
 **Origine:** file utente Machine Learning.txt (156 righe). Questo documento è un intake di ricerca, non una modifica di prodotto o l'avvio di modelli.
 **Factory baseline letta:** App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794; Master 27, Golden Index 28, Registry v2. Per l'archivio capability baseline: 150 CAP e 346 associazioni prima di questo intake.
 
+## Stato canonico successivo all'audit Golden — 04/11/2026
+
+Le dieci righe storiche NUOVA CANDIDATA sono ora **registrate come CAP-0151…0160 (PROPOSTA, E0)**, senza codice applicativo. I riferimenti completi e la mappatura in ordine sono nella [matrice Golden](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md). La sezione qui sotto resta lo snapshot di input precedente all'ammissione.
+
 ## Presupposti rigorosi
 
 - OFFLINE E API: tutti gli algoritmi deterministici possono essere implementati localmente; questo non certifica il bundle, i permessi, il consumo o la latenza. Un modello pretrained può avere costi di manutenzione/distribuzione e licenze da controllare.

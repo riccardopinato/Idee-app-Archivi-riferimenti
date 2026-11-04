@@ -15,4 +15,4 @@ Derivato dal registro canonico per la **singola app**. Equivalenti già dimostra
 | [CAP-0113](../../REGISTRO_CAPABILITY/CAP-0113.md) | Da appuntamento passato a ricordo privato | 81 | 95% | CI_VERIFIED / EXISTING_SOURCE | [Codice verificato](https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/lib/src/event_memory_capture.dart) | Ulteriori QA/test richiesti secondo lo stato evidenze |
 | [CAP-0069](../../REGISTRO_CAPABILITY/CAP-0069.md) | Automated screenshot visual regression | 81 | 65% | CI_VERIFIED / EXISTING_SOURCE | [Codice verificato](https://github.com/riccardopinato/Agenda-per-Anna/blob/fb476545426fb6bf290e74f53e735fa13616e4e9/tool/compare_visual_baselines.py) | Ulteriori QA/test richiesti secondo lo stato evidenze |
 
-**Totale associazioni app:** 68. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 74. Nessuna modifica alla roadmap o al codice dell'app.

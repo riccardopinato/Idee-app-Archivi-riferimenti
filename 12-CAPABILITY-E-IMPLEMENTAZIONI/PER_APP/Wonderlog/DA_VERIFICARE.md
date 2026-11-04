@@ -11,4 +11,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | [CAP-0051](../../REGISTRO_CAPABILITY/CAP-0051.md) | Mappe luoghi ricordi condivisi con ponte | 80 | 80% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0051/README.md) | Trasporto COPY LINK esplicito e autorizzato |
 | [CAP-0032](../../REGISTRO_CAPABILITY/CAP-0032.md) | Indicizzazione ricerca semantica locale | 79 | 64% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0032/README.md) | Modello multilingue licenza footprint e benchmark; non inserire pack base |
 
-**Totale associazioni app:** 30. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 35. Nessuna modifica alla roadmap o al codice dell'app.

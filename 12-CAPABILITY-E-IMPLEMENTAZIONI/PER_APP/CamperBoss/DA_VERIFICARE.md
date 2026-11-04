@@ -11,4 +11,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | [CAP-0018](../../REGISTRO_CAPABILITY/CAP-0018.md) | Backup restore con staging e rollback | 90 | 65% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0018/README.md) | Audit formati e test corrupt archive per consumer |
 | [CAP-0080](../../REGISTRO_CAPABILITY/CAP-0080.md) | Document expiry and asset passport | 78 | 80% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0080/README.md) | Non includere segreti/identita in archivio condiviso |
 
-**Totale associazioni app:** 17. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 19. Nessuna modifica alla roadmap o al codice dell'app.

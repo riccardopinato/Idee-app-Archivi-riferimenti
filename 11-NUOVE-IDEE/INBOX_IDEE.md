@@ -2,7 +2,9 @@
 
 ## Algoritmi ML leggeri, zero API e on-device — 04/11/2026
 
-[Catalogo decisionale di 23 tecniche, 10 candidature nuove e mappa verso CAP/Golden](./CATALOGO_ALGORITMI_ON_DEVICE_2026-11-04.md). Fonte: Machine Learning.txt dell'utente. ID stabili ML26-001…023. Nessun modello o codice integrato; 10 voci NUOVA CANDIDATA sono intake, non CAP canoniche e non modificano ranking esistenti.
+[Catalogo decisionale di 23 tecniche, 10 candidature nuove e mappa verso CAP/Golden](./CATALOGO_ALGORITMI_ON_DEVICE_2026-11-04.md). Fonte: Machine Learning.txt dell'utente. ID stabili ML26-001…023. Nessun modello o codice integrato. Le 10 idee sono ora ammesse come CAP proposte, senza mutare le app.
+**Aggiornamento di ammissione 04/11:** le dieci candidature ML26-001/002/004/008/009/013/015/016/018/019 sono state registrate rispettivamente come CAP-0152/0160/0151/0153/0154/0155/0159/0156/0157/0158, tutte PROPOSTA/E0. Le altre 13 restano riferite a CAP gia esistenti. [Audit Golden completo](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md).
+
 
 ## Notes-Ecosistema — audit 4 fonti e delta implementativi (04/11/2026)
 

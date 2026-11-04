@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "date": "2026-11-04",
+  "source": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794",
+  "audit": "ML23_CAP_ADMISSION_2026-11-04",
+  "families": {
+    "LEXICAL_TEXT": {
+      "mode": "NEW GOLDEN CANDIDATE",
+      "core": "GOLDEN_HYBRID_LOCAL_SEARCH_ENGINE_v1_DRAFT",
+      "needs": "Pure Dart tokenizer/TF-IDF, bounded fuzzy and cited extractive summaries",
+      "downstream": [
+        "CAP-0015",
+        "CAP-0032",
+        "CAP-0093",
+        "CAP-0097",
+        "CAP-0124",
+        "CAP-0148"
+      ]
+    },
+    "SCHEDULING_FORECAST": {
+      "mode": "EXTEND EXISTING GOLDEN RULES DRAFT",
+      "core": "GOLDEN_LOCAL_RULES_AUTOMATION_ENGINE_v1_DRAFT",
+      "needs": "Greedy bounded slots + robust forecast separated from canonical calendar writes",
+      "downstream": [
+        "CAP-0001",
+        "CAP-0102",
+        "CAP-0104",
+        "CAP-0106",
+        "CAP-0108",
+        "CAP-0111"
+      ]
+    },
+    "BEHAVIORAL_PATTERNS": {
+      "mode": "NEW GOLDEN CANDIDATE",
+      "core": "GOLDEN_EXPLAINABLE_RECOMMENDATION_ENGINE_v1_DRAFT",
+      "needs": "Explainable Markov/Apriori with support and minimum observations",
+      "downstream": [
+        "CAP-0044",
+        "CAP-0045",
+        "CAP-0111",
+        "CAP-0148"
+      ]
+    },
+    "GEO_GEOMETRY": {
+      "mode": "EXTEND EXISTING GPX/SPATIAL GOLDENS",
+      "core": "GOLDEN_GPX_INTEROPERABILITY_ENGINE_v1_DRAFT + GOLDEN_SPATIAL_CLUSTERING_ENGINE_v1_DRAFT",
+      "needs": "Bounded reversible simplifier and meter-scale density clustering",
+      "downstream": [
+        "CAP-0009",
+        "CAP-0048",
+        "CAP-0049",
+        "CAP-0050",
+        "CAP-0051"
+      ]
+    },
+    "SENSOR_SIGNAL": {
+      "mode": "EXTEND SENSOR FUSION GOLDEN DRAFT",
+      "core": "GOLDEN_SENSOR_FUSION_ANDROID_v1_DRAFT",
+      "needs": "Portable EWMA/hysteresis core + optional DTW bounded gestures; OEM adapters separate",
+      "downstream": [
+        "CAP-0057",
+        "CAP-0061",
+        "CAP-0062"
+      ]
+    }
+  },
+  "algorithms": [
+    {
+      "intake": "ML26-001",
+      "alg_name": "Levenshtein / Jaro-Winkler",
+      "target_caps": [
+        "CAP-0152"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P1",
+      "source_note": "Edit distance Unicode; limitarla ai migliori risultati autorizzati; fallback ricerca esatta"
+    },
+    {
+      "intake": "ML26-002",
+      "alg_name": "TF-IDF + coseno sparse",
+      "target_caps": [
+        "CAP-0160"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P1",
+      "source_note": "No comprensione semantica addestrata; topic cluster e writer di tag restano separati"
+    },
+    {
+      "intake": "ML26-003",
+      "alg_name": "K-Means testo",
+      "target_caps": [
+        "CAP-0124"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P2",
+      "source_note": "Instabilità piccoli corpus, scelta K, niente cartelle persistenti senza conferma"
+    },
+    {
+      "intake": "ML26-004",
+      "alg_name": "TextRank estrattivo",
+      "target_caps": [
+        "CAP-0151"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P2",
+      "source_note": "Non generativo: omette contesto, negazioni e date; citare frasi e fonte"
+    },
+    {
+      "intake": "ML26-005",
+      "alg_name": "Regex / dizionario / NER",
+      "target_caps": [
+        "CAP-0002",
+        "CAP-0092",
+        "CAP-0148"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P1",
+      "source_note": "Il POS tagging può richiedere modello, nomi persona non deducibili da sole regex; preview e consenso"
+    },
+    {
+      "intake": "ML26-006",
+      "alg_name": "Greedy / interval scheduling",
+      "target_caps": [
+        "CAP-0001",
+        "CAP-0102"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P1",
+      "source_note": "Vincoli hard/soft, durata, timezone, ricorrenze; mai scrittura automatica"
+    },
+    {
+      "intake": "ML26-007",
+      "alg_name": "Algoritmi genetici / euristici",
+      "target_caps": [
+        "CAP-0102",
+        "CAP-0050"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P3",
+      "source_note": "Non garantiscono ottimo né milioni di varianti in millisecondi; baseline greedy prima"
+    },
+    {
+      "intake": "ML26-008",
+      "alg_name": "Regressione lineare robusta",
+      "target_caps": [
+        "CAP-0153"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P2",
+      "source_note": "Campione minimo, outlier, pause, intervallo e output nessuna stima"
+    },
+    {
+      "intake": "ML26-009",
+      "alg_name": "Markov / frequenze temporali",
+      "target_caps": [
+        "CAP-0154"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P3",
+      "source_note": "Consenso revocabile, non inferire dati sensibili, nessun reminder automatico"
+    },
+    {
+      "intake": "ML26-010",
+      "alg_name": "K-Means utenti / Random Forest",
+      "target_caps": [
+        "CAP-0057",
+        "CAP-0062"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P3",
+      "source_note": "Necessari dati etichettati/validazione; per 1 utente no profilo cross-user"
+    },
+    {
+      "intake": "ML26-011",
+      "alg_name": "Color histogram matching",
+      "target_caps": [
+        "CAP-0041"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P2",
+      "source_note": "Il colore non riconosce ingrediente o qualità"
+    },
+    {
+      "intake": "ML26-012",
+      "alg_name": "Coseno / collaborative filtering / SVD",
+      "target_caps": [
+        "CAP-0032",
+        "CAP-0044"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P3",
+      "source_note": "Collaborativo cross-user richiede dati di terzi: fallback content-based locale"
+    },
+    {
+      "intake": "ML26-013",
+      "alg_name": "Apriori / frequent itemsets",
+      "target_caps": [
+        "CAP-0155"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P2",
+      "source_note": "Dati sufficienti e support/confidence; allergeni/diete non inferiti"
+    },
+    {
+      "intake": "ML26-014",
+      "alg_name": "Dijkstra / A*",
+      "target_caps": [
+        "CAP-0048",
+        "CAP-0049"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P1",
+      "source_note": "Senza grafo/mappa locale non esiste routing offline; percorsi e vincoli da validare"
+    },
+    {
+      "intake": "ML26-015",
+      "alg_name": "DBSCAN / clustering spaziale",
+      "target_caps": [
+        "CAP-0159"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P2",
+      "source_note": "Raggio in metri, antimeridiano, privacy location/Shared Spaces, nessuna pubblicazione"
+    },
+    {
+      "intake": "ML26-016",
+      "alg_name": "Ramer-Douglas-Peucker",
+      "target_caps": [
+        "CAP-0156"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P2",
+      "source_note": "Originale immutato, errore misurato, unità metri e coordinate non valide"
+    },
+    {
+      "intake": "ML26-017",
+      "alg_name": "Kalman / filtro complementare",
+      "target_caps": [
+        "CAP-0057"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P2",
+      "source_note": "Riduce rumore ma non garantisce precisione; calibrazione e OEM"
+    },
+    {
+      "intake": "ML26-018",
+      "alg_name": "Dynamic Time Warping / DTW",
+      "target_caps": [
+        "CAP-0157"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P3",
+      "source_note": "Sampling, variabilità device, false positive; Android foreground/FGS e permessi"
+    },
+    {
+      "intake": "ML26-019",
+      "alg_name": "EWMA / soglie adattive / isteresi",
+      "target_caps": [
+        "CAP-0158"
+      ],
+      "entry_type": "NEW_CAP",
+      "original_research_priority": "P1",
+      "source_note": "Device availability, sensori binari/continuativi, debounce, consumi e QA OEM"
+    },
+    {
+      "intake": "ML26-020",
+      "alg_name": "Regressione lineare batteria",
+      "target_caps": [
+        "CAP-0061"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P2",
+      "source_note": "Current/average non sempre disponibili, stima non certa, no autospegnimento opaco"
+    },
+    {
+      "intake": "ML26-021",
+      "alg_name": "Embedding vettoriali e coseno",
+      "target_caps": [
+        "CAP-0032"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P3",
+      "source_note": "Embedding addestrati ≠ TF-IDF; modello opzionale, licenza, benchmark IT"
+    },
+    {
+      "intake": "ML26-022",
+      "alg_name": "TFLite / Core ML audio classifier",
+      "target_caps": [
+        "CAP-0132"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P3",
+      "source_note": "Nessuna garanzia modello inferiore 1MB, microfono e privacy"
+    },
+    {
+      "intake": "ML26-023",
+      "alg_name": "Apriori sequenze / regole locali",
+      "target_caps": [
+        "CAP-0148",
+        "CAP-0111"
+      ],
+      "entry_type": "EXISTING_CAP_REUSE",
+      "original_research_priority": "P2",
+      "source_note": "Regole esplicabili; non dedurre causalità né applicare scritture silenziose"
+    }
+  ],
+  "new_capabilities": [
+    {
+      "id": "CAP-0151",
+      "title": "Riassunti estrattivi di note con TextRank e citazioni",
+      "engine": "LEXICAL_TEXT",
+      "prerequisites": [
+        "CAP-0032",
+        "CAP-0097",
+        "CAP-0148"
+      ],
+      "consumer_apps": [
+        "Notes-Ecosistema",
+        "Agenda-per-Anna",
+        "Wonderlog",
+        "PDF-Unifier"
+      ],
+      "score": 85,
+      "priority": "P2"
+    },
+    {
+      "id": "CAP-0152",
+      "title": "Ricerca fuzzy offline per refusi e alias",
+      "engine": "LEXICAL_TEXT",
+      "prerequisites": [
+        "CAP-0015",
+        "CAP-0032"
+      ],
+      "consumer_apps": [
+        "Notes-Ecosistema",
+        "Agenda-per-Anna",
+        "Wonderlog",
+        "PDF-Unifier"
+      ],
+      "score": 96,
+      "priority": "P1"
+    },
+    {
+      "id": "CAP-0153",
+      "title": "Previsione prudente di completamento studio e progetti",
+      "engine": "SCHEDULING_FORECAST",
+      "prerequisites": [
+        "CAP-0108",
+        "CAP-0104",
+        "CAP-0102"
+      ],
+      "consumer_apps": [
+        "Notes-Ecosistema",
+        "Agenda-per-Anna",
+        "FocuSense"
+      ],
+      "score": 78,
+      "priority": "P3"
+    },
+    {
+      "id": "CAP-0154",
+      "title": "Routine predittive con Markov solo opt-in",
+      "engine": "BEHAVIORAL_PATTERNS",
+      "prerequisites": [
+        "CAP-0111",
+        "CAP-0148"
+      ],
+      "consumer_apps": [
+        "Agenda-per-Anna",
+        "Notes-Ecosistema",
+        "SleepMax-Coach",
+        "FocuSense"
+      ],
+      "score": 71,
+      "priority": "P3"
+    },
+    {
+      "id": "CAP-0155",
+      "title": "Associazioni ingredienti e ricette offline con Apriori",
+      "engine": "BEHAVIORAL_PATTERNS",
+      "prerequisites": [
+        "CAP-0044",
+        "CAP-0045"
+      ],
+      "consumer_apps": [
+        "TasteAI",
+        "In-Cucina-con-gli-Anime",
+        "MealMate"
+      ],
+      "score": 89,
+      "priority": "P2"
+    },
+    {
+      "id": "CAP-0156",
+      "title": "Semplificazione reversibile di tracce e polilinee GPX",
+      "engine": "GEO_GEOMETRY",
+      "prerequisites": [
+        "CAP-0048",
+        "CAP-0049",
+        "CAP-0050"
+      ],
+      "consumer_apps": [
+        "TrailPath",
+        "Wonderlog",
+        "CamperBoss"
+      ],
+      "score": 89,
+      "priority": "P2"
+    },
+    {
+      "id": "CAP-0157",
+      "title": "Gesti volontari locali tramite Dynamic Time Warping",
+      "engine": "SENSOR_SIGNAL",
+      "prerequisites": [
+        "CAP-0057",
+        "CAP-0062"
+      ],
+      "consumer_apps": [
+        "Phone-Guard",
+        "Pocket-Guard",
+        "Tabletop-Motion-Alarm",
+        "FocuSense"
+      ],
+      "score": 72,
+      "priority": "P3"
+    },
+    {
+      "id": "CAP-0158",
+      "title": "Soglie adattive con isteresi per luce e prossimità",
+      "engine": "SENSOR_SIGNAL",
+      "prerequisites": [
+        "CAP-0057",
+        "CAP-0062"
+      ],
+      "consumer_apps": [
+        "Pocket-Guard",
+        "Phone-Guard",
+        "FocuSense",
+        "Tabletop-Motion-Alarm"
+      ],
+      "score": 96,
+      "priority": "P1"
+    },
+    {
+      "id": "CAP-0159",
+      "title": "Clustering spaziale privacy-safe per ricordi e POI",
+      "engine": "GEO_GEOMETRY",
+      "prerequisites": [
+        "CAP-0009",
+        "CAP-0051",
+        "CAP-0048"
+      ],
+      "consumer_apps": [
+        "Wonderlog",
+        "TrailPath",
+        "CamperBoss",
+        "Agenda-per-Anna"
+      ],
+      "score": 85,
+      "priority": "P2"
+    },
+    {
+      "id": "CAP-0160",
+      "title": "Estrazione TF-IDF di parole chiave e tag suggeriti",
+      "engine": "LEXICAL_TEXT",
+      "prerequisites": [
+        "CAP-0124",
+        "CAP-0148",
+        "CAP-0032"
+      ],
+      "consumer_apps": [
+        "Notes-Ecosistema",
+        "Agenda-per-Anna",
+        "Wonderlog",
+        "PDF-Unifier"
+      ],
+      "score": 91,
+      "priority": "P2"
+    }
+  ],
+  "release_gate": "E0 intake; E1 source SHA; E2 tests present; E3 exact head test PASS scoped donor; E4 physical; E5 independently tested consumer"
+}
