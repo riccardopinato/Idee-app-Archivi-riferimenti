@@ -116,7 +116,7 @@
           "ML26-006"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -217,7 +217,7 @@
           "ML26-005"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -2640,7 +2640,7 @@
           "ML26-021"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -3303,18 +3303,18 @@
           "ML26-011"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       },
       "ml_20261104_new_app_basis": {
         "TasteAI": {
           "reason": "Visual color palette matching is a related extension of existing photo palette CAP; NOT ingredient recognition",
-          "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+          "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
           "status": "candidate"
         },
         "In-Cucina-con-gli-Anime": {
           "reason": "Visual color palette matching is a related extension of existing photo palette CAP; NOT ingredient recognition",
-          "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+          "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
           "status": "candidate"
         }
       }
@@ -3543,7 +3543,7 @@
           "ML26-012"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -3826,7 +3826,7 @@
           "ML26-014"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -3895,7 +3895,7 @@
           "ML26-014"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -3973,7 +3973,7 @@
           "ML26-007"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -4514,7 +4514,7 @@
           "ML26-017"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -4757,7 +4757,7 @@
           "ML26-020"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -4848,7 +4848,7 @@
           "ML26-010"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -7202,7 +7202,7 @@
           "ML26-005"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -7927,7 +7927,7 @@
           "ML26-007"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -8573,7 +8573,7 @@
           "ML26-023"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -9513,7 +9513,7 @@
           "ML26-003"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -10066,7 +10066,7 @@
           "ML26-022"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -11316,7 +11316,7 @@
           "ML26-023"
         ],
         "decision": "REUSE_FIRST; existing scope only, no automatic code or score promotion",
-        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
+        "audit": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md",
         "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
       }
     },
@@ -12026,5 +12026,5 @@
   "score_audit_revision": "v28-full-scope-20261104",
   "score_audit_method": "score = round_half_up(20*(.35 user+.25 reuse+.20 feasibility+.10 evidence+.10 risk)); P1>=92 P2>=79; per-app ease is heuristic, not a success chance",
   "ml_golden_audit_stamp": "ML23_CAP_ADMISSION_2026-11-04",
-  "ml_golden_audit_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md"
+  "ml_golden_audit_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md"
 }

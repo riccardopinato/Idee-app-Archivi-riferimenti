@@ -74,7 +74,7 @@ def main():
         raise RuntimeError("Intake source drift 23 rows")
     by_id={x["id"]:x for x in records}
     if len(by_id)!=150:raise RuntimeError("duplicate CAP")
-    path_ref=GITHUB+REPORT
+    path_ref=GITHUB+"12-CAPABILITY-E-IMPLEMENTAZIONI/"+REPORT
     observed_existing={}
     for alg,targets in MAP.items():
         for cap in targets:
