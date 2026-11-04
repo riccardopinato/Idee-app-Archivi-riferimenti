@@ -60,7 +60,7 @@ class AnnaEvaluationAdmissionTests(unittest.TestCase):
         import re
         ids = {
             page: {"CAP-" + c for c in re.findall(
-                r"^\\| \\[CAP-(\\d{4})\\]", text, re.M)}
+                r"^\| \[CAP-(\d{4})\]", text, re.M)}
             for page, text in pages.items()
         }
         self.assertEqual([len(ids[k]) for k in (
