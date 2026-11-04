@@ -89,3 +89,9 @@ Android limita sensor sampling e background activity: https://developer.android.
 - I 10 kit sono al livello E0 (specifica e piano), non source-extracted. L'inventario di nuove implementazioni vive nel registro canonico e la vista è generata.
 
 Grafo machine-readable: [CATENE_MOTORI_ML_2026-11-04.json](CATENE_MOTORI_ML_2026-11-04.json).
+
+### Aggiornamento di evidenza implementativa — 04/11/2026
+
+La [PR App Factory Core #67](https://github.com/riccardopinato/App-Factory-Core/pull/67), merge `ae76e4267b67fe0e913d650d8e89a010dd235a5c`, ha integrato tre motori matematici *indipendenti dalle app*: `CAP-0152` ricerca fuzzy limitata, `CAP-0160` TF-IDF lessicale e `CAP-0158` EWMA + isteresi. [Dart tests CI exact-main PASS](https://github.com/riccardopinato/App-Factory-Core/actions/runs/41814145600); [test source](https://github.com/riccardopinato/App-Factory-Core/blob/ae76e4267b67fe0e913d650d8e89a010dd235a5c/reference_engines/test/on_device_algorithms_test.dart).
+
+**Questo non cambia gli stati PROPOSTA nelle 48 app** e non rende le tre CAP Golden certificati. Il codice è provato soltanto sul package `reference_engines`; non sono provati né validazione in un prodotto reale né Android/OEM. [Piano di prove E3/E5 e consumer](https://github.com/riccardopinato/App-Factory-Core/issues/68).

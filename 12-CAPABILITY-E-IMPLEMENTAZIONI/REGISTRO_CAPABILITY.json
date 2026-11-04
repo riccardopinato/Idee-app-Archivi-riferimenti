@@ -11533,6 +11533,23 @@
           "method": "engineering heuristic based on existing source and Golden maturity, not a measured success rate",
           "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
         }
+      },
+      "reference_engine_evidence_20261104": {
+        "level": "PURE_DART_REFERENCE_EXACT_MAIN_CI",
+        "reference_repo": "riccardopinato/App-Factory-Core",
+        "reference_sha": "ae76e4267b67fe0e913d650d8e89a010dd235a5c",
+        "source_path": "reference_engines/lib/src/on_device_algorithms.dart",
+        "test_path": "reference_engines/test/on_device_algorithms_test.dart",
+        "source_url": "https://github.com/riccardopinato/App-Factory-Core/blob/ae76e4267b67fe0e913d650d8e89a010dd235a5c/reference_engines/lib/src/on_device_algorithms.dart",
+        "test_url": "https://github.com/riccardopinato/App-Factory-Core/blob/ae76e4267b67fe0e913d650d8e89a010dd235a5c/reference_engines/test/on_device_algorithms_test.dart",
+        "ci_url": "https://github.com/riccardopinato/App-Factory-Core/actions/runs/41814145600",
+        "source_scope": "LocalFuzzyReference.distance/search; bounded ID-stable code-point fuzzy token matching; cannot guarantee grapheme-aware normalization, full-text recall or ACL enforcement",
+        "app_consumer_verified": false,
+        "device_verified": false,
+        "release_verified": false,
+        "certified_golden": false,
+        "integration_gate": "An app integration with scoped visible candidate retrieval, Shared Space ACL/revision recheck, 500/5000 notes and corrected text selection UI",
+        "evidence_tracking": "https://github.com/riccardopinato/App-Factory-Core/issues/68"
       }
     },
     {
@@ -11892,6 +11909,23 @@
           "method": "engineering heuristic based on existing source and Golden maturity, not a measured success rate",
           "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
         }
+      },
+      "reference_engine_evidence_20261104": {
+        "level": "PURE_DART_REFERENCE_EXACT_MAIN_CI",
+        "reference_repo": "riccardopinato/App-Factory-Core",
+        "reference_sha": "ae76e4267b67fe0e913d650d8e89a010dd235a5c",
+        "source_path": "reference_engines/lib/src/on_device_algorithms.dart",
+        "test_path": "reference_engines/test/on_device_algorithms_test.dart",
+        "source_url": "https://github.com/riccardopinato/App-Factory-Core/blob/ae76e4267b67fe0e913d650d8e89a010dd235a5c/reference_engines/lib/src/on_device_algorithms.dart",
+        "test_url": "https://github.com/riccardopinato/App-Factory-Core/blob/ae76e4267b67fe0e913d650d8e89a010dd235a5c/reference_engines/test/on_device_algorithms_test.dart",
+        "ci_url": "https://github.com/riccardopinato/App-Factory-Core/actions/runs/41814145600",
+        "source_scope": "LocalAdaptiveSignalReference.step; deterministic EWMA, consecutive threshold and hysteresis state; pure numeric samples only",
+        "app_consumer_verified": false,
+        "device_verified": false,
+        "release_verified": false,
+        "certified_golden": false,
+        "integration_gate": "Kotlin/Flutter-native sensor adapter with hardware health/foreground compliance, multi-OEM false alarms, energy and persistence tests",
+        "evidence_tracking": "https://github.com/riccardopinato/App-Factory-Core/issues/68"
       }
     },
     {
@@ -12020,6 +12054,23 @@
           "method": "engineering heuristic based on existing source and Golden maturity, not a measured success rate",
           "factory_baseline": "riccardopinato/App-Factory-Core@6cbb3449ba375496029bee93b45bc9f939dcd794"
         }
+      },
+      "reference_engine_evidence_20261104": {
+        "level": "PURE_DART_REFERENCE_EXACT_MAIN_CI",
+        "reference_repo": "riccardopinato/App-Factory-Core",
+        "reference_sha": "ae76e4267b67fe0e913d650d8e89a010dd235a5c",
+        "source_path": "reference_engines/lib/src/on_device_algorithms.dart",
+        "test_path": "reference_engines/test/on_device_algorithms_test.dart",
+        "source_url": "https://github.com/riccardopinato/App-Factory-Core/blob/ae76e4267b67fe0e913d650d8e89a010dd235a5c/reference_engines/lib/src/on_device_algorithms.dart",
+        "test_url": "https://github.com/riccardopinato/App-Factory-Core/blob/ae76e4267b67fe0e913d650d8e89a010dd235a5c/reference_engines/test/on_device_algorithms_test.dart",
+        "ci_url": "https://github.com/riccardopinato/App-Factory-Core/actions/runs/41814145600",
+        "source_scope": "LocalTfidfReference.tokenize/keywords; sparse lexical TF-IDF with caller-supplied visible corpus and stopwords; no learned semantic embeddings",
+        "app_consumer_verified": false,
+        "device_verified": false,
+        "release_verified": false,
+        "certified_golden": false,
+        "integration_gate": "A real Notes/Wonderlog local keyword producer with opt-in tag proposals, privacy filter, multi-locale quality fixture and canonical writer consent",
+        "evidence_tracking": "https://github.com/riccardopinato/App-Factory-Core/issues/68"
       }
     }
   ],

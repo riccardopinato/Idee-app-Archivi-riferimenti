@@ -8,3 +8,14 @@ CODE_EXTRACTED: NO
 DART_CODE_COPY_READY: NO
 MODEL_WEIGHT_MEASURED: NO
 PRIVACY_CONSENT: REQUIRED BEFORE USER CONTENT IS WRITTEN
+
+REFERENCE_AVAILABLE_IN_CORE: YES
+REFERENCE_SOURCE_SHA: ae76e4267b67fe0e913d650d8e89a010dd235a5c
+REFERENCE_SOURCE_PATH: reference_engines/lib/src/on_device_algorithms.dart
+REFERENCE_TEST_PATH: reference_engines/test/on_device_algorithms_test.dart
+REFERENCE_EXACT_MAIN_CI: https://github.com/riccardopinato/App-Factory-Core/actions/runs/41814145600
+REFERENCE_SCOPE: LocalFuzzyReference.distance/search; bounded ID-stable code-point fuzzy token matching; cannot guarantee grapheme-aware normalization, full-text recall or ACL enforcement
+SOURCE_LICENSE_REVIEW: REQUIRED_AT_EXTRACTION
+APP_CONSUMER_CODE: NOT IMPLEMENTED
+APP_RUNTIME_TEST: NOT EXECUTED
+GOLDEN_CERTIFIED: NO
