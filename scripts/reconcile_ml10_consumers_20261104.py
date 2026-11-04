@@ -15,9 +15,9 @@ REG = BASE / "REGISTRO_CAPABILITY.json"
 INV = BASE / "SOURCE_INVENTORY.json"
 STAMP = "ML10_CONSUMER_ADMISSIONS_2026-11-04"
 NOTE_SHA = "e10b058a43e3b238e59eb946138540287756d784"
-TASTE_SHA = "REPLACE_ON_VERIFIED_MERGE"  # set only after exact-source TasteAI PR merge
+TASTE_SHA = "fc2f80e43f91b441863f8e3a77ae7196251979cf"  # TasteAI #2 merged main
 NOTE_CI = "https://github.com/riccardopinato/Notes-Ecosistema/actions/runs/41840769025"
-TASTE_CI = "REPLACE_WITH_ACTUAL_EXACT_HEAD_CI"
+TASTE_CI = "https://github.com/riccardopinato/TasteAI/actions/runs/41842952989"
 
 def main():
     if not re.fullmatch("[0-9a-f]{40}", TASTE_SHA):
