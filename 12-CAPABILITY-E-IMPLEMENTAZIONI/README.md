@@ -1,5 +1,8 @@
 # Catalogo centrale capability — App Factory
 
+**Audit aggiornato 05/11/2026:** [Riconciliazione trasversale 31 repository / 160 CAP / 385 associazioni](AUDIT_360_RICONCILIAZIONE_2026-11-05.md). Le 385 righe sono stati di catalogo, non implementazioni certificate; le rettifiche di stato proposte vanno verificate e apportate nel JSON canonico prima di rigenerare le viste.
+
+
 ## GitHub Projects — dashboard interattiva
 
 [Sincronizzazione unidirezionale, test pilota e procedura di attivazione](GITHUB_PROJECTS_MIRROR.md). Script `scripts/projects_sync.py`: verifica tutte le 48 app, primo test su 6 associazioni, estensione automatica all'intero catalogo soltanto dopo riscontro live e credenziali Projects autorizzate. Le schede e tutti i dati originali restano invariati.

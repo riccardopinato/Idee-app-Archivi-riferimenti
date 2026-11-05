@@ -1,5 +1,8 @@
 # Idee app — archivio e riferimenti
 
+**Audit 360° del 05/11/2026:** [31 repository, 160 capability e 385 associazioni](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_360_RICONCILIAZIONE_2026-11-05.md). Lo snapshot del 30 ottobre riportato più sotto è storico: la fonte corrente rimane Factory CURRENT e gli HEAD GitHub. Il rapporto non certifica APK, dispositivi o Store. Le viste GIA_INTEGRATI e DA_VALUTARE si rigenerano solo dopo modifiche supportate da evidence al JSON canonico.
+
+
 **ML10 04/11/2026:** [audit 160 capability/385 associazioni](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_ML10_2026-11-04.md), [consumer Notes e TasteAI](12-CAPABILITY-E-IMPLEMENTAZIONI/ML10_CONSUMER_POSTMERGE_2026-11-04.md) e [due diligence Vision/Audio](12-CAPABILITY-E-IMPLEMENTAZIONI/ML10_MODEL_SCREENING_2026-11-04.md). Score euristici e prove sorgente non equivalgono a device/Store PASS.
 
 ## GitHub Projects — dashboard interattiva opzionale
@@ -27,7 +30,7 @@ Per le ricerche operative usare **prima** `DA_VALUTARE.md`, non la classifica st
 
 ## Libreria kit tecnici
 
-- [150 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.
+- [160 kit di integrazione](13-KIT-INTEGRAZIONE/INDICE.md): fonti, specifiche candidate, piano Flutter, condizioni di riuso e test.
 - [Stima facilità per app](13-KIT-INTEGRAZIONE/METODOLOGIA_FACILITA.md): nelle [tabelle delle singole app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/) figurano le colonne **Facilita integrazione (%)**, **Descrizione breve** e **Kit tecnico**, di fianco allo Score.
 
 ## Navigazione
@@ -46,7 +49,7 @@ Per le ricerche operative usare **prima** `DA_VALUTARE.md`, non la classifica st
 | [09-AGGIORNAMENTI](09-AGGIORNAMENTI/CHANGELOG.md) | Cronologia modifiche e decisioni |
 | [10-MODELLI](10-MODELLI/SCHEDA_APP.md) | Modelli standard per app, provider e librerie |
 | [11-NUOVE-IDEE](11-NUOVE-IDEE/README.md) | **Nuove proposte**, [inbox](11-NUOVE-IDEE/INBOX_IDEE.md), [audit nuove idee](11-NUOVE-IDEE/CANDIDATI_AUDIT_2026-10-30.md) e candidati non ancora promossi al portafoglio |
-| [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **147 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
+| [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **160 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
 | [90-STORICO](90-STORICO/REGISTRO_MASTER_2026-10-30.txt) | Registro integrale originale, immutato |
 
 ## Versioni centrali: snapshot letto il 30 ottobre 2026
