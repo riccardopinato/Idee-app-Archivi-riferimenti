@@ -1,5 +1,8 @@
 # Catalogo app: stato e descrizione
 
+> **Audit corrente:** [verifica trasversale del 05/11/2026](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_360_RICONCILIAZIONE_2026-11-05.md). Le descrizioni sotto sono storiche/editoriali: per stato di codice, release e verifica fisica prevalgono gli HEAD e le roadmap di ciascun prodotto.
+
+
 ## Verifiche repository: suite già costruite e nuovi prodotti compositi (30/10/2026)
 
 - **Notification Control** — suite in codice verificata; accorpa Undo, Pausa Ping, Follow Up, Critical Alert, Pickup Code e Luminous. Repo `riccardopinato/Notification-Control`; release live non certificata in questo audit.
