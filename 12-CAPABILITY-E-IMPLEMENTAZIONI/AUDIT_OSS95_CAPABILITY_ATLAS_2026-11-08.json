@@ -651,7 +651,21 @@
         "* *Requires macOS 11.3+ and Xcode 13.2.1+*"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "COPYLEFT_OR_MIXED",
+        "declared_terms": "AGPL-3.0 per il sorgente; alcune cartelle Apache-2.0; distribuzioni compilate Mattermost con MIT; opzione commerciale",
+        "files": [
+          "LICENSE.txt"
+        ],
+        "evidence_urls": [
+          "https://github.com/mattermost-community/focalboard/blob/HEAD/LICENSE.txt"
+        ],
+        "commercial_reuse_guidance": "La licenza MIT indicata per il compilato non estende il permesso all'intero codice sorgente.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 4,
@@ -697,7 +711,25 @@
         "- Miro & Whimiscal with their edgeless visual whiteboard"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "PERMISSIVE_SCOPED",
+        "declared_terms": "MIT per molte aree; backend EE con licenza separata e componenti CE/client MPL-2.0 secondo i termini specifici",
+        "files": [
+          "LICENSE",
+          "LICENSE-MIT",
+          "packages/backend/server/LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/toeverything/AFFiNE/blob/HEAD/LICENSE",
+          "https://github.com/toeverything/AFFiNE/blob/HEAD/LICENSE-MIT",
+          "https://github.com/toeverything/AFFiNE/blob/HEAD/packages/backend/server/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Controllare directory e file; l'Enterprise Edition non è codice MIT generalizzato.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 5,
@@ -777,7 +809,21 @@
         "- Bugs, quality fixes, and other issues listed on GitHub"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "RESTRICTED_SOURCE_AVAILABLE",
+        "declared_terms": "Business Source License 1.1; divieto Document Service; conversione prevista ad Apache-2.0 il 2030-10-23",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/outline/outline/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Non dichiarare open source o libero per tutte le tipologie di uso e distribuzione oggi.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 7,
@@ -815,7 +861,21 @@
         "2. The Mozilla Public License, Version 2.0 (the “MPL”)"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "COPYLEFT_OR_MIXED",
+        "declared_terms": "Dual license AGPL-3.0 o MPL-2.0",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/AppFlowy-IO/appflowy-editor/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Possibile riuso Flutter a norma della licenza selezionata e degli obblighi di modifica/distribuzione.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 8,
@@ -894,7 +954,21 @@
         "![Unique identifier autocompletion](./assets/screenshots/feature-unique-wikilink-completion.gif)"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "PERMISSIVE_SCOPED",
+        "declared_terms": "MIT; alcuni componenti e copyright di terzi sotto condizioni proprie",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/foambubble/foam/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Licenza principale permissiva, preservare copyright/notice.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 10,
@@ -1022,7 +1096,21 @@
         "- **Open code** under the Any Source Available License 1.0."
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "RESTRICTED_SOURCE_AVAILABLE",
+        "declared_terms": "Any Source Available License 1.0: uso non commerciale o commercialità limitata alle Allowed Networks",
+        "files": [
+          "LICENSE.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/anyproto/anytype-ts/blob/HEAD/LICENSE.md"
+        ],
+        "commercial_reuse_guidance": "Non riutilizzare automaticamente in app a pagamento.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 13,
@@ -1388,7 +1476,21 @@
         "Donations to Joplin support the development of the project. Developing quality applications mostly takes time, but there are also some expenses, such as digital certificates to sign the applications, app store fees, hosting, etc. Most of all, your donation will make it possible to keep up the current development standard."
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "COPYLEFT_OR_MIXED",
+        "declared_terms": "AGPL-3.0-or-later come default, con eccezioni nelle sottocartelle; loghi protetti",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/laurent22/joplin/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Verificare licenza di ogni package e non riutilizzare loghi.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 22,
@@ -1622,7 +1724,21 @@
       ],
       "example_readme_observations": [],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "COPYLEFT_OR_MIXED",
+        "declared_terms": "Codice GPL-3.0; asset CC-BY-SA o CC-BY-NC-SA",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/HabitRPG/habitica/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Contenuti/artwork possono essere non commerciali anche dove il codice è GPL.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 28,
@@ -1743,7 +1859,21 @@
         "| Structure, context, and knowledge that persist across your workspace | Autonomous agents that reason, plan, and execute tasks 24/7 | Triggers, actions, and workflows that keep everything running |"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "DOCUMENTATION_REFERENCE_ONLY",
+        "declared_terms": "Repository di documentazione e press kit, senza codice del prodotto; testi consultabili/citabili con attribuzione, media e marchio protetti",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/taskade/taskade/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Usare come riferimento di prodotto, NON come donor codice.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 31,
@@ -1937,7 +2067,21 @@
         "- Twake Drive GitHub Repo"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "LICENSE_NOT_CLEAR_AT_THIS_REPO",
+        "declared_terms": "Repository di indice ecosistema, nessuna licenza dichiarata nel root; i componenti sono in repository distinti",
+        "files": [
+          "README.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/linagora/twake-workplace/blob/HEAD/README.md"
+        ],
+        "commercial_reuse_guidance": "Analizzare le capability del prodotto; per riuso leggere la licenza di ogni repo figlio.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 36,
@@ -1980,7 +2124,21 @@
         "- ⚡ &nbsp;View Permissions Types: Collaborative Views, & Locked Views"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "RESTRICTED_SOURCE_AVAILABLE",
+        "declared_terms": "Sustainable Use License v1.0 con limiti su distribuzione commerciale e prodotti ospitati",
+        "files": [
+          "LICENSE.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/nocodb/nocodb/blob/HEAD/LICENSE.md"
+        ],
+        "commercial_reuse_guidance": "Non trattare come riuso commerciale senza verifica giuridica/licenza alternativa.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 37,
@@ -2134,7 +2292,21 @@
         "4. For R2 mode, set the build command to `npm run build` and the deploy command to `npm run deploy`."
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "COPYLEFT_OR_MIXED",
+        "declared_terms": "LGPL-3.0",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/shuaiplus/inkstone/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Riuso possibile solo rispettando obblighi LGPL e compatibilità del codice di destinazione.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 41,
@@ -2201,7 +2373,21 @@
       ],
       "example_readme_observations": [],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "RESTRICTED_SOURCE_AVAILABLE",
+        "declared_terms": "Open Source Non-Commercial License: vietato uso commerciale diretto e indiretto",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/regisdantas/gamify-tasks/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Ricercabile come UX; codice non importabile in app monetizzate senza permesso diverso.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 43,
@@ -2541,7 +2727,21 @@
         "- **Branching chat** — AI chat with visual branching, letting users explore and compare different conversation paths"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "RESTRICTED_SOURCE_AVAILABLE",
+        "declared_terms": "Licenza tldraw custom: uso development; deploy produzione richiede licenza trial/commerciale specifica",
+        "files": [
+          "LICENSE.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/tldraw/tldraw/blob/HEAD/LICENSE.md"
+        ],
+        "commercial_reuse_guidance": "Disegno e UX possono essere studiati; SDK non presumibilmente free per distribuzione commerciale.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 52,
@@ -2620,7 +2820,21 @@
         "- **Language models** - Local models through Ollama, or a cloud provider. The model works through the same tools you do, and asks before changing the graph."
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "RESTRICTED_SOURCE_AVAILABLE",
+        "declared_terms": "Nodus License: uso personale o commerciale interno, redistribuzione vietata senza autorizzazione",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/sorenwacker/nodus/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "No copia di codice in APK da distribuire senza autorizzazione del titolare.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 54,
@@ -2878,7 +3092,23 @@
         "**Note:** We do NOT offer any public support via email, please use GitHub."
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "RESTRICTED_SOURCE_AVAILABLE",
+        "declared_terms": "PLANKA Community Fair Use con limiti a hosting commerciale e moduli Pro/Enterprise esclusi",
+        "files": [
+          "LICENSE.md",
+          "LICENSES/PLANKA License Guide EN.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/plankanban/planka/blob/HEAD/LICENSE.md",
+          "https://github.com/plankanban/planka/blob/HEAD/LICENSES/PLANKA%20License%20Guide%20EN.md"
+        ],
+        "commercial_reuse_guidance": "Distinguere community, Pro, hosting e distribuzione.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 61,
@@ -2974,7 +3204,21 @@
       ],
       "example_readme_observations": [],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "COPYLEFT_OR_MIXED",
+        "declared_terms": "AGPL-3.0-or-later; parti vendorizzate sotto licenze varie",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/ankitects/anki/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Studiare scheduling/flashcard; nel riuso rispettare obblighi e terze parti.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 64,
@@ -3068,7 +3312,21 @@
         "- **Private by default** — Everything stored locally in SQLite. No accounts, no telemetry. Two network requests, both visible: an update check at launch, which you can turn off, and calendar sync once you connect a calendar. Updates are never installed without your approval."
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "RESTRICTED_SOURCE_AVAILABLE",
+        "declared_terms": "Business Source License 1.1; vietata distribuzione come prodotto commerciale, convertibile ad Apache-2.0 secondo change-date per versione",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/Pikos-App/pikos/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "No import diretto in app commerciale ora.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 66,
@@ -3502,7 +3760,21 @@
         "- [Vundle](#installation-using-vundle)"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "PERMISSIVE_SCOPED",
+        "declared_terms": "MIT",
+        "files": [
+          "LICENSE.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/vimwiki/vimwiki/blob/HEAD/LICENSE.md"
+        ],
+        "commercial_reuse_guidance": "Riuso con preservazione del copyright e notice.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 79,
@@ -3652,7 +3924,21 @@
         "- Optionally set `ETHERCALC_RATELIMIT=1` for an extra in-Worker per-IP"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "COPYLEFT_OR_MIXED",
+        "declared_terms": "CPAL-1.0 e Artistic-2.0 per componenti storici; dipendenze e riscritture con licenze proprie",
+        "files": [
+          "LICENSE.txt"
+        ],
+        "evidence_urls": [
+          "https://github.com/audreyt/ethercalc/blob/HEAD/LICENSE.txt"
+        ],
+        "commercial_reuse_guidance": "Verifica file e dipendenze, possibile attribution obligation.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 83,
@@ -3733,7 +4019,21 @@
         "* GDPR, HIPAA, and SOC 2 Type II compliant."
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "PERMISSIVE_SCOPED",
+        "declared_terms": "MIT per Open Source Edition; docs CC-BY-SA; premium/enterprise con licenze separate",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/baserow/baserow/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Consentita analisi globale; riuso diretto limitato ai componenti con licenza adeguata.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 85,
@@ -3772,7 +4072,21 @@
         "* self-hosted, no restriction on API calls"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "LICENSE_NOT_CLEAR_AT_THIS_REPO",
+        "declared_terms": "README descrive dtable-web ed eventi Apache-2.0, seaf-server AGPL-3.0, dtable-server proprietario; repository indice senza license root",
+        "files": [
+          "Readme.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/seatable/seatable/blob/HEAD/Readme.md"
+        ],
+        "commercial_reuse_guidance": "Per ogni componente verificare un repo/prodotto effettivo e la relativa licenza.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 86,
@@ -3808,7 +4122,21 @@
         "How Data Sync Works"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "PERMISSIVE_SCOPED",
+        "declared_terms": "Testo LICENSE.md include licenze permissive di componenti, fra cui MIT e Apache-2.0",
+        "files": [
+          "LICENSE.md"
+        ],
+        "evidence_urls": [
+          "https://github.com/amark/gun/blob/HEAD/LICENSE.md"
+        ],
+        "commercial_reuse_guidance": "Verificare licenza per modulo e dipendenze prima di copia.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 87,
@@ -3845,7 +4173,21 @@
         "end-to-end encrypted, peer-to-peer, collaborative editing across Obsidian vaults"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "PERMISSIVE_SCOPED",
+        "declared_terms": "MIT",
+        "files": [
+          "LICENSE"
+        ],
+        "evidence_urls": [
+          "https://github.com/yjs/yjs/blob/HEAD/LICENSE"
+        ],
+        "commercial_reuse_guidance": "Riuso permissivo con notice, compatibilità Flutter/native ancora da provare.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 88,
@@ -3920,7 +4262,25 @@
         "- *Censorship-resilient*"
       ],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "PERMISSIVE_SCOPED",
+        "declared_terms": "MIT e Apache-2.0 incluse, da verificare per ciascun componente",
+        "files": [
+          "LICENSE-MIT",
+          "LICENSE-APACHE",
+          "COPYRIGHT"
+        ],
+        "evidence_urls": [
+          "https://github.com/berty/berty/blob/HEAD/LICENSE-MIT",
+          "https://github.com/berty/berty/blob/HEAD/LICENSE-APACHE",
+          "https://github.com/berty/berty/blob/HEAD/COPYRIGHT"
+        ],
+        "commercial_reuse_guidance": "Riuso possibile nel rispetto delle parti e attribution.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 90,
@@ -3981,7 +4341,21 @@
       ],
       "example_readme_observations": [],
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
-      "issues": []
+      "issues": [],
+      "license_file_audit_20261108": {
+        "status": "LICENSE_FILE_INSPECTED",
+        "classification": "COPYLEFT_OR_MIXED",
+        "declared_terms": "AGPL-3.0, componenti terzi e marchi distinti",
+        "files": [
+          "COPYING"
+        ],
+        "evidence_urls": [
+          "https://github.com/zotero/zotero/blob/HEAD/COPYING"
+        ],
+        "commercial_reuse_guidance": "Acquisizione codice condizionata a obblighi AGPL e licenze dipendenze.",
+        "capability_extraction_allowed": true,
+        "donor_code_reuse_automatically_authorized": false
+      }
     },
     {
       "index": 92,
@@ -4123,5 +4497,19 @@
       "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
       "issues": []
     }
-  ]
+  ],
+  "licence_file_audit_20261108": {
+    "scope": "26 repos with REST NOASSERTION/UNKNOWN; read root LICENSE/variant files or README component licensing",
+    "completed": 26,
+    "group_counts": {
+      "COPYLEFT_OR_MIXED": 8,
+      "PERMISSIVE_SCOPED": 7,
+      "RESTRICTED_SOURCE_AVAILABLE": 8,
+      "DOCUMENTATION_REFERENCE_ONLY": 1,
+      "LICENSE_NOT_CLEAR_AT_THIS_REPO": 2
+    },
+    "capability_triage_on_all": true,
+    "code_copyleft_or_commercial_reuse_requires_file_specific_review": true,
+    "warning": "Do not equate missing REST SPDX metadata or visible GitHub source with an open source license; no user statement overrides copyright/licensing terms."
+  }
 }
