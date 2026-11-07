@@ -151,6 +151,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "OrangeCatzhang/orange-schedule"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -285,6 +296,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "Pikos-App/pikos"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -417,6 +439,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "nextcloud/calendar"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -524,6 +557,24 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "go-vikunja/vikunja",
+          "FossifyOrg/Calendar",
+          "baslawson/Planner",
+          "Etar-Group/Etar-Calendar",
+          "nextcloud/calendar",
+          "andstatus/todoagenda",
+          "nextcloud/notes",
+          "Pikos-App/pikos"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -650,6 +701,18 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "FossifyOrg/Calendar",
+          "Etar-Group/Etar-Calendar"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -1509,6 +1572,29 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "TriliumNext/Trilium",
+          "outline/outline",
+          "usememos/memos",
+          "streetwriters/notesnook",
+          "laurent22/joplin",
+          "silverbulletmd/silverbullet",
+          "nextcloud/notes",
+          "pbek/QOwnNotes",
+          "BookStackApp/BookStack",
+          "vimwiki/vimwiki",
+          "dnote/dnote",
+          "massCodeIO/massCode",
+          "writefreely/writefreely"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -1620,6 +1706,20 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "usememos/memos",
+          "AmmarAbouZor/tui-journal",
+          "FossifyOrg/Notes",
+          "jrnl-org/jrnl"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -2133,6 +2233,28 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "anyproto/anytype-ts",
+          "standardnotes/app",
+          "streetwriters/notesnook",
+          "laurent22/joplin",
+          "Laverna/laverna",
+          "appwrite/appwrite",
+          "shuaiplus/inkstone",
+          "LifetimeLabsHQ/PrivacyNotes.app",
+          "jrnl-org/jrnl",
+          "saber-notes/saber",
+          "nextcloud/notes",
+          "pbek/QOwnNotes"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -2780,6 +2902,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "AppFlowy-IO/appflowy-editor"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -3379,6 +3512,19 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "excalidraw/excalidraw",
+          "tldraw/tldraw",
+          "xyflow/xyflow"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -3461,6 +3607,21 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "toeverything/AFFiNE",
+          "excalidraw/excalidraw",
+          "saber-notes/saber",
+          "tldraw/tldraw",
+          "memrynote/memry"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -3686,6 +3847,19 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "Zackriya-Solutions/meetily",
+          "amicalhq/prismical",
+          "ggml-org/whisper.cpp"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -3860,6 +4034,19 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "siyuan-note/siyuan",
+          "Laverna/laverna",
+          "shuaiplus/inkstone"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -4215,6 +4402,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "paperless-ngx/paperless-ngx"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -4424,6 +4622,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "vnotex/vnote"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -8795,6 +9004,20 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "streetwriters/notesnook",
+          "pbek/QOwnNotes",
+          "todotxt/todo.txt-cli",
+          "mattgemmell/TaskPaperRuby"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -8902,6 +9125,19 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "laurent22/joplin",
+          "codexu/note-gen",
+          "zotero/zotero"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -9871,6 +10107,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "massCodeIO/massCode"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -10000,6 +10247,20 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "Zackriya-Solutions/meetily",
+          "layzdonw/lazyaudio",
+          "amicalhq/prismical",
+          "ggml-org/whisper.cpp"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -11040,6 +11301,18 @@
           "physical_device_verified": false,
           "product_bible_changed": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "codexu/note-gen",
+          "FossifyOrg/Notes"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -11122,6 +11395,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "toeverything/AFFiNE"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -11204,6 +11488,19 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "Zackriya-Solutions/meetily",
+          "layzdonw/lazyaudio",
+          "amicalhq/prismical"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -11327,6 +11624,26 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "AppFlowy-IO/AppFlowy",
+          "mattermost-community/focalboard",
+          "go-vikunja/vikunja",
+          "manuelernestog/weektodo",
+          "donetick/donetick",
+          "dromse/obsidian-gamified-tasks",
+          "todotxt/todo.txt-cli",
+          "GothenburgBitFactory/taskwarrior",
+          "mattgemmell/TaskPaperRuby",
+          "bzg/org-mode"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -11504,6 +11821,22 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "logseq/logseq",
+          "foambubble/foam",
+          "layzdonw/lazyaudio",
+          "vnotex/vnote",
+          "sorenwacker/nodus",
+          "markmap/markmap"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -11669,6 +12002,39 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "AppFlowy-IO/AppFlowy",
+          "mattermost-community/focalboard",
+          "toeverything/AFFiNE",
+          "outline/outline",
+          "anyproto/anytype-ts",
+          "go-vikunja/vikunja",
+          "appwrite/appwrite",
+          "taskade/taskade",
+          "linagora/twake-workplace",
+          "nocodb/nocodb",
+          "excalidraw/excalidraw",
+          "nextcloud/calendar",
+          "docmost/docmost",
+          "plankanban/planka",
+          "kanboard/kanboard",
+          "cryptpad/cryptpad",
+          "audreyt/ethercalc",
+          "mathesar-foundation/mathesar",
+          "baserow/baserow",
+          "amark/gun",
+          "yjs/yjs",
+          "automerge/automerge",
+          "berty/berty"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -11806,6 +12172,18 @@
           "physical_device_verified": false,
           "product_bible_changed": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "sharvesh1401/TaskTrail",
+          "JerryZLiu/Dayflow"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -12040,6 +12418,18 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "makeplane/plane",
+          "opf/openproject"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -12122,6 +12512,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "opf/openproject"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -12234,6 +12635,19 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "super-productivity/super-productivity",
+          "kanboard/kanboard",
+          "GothenburgBitFactory/taskwarrior"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -12521,6 +12935,21 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "super-productivity/super-productivity",
+          "wernerkruger/vscode-daily-planner",
+          "ActivityWatch/activitywatch",
+          "projecthamster/hamster",
+          "jazzband/Watson"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -12620,6 +13049,18 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "super-productivity/super-productivity",
+          "wernerkruger/vscode-daily-planner"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -12851,6 +13292,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "makeplane/plane"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -12943,6 +13395,21 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "siyuan-note/siyuan",
+          "logseq/logseq",
+          "AnkiDroid/Anki-Android",
+          "ankitects/anki",
+          "ankicommunity/ankicommunity-sync-server"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -13218,6 +13685,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "standardnotes/app"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -13487,6 +13965,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "xyflow/xyflow"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -13586,6 +14075,23 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "laurent22/joplin",
+          "saber-notes/saber",
+          "docmost/docmost",
+          "yjs/yjs",
+          "automerge/automerge",
+          "codex-team/editor.js",
+          "Milkdown/milkdown"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -13668,6 +14174,19 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "sorenwacker/nodus",
+          "Zettlr/Zettlr",
+          "zotero/zotero"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -13821,6 +14340,17 @@
           "physical_device_verified": false,
           "product_bible_changed": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "markmap/markmap"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -14032,6 +14562,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "gristlabs/grist-core"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -15288,6 +15829,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "paperless-ngx/paperless-ngx"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -16380,6 +16932,23 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "manuelernestog/weektodo",
+          "OrangeCatzhang/orange-schedule",
+          "FossifyOrg/Calendar",
+          "baslawson/Planner",
+          "Etar-Group/Etar-Calendar",
+          "andstatus/todoagenda",
+          "AnkiDroid/Anki-Android"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -16537,6 +17106,18 @@
           "physical_device_verified": false,
           "product_bible_changed": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "HabitRPG/habitica",
+          "dromse/obsidian-gamified-tasks"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -16652,6 +17233,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "LifetimeLabsHQ/PrivacyNotes.app"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -16887,6 +17479,20 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "makeplane/plane",
+          "codexu/note-gen",
+          "taskade/taskade",
+          "memrynote/memry"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -16956,6 +17562,19 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "excalidraw/excalidraw",
+          "tldraw/tldraw",
+          "markmap/markmap"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -17025,6 +17644,20 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "logseq/logseq",
+          "usememos/memos",
+          "AmmarAbouZor/tui-journal",
+          "bzg/org-mode"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -17138,6 +17771,17 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "oss95_research_20261108": {
+        "evidence_scope": "REPO_METADATA_AND_README_NOT_APP_PROOF",
+        "reviewed_at": "2026-11-08",
+        "source_repositories": [
+          "codexu/note-gen"
+        ],
+        "reference": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+        "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
+        "products_unchanged": true,
+        "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
       }
     },
     {
@@ -18267,5 +18911,694 @@
   "ml10_full_audit_stamp": "ML10_160_CAP_385_LINKS_2026-11-04",
   "ml10_full_audit_report": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_ML10_2026-11-04.md",
   "ml10_consumer_admission_stamp": "ML10_CONSUMER_ADMISSIONS_2026-11-04",
-  "anna_evaluation_intake_20261104": "ANNA_58_EVALUATION_2026-11-04"
+  "anna_evaluation_intake_20261104": "ANNA_58_EVALUATION_2026-11-04",
+  "oss95_research_intake": {
+    "reviewed_at": "2026-11-08",
+    "factory_sha": "85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+    "source_kind": "95 CURATED OSS REPOSITORIES (NOT AUTHENTICATED USER STARS)",
+    "audit_report": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md",
+    "atlas_json": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json",
+    "repository_count": 95,
+    "feature_observations": 329,
+    "reused_capability_ids": [
+      "CAP-0001",
+      "CAP-0002",
+      "CAP-0003",
+      "CAP-0004",
+      "CAP-0005",
+      "CAP-0013",
+      "CAP-0014",
+      "CAP-0018",
+      "CAP-0023",
+      "CAP-0028",
+      "CAP-0029",
+      "CAP-0031",
+      "CAP-0032",
+      "CAP-0035",
+      "CAP-0037",
+      "CAP-0075",
+      "CAP-0076",
+      "CAP-0084",
+      "CAP-0085",
+      "CAP-0093",
+      "CAP-0094",
+      "CAP-0095",
+      "CAP-0096",
+      "CAP-0098",
+      "CAP-0100",
+      "CAP-0101",
+      "CAP-0103",
+      "CAP-0104",
+      "CAP-0105",
+      "CAP-0108",
+      "CAP-0109",
+      "CAP-0111",
+      "CAP-0112",
+      "CAP-0114",
+      "CAP-0117",
+      "CAP-0118",
+      "CAP-0119",
+      "CAP-0120",
+      "CAP-0122",
+      "CAP-0134",
+      "CAP-0144",
+      "CAP-0145",
+      "CAP-0146",
+      "CAP-0148",
+      "CAP-0149",
+      "CAP-0150",
+      "CAP-0151"
+    ],
+    "existing_cap_count_unchanged": 160,
+    "app_cap_associations_unchanged": 385,
+    "technical_state_transitions": 0,
+    "product_decisions": 0,
+    "new_numeric_CAP_admitted": 0,
+    "why_unadmitted": "39 candidate families include overlaps/partial implementations/architecture proposals; requires independent nonduplicate contract, per-app product scope, six-file kit, generated views, reviewed PR and exact-head CI before a permanent CAP ID",
+    "pending_candidate_families": [
+      {
+        "working_id": "OSS95-N01",
+        "title": "Editor ricco a blocchi con round-trip Markdown reversibile",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Mantenere una sola sorgente canonica e regression sui blocchi non serializzabili",
+        "verdict": "ESTENSIONE_CON_SORGENTE_APP",
+        "source_repositories": [
+          "AppFlowy-IO/AppFlowy",
+          "toeverything/AFFiNE",
+          "AppFlowy-IO/appflowy-editor",
+          "Laverna/laverna",
+          "vnotex/vnote",
+          "codex-team/editor.js",
+          "Milkdown/milkdown"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N02",
+        "title": "Wikilink, backlink e rinomina dei link con riparazione",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Riconciliare con Knowledge Graph e link stabili già implementati",
+        "verdict": "NUOVA_DA_CONFRONTARE",
+        "source_repositories": [
+          "TriliumNext/Trilium",
+          "siyuan-note/siyuan",
+          "logseq/logseq",
+          "foambubble/foam",
+          "dendronhq/dendron",
+          "silverbulletmd/silverbullet",
+          "docmost/docmost",
+          "vimwiki/vimwiki"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N03",
+        "title": "Note gerarchiche, alias e transclusioni controllate",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "No cicli e duplicazioni di proprietario; link non equivalgono a copia",
+        "verdict": "NUOVA_DA_CONFRONTARE",
+        "source_repositories": [
+          "TriliumNext/Trilium",
+          "dendronhq/dendron",
+          "BookStackApp/BookStack"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N04",
+        "title": "Query e scripting locale su note e knowledge base",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Sandbox, privacy, limiti di esecuzione e tipizzazione",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "TriliumNext/Trilium",
+          "siyuan-note/siyuan",
+          "taskade/taskade",
+          "silverbulletmd/silverbullet"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N05",
+        "title": "Tabelle relazionali e campi calcolati/formule",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Distinguere da proprietà tipizzate e viste tabellari già esistenti",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "AppFlowy-IO/AppFlowy",
+          "toeverything/AFFiNE",
+          "anyproto/anytype-ts",
+          "nocodb/nocodb",
+          "gristlabs/grist-core",
+          "audreyt/ethercalc",
+          "mathesar-foundation/mathesar",
+          "baserow/baserow",
+          "seatable/seatable"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N06",
+        "title": "Viste salvate con filtri, raggruppamenti e permessi",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Usare ProjectWorkspace canonico, mai duplicare Note/Task",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "AppFlowy-IO/AppFlowy",
+          "mattermost-community/focalboard",
+          "makeplane/plane",
+          "nocodb/nocodb",
+          "plankanban/planka",
+          "gristlabs/grist-core",
+          "audreyt/ethercalc",
+          "mathesar-foundation/mathesar",
+          "baserow/baserow",
+          "seatable/seatable"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N07",
+        "title": "Convergenza CRDT per modifiche concorrenti offline",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Prototipo isolato; nessuna sostituzione di Shared Spaces autorizzata",
+        "verdict": "OPZIONE_ARCHITETTURALE",
+        "source_repositories": [
+          "anyproto/anytype-ts",
+          "memrynote/memry",
+          "cryptpad/cryptpad",
+          "amark/gun",
+          "yjs/yjs",
+          "automerge/automerge"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N08",
+        "title": "Condivisione cifrata selettiva e revoca per documento",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Threat model, ACL server, chiavi e revoca effettiva",
+        "verdict": "ESTENSIONE_CON_RISCHI",
+        "source_repositories": [
+          "outline/outline",
+          "standardnotes/app",
+          "streetwriters/notesnook",
+          "nocodb/nocodb",
+          "LifetimeLabsHQ/PrivacyNotes.app",
+          "docmost/docmost",
+          "cryptpad/cryptpad",
+          "berty/berty",
+          "writefreely/writefreely"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N09",
+        "title": "Sincronizzazione CalDAV bidirezionale opt-in",
+        "target_apps": "Agenda-per-Anna",
+        "gate": "Google Calendar Direct issue #199 resta DRAFT; account e conflitti vanno verificati",
+        "verdict": "NUOVA_PROPOSTA_CON_GATE",
+        "source_repositories": [
+          "go-vikunja/vikunja",
+          "FossifyOrg/Calendar",
+          "baslawson/Planner",
+          "Etar-Group/Etar-Calendar",
+          "nextcloud/calendar"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N10",
+        "title": "Conversione esplicita evento↔attività senza duplicati",
+        "target_apps": "Agenda-per-Anna; Notes-Ecosistema",
+        "gate": "Preservare identità, reminder e ripristino",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "baslawson/Planner"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N11",
+        "title": "Ricorrenza calcolata da scadenza o completamento",
+        "target_apps": "Agenda-per-Anna; Notes-Ecosistema",
+        "gate": "DST e salti calendario; nessun reminder doppio",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "donetick/donetick",
+          "baslawson/Planner"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N12",
+        "title": "Rotazione equa degli assegnatari nelle attività condivise",
+        "target_apps": "Agenda-per-Anna; Notes-Ecosistema",
+        "gate": "Per Anna solo Noi ♡, consenso e ownership espliciti",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "donetick/donetick"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N13",
+        "title": "Sprint, cicli e retrospettive di progetto",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Non sovrascrivere il planner esistente",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "makeplane/plane",
+          "opf/openproject"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N14",
+        "title": "Limiti WIP e swimlane Kanban configurabili",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Prima confrontare CAP-0103, -0105, -0096",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "mattermost-community/focalboard",
+          "plankanban/planka",
+          "kanboard/kanboard"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N15",
+        "title": "Timeboxing drag-and-drop sul calendario",
+        "target_apps": "Notes-Ecosistema; Agenda-per-Anna",
+        "gate": "Conferma esplicita e nessun duplicato nelle date",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "super-productivity/super-productivity",
+          "manuelernestog/weektodo",
+          "OrangeCatzhang/orange-schedule",
+          "baslawson/Planner",
+          "memrynote/memry",
+          "Pikos-App/pikos"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N16",
+        "title": "Timeline attività automatica con AFK e consenso",
+        "target_apps": "Work-Time-Keeper; FocuSense",
+        "gate": "No cattura schermo nascosta; retention e minimizzazione",
+        "verdict": "NUOVA_CONSENSO_OBBLIGATORIO",
+        "source_repositories": [
+          "JerryZLiu/Dayflow",
+          "ActivityWatch/activitywatch"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N17",
+        "title": "Tracciamento attività IDE tramite plugin opt-in",
+        "target_apps": "Work-Time-Keeper; CmdPocket",
+        "gate": "Solo eventi editor autorizzati e aggregati",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "wakatime/wakatime-cli"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N18",
+        "title": "Espansione abbreviazioni solo nell'editor corrente",
+        "target_apps": "Notes-Ecosistema; CmdPocket",
+        "gate": "Riusa i template esistenti e permette undo",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "espanso/espanso"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N19",
+        "title": "Espansione testo a livello di sistema operativo",
+        "target_apps": "CmdPocket",
+        "gate": "Accessibilità/input hook per piattaforma, privacy, non installare di default",
+        "verdict": "NUOVA_ALTO_RISCHIO",
+        "source_repositories": [
+          "espanso/espanso"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N20",
+        "title": "Archivio snippet di codice con linguaggi e frammenti",
+        "target_apps": "CmdPocket; Notes-Ecosistema",
+        "gate": "Riutilizzare note/tag/code block senza un secondo vault",
+        "verdict": "NUOVA_DA_CONFRONTARE",
+        "source_repositories": [
+          "dnote/dnote",
+          "massCodeIO/massCode",
+          "espanso/espanso"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N21",
+        "title": "Import/export lossless di todo.txt, Org e TaskPaper",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Parser delimitato, anteprima, semantica recurrence e rollback",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "todotxt/todo.txt-cli",
+          "GothenburgBitFactory/taskwarrior",
+          "mattgemmell/TaskPaperRuby",
+          "bzg/org-mode",
+          "dnote/dnote"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N22",
+        "title": "Finestre sticky giornaliere/settimanali per desktop",
+        "target_apps": "Agenda-per-Anna",
+        "gate": "Separare dal widget Android CAP-0144",
+        "verdict": "ESTENSIONE_MULTIPIATTAFORMA",
+        "source_repositories": [
+          "OrangeCatzhang/orange-schedule",
+          "andstatus/todoagenda"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N23",
+        "title": "Punti, ricompense e progressione volontaria delle task",
+        "target_apps": "FocuSense; Notes-Ecosistema",
+        "gate": "Opt-in, nessuna pressione/comportamento patologizzante",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "HabitRPG/habitica",
+          "dromse/obsidian-gamified-tasks",
+          "regisdantas/gamify-tasks",
+          "sharvesh1401/TaskTrail"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N24",
+        "title": "Serie abitudini e obiettivi di continuità con storico",
+        "target_apps": "FocuSense; Agenda-per-Anna",
+        "gate": "Distinguere dalla heatmap CAP-0145",
+        "verdict": "NUOVA_DA_CONFRONTARE",
+        "source_repositories": [
+          "HabitRPG/habitica",
+          "regisdantas/gamify-tasks",
+          "sharvesh1401/TaskTrail",
+          "AnkiDroid/Anki-Android",
+          "ankitects/anki",
+          "memrynote/memry"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N25",
+        "title": "Regole di automazione tipizzate trigger→azione con preview",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Notes 0.54 ha Workflow Automations; evitare doppio motore",
+        "verdict": "ESTENSIONE_CON_SORGENTE_APP",
+        "source_repositories": [
+          "appwrite/appwrite",
+          "taskade/taskade",
+          "silverbulletmd/silverbullet",
+          "tldraw/tldraw",
+          "xyflow/xyflow",
+          "baserow/baserow",
+          "seatable/seatable"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N26",
+        "title": "Trasporto decentralizzato P2P per dati condivisi cifrati",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Separare CRDT, identità e autorizzazione dal trasporto",
+        "verdict": "OPZIONE_ARCHITETTURALE",
+        "source_repositories": [
+          "anyproto/anytype-ts",
+          "appwrite/appwrite",
+          "linagora/twake-workplace",
+          "amark/gun",
+          "berty/berty",
+          "ankicommunity/ankicommunity-sync-server"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N27",
+        "title": "Editing Typst/matematica con anteprima verificabile",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Limitare a modalità studio ed export, valutare peso",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "dendronhq/dendron",
+          "Laverna/laverna",
+          "vnotex/vnote",
+          "sorenwacker/nodus",
+          "Zettlr/Zettlr"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N28",
+        "title": "Pubblicazione controllata Markdown/wiki con redazione",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Mai esporre contenuti privati o condivisi per default",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "outline/outline",
+          "usememos/memos",
+          "Zettlr/Zettlr",
+          "BookStackApp/BookStack",
+          "writefreely/writefreely"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N29",
+        "title": "Biblioteca citazioni e riferimenti bibliografici",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "CAP-0119 copre audit fonti, non intera libreria di riferimenti",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "zotero/zotero"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N30",
+        "title": "Da evidenziazioni PDF a note collegate e storylines",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Riusare CAP-0035/0098/0119; preservare pagina e provenance",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "sorenwacker/nodus"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N31",
+        "title": "Editor multipannello con due note e split sincronizzato",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Non duplicare i writer e testare gestione conflitti",
+        "verdict": "ESTENSIONE_UX",
+        "source_repositories": [
+          "shuaiplus/inkstone"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N32",
+        "title": "Recupero account cifrato con frase mnemonica senza email",
+        "target_apps": "Notes-Ecosistema; Agenda-per-Anna",
+        "gate": "Nessuna modifica al Vault Anna; threat model e restore test prima di valutare",
+        "verdict": "NUOVA_ALTO_RISCHIO",
+        "source_repositories": [
+          "LifetimeLabsHQ/PrivacyNotes.app"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N33",
+        "title": "Diario testuale portable e operazioni CLI per data",
+        "target_apps": "Agenda-per-Anna; CmdPocket",
+        "gate": "Per Anna prodotto UI-first; CLI solo interop opzionale",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "AmmarAbouZor/tui-journal",
+          "jrnl-org/jrnl",
+          "vimwiki/vimwiki"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N34",
+        "title": "Command palette e scorciatoie tastiera contestuali",
+        "target_apps": "Notes-Ecosistema; CmdPocket",
+        "gate": "Ricerca e azioni limitate ai permessi correnti",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "AppFlowy-IO/appflowy-editor",
+          "foambubble/foam",
+          "dendronhq/dendron",
+          "shuaiplus/inkstone",
+          "Pikos-App/pikos",
+          "massCodeIO/massCode",
+          "codex-team/editor.js",
+          "Milkdown/milkdown"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N35",
+        "title": "Timesheet esportabili e report settimanali per progetto",
+        "target_apps": "Work-Time-Keeper; Notes-Ecosistema",
+        "gate": "Misure da sessioni reali, timezone e no inventare lavoro",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "super-productivity/super-productivity",
+          "donetick/donetick",
+          "opf/openproject",
+          "wernerkruger/vscode-daily-planner",
+          "JerryZLiu/Dayflow",
+          "ActivityWatch/activitywatch",
+          "wakatime/wakatime-cli",
+          "projecthamster/hamster",
+          "jazzband/Watson"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N36",
+        "title": "Archivio documenti indicizzato con classificazione e retention",
+        "target_apps": "Notes-Ecosistema; PDF-Unifier",
+        "gate": "Distinguere OCR CAP-0035, triage CAP-0134 e vault documenti",
+        "verdict": "ESTENSIONE_DA_VERIFICARE",
+        "source_repositories": [
+          "paperless-ngx/paperless-ngx"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N37",
+        "title": "Marcatura attività tramite NFC volontario",
+        "target_apps": "Agenda-per-Anna; Notes-Ecosistema",
+        "gate": "Richiede NFC, conferma o revoca in shared-space",
+        "verdict": "NUOVA_PROPOSTA",
+        "source_repositories": [
+          "donetick/donetick"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N38",
+        "title": "Cattura audio di sistema e trascrizione locale consensuale",
+        "target_apps": "Notes-Ecosistema",
+        "gate": "Estende CAP-0085/0095; permessi OEM, consenso partecipanti e costo runtime",
+        "verdict": "NUOVA_POTENZIALE",
+        "source_repositories": [
+          "Zackriya-Solutions/meetily",
+          "layzdonw/lazyaudio",
+          "amicalhq/prismical",
+          "ggml-org/whisper.cpp"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      },
+      {
+        "working_id": "OSS95-N40",
+        "title": "Interfaccia MCP/API locale per lettura controllata di agenda e task",
+        "target_apps": "Notes-Ecosistema; CmdPocket",
+        "gate": "Sandbox, autorizzazioni, no accesso al Vault o chiavi",
+        "verdict": "NUOVA_CONSENSO_OBBLIGATORIO",
+        "source_repositories": [
+          "Pikos-App/pikos"
+        ],
+        "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
+        "product_decision": "DA_VALUTARE",
+        "implementation_in_app": "NOT_INFERRED"
+      }
+    ]
+  }
 }
