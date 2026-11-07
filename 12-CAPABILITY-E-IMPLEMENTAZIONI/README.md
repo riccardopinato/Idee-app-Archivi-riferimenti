@@ -1,5 +1,9 @@
 # Catalogo centrale capability — App Factory
 
+## Anna's Diary — Step 3 evidence crosswalk 74/74 (07/11/2026)
+
+[Inventario 74 associazioni Anna e delta funzionali](AUDIT_ANNA_STEP3_RECONCILIAZIONE_2026-11-07.md): esaminate le classificazioni presenti nel registro su commit `1a57e33`; verificati su Anna `dc601002` CAP-0152 ricerca fuzzy bounded e CAP-0160 tagger TF-IDF locali **parziali**, CAP-0015 Cerca, CAP-0025 responsive, CAP-0069 screenshot gate e CAP-0067 release Web/native. Non sono state promosse capability complete o modificate le 74 righe/stati canonici. I futuri cambi JSON dovranno rigenerare tutte le viste e passare CI.
+
 **Audit aggiornato 05/11/2026:** [Riconciliazione trasversale 31 repository / 160 CAP / 385 associazioni](AUDIT_360_RICONCILIAZIONE_2026-11-05.md). Le 385 righe sono stati di catalogo, non implementazioni certificate; le rettifiche di stato proposte vanno verificate e apportate nel JSON canonico prima di rigenerare le viste.
 
 
