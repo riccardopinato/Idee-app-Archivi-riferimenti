@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-08 — Capability OSS95 audited intake
+
+- Audit documentale su 95 repository GitHub (README, metadata, licenza REST; percorsi README non standard recuperati), con 329 associazioni repository-funzione, 47 CAP tematicamente corrispondenti e 39 candidate E0 con decisione prodotto DA_VALUTARE.
+- Aggiornato il JSON canonico `12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY.json` con `oss95_research_intake` e fonti per CAP già censite. **160 CAP / 385 associazioni invariati**, nessuna promozione CI/device/roadmap o copia codice OSS.
+- Report e atlas: `12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md` e `AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json`; 12 batch sorgente e 6 fallback README.
+- Queste 95 voci sono repository selezionati in chat; lista stelle account live non verificata. Le 39 candidate non ricevono ID permanenti senza anti-dup, scheda, kit, rigenerazione e PR/CI.
+
+
 ## 2026-11-07 — Anna's Diary Step 3: 74 capability con prove aggiornate
 - Nuovo [crosswalk Anna 74/74](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_ANNA_STEP3_RECONCILIAZIONE_2026-11-07.md) per confrontare il registro con il main Anna `dc601002` (PWA Web-first). CAP-0152 e CAP-0160 con codice/test parziali, non con perimetro full certificato; CAP-0015 + #270, CAP-0025, CAP-0069 e CAP-0067 documentate con limiti di evidenza.
 - Nessuna promozione degli stati canonici, nessuna rigenerazione delle viste, nessun cambio score/facilità o Golden. Il follow-up deve aggiornare il JSON e rigenerare con i tool di repository e check esatti.
