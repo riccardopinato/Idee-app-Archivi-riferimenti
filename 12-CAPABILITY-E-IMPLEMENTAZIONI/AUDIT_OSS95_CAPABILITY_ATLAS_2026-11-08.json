@@ -1,0 +1,4127 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "factory_sha": "85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+  "catalog_before": {
+    "cap": 160,
+    "associations": 385
+  },
+  "source_scope": "95 selected public GitHub repositories; not confirmed authenticated user stars",
+  "evidence_level": "PROJECT_REPO_METADATA_AND_README; not code/test/license certification",
+  "note": "Each feature facet is candidate comparison, not a claim that OSS source fully implements a CAP contract. Inspect the stored README signals and code before adoption.",
+  "repositories_total": 95,
+  "feature_facet_occurrences": 329,
+  "distinct_existing_cap_refs": 47,
+  "distinct_candidate_families": 39,
+  "candidate_families": [
+    {
+      "id": "OSS95-N01",
+      "title": "Editor ricco a blocchi con round-trip Markdown reversibile",
+      "targets": "Notes-Ecosistema",
+      "verdict": "ESTENSIONE_CON_SORGENTE_APP",
+      "gate": "Mantenere una sola sorgente canonica e regression sui blocchi non serializzabili",
+      "source_repositories": [
+        "AppFlowy-IO/AppFlowy",
+        "toeverything/AFFiNE",
+        "AppFlowy-IO/appflowy-editor",
+        "Laverna/laverna",
+        "vnotex/vnote",
+        "codex-team/editor.js",
+        "Milkdown/milkdown"
+      ]
+    },
+    {
+      "id": "OSS95-N02",
+      "title": "Wikilink, backlink e rinomina dei link con riparazione",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_DA_CONFRONTARE",
+      "gate": "Riconciliare con Knowledge Graph e link stabili già implementati",
+      "source_repositories": [
+        "TriliumNext/Trilium",
+        "siyuan-note/siyuan",
+        "logseq/logseq",
+        "foambubble/foam",
+        "dendronhq/dendron",
+        "silverbulletmd/silverbullet",
+        "docmost/docmost",
+        "vimwiki/vimwiki"
+      ]
+    },
+    {
+      "id": "OSS95-N03",
+      "title": "Note gerarchiche, alias e transclusioni controllate",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_DA_CONFRONTARE",
+      "gate": "No cicli e duplicazioni di proprietario; link non equivalgono a copia",
+      "source_repositories": [
+        "TriliumNext/Trilium",
+        "dendronhq/dendron",
+        "BookStackApp/BookStack"
+      ]
+    },
+    {
+      "id": "OSS95-N04",
+      "title": "Query e scripting locale su note e knowledge base",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Sandbox, privacy, limiti di esecuzione e tipizzazione",
+      "source_repositories": [
+        "TriliumNext/Trilium",
+        "siyuan-note/siyuan",
+        "taskade/taskade",
+        "silverbulletmd/silverbullet"
+      ]
+    },
+    {
+      "id": "OSS95-N05",
+      "title": "Tabelle relazionali e campi calcolati/formule",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Distinguere da proprietà tipizzate e viste tabellari già esistenti",
+      "source_repositories": [
+        "AppFlowy-IO/AppFlowy",
+        "toeverything/AFFiNE",
+        "anyproto/anytype-ts",
+        "nocodb/nocodb",
+        "gristlabs/grist-core",
+        "audreyt/ethercalc",
+        "mathesar-foundation/mathesar",
+        "baserow/baserow",
+        "seatable/seatable"
+      ]
+    },
+    {
+      "id": "OSS95-N06",
+      "title": "Viste salvate con filtri, raggruppamenti e permessi",
+      "targets": "Notes-Ecosistema",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "Usare ProjectWorkspace canonico, mai duplicare Note/Task",
+      "source_repositories": [
+        "AppFlowy-IO/AppFlowy",
+        "mattermost-community/focalboard",
+        "makeplane/plane",
+        "nocodb/nocodb",
+        "plankanban/planka",
+        "gristlabs/grist-core",
+        "audreyt/ethercalc",
+        "mathesar-foundation/mathesar",
+        "baserow/baserow",
+        "seatable/seatable"
+      ]
+    },
+    {
+      "id": "OSS95-N07",
+      "title": "Convergenza CRDT per modifiche concorrenti offline",
+      "targets": "Notes-Ecosistema",
+      "verdict": "OPZIONE_ARCHITETTURALE",
+      "gate": "Prototipo isolato; nessuna sostituzione di Shared Spaces autorizzata",
+      "source_repositories": [
+        "anyproto/anytype-ts",
+        "memrynote/memry",
+        "cryptpad/cryptpad",
+        "amark/gun",
+        "yjs/yjs",
+        "automerge/automerge"
+      ]
+    },
+    {
+      "id": "OSS95-N08",
+      "title": "Condivisione cifrata selettiva e revoca per documento",
+      "targets": "Notes-Ecosistema",
+      "verdict": "ESTENSIONE_CON_RISCHI",
+      "gate": "Threat model, ACL server, chiavi e revoca effettiva",
+      "source_repositories": [
+        "outline/outline",
+        "standardnotes/app",
+        "streetwriters/notesnook",
+        "nocodb/nocodb",
+        "LifetimeLabsHQ/PrivacyNotes.app",
+        "docmost/docmost",
+        "cryptpad/cryptpad",
+        "berty/berty",
+        "writefreely/writefreely"
+      ]
+    },
+    {
+      "id": "OSS95-N09",
+      "title": "Sincronizzazione CalDAV bidirezionale opt-in",
+      "targets": "Agenda-per-Anna",
+      "verdict": "NUOVA_PROPOSTA_CON_GATE",
+      "gate": "Google Calendar Direct issue #199 resta DRAFT; account e conflitti vanno verificati",
+      "source_repositories": [
+        "go-vikunja/vikunja",
+        "FossifyOrg/Calendar",
+        "baslawson/Planner",
+        "Etar-Group/Etar-Calendar",
+        "nextcloud/calendar"
+      ]
+    },
+    {
+      "id": "OSS95-N10",
+      "title": "Conversione esplicita evento↔attività senza duplicati",
+      "targets": "Agenda-per-Anna; Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Preservare identità, reminder e ripristino",
+      "source_repositories": [
+        "baslawson/Planner"
+      ]
+    },
+    {
+      "id": "OSS95-N11",
+      "title": "Ricorrenza calcolata da scadenza o completamento",
+      "targets": "Agenda-per-Anna; Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "DST e salti calendario; nessun reminder doppio",
+      "source_repositories": [
+        "donetick/donetick",
+        "baslawson/Planner"
+      ]
+    },
+    {
+      "id": "OSS95-N12",
+      "title": "Rotazione equa degli assegnatari nelle attività condivise",
+      "targets": "Agenda-per-Anna; Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Per Anna solo Noi ♡, consenso e ownership espliciti",
+      "source_repositories": [
+        "donetick/donetick"
+      ]
+    },
+    {
+      "id": "OSS95-N13",
+      "title": "Sprint, cicli e retrospettive di progetto",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Non sovrascrivere il planner esistente",
+      "source_repositories": [
+        "makeplane/plane",
+        "opf/openproject"
+      ]
+    },
+    {
+      "id": "OSS95-N14",
+      "title": "Limiti WIP e swimlane Kanban configurabili",
+      "targets": "Notes-Ecosistema",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "Prima confrontare CAP-0103, -0105, -0096",
+      "source_repositories": [
+        "mattermost-community/focalboard",
+        "plankanban/planka",
+        "kanboard/kanboard"
+      ]
+    },
+    {
+      "id": "OSS95-N15",
+      "title": "Timeboxing drag-and-drop sul calendario",
+      "targets": "Notes-Ecosistema; Agenda-per-Anna",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "Conferma esplicita e nessun duplicato nelle date",
+      "source_repositories": [
+        "super-productivity/super-productivity",
+        "manuelernestog/weektodo",
+        "OrangeCatzhang/orange-schedule",
+        "baslawson/Planner",
+        "memrynote/memry",
+        "Pikos-App/pikos"
+      ]
+    },
+    {
+      "id": "OSS95-N16",
+      "title": "Timeline attività automatica con AFK e consenso",
+      "targets": "Work-Time-Keeper; FocuSense",
+      "verdict": "NUOVA_CONSENSO_OBBLIGATORIO",
+      "gate": "No cattura schermo nascosta; retention e minimizzazione",
+      "source_repositories": [
+        "JerryZLiu/Dayflow",
+        "ActivityWatch/activitywatch"
+      ]
+    },
+    {
+      "id": "OSS95-N17",
+      "title": "Tracciamento attività IDE tramite plugin opt-in",
+      "targets": "Work-Time-Keeper; CmdPocket",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Solo eventi editor autorizzati e aggregati",
+      "source_repositories": [
+        "wakatime/wakatime-cli"
+      ]
+    },
+    {
+      "id": "OSS95-N18",
+      "title": "Espansione abbreviazioni solo nell'editor corrente",
+      "targets": "Notes-Ecosistema; CmdPocket",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "Riusa i template esistenti e permette undo",
+      "source_repositories": [
+        "espanso/espanso"
+      ]
+    },
+    {
+      "id": "OSS95-N19",
+      "title": "Espansione testo a livello di sistema operativo",
+      "targets": "CmdPocket",
+      "verdict": "NUOVA_ALTO_RISCHIO",
+      "gate": "Accessibilità/input hook per piattaforma, privacy, non installare di default",
+      "source_repositories": [
+        "espanso/espanso"
+      ]
+    },
+    {
+      "id": "OSS95-N20",
+      "title": "Archivio snippet di codice con linguaggi e frammenti",
+      "targets": "CmdPocket; Notes-Ecosistema",
+      "verdict": "NUOVA_DA_CONFRONTARE",
+      "gate": "Riutilizzare note/tag/code block senza un secondo vault",
+      "source_repositories": [
+        "dnote/dnote",
+        "massCodeIO/massCode",
+        "espanso/espanso"
+      ]
+    },
+    {
+      "id": "OSS95-N21",
+      "title": "Import/export lossless di todo.txt, Org e TaskPaper",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Parser delimitato, anteprima, semantica recurrence e rollback",
+      "source_repositories": [
+        "todotxt/todo.txt-cli",
+        "GothenburgBitFactory/taskwarrior",
+        "mattgemmell/TaskPaperRuby",
+        "bzg/org-mode",
+        "dnote/dnote"
+      ]
+    },
+    {
+      "id": "OSS95-N22",
+      "title": "Finestre sticky giornaliere/settimanali per desktop",
+      "targets": "Agenda-per-Anna",
+      "verdict": "ESTENSIONE_MULTIPIATTAFORMA",
+      "gate": "Separare dal widget Android CAP-0144",
+      "source_repositories": [
+        "OrangeCatzhang/orange-schedule",
+        "andstatus/todoagenda"
+      ]
+    },
+    {
+      "id": "OSS95-N23",
+      "title": "Punti, ricompense e progressione volontaria delle task",
+      "targets": "FocuSense; Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Opt-in, nessuna pressione/comportamento patologizzante",
+      "source_repositories": [
+        "HabitRPG/habitica",
+        "dromse/obsidian-gamified-tasks",
+        "regisdantas/gamify-tasks",
+        "sharvesh1401/TaskTrail"
+      ]
+    },
+    {
+      "id": "OSS95-N24",
+      "title": "Serie abitudini e obiettivi di continuità con storico",
+      "targets": "FocuSense; Agenda-per-Anna",
+      "verdict": "NUOVA_DA_CONFRONTARE",
+      "gate": "Distinguere dalla heatmap CAP-0145",
+      "source_repositories": [
+        "HabitRPG/habitica",
+        "regisdantas/gamify-tasks",
+        "sharvesh1401/TaskTrail",
+        "AnkiDroid/Anki-Android",
+        "ankitects/anki",
+        "memrynote/memry"
+      ]
+    },
+    {
+      "id": "OSS95-N25",
+      "title": "Regole di automazione tipizzate trigger→azione con preview",
+      "targets": "Notes-Ecosistema",
+      "verdict": "ESTENSIONE_CON_SORGENTE_APP",
+      "gate": "Notes 0.54 ha Workflow Automations; evitare doppio motore",
+      "source_repositories": [
+        "appwrite/appwrite",
+        "taskade/taskade",
+        "silverbulletmd/silverbullet",
+        "tldraw/tldraw",
+        "xyflow/xyflow",
+        "baserow/baserow",
+        "seatable/seatable"
+      ]
+    },
+    {
+      "id": "OSS95-N26",
+      "title": "Trasporto decentralizzato P2P per dati condivisi cifrati",
+      "targets": "Notes-Ecosistema",
+      "verdict": "OPZIONE_ARCHITETTURALE",
+      "gate": "Separare CRDT, identità e autorizzazione dal trasporto",
+      "source_repositories": [
+        "anyproto/anytype-ts",
+        "appwrite/appwrite",
+        "linagora/twake-workplace",
+        "amark/gun",
+        "berty/berty",
+        "ankicommunity/ankicommunity-sync-server"
+      ]
+    },
+    {
+      "id": "OSS95-N27",
+      "title": "Editing Typst/matematica con anteprima verificabile",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Limitare a modalità studio ed export, valutare peso",
+      "source_repositories": [
+        "dendronhq/dendron",
+        "Laverna/laverna",
+        "vnotex/vnote",
+        "sorenwacker/nodus",
+        "Zettlr/Zettlr"
+      ]
+    },
+    {
+      "id": "OSS95-N28",
+      "title": "Pubblicazione controllata Markdown/wiki con redazione",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Mai esporre contenuti privati o condivisi per default",
+      "source_repositories": [
+        "outline/outline",
+        "usememos/memos",
+        "Zettlr/Zettlr",
+        "BookStackApp/BookStack",
+        "writefreely/writefreely"
+      ]
+    },
+    {
+      "id": "OSS95-N29",
+      "title": "Biblioteca citazioni e riferimenti bibliografici",
+      "targets": "Notes-Ecosistema",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "CAP-0119 copre audit fonti, non intera libreria di riferimenti",
+      "source_repositories": [
+        "zotero/zotero"
+      ]
+    },
+    {
+      "id": "OSS95-N30",
+      "title": "Da evidenziazioni PDF a note collegate e storylines",
+      "targets": "Notes-Ecosistema",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "Riusare CAP-0035/0098/0119; preservare pagina e provenance",
+      "source_repositories": [
+        "sorenwacker/nodus"
+      ]
+    },
+    {
+      "id": "OSS95-N31",
+      "title": "Editor multipannello con due note e split sincronizzato",
+      "targets": "Notes-Ecosistema",
+      "verdict": "ESTENSIONE_UX",
+      "gate": "Non duplicare i writer e testare gestione conflitti",
+      "source_repositories": [
+        "shuaiplus/inkstone"
+      ]
+    },
+    {
+      "id": "OSS95-N32",
+      "title": "Recupero account cifrato con frase mnemonica senza email",
+      "targets": "Notes-Ecosistema; Agenda-per-Anna",
+      "verdict": "NUOVA_ALTO_RISCHIO",
+      "gate": "Nessuna modifica al Vault Anna; threat model e restore test prima di valutare",
+      "source_repositories": [
+        "LifetimeLabsHQ/PrivacyNotes.app"
+      ]
+    },
+    {
+      "id": "OSS95-N33",
+      "title": "Diario testuale portable e operazioni CLI per data",
+      "targets": "Agenda-per-Anna; CmdPocket",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "Per Anna prodotto UI-first; CLI solo interop opzionale",
+      "source_repositories": [
+        "AmmarAbouZor/tui-journal",
+        "jrnl-org/jrnl",
+        "vimwiki/vimwiki"
+      ]
+    },
+    {
+      "id": "OSS95-N34",
+      "title": "Command palette e scorciatoie tastiera contestuali",
+      "targets": "Notes-Ecosistema; CmdPocket",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Ricerca e azioni limitate ai permessi correnti",
+      "source_repositories": [
+        "AppFlowy-IO/appflowy-editor",
+        "foambubble/foam",
+        "dendronhq/dendron",
+        "shuaiplus/inkstone",
+        "Pikos-App/pikos",
+        "massCodeIO/massCode",
+        "codex-team/editor.js",
+        "Milkdown/milkdown"
+      ]
+    },
+    {
+      "id": "OSS95-N35",
+      "title": "Timesheet esportabili e report settimanali per progetto",
+      "targets": "Work-Time-Keeper; Notes-Ecosistema",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "Misure da sessioni reali, timezone e no inventare lavoro",
+      "source_repositories": [
+        "super-productivity/super-productivity",
+        "donetick/donetick",
+        "opf/openproject",
+        "wernerkruger/vscode-daily-planner",
+        "JerryZLiu/Dayflow",
+        "ActivityWatch/activitywatch",
+        "wakatime/wakatime-cli",
+        "projecthamster/hamster",
+        "jazzband/Watson"
+      ]
+    },
+    {
+      "id": "OSS95-N36",
+      "title": "Archivio documenti indicizzato con classificazione e retention",
+      "targets": "Notes-Ecosistema; PDF-Unifier",
+      "verdict": "ESTENSIONE_DA_VERIFICARE",
+      "gate": "Distinguere OCR CAP-0035, triage CAP-0134 e vault documenti",
+      "source_repositories": [
+        "paperless-ngx/paperless-ngx"
+      ]
+    },
+    {
+      "id": "OSS95-N37",
+      "title": "Marcatura attività tramite NFC volontario",
+      "targets": "Agenda-per-Anna; Notes-Ecosistema",
+      "verdict": "NUOVA_PROPOSTA",
+      "gate": "Richiede NFC, conferma o revoca in shared-space",
+      "source_repositories": [
+        "donetick/donetick"
+      ]
+    },
+    {
+      "id": "OSS95-N38",
+      "title": "Cattura audio di sistema e trascrizione locale consensuale",
+      "targets": "Notes-Ecosistema",
+      "verdict": "NUOVA_POTENZIALE",
+      "gate": "Estende CAP-0085/0095; permessi OEM, consenso partecipanti e costo runtime",
+      "source_repositories": [
+        "Zackriya-Solutions/meetily",
+        "layzdonw/lazyaudio",
+        "amicalhq/prismical",
+        "ggml-org/whisper.cpp"
+      ]
+    },
+    {
+      "id": "OSS95-N40",
+      "title": "Interfaccia MCP/API locale per lettura controllata di agenda e task",
+      "targets": "Notes-Ecosistema; CmdPocket",
+      "verdict": "NUOVA_CONSENSO_OBBLIGATORIO",
+      "gate": "Sandbox, autorizzazioni, no accesso al Vault o chiavi",
+      "source_repositories": [
+        "Pikos-App/pikos"
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "index": 1,
+      "repo": "AppFlowy-IO/AppFlowy",
+      "canonical": "AppFlowy-IO/AppFlowy",
+      "description": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.",
+      "readme_blob_sha": "4072edec24f1e38f47c48ec774eca09ce06af354",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N01",
+          "label": "Editor ricco a blocchi con round-trip Markdown reversibile"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "- Available on",
+        "- To individuals, we would like to offer Notion's functionality, data security, and cross-platform native experience.",
+        "- To enterprises and hackers, AppFlowy is dedicated to offering building blocks and collaboration infra services to",
+        "your way, with a single codebase written in Flutter and Rust supporting multiple platforms armed with long-term",
+        "- Data privacy first",
+        "- Reliable native experience",
+        "- Community-driven extensibility"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
+      "issues": []
+    },
+    {
+      "index": 2,
+      "repo": "TriliumNext/Trilium",
+      "canonical": "TriliumNext/Trilium",
+      "description": "Build your personal knowledge base with Trilium Notes",
+      "readme_blob_sha": "e686e04e62c5659dd7e5c19120ee9e5fc1aed87d",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N02",
+          "label": "Wikilink, backlink e rinomina dei link con riparazione"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N03",
+          "label": "Note gerarchiche, alias e transclusioni controllate"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N04",
+          "label": "Query e scripting locale su note e knowledge base"
+        }
+      ],
+      "example_readme_observations": [
+        "- **In-App Help**: Press `F1` within Trilium to access the same documentation directly in the application",
+        "- **GitHub**: Navigate through the [User Guide](./docs/User%20Guide/User%20Guide/) in this repository",
+        "* UI available in English, German, Spanish, French, Romanian, and Chinese (simplified and traditional)",
+        "* Scales well in both usability and performance upwards of 100 000 notes",
+        "* Customizable UI (sidebar buttons, user-defined widgets, ...)",
+        "Feel free to join our official conversations. We would love to hear what features, suggestions, or issues you may have!",
+        "- The `General` Matrix room is also bridged to [XMPP](xmpp:discuss@trilium.thisgreat.party?join)",
+        "Currently only the latest versions of Chrome & Firefox are supported (and tested)."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
+      "issues": []
+    },
+    {
+      "index": 3,
+      "repo": "mattermost-community/focalboard",
+      "canonical": "mattermost-community/focalboard",
+      "description": "Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana.",
+      "readme_blob_sha": "3da7d00b7a8e237c74ea48e5fee50067383837ef",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N14",
+          "label": "Limiti WIP e swimlane Kanban configurabili"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        }
+      ],
+      "example_readme_observations": [
+        "* **Windows**:",
+        "* Open a `git-bash` prompt.",
+        "* Run `make prebuild`",
+        "* The above prebuild step needs to be run only when you make changes to or want to install your npm dependencies, etc.",
+        "* Once the prebuild is completed, you can keep repeating the below steps to build the app & see the changes.",
+        "* Run `make win-wpf-app`",
+        "* Run `cd win-wpf/msix && focalboard.exe`",
+        "* *Requires macOS 11.3+ and Xcode 13.2.1+*"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
+      "issues": []
+    },
+    {
+      "index": 4,
+      "repo": "toeverything/AFFiNE",
+      "canonical": "toeverything/AFFiNE",
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. ",
+      "readme_blob_sha": "537c3615ba5e354c277a30a3b8cd21faf1ab3503",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0029"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0094"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N01",
+          "label": "Editor ricco a blocchi con round-trip Markdown reversibile"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "A privacy-focused, local-first, open-source, and ready-to-use alternative for Notion & Miro. ",
+        "- Many editor apps claim to be a canvas for productivity, but AFFiNE is one of the very few which allows you to put any building block on an edgeless canvas -- rich text, sticky notes, any embedded web pages, multi-view databases, linked pages, shapes and even slides. We have it all.",
+        "**Local-first & Real-time collaborative**",
+        "- We love the idea of local-first that you always own your data on your disk, in spite of the cloud. Furthermore, AFFiNE supports real-time sync and collaborations on web and cross-platform clients.",
+        "- Quip & Notion with their great concept of “everything is a block”",
+        "- Trello with their Kanban",
+        "- Airtable & Miro with their no-code programmable datasheets",
+        "- Miro & Whimiscal with their edgeless visual whiteboard"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
+      "issues": []
+    },
+    {
+      "index": 5,
+      "repo": "siyuan-note/siyuan",
+      "canonical": "siyuan-note/siyuan",
+      "description": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
+      "readme_blob_sha": "33866461d6c535429bd514db114acc3149f97f92",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0032"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N02",
+          "label": "Wikilink, backlink e rinomina dei link con riparazione"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N04",
+          "label": "Query e scripting locale su note e knowledge base"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0112"
+        }
+      ],
+      "example_readme_observations": [
+        "- [💡 Introduction](#-introduction)",
+        "- [🔮 Features](#-features)",
+        "- [🏗️ Architecture and Ecosystem](#-architecture-and-ecosystem)",
+        "- [🗺️ Roadmap](#️-roadmap)",
+        "- [🚀 Download Setup](#-download-setup)",
+        "- [App Market](#app-market)",
+        "- [Installation Package](#installation-package)",
+        "- [Package Manager](#package-manager)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
+      "issues": []
+    },
+    {
+      "index": 6,
+      "repo": "outline/outline",
+      "canonical": "outline/outline",
+      "description": "The fastest knowledge base for growing teams. Beautiful, realtime collaborative, feature packed, and markdown compatible.",
+      "readme_blob_sha": "8dcb6a16ccf199670ed15236d32b7f44a4255f21",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N28",
+          "label": "Pubblicazione controllata Markdown/wiki con redazione"
+        }
+      ],
+      "example_readme_observations": [
+        "- [Translation](docs/TRANSLATION.md) into other languages",
+        "- Performance improvements, both on server and frontend",
+        "- Developer happiness and documentation",
+        "- Bugs, quality fixes, and other issues listed on GitHub"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
+      "issues": []
+    },
+    {
+      "index": 7,
+      "repo": "AppFlowy-IO/appflowy-editor",
+      "canonical": "AppFlowy-IO/appflowy-editor",
+      "description": "A highly customizable rich-text editor for Flutter. The AppFlowy Editor project for AppFlowy and beyond.",
+      "readme_blob_sha": "fea9e7d0d0c418d388f0eb6517089b538a31a5c8",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N01",
+          "label": "Editor ricco a blocchi con round-trip Markdown reversibile"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N34",
+          "label": "Command palette e scorciatoie tastiera contestuali"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0023"
+        }
+      ],
+      "example_readme_observations": [
+        "* Build rich, intuitive editors",
+        "* Design and modify an ever-expanding list of customizable features including",
+        "* block components (such as form input controls, numbered lists, and rich text widgets)",
+        "* shortcut events",
+        "* selection menu",
+        "* toolbar menu",
+        "1. The GNU Affero General Public License Version 3",
+        "2. The Mozilla Public License, Version 2.0 (the “MPL”)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
+      "issues": []
+    },
+    {
+      "index": 8,
+      "repo": "logseq/logseq",
+      "canonical": "logseq/logseq",
+      "description": "A privacy-first, open-source platform for knowledge management and collaboration. Download link:  http://github.com/logseq/logseq/releases. roadmap: https://logseq.io/p/NX4mc_ggEV",
+      "readme_blob_sha": "662bad17d543ea6865cd8d146c91478858436dc2",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N02",
+          "label": "Wikilink, backlink e rinomina dei link con riparazione"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0098"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0112"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0150"
+        }
+      ],
+      "example_readme_observations": [
+        "* [🚀 Database Version](#-database-version)",
+        "* [🤔 Why Logseq?](#-why-logseq)",
+        "* [👀 How can I use it?](#-how-can-i-use-it)",
+        "* [📚 Learn more](#-learn-more)",
+        "* [🫶 Support Logseq Development](#-support-logseq-development)",
+        "* [💡 Feature requests](#-feature-requests)",
+        "* [🔌 Plugin API](#-plugin-api)",
+        "* [🌟 Contributing to Logseq](#-contributing-to-logseq)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_01.json",
+      "issues": []
+    },
+    {
+      "index": 9,
+      "repo": "foambubble/foam",
+      "canonical": "foambubble/foam",
+      "description": "A personal knowledge management and sharing system for VSCode",
+      "readme_blob_sha": "a504233dcefb32f2623d5d0dd1aff85f5cfc0020",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N02",
+          "label": "Wikilink, backlink e rinomina dei link con riparazione"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0098"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N34",
+          "label": "Command palette e scorciatoie tastiera contestuali"
+        }
+      ],
+      "example_readme_observations": [
+        "**Foam** is free, open source, and extremely extensible to suit your personal workflow. You own the information you create with Foam, and you're free to share it, and collaborate on it with anyone you want.",
+        "![Graph Visualization](./assets/screenshots/feature-show-graph.gif)",
+        "Foam helps you create the connections between your notes, and your placeholders as well.",
+        "![Link Autocompletion](./assets/screenshots/feature-link-autocompletion.gif)",
+        "### Sync links on file rename",
+        "![Sync links on file rename](./assets/screenshots/feature-link-sync.gif)",
+        "It will use the minimum identifier required, and even report and help you fix existing ambiguous wikilinks.",
+        "![Unique identifier autocompletion](./assets/screenshots/feature-unique-wikilink-completion.gif)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
+      "issues": []
+    },
+    {
+      "index": 10,
+      "repo": "usememos/memos",
+      "canonical": "usememos/memos",
+      "description": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
+      "readme_blob_sha": "69210e53c4d2b84435362adae94997ca3c6db0a0",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0014"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0150"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N28",
+          "label": "Pubblicazione controllata Markdown/wiki con redazione"
+        }
+      ],
+      "example_readme_observations": [
+        "- **Everyday writing.** A single sentence can be a whole memo, or you can take your time with a longer entry, using Markdown to give your words more structure.",
+        "- **A personal timeline.** Each memo stays with the day you wrote it, bringing your thoughts together in a timeline you can look back through. Tags connect related thoughts across those days, making it easy to pick up a topic again or find something you remember writing.",
+        "- **Your own data.** Your record lives on your own server, and your data stays yours.",
+        "- **Sharing you control.** You choose what stays private, what to share with family and friends, and what to publish on the web. In shared spaces, you can write alongside others while each person keeps their own memos."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
+      "issues": []
+    },
+    {
+      "index": 11,
+      "repo": "dendronhq/dendron",
+      "canonical": "dendronhq/dendron",
+      "description": "The personal knowledge management (PKM) tool that grows as you do!",
+      "readme_blob_sha": "e00b4cc38471d46bbff8539245515c499b3582cc",
+      "licence_repo_metadata": "Apache-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N03",
+          "label": "Note gerarchiche, alias e transclusioni controllate"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N02",
+          "label": "Wikilink, backlink e rinomina dei link con riparazione"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N27",
+          "label": "Editing Typst/matematica con anteprima verificabile"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N34",
+          "label": "Command palette e scorciatoie tastiera contestuali"
+        }
+      ],
+      "example_readme_observations": [
+        "- dendron features are text centric and composables",
+        "- dendron provides the lowest friction interface for working with your knowledge base",
+        "- dendron optimizes for efficiency, speed, and keyboard focused ux",
+        "- dendron comes with sane defaults and the ability to customize to your liking",
+        "- dendron can be extended along any dimension",
+        "Dendron has hundreds of features. The following is a list of highlights.",
+        "- manage using git",
+        "- use git blame to see individual edits"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
+      "issues": []
+    },
+    {
+      "index": 12,
+      "repo": "anyproto/anytype-ts",
+      "canonical": "anyproto/anytype-ts",
+      "description": "Official Anytype client for MacOS, Linux, and Windows",
+      "readme_blob_sha": "057516bbf9293d319c9f5134ad410cab4060082e",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N07",
+          "label": "Convergenza CRDT per modifiche concorrenti offline"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N26",
+          "label": "Trasporto decentralizzato P2P per dati condivisi cifrati"
+        }
+      ],
+      "example_readme_observations": [
+        "> **Local‑first, peer‑to‑peer & end‑to‑end‑encrypted knowledge OS for macOS, Windows & Linux.**",
+        "Anytype is a **personal knowledge base**—your digital brain—that lets you gather, connect and remix all kinds of information. Create pages, tasks, wikis, journals—even entire apps—and *define your own data model* while your data stays **offline‑first, private and encrypted** across devices.",
+        "- **Offline‑first, local storage** with optional peer‑to‑peer sync.",
+        "- **Zero‑knowledge encryption** powered by *any‑sync*.",
+        "- **Composable blocks**: text, databases, kanban, calendar & custom Types.",
+        "- **Cross‑platform desktop client** built with Electron + TypeScript.",
+        "- **Extensible** through a gRPC API and AI \"Agents\" (see [`AGENTS.md`](./AGENTS.md)).",
+        "- **Open code** under the Any Source Available License 1.0."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
+      "issues": []
+    },
+    {
+      "index": 13,
+      "repo": "go-vikunja/vikunja",
+      "canonical": "go-vikunja/vikunja",
+      "description": "The task manager you actually own.",
+      "readme_blob_sha": "6ec4b9ff0ec30723a9d752f5b9de1fa0ea9dae7a",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N09",
+          "label": "Sincronizzazione CalDAV bidirezionale opt-in"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0004"
+        }
+      ],
+      "example_readme_observations": [
+        "- [Security Reports](#security-reports)",
+        "- [Features](#features)",
+        "- [Docs](#docs)",
+        "- [Roadmap](#roadmap)",
+        "- [Contributing](#contributing)",
+        "- [License](#license)",
+        "- [Unsplash Images](#unsplash-images)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
+      "issues": []
+    },
+    {
+      "index": 14,
+      "repo": "super-productivity/super-productivity",
+      "canonical": "super-productivity/super-productivity",
+      "description": "Super Productivity is an advanced todo list app with integrated Timeboxing and time tracking capabilities. It also comes with integrations for Jira, GitLab, GitHub and Open Project.",
+      "readme_blob_sha": "97ffb7fb60b2f6faa65d75e35a19ac91ac3e921b",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0108"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0109"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N15",
+          "label": "Timeboxing drag-and-drop sul calendario"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0105"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        }
+      ],
+      "example_readme_observations": [
+        "Support humanitarian relief via the official National Bank of Ukraine account.",
+        "- **Keep organized and focused!** Plan and categorize your tasks using sub-tasks, projects and tags and color code them as needed.",
+        "- **Plan ahead** with the **planner** and see your day laid out on the **schedule** timeline, next to your calendar events.",
+        "- Sort tasks visually on **boards**, like the built-in **Kanban** and **Eisenhower Matrix**, or build your own.",
+        "- Use **timeboxing** and **track your time**. Create time sheets and work summaries in a breeze to easily export them to your company's time tracking system.",
+        "- Helps you to **establish healthy & productive habits**:",
+        "- A **break reminder** reminds you when it's time to step away.",
+        "- The **anti-procrastination feature** helps you gain perspective when you really need to."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
+      "issues": []
+    },
+    {
+      "index": 15,
+      "repo": "makeplane/plane",
+      "canonical": "makeplane/plane",
+      "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
+      "readme_blob_sha": "74688cd92c4b14a9e34ad26075fa752a755b21c2",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0103"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N13",
+          "label": "Sprint, cicli e retrospettive di progetto"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0111"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0148"
+        }
+      ],
+      "example_readme_observations": [
+        "- **Plane Cloud**",
+        "- **Self-host Plane**",
+        "- **Work Items**",
+        "Efficiently create and manage tasks with a robust rich text editor that supports file uploads. Enhance organization and tracking by adding sub-properties and referencing related issues.",
+        "Customize your workflow by creating filters to display only the most relevant issues. Save and share these views with ease.",
+        "Capture and organize ideas using Plane Pages, complete with AI capabilities and a rich text editor. Format text, insert images, add hyperlinks, or convert your notes into actionable items.",
+        "- **Analytics**",
+        "Feel free to ask questions, report bugs, participate in discussions, share ideas, request features, or showcase your projects. We’d love to hear from you!"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
+      "issues": []
+    },
+    {
+      "index": 16,
+      "repo": "manuelernestog/weektodo",
+      "canonical": "manuelernestog/weektodo",
+      "description": "WeekToDo is a Free and Open Source Minimalist Weekly Planner and To Do list App focused on privacy.  Available for Windows, Mac, Linux or online.",
+      "readme_blob_sha": "eed4535d0311fa962e2452025848268a7f5651fb",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N15",
+          "label": "Timeboxing drag-and-drop sul calendario"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0144"
+        }
+      ],
+      "example_readme_observations": [
+        "- Cross platform",
+        "- Light/dark mode toggle",
+        "- Custom To-do Lists",
+        "- Drag and Drop",
+        "- Multi-language",
+        "- Markdown Support",
+        "- Customizable user interface",
+        "- Local Storage"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_02.json",
+      "issues": []
+    },
+    {
+      "index": 17,
+      "repo": "donetick/donetick",
+      "canonical": "donetick/donetick",
+      "description": "Donetick an open-source, user-friendly app for managing tasks and chores, featuring customizable options to help you and others stay organized",
+      "readme_blob_sha": "0c954c4ecf432a2948c764a0e8eb016825c682ad",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N11",
+          "label": "Ricorrenza calcolata da scadenza o completamento"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N12",
+          "label": "Rotazione equa degli assegnatari nelle attività condivise"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N37",
+          "label": "Marcatura attività tramite NFC volontario"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        }
+      ],
+      "example_readme_observations": [
+        "- Supports flexible scheduling: daily, weekly, monthly, yearly, specific months, specific days of the week, or even adaptive scheduling — where Donetick learns from historical completions to suggest due dates automatically.",
+        "- Due Date vs Completion Date Based Recurrence: Choose whether recurring tasks should be scheduled from the previous due date (ideal for a consistent cadence) or from the actual completion date (useful when tasks are often delayed).",
+        "- Assignee Rotation: Automatically rotate task assignments based on who has completed the fewest tasks, randomly, or in turns(round-robin) order.",
+        "- Time Tracking & Session Insights: Track how much time you spend on a task whether in a single session or across multiple.",
+        "**Organize with Priorities and Labels**: Organize everything using custom labels and priorities. Labels can be shared across your group, making it easy to filter and sort tasks by category. Priorities help you stay focused  Donetick supports five levels: P1, P2, P3, P4, and No Priority.",
+        "**Add Photos**: Attach photos directly to tasks. Supports local storage (WIP) or cloud providers including AWS S3, Cloudflare R2, MinIO, and other S3-compatible services.",
+        "**NFC Tag Support**: Create physical triggers by writing NFC tags that instantly mark tasks as complete when scanned.",
+        "**Multi-Factor Authentication**: Supports TOTP-based MFA."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
+      "issues": []
+    },
+    {
+      "index": 18,
+      "repo": "opf/openproject",
+      "canonical": "opf/openproject",
+      "description": "OpenProject is the leading open source project management software for product, project and portfolio management. A powerful Jira alternative with agile planning, issue tracking, roadmaps, Gantt charts, time tracking, collaboration features, and more. Available on premises or in the cloud. ⭐ Star us on GitHub",
+      "readme_blob_sha": "f077258f783efe3cb64272eb3bb526f240a49f15",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0103"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N13",
+          "label": "Sprint, cicli e retrospettive di progetto"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0104"
+        }
+      ],
+      "example_readme_observations": [
+        "Manage projects, portfolios, products, tasks, bugs, agile workflows, roadmaps, and team collaboration in a single platform. OpenProject can be self-hosted and is designed for organizations looking for an open source enterprise-ready alternative to tools such as Jira, MS Project, Monday, Asana, YouTrack while maintaining full control over their data and infrastructure.",
+        "**OpenProject's key features include:**",
+        "- **Enterprise Edition**: Sign up for the Enterprise version, choose between cloud or on-premises and benefit from comprehensive support and Enterprise add-ons.",
+        "OpenProject is supported by its Community members, both companies and individuals."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
+      "issues": []
+    },
+    {
+      "index": 19,
+      "repo": "standardnotes/app",
+      "canonical": "standardnotes/app",
+      "description": "Think fearlessly with end-to-end encrypted notes and files. For issues, visit https://standardnotes.com/forum or https://standardnotes.com/help.",
+      "readme_blob_sha": "a4fb59a0d7da3f9ac37dbd61bd12d81b0df4f7fa",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0114"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        }
+      ],
+      "example_readme_observations": [
+        "Standard Notes is an end-to-end encrypted note-taking app for digitalists and professionals. Capture your notes, files, and life’s work all in one secure place.",
+        "- End-to-end encrypted sync. Only you can read your notes.",
+        "- Fast, free, and encrypted cross-platform sync on unlimited devices.",
+        "2. Click Register to create your private notes account.",
+        "3. Download Standard Notes on your devices.",
+        "4. You're all set. Standard Notes comes out of the box with end-to-end encrypted sync on all your devices.",
+        "3. `yarn install`",
+        "4. `yarn build:web`"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
+      "issues": []
+    },
+    {
+      "index": 20,
+      "repo": "streetwriters/notesnook",
+      "canonical": "streetwriters/notesnook",
+      "description": "A fully open source & end-to-end encrypted note taking alternative to Evernote.",
+      "readme_blob_sha": "a2f119c03522cd08e1f3da3930dc178e48621593",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0075"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        }
+      ],
+      "example_readme_observations": [
+        "An end-to-end encrypted note taking alternative to Evernote.",
+        "1. JavaScript/Typescript — this repo is in a hybrid state. A lot of the newer code is being written in Typescript & the old code is slowly being ported over.",
+        "2. React — the whole front-end across all platforms is built using React.",
+        "3. React Native — For mobile apps we are using React Native",
+        "4. Electron — For desktop app",
+        "5. NPM — listed here because we **don't** use Yarn or PNPM or XYZ across any of our projects.",
+        "| `@notesnook/sodium`        | [/packages/sodium](/packages/sodium)               | Wrapper around libsodium to support Node.js & Browser                |",
+        "1. [Email](mailto:support@streetwriters.co)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
+      "issues": []
+    },
+    {
+      "index": 21,
+      "repo": "laurent22/joplin",
+      "canonical": "laurent22/joplin",
+      "description": "Joplin - the privacy-focused note taking app with sync capabilities for Windows, macOS, Linux, Android and iOS.",
+      "readme_blob_sha": "6f9f342fa1f579f868cc40ae6ddb31bb2d94e2d4",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0076"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0118"
+        }
+      ],
+      "example_readme_observations": [
+        "Donations to Joplin support the development of the project. Developing quality applications mostly takes time, but there are also some expenses, such as digital certificates to sign the applications, app store fees, hosting, etc. Most of all, your donation will make it possible to keep up the current development standard."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
+      "issues": []
+    },
+    {
+      "index": 22,
+      "repo": "Laverna/laverna",
+      "canonical": "Laverna/laverna",
+      "description": "Laverna is a JavaScript note taking application with Markdown editor and encryption support. Consider it like open source alternative to Evernote.",
+      "readme_blob_sha": "98ad5bbd602ba8528cb9784c0ff8e1f00fd97b9a",
+      "licence_repo_metadata": "MPL-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N01",
+          "label": "Editor ricco a blocchi con round-trip Markdown reversibile"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0032"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N27",
+          "label": "Editing Typst/matematica con anteprima verificabile"
+        }
+      ],
+      "example_readme_observations": [
+        "Laverna is a JavaScript note-taking web application with a Markdown editor and encryption support.  It's built to be an open source alternative to Evernote.",
+        "* Markdown editor based on Pagedown",
+        "* Manage your notes, even when you're offline",
+        "* Secure client-side encryption",
+        "* Synchronizes with cloud storage services (currently only with Dropbox and RemoteStorage)",
+        "* Three editing modes: distraction free, preview, and normal mode",
+        "* WYSIWYG control buttons",
+        "* MathJax support"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
+      "issues": []
+    },
+    {
+      "index": 23,
+      "repo": "codexu/note-gen",
+      "canonical": "codexu/note-gen",
+      "description": "Capture first. Organize later. A local-first Markdown app that turns scattered records into clear notes with AI.",
+      "readme_blob_sha": "3e5cb0516f43c53637d852ad90eec7a398c9a75e",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0148"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0151"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0076"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0093"
+        }
+      ],
+      "example_readme_observations": [
+        "A local-first Markdown app that helps you collect scattered information and organize it into clear notes with AI.",
+        "1. **Capture what happened**",
+        "2. **Choose the material**",
+        "3. **Organize the records**",
+        "4. **Keep writing**",
+        "- Record parts of a meeting, add two screenshots, and organize them into meeting notes afterward.",
+        "- Save links and reading fragments during the week, then organize them into a research note.",
+        "- Filter recent records by tag and prepare a weekly report without searching through several apps."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
+      "issues": []
+    },
+    {
+      "index": 24,
+      "repo": "Zackriya-Solutions/meetily",
+      "canonical": "Zackriya-Solutions/meetily",
+      "description": "Privacy-first AI meeting note taker for Windows and macOS. Free, open source (MIT). On-device Whisper/Parakeet transcription and speaker diarization, no meeting bot. Open-source alternative to Granola, Otter and Fireflies. https://meetily.ai",
+      "readme_blob_sha": "32834738eec63494a542ed7f762e9e57461f3731",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0085"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0095"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0031"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N38",
+          "label": "Cattura audio di sistema e trascrizione locale consensuale"
+        }
+      ],
+      "example_readme_observations": [
+        "- [Introduction](#introduction)",
+        "- [Why Meetily?](#why-meetily)",
+        "- [Features](#features)",
+        "- [Installation](#installation)",
+        "- [Key Features in Action](#key-features-in-action)",
+        "- [System Architecture](#system-architecture)",
+        "- [For Developers](#for-developers)",
+        "- [Meetily PRO](#meetily-pro)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_03.json",
+      "issues": []
+    },
+    {
+      "index": 25,
+      "repo": "layzdonw/lazyaudio",
+      "canonical": "layzdonw/lazyaudio",
+      "description": "LazyAudio is a macOS application designed for easy audio recording and management. Its core feature is performing real-time transcription locally using Sherpa-onnx, capturing audio from your system or microphone. After transcription, it leverages Large Language Models (LLMs) to automatically generate summaries, tasks, translations, mindmap.",
+      "readme_blob_sha": "c121a2f9338abe1193614b5a42979bc88003bf00",
+      "licence_repo_metadata": "Apache-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0085"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0095"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0098"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N38",
+          "label": "Cattura audio di sistema e trascrizione locale consensuale"
+        }
+      ],
+      "example_readme_observations": [
+        "*   **Local Real-time Transcription**: Uses `Sherpa-onnx` to transcribe system audio or microphone input directly on your Mac, ensuring privacy and speed.",
+        "*   **AI-Powered Post-Processing**: Automatically generate insights from transcriptions:",
+        "*   Actionable Tasks",
+        "*   Translations",
+        "*   (Other potential AI features)",
+        "*   **Flexible Audio Recording**: Record audio from system output or microphone input.",
+        "*   **Recording Management**: Easily start, stop, and organize your recording sessions.",
+        "*   **Recording History**: Access a list of your past recordings and their transcriptions/analyses."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
+      "issues": []
+    },
+    {
+      "index": 26,
+      "repo": "amicalhq/prismical",
+      "canonical": "amicalhq/prismical",
+      "description": "✏️ Open-source AI note taker - 🎙️ Transcribe meetings, lectures, and voice notes — with local AI and without invasive bots. AI keeps everything structured, organized, and actionable. Free forever.",
+      "readme_blob_sha": "bb7170e61b7da3e2a621115b4224f84be2ec826e",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0085"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0095"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0031"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N38",
+          "label": "Cattura audio di sistema e trascrizione locale consensuale"
+        }
+      ],
+      "example_readme_observations": [
+        "- [⬇️ Download](#️-download)",
+        "- [🔮 Overview](#-overview)",
+        "- [✨ Features](#-features)",
+        "- [🔰 Tech Stack](#-tech-stack)",
+        "- [🛠 Development](#-development)",
+        "- [🤗 Contributing](#-contributing)",
+        "- [🎗 License](#-license)",
+        "🔐 Local-first AI — on-device transcription with whisper.cpp"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
+      "issues": []
+    },
+    {
+      "index": 27,
+      "repo": "HabitRPG/habitica",
+      "canonical": "HabitRPG/habitica",
+      "description": "A habit tracker app which treats your goals like a Role Playing Game.",
+      "readme_blob_sha": "6c2906d28c2dbf9b0ef3185218a7e2328811a277",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N23",
+          "label": "Punti, ricompense e progressione volontaria delle task"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N24",
+          "label": "Serie abitudini e obiettivi di continuità con storico"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0145"
+        }
+      ],
+      "example_readme_observations": [],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
+      "issues": []
+    },
+    {
+      "index": 28,
+      "repo": "dromse/obsidian-gamified-tasks",
+      "canonical": "dromse/obsidian-gamified-tasks",
+      "description": " Gamify your task management with rewards system, craft your tasks by tags.",
+      "readme_blob_sha": "eadc39658ffbcaed8ced1ce16efc1ea9dc614c16",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N23",
+          "label": "Punti, ricompense e progressione volontaria delle task"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0145"
+        }
+      ],
+      "example_readme_observations": [
+        "- Unleash the magic of Gamified Tasks, merging task management with rewards system to your Obsidian workspace!",
+        "- Earn coins by completing tasks and acquire epic rewards!",
+        "- It's your ticket to excitement and adventure in your digital domain!",
+        "- **Tasks**: View all tasks in your vault.",
+        "- **Filters**: Filter tasks by completion status, recurring or search by within content.",
+        "- **Rewards**: Purchase rewards with earned coins.",
+        "- **History**: View history of earnings and spending.",
+        "- **Recurrence**: Instead of repeating the same tasks, recurring tasks are saved to history and reappear in the task list when their time arrives."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
+      "issues": []
+    },
+    {
+      "index": 29,
+      "repo": "appwrite/appwrite",
+      "canonical": "appwrite/appwrite",
+      "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+      "readme_blob_sha": "5dfa7bffd6d0ebcab189db4941f06b260f70193d",
+      "licence_repo_metadata": "BSD-3-Clause",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N25",
+          "label": "Regole di automazione tipizzate trigger→azione con preview"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N26",
+          "label": "Trasporto decentralizzato P2P per dati condivisi cifrati"
+        }
+      ],
+      "example_readme_observations": [
+        "It is designed for the AI agents in your workflow as well as for developers. Connect Cursor, Claude Code, Codex, and other agents through the hosted MCP server, or integrate an SDK into your app. Modular products stay unified from the first prototype to production scale.",
+        "- [Products](#products)",
+        "- [Installation \\& Setup](#installation--setup)",
+        "- [Self-Hosting](#self-hosting)",
+        "- [Unix](#unix)",
+        "- [Windows](#windows)",
+        "- [PowerShell](#powershell)",
+        "- [Docker API version mismatch](#docker-api-version-mismatch)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
+      "issues": []
+    },
+    {
+      "index": 30,
+      "repo": "taskade/taskade",
+      "canonical": "taskade/taskade",
+      "description": "Public docs, comparisons, and clone-ready kits for the AI-native workspace. Not the product source — issues welcome.",
+      "readme_blob_sha": "a894d0149bc529cfd766311218adfd2b9409813f",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "DOCUMENTATION_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N25",
+          "label": "Regole di automazione tipizzate trigger→azione con preview"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N04",
+          "label": "Query e scripting locale su note e knowledge base"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0148"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "Taskade Genesis: one prompt creates a live app with AI agents, real-time data, and automation workflows.",
+        "- [What is Taskade?](#what-is-taskade) · [Why Taskade](#why-taskade-build-without-permission) · [Key Features](#key-features)",
+        "- [AI App Builder](#-taskade-genesis-ai-app-builder) · [AI Agents](#-ai-agents) · [Workflow Automation](#-workflow-automation) · [Collaboration & Views](#-collaboration--views) · [Knowledge & AI Training](#-knowledge--ai-training)",
+        "- [Use Taskade from your AI agent](#use-taskade-from-your-ai-agent) · [Claude Code plugin](#claude-code-plugin) · [Public API](#public-api)",
+        "- [Platforms & Downloads](#-platforms--downloads) · [Integrations](#-integrations) · [Feature Comparison](#feature-comparison) · [Getting Started](#getting-started)",
+        "- [FAQ](#faq) · [Learn & Compare](#learn--compare) · [Taskade Ecosystem](#taskade-ecosystem) · [Community](#community)",
+        "**Taskade is an AI-native workspace platform that turns a single prompt into a complete, running application.** It combines project management, AI agents, and workflow automation into one unified system with real-time collaboration across web, desktop, and mobile.",
+        "| Structure, context, and knowledge that persist across your workspace | Autonomous agents that reason, plan, and execute tasks 24/7 | Triggers, actions, and workflows that keep everything running |"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
+      "issues": []
+    },
+    {
+      "index": 31,
+      "repo": "OrangeCatzhang/orange-schedule",
+      "canonical": "OrangeCatzhang/orange-schedule",
+      "description": "橙子日程｜免费开源的 Windows 日程管理软件、桌面日历与待办清单。支持周计划、日/周桌面便签、待办/已办同步、定时提醒和本地离线保存，适合学习计划、工作安排与个人时间管理。提供 Windows 10/11 x64 EXE 安装包，MIT 开源。 Orange Schedule: open-source Windows calendar planner, to-do lists, desktop sticky notes, weekly planning, reminders and offline storage.",
+      "readme_blob_sha": "12e0fe522f6cae61945a0e0cd8fe6c1f32eb2859",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N22",
+          "label": "Finestre sticky giornaliere/settimanali per desktop"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0144"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0001"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N15",
+          "label": "Timeboxing drag-and-drop sul calendario"
+        }
+      ],
+      "example_readme_observations": [
+        "- **中文 / 英文界面**：安装时选择语言，设置中随时切换；日历、桌面便签、提醒、托盘及备份对话框同步切换，用户填写的任务和备注保持原文。",
+        "- **四周日历与周计划**：查看未来几周的安排，切换四周日历、周时间表和任务清单。",
+        "- **待办事项（To-do List）与已办清单**：按计划日期整理任务，勾选完成或撤销完成，支持只看待办或已办。",
+        "- **日 / 周桌面便签**：在独立桌面小窗口查看当天或本周清单，快速新增任务，与主日历同步。",
+        "- **默认沉底与置顶**：便签打开、取消置顶或失去焦点后回到普通窗口下方；图钉可切换置顶，仍可正常输入和勾选。",
+        "- **分类、搜索与改期**：按工作、学习、生活分类，用 Ctrl+K 搜索名称和备注，拖动日历任务调整日期或时段。",
+        "- **每天 / 工作日 / 每周重复计划**：每天或每个工作日（周一至周五）重复至指定结束日期，或每周连续 4、8、12 周；每次事项可单独编辑，也可将此项及后续事项批量完成、恢复为待办或删除。",
+        "- **定时提醒与日程提醒**：到点或提前提醒，系统通知与独立提醒弹窗，支持稍后 10 分钟提醒及恢复后补发。"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
+      "issues": []
+    },
+    {
+      "index": 32,
+      "repo": "FossifyOrg/Calendar",
+      "canonical": "FossifyOrg/Calendar",
+      "description": "A simple calendar with events, customizable widgets and no ads.",
+      "readme_blob_sha": "3d4b5da94f0b2447d0e15312e2538cec95f205b5",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0004"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0005"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0144"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N09",
+          "label": "Sincronizzazione CalDAV bidirezionale opt-in"
+        }
+      ],
+      "example_readme_observations": [
+        "Fossify Calendar is here to change that. Your open-source powerhouse for managing life, designed with privacy as its core and packed with powerful features to keep you organized.",
+        "**🔄 SEAMLESS SYNCING:**",
+        "Sync effortlessly with Google Calendar, Outlook, Nextcloud, Exchange, and more."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_04.json",
+      "issues": []
+    },
+    {
+      "index": 33,
+      "repo": "vnotex/vnote",
+      "canonical": "vnotex/vnote",
+      "description": "A pleasant note-taking platform with native speed, majoring in Markdown, MindMap, Typst, and plain text.",
+      "readme_blob_sha": "6c0bffa4be595dc87f496370e82ea33cb0a5d895",
+      "licence_repo_metadata": "LGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N27",
+          "label": "Editing Typst/matematica con anteprima verificabile"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0098"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0037"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N01",
+          "label": "Editor ricco a blocchi con round-trip Markdown reversibile"
+        }
+      ],
+      "example_readme_observations": [
+        "VNote runs on **Linux**, **Windows**, and **macOS**, and requires **Qt 6.9+**. Qt 5.15 and Windows 7 are no longer supported.",
+        "**VNote is more than a Markdown editor — these formats are supported today:**",
+        "* **Markdown** (`.md`, `.mkd`, `.rmd`, `.markdown`): write, edit, and preview Markdown notes",
+        "* **Typst** (`.typst`): write and edit typeset documents with the native Typst editor and live PDF preview",
+        "* **Plain text and source code** (`.txt`, `.log`, `.py`, `.cpp`, `.js`, `.json`, `.yaml`, and more): edit text notes, logs, code, and configuration files",
+        "* **Mind maps** (`.mmm`, `.emind`): create and edit mind maps with the native mind-map editor",
+        "* **PDF** (`.pdf`): read PDF documents with the built-in viewer",
+        "* Email: `tamlokx at gmail.com`;"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
+      "issues": []
+    },
+    {
+      "index": 34,
+      "repo": "silverbulletmd/silverbullet",
+      "canonical": "silverbulletmd/silverbullet",
+      "description": "The malleable knowledge base for you and your team. Powered by Markdown and Lua.",
+      "readme_blob_sha": "76a28177cec9b202daf80e51d46635d235f2aa49",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N04",
+          "label": "Query e scripting locale su note e knowledge base"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N25",
+          "label": "Regole di automazione tipizzate trigger→azione con preview"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N02",
+          "label": "Wikilink, backlink e rinomina dei link con riparazione"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        }
+      ],
+      "example_readme_observations": [
+        "SilverBullet combines a clean live-preview editor with wiki-style linking, a built-in database and query language, and a fully integrated Space Lua scripting environment, turning your notes into a programmable system that grows with you.",
+        "* `bin/silverbullet/`: The standalone `silverbullet` server binary (Rust) (this is the one you generally run)",
+        "* `bin/sb/`: The `sb` CLI client (Rust)",
+        "* `bin/plug-compile.ts`: the plug compiler",
+        "* `client/`: The SilverBullet client (browser, TypeScript)",
+        "* `server/`: The SilverBullet server library (Rust): HTTP router, handlers, auth, runtime seam",
+        "* `server-common/`: Shared Rust crate (space primitives, shared types)",
+        "* `server-runtime-chrome/`: Headless-Chrome runtime backend (Rust)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
+      "issues": []
+    },
+    {
+      "index": 35,
+      "repo": "linagora/twake-workplace",
+      "canonical": "linagora/twake-workplace",
+      "description": "Twake Workplace : the open-source digital workplace",
+      "readme_blob_sha": "71a6174ba74e377b6f80e031b04e8435861c777e",
+      "licence_repo_metadata": "UNKNOWN",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N26",
+          "label": "Trasporto decentralizzato P2P per dati condivisi cifrati"
+        }
+      ],
+      "example_readme_observations": [
+        "Maximize the level of security for your communication, collaboration and workflow between clients, team members and partners",
+        "- Twake Chat Client GitHub Repo",
+        "- Twake Chat Server GitHub Repo",
+        "- Twake Mail Client GitHub Repo",
+        "- Twake Mail Server GitHub Repo",
+        "- Twake Drive GitHub Repo"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
+      "issues": []
+    },
+    {
+      "index": 36,
+      "repo": "nocodb/nocodb",
+      "canonical": "nocodb/nocodb",
+      "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative",
+      "readme_blob_sha": "9f14e0e8252e3f7f60dd47ad2575907d5cd74045",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "- 🐳 Automatically installs all pre-requisites like docker, docker-compose",
+        "- 🚀 Automatically installs NocoDB with PostgreSQL, Redis, Traefik gateway using Docker Compose. 🐘 🗄️ 🌐",
+        "- 🔄 Automatically upgrades NocoDB to the latest version when you run the command again.",
+        "- 🔒 Automatically setups SSL and also renews it. Needs a domain or subdomain as input while installation.",
+        "- ⚡ &nbsp;Basic Operations: Create, Read, Update and Delete Tables, Columns, and Rows",
+        "- ⚡ &nbsp;Fields Operations: Sort, Filter, Group, Hide / Unhide Columns",
+        "- ⚡ &nbsp;Multiple Views Types: Grid (By default), Gallery, Form, Kanban and Calendar View",
+        "- ⚡ &nbsp;View Permissions Types: Collaborative Views, & Locked Views"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
+      "issues": []
+    },
+    {
+      "index": 37,
+      "repo": "excalidraw/excalidraw",
+      "canonical": "excalidraw/excalidraw",
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "readme_blob_sha": "48b9d1de9fbb1c74406407e89e2471a01b1f28de",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0029"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0028"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0149"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "Collaborative and end-to-end encrypted. ",
+        "The Excalidraw editor (npm package) supports:",
+        "- 💯&nbsp;Free & open-source.",
+        "- 🎨&nbsp;Infinite, canvas-based whiteboard.",
+        "- ✍️&nbsp;Hand-drawn like style.",
+        "- 🌓&nbsp;Dark mode.",
+        "- 🏗️&nbsp;Customizable.",
+        "- 📷&nbsp;Image support."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
+      "issues": []
+    },
+    {
+      "index": 38,
+      "repo": "AmmarAbouZor/tui-journal",
+      "canonical": "AmmarAbouZor/tui-journal",
+      "description": "Your journal app if you live in a terminal",
+      "readme_blob_sha": "1a84e9ea60d0e21675389452e0f8fb7797333e5a",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0014"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0150"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N33",
+          "label": "Diario testuale portable e operazioni CLI per data"
+        }
+      ],
+      "example_readme_observations": [
+        "TUI-Journal is a terminal-based application written in Rust that allows you to write and manage your journal/notes from within the comfort of your terminal. It provides a simple and efficient interface for creating and organizing your thoughts, ideas, and reflections. TUI-Journal supports three local back-ends: plain-text JSON, SQLite, and an iCalendar `VJOURNAL` directory.",
+        "- [Features](#features)",
+        "- [Roadmap](#roadmap)",
+        "- [Installation](#installation)",
+        "- [Arch Linux](#arch-linux)",
+        "- [Alpine Linux](#alpine-linux)",
+        "- [FreeBSD](#freebsd)",
+        "- [NetBSD](#netbsd)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
+      "issues": []
+    },
+    {
+      "index": 39,
+      "repo": "wernerkruger/vscode-daily-planner",
+      "canonical": "wernerkruger/vscode-daily-planner",
+      "description": "VS Code extension for planning daily tasks",
+      "readme_blob_sha": "eb84c0acc79e07077e043785e2bec8e499b942af",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0108"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0109"
+        }
+      ],
+      "example_readme_observations": [
+        "- Open vscode every day to remind you to add plans",
+        "- When the scheduled start time is reached, it will remind you to start the plan",
+        "- You can add a description to the plan to record the problems encountered or specific work content in this task",
+        "- Generate a weekly report with plans from Monday to present(markdown)",
+        "- Add AI to automatically summarize weekly reports based on plan",
+        "- The plan supports adding, deleting, modifying, and checking"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
+      "issues": []
+    },
+    {
+      "index": 40,
+      "repo": "shuaiplus/inkstone",
+      "canonical": "shuaiplus/inkstone",
+      "description": "A self-hosted Markdown notebook that runs entirely on Cloudflare Workers.",
+      "readme_blob_sha": "2c9fa61eccfd1777b66b854aaf3e74d8fb31d651",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N31",
+          "label": "Editor multipannello con due note e split sincronizzato"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N34",
+          "label": "Command palette e scorciatoie tastiera contestuali"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0032"
+        }
+      ],
+      "example_readme_observations": [
+        "A self-hosted Markdown notebook for writing, organizing, syncing, and backing up personal knowledge.",
+        "Inkstone is a browser-based notebook that runs on Cloudflare Workers. Notes always remain plain Markdown text; on top of that foundation, the application provides focused writing, live preview, lexical and optional semantic search, bidirectional links, offline editing, multi-device synchronization, private AI access, public sharing, and off-site backups.",
+        "| Writing | CodeMirror 6 editor, independently editable note titles, **two-note editor groups**, per-group editor/split/preview layouts, synchronized scrolling, outline, **focus mode**, **typewriter mode**, **autosave**, and **version history** |",
+        "| Reliability | Installable PWA, offline app launch, browser-side cache, **offline write queue and optimistic concurrency control**, immediate local mutations with rollback, stale-sync protection, conflict copies, realtime notifications, and elected-tab polling fallback |",
+        "| `SyncHub` Durable Object | Realtime change notifications between active clients |",
+        "1. Fork the Inkstone repository to your GitHub account.",
+        "3. Select **Continue with GitHub**, then choose your forked repository.",
+        "4. For R2 mode, set the build command to `npm run build` and the deploy command to `npm run deploy`."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_05.json",
+      "issues": []
+    },
+    {
+      "index": 41,
+      "repo": "LifetimeLabsHQ/PrivacyNotes.app",
+      "canonical": "LifetimeLabsHQ/PrivacyNotes.app",
+      "description": "End-to-end encrypted notes, tasks, files, passwords, journal and bookmarks. Keyed by a 12-word BIP-39 phrase: no email, no password, no account to leak. The full client source for web, desktop and mobile is published, along with the encryption (XChaCha20-Poly1305, HKDF-SHA256, Ed25519) and the threat model, so the privacy claims are falsifiable.",
+      "readme_blob_sha": "bf3b532049e62e716e3071784dee2e3d4178aed9",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N32",
+          "label": "Recupero account cifrato con frase mnemonica senza email"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0146"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        }
+      ],
+      "example_readme_observations": [
+        "**Notes, tasks, and journal, encrypted on your device.**",
+        "| Your notes are encrypted on your device, at rest and on the way to us | [`crypto/crypto.ts`](crypto/crypto.ts), the XChaCha20-Poly1305 path |",
+        "**Note encryption.** Each note is encrypted with XChaCha20-Poly1305 under a random 24-byte nonce. The plaintext payload includes title, body, tags, and metadata such as trashed and starred state. The server sees none of it. The 24-byte nonce is what makes random generation safe without collision risk, unlike AES-GCM's 12 bytes.",
+        "import { generateMnemonic, mnemonicToSeedSync } from '@scure/bip39';",
+        "const seed   = mnemonicToSeedSync(phrase);",
+        "console.log('Deterministic    :', hex(hkdf(sha256, mnemonicToSeedSync(phrase), undefined, utf8.encode('privacynotes-encryption-v1'), 32)) === hex(encKey));",
+        "- **Metadata.** The server sees your public key, ciphertext sizes, timestamps, note counts, request IPs and sync patterns.",
+        "- **OAuth.** A Google, Apple or GitHub sign-in links that provider's email to your key, custodial or not."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
+      "issues": []
+    },
+    {
+      "index": 42,
+      "repo": "regisdantas/gamify-tasks",
+      "canonical": "regisdantas/gamify-tasks",
+      "description": "A gamified React + TypeScript + Firebase task manager for browser. Create and track todos, tasks, and habits with XP, coins, levels, and story-driven progression. A lightweight productivity app combining RPG mechanics, habit building, and daily goal tracking.",
+      "readme_blob_sha": "e7f67e8c48d35d871649d442b41816d689fd88bd",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N23",
+          "label": "Punti, ricompense e progressione volontaria delle task"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N24",
+          "label": "Serie abitudini e obiettivi di continuità con storico"
+        }
+      ],
+      "example_readme_observations": [],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
+      "issues": []
+    },
+    {
+      "index": 43,
+      "repo": "sharvesh1401/TaskTrail",
+      "canonical": "sharvesh1401/TaskTrail",
+      "description": "TaskTrail is a focused productivity app that helps you track daily tasks while building rewarding streaks through goal-driven habit loops. With a clean interface and motivational rewards, it turns consistency into progress.",
+      "readme_blob_sha": "9c98b695adc75b46921863f81b629701b48c4c01",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N24",
+          "label": "Serie abitudini e obiettivi di continuità con storico"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N23",
+          "label": "Punti, ricompense e progressione volontaria delle task"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0101"
+        }
+      ],
+      "example_readme_observations": [
+        "- ✅ Create, edit, complete, and auto-clean up tasks",
+        "- 🎯 Set goals and assign importance levels (e.g., \"All-Out\", \"Chill\")",
+        "- 🗓️ Duolingo-style streak calendar and customizable streak goals",
+        "- 🧠 AI assistant (\"TrailGuide\") powered by Groq API",
+        "- ⚙️ Settings panel for auto-delete and streak management",
+        "- 💬 Dynamic greetings that change with the time of day",
+        "- 🌌 Clean, animated UI with subtle interactive backgrounds",
+        "- 💾 Fully local—everything is stored on your device (with optional API calls)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
+      "issues": []
+    },
+    {
+      "index": 44,
+      "repo": "FossifyOrg/Notes",
+      "canonical": "FossifyOrg/Notes",
+      "description": "A simple text field for adding quick notes without ads.",
+      "readme_blob_sha": "a3f54e906eaff6a745b7a0ddfaf5ab8937d370d1",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0093"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0014"
+        }
+      ],
+      "example_readme_observations": [],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
+      "issues": []
+    },
+    {
+      "index": 45,
+      "repo": "baslawson/Planner",
+      "canonical": "baslawson/Planner",
+      "description": "Offline-first Android planner with calendar, tasks, bills, scanning and natural-language Quick entry",
+      "readme_blob_sha": "8bfada64064f2f632c7749c2a50f4a0a3297d883",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N09",
+          "label": "Sincronizzazione CalDAV bidirezionale opt-in"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N10",
+          "label": "Conversione esplicita evento↔attività senza duplicati"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N11",
+          "label": "Ricorrenza calcolata da scadenza o completamento"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0004"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0144"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N15",
+          "label": "Timeboxing drag-and-drop sul calendario"
+        }
+      ],
+      "example_readme_observations": [
+        "Enjoying Planner? Buy me a coffee to help support its development. Thank you!",
+        "- Offline natural-language Quick entry with editable previews.",
+        "- Turn a task into an event or an event into a task, Undo/Redo while typing in the editors, and templates for one event or a set of events (a weekend away, added again from any day). Repeating tasks show their streak (\"🔥 5 in a row\"), and a Habits page shows how often each was done on time.",
+        "- Calendars beside your own: Nextcloud, the calendars on your phone, your contacts' birthdays (with optional reminders and Message and Call buttons) and calendar links, shown read-only; one Nextcloud calendar can be kept in sync both ways, automatically while Planner is open.",
+        "- Notes in Markdown with checklists, notebooks, tags, colours, attachments and reminders; optional two-way sync with the Nextcloud Notes app (and so with Quillpad).",
+        "- Document and bill scanning with cropping and on-device text recognition.",
+        "- Matrix Green, High Contrast and Colour-blind friendly themes.",
+        "- Two home-screen widgets: today, and the next seven days."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
+      "issues": []
+    },
+    {
+      "index": 46,
+      "repo": "Etar-Group/Etar-Calendar",
+      "canonical": "Etar-Group/Etar-Calendar",
+      "description": "Android open source calendar",
+      "readme_blob_sha": "5908143ce5dc69b395415bb70023c5c0620b949f",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0004"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0005"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0144"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N09",
+          "label": "Sincronizzazione CalDAV bidirezionale opt-in"
+        }
+      ],
+      "example_readme_observations": [
+        "- Week, day and agenda view.",
+        "- Uses Android calendar storage to show all synchronized calendars.",
+        "- Material Design.",
+        "- Dark and light theme.",
+        "- Support offline calendar.",
+        "- Agenda widget.",
+        "- Support sharing calendars via ICS and the ability to import/export from SD card.",
+        "- Multilingual UI."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
+      "issues": []
+    },
+    {
+      "index": 47,
+      "repo": "nextcloud/calendar",
+      "canonical": "nextcloud/calendar",
+      "description": "📆 Calendar app for Nextcloud",
+      "readme_blob_sha": "0ae6fa570d5225dd793fcf4589a28a04d311b5ea",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0004"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0003"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N09",
+          "label": "Sincronizzazione CalDAV bidirezionale opt-in"
+        }
+      ],
+      "example_readme_observations": [
+        "- SPDX-FileCopyrightText: 2016-2024 Nextcloud GmbH and Nextcloud contributors",
+        "- SPDX-FileCopyrightText: 2015-2015 ownCloud, Inc.",
+        "- SPDX-License-Identifier: AGPL-3.0-or-later",
+        "* :rocket: **Integration with other Nextcloud apps!** Like Contacts, Talk, Tasks, Deck and Circles",
+        "* :globe_with_meridians: **WebCal Support!** Want to see your favorite team's matchdays in your calendar? No problem!",
+        "* :raising_hand: **Attendees!** Invite people to your events",
+        "* :watch: **Free/Busy!** See when your attendees are available to meet",
+        "* :alarm_clock: **Reminders!** Get alarms for events inside your browser and via email"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
+      "issues": []
+    },
+    {
+      "index": 48,
+      "repo": "andstatus/todoagenda",
+      "canonical": "andstatus/todoagenda",
+      "description": "Android home screen widgets showing future (and past) calendar events and tasks",
+      "readme_blob_sha": "70782b60473a66cdee80c6c559656aabee46fe1e",
+      "licence_repo_metadata": "Apache-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0144"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0004"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N22",
+          "label": "Finestre sticky giornaliere/settimanali per desktop"
+        }
+      ],
+      "example_readme_observations": [
+        "* No advertising. Free and Open Source.",
+        "* Displays events from your calendars and task lists for the selected periods in the past and in the future.",
+        "* Automatically updates when you add/delete/modify an event. Or you may update the list instantly.",
+        "* Select only the calendars and task lists that you want to see in the widget.",
+        "* Create several widgets, if you need. Each widget has its own settings, including layouts, colors, filters,",
+        "* Customize colors and transparency of different widget parts, of their texts and backgrounds.",
+        "* Scroll through the list of events. Use \"Go to Today\" button to return to today instantly.",
+        "* Customize the text size of the widget."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_06.json",
+      "issues": []
+    },
+    {
+      "index": 49,
+      "repo": "jrnl-org/jrnl",
+      "canonical": "jrnl-org/jrnl",
+      "description": "Collect your thoughts and notes without leaving the command line.",
+      "readme_blob_sha": "a78514fae3fa1555087db93a8c3d24b1f95d8072",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N33",
+          "label": "Diario testuale portable e operazioni CLI per data"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0014"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        }
+      ],
+      "example_readme_observations": [
+        "stored as human-readable plain text, and can also be encrypted using  [AES",
+        "Another way show support is through direct financial contributions. These funds"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
+      "issues": []
+    },
+    {
+      "index": 50,
+      "repo": "saber-notes/saber",
+      "canonical": "saber-notes/saber",
+      "description": "The cross-platform open-source app built for handwriting",
+      "readme_blob_sha": "28179ed98181e75fa65a85d136ca7a6b77dfbd0d",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0029"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0118"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        }
+      ],
+      "example_readme_observations": [
+        "It's designed to be as simple and intuitive as possible, while still delivering unique features that you'll actually use. Additionally, Saber is available across all your devices, large and small, and syncs between them seamlessly.",
+        "- [Nextcloud server][nextcloud]",
+        "- [Privacy policy][privacy]",
+        "- [License][license]",
+        "- [Releases][releases]",
+        "If you like Saber, please consider supporting it by:",
+        "- Spreading the word!",
+        "- Starring the project on GitHub"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
+      "issues": []
+    },
+    {
+      "index": 51,
+      "repo": "tldraw/tldraw",
+      "canonical": "tldraw/tldraw",
+      "description": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.",
+      "readme_blob_sha": "be4036d325a1b071d4e4670cf3dfbaecdaec14d2",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0029"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0028"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0149"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N25",
+          "label": "Regole di automazione tipizzate trigger→azione con preview"
+        }
+      ],
+      "example_readme_observations": [
+        "- **Drawing and diagramming** — pressure-sensitive drawing, geometric shapes, rich text, arrows, snapping to shapes, edge scrolling, image and video support, image export",
+        "- **Runtime API** - drive the canvas at runtime with the Editor API",
+        "- **Broad support** — works in any browser across desktop, touch screens, tablets, and mobile devices",
+        "- **Agent** — AI agents that read, interpret, and modify canvas content",
+        "- **Workflow** — drag-and-drop node builder for automation pipelines, visual programming, and no-code platforms",
+        "- **Chat** — canvas-powered AI chat where users sketch, annotate, and mark up images alongside conversations",
+        "- **Image pipeline** — node-based builder for image generation pipelines",
+        "- **Branching chat** — AI chat with visual branching, letting users explore and compare different conversation paths"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
+      "issues": []
+    },
+    {
+      "index": 52,
+      "repo": "xyflow/xyflow",
+      "canonical": "xyflow/xyflow",
+      "description": "React Flow | Svelte Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev) or Svelte (https://svelteflow.dev). Ready out-of-the-box and infinitely customizable.",
+      "readme_blob_sha": "116e99c700ee30bbd29f1631c5b84c897d3631ac",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0028"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0117"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N25",
+          "label": "Regole di automazione tipizzate trigger→azione con preview"
+        }
+      ],
+      "example_readme_observations": [
+        "* React Flow 12 `@xyflow/react` [packages/react](./packages/react)",
+        "* Svelte Flow `@xyflow/svelte` [packages/svelte](./packages/svelte)",
+        "* Shared helper library `@xyflow/system` [packages/system](./packages/system)",
+        "**Are you using React Flow or Svelte Flow for a personal project?** Great! No sponsorship needed, you can support us by reporting any bugs you find, sending us screenshots of your projects, and starring us on Github 🌟",
+        "1. create PRs for new features, updates and fixes (with a changeset if relevant for changelog)",
+        "2. merge into main",
+        "3. changeset creates a PR that bumps all packages based on the changesets",
+        "4. merge changeset PR if you want to release to Github and npm"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
+      "issues": []
+    },
+    {
+      "index": 53,
+      "repo": "sorenwacker/nodus",
+      "canonical": "sorenwacker/nodus",
+      "description": "Knowledge graph on a canvas. Notes are Markdown files in Open Knowledge Format, with Typst math, PDF-to-graph import with citation verification, and storylines that read and export as documents. Local-first, no account.",
+      "readme_blob_sha": "18e8b5011559534c9967fb43572264cc05910e5d",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0098"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N27",
+          "label": "Editing Typst/matematica con anteprima verificabile"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0119"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N30",
+          "label": "Da evidenziazioni PDF a note collegate e storylines"
+        }
+      ],
+      "example_readme_observations": [
+        "- **One canvas** - The document and the whiteboard are the same surface. Notes are editable where they sit.",
+        "- **Your files** - Markdown in Open Knowledge Format, in a folder you choose. Edits made outside Nodus are picked up; edits made inside are written back.",
+        "- **Typst math** - Math renders through Typst compiled to WebAssembly, with no LaTeX toolchain to install.",
+        "- **Papers as graphs** - A dropped PDF can become one note or a graph of them: sections along the document outline, bibliography entries as citation notes, each reference checked against Semantic Scholar. A reference the service cannot be asked about is reported as unchecked rather than missing.",
+        "- **Highlights** - Highlights in a dropped PDF become notes, coloured to match and linked to the document they came from.",
+        "- **Storylines** - Order a subset of notes into a sequence and read it as a continuous document, or export it as PDF or Typst source.",
+        "- **Citations** - Import references from a Zotero library or a BibTeX file, add references to Zotero, and connect papers by who cites whom.",
+        "- **Language models** - Local models through Ollama, or a cloud provider. The model works through the same tools you do, and asks before changing the graph."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
+      "issues": []
+    },
+    {
+      "index": 54,
+      "repo": "nextcloud/notes",
+      "canonical": "nextcloud/notes",
+      "description": "✎ Distraction-free notes and writing",
+      "readme_blob_sha": "275792f99aadfbd49ce6e4a3c29fb12e557b8a7d",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0004"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        }
+      ],
+      "example_readme_observations": [
+        "- SPDX-FileCopyrightText: 2019-2024 Nextcloud GmbH and Nextcloud contributors",
+        "- SPDX-License-Identifier: AGPL-3.0-or-later",
+        "* get the newest version of the Notes app",
+        "1. Clone this into your `apps` folder of your Nextcloud",
+        "2. In a terminal, run the command `make dev-setup` to install the dependencies",
+        "3. Then to build the Javascript run `make build-js` or `make watch-js` to",
+        "4. Enable the app through the app management of your Nextcloud"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
+      "issues": []
+    },
+    {
+      "index": 55,
+      "repo": "paperless-ngx/paperless-ngx",
+      "canonical": "paperless-ngx/paperless-ngx",
+      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
+      "readme_blob_sha": "f1e5141043dcb5e36b496c7ce71192d9e5e24aea",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0035"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0134"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N36",
+          "label": "Archivio documenti indicizzato con classificazione e retention"
+        }
+      ],
+      "example_readme_observations": [
+        "- [Features](#features)",
+        "- [Getting started](#getting-started)",
+        "- [Contributing](#contributing)",
+        "- [Community Support](#community-support)",
+        "- [Translation](#translation)",
+        "- [Feature Requests](#feature-requests)",
+        "- [Bugs](#bugs)",
+        "- [Related Projects](#related-projects)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
+      "issues": []
+    },
+    {
+      "index": 56,
+      "repo": "Zettlr/Zettlr",
+      "canonical": "Zettlr/Zettlr",
+      "description": "Your One-Stop Publication Workbench",
+      "readme_blob_sha": "19673ee8e43e1748b4e8b5fe4e75ba66afee02ab",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0119"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N27",
+          "label": "Editing Typst/matematica con anteprima verificabile"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N28",
+          "label": "Pubblicazione controllata Markdown/wiki con redazione"
+        }
+      ],
+      "example_readme_observations": [
+        "- [Features](#features)",
+        "- [Getting Started](#getting-started)",
+        "- [Building from Source](#building-from-source)",
+        "- [Contributing](#contributing)",
+        "- [Getting Started](#getting-started-1)",
+        "- [Tech Stack](#tech-stack)",
+        "- [Debugging](#debugging)",
+        "- [Architecture Overview](#architecture-overview)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_07.json",
+      "issues": []
+    },
+    {
+      "index": 57,
+      "repo": "pbek/QOwnNotes",
+      "canonical": "pbek/QOwnNotes",
+      "description": "QOwnNotes is a plain-text file notepad and todo-list manager with Markdown support and Nextcloud / ownCloud integration.",
+      "readme_blob_sha": "1cbbb30b35c0d8fc06f5cfac6ab3eb8435ec8032",
+      "licence_repo_metadata": "GPL-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0018"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0075"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        }
+      ],
+      "example_readme_observations": [
+        "**synced with Nextcloud's/ownCloud's file sync** functionality.",
+        "To get more on-line features for your notes, like **versioning** and **trash** access,",
+        "on your Nextcloud server. QOwnNotesAPI remains supported for legacy Nextcloud and ownCloud servers.",
+        "On Android you could also use any sync-tool like _Synchronize Ultimate_ or _FolderSync_",
+        "to sync your note files and use software like _neutriNotes_ or",
+        "may also work well (syncing notes via WebDAV).",
+        "- written in C++ and optimized for **low resource consumption** (no CPU and memory-hungry Electron app)",
+        "- **multiple note folders** can be used"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
+      "issues": []
+    },
+    {
+      "index": 58,
+      "repo": "docmost/docmost",
+      "canonical": "docmost/docmost",
+      "description": "Docmost is an open-source collaborative wiki and documentation software. It is an open-source alternative to Confluence and Notion.",
+      "readme_blob_sha": "f09680e14205fbcd14e9ec75167534c72a5b546a",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N02",
+          "label": "Wikilink, backlink e rinomina dei link con riparazione"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0118"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        }
+      ],
+      "example_readme_observations": [
+        "- Real-time collaboration",
+        "- Diagrams (Draw.io, Excalidraw and Mermaid)",
+        "- Permissions management",
+        "- Page history",
+        "- File attachments",
+        "- Embeds (Airtable, Loom, Miro and more)",
+        "- Translations (10+ languages)",
+        "Enterprise features are available under an enterprise license (Enterprise Edition)."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
+      "issues": []
+    },
+    {
+      "index": 59,
+      "repo": "BookStackApp/BookStack",
+      "canonical": "BookStackApp/BookStack",
+      "description": "NOW MANAGED ON CODEBERG",
+      "readme_blob_sha": "297d26559871362356f6a5d210424e1a45f159dc",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "SOURCE_MOVED",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N03",
+          "label": "Note gerarchiche, alias e transclusioni controllate"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N28",
+          "label": "Pubblicazione controllata Markdown/wiki con redazione"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        }
+      ],
+      "example_readme_observations": [
+        "BookStack is an opinionated documentation platform that provides a pleasant and simple out-of-the-box experience. New users to an instance should find the experience intuitive and only basic word-processing skills should be required to get involved in creating content on BookStack. The platform should provide advanced power features to those that desire it, but they should not interfere with the core simple user experience.",
+        "Pull requests are welcome but, unless it's a small tweak, it may be best to open the pull request early or create an issue for your intended change to discuss how it will fit into the project and plan out the merge. Just because a feature request exists, or is tagged, does not mean that feature would be accepted into the core project."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
+      "issues": []
+    },
+    {
+      "index": 60,
+      "repo": "plankanban/planka",
+      "canonical": "plankanban/planka",
+      "description": "Elegant open source project tracking. Self-hosted Kanban for teams — free Community edition, with PLANKA Pro for organisations.",
+      "readme_blob_sha": "b88e548bd37d7648ef10848e4f451c5c414baf75",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N14",
+          "label": "Limiti WIP e swimlane Kanban configurabili"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        }
+      ],
+      "example_readme_observations": [
+        "Self-hosted exactly as you host it now, supported by the people who build it.",
+        "| Support from the developers, no ticket queue | — | ✓ |",
+        "- **Collaborative Kanban Boards:** Create projects, boards, lists, cards, and manage tasks with an intuitive drag-and-drop interface",
+        "- **Real-Time Updates:** Instant syncing across all users, no refresh needed",
+        "- **Rich Markdown Support:** Write beautifully formatted card descriptions with a powerful markdown editor",
+        "- **Flexible Notifications:** Get alerts through 100+ providers, fully customizable to your workflow",
+        "- **Multilingual & Easy to Translate:** Full internationalization support for a global audience",
+        "**Note:** We do NOT offer any public support via email, please use GitHub."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
+      "issues": []
+    },
+    {
+      "index": 61,
+      "repo": "kanboard/kanboard",
+      "canonical": "kanboard/kanboard",
+      "description": "Kanban project management software",
+      "readme_blob_sha": "6795b0ddc9a277d1cedd7b75f0c5cd0a4199122b",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N14",
+          "label": "Limiti WIP e swimlane Kanban configurabili"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0105"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "- The [author](#credits) of this application is not actively developing any new major features (only small fixes)",
+        "- New releases are published regularly depending on the contributions made by the community",
+        "- Pull requests for new features and bug fixes are accepted as long as the [guidelines](.github/pull_request_template.md) are followed",
+        "- Official website: ",
+        "- Official documentation: ",
+        "- Main developer: Frédéric Guillot"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
+      "issues": []
+    },
+    {
+      "index": 62,
+      "repo": "AnkiDroid/Anki-Android",
+      "canonical": "ankidroid/Anki-Android",
+      "description": "AnkiDroid: Anki flashcards on Android. Your secret trick to achieve superhuman information retention.",
+      "readme_blob_sha": "84dc738260fc588c5a923f0bfe64355a434f2b97",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0112"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N24",
+          "label": "Serie abitudini e obiettivi di continuità con storico"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0144"
+        }
+      ],
+      "example_readme_observations": [
+        "- Progress widget",
+        "- Detailed statistics",
+        "- Syncing with AnkiWeb",
+        "- Write answers (optional)",
+        "- Text-to-speech integration",
+        "- More than 10,000 premade decks",
+        "- Supported contents: text, images, sounds, MathJax",
+        "- Add cards by intent from other applications like dictionaries"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
+      "issues": []
+    },
+    {
+      "index": 63,
+      "repo": "ankitects/anki",
+      "canonical": "ankitects/anki",
+      "description": "Anki is a smart spaced repetition flashcard program",
+      "readme_blob_sha": "29168e81d09162f5c157933ebafe8ee0a3b60608",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0112"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N24",
+          "label": "Serie abitudini e obiettivi di continuità con storico"
+        }
+      ],
+      "example_readme_observations": [],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
+      "issues": []
+    },
+    {
+      "index": 64,
+      "repo": "memrynote/memry",
+      "canonical": "memrynote/memry",
+      "description": "One private place for everything on your mind. Capture it, write it, plan it.     Notes, tasks, inbox and journal, end-to-end encrypted.",
+      "readme_blob_sha": "a1f6c7bf6f9bd7d202dd0c626fdfaf84149ccc91",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N07",
+          "label": "Convergenza CRDT per modifiche concorrenti offline"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N24",
+          "label": "Serie abitudini e obiettivi di continuità con storico"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0029"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0148"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N15",
+          "label": "Timeboxing drag-and-drop sul calendario"
+        }
+      ],
+      "example_readme_observations": [
+        "All on your disk. End-to-end encrypted. Every feature a toggle.",
+        "- **Notes** — Block editor, markdown on disk, backlinks, tags, instant search.",
+        "- **Tasks & Projects** — Due dates, priorities, recurrence. CRDT merge, so two devices never clobber each other.",
+        "- **Journal** — One file a day. Open in three keystrokes.",
+        "- **Calendar** — Time-block your tasks. Drag to reschedule.",
+        "- **Canvas** — Infinite board. Draw freehand, then drop real notes, tasks, and events on it as live cards — never copies.",
+        "- **Inbox** — Capture now, sort later.",
+        "- **AI Agent** — Bring your own model (Claude, Codex, local LLMs). It reads and writes your vault — with an approval step for every write."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_08.json",
+      "issues": []
+    },
+    {
+      "index": 65,
+      "repo": "Pikos-App/pikos",
+      "canonical": "Pikos-App/pikos",
+      "description": "Notes, tasks, and calendar. One app, on your computer. Local-first with no account, syncs your real calendar read-only, and ships an MCP server for the assistant you already use.",
+      "readme_blob_sha": "a2545379f0234c0d777f97f06b3ef2c0db59aedd",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0004"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0002"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N15",
+          "label": "Timeboxing drag-and-drop sul calendario"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N34",
+          "label": "Command palette e scorciatoie tastiera contestuali"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N40",
+          "label": "Interfaccia MCP/API locale per lettura controllata di agenda e task"
+        }
+      ],
+      "example_readme_observations": [
+        "- **Rich text editor** — Headings, bold, italic, checklists, code blocks, blockquotes. Slash commands, format toolbar, Markdown paste support.",
+        "- **Task management** — Status tracking, four-level priority, tags, smart views (Today, Inbox), drag-and-drop reordering.",
+        "- **Built-in calendar** — One to seven days, or a month, alongside the editor. Drag pages to schedule them. Click a time slot to create a page.",
+        "- **Calendar sync** — Read-only, opt-in sync from iCloud, Google Calendar, or any CalDAV server. Your events arrive as pages you can take notes on. Nothing you write is sent back, and credentials go to the OS keychain.",
+        "- **Full-text search** — FTS5-powered search across all page content. Ranked results with previews.",
+        "- **Quick capture** — Natural language input: \"Call dentist tomorrow high priority #health\" creates a page with title, date, priority, and tag set automatically.",
+        "- **Keyboard-first** — Every action has a shortcut. Navigate, create, schedule, and search without reaching for the mouse.",
+        "- **Private by default** — Everything stored locally in SQLite. No accounts, no telemetry. Two network requests, both visible: an update check at launch, which you can turn off, and calendar sync once you connect a calendar. Updates are never installed without your approval."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
+      "issues": []
+    },
+    {
+      "index": 66,
+      "repo": "ggml-org/whisper.cpp",
+      "canonical": "ggml-org/whisper.cpp",
+      "description": "Port of OpenAI's Whisper model in C/C++",
+      "readme_blob_sha": "2717ce978e086bc492b76f1a0a1737b31f530966",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0031"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0085"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N38",
+          "label": "Cattura audio di sistema e trascrizione locale consensuale"
+        }
+      ],
+      "example_readme_observations": [
+        "- Plain C/C++ implementation without dependencies",
+        "- Apple Silicon first-class citizen - optimized via ARM NEON, Accelerate framework, Metal and [Core ML](#core-ml-support)",
+        "- AVX intrinsics support for x86 architectures",
+        "- [VSX intrinsics support for POWER architectures](#power-vsx-intrinsics)",
+        "- Mixed F16 / F32 precision",
+        "- [Integer quantization support](#quantization)",
+        "- Zero memory allocations at runtime",
+        "- [Vulkan support](#vulkan-gpu-support)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
+      "issues": []
+    },
+    {
+      "index": 67,
+      "repo": "cryptpad/cryptpad",
+      "canonical": "cryptpad/cryptpad",
+      "description": "Collaborative office suite, end-to-end encrypted and open-source.",
+      "readme_blob_sha": "3eede8d6284cfa90b5ceeaf3f86d58d42e716848",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N07",
+          "label": "Convergenza CRDT per modifiche concorrenti offline"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "SPDX-FileCopyrightText: 2023 XWiki CryptPad Team  and contributors",
+        "CryptPad is a collaboration suite that is end-to-end encrypted and open-source. It is designed to facilitate collaboration by synchronizing changes to documents in real time. Since all the user data is encrypted, in the event of a breach, attackers have no way of accessing the stored content. Furthermore, if the administrators do not modify the code, they and the service also cannot access any information about the users' content.",
+        "# Privacy / Security",
+        "CryptPad offers a variety of collaborative tools that encrypt your data in your browser",
+        "before it is sent to the server and your collaborators. In the event that the server is",
+        "A correctly configured instance has safeguards to prevent collaborators from doing some",
+        "nasty things like injecting scripts into collaborative documents or uploads. The project"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
+      "issues": []
+    },
+    {
+      "index": 68,
+      "repo": "markmap/markmap",
+      "canonical": "markmap/markmap",
+      "description": "Build mindmaps with plain text",
+      "readme_blob_sha": "ac5970402e942c7ea7a7af2cb3e99b69be5571a7",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0098"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0149"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0120"
+        }
+      ],
+      "example_readme_observations": [
+        "- Book flights",
+        "- See the sights",
+        "- **Rich content:** bold, links, code, highlights, task lists, images and math.",
+        "- **Themes:** `classic`, `cards` and `minimal`, each with a dark mode, and every color can be changed with CSS.",
+        "- **Layouts:** `tree`, `two-sided` and `org-chart`.",
+        "- **Large maps:** an SVG renderer for most maps and a canvas renderer for very large ones.",
+        "- **Export:** save a map as SVG or PNG, in the browser or in Node.",
+        "- **Options in the document:** set them in frontmatter, and fold a node with ``."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
+      "issues": []
+    },
+    {
+      "index": 69,
+      "repo": "JerryZLiu/Dayflow",
+      "canonical": "JerryZLiu/Dayflow",
+      "description": "The automatic work journal/time tracker. Privately turns your screen into a timeline of what you actually accomplished. Open-source and local-first.",
+      "readme_blob_sha": "dd19e8b1b0013fa2fbeff28b7766d7dc988a403a",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N16",
+          "label": "Timeline attività automatica con AFK e consenso"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0101"
+        }
+      ],
+      "example_readme_observations": [
+        "Built from the ground up for privacy, it’s open source, local-first, and can run entirely with local AI.",
+        "| Local-first storage | Recordings, timeline data, and the app database stay on your Mac by default. | You stay in control of sensitive screen history and can delete it whenever you want. |",
+        "Dayflow is local-first and open source.",
+        "~/Library/Application Support/Dayflow/",
+        "- Local models through Ollama or LM Studio",
+        "- Gemini with your own API key",
+        "- ChatGPT or Claude through their local CLI tools",
+        "- Screen & System Audio Recording permission"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
+      "issues": []
+    },
+    {
+      "index": 70,
+      "repo": "ActivityWatch/activitywatch",
+      "canonical": "ActivityWatch/activitywatch",
+      "description": "The best free and open-source automated time tracker. Cross-platform, extensible, privacy-focused.",
+      "readme_blob_sha": "ee65ad678338942a5462078c490ffde1b6f4a837",
+      "licence_repo_metadata": "MPL-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N16",
+          "label": "Timeline attività automatica con AFK e consenso"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0108"
+        }
+      ],
+      "example_readme_observations": [
+        "* [About](#about)",
+        "* [Screenshots](#screenshots)",
+        "* [Is this yet another time tracker?](#is-this-yet-another-time-tracker)",
+        "* [Feature comparison](#feature-comparison)",
+        "* [Installation &amp; Usage](#installation--usage)",
+        "* [About this repository](#about-this-repository)",
+        "* [Server](#server)",
+        "* [Watchers](#watchers)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
+      "issues": []
+    },
+    {
+      "index": 71,
+      "repo": "wakatime/wakatime-cli",
+      "canonical": "wakatime/wakatime-cli",
+      "description": "Command line interface used by all WakaTime text editor plugins",
+      "readme_blob_sha": "b7afbf3d96108bd515a017212a1bdcd78552410e",
+      "licence_repo_metadata": "BSD-3-Clause",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N17",
+          "label": "Tracciamento attività IDE tramite plugin opt-in"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        }
+      ],
+      "example_readme_observations": [
+        "Without an explicit config path or `WAKATIME_HOME`, wakatime-cli also supports an"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
+      "issues": []
+    },
+    {
+      "index": 72,
+      "repo": "projecthamster/hamster",
+      "canonical": "projecthamster/hamster",
+      "description": "GNOME time tracker",
+      "readme_blob_sha": "912fbaa9e002b43a120c35883310ef7ccb8b22af",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0108"
+        }
+      ],
+      "example_readme_observations": [
+        "Easy installation on any distribution supporting snap:",
+        "commands). Older versions are not supported.",
+        "2. Create a topic branch - `git checkout -b my_branch`",
+        "3. Push to your branch - `git push origin my_branch`"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_09.json",
+      "issues": []
+    },
+    {
+      "index": 73,
+      "repo": "jazzband/Watson",
+      "canonical": "jazzband/Watson",
+      "description": ":watch: A wonderful CLI to track your time!",
+      "readme_blob_sha": "3b51437ec610ba410ba481fcf3a98249d8779be5",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N35",
+          "label": "Timesheet esportabili e report settimanali per progetto"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0108"
+        }
+      ],
+      "example_readme_observations": [],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
+      "issues": []
+    },
+    {
+      "index": 74,
+      "repo": "todotxt/todo.txt-cli",
+      "canonical": "todotxt/todo.txt-cli",
+      "description": "☑️ A simple and extensible shell script for managing your todo.txt file.",
+      "readme_blob_sha": "f646e8f4b6a4756bb92becf163ffebaf29154b1a",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N21",
+          "label": "Import/export lossless di todo.txt, Org e TaskPaper"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0075"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        }
+      ],
+      "example_readme_observations": [
+        "- `INSTALL_DIR`: PATH for executables (default `/usr/local/bin`)",
+        "- `CONFIG_DIR`: PATH for the `todo/config` configuration template (default `/usr/local/etc`)",
+        "- `BASH_COMPLETION`: PATH for autocompletion scripts (default to `/usr/local/share/bash-completion/completions`)",
+        "report bugs and request features here (after positive feedback in the chat or"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
+      "issues": []
+    },
+    {
+      "index": 75,
+      "repo": "GothenburgBitFactory/taskwarrior",
+      "canonical": "GothenburgBitFactory/taskwarrior",
+      "description": "Taskwarrior - Command line Task Management",
+      "readme_blob_sha": "548b89af06683fcb6b5933d47feded94689e25db",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N21",
+          "label": "Import/export lossless di todo.txt, Org e TaskPaper"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0105"
+        }
+      ],
+      "example_readme_observations": [
+        "other support options, take a look at"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
+      "issues": []
+    },
+    {
+      "index": 76,
+      "repo": "mattgemmell/TaskPaperRuby",
+      "canonical": "mattgemmell/TaskPaperRuby",
+      "description": "Create and edit TaskPaper files in Ruby. Export to HTML and CSS, with Less-based auto-conversion of your TaskPaper theme.",
+      "readme_blob_sha": "029ad7a59906880e66ff5353db175ff1f79811cf",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N21",
+          "label": "Import/export lossless di todo.txt, Org e TaskPaper"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0075"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        }
+      ],
+      "example_readme_observations": [
+        "3. Use npm to install Less: `npm install -g less` in Terminal.",
+        "1. Lets you open, edit, save, and create TaskPaper files.",
+        "2. Exports TaskPaper files to HTML and CSS.",
+        "- Manipulate an item's `done` status with `done?`, `set_done`, and `toggle_done`",
+        "- Manipulate tags with `tag_value`, `has_tag?`, `set_tag`, and `remove_tag`",
+        "- Retrieve or modify content as a whole with `content`",
+        "- Inspect and modify types and relationships with `parent`, `children`, `add_child`, `type`, `type_name`, and `inspect`",
+        "- Extract metadata with `tags` and `links`"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
+      "issues": []
+    },
+    {
+      "index": 77,
+      "repo": "bzg/org-mode",
+      "canonical": "bzg/org-mode",
+      "description": "This is a MIRROR only, do not send PR.",
+      "readme_blob_sha": "e72403b6889bed1ec42cc93a54455d30ce596793",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "MIRROR_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N21",
+          "label": "Import/export lossless di todo.txt, Org e TaskPaper"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0096"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0150"
+        }
+      ],
+      "example_readme_observations": [
+        "* Join the GNU Project"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
+      "issues": []
+    },
+    {
+      "index": 78,
+      "repo": "vimwiki/vimwiki",
+      "canonical": "vimwiki/vimwiki",
+      "description": "Personal Wiki for Vim",
+      "readme_blob_sha": "b4413612396c19a0ced1cd91586924d281306ff9",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N02",
+          "label": "Wikilink, backlink e rinomina dei link con riparazione"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N33",
+          "label": "Diario testuale portable e operazioni CLI per data"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        }
+      ],
+      "example_readme_observations": [
+        "- [Intro](#introduction)",
+        "- [Screenshots](#screenshots)",
+        "- [Installation](#installation)",
+        "- [Prerequisites](#prerequisites)",
+        "- [VIM Packages](#installation-using-vim-packages-since-vim-741528)",
+        "- [Pathogen](#installation-using-pathogen)",
+        "- [Vim-Plug](#installation-using-vim-plug)",
+        "- [Vundle](#installation-using-vundle)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
+      "issues": []
+    },
+    {
+      "index": 79,
+      "repo": "dnote/dnote",
+      "canonical": "dnote/dnote",
+      "description": "A simple command line notebook",
+      "readme_blob_sha": "7ab0063f491eff4a47c16a0ec729103bf0ebad10",
+      "licence_repo_metadata": "Apache-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N20",
+          "label": "Archivio snippet di codice con linguaggi e frammenti"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N21",
+          "label": "Import/export lossless di todo.txt, Org e TaskPaper"
+        }
+      ],
+      "example_readme_observations": [
+        "Your notes are stored in **one SQLite file** - portable, searchable, and completely under your control. Optional sync between devices via a self-hosted server with REST API access.",
+        "- ./dnote_data:/data"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
+      "issues": []
+    },
+    {
+      "index": 80,
+      "repo": "massCodeIO/massCode",
+      "canonical": "massCodeIO/massCode",
+      "description": "A free, open-source developer workspace. Snippets, notes, HTTP requests, calculations, and dev tools in one local-first app.",
+      "readme_blob_sha": "cc5dfbc4f4cdad173f9e51ca75b4658d1a145c7b",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N20",
+          "label": "Archivio snippet di codice con linguaggi e frammenti"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N34",
+          "label": "Command palette e scorciatoie tastiera contestuali"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0084"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        }
+      ],
+      "example_readme_observations": [
+        "Snippets, notes, HTTP requests, calculations, drawings, and dev tools in one local-first app.",
+        "massCode is free and open source. But building and maintaining a quality tool takes time. Your support helps keep development going and new features coming.",
+        "- 160+ syntax grammars out of the box (600+ supported via `.tmLanguage`)",
+        "- Real-time HTML & CSS preview for quick prototyping",
+        "- JSON Visualizer for exploring nested structures as interactive graphs",
+        "- Export snippets as polished images with customizable themes",
+        "- Task notes with status, priority, due dates, and Today / Upcoming / Completed views",
+        "- Completed task cleanup and auto-clean scheduling"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_10.json",
+      "issues": []
+    },
+    {
+      "index": 81,
+      "repo": "gristlabs/grist-core",
+      "canonical": "gristlabs/grist-core",
+      "description": "Grist is the evolution of spreadsheets.",
+      "readme_blob_sha": "ad775b46e2eb4fcb597aca97d9520b4318c699fc",
+      "licence_repo_metadata": "Apache-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0122"
+        }
+      ],
+      "example_readme_observations": [
+        "* `grist-core` (this repo – also known as Grist Community edition) has what you need to run a powerful server for hosting spreadsheets.",
+        "- Columns work like they do in databases: they are named, and they hold one kind of data.",
+        "- Columns can be filled by formula, spreadsheet-style, with automatic updates when referenced cells change.",
+        "* Python formulas.",
+        "* A portable, self-contained format.",
+        "- Based on SQLite, the most widely deployed database engine.",
+        "- Any tool that can read SQLite can read numeric and text data from a Grist file.",
+        "- Great for moving between different hosts."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
+      "issues": []
+    },
+    {
+      "index": 82,
+      "repo": "audreyt/ethercalc",
+      "canonical": "audreyt/ethercalc",
+      "description": "Web spreadsheet — no sign-up, no install.",
+      "readme_blob_sha": "b4927bd69cd3f1f5c135c27441356fa559b496ed",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "* REST API: [API.md](./API.md)",
+        "Integrated with content management systems:",
+        "- Set `ETHERCALC_KEY` if you want edit/delete URLs to require a per-room",
+        "- Leave `ETHERCALC_DISABLE_ROOM_INDEX=1` unless you intentionally want a",
+        "- Set `ETHERCALC_EXPIRE` for public scratch instances, e.g.",
+        "- **Always** use `docker-compose.proxy.yml` (or your own nginx/caddy/",
+        "- Keep the container on plain HTTP and terminate TLS at the reverse",
+        "- Optionally set `ETHERCALC_RATELIMIT=1` for an extra in-Worker per-IP"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
+      "issues": []
+    },
+    {
+      "index": 83,
+      "repo": "mathesar-foundation/mathesar",
+      "canonical": "mathesar-foundation/mathesar",
+      "description": "An intuitive spreadsheet-like interface that lets users of all technical skill levels view, edit, query, and collaborate on Postgres data directly. 100% open source and self hosted, with native Postgres access control.",
+      "readme_blob_sha": "e732ab661a82d0d20f09e5685646c91361435a66",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "- [Status](#status)",
+        "- [Install Mathesar](#install-mathesar)",
+        "- [Join our community](#join-our-community)",
+        "- [Contribute to Mathesar](#contribute-to-mathesar)",
+        "- [Features](#features)",
+        "- [Screenshots](#screenshots)",
+        "- [Connecting a database](#connecting-a-database)",
+        "- [Adding collaborators](#adding-collaborators)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
+      "issues": []
+    },
+    {
+      "index": 84,
+      "repo": "baserow/baserow",
+      "canonical": "baserow/baserow",
+      "description": "Build databases, automations, apps & agents with AI — no code.  Open source platform available on cloud and self-hosted. GDPR, HIPAA, SOC 2 compliant. Best Airtable alternative.",
+      "readme_blob_sha": "8a783230616208130f2d8777f741479ff1be0ac3",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N25",
+          "label": "Regole di automazione tipizzate trigger→azione con preview"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "that lets you create databases and workflows using natural language, Baserow empowers",
+        "dashboards. Fully extensible and API-first, Baserow integrates seamlessly with your",
+        "* A spreadsheet database hybrid combining ease of use and powerful data organization.",
+        "* Create applications and portals, and publish them on your own domain.",
+        "* Automate repetitive workflows with automations.",
+        "* Visualize your data with dashboards.",
+        "* Kuma, powerful AI-assistant to builds complete solutions.",
+        "* GDPR, HIPAA, and SOC 2 Type II compliant."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
+      "issues": []
+    },
+    {
+      "index": 85,
+      "repo": "seatable/seatable",
+      "canonical": "seatable/seatable",
+      "description": "SeaTable: easy like a spreadsheet, powerful like a database. Unlimited rows in a single base.",
+      "readme_blob_sha": "a92f8772111039049cbc617058b1786b9063ad03",
+      "licence_repo_metadata": "UNKNOWN",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N05",
+          "label": "Tabelle relazionali e campi calcolati/formule"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N06",
+          "label": "Viste salvate con filtri, raggruppamenti e permessi"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N25",
+          "label": "Regole di automazione tipizzate trigger→azione con preview"
+        }
+      ],
+      "example_readme_observations": [
+        "The core features include:",
+        "* A spreadsheet like interface supporting collaboratively editing",
+        "* Mobile ready UI to be used on browsers in mobile system",
+        "* Unlimited rows in a single base",
+        "* Interconnect data between bases",
+        "* Automate data processing without coding",
+        "* Powerful APIs as well as SQL interface",
+        "* self-hosted, no restriction on API calls"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
+      "issues": []
+    },
+    {
+      "index": 86,
+      "repo": "amark/gun",
+      "canonical": "amark/gun",
+      "description": "An open source cybersecurity protocol for syncing decentralized graph data.",
+      "readme_blob_sha": "e596ab2320d310f1242af5e63df1d2d27bddd379",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N26",
+          "label": "Trasporto decentralizzato P2P per dati condivisi cifrati"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N07",
+          "label": "Convergenza CRDT per modifiche concorrenti offline"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "+ Multiplayer by default with realtime p2p state synchronization!",
+        "+ Graph data lets you use key/value, tables, documents, videos, & more!",
+        "+ Local-first, offline, and decentralized with end-to-end encryption.",
+        "- Or `npm install gun` and run the examples with `cd node_modules/gun && npm start` (**5min** ~ average developer).",
+        "The goal was to build a P2P database that could survive living inside **any** browser, and could correctly sync data between **any** device after assuming **any** offline-first activity.",
+        "How Data Sync Works"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
+      "issues": []
+    },
+    {
+      "index": 87,
+      "repo": "yjs/yjs",
+      "canonical": "yjs/yjs",
+      "description": "Shared data types for building collaborative software",
+      "readme_blob_sha": "deeda5721d37dd36ab5b1402c6ad68ba1ebce12d",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N07",
+          "label": "Convergenza CRDT per modifiche concorrenti offline"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0118"
+        }
+      ],
+      "example_readme_observations": [
+        "Yjs is **network agnostic** (p2p!), supports many existing **rich text",
+        "* Benchmark Yjs vs. Automerge:",
+        ":construction_worker_woman: If you are looking for professional support, please",
+        "consider supporting this project via a \"support contract\" on",
+        "professional support directly from the author. This includes the opportunity for",
+        "* [Ellipsus](ellipsus.com) - Collaborative writing app for storytelling etc.",
+        "Supports versioning, change attribution, and \"blame\". A solution for the whole",
+        "end-to-end encrypted, peer-to-peer, collaborative editing across Obsidian vaults"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
+      "issues": []
+    },
+    {
+      "index": 88,
+      "repo": "automerge/automerge",
+      "canonical": "automerge/automerge",
+      "description": "A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically. ",
+      "readme_blob_sha": "afffbf5a5854d5e34269c272ff3ef015b19b71fe",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N07",
+          "label": "Convergenza CRDT per modifiche concorrenti offline"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0118"
+        }
+      ],
+      "example_readme_observations": [
+        "CRDTs, a compact compression format for these CRDTs, and a sync protocol for",
+        "databases support server applications - by providing mechanisms for persistence",
+        "computing problems. Automerge aims to be PostgreSQL for your local-first app.",
+        "- `./rust` - the rust implementation and also the Rust components of",
+        "- `./javascript` - The javascript library which uses `automerge-wasm`",
+        "- `./scripts` - scripts which are useful to maintenance of the repository.",
+        "- `./img` - static assets for use in `.md` files",
+        "- `wasm-bindgen-cli`"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_11.json",
+      "issues": []
+    },
+    {
+      "index": 89,
+      "repo": "berty/berty",
+      "canonical": "berty/berty",
+      "description": "Berty is a secure peer-to-peer messaging app that works with or without internet access, cellular data or trust in the network",
+      "readme_blob_sha": "114b83823f6f78cba5ff31dab1b4771db4720c56",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N26",
+          "label": "Trasporto decentralizzato P2P per dati condivisi cifrati"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0100"
+        }
+      ],
+      "example_readme_observations": [
+        "- `berty mini`: a CLI messaging app using the Wesh Protocol.",
+        "- `berty daemon`: a full node manageable through the Wesh Protocol API.",
+        "- *Secure and private* :",
+        "- Messages are end-to-end encrypted by default",
+        "- Metadata is kept to a minimum",
+        "- No phone number or email address is required to create an account",
+        "- Built to retain its properties even when used on adversarial networks",
+        "- *Censorship-resilient*"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
+      "issues": []
+    },
+    {
+      "index": 90,
+      "repo": "ankicommunity/ankicommunity-sync-server",
+      "canonical": "ankicommunity/ankicommunity-sync-server",
+      "description": "A personal Anki sync server (so you can sync against your own server rather than AnkiWeb)",
+      "readme_blob_sha": "1f3c931193b355274c2528c14090ca6b7997a963",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OLD_PROTOCOL_WARNING",
+      "feature_facets": [
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0112"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N26",
+          "label": "Trasporto decentralizzato P2P per dati condivisi cifrati"
+        }
+      ],
+      "example_readme_observations": [
+        "We're working hard to update to the new syncing protocol.",
+        "In the mean time, we recommend you check out the official sync server here:",
+        "Linux and macOS) which can sync to a web version (AnkiWeb) and mobile",
+        "This is a personal Anki server, which you can sync against instead of",
+        "- [Installing](#installing)",
+        "- [Installing (Docker)](#installing-docker)",
+        "- [Setting up Anki](#setting-up-anki)",
+        "- [Anki 2.1.28 and above](#anki-2128-and-above)"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
+      "issues": []
+    },
+    {
+      "index": 91,
+      "repo": "zotero/zotero",
+      "canonical": "zotero/zotero",
+      "description": "Zotero is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share your research sources.",
+      "readme_blob_sha": "b1f49f331454bf450a87da91a2eaf123904f9d22",
+      "licence_repo_metadata": "NOASSERTION",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N29",
+          "label": "Biblioteca citazioni e riferimenti bibliografici"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0119"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0076"
+        }
+      ],
+      "example_readme_observations": [],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
+      "issues": []
+    },
+    {
+      "index": 92,
+      "repo": "espanso/espanso",
+      "canonical": "espanso/espanso",
+      "description": "A Privacy-first, Cross-platform Text Expander written in Rust",
+      "readme_blob_sha": "6d2ad04a88fe1f472df9265035515fc582e9059c",
+      "licence_repo_metadata": "GPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N19",
+          "label": "Espansione testo a livello di sistema operativo"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N18",
+          "label": "Espansione abbreviazioni solo nell'editor corrente"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N20",
+          "label": "Archivio snippet di codice con linguaggi e frammenti"
+        }
+      ],
+      "example_readme_observations": [
+        "* **Save a lot of typing**, expanding common sentences",
+        "* Create **system-wide** code snippets",
+        "* Execute **custom scripts**",
+        "* Use **emojis** like a pro",
+        "* System-wide 'autocorrect' specific to you",
+        "* Cross-platform (**Windows**, **macOS**, **Linux**)",
+        "* Privacy-first (100% local, no tracking)",
+        "* Works with almost **any program**"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
+      "issues": []
+    },
+    {
+      "index": 93,
+      "repo": "writefreely/writefreely",
+      "canonical": "writefreely/writefreely",
+      "description": "A clean, Markdown-based publishing platform made for writers. Write together and build a community.",
+      "readme_blob_sha": "61dad9826455c38f69e82d9a29c966e6f9519622",
+      "licence_repo_metadata": "AGPL-3.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N28",
+          "label": "Pubblicazione controllata Markdown/wiki con redazione"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0013"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N08",
+          "label": "Condivisione cifrata selettiva e revoca per documento"
+        }
+      ],
+      "example_readme_observations": [
+        "Blog elements are localized in 20+ languages, and WriteFreely includes first-class support for non-Latin and right-to-left (RTL) script languages.",
+        "WriteFreely deploys as a static binary on any platform and architecture that Go supports. Just use our built-in SQLite support, or add a MySQL or MariaDB database, and you'll be up and running!"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
+      "issues": []
+    },
+    {
+      "index": 94,
+      "repo": "codex-team/editor.js",
+      "canonical": "codex-team/editor.js",
+      "description": "A block-style editor with clean JSON output",
+      "readme_blob_sha": "7030a2f279bb6963ab2f83ce6d0c84d12a5c32d9",
+      "licence_repo_metadata": "Apache-2.0",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N01",
+          "label": "Editor ricco a blocchi con round-trip Markdown reversibile"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0118"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N34",
+          "label": "Command palette e scorciatoie tastiera contestuali"
+        }
+      ],
+      "example_readme_observations": [
+        "Editor.js is an open-source text editor offering a variety of features to help users create and format content efficiently. It has a modern, block-style interface that allows users to easily add and arrange different types of content, such as text, images, lists, quotes, etc. Each Block is provided via a separate plugin making Editor.js extremely flexible.",
+        "Editor.js outputs a clean JSON data instead of heavy HTML markup. Use it in Web, iOS, Android, AMP, Instant Articles, speech readers, AI chatbots — everywhere. Easy to sanitize, extend and integrate with your logic.",
+        "- 😍  Modern UI out of the box",
+        "- 💎  Clean JSON output",
+        "- ⚙️  Well-designed API",
+        "- 🛍  Various Tools available",
+        "- 💌  Free and open source",
+        "1. Install Editor.js"
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
+      "issues": []
+    },
+    {
+      "index": 95,
+      "repo": "Milkdown/milkdown",
+      "canonical": "Milkdown/milkdown",
+      "description": "🍼 Plugin driven WYSIWYG  markdown editor framework.",
+      "readme_blob_sha": "8105ac50992d89fe7c6aeadb7cb06f85a0121b28",
+      "licence_repo_metadata": "MIT",
+      "readme_verified": true,
+      "reference_state": "OSS_RESEARCH_ONLY",
+      "feature_facets": [
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N01",
+          "label": "Editor ricco a blocchi con round-trip Markdown reversibile"
+        },
+        {
+          "kind": "CAP_EXISTENTE_MATCH_TEMATICO",
+          "ref": "CAP-0118"
+        },
+        {
+          "kind": "CANDIDATO_NUOVO_DA_VALIDARE",
+          "ref": "OSS95-N34",
+          "label": "Command palette e scorciatoie tastiera contestuali"
+        }
+      ],
+      "example_readme_observations": [
+        "Thanks to the following projects and companies for their support to milkdown and the open source community."
+      ],
+      "evidence_batch": "AUDIT_OSS95_EVIDENZE_BATCH_12.json",
+      "issues": []
+    }
+  ]
+}
