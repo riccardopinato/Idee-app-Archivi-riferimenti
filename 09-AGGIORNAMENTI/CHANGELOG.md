@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-07 — Anna's Diary Step 3: 74 capability con prove aggiornate
+- Nuovo [crosswalk Anna 74/74](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_ANNA_STEP3_RECONCILIAZIONE_2026-11-07.md) per confrontare il registro con il main Anna `dc601002` (PWA Web-first). CAP-0152 e CAP-0160 con codice/test parziali, non con perimetro full certificato; CAP-0015 + #270, CAP-0025, CAP-0069 e CAP-0067 documentate con limiti di evidenza.
+- Nessuna promozione degli stati canonici, nessuna rigenerazione delle viste, nessun cambio score/facilità o Golden. Il follow-up deve aggiornare il JSON e rigenerare con i tool di repository e check esatti.
+
 ## 2026-11-07 — Notes 88/88 crosswalk esplorativo, nessuna promozione CAP
 - Aggiunta la matrice [Notes 88/88](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_NOTES_CAP_88_2026-11-07.md) e CSV correlato: 16 SOURCE_REPORTED, cinque MVP #64 parziali e audit per tutte le 88 associazioni sul main Notes `abbcab3b`.
 - Nessuna modifica a REGISTRO_CAPABILITY.json o viste generate: il gate post-roadmap #41 resta valido, niente DEVICE_VERIFIED/RELEASE dedotti.
