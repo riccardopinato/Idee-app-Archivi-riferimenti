@@ -1,0 +1,169 @@
+{
+  "purpose": "README alternatives when not named README.md",
+  "date": "2026-11-08",
+  "rows": [
+    {
+      "repo": "foambubble/foam",
+      "readme_path": "readme.md",
+      "blob": "a504233dcefb32f2623d5d0dd1aff85f5cfc0020",
+      "chars": 57431,
+      "headings": [
+        "### Graph Visualization",
+        "### Link Autocompletion",
+        "### Sync links on file rename",
+        "### Unique identifiers across directories",
+        "### Link Preview and Navigation",
+        "### Go to definition, Peek References",
+        "### Navigation in Preview",
+        "### Support for sections",
+        "### Backlinks Panel",
+        "### Tag Explorer Panel",
+        "### Orphans and Placeholder Panels",
+        "### Syntax highlight",
+        "### Generate references for your wikilinks",
+        "## Getting started",
+        "You can also use our Foam template:",
+        "## Requirements",
+        "## Known Issues",
+        "## Release Notes",
+        "## Contribution Guide",
+        "## Code of conduct",
+        "## Contributors ✨"
+      ],
+      "signals": [
+        "**Foam** is free, open source, and extremely extensible to suit your personal workflow. You own the information you create with Foam, and you're free to share it, and collaborate on it with anyone you want.",
+        "![Graph Visualization](./assets/screenshots/feature-show-graph.gif)",
+        "Foam helps you create the connections between your notes, and your placeholders as well.",
+        "![Link Autocompletion](./assets/screenshots/feature-link-autocompletion.gif)",
+        "### Sync links on file rename",
+        "![Sync links on file rename](./assets/screenshots/feature-link-sync.gif)",
+        "It will use the minimum identifier required, and even report and help you fix existing ambiguous wikilinks.",
+        "![Unique identifier autocompletion](./assets/screenshots/feature-unique-wikilink-completion.gif)",
+        "![Wikilink diagnostic](./assets/screenshots/feature-wikilink-diagnostics.gif)",
+        "![Link Preview and Navigation](./assets/screenshots/feature-navigation.gif)",
+        "![Go to Definition, Peek References](./assets/screenshots/feature-definition-references.gif)",
+        "![Navigation in Preview](./assets/screenshots/feature-preview-navigation.gif)",
+        "![Note Embed](./assets/screenshots/feature-note-embed.gif)",
+        "Just use the standard wiki syntax of `[[resource#Section Title]]`.",
+        "Foam supports link aliasing, so you can have a `[[wikilink]]`, or a `[[wikilink|alias]]`.",
+        "![Templates](./assets/screenshots/feature-templates.gif)",
+        "![Backlinks Panel](./assets/screenshots/feature-backlinks-panel.gif)",
+        "![Tag Explorer Panel](./assets/screenshots/feature-tags-panel.gif)",
+        "![Orphans and Placeholder Panels](./assets/screenshots/feature-placeholder-orphan-panel.gif)",
+        "Foam highlights wikilinks and placeholder differently, to help you visualize your knowledge base.",
+        "![Syntax Highlight](./assets/screenshots/feature-syntax-highlight.png)",
+        "![Daily Note](./assets/screenshots/feature-daily-note.gif)",
+        "### Generate references for your wikilinks",
+        "![Generate references](./assets/screenshots/feature-definitions-generation.gif)",
+        "- Explore your knowledge base with the `Foam: Open Random Note` command",
+        "- Access your daily note with the `Foam: Open Daily Note` command",
+        "- Create a new note with the `Foam: Create New Note` command",
+        "- See your workspace as a connected graph with the `Foam: Show Graph` command"
+      ]
+    },
+    {
+      "repo": "BookStackApp/BookStack",
+      "readme_path": "readme.md",
+      "blob": "297d26559871362356f6a5d210424e1a45f159dc",
+      "chars": 15121,
+      "headings": [
+        "## 📚 Project Definition",
+        "## 🌟 Project Sponsors",
+        "#### Gold Sponsor",
+        "#### Bronze Sponsors",
+        "## 🛠️ Development & Testing",
+        "## 🌎 Translations",
+        "## 🎁 Contributing, Issues & Pull Requests",
+        "## ♿ Accessibility",
+        "## 🖥️ Website, Docs & Blog",
+        "## 👪 Attribution"
+      ],
+      "signals": [
+        "BookStack is an opinionated documentation platform that provides a pleasant and simple out-of-the-box experience. New users to an instance should find the experience intuitive and only basic word-processing skills should be required to get involved in creating content on BookStack. The platform should provide advanced power features to those that desire it, but they should not interfere with the core simple user experience.",
+        "Pull requests are welcome but, unless it's a small tweak, it may be best to open the pull request early or create an issue for your intended change to discuss how it will fit into the project and plan out the merge. Just because a feature request exists, or is tagged, does not mean that feature would be accepted into the core project."
+      ]
+    },
+    {
+      "repo": "cryptpad/cryptpad",
+      "readme_path": "readme.md",
+      "blob": "3eede8d6284cfa90b5ceeaf3f86d58d42e716848",
+      "chars": 6387,
+      "headings": [
+        "## For development",
+        "## For production",
+        "## Current version",
+        "## Setup using Docker",
+        "# Privacy / Security",
+        "# Contacting Us"
+      ],
+      "signals": [
+        "SPDX-FileCopyrightText: 2023 XWiki CryptPad Team  and contributors",
+        "CryptPad is a collaboration suite that is end-to-end encrypted and open-source. It is designed to facilitate collaboration by synchronizing changes to documents in real time. Since all the user data is encrypted, in the event of a breach, attackers have no way of accessing the stored content. Furthermore, if the administrators do not modify the code, they and the service also cannot access any information about the users' content.",
+        "# Privacy / Security",
+        "CryptPad offers a variety of collaborative tools that encrypt your data in your browser",
+        "before it is sent to the server and your collaborators. In the event that the server is",
+        "A correctly configured instance has safeguards to prevent collaborators from doing some",
+        "nasty things like injecting scripts into collaborative documents or uploads. The project"
+      ]
+    },
+    {
+      "repo": "jazzband/Watson",
+      "readme_path": "README.rst",
+      "blob": "3b51437ec610ba410ba481fcf3a98249d8779be5",
+      "chars": 2779,
+      "headings": [
+        "On OS X, the easiest way to install **watson** is using `Homebrew `_:",
+        "On other platforms, install **watson** using pip or pip3, depending on which one is available:",
+        "Start tracking your activity via:",
+        "Now stop tracking you world domination plan via:",
+        "You can log your latest working sessions (aka **frames**) thanks to the ``log`` command:",
+        "To list all available commands, either `read the documentation `_ or use:"
+      ],
+      "signals": []
+    },
+    {
+      "repo": "bzg/org-mode",
+      "readme_path": "README.org",
+      "blob": "e72403b6889bed1ec42cc93a54455d30ce596793",
+      "chars": 1919,
+      "headings": [],
+      "signals": [
+        "* Join the GNU Project"
+      ]
+    },
+    {
+      "repo": "seatable/seatable",
+      "readme_path": "Readme.md",
+      "blob": "a92f8772111039049cbc617058b1786b9063ad03",
+      "chars": 2531,
+      "headings": [
+        "## Introduction",
+        "The core features include:",
+        "## How to install SeaTable",
+        "## Repositories",
+        "## Software components",
+        "The different components of SeaTable community edition are released under different licenses:",
+        "## Reporting issues"
+      ],
+      "signals": [
+        "The core features include:",
+        "* A spreadsheet like interface supporting collaboratively editing",
+        "* Mobile ready UI to be used on browsers in mobile system",
+        "* Unlimited rows in a single base",
+        "* Interconnect data between bases",
+        "* Automate data processing without coding",
+        "* Powerful APIs as well as SQL interface",
+        "* self-hosted, no restriction on API calls",
+        "* ... many more ...",
+        "* dtable-web: The web site for manage tables.",
+        "* dtable-server: Store the tables and provide collaborating feature.",
+        "* dtable-web: Apache License v2",
+        "* dtable-events: Apache License v2",
+        "* dtable-server: Proprietary License",
+        "* seaf-server: AGPLv3",
+        "* thumbnail-server: Apache License v2",
+        "* The source code will be uploaded to GitHub later. They are currently included in the Docker image if you are interested."
+      ]
+    }
+  ]
+}
