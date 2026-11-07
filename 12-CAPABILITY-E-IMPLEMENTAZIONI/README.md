@@ -1,5 +1,12 @@
 # Catalogo centrale capability — App Factory
 
+## 08/11/2026 — Audit approfondito su 95 repository OSS (ricerca capability)
+
+**[Audit completo delle 95 fonti](AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md)** · **[Atlas JSON repository→facets](AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json)** · 12 batch JSON di evidenze README/metadata + 6 README con percorsi non standard.
+
+Risultato: **95/95 repository esaminate a livello documentazione e metadati, 329 associazioni funzionali, 47 CAP esistenti con nuove fonti incrociate, 39 famiglie candidate E0 non ancora ammesse come CAP numeriche**. Aggiornato il registro canonico con `oss95_research_intake` e `oss95_research_20261108`, senza mutare `app_states`, 160 CAP ufficiali, 385 associazioni o decisioni prodotto. `NOASSERTION` nelle licenze REST non vale clearance. Le 95 sono la lista selezionata nei tre pacchetti chat, **non** la lista autenticata delle stelle correnti. Donor/test/permessi, kit a sei file e roadmap restano gate separati. Le issue Notes #60 e catalogo #41 mantengono le condizioni di riconciliazione per lo stato tecnico.
+
+
 ## 08/11/2026 — Ricognizione stelle OSS e HEAD inventory 31/31
 
 [Ricerca su 95 repository OSS candidati, deduplicazione per CAP e provenienza](RICERCA_STELLE_OSS_CAPABILITY_2026-11-08.md): 40+27+28 voci dai pacchetti selezionati in chat, non da una lista live autenticata delle GitHub Stars; 16 HEAD di riferimenti esterni fissati; 31/31 repository App Factory ricontrollati (27 invariati, 4 modificati). Aggiornato `SOURCE_INVENTORY.json` per la **sola evidenza inventariale**: registro canonico invariato a **160 CAP / 385 associazioni**. L'issue catalogo [#41](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/issues/41) e la roadmap Notes [#60](https://github.com/riccardopinato/Notes-Ecosistema/issues/60) rimangono gate di riconciliazione; nessuna funzione OSS/import/CI device automaticamente promossa.
