@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-07 — Notes 88/88 crosswalk esplorativo, nessuna promozione CAP
+- Aggiunta la matrice [Notes 88/88](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_NOTES_CAP_88_2026-11-07.md) e CSV correlato: 16 SOURCE_REPORTED, cinque MVP #64 parziali e audit per tutte le 88 associazioni sul main Notes `abbcab3b`.
+- Nessuna modifica a REGISTRO_CAPABILITY.json o viste generate: il gate post-roadmap #41 resta valido, niente DEVICE_VERIFIED/RELEASE dedotti.
+
 ## 2026-11-04 — ML10 P1/P2/P3, consumer Notes/TasteAI e revisione 160/385
 - Core #71/#73: motori numerici reference local-only con CI; Core #74/#75: evidenze e cinque Golden DRAFT con date Registry allineate, nessuna promozione E5.
 - Catalogo #37: audit 160 CAP/385 app-link, quattro score, venti stime iniziali e tre prove sorgente parziali; nessuna percentuale senza motivazione.
