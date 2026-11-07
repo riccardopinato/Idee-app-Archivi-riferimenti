@@ -17178,6 +17178,39 @@
           "device_pass": false,
           "golden_e5": false
         }
+      },
+      "partial_source_evidence_20261107": {
+        "Agenda-per-Anna": {
+          "observed_at": "2026-11-07",
+          "evidence_grade": "SOURCE_PARTIAL_AND_EXACT_HEAD_CI",
+          "source_repo": "riccardopinato/Agenda-per-Anna",
+          "source_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "source_path": "lib/src/approved_search_policy.dart",
+          "test_path": "test/cap0152_fuzzy_fallback_test.dart",
+          "source_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/lib/src/approved_search_policy.dart",
+          "test_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/test/cap0152_fuzzy_fallback_test.dart",
+          "ci_check_url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/42402256538",
+          "ci_exact_head_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "ci_steps_verified": [
+            "Analyze",
+            "Test",
+            "Build web release"
+          ],
+          "source_state": "MERGED_ON_MAIN",
+          "partial_scope": "Fallback typo/fuzzy locale bounded eseguito solo dopo retriever canonico e filtro di visibilità; già presente in Anna. Non è l'intera ricerca fuzzy/alias cross-app CAP-0152.",
+          "remaining_contract": [
+            "normalizzazione Unicode/grapheme e casi diacritici",
+            "alias/luoghi",
+            "stress test top-K e 500/5000 record, falsi positivi",
+            "ACL e cambio account reali su due PWA/dispositivi",
+            "QA visuale ricerca/click e tempi su corpus reale"
+          ],
+          "full_capability_complete": false,
+          "browser_physical_qa": "NOT_VERIFIED",
+          "android_device_qa": "NOT_VERIFIED",
+          "certified_golden": false,
+          "audit_report": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/e15ecc5f4c24a0aa6eeaed9d5659797275cb7052/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_ANNA_STEP3_RECONCILIAZIONE_2026-11-07.md"
+        }
       }
     },
     {
@@ -18090,6 +18123,38 @@
           "full_capability_complete": false,
           "device_pass": false,
           "golden_e5": false
+        }
+      },
+      "partial_source_evidence_20261107": {
+        "Agenda-per-Anna": {
+          "observed_at": "2026-11-07",
+          "evidence_grade": "SOURCE_PARTIAL_AND_EXACT_HEAD_CI",
+          "source_repo": "riccardopinato/Agenda-per-Anna",
+          "source_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "source_path": "lib/src/cap0160_offline_tags.dart",
+          "test_path": "test/cap0160_offline_tags_test.dart",
+          "source_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/lib/src/cap0160_offline_tags.dart",
+          "test_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/test/cap0160_offline_tags_test.dart",
+          "ci_check_url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/42402256538",
+          "ci_exact_head_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "ci_steps_verified": [
+            "Analyze",
+            "Test",
+            "Build web release"
+          ],
+          "source_state": "MERGED_ON_MAIN",
+          "partial_scope": "Tagger locale deterministico sparse TF-IDF con stopwords IT/EN/ES/FR/PT, preview e Save sotto scope/account guard; implementazione app-scoped, non contratto generale a 6 lingue.",
+          "remaining_contract": [
+            "DE richiesto dalla CAP trasversale ma non supportato nell'app a cinque lingue",
+            "QA Web/PWA reale del flusso suggerimento -> salvataggio -> riapertura",
+            "verifica cross-account e autorizzazioni shared su sessioni reali",
+            "qualità tag su corpus piccoli, falsi positivi e casi multilingua"
+          ],
+          "full_capability_complete": false,
+          "browser_physical_qa": "NOT_VERIFIED",
+          "android_device_qa": "NOT_VERIFIED",
+          "certified_golden": false,
+          "audit_report": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/e15ecc5f4c24a0aa6eeaed9d5659797275cb7052/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_ANNA_STEP3_RECONCILIAZIONE_2026-11-07.md"
         }
       }
     }
