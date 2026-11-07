@@ -1,224 +1,224 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02",
-  "scope": "31 connected-account repository heads observed 2026-11-02; self repository pinned to pre-PR main. Metadata head SHA is not a product audit, device pass or release.",
+  "updated_at": "2026-11-08",
+  "scope": "31 authenticated-account repository default-branch HEADs checked 2026-11-08; 27 unchanged and 4 changed since inventory. Changed HEAD compare metadata examined; scoped feature/CI notes in RICERCA_STELLE_OSS_CAPABILITY_2026-11-08.md. HEAD inventory alone is not device, CI, full capability, product decision or release evidence.",
   "repositories": [
     {
       "name": "1000-AI-collection-tools",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
       "head_sha": "3fec0fc008894f364cdef0f18419b5b575c24d55",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "180FlipCharge",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "1d4a9f3492afab2c4486738c466ce2acc38719c0",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Agenda-per-Anna",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": "cc192a59b5edf4a6ef82c4dfb45408a310f56890",
-      "head_observed_at": "2026-11-07"
+      "head_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Analisi-delle-mie-stelle-github",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "493db7d438f530957ddae03a4fe1777548c5f4f6",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Android-Omni-Cleaner",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "a753baa8ad0b647be747050ac7e2f6d1fde85465",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "App-corpo-umano",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "0a0cdbd2564e2e6db20f6aab9f6c07eba6722556",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "App-Factory-Core",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": "1229d8c4d411fda76ccc58a6ed0118da1f7245e4",
-      "head_observed_at": "2026-11-04"
+      "head_sha": "85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "app-fotografia",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "e7538d7dfc484f81f37a8e4363cd56a5b742e804",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "AppLab",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "58cb25070b80673f1e9d12593bceb496b83bc6f0",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Battery_Guard",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "d8cf237ab2df2daf427b87ca057871e3143bccc7",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "btrader",
       "default_branch": "master",
       "audit_scope": "INVENTORY_ONLY",
       "head_sha": "59721c9ca1601f29bfa382e0a3131b9dfc02cc2d",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "CamperBoss",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "ae30d08f23aa7e8c835927bc98127f25662d2f6a",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Cozy-game-nome-da-scegliere-",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
       "head_sha": "433ffe98cd2f658a2e15b2b6029336b5487e881d",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Design-App",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "546a1c187824a416b5caf3b841c8f143b373aae1",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "desktop-tutorial",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
       "head_sha": "ce1383559996b0e0d447a4208b78431da23ff49b",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "FocuSense",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "bdc8becfff1b1a5f629456deb34170f0d905d8b7",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "FrameLab-Google-AI-Studio",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
       "head_sha": "239995759e2b56f5315a061a169404c591d77f39",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Idee-app-Archivi-riferimenti",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
-      "head_sha": "54705d4c5317e88d2a183cc5a47aa6e64ec886fc",
-      "head_observed_at": "2026-11-04"
+      "head_sha": "6ed2a9b9983da45b0e1093d497d4c0ea9d0cde28",
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "In-Cucina-con-gli-Anime",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "478f6db6d6cdcfe9adcbddacfe834cb7fbc345e7",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Neon-arcade-runner",
       "default_branch": "main",
       "audit_scope": "INVENTORY_ONLY",
       "head_sha": "ecb79f6fc2ed24513cc04dab5a44ca4606b5ab59",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Notes-Ecosistema",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": "e10b058a43e3b238e59eb946138540287756d784",
-      "head_observed_at": "2026-11-04"
+      "head_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Notification-Control",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "664cf8c7eaaa8843711ddc99b62b547a1997fcb9",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "PDF-Unifier",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "3aacb3e2ac4822db4601fe5c217c016cecc6cbf4",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Phone-Guard",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "ba377aa0fadbe2d7e5ec603f5abd4b69d411ed3c",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Pocket-Guard",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "dcec7d82e374e955f1e06c2c8d0a9143c418b6d7",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Send-to-pc",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "bd271cb96b565e4b937f0e7cfe14058759f830b3",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Tabletop-Motion-Alarm",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "9e67bcbd84e8add7d183349644d3f6f6bbe9ffe0",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "TasteAI",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "fc2f80e43f91b441863f8e3a77ae7196251979cf",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "TrailPath",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "3f44ab37c0881e4315033797c451cec723e23cd2",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "Wonderlog",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "b4840e845336fb6df6f823986b8cf0a731e66a35",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     },
     {
       "name": "World-Days",
       "default_branch": "main",
       "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
       "head_sha": "bb662cb21506b6157658f43070c2059c960637b5",
-      "head_observed_at": "2026-11-04"
+      "head_observed_at": "2026-11-08"
     }
   ]
 }
