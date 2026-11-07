@@ -1,5 +1,10 @@
 # Catalogo centrale capability — App Factory
 
+## 08/11/2026 — Ricognizione stelle OSS e HEAD inventory 31/31
+
+[Ricerca su 95 repository OSS candidati, deduplicazione per CAP e provenienza](RICERCA_STELLE_OSS_CAPABILITY_2026-11-08.md): 40+27+28 voci dai pacchetti selezionati in chat, non da una lista live autenticata delle GitHub Stars; 16 HEAD di riferimenti esterni fissati; 31/31 repository App Factory ricontrollati (27 invariati, 4 modificati). Aggiornato `SOURCE_INVENTORY.json` per la **sola evidenza inventariale**: registro canonico invariato a **160 CAP / 385 associazioni**. L'issue catalogo [#41](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/issues/41) e la roadmap Notes [#60](https://github.com/riccardopinato/Notes-Ecosistema/issues/60) rimangono gate di riconciliazione; nessuna funzione OSS/import/CI device automaticamente promossa.
+
+
 ## Anna's Diary — Step 3 evidence crosswalk 74/74 (07/11/2026)
 
 [Inventario 74 associazioni Anna e delta funzionali](AUDIT_ANNA_STEP3_RECONCILIAZIONE_2026-11-07.md): esaminate le classificazioni presenti nel registro su commit `1a57e33`; verificati su Anna `dc601002` CAP-0152 ricerca fuzzy bounded e CAP-0160 tagger TF-IDF locali **parziali**, CAP-0015 Cerca, CAP-0025 responsive, CAP-0069 screenshot gate e CAP-0067 release Web/native. Non sono state promosse capability complete o modificate le 74 righe/stati canonici. I futuri cambi JSON dovranno rigenerare tutte le viste e passare CI.
