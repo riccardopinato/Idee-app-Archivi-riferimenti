@@ -1727,6 +1727,31 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "partial_source_evidence_20261107": {
+        "Agenda-per-Anna": {
+          "observed_at": "2026-11-07",
+          "evidence_grade": "SCOPED_SOURCE_AND_CI_NO_DEVICE",
+          "source_repo": "riccardopinato/Agenda-per-Anna",
+          "source_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "source_path": "lib/src/approved_search_policy.dart",
+          "test_path": "test/approved_search_policy_test.dart",
+          "source_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/lib/src/approved_search_policy.dart",
+          "test_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/test/approved_search_policy_test.dart",
+          "ci_exact_head_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "ci_check_url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/42402256538",
+          "source_state": "MERGED_ON_MAIN",
+          "partial_scope": "Local canonical personal-search derived filter/order, blank-query and one-character visible-title safeguards; tested Flutter source only.",
+          "remaining_contract": [
+            "installed PWA touch/IME navigation and search latency on representative history",
+            "two authenticated accounts and Vault exclusion browser smoke",
+            "Android physical path and native keyboard"
+          ],
+          "full_capability_complete": false,
+          "physical_device_qa": "NOT_VERIFIED",
+          "certified_golden": false,
+          "audit_report": "https://github.com/riccardopinato/Agenda-per-Anna/blob/cc192a59b5edf4a6ef82c4dfb45408a310f56890/docs/STEP3_CAPABILITY_AND_DOC_ALIGNMENT_20261107.md"
+        }
       }
     },
     {
@@ -3006,6 +3031,31 @@
           "after_state": "SOURCE_REPORTED",
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
+        }
+      },
+      "partial_source_evidence_20261107": {
+        "Agenda-per-Anna": {
+          "observed_at": "2026-11-07",
+          "evidence_grade": "SCOPED_SOURCE_AND_CI_NO_DEVICE",
+          "source_repo": "riccardopinato/Agenda-per-Anna",
+          "source_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "source_path": "lib/src/app_shell.dart",
+          "test_path": "test/ds6_web_first_step2_responsive_test.dart",
+          "source_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/lib/src/app_shell.dart",
+          "test_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/test/ds6_web_first_step2_responsive_test.dart",
+          "ci_exact_head_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "ci_check_url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/42402256538",
+          "source_state": "MERGED_ON_MAIN",
+          "partial_scope": "Actual Flutter synthetic guest layouts 320–900dp and responsive dock/navigation rail, not full split-view certification.",
+          "remaining_contract": [
+            "PWA physical browser at wide breakpoint and screen reader",
+            "actual tablet/split-view and no clipping with 1.6× text",
+            "approved visual captures / keyboard and orientation"
+          ],
+          "full_capability_complete": false,
+          "physical_device_qa": "NOT_VERIFIED",
+          "certified_golden": false,
+          "audit_report": "https://github.com/riccardopinato/Agenda-per-Anna/blob/cc192a59b5edf4a6ef82c4dfb45408a310f56890/docs/STEP3_CAPABILITY_AND_DOC_ALIGNMENT_20261107.md"
         }
       }
     },
@@ -7774,6 +7824,32 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "partial_source_evidence_20261107": {
+        "Agenda-per-Anna": {
+          "observed_at": "2026-11-07",
+          "evidence_grade": "WEB_DEPLOY_EXACT_SHA_NATIVE_PENDING",
+          "source_repo": "riccardopinato/Agenda-per-Anna",
+          "source_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "source_path": ".github/workflows/deploy-pages.yml",
+          "test_path": ".github/workflows/dev-checks.yml",
+          "source_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/.github/workflows/deploy-pages.yml",
+          "test_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/.github/workflows/dev-checks.yml",
+          "ci_exact_head_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "ci_check_url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/42402256538",
+          "web_deploy_url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/42402256546",
+          "source_state": "MERGED_ON_MAIN",
+          "partial_scope": "Flutter Web build and Pages deployment proved for dc601002; signed Android +129 is from earlier distinct source and not equivalent.",
+          "remaining_contract": [
+            "installable APK newer versionCode and stable signing on exact app source when explicitly requested",
+            "physical Android update/no-data-loss, Web/PWA reload with saved drafts",
+            "Store/Play delivery separate and not certified"
+          ],
+          "full_capability_complete": false,
+          "physical_device_qa": "NOT_VERIFIED",
+          "certified_golden": false,
+          "audit_report": "https://github.com/riccardopinato/Agenda-per-Anna/blob/cc192a59b5edf4a6ef82c4dfb45408a310f56890/docs/STEP3_CAPABILITY_AND_DOC_ALIGNMENT_20261107.md"
+        }
       }
     },
     {
@@ -8046,6 +8122,31 @@
           "after_state": "CI_VERIFIED",
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
+        }
+      },
+      "partial_source_evidence_20261107": {
+        "Agenda-per-Anna": {
+          "observed_at": "2026-11-07",
+          "evidence_grade": "SCOPED_SOURCE_AND_CI_NO_DEVICE",
+          "source_repo": "riccardopinato/Agenda-per-Anna",
+          "source_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "source_path": "tool/compare_visual_baselines.py",
+          "test_path": "test/v107_c2_visual_regression_matrix_test.dart",
+          "source_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/tool/compare_visual_baselines.py",
+          "test_url": "https://github.com/riccardopinato/Agenda-per-Anna/blob/dc601002c3308b6579c30945867638b84ad35de9/test/v107_c2_visual_regression_matrix_test.dart",
+          "ci_exact_head_sha": "dc601002c3308b6579c30945867638b84ad35de9",
+          "ci_check_url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/42402256538",
+          "source_state": "MERGED_ON_MAIN",
+          "partial_scope": "Comparator and synthetic metadata matrix validated in source CI; this is NOT screenshot baseline or visual acceptance.",
+          "remaining_contract": [
+            "70 approved baseline screenshots plus 70 independently captured candidates",
+            "safe synthetic-data provenance and approval by screen/theme",
+            "device-real visual regression/threshold review"
+          ],
+          "full_capability_complete": false,
+          "physical_device_qa": "NOT_VERIFIED",
+          "certified_golden": false,
+          "audit_report": "https://github.com/riccardopinato/Agenda-per-Anna/blob/cc192a59b5edf4a6ef82c4dfb45408a310f56890/docs/STEP3_CAPABILITY_AND_DOC_ALIGNMENT_20261107.md"
         }
       }
     },
