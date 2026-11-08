@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "purpose": "Catalogo di provenienza delle fonti ML: non sostituisce REGISTRO_CAPABILITY.json",
+  "owner_repository": "riccardopinato/Idee-app-Archivi-riferimenti",
+  "canonical_capability_registry": "12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY.json",
+  "created_at": "2026-11-08",
+  "factory_baseline_at_creation": {
+    "repository": "riccardopinato/App-Factory-Core",
+    "sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+    "master_version": "27",
+    "golden_index_version": 28
+  },
+  "id_format": "MLR-NNNN, progressivo, immutabile, mai riciclato",
+  "record_fields_required": [
+    "id",
+    "url",
+    "first_seen_date",
+    "status",
+    "source_sha",
+    "audit_depth",
+    "licensing",
+    "technical_roles",
+    "capability_ids",
+    "summary_file",
+    "evidence_urls",
+    "next_gate"
+  ],
+  "records": []
+}
