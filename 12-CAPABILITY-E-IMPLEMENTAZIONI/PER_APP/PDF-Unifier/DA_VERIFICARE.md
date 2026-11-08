@@ -11,4 +11,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | [CAP-0008](../../REGISTRO_CAPABILITY/CAP-0008.md) | Import foto PDF delle schede workout | 75 | 85% | DONOR_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0008/README.md) | Verificare parser e conservazione file originale |
 | [CAP-0038](../../REGISTRO_CAPABILITY/CAP-0038.md) | PDF Pocket Tools packaging standalone | 75 | 85% | DONOR_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0038/README.md) | Non creare secondo motore per packaging |
 
-**Totale associazioni app:** 15. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 16. Nessuna modifica alla roadmap o al codice dell'app.

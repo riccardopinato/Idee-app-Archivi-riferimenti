@@ -1,2 +1,5 @@
 App,Categoria,CAP_ID,Capability,Priorita,Facilita_percento,Stato,Prossimo_gate,Prova_codice_URL,Kit_tecnico_URL
+Work-Time-Keeper,DA_VALUTARE,CAP-0195,Timesheet esportabili e report settimanali per progetto,74,79,PROPOSTA,"Misure da sessioni reali, timezone e no inventare lavoro",,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0195/README.md
 Work-Time-Keeper,DA_VALUTARE,CAP-0079,Report fiscale stipendi mercati separati,67,56,PROPOSTA,Fonte fiscale ufficiale e data annuale,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0079/README.md
+Work-Time-Keeper,DA_VALUTARE,CAP-0176,Timeline attività automatica con AFK e consenso,62,43,PROPOSTA,No cattura schermo nascosta; retention e minimizzazione,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0176/README.md
+Work-Time-Keeper,DA_VALUTARE,CAP-0177,Tracciamento attività IDE tramite plugin opt-in,62,43,PROPOSTA,Solo eventi editor autorizzati e aggregati,,https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/13-KIT-INTEGRAZIONE/CAP-0177/README.md

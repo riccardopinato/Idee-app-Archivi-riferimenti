@@ -1,4 +1,4 @@
-# PDF-Unifier — Da valutare (11)
+# PDF-Unifier — Da valutare (12)
 
 Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, senza soglie di score. Non comprende integrazioni parziali, dichiarate o verificate.
 
@@ -16,6 +16,7 @@ Derivato dal registro canonico per la **singola app**. Candidate ancora aperte, 
 | [CAP-0128](../../REGISTRO_CAPABILITY/CAP-0128.md) | Estrazione campi da form in schede canoniche | 81 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0128/README.md) | FUNSD+ contiene annotazioni form con licenza custom; reference per layout, vietato incorporare dataset senza gate diritti. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0122](../../REGISTRO_CAPABILITY/CAP-0122.md) | Estrazione di tabelle strutturate da immagini e PDF | 79 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0122/README.md) | Paper2Any include extraction di tabelle in PPT, non un modulo Flutter pronto; integrare con CAP-0035 OCR locale e validazione cellule. Verificare architettura e licensing nel Product Bible prima di integrare. |
 | [CAP-0030](../../REGISTRO_CAPABILITY/CAP-0030.md) | Professional Wallet CV attestati QR vCard | 75 | 85% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0030/README.md) | Integrare Document Workspace senza wallet parallelo |
+| [CAP-0196](../../REGISTRO_CAPABILITY/CAP-0196.md) | Archivio documenti indicizzato con classificazione e retention | 74 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0196/README.md) | Distinguere OCR CAP-0035, triage CAP-0134 e vault documenti |
 | [CAP-0125](../../REGISTRO_CAPABILITY/CAP-0125.md) | Ricostruzione valori numerici da grafici fotografati | 72 | 70% | PROPOSTA | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0125/README.md) | Dataset sintetico di grafici lineari semplici: non dimostra accuratezza su grafici reali complessi; non sostituire dati originali. Verificare architettura e licensing nel Product Bible prima di integrare. |
 
-**Totale associazioni app:** 15. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 16. Nessuna modifica alla roadmap o al codice dell'app.

@@ -1,0 +1,16 @@
+CAP=CAP-0183
+OSS95_WORKING_ID=OSS95-N23
+EVIDENCE_GRADE=E0_SPEC_ONLY
+CODE_EXTRACTED=NO
+DART_READY=NO
+DONOR_CERTIFIED=NO
+APP_IMPLEMENTED=NOT_VERIFIED
+SOURCE_ATLAS=https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json
+FACTORY=riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9
+SOURCE_REPOSITORIES:
+- https://github.com/HabitRPG/habitica
+- https://github.com/dromse/obsidian-gamified-tasks
+- https://github.com/regisdantas/gamify-tasks
+- https://github.com/sharvesh1401/TaskTrail
+
+No third-party code, weights or media has been copied. Require exact SHA/path, file license and direct E3 evidence before donor reuse.

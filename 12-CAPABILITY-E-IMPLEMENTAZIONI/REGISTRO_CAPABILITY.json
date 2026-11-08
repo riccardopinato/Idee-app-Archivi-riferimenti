@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-04",
+  "updated_at": "2026-11-08",
   "authority": "Research/portfolio only. Product Bible/roadmap/code/tests/real-device evidence live in app repositories.",
   "factory_baseline": "riccardopinato/App-Factory-Core@1229d8c4d411fda76ccc58a6ed0118da1f7245e4",
   "score_explanation": "Relative 0-100 opportunity estimate: value 35%, cross-app reuse 25%, feasibility 20%, evidence 10%, low risk 10%. Each factor 1-5. P1>=92; P2>=79; otherwise P3. Not an implementation authorization or revenue projection.",
@@ -18902,6 +18902,2404 @@
           "audit_report": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/e15ecc5f4c24a0aa6eeaed9d5659797275cb7052/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_ANNA_STEP3_RECONCILIAZIONE_2026-11-07.md"
         }
       }
+    },
+    {
+      "id": "CAP-0161",
+      "title": "Editor ricco a blocchi con round-trip Markdown reversibile",
+      "domain": "editor",
+      "score": 76,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Editor ricco a blocchi con round-trip Markdown reversibile. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Mantenere una sola sorgente canonica e regression sui blocchi non serializzabili",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 82
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0100",
+        "CAP-0118",
+        "CAP-0096"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Editor ricco a blocchi con round-trip Markdown reversibile. Non duplicare la responsabilita delle CAP CAP-0100, CAP-0118, CAP-0096. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N01",
+        "original_verdict": "ESTENSIONE_CON_SORGENTE_APP",
+        "reference_repositories": [
+          "AppFlowy-IO/AppFlowy",
+          "toeverything/AFFiNE",
+          "AppFlowy-IO/appflowy-editor",
+          "Laverna/laverna",
+          "vnotex/vnote",
+          "codex-team/editor.js",
+          "Milkdown/milkdown"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0162",
+      "title": "Wikilink, backlink e rinomina dei link con riparazione",
+      "domain": "ricerca",
+      "score": 76,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Wikilink, backlink e rinomina dei link con riparazione. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Riconciliare con Knowledge Graph e link stabili già implementati",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0013",
+        "CAP-0112",
+        "CAP-0098"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Wikilink, backlink e rinomina dei link con riparazione. Non duplicare la responsabilita delle CAP CAP-0013, CAP-0112, CAP-0098. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N02",
+        "original_verdict": "NUOVA_DA_CONFRONTARE",
+        "reference_repositories": [
+          "TriliumNext/Trilium",
+          "siyuan-note/siyuan",
+          "logseq/logseq",
+          "foambubble/foam",
+          "dendronhq/dendron",
+          "silverbulletmd/silverbullet",
+          "docmost/docmost",
+          "vimwiki/vimwiki"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0163",
+      "title": "Note gerarchiche, alias e transclusioni controllate",
+      "domain": "organizzazione",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Note gerarchiche, alias e transclusioni controllate. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "No cicli e duplicazioni di proprietario; link non equivalgono a copia",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0013"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Note gerarchiche, alias e transclusioni controllate. Non duplicare la responsabilita delle CAP CAP-0013. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N03",
+        "original_verdict": "NUOVA_DA_CONFRONTARE",
+        "reference_repositories": [
+          "TriliumNext/Trilium",
+          "dendronhq/dendron",
+          "BookStackApp/BookStack"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0164",
+      "title": "Query e scripting locale su note e knowledge base",
+      "domain": "automazioni",
+      "score": 63,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Contratto E0 di ricerca: Query e scripting locale su note e knowledge base. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Sandbox, privacy, limiti di esecuzione e tipizzazione",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 55
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0013",
+        "CAP-0032",
+        "CAP-0112"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Query e scripting locale su note e knowledge base. Non duplicare la responsabilita delle CAP CAP-0013, CAP-0032, CAP-0112. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N04",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "TriliumNext/Trilium",
+          "siyuan-note/siyuan",
+          "taskade/taskade",
+          "silverbulletmd/silverbullet"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0165",
+      "title": "Tabelle relazionali e campi calcolati/formule",
+      "domain": "database",
+      "score": 70,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Contratto E0 di ricerca: Tabelle relazionali e campi calcolati/formule. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Distinguere da proprietà tipizzate e viste tabellari già esistenti",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 55
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0100",
+        "CAP-0096",
+        "CAP-0029"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Tabelle relazionali e campi calcolati/formule. Non duplicare la responsabilita delle CAP CAP-0100, CAP-0096, CAP-0029. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N05",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "AppFlowy-IO/AppFlowy",
+          "toeverything/AFFiNE",
+          "anyproto/anytype-ts",
+          "nocodb/nocodb",
+          "gristlabs/grist-core",
+          "audreyt/ethercalc",
+          "mathesar-foundation/mathesar",
+          "baserow/baserow",
+          "seatable/seatable"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0166",
+      "title": "Viste salvate con filtri, raggruppamenti e permessi",
+      "domain": "organizzazione",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Viste salvate con filtri, raggruppamenti e permessi. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Usare ProjectWorkspace canonico, mai duplicare Note/Task",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 82
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0100",
+        "CAP-0096",
+        "CAP-0103"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Viste salvate con filtri, raggruppamenti e permessi. Non duplicare la responsabilita delle CAP CAP-0100, CAP-0096, CAP-0103. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N06",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "AppFlowy-IO/AppFlowy",
+          "mattermost-community/focalboard",
+          "makeplane/plane",
+          "nocodb/nocodb",
+          "plankanban/planka",
+          "gristlabs/grist-core",
+          "audreyt/ethercalc",
+          "mathesar-foundation/mathesar",
+          "baserow/baserow",
+          "seatable/seatable"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0167",
+      "title": "Convergenza CRDT per modifiche concorrenti offline",
+      "domain": "sincronizzazione",
+      "score": 57,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Convergenza CRDT per modifiche concorrenti offline. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Prototipo isolato; nessuna sostituzione di Shared Spaces autorizzata",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 34
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0100",
+        "CAP-0118",
+        "CAP-0018"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Convergenza CRDT per modifiche concorrenti offline. Non duplicare la responsabilita delle CAP CAP-0100, CAP-0118, CAP-0018. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N07",
+        "original_verdict": "OPZIONE_ARCHITETTURALE",
+        "reference_repositories": [
+          "anyproto/anytype-ts",
+          "memrynote/memry",
+          "cryptpad/cryptpad",
+          "amark/gun",
+          "yjs/yjs",
+          "automerge/automerge"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0168",
+      "title": "Condivisione cifrata selettiva e revoca per documento",
+      "domain": "sicurezza",
+      "score": 57,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Condivisione cifrata selettiva e revoca per documento. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Threat model, ACL server, chiavi e revoca effettiva",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 34
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0100",
+        "CAP-0013",
+        "CAP-0018"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Condivisione cifrata selettiva e revoca per documento. Non duplicare la responsabilita delle CAP CAP-0100, CAP-0013, CAP-0018. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N08",
+        "original_verdict": "ESTENSIONE_CON_RISCHI",
+        "reference_repositories": [
+          "outline/outline",
+          "standardnotes/app",
+          "streetwriters/notesnook",
+          "nocodb/nocodb",
+          "LifetimeLabsHQ/PrivacyNotes.app",
+          "docmost/docmost",
+          "cryptpad/cryptpad",
+          "berty/berty",
+          "writefreely/writefreely"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0169",
+      "title": "Sincronizzazione CalDAV bidirezionale opt-in",
+      "domain": "agenda",
+      "score": 64,
+      "priority": "P3",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Sincronizzazione CalDAV bidirezionale opt-in. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Google Calendar Direct issue #199 resta DRAFT; account e conflitti vanno verificati",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 26
+      },
+      "app_product_decisions": {
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0004",
+        "CAP-0144",
+        "CAP-0100"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Sincronizzazione CalDAV bidirezionale opt-in. Non duplicare la responsabilita delle CAP CAP-0004, CAP-0144, CAP-0100. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N09",
+        "original_verdict": "NUOVA_PROPOSTA_CON_GATE",
+        "reference_repositories": [
+          "go-vikunja/vikunja",
+          "FossifyOrg/Calendar",
+          "baslawson/Planner",
+          "Etar-Group/Etar-Calendar",
+          "nextcloud/calendar"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0170",
+      "title": "Conversione esplicita evento↔attività senza duplicati",
+      "domain": "agenda",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Conversione esplicita evento↔attività senza duplicati. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Preservare identità, reminder e ripristino",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 70,
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0004",
+        "CAP-0144"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Conversione esplicita evento↔attività senza duplicati. Non duplicare la responsabilita delle CAP CAP-0004, CAP-0144. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N10",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "baslawson/Planner"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0171",
+      "title": "Ricorrenza calcolata da scadenza o completamento",
+      "domain": "agenda",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Ricorrenza calcolata da scadenza o completamento. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "DST e salti calendario; nessun reminder doppio",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 70,
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0096",
+        "CAP-0004",
+        "CAP-0144"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Ricorrenza calcolata da scadenza o completamento. Non duplicare la responsabilita delle CAP CAP-0096, CAP-0004, CAP-0144. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N11",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "donetick/donetick",
+          "baslawson/Planner"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0172",
+      "title": "Rotazione equa degli assegnatari nelle attività condivise",
+      "domain": "condivisione",
+      "score": 68,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Contratto E0 di ricerca: Rotazione equa degli assegnatari nelle attività condivise. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Per Anna solo Noi ♡, consenso e ownership espliciti",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 55,
+        "Notes-Ecosistema": 55
+      },
+      "app_product_decisions": {
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0096"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Rotazione equa degli assegnatari nelle attività condivise. Non duplicare la responsabilita delle CAP CAP-0096. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N12",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "donetick/donetick"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0173",
+      "title": "Sprint, cicli e retrospettive di progetto",
+      "domain": "pianificazione",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Sprint, cicli e retrospettive di progetto. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Non sovrascrivere il planner esistente",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0103",
+        "CAP-0111",
+        "CAP-0148"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Sprint, cicli e retrospettive di progetto. Non duplicare la responsabilita delle CAP CAP-0103, CAP-0111, CAP-0148. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N13",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "makeplane/plane",
+          "opf/openproject"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0174",
+      "title": "Limiti WIP e swimlane Kanban configurabili",
+      "domain": "organizzazione",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Limiti WIP e swimlane Kanban configurabili. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Prima confrontare CAP-0103, -0105, -0096",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0100",
+        "CAP-0096",
+        "CAP-0105"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Limiti WIP e swimlane Kanban configurabili. Non duplicare la responsabilita delle CAP CAP-0100, CAP-0096, CAP-0105. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N14",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "mattermost-community/focalboard",
+          "plankanban/planka",
+          "kanboard/kanboard"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0175",
+      "title": "Timeboxing drag-and-drop sul calendario",
+      "domain": "pianificazione",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Timeboxing drag-and-drop sul calendario. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Conferma esplicita e nessun duplicato nelle date",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 82,
+        "Agenda-per-Anna": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0144",
+        "CAP-0004",
+        "CAP-0108"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Timeboxing drag-and-drop sul calendario. Non duplicare la responsabilita delle CAP CAP-0144, CAP-0004, CAP-0108. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N15",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "super-productivity/super-productivity",
+          "manuelernestog/weektodo",
+          "OrangeCatzhang/orange-schedule",
+          "baslawson/Planner",
+          "memrynote/memry",
+          "Pikos-App/pikos"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0176",
+      "title": "Timeline attività automatica con AFK e consenso",
+      "domain": "analisi",
+      "score": 62,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Timeline attività automatica con AFK e consenso. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Work-Time-Keeper": "PROPOSTA",
+        "FocuSense": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "No cattura schermo nascosta; retention e minimizzazione",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Work-Time-Keeper": 43,
+        "FocuSense": 34
+      },
+      "app_product_decisions": {
+        "Work-Time-Keeper": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "FocuSense": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0101",
+        "CAP-0108"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Timeline attività automatica con AFK e consenso. Non duplicare la responsabilita delle CAP CAP-0101, CAP-0108. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N16",
+        "original_verdict": "NUOVA_CONSENSO_OBBLIGATORIO",
+        "reference_repositories": [
+          "JerryZLiu/Dayflow",
+          "ActivityWatch/activitywatch"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0177",
+      "title": "Tracciamento attività IDE tramite plugin opt-in",
+      "domain": "analisi",
+      "score": 62,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Tracciamento attività IDE tramite plugin opt-in. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Work-Time-Keeper": "PROPOSTA",
+        "CmdPocket": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Solo eventi editor autorizzati e aggregati",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Work-Time-Keeper": 43,
+        "CmdPocket": 34
+      },
+      "app_product_decisions": {
+        "Work-Time-Keeper": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "CmdPocket": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0108"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Tracciamento attività IDE tramite plugin opt-in. Non duplicare la responsabilita delle CAP CAP-0108. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N17",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "wakatime/wakatime-cli"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0178",
+      "title": "Espansione abbreviazioni solo nell'editor corrente",
+      "domain": "editor",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Espansione abbreviazioni solo nell'editor corrente. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "CmdPocket": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Riusa i template esistenti e permette undo",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70,
+        "CmdPocket": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "CmdPocket": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0093"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Espansione abbreviazioni solo nell'editor corrente. Non duplicare la responsabilita delle CAP CAP-0093. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N18",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "espanso/espanso"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0179",
+      "title": "Espansione testo a livello di sistema operativo",
+      "domain": "accessibilita",
+      "score": 57,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Espansione testo a livello di sistema operativo. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "CmdPocket": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Accessibilità/input hook per piattaforma, privacy, non installare di default",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "CmdPocket": 28
+      },
+      "app_product_decisions": {
+        "CmdPocket": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0084"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Espansione testo a livello di sistema operativo. Non duplicare la responsabilita delle CAP CAP-0084. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N19",
+        "original_verdict": "NUOVA_ALTO_RISCHIO",
+        "reference_repositories": [
+          "espanso/espanso"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0180",
+      "title": "Archivio snippet di codice con linguaggi e frammenti",
+      "domain": "organizzazione",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Archivio snippet di codice con linguaggi e frammenti. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "CmdPocket": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Riutilizzare note/tag/code block senza un secondo vault",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "CmdPocket": 70,
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "CmdPocket": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0013",
+        "CAP-0084"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Archivio snippet di codice con linguaggi e frammenti. Non duplicare la responsabilita delle CAP CAP-0013, CAP-0084. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N20",
+        "original_verdict": "NUOVA_DA_CONFRONTARE",
+        "reference_repositories": [
+          "dnote/dnote",
+          "massCodeIO/massCode",
+          "espanso/espanso"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0181",
+      "title": "Import/export lossless di todo.txt, Org e TaskPaper",
+      "domain": "interoperabilita",
+      "score": 63,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Contratto E0 di ricerca: Import/export lossless di todo.txt, Org e TaskPaper. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Parser delimitato, anteprima, semantica recurrence e rollback",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 55
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0096",
+        "CAP-0075",
+        "CAP-0105"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Import/export lossless di todo.txt, Org e TaskPaper. Non duplicare la responsabilita delle CAP CAP-0096, CAP-0075, CAP-0105. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N21",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "todotxt/todo.txt-cli",
+          "GothenburgBitFactory/taskwarrior",
+          "mattgemmell/TaskPaperRuby",
+          "bzg/org-mode",
+          "dnote/dnote"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0182",
+      "title": "Finestre sticky giornaliere/settimanali per desktop",
+      "domain": "widget",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Finestre sticky giornaliere/settimanali per desktop. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Separare dal widget Android CAP-0144",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 70
+      },
+      "app_product_decisions": {
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0144",
+        "CAP-0001",
+        "CAP-0004"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Finestre sticky giornaliere/settimanali per desktop. Non duplicare la responsabilita delle CAP CAP-0144, CAP-0001, CAP-0004. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N22",
+        "original_verdict": "ESTENSIONE_MULTIPIATTAFORMA",
+        "reference_repositories": [
+          "OrangeCatzhang/orange-schedule",
+          "andstatus/todoagenda"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0183",
+      "title": "Punti, ricompense e progressione volontaria delle task",
+      "domain": "gamification",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Punti, ricompense e progressione volontaria delle task. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "FocuSense": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Opt-in, nessuna pressione/comportamento patologizzante",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "FocuSense": 70,
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "FocuSense": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0145",
+        "CAP-0096",
+        "CAP-0101"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Punti, ricompense e progressione volontaria delle task. Non duplicare la responsabilita delle CAP CAP-0145, CAP-0096, CAP-0101. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N23",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "HabitRPG/habitica",
+          "dromse/obsidian-gamified-tasks",
+          "regisdantas/gamify-tasks",
+          "sharvesh1401/TaskTrail"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0184",
+      "title": "Serie abitudini e obiettivi di continuità con storico",
+      "domain": "benessere",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Serie abitudini e obiettivi di continuità con storico. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "FocuSense": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Distinguere dalla heatmap CAP-0145",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "FocuSense": 70,
+        "Agenda-per-Anna": 70
+      },
+      "app_product_decisions": {
+        "FocuSense": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0112",
+        "CAP-0145",
+        "CAP-0101"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Serie abitudini e obiettivi di continuità con storico. Non duplicare la responsabilita delle CAP CAP-0112, CAP-0145, CAP-0101. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N24",
+        "original_verdict": "NUOVA_DA_CONFRONTARE",
+        "reference_repositories": [
+          "HabitRPG/habitica",
+          "regisdantas/gamify-tasks",
+          "sharvesh1401/TaskTrail",
+          "AnkiDroid/Anki-Android",
+          "ankitects/anki",
+          "memrynote/memry"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0185",
+      "title": "Regole di automazione tipizzate trigger→azione con preview",
+      "domain": "automazioni",
+      "score": 63,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Contratto E0 di ricerca: Regole di automazione tipizzate trigger→azione con preview. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Notes 0.54 ha Workflow Automations; evitare doppio motore",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 67
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0100",
+        "CAP-0028",
+        "CAP-0018"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Regole di automazione tipizzate trigger→azione con preview. Non duplicare la responsabilita delle CAP CAP-0100, CAP-0028, CAP-0018. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N25",
+        "original_verdict": "ESTENSIONE_CON_SORGENTE_APP",
+        "reference_repositories": [
+          "appwrite/appwrite",
+          "taskade/taskade",
+          "silverbulletmd/silverbullet",
+          "tldraw/tldraw",
+          "xyflow/xyflow",
+          "baserow/baserow",
+          "seatable/seatable"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0186",
+      "title": "Trasporto decentralizzato P2P per dati condivisi cifrati",
+      "domain": "sincronizzazione",
+      "score": 57,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Trasporto decentralizzato P2P per dati condivisi cifrati. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Separare CRDT, identità e autorizzazione dal trasporto",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 34
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0100",
+        "CAP-0018",
+        "CAP-0112"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Trasporto decentralizzato P2P per dati condivisi cifrati. Non duplicare la responsabilita delle CAP CAP-0100, CAP-0018, CAP-0112. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N26",
+        "original_verdict": "OPZIONE_ARCHITETTURALE",
+        "reference_repositories": [
+          "anyproto/anytype-ts",
+          "appwrite/appwrite",
+          "linagora/twake-workplace",
+          "amark/gun",
+          "berty/berty",
+          "ankicommunity/ankicommunity-sync-server"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0187",
+      "title": "Editing Typst/matematica con anteprima verificabile",
+      "domain": "editor",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Editing Typst/matematica con anteprima verificabile. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Limitare a modalità studio ed export, valutare peso",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0098",
+        "CAP-0119",
+        "CAP-0018"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Editing Typst/matematica con anteprima verificabile. Non duplicare la responsabilita delle CAP CAP-0098, CAP-0119, CAP-0018. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N27",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "dendronhq/dendron",
+          "Laverna/laverna",
+          "vnotex/vnote",
+          "sorenwacker/nodus",
+          "Zettlr/Zettlr"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0188",
+      "title": "Pubblicazione controllata Markdown/wiki con redazione",
+      "domain": "editoriale",
+      "score": 63,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 3,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Contratto E0 di ricerca: Pubblicazione controllata Markdown/wiki con redazione. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Mai esporre contenuti privati o condivisi per default",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 55
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0013",
+        "CAP-0100",
+        "CAP-0014"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Pubblicazione controllata Markdown/wiki con redazione. Non duplicare la responsabilita delle CAP CAP-0013, CAP-0100, CAP-0014. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N28",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "outline/outline",
+          "usememos/memos",
+          "Zettlr/Zettlr",
+          "BookStackApp/BookStack",
+          "writefreely/writefreely"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0189",
+      "title": "Biblioteca citazioni e riferimenti bibliografici",
+      "domain": "ricerca",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Biblioteca citazioni e riferimenti bibliografici. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "CAP-0119 copre audit fonti, non intera libreria di riferimenti",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0119",
+        "CAP-0076"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Biblioteca citazioni e riferimenti bibliografici. Non duplicare la responsabilita delle CAP CAP-0119, CAP-0076. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N29",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "zotero/zotero"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0190",
+      "title": "Da evidenziazioni PDF a note collegate e storylines",
+      "domain": "documenti",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Da evidenziazioni PDF a note collegate e storylines. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Riusare CAP-0035/0098/0119; preservare pagina e provenance",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0098",
+        "CAP-0119"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Da evidenziazioni PDF a note collegate e storylines. Non duplicare la responsabilita delle CAP CAP-0098, CAP-0119. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N30",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "sorenwacker/nodus"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0191",
+      "title": "Editor multipannello con due note e split sincronizzato",
+      "domain": "esperienza",
+      "score": 69,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Editor multipannello con due note e split sincronizzato. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Non duplicare i writer e testare gestione conflitti",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 82
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0018",
+        "CAP-0032"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Editor multipannello con due note e split sincronizzato. Non duplicare la responsabilita delle CAP CAP-0018, CAP-0032. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N31",
+        "original_verdict": "ESTENSIONE_UX",
+        "reference_repositories": [
+          "shuaiplus/inkstone"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0192",
+      "title": "Recupero account cifrato con frase mnemonica senza email",
+      "domain": "sicurezza",
+      "score": 62,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Recupero account cifrato con frase mnemonica senza email. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "Agenda-per-Anna": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Nessuna modifica al Vault Anna; threat model e restore test prima di valutare",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 34,
+        "Agenda-per-Anna": 26
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0018",
+        "CAP-0146"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Recupero account cifrato con frase mnemonica senza email. Non duplicare la responsabilita delle CAP CAP-0018, CAP-0146. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N32",
+        "original_verdict": "NUOVA_ALTO_RISCHIO",
+        "reference_repositories": [
+          "LifetimeLabsHQ/PrivacyNotes.app"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0193",
+      "title": "Diario testuale portable e operazioni CLI per data",
+      "domain": "interoperabilita",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Diario testuale portable e operazioni CLI per data. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "CmdPocket": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Per Anna prodotto UI-first; CLI solo interop opzionale",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 70,
+        "CmdPocket": 70
+      },
+      "app_product_decisions": {
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "CmdPocket": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0014",
+        "CAP-0150",
+        "CAP-0018"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Diario testuale portable e operazioni CLI per data. Non duplicare la responsabilita delle CAP CAP-0014, CAP-0150, CAP-0018. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N33",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "AmmarAbouZor/tui-journal",
+          "jrnl-org/jrnl",
+          "vimwiki/vimwiki"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0194",
+      "title": "Command palette e scorciatoie tastiera contestuali",
+      "domain": "esperienza",
+      "score": 81,
+      "priority": "P2",
+      "scores": {
+        "user_value": 5,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Command palette e scorciatoie tastiera contestuali. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "CmdPocket": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Ricerca e azioni limitate ai permessi correnti",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70,
+        "CmdPocket": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "CmdPocket": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0118",
+        "CAP-0023",
+        "CAP-0098"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Command palette e scorciatoie tastiera contestuali. Non duplicare la responsabilita delle CAP CAP-0118, CAP-0023, CAP-0098. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N34",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "AppFlowy-IO/appflowy-editor",
+          "foambubble/foam",
+          "dendronhq/dendron",
+          "shuaiplus/inkstone",
+          "Pikos-App/pikos",
+          "massCodeIO/massCode",
+          "codex-team/editor.js",
+          "Milkdown/milkdown"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0195",
+      "title": "Timesheet esportabili e report settimanali per progetto",
+      "domain": "analisi",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Timesheet esportabili e report settimanali per progetto. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Work-Time-Keeper": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Misure da sessioni reali, timezone e no inventare lavoro",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Work-Time-Keeper": 79,
+        "Notes-Ecosistema": 70
+      },
+      "app_product_decisions": {
+        "Work-Time-Keeper": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0108",
+        "CAP-0109",
+        "CAP-0105"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Timesheet esportabili e report settimanali per progetto. Non duplicare la responsabilita delle CAP CAP-0108, CAP-0109, CAP-0105. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N35",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "super-productivity/super-productivity",
+          "donetick/donetick",
+          "opf/openproject",
+          "wernerkruger/vscode-daily-planner",
+          "JerryZLiu/Dayflow",
+          "ActivityWatch/activitywatch",
+          "wakatime/wakatime-cli",
+          "projecthamster/hamster",
+          "jazzband/Watson"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0196",
+      "title": "Archivio documenti indicizzato con classificazione e retention",
+      "domain": "documenti",
+      "score": 74,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 4,
+        "evidence_strength": 1,
+        "risk_control": 4
+      },
+      "description": "Contratto E0 di ricerca: Archivio documenti indicizzato con classificazione e retention. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "PDF-Unifier": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Distinguere OCR CAP-0035, triage CAP-0134 e vault documenti",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 70,
+        "PDF-Unifier": 70
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "PDF-Unifier": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0035",
+        "CAP-0134"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Archivio documenti indicizzato con classificazione e retention. Non duplicare la responsabilita delle CAP CAP-0035, CAP-0134. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N36",
+        "original_verdict": "ESTENSIONE_DA_VERIFICARE",
+        "reference_repositories": [
+          "paperless-ngx/paperless-ngx"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0197",
+      "title": "Marcatura attività tramite NFC volontario",
+      "domain": "android",
+      "score": 68,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 3,
+        "evidence_strength": 1,
+        "risk_control": 3
+      },
+      "description": "Contratto E0 di ricerca: Marcatura attività tramite NFC volontario. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Agenda-per-Anna": "PROPOSTA",
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Richiede NFC, conferma o revoca in shared-space",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Agenda-per-Anna": 47,
+        "Notes-Ecosistema": 55
+      },
+      "app_product_decisions": {
+        "Agenda-per-Anna": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0096"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Marcatura attività tramite NFC volontario. Non duplicare la responsabilita delle CAP CAP-0096. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N37",
+        "original_verdict": "NUOVA_PROPOSTA",
+        "reference_repositories": [
+          "donetick/donetick"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0198",
+      "title": "Cattura audio di sistema e trascrizione locale consensuale",
+      "domain": "voce",
+      "score": 57,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 3,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Cattura audio di sistema e trascrizione locale consensuale. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Estende CAP-0085/0095; permessi OEM, consenso partecipanti e costo runtime",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 34
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0085",
+        "CAP-0095",
+        "CAP-0031"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Cattura audio di sistema e trascrizione locale consensuale. Non duplicare la responsabilita delle CAP CAP-0085, CAP-0095, CAP-0031. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N38",
+        "original_verdict": "NUOVA_POTENZIALE",
+        "reference_repositories": [
+          "Zackriya-Solutions/meetily",
+          "layzdonw/lazyaudio",
+          "amicalhq/prismical",
+          "ggml-org/whisper.cpp"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
+    },
+    {
+      "id": "CAP-0199",
+      "title": "Interfaccia MCP/API locale per lettura controllata di agenda e task",
+      "domain": "integrazione",
+      "score": 62,
+      "priority": "P3",
+      "scores": {
+        "user_value": 4,
+        "cross_app_reuse": 4,
+        "feasibility": 2,
+        "evidence_strength": 1,
+        "risk_control": 2
+      },
+      "description": "Contratto E0 di ricerca: Interfaccia MCP/API locale per lettura controllata di agenda e task. Input solo consentiti, preview e writer canonico dopo conferma; nessun motore parallelo.",
+      "app_states": {
+        "Notes-Ecosistema": "PROPOSTA",
+        "CmdPocket": "PROPOSTA"
+      },
+      "source": {
+        "type": "OSS95_README_E0",
+        "ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "next_gate": "Sandbox, autorizzazioni, no accesso al Vault o chiavi",
+      "reviewed_at": "2026-11-08",
+      "certification": "NOT_VERIFIED_IN_APP_E0",
+      "source_evidence_grade": "E0_SPEC_ONLY",
+      "integration_ease_percent": {
+        "Notes-Ecosistema": 34,
+        "CmdPocket": 28
+      },
+      "app_product_decisions": {
+        "Notes-Ecosistema": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        },
+        "CmdPocket": {
+          "decision": "DA_VALUTARE",
+          "approved_roadmap": false,
+          "origin": "OSS95_RESEARCH_FORMALIZATION"
+        }
+      },
+      "upstream_capabilities": [
+        "CAP-0004",
+        "CAP-0002"
+      ],
+      "non_duplication_scope": "Delta circoscritto a Interfaccia MCP/API locale per lettura controllata di agenda e task. Non duplicare la responsabilita delle CAP CAP-0004, CAP-0002. Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice.",
+      "oss95_formalization_20261108": {
+        "working_id": "OSS95-N40",
+        "original_verdict": "NUOVA_CONSENSO_OBBLIGATORIO",
+        "reference_repositories": [
+          "Pikos-App/pikos"
+        ],
+        "status": "E0_FORMALIZED_PROPOSAL_NOT_PRODUCT_ADOPTION",
+        "factory": "riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+        "scoring": "FORMULA_WITH_EVIDENCE_STRENGTH_1",
+        "integration_ease": "RISK_BASED_HEURISTIC_NOT_PROBABILITY",
+        "product_approved": false,
+        "app_implementation_verified": false,
+        "donor_code_reuse_cleared": false
+      }
     }
   ],
   "score_audit_revision": "v28-full-scope-20261104",
@@ -18993,7 +21391,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0161",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N02",
@@ -19013,7 +21413,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0162",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N03",
@@ -19028,7 +21430,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0163",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N04",
@@ -19044,7 +21448,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0164",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N05",
@@ -19065,7 +21471,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0165",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N06",
@@ -19087,7 +21495,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0166",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N07",
@@ -19105,7 +21515,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0167",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N08",
@@ -19126,7 +21538,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0168",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N09",
@@ -19143,7 +21557,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0169",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N10",
@@ -19156,7 +21572,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0170",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N11",
@@ -19170,7 +21588,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0171",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N12",
@@ -19183,7 +21603,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0172",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N13",
@@ -19197,7 +21619,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0173",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N14",
@@ -19212,7 +21636,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0174",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N15",
@@ -19230,7 +21656,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0175",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N16",
@@ -19244,7 +21672,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0176",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N17",
@@ -19257,7 +21687,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0177",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N18",
@@ -19270,7 +21702,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0178",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N19",
@@ -19283,7 +21717,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0179",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N20",
@@ -19298,7 +21734,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0180",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N21",
@@ -19315,7 +21753,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0181",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N22",
@@ -19329,7 +21769,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0182",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N23",
@@ -19345,7 +21787,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0183",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N24",
@@ -19363,7 +21807,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0184",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N25",
@@ -19382,7 +21828,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0185",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N26",
@@ -19400,7 +21848,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0186",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N27",
@@ -19417,7 +21867,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0187",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N28",
@@ -19434,7 +21886,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0188",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N29",
@@ -19447,7 +21901,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0189",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N30",
@@ -19460,7 +21916,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0190",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N31",
@@ -19473,7 +21931,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0191",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N32",
@@ -19486,7 +21946,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0192",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N33",
@@ -19501,7 +21963,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0193",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N34",
@@ -19521,7 +21985,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0194",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N35",
@@ -19542,7 +22008,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0195",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N36",
@@ -19555,7 +22023,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0196",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N37",
@@ -19568,7 +22038,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0197",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N38",
@@ -19584,7 +22056,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0198",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       },
       {
         "working_id": "OSS95-N40",
@@ -19597,7 +22071,9 @@
         ],
         "evidence_level": "E0_OSSDOC_RESEARCH_ONLY",
         "product_decision": "DA_VALUTARE",
-        "implementation_in_app": "NOT_INFERRED"
+        "implementation_in_app": "NOT_INFERRED",
+        "formalized_cap_id": "CAP-0199",
+        "formalization": "ADMITTED_E0 / APP_PRODUCT_DA_VALUTARE"
       }
     ],
     "license_file_followup_20261108": {
@@ -19620,6 +22096,18 @@
       "feature_facets_added": 0,
       "implementation_states_promoted": 0,
       "reason": "Real license terms govern code reuse; metadata missing is not license-free. Keep all capabilities eligible for research independently."
+    },
+    "formalization_20261108": {
+      "date": "2026-11-08",
+      "admitted": 39,
+      "range": [
+        "CAP-0161",
+        "CAP-0199"
+      ],
+      "new_assoc": 56,
+      "total_cap": 199,
+      "total_assoc": 441,
+      "meaning": "Research contracts; does not approve products or certify implementations"
     }
   }
 }

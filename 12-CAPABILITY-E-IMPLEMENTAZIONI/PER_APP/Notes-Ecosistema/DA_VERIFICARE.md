@@ -23,4 +23,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | [CAP-0033](../../REGISTRO_CAPABILITY/CAP-0033.md) | Modello Needle 3 on demand Plus | 76 | 60% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0033/README.md) | Play delivery benchmark e entitlement non auto concesso |
 | [CAP-0112](../../REGISTRO_CAPABILITY/CAP-0112.md) | Flashcard e ripasso dilazionato collegati alle note | 75 | 91% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0112/README.md) | Riusare note e pianificatore CAP-0099; SRS deterministico, contenuti modificabili, licenza delle skill esterne da verificare; nessun modello AI pesante bundled. |
 
-**Totale associazioni app:** 88. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 120. Nessuna modifica alla roadmap o al codice dell'app.

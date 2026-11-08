@@ -1,10 +1,10 @@
-# Stato delle implementazioni — audit 2026-11-04
+# Stato delle implementazioni — audit 2026-11-08
 
 Gli stati sono **per app**, non globali. `SOURCE_REPORTED` indica fonte repo/audit consultata, non esecuzione del codice ne CI/DEVICE PASS verificati in questa sessione.
 
 | Stato | Associamenti app-capability | Interpretazione |
 | --- | --- | --- |
-| PROPOSTA | 258 | Idea non approvata / nessun codice verificato qui |
+| PROPOSTA | 314 | Idea non approvata / nessun codice verificato qui |
 | ROADMAP_STORICA | 15 | Indicata in roadmap o decisione storica; richiede verifica live |
 | SOURCE_REPORTED | 98 | Roadmap/audit dichiara sorgente presente; non provato runtime in questo audit |
 | DONOR_REPORTED | 2 | Repo donor documentato; riuso non ancora validato |

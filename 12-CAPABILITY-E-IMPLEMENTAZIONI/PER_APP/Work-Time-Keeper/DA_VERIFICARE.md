@@ -6,4 +6,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 
 _Nessuna voce in questa sezione._
 
-**Totale associazioni app:** 1. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 4. Nessuna modifica alla roadmap o al codice dell'app.
