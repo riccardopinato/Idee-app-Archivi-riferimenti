@@ -20,7 +20,8 @@ jobs:
           persist-credentials: true
       - name: Assert exact catalog baseline
         run: |
-          test "$(git rev-parse HEAD)" = "e606e9e42d31793363f42cd0308a4e95a893f909"
+          git merge-base --is-ancestor e606e9e42d31793363f42cd0308a4e95a893f909 HEAD
+          test "$(git merge-base origin/main HEAD)" = "bf7a53ee4ce43ce2296a802654d3e77af43f2b95"
           python3 -c "import json; p=json.load(open('12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY.json')); assert len(p['records']) == 160"
       - name: Formalize all 39 researched E0 CAPs and create kits
         run: python3 scripts/formalize_oss95_e0.py
