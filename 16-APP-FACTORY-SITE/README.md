@@ -13,3 +13,14 @@ La dashboard HTML locale usa il JSON in `data/snapshot.json` come input pubblico
 **Consegne/policy:** solo Chat, mai Work; Flutter come default nuovi progetti mobile; codice completo e APK quando applicabile; branch/PR, exact-head CI e gate di verifica rispettati.
 
 **Riservatezza:** questo repository è pubblico. Non aggiungere informazioni private, segreti, token o dati sensibili al JSON. Se una fonte non è condivisibile pubblicamente, registrare solo metadati non sensibili o bloccare l'esportazione.
+
+
+## Donor & Golden — Site v2 · 8 novembre 2026
+
+Il sorgente HTML della pagina ora è versionato in [src/index.html](src/index.html), invece di vivere soltanto in un deployment Vercel senza Git link. Il dataset pubblico [data/snapshot.json](data/snapshot.json) si basa su Factory Golden Index **v29** al commit `5a34d12f826d0de8cef223036cc074b9dbdaff4d`.
+
+La sezione Donor & Golden presenta **61 Golden ufficiali (inclusi draft/processi)** e **20 Passport per capability** da **17 donor**; **9** Passport E3 nuovi, **2** Golden E5 a perimetro ristretto. Nel catalogo CAP sono conservate **199 CAP e 441 associazioni su 48 app/idee**. Il loro stato non equivale a dispositivo/test release.
+
+**Storico e dati manuali:** la chiave localStorage `appfactory-control-center-v1` non cambia. `syncGitHub` importa i record Golden/Capability e i Passport in sola lettura; i record protetti manualmente continuano a prevalere. Evitare reset dello storage e sostituzioni distruttive. I donor fanno parte della snapshot pubblica; nessuna chiave GitHub/Vercel nel browser. Filtri client-side senza round-trip verso GitHub.
+
+**Gate:** `python3 -m unittest discover -s tests -p site_snapshot_test.py -v`; workflow [App Factory Site snapshot](../../.github/workflows/app-factory-site-snapshot.yml). Deploy Vercel tramite HTML statico (attuale progetto senza Git repository collegato) dopo la PR/CI, con check del dominio produttivo.
