@@ -6,7 +6,7 @@
 - Dedup contro le **199 CAP** correnti: **0 nuovi CAP**, **0 associazioni**, **0 transizioni di stato/decisione prodotto**. Fonte esterna E0 per pattern/learning, non donor né Golden.
 - Audit campionato su repository e percorsi Flutter: lazy lists presenti in Anna/Notes; World Days due schermate a costruzione eager **da benchmarkare**; Anna backend IO/Web condizionale; World Days content-pack temporanei e rollback; CamperBoss geolocation service/permission health; TrailPath stack moderno documentato. Nessun bug di performance e nessun comportamento dispositivo dichiarati provati.
 - Nessuna modifica a repo delle app, App Factory Core, AppLab, cloud, dati o rilasci. Zero promozioni Golden; scan completo su checkout e benchmark restano gate successivi.
-- Aggiunto strumento Python read-only per segnali di API Flutter legacy (JSON file/line) e due unit test sintetici PASS in ambiente locale; non equivale a scansione totale dei sorgenti.
+- Aggiunto strumento Python read-only per segnali di API Flutter legacy (JSON file/line) e quattro unit test sintetici PASS in ambiente locale + test CI della deduplicazione crosswalk; non equivale a scansione totale dei sorgenti.
 
 ## 2026-11-08 — Vision Board lotto 2: 20 segnalazioni / 19 fonti nuove
 
