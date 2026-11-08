@@ -1,0 +1,1150 @@
+{
+  "batch": 2,
+  "date": "2026-11-08",
+  "source_commit_baseline": "462f9f382b0edf6f1f1e77212855b50ed214f452",
+  "records": [
+    {
+      "id": "VBR-0021",
+      "input_position": 21,
+      "input_batch": 2,
+      "input_label": "tldraw/tldraw",
+      "input_url": "https://github.com/tldraw/tldraw",
+      "canonical_url": "https://github.com/tldraw/tldraw",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "tldraw/tldraw",
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": "main",
+      "source_sha": "69f43954f15a171b3a6edb45134d27b71560de02",
+      "source_path": "packages/editor/src/lib/editor/Editor.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "CUSTOM_DEV_ONLY_PRODUCTION_LICENSE_REQUIRED",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR",
+        "UX_REFERENCE"
+      ],
+      "capability_matches": [
+        "CAP-0028",
+        "CAP-0029"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1_reference",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "React infinite canvas SDK with shapes, bindings, assets, history and multiplayer. Editor.ts manages the object/record graph.",
+      "limitations": "Production deployments need a valid license or agreement; license key enforcement/telemetry documented; not native Flutter.",
+      "evidence_refs": [
+        "https://github.com/tldraw/tldraw/commit/69f43954f15a171b3a6edb45134d27b71560de02",
+        "https://github.com/tldraw/tldraw/blob/69f43954f15a171b3a6edb45134d27b71560de02/README.md",
+        "https://github.com/tldraw/tldraw/blob/69f43954f15a171b3a6edb45134d27b71560de02/packages/editor/src/lib/editor/Editor.ts",
+        "https://github.com/tldraw/tldraw/blob/69f43954f15a171b3a6edb45134d27b71560de02/LICENSE.md"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0021.md"
+    },
+    {
+      "id": "VBR-0022",
+      "input_position": 22,
+      "input_batch": 2,
+      "input_label": "excalidraw/excalidraw",
+      "input_url": "https://github.com/excalidraw/excalidraw",
+      "canonical_url": "https://github.com/excalidraw/excalidraw",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "excalidraw/excalidraw",
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": "master",
+      "source_sha": "701b901a0f1ba3d0b390d9cdf63d112e25abac4b",
+      "source_path": "packages/element/src/Scene.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_FILE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "GOLDEN_CANDIDATE"
+      ],
+      "capability_matches": [
+        "CAP-0028",
+        "CAP-0029",
+        "CAP-0149"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Excalidraw hand-drawn infinite canvas; Scene.ts manages scene elements including ordering, deletion and selection; .excalidraw export documented.",
+      "limitations": "React/TypeScript, not Dart; standalone app E2EE/collab differs from npm editor; codec is not JSON Canvas.",
+      "evidence_refs": [
+        "https://github.com/excalidraw/excalidraw/commit/701b901a0f1ba3d0b390d9cdf63d112e25abac4b",
+        "https://github.com/excalidraw/excalidraw/blob/701b901a0f1ba3d0b390d9cdf63d112e25abac4b/README.md",
+        "https://github.com/excalidraw/excalidraw/blob/701b901a0f1ba3d0b390d9cdf63d112e25abac4b/packages/element/src/Scene.ts",
+        "https://github.com/excalidraw/excalidraw/blob/701b901a0f1ba3d0b390d9cdf63d112e25abac4b/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0022.md"
+    },
+    {
+      "id": "VBR-0023",
+      "input_position": 23,
+      "input_batch": 2,
+      "input_label": "toeverything/AFFiNE",
+      "input_url": "https://github.com/toeverything/AFFiNE",
+      "canonical_url": "https://github.com/toeverything/AFFiNE",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "toeverything/AFFiNE",
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": "canary",
+      "source_sha": "ef401b20cb2a5960278a8e7ab2c0e96d8f759aeb",
+      "source_path": "blocksuite/affine/gfx/mindmap/src/store.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIXED_MIT_MPL2_EE_FILE_SCOPE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR",
+        "GOLDEN_CANDIDATE"
+      ],
+      "capability_matches": [
+        "CAP-0029",
+        "CAP-0098",
+        "CAP-0094"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Hybrid docs and edgeless graphics; mindmap store registers Markdown/plain-text adapters for mind maps.",
+      "limitations": "Root license generally MIT outside selected dirs; backend/server EE with MPL CE/client carveouts. Package-level licensing essential.",
+      "evidence_refs": [
+        "https://github.com/toeverything/AFFiNE/commit/ef401b20cb2a5960278a8e7ab2c0e96d8f759aeb",
+        "https://github.com/toeverything/AFFiNE/blob/ef401b20cb2a5960278a8e7ab2c0e96d8f759aeb/README.md",
+        "https://github.com/toeverything/AFFiNE/blob/ef401b20cb2a5960278a8e7ab2c0e96d8f759aeb/blocksuite/affine/gfx/mindmap/src/store.ts",
+        "https://github.com/toeverything/AFFiNE/blob/ef401b20cb2a5960278a8e7ab2c0e96d8f759aeb/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0023.md"
+    },
+    {
+      "id": "VBR-0024",
+      "input_position": 24,
+      "input_batch": 2,
+      "input_label": "Mymind Clone — topic alias senza URL verificato",
+      "input_url": null,
+      "canonical_url": null,
+      "source_kind": "UNVERIFIED_TOPIC_ALIAS",
+      "repository_full_name": null,
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_DISCOVERY_REFERENCE",
+      "status": "TOPIC_ALIAS_UNVERIFIED",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Topic/directory di ricerca, non repository. Nessuna capacità attribuita alle entry individuali.",
+      "limitations": "Nessun commit, codice o LICENSE della pagina Topics.",
+      "evidence_refs": [],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Select and pin actual individual repositories",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0024.md"
+    },
+    {
+      "id": "VBR-0025",
+      "input_position": 25,
+      "input_batch": 2,
+      "input_label": "strabil/react-grid-layout",
+      "input_url": "https://github.com/strabil/react-grid-layout",
+      "canonical_url": "https://github.com/react-grid-layout/react-grid-layout",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "react-grid-layout/react-grid-layout",
+      "reported_alias": "strabil/react-grid-layout",
+      "upstream": null,
+      "source_branch": "master",
+      "source_sha": "f0dd77c5b2fee2d2cb09541d220c00d6814c7242",
+      "source_path": "src/core/compactors.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_FILE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0029",
+        "CAP-0147"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "React Grid Layout v2 includes framework-independent TypeScript compaction/collision algorithms and responsive grid renderer.",
+      "limitations": "Original owner 'strabil' was incorrect; canonical owner react-grid-layout. Needs Dart port for Flutter.",
+      "evidence_refs": [
+        "https://github.com/react-grid-layout/react-grid-layout/commit/f0dd77c5b2fee2d2cb09541d220c00d6814c7242",
+        "https://github.com/react-grid-layout/react-grid-layout/blob/f0dd77c5b2fee2d2cb09541d220c00d6814c7242/README.md",
+        "https://github.com/react-grid-layout/react-grid-layout/blob/f0dd77c5b2fee2d2cb09541d220c00d6814c7242/src/core/compactors.ts",
+        "https://github.com/react-grid-layout/react-grid-layout/blob/f0dd77c5b2fee2d2cb09541d220c00d6814c7242/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0025.md"
+    },
+    {
+      "id": "VBR-0026",
+      "input_position": 26,
+      "input_batch": 2,
+      "input_label": "haltsu/muuri",
+      "input_url": "https://github.com/haltsu/muuri",
+      "canonical_url": "https://github.com/haltu/muuri",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "haltu/muuri",
+      "reported_alias": "haltsu/muuri",
+      "upstream": null,
+      "source_branch": "master",
+      "source_sha": "219e00893327dc22cf241103bef0ca63ee6fde2e",
+      "source_path": "src/Item/Item.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_FILE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0094",
+        "CAP-0147"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Muuri supports draggable/filterable/sortable responsive grids; Item.js handles item geometry/drag/layout lifecycle.",
+      "limitations": "Input 'haltsu' misspelled owner: haltu. DOM/JS architecture needs translation for Flutter; last push 2024.",
+      "evidence_refs": [
+        "https://github.com/haltu/muuri/commit/219e00893327dc22cf241103bef0ca63ee6fde2e",
+        "https://github.com/haltu/muuri/blob/219e00893327dc22cf241103bef0ca63ee6fde2e/README.md",
+        "https://github.com/haltu/muuri/blob/219e00893327dc22cf241103bef0ca63ee6fde2e/src/Item/Item.js",
+        "https://github.com/haltu/muuri/blob/219e00893327dc22cf241103bef0ca63ee6fde2e/LICENSE.md"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0026.md"
+    },
+    {
+      "id": "VBR-0027",
+      "input_position": 27,
+      "input_batch": 2,
+      "input_label": "GitHub Topics — bullet-journal",
+      "input_url": "https://github.com/topics/bullet-journal",
+      "canonical_url": "https://github.com/topics/bullet-journal",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_DISCOVERY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Topic/directory di ricerca, non repository. Nessuna capacità attribuita alle entry individuali.",
+      "limitations": "Nessun commit, codice o LICENSE della pagina Topics.",
+      "evidence_refs": [
+        "https://github.com/topics/bullet-journal"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Select and pin actual individual repositories",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0027.md"
+    },
+    {
+      "id": "VBR-0028",
+      "input_position": 28,
+      "input_batch": 2,
+      "input_label": "AppFlowy-IO/AppFlowy",
+      "input_url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "canonical_url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "AppFlowy-IO/AppFlowy",
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": "main",
+      "source_sha": "8fcee27d9bd93aad4ee0191d5d8d915d6a9a4e93",
+      "source_path": "frontend/appflowy_flutter/lib/plugins/database/board/board.dart",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "AGPL_3_SOURCE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0094",
+        "CAP-0099"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Flutter+Rust workspace; board.dart declares a Board plugin based on ViewLayoutPB.Board over database entities.",
+      "limitations": "AGPL/copyleft compliance required before copying into any closed-source app; module is not a standalone Flutter package.",
+      "evidence_refs": [
+        "https://github.com/AppFlowy-IO/AppFlowy/commit/8fcee27d9bd93aad4ee0191d5d8d915d6a9a4e93",
+        "https://github.com/AppFlowy-IO/AppFlowy/blob/8fcee27d9bd93aad4ee0191d5d8d915d6a9a4e93/README.md",
+        "https://github.com/AppFlowy-IO/AppFlowy/blob/8fcee27d9bd93aad4ee0191d5d8d915d6a9a4e93/frontend/appflowy_flutter/lib/plugins/database/board/board.dart",
+        "https://github.com/AppFlowy-IO/AppFlowy/blob/8fcee27d9bd93aad4ee0191d5d8d915d6a9a4e93/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0028.md"
+    },
+    {
+      "id": "VBR-0029",
+      "input_position": 29,
+      "input_batch": 2,
+      "input_label": "GitHub Topics — daily-journal",
+      "input_url": "https://github.com/topics/daily-journal",
+      "canonical_url": "https://github.com/topics/daily-journal",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_DISCOVERY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Topic/directory di ricerca, non repository. Nessuna capacità attribuita alle entry individuali.",
+      "limitations": "Nessun commit, codice o LICENSE della pagina Topics.",
+      "evidence_refs": [
+        "https://github.com/topics/daily-journal"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Select and pin actual individual repositories",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0029.md"
+    },
+    {
+      "id": "VBR-0030",
+      "input_position": 30,
+      "input_batch": 2,
+      "input_label": "GitHub Topics — life-os",
+      "input_url": "https://github.com/topics/life-os",
+      "canonical_url": "https://github.com/topics/life-os",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_DISCOVERY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Topic/directory di ricerca, non repository. Nessuna capacità attribuita alle entry individuali.",
+      "limitations": "Nessun commit, codice o LICENSE della pagina Topics.",
+      "evidence_refs": [
+        "https://github.com/topics/life-os"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Select and pin actual individual repositories",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0030.md"
+    },
+    {
+      "id": "VBR-0031",
+      "input_position": 31,
+      "input_batch": 2,
+      "input_label": "GitHub Topics — habit-tracker",
+      "input_url": "https://github.com/topics/habit-tracker",
+      "canonical_url": "https://github.com/topics/habit-tracker",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_DISCOVERY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Topic/directory di ricerca, non repository. Nessuna capacità attribuita alle entry individuali.",
+      "limitations": "Nessun commit, codice o LICENSE della pagina Topics.",
+      "evidence_refs": [
+        "https://github.com/topics/habit-tracker"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Select and pin actual individual repositories",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0031.md"
+    },
+    {
+      "id": "VBR-0032",
+      "input_position": 32,
+      "input_batch": 2,
+      "input_label": "GitHub Topics — pinterest-clone",
+      "input_url": "https://github.com/topics/pinterest-clone",
+      "canonical_url": "https://github.com/topics/pinterest-clone",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_DISCOVERY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Topic/directory di ricerca, non repository. Nessuna capacità attribuita alle entry individuali.",
+      "limitations": "Nessun commit, codice o LICENSE della pagina Topics.",
+      "evidence_refs": [
+        "https://github.com/topics/pinterest-clone"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Select and pin actual individual repositories",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0032.md"
+    },
+    {
+      "id": "VBR-0033",
+      "input_position": 33,
+      "input_batch": 2,
+      "input_label": "desandro/masonry",
+      "input_url": "https://github.com/desandro/masonry",
+      "canonical_url": "https://github.com/desandro/masonry",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "desandro/masonry",
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": "master",
+      "source_sha": "3b0883cf4a4a046896719b9cf282ea74be7ffecd",
+      "source_path": "masonry.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_README_SOURCE_BANNER",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0029",
+        "CAP-0147"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Masonry's masonry.js places variable-sized blocks by column height (colYs), with calculated columns and gutter.",
+      "limitations": "MIT attested by README and source banner; no LICENSE root. Outlayer/get-size dependencies need individual audit; not infinite canvas.",
+      "evidence_refs": [
+        "https://github.com/desandro/masonry/commit/3b0883cf4a4a046896719b9cf282ea74be7ffecd",
+        "https://github.com/desandro/masonry/blob/3b0883cf4a4a046896719b9cf282ea74be7ffecd/README.md",
+        "https://github.com/desandro/masonry/blob/3b0883cf4a4a046896719b9cf282ea74be7ffecd/masonry.js",
+        "https://github.com/desandro/masonry/blob/3b0883cf4a4a046896719b9cf282ea74be7ffecd/README.md"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0033.md"
+    },
+    {
+      "id": "VBR-0034",
+      "input_position": 34,
+      "input_batch": 2,
+      "input_label": "fabricjs/fabric.js",
+      "input_url": "https://github.com/fabricjs/fabric.js",
+      "canonical_url": "https://github.com/fabricjs/fabric.js",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "fabricjs/fabric.js",
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": "master",
+      "source_sha": "5157cd00903e75da3240eb3c952adc4c71ba8ab2",
+      "source_path": "packages/core/src/canvas/StaticCanvas.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_FILE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "GOLDEN_CANDIDATE"
+      ],
+      "capability_matches": [
+        "CAP-0029",
+        "CAP-0149",
+        "CAP-0136"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Fabric canvas object graph supports matrix transforms, zoom, SVG/JSON serialization and interactive editing.",
+      "limitations": "HTML Canvas JS not Flutter; image cropping/transforms are not automatic ML background removal; media ownership separate.",
+      "evidence_refs": [
+        "https://github.com/fabricjs/fabric.js/commit/5157cd00903e75da3240eb3c952adc4c71ba8ab2",
+        "https://github.com/fabricjs/fabric.js/blob/5157cd00903e75da3240eb3c952adc4c71ba8ab2/README.md",
+        "https://github.com/fabricjs/fabric.js/blob/5157cd00903e75da3240eb3c952adc4c71ba8ab2/packages/core/src/canvas/StaticCanvas.ts",
+        "https://github.com/fabricjs/fabric.js/blob/5157cd00903e75da3240eb3c952adc4c71ba8ab2/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0034.md"
+    },
+    {
+      "id": "VBR-0035",
+      "input_position": 35,
+      "input_batch": 2,
+      "input_label": "valentino-g/react-easy-crop",
+      "input_url": "https://github.com/valentino-g/react-easy-crop",
+      "canonical_url": "https://github.com/ValentinH/react-easy-crop",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "ValentinH/react-easy-crop",
+      "reported_alias": "valentino-g/react-easy-crop",
+      "upstream": null,
+      "source_branch": "main",
+      "source_sha": "91bfd8f0928ead345e5126a539edab4657d82993",
+      "source_path": "src/helpers.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_FILE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0136"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        }
+      },
+      "summary": "React Easy Crop helpers compute aspect/rotation crop geometry, zoom, restriction bounds and pixel crop regions.",
+      "limitations": "Input 'valentino-g' was not canonical; actual ValentinH. Geometric crop != smart cutout CAP-0136; port Dart.",
+      "evidence_refs": [
+        "https://github.com/ValentinH/react-easy-crop/commit/91bfd8f0928ead345e5126a539edab4657d82993",
+        "https://github.com/ValentinH/react-easy-crop/blob/91bfd8f0928ead345e5126a539edab4657d82993/README.md",
+        "https://github.com/ValentinH/react-easy-crop/blob/91bfd8f0928ead345e5126a539edab4657d82993/src/helpers.ts",
+        "https://github.com/ValentinH/react-easy-crop/blob/91bfd8f0928ead345e5126a539edab4657d82993/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0035.md"
+    },
+    {
+      "id": "VBR-0036",
+      "input_position": 36,
+      "input_batch": 2,
+      "input_label": "scaleflex/filerobot-image-editor",
+      "input_url": "https://github.com/scaleflex/filerobot-image-editor",
+      "canonical_url": "https://github.com/scaleflex/filerobot-image-editor",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "scaleflex/filerobot-image-editor",
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": "master",
+      "source_sha": "a7cce3173cb380c4900b9cb9fb8d91f7f33a7a26",
+      "source_path": "packages/filerobot-image-editor/src/index.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_FILE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "UX_REFERENCE"
+      ],
+      "capability_matches": [
+        "CAP-0029",
+        "CAP-0075"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        }
+      },
+      "summary": "React/browser photo editor with crop, filter, annotate, undo and export; index.js exposes editor mounting and image data/update methods.",
+      "limitations": "Potential WebView and APK size cost; avoid heavyweight editor for minimal diary photo crop, benchmark first.",
+      "evidence_refs": [
+        "https://github.com/scaleflex/filerobot-image-editor/commit/a7cce3173cb380c4900b9cb9fb8d91f7f33a7a26",
+        "https://github.com/scaleflex/filerobot-image-editor/blob/a7cce3173cb380c4900b9cb9fb8d91f7f33a7a26/README.md",
+        "https://github.com/scaleflex/filerobot-image-editor/blob/a7cce3173cb380c4900b9cb9fb8d91f7f33a7a26/packages/filerobot-image-editor/src/index.js",
+        "https://github.com/scaleflex/filerobot-image-editor/blob/a7cce3173cb380c4900b9cb9fb8d91f7f33a7a26/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0036.md"
+    },
+    {
+      "id": "VBR-0037",
+      "input_position": 38,
+      "input_batch": 2,
+      "input_label": "planka/planka",
+      "input_url": "https://github.com/planka/planka",
+      "canonical_url": "https://github.com/plankanban/planka",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "plankanban/planka",
+      "reported_alias": "planka/planka",
+      "upstream": null,
+      "source_branch": "master",
+      "source_sha": "2cf423824a09f84df7dc3acf0ded9a700292d882",
+      "source_path": "client/src/models/Card.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "PLANKA_FAIR_USE_V1_1_PRO_RESTRICTED",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0094",
+        "CAP-0099",
+        "CAP-0104"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Kanban card/list/project schema with due dates, attachments and ordering; Card.js uses redux-orm relations.",
+      "limitations": "PLANKA Community Fair Use has commercial-hosting restrictions; Pro files excluded and calendar/timeline/map/export are Pro, not free community donor.",
+      "evidence_refs": [
+        "https://github.com/plankanban/planka/commit/2cf423824a09f84df7dc3acf0ded9a700292d882",
+        "https://github.com/plankanban/planka/blob/2cf423824a09f84df7dc3acf0ded9a700292d882/README.md",
+        "https://github.com/plankanban/planka/blob/2cf423824a09f84df7dc3acf0ded9a700292d882/client/src/models/Card.js",
+        "https://github.com/plankanban/planka/blob/2cf423824a09f84df7dc3acf0ded9a700292d882/LICENSE.md"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0037.md"
+    },
+    {
+      "id": "VBR-0038",
+      "input_position": 39,
+      "input_batch": 2,
+      "input_label": "wekan/wekan",
+      "input_url": "https://github.com/wekan/wekan",
+      "canonical_url": "https://github.com/wekan/wekan",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "wekan/wekan",
+      "reported_alias": null,
+      "upstream": null,
+      "source_branch": "main",
+      "source_sha": "246ba448384d4811f2b134ba1a24a985ce143fea",
+      "source_path": "models/cards.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_FILE",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR",
+        "CODE_DONOR_CANDIDATE"
+      ],
+      "capability_matches": [
+        "CAP-0094",
+        "CAP-0099",
+        "CAP-0075"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Meteor Kanban: card model includes recurrence, dependencies, attachments, board metadata and import/export options.",
+      "limitations": "Large Meteor/Mongo stack not suitable for direct Flutter integration; import compatibility is not tested here.",
+      "evidence_refs": [
+        "https://github.com/wekan/wekan/commit/246ba448384d4811f2b134ba1a24a985ce143fea",
+        "https://github.com/wekan/wekan/blob/246ba448384d4811f2b134ba1a24a985ce143fea/README.md",
+        "https://github.com/wekan/wekan/blob/246ba448384d4811f2b134ba1a24a985ce143fea/models/cards.js",
+        "https://github.com/wekan/wekan/blob/246ba448384d4811f2b134ba1a24a985ce143fea/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0038.md"
+    },
+    {
+      "id": "VBR-0039",
+      "input_position": 40,
+      "input_batch": 2,
+      "input_label": "mattermost/focalboard",
+      "input_url": "https://github.com/mattermost/focalboard",
+      "canonical_url": "https://github.com/mattermost-community/focalboard",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "mattermost-community/focalboard",
+      "reported_alias": "mattermost/focalboard",
+      "upstream": null,
+      "source_branch": "main",
+      "source_sha": "a84bbb65e32edf972856b329417096ac413518e9",
+      "source_path": "webapp/src/blocks/boardView.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_SOURCE_AND_LICENSE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "AGPL_3_SOURCE_APACHE2_EXCEPTIONS_MIT_COMPILED_ONLY",
+        "external_assets": "SEPARATE_REVIEW_REQUIRED"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0094",
+        "CAP-0104",
+        "CAP-0147"
+      ],
+      "golden_matches": [
+        "EXISTING_INFINITE_CANVAS_AND_MEDIA_STORE_DRAFT_REUSE_FIRST"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1_reference",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "BoardView.ts defines views board/table/gallery/calendar over blocks with filters, sorting, columns and properties.",
+      "limitations": "Input mattermost/focalboard was moved; current mattermost-community/focalboard states not maintained. Source AGPL except specified Apache2 paths; Mattermost-compiled binaries MIT.",
+      "evidence_refs": [
+        "https://github.com/mattermost-community/focalboard/commit/a84bbb65e32edf972856b329417096ac413518e9",
+        "https://github.com/mattermost-community/focalboard/blob/a84bbb65e32edf972856b329417096ac413518e9/README.md",
+        "https://github.com/mattermost-community/focalboard/blob/a84bbb65e32edf972856b329417096ac413518e9/webapp/src/blocks/boardView.ts",
+        "https://github.com/mattermost-community/focalboard/blob/a84bbb65e32edf972856b329417096ac413518e9/LICENSE.txt"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Port/target architecture, file-level license and test gates before implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0039.md"
+    }
+  ],
+  "input_rows": [
+    {
+      "position": 1,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0021",
+      "source": "https://github.com/tldraw/tldraw",
+      "alias": null
+    },
+    {
+      "position": 2,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0022",
+      "source": "https://github.com/excalidraw/excalidraw",
+      "alias": null
+    },
+    {
+      "position": 3,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0023",
+      "source": "https://github.com/toeverything/AFFiNE",
+      "alias": null
+    },
+    {
+      "position": 4,
+      "outcome": "NEW_UNVERIFIED_ALIAS",
+      "id": "VBR-0024",
+      "source": null,
+      "alias": null
+    },
+    {
+      "position": 5,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0025",
+      "source": "https://github.com/react-grid-layout/react-grid-layout",
+      "alias": "strabil/react-grid-layout"
+    },
+    {
+      "position": 6,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0026",
+      "source": "https://github.com/haltu/muuri",
+      "alias": "haltsu/muuri"
+    },
+    {
+      "position": 7,
+      "outcome": "NEW_TOPIC_E0",
+      "id": "VBR-0027",
+      "source": "https://github.com/topics/bullet-journal",
+      "alias": null
+    },
+    {
+      "position": 8,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0028",
+      "source": "https://github.com/AppFlowy-IO/AppFlowy",
+      "alias": null
+    },
+    {
+      "position": 9,
+      "outcome": "NEW_TOPIC_E0",
+      "id": "VBR-0029",
+      "source": "https://github.com/topics/daily-journal",
+      "alias": null
+    },
+    {
+      "position": 10,
+      "outcome": "NEW_TOPIC_E0",
+      "id": "VBR-0030",
+      "source": "https://github.com/topics/life-os",
+      "alias": null
+    },
+    {
+      "position": 11,
+      "outcome": "NEW_TOPIC_E0",
+      "id": "VBR-0031",
+      "source": "https://github.com/topics/habit-tracker",
+      "alias": null
+    },
+    {
+      "position": 12,
+      "outcome": "NEW_TOPIC_E0",
+      "id": "VBR-0032",
+      "source": "https://github.com/topics/pinterest-clone",
+      "alias": null
+    },
+    {
+      "position": 13,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0033",
+      "source": "https://github.com/desandro/masonry",
+      "alias": null
+    },
+    {
+      "position": 14,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0034",
+      "source": "https://github.com/fabricjs/fabric.js",
+      "alias": null
+    },
+    {
+      "position": 15,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0035",
+      "source": "https://github.com/ValentinH/react-easy-crop",
+      "alias": "valentino-g/react-easy-crop"
+    },
+    {
+      "position": 16,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0036",
+      "source": "https://github.com/scaleflex/filerobot-image-editor",
+      "alias": null
+    },
+    {
+      "position": 17,
+      "outcome": "DUPLICATE_OF_VBR-0001",
+      "url": "https://github.com/topics/vision-board",
+      "note": "Given as Kanban-Board but points to old vision-board topic"
+    },
+    {
+      "position": 18,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0037",
+      "source": "https://github.com/plankanban/planka",
+      "alias": "planka/planka"
+    },
+    {
+      "position": 19,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0038",
+      "source": "https://github.com/wekan/wekan",
+      "alias": null
+    },
+    {
+      "position": 20,
+      "outcome": "NEW_REPO_E1",
+      "id": "VBR-0039",
+      "source": "https://github.com/mattermost-community/focalboard",
+      "alias": "mattermost/focalboard"
+    }
+  ]
+}
