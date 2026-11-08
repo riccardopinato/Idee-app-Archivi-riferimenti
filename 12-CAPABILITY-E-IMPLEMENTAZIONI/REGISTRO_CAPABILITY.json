@@ -18963,6 +18963,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Editor a blocchi e Markdown già esistenti in Notes; fare soltanto un test mirato sul round-trip senza perdita.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19026,6 +19047,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "Knowledge Graph/wikilink già presenti: valore incrementale nella rinomina e riparazione sicura dei backlink.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19082,6 +19124,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Knowledge Graph e Synced Blocks già coprono buona parte della semantica di alias/transclusione.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19141,6 +19204,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Script/query locali richiedono sandbox, controllo permessi e domanda utente concreta.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19205,6 +19289,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Properties e viste Tabella già esistono; formule/relazioni introducono elevata complessità di schema.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19270,6 +19375,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Viste Lista/Board/Tabella/Calendario/Timeline esistenti; aggiungere filtri salvati come delta.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19331,6 +19457,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "Roadmap Notes non autorizza un secondo sync CRDT.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19395,6 +19542,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Revoca cifrata per documento richiede threat model, ACL e key rotation.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19455,6 +19623,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Agenda-per-Anna": {
+            "recommendation": "BLOCCATO",
+            "rationale": "Google Calendar Direct #199 è DRAFT e il calendario esterno Anna è attualmente read-only.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19517,6 +19706,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Agenda-per-Anna": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "Conversione task-evento utile, ma ID, owner e reminder devono restare canonici.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Notes-Ecosistema": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "Conversione task-evento utile, ma ID, owner e reminder devono restare canonici.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19581,6 +19801,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Agenda-per-Anna": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "Ricorrenza dalla data di completamento è un caso distinto; verificare DST, timezone e idempotenza.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Notes-Ecosistema": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "Ricorrenza dalla data di completamento è un caso distinto; verificare DST, timezone e idempotenza.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19642,6 +19893,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Agenda-per-Anna": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Assegnazione a rotazione utile solo per task condivisi leggeri, non una suite di project management.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Assegnazione a rotazione utile solo per task condivisi leggeri, non una suite di project management.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19699,6 +19981,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Sprint/retrospettive allargano lo scope Notes prima della chiusura dei P1.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19757,6 +20060,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Workload Guard e vista Board già trattano WIP/blocked reasons: evitare motore parallelo.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19825,6 +20149,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "Timeboxing nelle viste Calendario/Timeline Notes aumenta utilità con costo limitato.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Agenda-per-Anna": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Timeboxing nelle viste Calendario/Timeline Notes aumenta utilità con costo limitato.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19888,6 +20243,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Work-Time-Keeper": {
+            "recommendation": "BLOCCATO",
+            "rationale": "Activity tracking/AFK introduce raccolta comportamentale fuori dalle funzioni focus correnti.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "FocuSense": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "Activity tracking/AFK introduce raccolta comportamentale fuori dalle funzioni focus correnti.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "bdc8becfff1b1a5f629456deb34170f0d905d8b7",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -19949,6 +20335,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Work-Time-Keeper": {
+            "recommendation": "BLOCCATO",
+            "rationale": "I consumer Work-Time-Keeper e CmdPocket non sono accessibili ai nomi di repository censiti.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "CmdPocket": {
+            "recommendation": "BLOCCATO",
+            "rationale": "I consumer Work-Time-Keeper e CmdPocket non sono accessibili ai nomi di repository censiti.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20010,6 +20427,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Template in-editor Notes già esistenti; usare una estensione reversibile.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "CmdPocket": {
+            "recommendation": "BLOCCATO",
+            "rationale": "Template in-editor Notes già esistenti; usare una estensione reversibile.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20064,6 +20512,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "CmdPocket": {
+            "recommendation": "BLOCCATO",
+            "rationale": "Text expander globale comporta hook sistema/accessibilità, consumer CmdPocket non verificato.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20128,6 +20597,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "CmdPocket": {
+            "recommendation": "BLOCCATO",
+            "rationale": "Snippet riutilizzabili potrebbero derivare da code block, tag e template senza nuovo vault.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Snippet riutilizzabili potrebbero derivare da code block, tag e template senza nuovo vault.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20188,6 +20688,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "todo.txt/Org/TaskPaper migliora portabilità, previa analisi lossiness e conflitti.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20245,6 +20766,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Agenda-per-Anna": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Widget desktop sticky non prioritario rispetto a rilascio/QA Android Anna.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20311,6 +20853,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "FocuSense": {
+            "recommendation": "ACCORPARE",
+            "rationale": "FocuSense possiede già XP, badge e progressione; Notes non ha una decisione prodotto analoga.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "bdc8becfff1b1a5f629456deb34170f0d905d8b7",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "FocuSense possiede già XP, badge e progressione; Notes non ha una decisione prodotto analoga.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20379,6 +20952,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "FocuSense": {
+            "recommendation": "ACCORPARE",
+            "rationale": "FocuSense possiede già streak; per Anna manca un mandato su habit tracking.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "bdc8becfff1b1a5f629456deb34170f0d905d8b7",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Agenda-per-Anna": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "FocuSense possiede già streak; per Anna manca un mandato su habit tracking.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20441,6 +21045,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Workflow automations evento→azione già presenti in Notes: isolare soltanto preview tipizzate mancanti.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20502,6 +21127,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "P2P cifrato introdurrebbe un secondo trasporto di sync e maggiore superficie di rischio.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20562,6 +21208,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Typst/matematica richiede domanda Studio verificata e footprint misurato.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20622,6 +21289,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "Pubblicazione wiki pubblica comporta hosting e privacy esterni allo scope Notes corrente.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20677,6 +21365,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "Libreria bibliografica supera l'attuale audit di provenienza e migliora il workflow Studio.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20732,6 +21441,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "PROPORRE_APPROVAZIONE",
+            "rationale": "Evidenziazioni PDF collegate a note e pagine migliorano Study/Documents con provenance.",
+            "next_gate": "Decisione esplicita product owner; definire delta/test e roadmap separata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20787,6 +21517,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Split editor comporta complessità responsive; rimandare dopo flussi e QA prioritari.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20849,6 +21600,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "Frase di recupero crittografica richiede architettura e threat model non approvati.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Agenda-per-Anna": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "Frase di recupero crittografica richiede architettura e threat model non approvati.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20914,6 +21696,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Agenda-per-Anna": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "CLI per diario personale è incoerente con Anna mobile-first; CmdPocket non verificato.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "CmdPocket": {
+            "recommendation": "BLOCCATO",
+            "rationale": "CLI per diario personale è incoerente con Anna mobile-first; CmdPocket non verificato.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -20984,6 +21797,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Quick Switcher e scorciatoie Notes esistono; estendere invece di ricostruire.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "CmdPocket": {
+            "recommendation": "BLOCCATO",
+            "rationale": "Quick Switcher e scorciatoie Notes esistono; estendere invece di ricostruire.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -21055,6 +21899,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Work-Time-Keeper": {
+            "recommendation": "BLOCCATO",
+            "rationale": "Timesheet derivabili da Focus, ma reporting professionale non è una priorità verificata.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Timesheet derivabili da Focus, ma reporting professionale non è una priorità verificata.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -21117,6 +21992,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "ACCORPARE",
+            "rationale": "Documents/indicizzazione presenti in Notes; la retention avanzata va definita nello stesso layer.",
+            "next_gate": "Confronto contratto/test parent; nessun engine parallelo.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "PDF-Unifier": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "Documents/indicizzazione presenti in Notes; la retention avanzata va definita nello stesso layer.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "3aacb3e2ac4822db4601fe5c217c016cecc6cbf4",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -21178,6 +22084,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Agenda-per-Anna": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "NFC introduce hardware e permessi per un caso d'uso non ancora validato.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "e5b956caf7976b70afe8269fe55697f2af21c568",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "Notes-Ecosistema": {
+            "recommendation": "RINVIARE_CONSIGLIATO",
+            "rationale": "NFC introduce hardware e permessi per un caso d'uso non ancora validato.",
+            "next_gate": "Riesame dopo P1, QA e richiesta prodotto verificata.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -21237,6 +22174,27 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "Cattura audio di sistema richiede permessi, consenso terzi e verifiche Android/OEM.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     },
     {
@@ -21299,6 +22257,37 @@
         "product_approved": false,
         "app_implementation_verified": false,
         "donor_code_reuse_cleared": false
+      },
+      "oss95_product_admission_review_20261108": {
+        "date": "2026-11-08",
+        "evidence_level": "RESEARCH_PRODUCT_SCOPE",
+        "source_kind": "CURATED_95_REPOS_NOT_LIVE_AUTHENTICATED_STARS",
+        "status": "RECOMMENDATION_ONLY",
+        "consumer_reviews": {
+          "Notes-Ecosistema": {
+            "recommendation": "FUORI_SCOPE_CONSIGLIATO",
+            "rationale": "API/MCP locale introduce una nuova superficie di accesso a dati personali.",
+            "next_gate": "Riaprire solo con nuova decisione sul Product Bible e sicurezza.",
+            "consumer_source_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
+            "consumer_repo_access": "VERIFIED_HEAD",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          },
+          "CmdPocket": {
+            "recommendation": "BLOCCATO",
+            "rationale": "API/MCP locale introduce una nuova superficie di accesso a dati personali.",
+            "next_gate": "Risolvere prerequisiti repo, Product Bible, privacy o draft.",
+            "consumer_source_sha": null,
+            "consumer_repo_access": "NOT_FOUND_FOR_CATALOGUED_NAME",
+            "product_decision_unchanged": "DA_VALUTARE",
+            "technical_state_unchanged": "PROPOSTA",
+            "approval_applied": false
+          }
+        },
+        "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+        "factory_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+        "source_snapshot_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
       }
     }
   ],
@@ -22108,6 +23097,27 @@
       "total_cap": 199,
       "total_assoc": 441,
       "meaning": "Research contracts; does not approve products or certify implementations"
+    },
+    "admission_review_20261108": {
+      "reviewed_at": "2026-11-08",
+      "cap_count": 39,
+      "association_count": 56,
+      "summary_by_app_recommendation": {
+        "ACCORPARE": 11,
+        "PROPORRE_APPROVAZIONE": 9,
+        "RINVIARE_CONSIGLIATO": 16,
+        "FUORI_SCOPE_CONSIGLIATO": 9,
+        "BLOCCATO": 11
+      },
+      "report_url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md",
+      "star_live_input_status": "BLOCKED_CONNECTOR_ENDPOINT",
+      "curated_input_count": 95,
+      "new_cap_ids": 0,
+      "new_associations": 0,
+      "owner_decisions_changed": 0,
+      "technical_evidence_states_changed": 0,
+      "decision_evidence_required": true,
+      "source_snapshot": "12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
     }
   }
 }
