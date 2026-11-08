@@ -1,5 +1,9 @@
 # Catalogo centrale capability — App Factory
 
+## 09/11/2026 — HTML.it Flutter: 37 lezioni / 12 pattern E0, audit mirato di 5 maxi-step
+
+[**Audit operativo dei cinque maxi-step**](AUDIT_HTMLIT_FLUTTER_5_MAXISTEP_2026-11-09.md) · [**Registro crosswalk machine-readable delle 12 estrazioni**](HTMLIT_FLUTTER_REFERENCE_CROSSWALK_2026-11-09.json). Guida 2019–2020 come **learning/pattern reference**, codice commerciale non copiabile senza verifica della licenza (repo collegato senza LICENSE nel root). 12 riferimenti deduplicati rispetto ai CAP già registrati: **199 CAP / 441 associazioni invariati**, 0 Golden/donor promossi. Audit sorgenti campionato per Anna, Notes, World Days e adapter/location CamperBoss/TrailPath; possibile benchmark lazy-list mirato su World Days, nessun bug performance provato. Nessun codice app, Factory Core, dati, release o roadmap prodotto alterato.
+
 ## 08/11/2026 — Capability globale: 31 repository + crosswalk Vision Board senza promozioni
 
 [**Riconciliazione incrementale**](CAPABILITY_SYNC_GLOBALE_2026-11-08_VB_NOTES.md): account owner **31/31 HEAD** verificati (**28 invariati, 3 diversi**, Notes unico app delta; Factory e archivio infrastruttura). Notes [PR #84](https://github.com/riccardopinato/Notes-Ecosistema/pull/84) aggiunge UI5 cinque tab, **flag default OFF**, CI exact-head PASS, physical pending; nessun CAP complesso promosso. Le **39 fonti Vision Board e 28 candidate VBE** si ricollegano a **12 CAP già registrate con 60 match**; nessuna CAP nuova né associazione o decisione prodotto variata. Rimangono **199 CAP / 441 associazioni / 48 app/idee**. Aggiornato SOURCE_INVENTORY per i tre HEAD cambiati, con archive self-reference esclusa dai consumer.
