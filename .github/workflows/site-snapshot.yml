@@ -1,0 +1,62 @@
+name: Site snapshot validation
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "16-APP-FACTORY-SITE/**"
+      - ".github/workflows/site-snapshot.yml"
+  push:
+    branches: [main]
+    paths:
+      - "16-APP-FACTORY-SITE/**"
+      - ".github/workflows/site-snapshot.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Validate Site JSON snapshot and evidence provenance
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import datetime, json, re
+          from pathlib import Path
+          p=Path("16-APP-FACTORY-SITE/data/snapshot.json")
+          d=json.loads(p.read_text(encoding="utf-8"))
+          assert d["schemaVersion"]==1
+          assert d["sourceRepository"]=="riccardopinato/Idee-app-Archivi-riferimenti"
+          assert re.fullmatch(r"[a-f0-9]{40}",d["catalog_source_sha"])
+          assert re.fullmatch(r"[a-f0-9]{40}",d["factoryBaseline"]["sha"])
+          datetime.datetime.fromisoformat(d["generatedAt"].replace("Z","+00:00"))
+          data=d["data"]
+          classes={"PROPOSTA","ROADMAP_STORICA","SOURCE_REPORTED","DONOR_REPORTED","SOURCE_CONFIRMED","CI_VERIFIED","DEVICE_VERIFIED","RELEASE","BLOCKED"}
+          assert isinstance(data["projects"],list)
+          assert isinstance(data["capabilities"],list)
+          assert isinstance(data["repoObservations"],dict)
+          assert isinstance(data["capabilityCounts"],dict)
+          keys=set()
+          for c in data["capabilities"]:
+              assert re.fullmatch(r"CAP-\d{4,}",c["id"])
+              assert c["project"]
+              assert c["state"] in classes
+              assert c["url"].startswith("https://") or c["state"] in {"PROPOSTA","ROADMAP_STORICA","SOURCE_REPORTED","DONOR_REPORTED"}
+              assert c["source_url"].startswith("https://")
+              assert re.fullmatch(r"[a-f0-9]{40}",c["source_sha"])
+              key=(c["id"],c["project"])
+              assert key not in keys,"duplicate app-CAP association: "+str(key)
+              keys.add(key)
+          for name,obs in data["repoObservations"].items():
+              assert name and re.fullmatch(r"[a-f0-9]{40}",obs["sha"])
+              datetime.datetime.fromisoformat(obs["at"].replace("Z","+00:00"))
+          for key,count in data["capabilityCounts"].items():
+              assert key in classes and isinstance(count,int) and count>=0
+          assert d.get("completeness"),"state whether snapshot is partial/full"
+          print(f"PASS: {len(data['projects'])} projects, {len(keys)} capability associations, {len(data['repoObservations'])} repository SHAs")
+          PY
