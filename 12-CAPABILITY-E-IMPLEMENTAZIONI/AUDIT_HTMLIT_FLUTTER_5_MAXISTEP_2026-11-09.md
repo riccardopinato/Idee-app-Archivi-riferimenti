@@ -98,7 +98,7 @@ python3 scripts/audit_flutter_antipatterns.py --fail-on-legacy-api /percorso/rep
 python3 -m unittest discover -s tests -p 'flutter_antipatterns_test.py'
 ```
 
-**Prova locale:** 2/2 test sintetici PASS su versione identica dello script; copertura di segnalazione API legacy, esclusione generati e no false-positive di `Future<void>` / `ListView.builder`. **Non è stata eseguita la scansione sui checkout completi delle app** né `flutter analyze` dei consumer. La PR GitHub ha un gate separato per questa modifica.
+**Prova locale:** 4/4 test sintetici PASS su versione identica dello script; copertura di API legacy, esclusione generati, no false-positive di `Future<void>` / `ListView.builder`, mascheramento commenti/stringhe (non parser Dart completo) e scansione completa del segnale legacy anche dopo il limite di output. Il gate CI include inoltre un test distinto per il crosswalk 12→CAP. **Non è stata eseguita la scansione sui checkout completi delle app** né `flutter analyze` dei consumer. La PR GitHub ha un gate separato per questa modifica.
 
 ## Criteri di chiusura per riuso futuro
 
