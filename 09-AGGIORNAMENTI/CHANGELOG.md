@@ -1,4 +1,12 @@
 # Changelog dell'archivio
+## 2026-11-08 — Comando Stelle: refresh OSS95 e raccomandazioni product-admission
+
+- Connessione GitHub autorizzata ma endpoint `user/starred` bloccato: **nuove stelle live non verificate**; usato il pacchetto curated OSS95 dichiarato, senza spacciarlo per stelle autentiche.
+- 95 repository controllate per metadata `pushed_at`; 85 invariati, 10 aggiornati; tutti e 10 i blob README identici, titoli dei commit verificati solo per orientamento (non audit completo di code diff).
+- Snapshot persistito in `12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json`.
+- Audit su 39 CAP / 56 associazioni nella matrice `AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md`. Le raccomandazioni sono aggiunte come metadati separati al registro; **199 CAP/441 associazioni, stati tecnici, decisioni product owner e score invariati**.
+- Nessuna CAP nuova, nessuna implementazione o approvazione automatica. Gate Notes #60 e catalogo #41 ancora aperti; Anna Calendar Direct #199 ancora draft.
+
 ## 2026-11-08 — Formalizzazione OSS95: 39 CAP E0
 
 - CAP-0161..CAP-0199: 39 contratti E0, 56 app-associazioni in PROPOSTA / DA_VALUTARE; 199 CAP e 441 associazioni totali.
