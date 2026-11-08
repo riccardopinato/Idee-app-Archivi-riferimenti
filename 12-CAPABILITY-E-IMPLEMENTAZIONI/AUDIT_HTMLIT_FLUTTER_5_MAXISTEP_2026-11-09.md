@@ -88,6 +88,18 @@ Non assegnare ID `CAP-0200+` alle 12 estrazioni didattiche: un ID CAP richiede r
 
 **Decisione maxi-step 5:** non si è materializzato un gap che richieda un adapter nuovo senza duplicare un'implementazione già esistente. **0 patch app, 0 test Flutter/Android/Web eseguiti, 0 donor/Golden promossi, 0 claim certificazione**. Priorità successiva è un benchmark mirato `World-Days/SavedPage` e `AroundTheWorldPage` con dataset realistici, poi read-only static scan per tutte le repo Flutter su checkout locali. Una eventuale correzione si farà nel repository dell'app, con propria Product Bible, branch, test `flutter analyze`/`flutter test`, Web e CI exact-head; non attraverso modifiche alla Factory o alle app motivate dalla sola guida.
 
+## Strumento QA riutilizzabile (non un Golden)
+
+Aggiunti [`scripts/audit_flutter_antipatterns.py`](../../scripts/audit_flutter_antipatterns.py) e [`tests/flutter_antipatterns_test.py`](../../tests/flutter_antipatterns_test.py). È uno **scanner locale read-only** senza network, senza dipendenze extra: processa directory `*.dart`, esclude file generati, produce JSON di candidati `LEGACY_API`/ `REVIEW` con path e linea, e non modifica il checkout. Esempi: `RaisedButton` => `LEGACY_API`; `ListView(children:...)`, `dart:io`, `SharedPreferences.getInstance()` => solo `REVIEW`, **non errori automatici**.
+
+```bash
+python3 scripts/audit_flutter_antipatterns.py /percorso/repo-flutter > flutter-audit.json
+python3 scripts/audit_flutter_antipatterns.py --fail-on-legacy-api /percorso/repo-flutter
+python3 -m unittest discover -s tests -p 'flutter_antipatterns_test.py'
+```
+
+**Prova locale:** 2/2 test sintetici PASS su versione identica dello script; copertura di segnalazione API legacy, esclusione generati e no false-positive di `Future<void>` / `ListView.builder`. **Non è stata eseguita la scansione sui checkout completi delle app** né `flutter analyze` dei consumer. La PR GitHub ha un gate separato per questa modifica.
+
 ## Criteri di chiusura per riuso futuro
 
 1. Il gap è dimostrato da file+linea e un comportamento misurabile (non solo da grep o HTML.it).
