@@ -2,11 +2,13 @@
 
 Sezione dedicata esclusivamente alla **ricerca, analisi ed estrazione di repository, algoritmi, modelli e strumenti Machine Learning**. È un **catalogo di intake**: non è una seconda source of truth delle capability e **non autorizza** nuove integrazioni, API, costi o promozioni Golden.
 
-**Stato iniziale (08/11/2026):** sezione creata; nessun nuovo repository fornito in questo lotto. Sono già presenti due audit ML storici (23 algoritmi + 10 famiglie), collegati nel crosswalk. La registrazione del primo repo avverrà quando verrà fornito un link concreto.
+**Stato (08/11/2026):** primo lotto di **10 riferimenti MLR-0001...0010 catalogato a livello E1**, con SHA e schede per fonte, senza test di integrazione nelle app. `mljs` e stato risolto dall'organizzazione ai moduli concreti; per Kaggle Solutions il repo selezionato e **provvisorio** in assenza di URL esatto. Restano validi i due audit ML storici (23 algoritmi e 10 famiglie).
 
 ## Navigazione
 
-- [Inbox link da esaminare](INBOX_REPOSITORY.md) — ordine di arrivo, ID stabili, stato.
+- [Inbox 10 riferimenti GitHub](INBOX_REPOSITORY.md) — ID stabili, SHA e stato di ogni analisi.
+- [Audit comparativo e priorita](AUDIT_10_REPOSITORY_ML_2026-11-08.md) — Donor, Golden candidati, CAP e consumer.
+- [Schede MLR-0001...MLR-0010](SCHEDE/MLR-0001.md) — link individuali disponibili dall'Inbox.
 - [Registro machine-readable](REGISTRO_FONTI_ML.json) — inventario dei repository esaminati e collegamenti alle CAP.
 - [Protocollo di analisi](PROTOCOLLO_AUDIT_ML.md) — verifiche, dedup, licenze, test e gate.
 - [Template di scheda](TEMPLATE_SCHEDA_REPOSITORY.md) — output obbligatorio per ciascuna fonte.

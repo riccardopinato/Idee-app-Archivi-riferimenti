@@ -25,5 +25,409 @@
     "evidence_urls",
     "next_gate"
   ],
-  "records": []
+  "records": [
+    {
+      "id": "MLR-0001",
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "input_url": "https://github.com/scikit-learn/scikit-learn",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "6e37063f7ab7ef7a7e257b9d44bc3ec6ee1b1bcd",
+      "audit_depth": "E1_SOURCE_INSPECTED",
+      "kind": "LIBRARY_OR_TEACHING",
+      "licensing": {
+        "code": {
+          "license": "BSD-3-Clause",
+          "source": "https://github.com/scikit-learn/scikit-learn/blob/6e37063f7ab7ef7a7e257b9d44bc3ec6ee1b1bcd/COPYING",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "PATTERN_REFERENCE",
+        "BENCHMARK"
+      ],
+      "capability_ids": [
+        "CAP-0124",
+        "CAP-0159",
+        "CAP-0153",
+        "CAP-0160"
+      ],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0001.md",
+      "evidence_urls": [
+        "https://github.com/scikit-learn/scikit-learn/commit/6e37063f7ab7ef7a7e257b9d44bc3ec6ee1b1bcd",
+        "https://github.com/scikit-learn/scikit-learn/blob/6e37063f7ab7ef7a7e257b9d44bc3ec6ee1b1bcd/sklearn/cluster/_kmeans.py"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Confrontare fixture isolate e dipendenze prima di eventuale port Dart/Kotlin"
+    },
+    {
+      "id": "MLR-0002",
+      "url": "https://github.com/mljs/ml",
+      "input_url": "https://github.com/mljs",
+      "first_seen_date": "2026-11-08",
+      "status": "DA_STUDIARE",
+      "source_sha": "6e26dc30f09717129cb8614e67af0d310887cc21",
+      "audit_depth": "E1_SOURCE_INSPECTED",
+      "kind": "ORG_RESOLVED_TO_REPO",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/mljs/ml/blob/6e26dc30f09717129cb8614e67af0d310887cc21/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE_JS",
+        "PATTERN_REFERENCE"
+      ],
+      "capability_ids": [
+        "CAP-0124",
+        "CAP-0160",
+        "CAP-0044",
+        "CAP-0032"
+      ],
+      "priority_heuristic": "P1",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0002.md",
+      "evidence_urls": [
+        "https://github.com/mljs/ml/commit/6e26dc30f09717129cb8614e67af0d310887cc21",
+        "https://github.com/mljs/ml/blob/6e26dc30f09717129cb8614e67af0d310887cc21/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Isolare uno dei cinque moduli JS, verificare licenze dipendenze, testare contro Dart",
+      "subrepo_sources": [
+        {
+          "repo": "mljs/kmeans",
+          "sha": "397dcc21d4f9acc254347716ac5170568a4d61bc"
+        },
+        {
+          "repo": "mljs/naive-bayes",
+          "sha": "5abbfae7a71b2e4abe40d23e9304b58f26f7fa56"
+        },
+        {
+          "repo": "mljs/knn",
+          "sha": "afc1bdb8ddba029b7da54015f2d7e84989e54e2b"
+        },
+        {
+          "repo": "mljs/random-forest",
+          "sha": "7c75d32671e1805ebab35c1da2847a63e025ab96"
+        },
+        {
+          "repo": "mljs/distance",
+          "sha": "c5f1643257e4c4c7dac03ebbdff54adb8d493ae6"
+        }
+      ]
+    },
+    {
+      "id": "MLR-0003",
+      "url": "https://github.com/online-ml/river",
+      "input_url": "https://github.com/online-ml/river",
+      "first_seen_date": "2026-11-08",
+      "status": "DA_STUDIARE",
+      "source_sha": "4768de0579f977315e65cd23ee658534c1d62c26",
+      "audit_depth": "E1_SOURCE_INSPECTED",
+      "kind": "LIBRARY_OR_TEACHING",
+      "licensing": {
+        "code": {
+          "license": "BSD-3-Clause",
+          "source": "https://github.com/online-ml/river/blob/4768de0579f977315e65cd23ee658534c1d62c26/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "PATTERN_ONLINE_LEARNING",
+        "DRIFT_DETECTOR"
+      ],
+      "capability_ids": [
+        "CAP-0057",
+        "CAP-0158",
+        "CAP-0061",
+        "CAP-0153",
+        "CAP-0154"
+      ],
+      "priority_heuristic": "P1",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0003.md",
+      "evidence_urls": [
+        "https://github.com/online-ml/river/commit/4768de0579f977315e65cd23ee658534c1d62c26",
+        "https://github.com/online-ml/river/blob/4768de0579f977315e65cd23ee658534c1d62c26/river/drift/page_hinkley.py"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "POC drift vs EWMA con false alarm e costo misurato"
+    },
+    {
+      "id": "MLR-0004",
+      "url": "https://github.com/microsoft/ML-For-Beginners",
+      "input_url": "https://github.com/microsoft/ML-For-Beginners",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "8e5c0dfffdb56181450363f9ccd880bc69737ae8",
+      "audit_depth": "E1_DOCUMENTAL",
+      "kind": "LIBRARY_OR_TEACHING",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/microsoft/ML-For-Beginners/blob/8e5c0dfffdb56181450363f9ccd880bc69737ae8/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "EDUCATIONAL",
+        "EVALUATION"
+      ],
+      "capability_ids": [
+        "CAP-0160",
+        "CAP-0153"
+      ],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0004.md",
+      "evidence_urls": [
+        "https://github.com/microsoft/ML-For-Beginners/commit/8e5c0dfffdb56181450363f9ccd880bc69737ae8",
+        "https://github.com/microsoft/ML-For-Beginners/blob/8e5c0dfffdb56181450363f9ccd880bc69737ae8/6-NLP/4-Hotel-Reviews-1/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Benchmark corpus licenziato e confronto algoritmo consumer"
+    },
+    {
+      "id": "MLR-0005",
+      "url": "https://github.com/karpathy/nn-zero-to-hero",
+      "input_url": "https://github.com/karpathy/nn-zero-to-hero",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "73c3fcc741f0ec104ca850b1fb0df90e7e8d4cde",
+      "audit_depth": "E1_DOCUMENTAL",
+      "kind": "LIBRARY_OR_TEACHING",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/karpathy/nn-zero-to-hero/blob/73c3fcc741f0ec104ca850b1fb0df90e7e8d4cde/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "EDUCATIONAL",
+        "PATTERN_REFERENCE"
+      ],
+      "capability_ids": [],
+      "priority_heuristic": "P3",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0005.md",
+      "evidence_urls": [
+        "https://github.com/karpathy/nn-zero-to-hero/commit/73c3fcc741f0ec104ca850b1fb0df90e7e8d4cde",
+        "https://github.com/karpathy/nn-zero-to-hero/blob/73c3fcc741f0ec104ca850b1fb0df90e7e8d4cde/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "R&D soltanto, nessun modello mobile acquisito"
+    },
+    {
+      "id": "MLR-0006",
+      "url": "https://github.com/trekhleb/homemade-machine-learning",
+      "input_url": "https://github.com/trekhleb/homemade-machine-learning",
+      "first_seen_date": "2026-11-08",
+      "status": "DA_STUDIARE",
+      "source_sha": "963d77f17f66da1f8357cb71e3680fb212e4684d",
+      "audit_depth": "E1_SOURCE_INSPECTED",
+      "kind": "LIBRARY_OR_TEACHING",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/trekhleb/homemade-machine-learning/blob/963d77f17f66da1f8357cb71e3680fb212e4684d/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "PATTERN_REFERENCE"
+      ],
+      "capability_ids": [
+        "CAP-0153",
+        "CAP-0124",
+        "CAP-0061"
+      ],
+      "priority_heuristic": "P1",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0006.md",
+      "evidence_urls": [
+        "https://github.com/trekhleb/homemade-machine-learning/commit/963d77f17f66da1f8357cb71e3680fb212e4684d",
+        "https://github.com/trekhleb/homemade-machine-learning/blob/963d77f17f66da1f8357cb71e3680fb212e4684d/homemade/linear_regression/linear_regression.py"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Rimuovere NumPy nel port, test numerici ed edge-case vs scikit-learn"
+    },
+    {
+      "id": "MLR-0007",
+      "url": "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
+      "input_url": "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE_COPY_BLOCKED",
+      "source_sha": "5f104458e9e081bf0b24df78bbe3bc839edca899",
+      "audit_depth": "E1_INDEX_NO_LICENSE",
+      "kind": "INDEX_OR_DIRECTORY",
+      "licensing": {
+        "code": {
+          "license": "NOT_FOUND",
+          "source": null,
+          "reuse_status": "BLOCKED_COPY"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "IDEA_DISCOVERY",
+        "THIRD_PARTY_LINK_INDEX"
+      ],
+      "capability_ids": [],
+      "priority_heuristic": "P3",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0007.md",
+      "evidence_urls": [
+        "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code/commit/5f104458e9e081bf0b24df78bbe3bc839edca899",
+        "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code/blob/5f104458e9e081bf0b24df78bbe3bc839edca899/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Nessun riuso codice: audit separato per ogni link originale e licenza"
+    },
+    {
+      "id": "MLR-0008",
+      "url": "https://github.com/faridrashidi/kaggle-solutions",
+      "input_url": "Kaggle Solutions (URL non fornito)",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE_PROVISIONAL",
+      "source_sha": "2eaf7bbe9e541c1b127b860f0b27403c15d98771",
+      "audit_depth": "E1_DOCUMENTAL_PROVISIONAL",
+      "kind": "PROVISIONAL_REPRESENTATIVE",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/faridrashidi/kaggle-solutions/blob/2eaf7bbe9e541c1b127b860f0b27403c15d98771/LICENSE.md",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "BENCHMARK_INDEX",
+        "SOLUTIONS_LINK_INDEX"
+      ],
+      "capability_ids": [],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0008.md",
+      "evidence_urls": [
+        "https://github.com/faridrashidi/kaggle-solutions/commit/2eaf7bbe9e541c1b127b860f0b27403c15d98771",
+        "https://github.com/faridrashidi/kaggle-solutions/blob/2eaf7bbe9e541c1b127b860f0b27403c15d98771/data/competitions.yml"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Confermare fonte intesa; valutare license/data/code del progetto figlio",
+      "resolution_notice": "L'utente ha nominato Kaggle Solutions senza URL: fonte rappresentativa scelta, non identificazione confermata",
+      "alternative": "EliotAndres/kaggle-past-solutions@122a5f17f99507486f2bb8a07fa64116d5efa989"
+    },
+    {
+      "id": "MLR-0009",
+      "url": "https://github.com/EthicalML/awesome-production-machine-learning",
+      "input_url": "https://github.com/EthicalML/awesome-production-machine-learning",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "3fc9a9a436d5177902999d630324a37a7f1b29cf",
+      "audit_depth": "E1_DOCUMENTAL",
+      "kind": "INDEX_OR_DIRECTORY",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/EthicalML/awesome-production-machine-learning/blob/3fc9a9a436d5177902999d630324a37a7f1b29cf/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "MLOPS_TOOL_DISCOVERY"
+      ],
+      "capability_ids": [],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0009.md",
+      "evidence_urls": [
+        "https://github.com/EthicalML/awesome-production-machine-learning/commit/3fc9a9a436d5177902999d630324a37a7f1b29cf",
+        "https://github.com/EthicalML/awesome-production-machine-learning/blob/3fc9a9a436d5177902999d630324a37a7f1b29cf/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Scegliere un tool figlio on-device e profilare modello concreto"
+    },
+    {
+      "id": "MLR-0010",
+      "url": "https://github.com/josephmisiti/awesome-machine-learning",
+      "input_url": "https://github.com/josephmisiti/awesome-machine-learning",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE_COPY_BLOCKED",
+      "source_sha": "12bc9dc1504135ba9affe5f64da74276c9142955",
+      "audit_depth": "E1_DOCUMENTAL_UNCLEAR_LICENSE",
+      "kind": "INDEX_OR_DIRECTORY",
+      "licensing": {
+        "code": {
+          "license": "NOASSERTION",
+          "source": "https://github.com/josephmisiti/awesome-machine-learning/blob/12bc9dc1504135ba9affe5f64da74276c9142955/LICENSE",
+          "reuse_status": "BLOCKED_COPY"
+        },
+        "weights": "NON_VERIFICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "third_party_links": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "LANGUAGE_INDEX",
+        "LIBRARY_DISCOVERY"
+      ],
+      "capability_ids": [],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0010.md",
+      "evidence_urls": [
+        "https://github.com/josephmisiti/awesome-machine-learning/commit/12bc9dc1504135ba9affe5f64da74276c9142955",
+        "https://github.com/josephmisiti/awesome-machine-learning/blob/12bc9dc1504135ba9affe5f64da74276c9142955/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Scegliere repo figlio e verificare licenza e ABI"
+    }
+  ],
+  "last_audit_at": "2026-11-08",
+  "factory_baseline_at_audit": {
+    "repository": "riccardopinato/App-Factory-Core",
+    "sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+    "master_version": "27",
+    "golden_index_version": 28
+  }
 }

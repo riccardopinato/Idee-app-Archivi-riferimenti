@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-08 — Machine Learning: audit MLR-0001..0010 (primo lotto)
+
+- Registrati 10 riferimenti nel catalogo `14-MACHINE-LEARNING`: 10 schede E1 a SHA, Inbox aggiornata, registry JSON, audit comparativo per priorita e riuso.
+- Ispezionati codice e license di scikit-learn, mljs (+ 5 moduli satellite), River, Microsoft ML-For-Beginners, Karpathy, Homemade ML, 500 AI Projects, Kaggle Solutions (fonte provvisoria), EthicalML Awesome Production e Awesome Machine Learning.
+- Correzioni: Homemade richiede NumPy; mljs e organizzazione, non singolo SDK Dart; 500 AI manca LICENSE in root; Awesome ML LICENSE ambiguo; Kaggle Solutions senza URL preciso, rappresentato provvisoriamente da faridrashidi/kaggle-solutions.
+- Donor/Golden soltanto candidati; **zero nuove CAP, nessun test app, nessuna modifica a Golden/Factory/app**, licensing di dataset/pesi/link esterni non ereditario.
+
+
 ## 2026-11-08 — Creazione sezione autonoma Machine Learning
 
 - Creata **14-MACHINE-LEARNING** con README, Inbox, registro fonti JSON, protocollo di audit, template singolo repository e crosswalk agli studi ML23 e ML10 già presenti.
