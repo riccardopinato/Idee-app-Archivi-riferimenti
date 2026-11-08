@@ -17,3 +17,18 @@ La priorità qui è **di ricerca**, non un'autorizzazione di sviluppo. Stato in 
 5. Preset Mobile/Web responsive, touch/pinch/accessibilità, autosave, undo/redo e gestione media.
 
 **Ordine di scelta:** ricomporre capacità esistenti → estrarre modulo minimo da donor verificato → proporre eventuale CAP/GOLDEN nuova soltanto quando il delta è dimostrato.
+
+
+## Priorità ricerca dopo primo lotto (non roadmap)
+
+| Area | Notes | Anna | Fonte / gate |
+|---|---|---|---|
+| Auto-layout e collage | P1 | P1 | ImageCanvas MIT, porting Dart |
+| Canvas, scene, codec | P1 | P2 | Drawnix MIT, attenzione .drawnix vs JSON Canvas |
+| JS editor Web | P1 condizionato | P2 non prioritario | Konva MIT, solo Web JS |
+| Image store lossless | P1 reference | P1 reference | Boardfish commercial code BLOCKED |
+| UX domande/vision | P2 | P1 | jeanarose no LICENSE, reference only |
+| Goal/frequency review | P2 | P2 | sbendimerad Neon, rewrite locale |
+| Cluster feedback | P2 | P3 | niral Gemini cloud/CDP, pattern locale |
+| Collaborazione | P2 futuro | P3 non default | khalid Liveblocks no LICENSE |
+| Diagramma agentico | P3 dev tools | fuori scope | dev.fast MIT root, sottoprogetti da rivedere |

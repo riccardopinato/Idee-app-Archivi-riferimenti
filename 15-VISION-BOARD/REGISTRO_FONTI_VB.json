@@ -1,61 +1,1176 @@
 {
   "schema_version": 1,
-  "purpose": "Registro di provenienza ed estrazioni candidate Vision Board; non sostituisce la CAP registry o Golden Registry",
+  "purpose": "Vision Board sources provenance, not the canonical CAP/Golden registry",
   "repository": "riccardopinato/Idee-app-Archivi-riferimenti",
   "canonical_capability_registry": "12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY.json",
+  "created_at": "2026-11-08",
+  "updated_at": "2026-11-08",
   "factory_baseline_at_creation": {
     "repo": "riccardopinato/App-Factory-Core",
     "sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
-    "master": "27",
+    "master_version": "27",
     "golden_index": 28
   },
-  "created_at": "2026-11-08",
-  "id_format": "VBR-NNNN stabile e monotono",
-  "next_id": "VBR-0001",
-  "source_audit_levels": [
-    "E0_URL_RECEIVED",
-    "E1_PINNED_SOURCE",
-    "E2_ARCHITECTURE_REVIEWED",
-    "E3_SCOPED_DONOR_VERIFIED",
-    "E5_INDEPENDENT_REUSE"
+  "id_format": "VBR-NNNN monotonic",
+  "next_id": "VBR-0021",
+  "records": [
+    {
+      "id": "VBR-0001",
+      "input_position": 1,
+      "input_url": "https://github.com/topics/vision-board",
+      "canonical_url": "https://github.com/topics/vision-board",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "upstream": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_TOPIC_DIRECTORY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "reuse": "DIRECTORY_ONLY",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Directory GitHub tematica, non un repository e non codice.",
+      "limitations": "Scouting di futuri repository individuali.",
+      "evidence_refs": [
+        "https://github.com/topics/vision-board"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Inspect individual repositories from topic and register separately",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0001.md"
+    },
+    {
+      "id": "VBR-0002",
+      "input_position": 2,
+      "input_url": "https://github.com/sbendimerad/VisionBoard2026",
+      "canonical_url": "https://github.com/sbendimerad/VisionBoard2026",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "sbendimerad/VisionBoard2026",
+      "upstream": null,
+      "source_sha": "683f2fb97d82d6ebe6ae040c8a1b09d4b8f1e3df",
+      "source_path": "core_logic.py",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "LICENSE_NOT_FOUND",
+        "reuse": "NO_COMMERCIAL_CODE_COPY_LICENSE_MISSING",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0099",
+        "CAP-0104"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Tracker goal/consistenza Streamlit/Neon; core_logic.py calcola settimane ISO, non compone immagini su canvas.",
+      "limitations": "Neon e autenticazione MVP richiedono altra architettura; modello locale da progettare.",
+      "evidence_refs": [
+        "https://github.com/sbendimerad/VisionBoard2026/commit/683f2fb97d82d6ebe6ae040c8a1b09d4b8f1e3df",
+        "https://github.com/sbendimerad/VisionBoard2026/blob/683f2fb97d82d6ebe6ae040c8a1b09d4b8f1e3df/README.md",
+        "https://github.com/sbendimerad/VisionBoard2026/blob/683f2fb97d82d6ebe6ae040c8a1b09d4b8f1e3df/core_logic.py"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0002.md"
+    },
+    {
+      "id": "VBR-0003",
+      "input_position": 3,
+      "input_url": "https://github.com/jeanarose/vision-board",
+      "canonical_url": "https://github.com/jeanarose/vision-board",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "jeanarose/vision-board",
+      "upstream": "MarioReid/project-1",
+      "source_sha": "7d0317f0283a8f8d3d3a133607a0be236f5fc749",
+      "source_path": "assets/js/finalpage.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "LICENSE_NOT_FOUND",
+        "reuse": "NO_COMMERCIAL_CODE_COPY_LICENSE_MISSING",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "UX_REFERENCE"
+      ],
+      "capability_matches": [
+        "CAP-0099",
+        "CAP-0027"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Fork MarioReid/project-1; percorso domande→selezione immagini→board; finalpage.js carica immagini da localStorage.",
+      "limitations": "Nessun LICENSE; vecchie stringhe API nel codice non vanno riutilizzate.",
+      "evidence_refs": [
+        "https://github.com/jeanarose/vision-board/commit/7d0317f0283a8f8d3d3a133607a0be236f5fc749",
+        "https://github.com/jeanarose/vision-board/blob/7d0317f0283a8f8d3d3a133607a0be236f5fc749/README.md",
+        "https://github.com/jeanarose/vision-board/blob/7d0317f0283a8f8d3d3a133607a0be236f5fc749/assets/js/finalpage.js"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0003.md"
+    },
+    {
+      "id": "VBR-0004",
+      "input_position": 4,
+      "input_url": "https://github.com/nisha-dinesh/VisionBoard-Vanilla",
+      "canonical_url": "https://github.com/nisha-dinesh/VisionBoard-Vanilla",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "nisha-dinesh/VisionBoard-Vanilla",
+      "upstream": null,
+      "source_sha": "725b19fa678b1ba8d463485fc608cebd1301b0ef",
+      "source_path": "index.html",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "LICENSE_NOT_FOUND",
+        "reuse": "NO_COMMERCIAL_CODE_COPY_LICENSE_MISSING",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "UX_REFERENCE"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Pagina statica HTML/CSS con obiettivi, citazioni e immagini esterne.",
+      "limitations": "README indica upload, drag/drop e salvataggio come futuri; non è un editor interattivo.",
+      "evidence_refs": [
+        "https://github.com/nisha-dinesh/VisionBoard-Vanilla/commit/725b19fa678b1ba8d463485fc608cebd1301b0ef",
+        "https://github.com/nisha-dinesh/VisionBoard-Vanilla/blob/725b19fa678b1ba8d463485fc608cebd1301b0ef/README.md",
+        "https://github.com/nisha-dinesh/VisionBoard-Vanilla/blob/725b19fa678b1ba8d463485fc608cebd1301b0ef/index.html"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0004.md"
+    },
+    {
+      "id": "VBR-0005",
+      "input_position": 5,
+      "input_url": "https://github.com/ckaiser258/VisionBoard",
+      "canonical_url": "https://github.com/ckaiser258/VisionBoard",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "ckaiser258/VisionBoard",
+      "upstream": "jmclean-coder/module-3-project-vision-board-frontend",
+      "source_sha": "8ebecaca018fb6be8c324e131932b62eae428ecb",
+      "source_path": "src/board.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_TEXT_IN_README_FRONTEND_ONLY",
+        "reuse": "CONDITIONAL_REVIEW_FRONTEND_ONLY",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0099",
+        "CAP-0104"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Fork jmclean-coder/module-3-project-vision-board-frontend; CRUD board e goal tramite JSON API Rails separata.",
+      "limitations": "MIT testuale nel README frontend; backend non auditato; innerHTML richiede XSS review.",
+      "evidence_refs": [
+        "https://github.com/ckaiser258/VisionBoard/commit/8ebecaca018fb6be8c324e131932b62eae428ecb",
+        "https://github.com/ckaiser258/VisionBoard/blob/8ebecaca018fb6be8c324e131932b62eae428ecb/README.md",
+        "https://github.com/ckaiser258/VisionBoard/blob/8ebecaca018fb6be8c324e131932b62eae428ecb/src/board.js"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0005.md"
+    },
+    {
+      "id": "VBR-0006",
+      "input_position": 6,
+      "input_url": "https://github.com/kandacewithak/Envision",
+      "canonical_url": "https://github.com/kandacewithak/Envision",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "kandacewithak/Envision",
+      "upstream": null,
+      "source_sha": "439ac1b324387c41d2bac8cd23717b2809fb59f8",
+      "source_path": "src/App.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "LICENSE_NOT_FOUND",
+        "reuse": "NO_COMMERCIAL_CODE_COPY_LICENSE_MISSING",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "UX_REFERENCE"
+      ],
+      "capability_matches": [
+        "CAP-0027",
+        "CAP-0099"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "React: obiettivi→ricerca immagini con Pixabay in src/App.js.",
+      "limitations": "API key hardcoded frontend, nessun LICENSE; Pixabay e foto hanno termini separati.",
+      "evidence_refs": [
+        "https://github.com/kandacewithak/Envision/commit/439ac1b324387c41d2bac8cd23717b2809fb59f8",
+        "https://github.com/kandacewithak/Envision/blob/439ac1b324387c41d2bac8cd23717b2809fb59f8/README.md",
+        "https://github.com/kandacewithak/Envision/blob/439ac1b324387c41d2bac8cd23717b2809fb59f8/src/App.js"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0006.md"
+    },
+    {
+      "id": "VBR-0007",
+      "input_position": 7,
+      "input_url": "https://github.com/topics/vision-board-2027",
+      "canonical_url": "https://github.com/topics/vision-board-2027",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "upstream": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_TOPIC_DIRECTORY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "reuse": "DIRECTORY_ONLY",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Pagina topic, non repository di prompt/immagini.",
+      "limitations": "Nessun codice, asset, SHA o licenza attribuibile alla directory.",
+      "evidence_refs": [
+        "https://github.com/topics/vision-board-2027"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Inspect individual repositories from topic and register separately",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0007.md"
+    },
+    {
+      "id": "VBR-0008",
+      "input_position": 8,
+      "input_url": "https://github.com/xgicmt/vision-board",
+      "canonical_url": "https://github.com/xgicmt/vision-board",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "xgicmt/vision-board",
+      "upstream": null,
+      "source_sha": "2a444adf18df6344a7f9826b838c4bf28bc80a0c",
+      "source_path": "app/models/board.rb",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "LICENSE_NOT_FOUND",
+        "reuse": "NO_COMMERCIAL_CODE_COPY_LICENSE_MISSING",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0027",
+        "CAP-0075"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Rails (2015): board con immagini e URL di condivisione, board.rb genera token condiviso prima di ogni salvataggio.",
+      "limitations": "Before-save può alterare URL condivisi; rivedere lifecycle, revoca, sicurezza e privacy.",
+      "evidence_refs": [
+        "https://github.com/xgicmt/vision-board/commit/2a444adf18df6344a7f9826b838c4bf28bc80a0c",
+        "https://github.com/xgicmt/vision-board/blob/2a444adf18df6344a7f9826b838c4bf28bc80a0c/README.md",
+        "https://github.com/xgicmt/vision-board/blob/2a444adf18df6344a7f9826b838c4bf28bc80a0c/app/models/board.rb"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0008.md"
+    },
+    {
+      "id": "VBR-0009",
+      "input_position": 9,
+      "input_url": "https://github.com/khalidkhankakar/vision-board",
+      "canonical_url": "https://github.com/khalidkhankakar/vision-board",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "khalidkhankakar/vision-board",
+      "upstream": null,
+      "source_sha": "7b369ba03cb6cda06d6882922785decc2b94568c",
+      "source_path": "app/board/_components/canvas.tsx",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "LICENSE_NOT_FOUND",
+        "reuse": "NO_COMMERCIAL_CODE_COPY_LICENSE_MISSING",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0028",
+        "CAP-0029"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "React Konva+Liveblocks: presenze, history, note, selezioni e canvas con limite di 100 layer.",
+      "limitations": "Cloud Clerk/Liveblocks/Neon, nessun LICENSE; non introdurre default cloud per Anna.",
+      "evidence_refs": [
+        "https://github.com/khalidkhankakar/vision-board/commit/7b369ba03cb6cda06d6882922785decc2b94568c",
+        "https://github.com/khalidkhankakar/vision-board/blob/7b369ba03cb6cda06d6882922785decc2b94568c/README.md",
+        "https://github.com/khalidkhankakar/vision-board/blob/7b369ba03cb6cda06d6882922785decc2b94568c/app/board/_components/canvas.tsx"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0009.md"
+    },
+    {
+      "id": "VBR-0010",
+      "input_position": 10,
+      "input_url": "https://github.com/topics/moodboard",
+      "canonical_url": "https://github.com/topics/moodboard",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "upstream": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_TOPIC_DIRECTORY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "reuse": "DIRECTORY_ONLY",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Pagina topic per ricerca futura di moodboard.",
+      "limitations": "Il topic non attribuisce proprietà OSS o licenze alle sue entry.",
+      "evidence_refs": [
+        "https://github.com/topics/moodboard"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Inspect individual repositories from topic and register separately",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0010.md"
+    },
+    {
+      "id": "VBR-0011",
+      "input_position": 11,
+      "input_url": "https://github.com/titleunknown/moodboard-studio",
+      "canonical_url": "https://github.com/titleunknown/moodboard-studio",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "titleunknown/moodboard-studio",
+      "upstream": null,
+      "source_sha": "89e62167cebec525d762f00afe489a4b14bbd7f2",
+      "source_path": "README.md",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "PROPRIETARY_ALL_RIGHTS_RESERVED",
+        "reuse": "PROPRIETARY_NO_CODE_REUSE",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "UX_REFERENCE"
+      ],
+      "capability_matches": [
+        "CAP-0075"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "README descrive moodboard di immagini locali e output PDF A4/Letter.",
+      "limitations": "Tree contiene SOLO README e LICENSE; LICENSE all-rights-reserved, non esiste codice pubblico da estrarre.",
+      "evidence_refs": [
+        "https://github.com/titleunknown/moodboard-studio/commit/89e62167cebec525d762f00afe489a4b14bbd7f2",
+        "https://github.com/titleunknown/moodboard-studio/blob/89e62167cebec525d762f00afe489a4b14bbd7f2/README.md",
+        "https://github.com/titleunknown/moodboard-studio/blob/89e62167cebec525d762f00afe489a4b14bbd7f2/README.md",
+        "https://github.com/titleunknown/moodboard-studio/blob/89e62167cebec525d762f00afe489a4b14bbd7f2/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0011.md"
+    },
+    {
+      "id": "VBR-0012",
+      "input_position": 12,
+      "input_url": "https://github.com/Ninjafishy/Boardfish",
+      "canonical_url": "https://github.com/Ninjafishy/Boardfish",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "Ninjafishy/Boardfish",
+      "upstream": null,
+      "source_sha": "c3237eda30d5fb140958448c55caaa8c1ca25862",
+      "source_path": "src/js/board_document.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "SOURCE_AVAILABLE_NONCOMMERCIAL",
+        "reuse": "NO_COMMERCIAL_CODE_REUSE_WITHOUT_WRITTEN_PERMISSION",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0029",
+        "CAP-0075",
+        "CAP-0149"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Board local-first, formato .bf, immagini lossless; board_document.js normalizza metadati imageStore e container.",
+      "limitations": "LICENSE vieta distribuzione/uso commerciale senza permesso; claim 500 MB non testato da noi.",
+      "evidence_refs": [
+        "https://github.com/Ninjafishy/Boardfish/commit/c3237eda30d5fb140958448c55caaa8c1ca25862",
+        "https://github.com/Ninjafishy/Boardfish/blob/c3237eda30d5fb140958448c55caaa8c1ca25862/README.md",
+        "https://github.com/Ninjafishy/Boardfish/blob/c3237eda30d5fb140958448c55caaa8c1ca25862/src/js/board_document.js",
+        "https://github.com/Ninjafishy/Boardfish/blob/c3237eda30d5fb140958448c55caaa8c1ca25862/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0012.md"
+    },
+    {
+      "id": "VBR-0013",
+      "input_position": 13,
+      "input_url": "https://github.com/viktorkpkn/ImageCanvas",
+      "canonical_url": "https://github.com/viktorkpkn/ImageCanvas",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "viktorkpkn/ImageCanvas",
+      "upstream": null,
+      "source_sha": "35a800339b7396685b72ef4f5990448a2fa15d8e",
+      "source_path": "Sources/ImageCanvas/LayoutEngine.swift",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_LICENSE_FILE",
+        "reuse": "CONDITIONAL_MIT_NOTICE_AND_FILE_DEPENDENCY_REVIEW",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "GOLDEN_CANDIDATE"
+      ],
+      "capability_matches": [
+        "CAP-0029",
+        "CAP-0075"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_REUSE_FIRST",
+        "NEW_GOLDEN_UNPROMOTED"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Algoritmi reali native tiled, cascading e collage; BoardStore persiste board e riferimenti a file.",
+      "limitations": "MIT ma solo Swift macOS; port Dart + test; ink pen non persistito.",
+      "evidence_refs": [
+        "https://github.com/viktorkpkn/ImageCanvas/commit/35a800339b7396685b72ef4f5990448a2fa15d8e",
+        "https://github.com/viktorkpkn/ImageCanvas/blob/35a800339b7396685b72ef4f5990448a2fa15d8e/README.md",
+        "https://github.com/viktorkpkn/ImageCanvas/blob/35a800339b7396685b72ef4f5990448a2fa15d8e/Sources/ImageCanvas/LayoutEngine.swift",
+        "https://github.com/viktorkpkn/ImageCanvas/blob/35a800339b7396685b72ef4f5990448a2fa15d8e/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0013.md"
+    },
+    {
+      "id": "VBR-0014",
+      "input_position": 14,
+      "input_url": "https://github.com/irisyann/moodboard-react",
+      "canonical_url": "https://github.com/irisyann/moodboard-react",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "irisyann/moodboard-react",
+      "upstream": null,
+      "source_sha": "d6db4b6181e66841a2e93b9fef12c46505f94453",
+      "source_path": "src/Generator.js",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "LICENSE_NOT_FOUND",
+        "reuse": "NO_COMMERCIAL_CODE_COPY_LICENSE_MISSING",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "UX_REFERENCE"
+      ],
+      "capability_matches": [
+        "CAP-0027"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "React Grid Gallery per immagini Pexels e didascalie autore.",
+      "limitations": "LICENSE non individuato; API/asset Pexels con diritti separati.",
+      "evidence_refs": [
+        "https://github.com/irisyann/moodboard-react/commit/d6db4b6181e66841a2e93b9fef12c46505f94453",
+        "https://github.com/irisyann/moodboard-react/blob/d6db4b6181e66841a2e93b9fef12c46505f94453/README.md",
+        "https://github.com/irisyann/moodboard-react/blob/d6db4b6181e66841a2e93b9fef12c46505f94453/src/Generator.js"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0014.md"
+    },
+    {
+      "id": "VBR-0015",
+      "input_position": 15,
+      "input_url": "https://github.com/niral28/moodboard",
+      "canonical_url": "https://github.com/niral28/moodboard",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "niral28/moodboard",
+      "upstream": null,
+      "source_sha": "ab21605ce36c5a802a46d90b4df5bb1c7a64d637",
+      "source_path": "frontend/src/components/Canvas.tsx",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "LICENSE_NOT_FOUND",
+        "reuse": "NO_COMMERCIAL_CODE_COPY_LICENSE_MISSING",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR"
+      ],
+      "capability_matches": [
+        "CAP-0098",
+        "CAP-0148"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Canvas di cluster e suggerimenti da accettare/rifiutare; backend con agenti Gemini e Chrome CDP.",
+      "limitations": "Nessun LICENSE; non on-device, dipende da servizi e browser automation.",
+      "evidence_refs": [
+        "https://github.com/niral28/moodboard/commit/ab21605ce36c5a802a46d90b4df5bb1c7a64d637",
+        "https://github.com/niral28/moodboard/blob/ab21605ce36c5a802a46d90b4df5bb1c7a64d637/README.md",
+        "https://github.com/niral28/moodboard/blob/ab21605ce36c5a802a46d90b4df5bb1c7a64d637/frontend/src/components/Canvas.tsx"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0015.md"
+    },
+    {
+      "id": "VBR-0016",
+      "input_position": 16,
+      "input_url": "https://github.com/topics/whiteboard",
+      "canonical_url": "https://github.com/topics/whiteboard",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "upstream": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_TOPIC_DIRECTORY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "reuse": "DIRECTORY_ONLY",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Topic whiteboard utile per scouting, non donor.",
+      "limitations": "Ogni repository richiede audit e licenza individuale.",
+      "evidence_refs": [
+        "https://github.com/topics/whiteboard"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Inspect individual repositories from topic and register separately",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0016.md"
+    },
+    {
+      "id": "VBR-0017",
+      "input_position": 17,
+      "input_url": "https://github.com/plait-board/drawnix",
+      "canonical_url": "https://github.com/plait-board/drawnix",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "plait-board/drawnix",
+      "upstream": null,
+      "source_sha": "b138ff867943ddff6c4c79560e10ab6ee3b5600e",
+      "source_path": "packages/drawnix/src/data/json.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_LICENSE_FILE",
+        "reuse": "CONDITIONAL_MIT_NOTICE_AND_FILE_DEPENDENCY_REVIEW",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE",
+        "GOLDEN_CANDIDATE"
+      ],
+      "capability_matches": [
+        "CAP-0028",
+        "CAP-0029",
+        "CAP-0098",
+        "CAP-0149"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_REUSE_FIRST",
+        "NEW_GOLDEN_UNPROMOTED"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Plugin canvas, pen, immagini, mind/flow; json.ts serializza version/elements/viewport/theme .drawnix.",
+      "limitations": "MIT sorgente; licenze Plait/Slate separate; .drawnix ≠ JSON Canvas v1; port Flutter richiesto.",
+      "evidence_refs": [
+        "https://github.com/plait-board/drawnix/commit/b138ff867943ddff6c4c79560e10ab6ee3b5600e",
+        "https://github.com/plait-board/drawnix/blob/b138ff867943ddff6c4c79560e10ab6ee3b5600e/README.md",
+        "https://github.com/plait-board/drawnix/blob/b138ff867943ddff6c4c79560e10ab6ee3b5600e/packages/drawnix/src/data/json.ts",
+        "https://github.com/plait-board/drawnix/blob/b138ff867943ddff6c4c79560e10ab6ee3b5600e/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0017.md"
+    },
+    {
+      "id": "VBR-0018",
+      "input_position": 18,
+      "input_url": "https://github.com/konvajs/konva",
+      "canonical_url": "https://github.com/konvajs/konva",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "konvajs/konva",
+      "upstream": null,
+      "source_sha": "afc3c4e2b287164f23e4d42c604a5d74632cf8f2",
+      "source_path": "src/Stage.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_LICENSE_FILE",
+        "reuse": "CONDITIONAL_MIT_NOTICE_AND_FILE_DEPENDENCY_REVIEW",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "CODE_DONOR_CANDIDATE"
+      ],
+      "capability_matches": [
+        "CAP-0029",
+        "CAP-0149"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P1",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P2",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Stage.ts gestisce scene graph, eventi pointer/touch/mouse e layer di Canvas HTML5.",
+      "limitations": "MIT ma framework Web JavaScript, non widget Flutter nativo; considerare solo Web.",
+      "evidence_refs": [
+        "https://github.com/konvajs/konva/commit/afc3c4e2b287164f23e4d42c604a5d74632cf8f2",
+        "https://github.com/konvajs/konva/blob/afc3c4e2b287164f23e4d42c604a5d74632cf8f2/README.md",
+        "https://github.com/konvajs/konva/blob/afc3c4e2b287164f23e4d42c604a5d74632cf8f2/src/Stage.ts",
+        "https://github.com/konvajs/konva/blob/afc3c4e2b287164f23e4d42c604a5d74632cf8f2/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0018.md"
+    },
+    {
+      "id": "VBR-0019",
+      "input_position": 19,
+      "input_url": "https://github.com/topics/planner-templates",
+      "canonical_url": "https://github.com/topics/planner-templates",
+      "source_kind": "TOPIC_DIRECTORY",
+      "repository_full_name": null,
+      "upstream": null,
+      "source_sha": null,
+      "source_path": null,
+      "received_at": "2026-11-08",
+      "audit_depth": "E0_TOPIC_DIRECTORY_REFERENCE",
+      "status": "TOPIC_ONLY",
+      "licensing": {
+        "code": "N_A_TOPIC",
+        "reuse": "DIRECTORY_ONLY",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "DISCOVERY_ONLY"
+      ],
+      "capability_matches": [],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_IF_RELEVANT"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Topic per template planner, non repo con licenza unica.",
+      "limitations": "I diritti di template, fonts e immagini non si ereditano dal topic.",
+      "evidence_refs": [
+        "https://github.com/topics/planner-templates"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Inspect individual repositories from topic and register separately",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0019.md"
+    },
+    {
+      "id": "VBR-0020",
+      "input_position": 20,
+      "input_url": "https://github.com/devdotfast/whiteboard",
+      "canonical_url": "https://github.com/devdotfast/whiteboard",
+      "source_kind": "SOURCE_REPO",
+      "repository_full_name": "devdotfast/whiteboard",
+      "upstream": null,
+      "source_sha": "16d979cafba448b5be05104959fce113fbbe9ad2",
+      "source_path": "packages/board-protocol/src/index.ts",
+      "received_at": "2026-11-08",
+      "audit_depth": "E1_README_TREE_FILE_LICENSE_SCOPE",
+      "status": "AUDITED_E1_SCOPED",
+      "licensing": {
+        "code": "MIT_LICENSE_FILE",
+        "reuse": "CONDITIONAL_MIT_NOTICE_AND_FILE_DEPENDENCY_REVIEW",
+        "external_assets": "SEPARATE_REVIEW"
+      },
+      "technical_roles": [
+        "PATTERN_DONOR",
+        "GOLDEN_CANDIDATE"
+      ],
+      "capability_matches": [
+        "CAP-0098",
+        "CAP-0149"
+      ],
+      "golden_matches": [
+        "INFINITE_CANVAS_INK_DRAFT_REUSE_FIRST",
+        "NEW_GOLDEN_UNPROMOTED"
+      ],
+      "consumer_assessments": {
+        "Notes-Ecosistema": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        },
+        "Agenda-per-Anna": {
+          "research_priority": "P3",
+          "verified_runtime": false
+        }
+      },
+      "summary": "Board per progettazione software agente↔umano; protocollo con snapshot, seq ottimistico e idempotency requestId.",
+      "limitations": "MIT root ma monorepo grande con altri license scope; non è Vision Board consumer.",
+      "evidence_refs": [
+        "https://github.com/devdotfast/whiteboard/commit/16d979cafba448b5be05104959fce113fbbe9ad2",
+        "https://github.com/devdotfast/whiteboard/blob/16d979cafba448b5be05104959fce113fbbe9ad2/README.md",
+        "https://github.com/devdotfast/whiteboard/blob/16d979cafba448b5be05104959fce113fbbe9ad2/packages/board-protocol/src/index.ts",
+        "https://github.com/devdotfast/whiteboard/blob/16d979cafba448b5be05104959fce113fbbe9ad2/LICENSE"
+      ],
+      "tests_executed": [],
+      "device_evidence": "NOT_VERIFIED",
+      "next_gate": "Review target architecture and license/test gates before any implementation",
+      "sheet_path": "15-VISION-BOARD/SCHEDE/VBR-0020.md"
+    }
   ],
-  "extraction_types": [
-    "CODE_DONOR_CANDIDATE",
-    "PATTERN_DONOR",
-    "UX_REFERENCE",
-    "GOLDEN_CANDIDATE",
-    "CAPABILITY_MATCH",
-    "NEW_CAP_PROPOSAL",
-    "APP_IDEA",
-    "REJECTED"
-  ],
-  "statuses": [
-    "RECEIVED",
-    "AUDITED_E1",
-    "REVIEWED_E2",
-    "DA_STUDIARE",
-    "CANDIDATO_ADOTTABILE",
-    "SOLO_REFERENCE",
-    "BLOCCATO",
-    "SCARTATO"
-  ],
-  "required_record_fields": [
-    "id",
-    "input_url",
-    "canonical_url",
-    "received_at",
-    "source_sha",
-    "audit_depth",
-    "license_scopes",
-    "source_paths",
-    "roles",
-    "capability_matches",
-    "golden_matches",
-    "consumer_assessments",
-    "evidence_refs",
-    "next_gate",
-    "sheet_path"
-  ],
-  "records": [],
-  "extractions": []
+  "extractions": [
+    {
+      "id": "VBE-001",
+      "source_ids": [
+        "VBR-0003",
+        "VBR-0005"
+      ],
+      "type": "UX_REFERENCE",
+      "proposed_contract": "Onboarding domande→obiettivi→immagini",
+      "consumer": "Anna/Notes",
+      "cap_matches": "CAP-0099",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Prototipo autonomo senza codice non licenziato"
+    },
+    {
+      "id": "VBE-002",
+      "source_ids": [
+        "VBR-0002"
+      ],
+      "type": "PATTERN_DONOR",
+      "proposed_contract": "Tracking consistenza/frequenza obiettivi",
+      "consumer": "Notes/Anna",
+      "cap_matches": "CAP-0099,CAP-0104",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Algoritmo locale senza Neon"
+    },
+    {
+      "id": "VBE-003",
+      "source_ids": [
+        "VBR-0005"
+      ],
+      "type": "PATTERN_DONOR",
+      "proposed_contract": "Board→goal ID, stato CRUD e lifecycle",
+      "consumer": "Notes/Anna",
+      "cap_matches": "CAP-0099",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Niente nuovo DB, sanificazione input e verifica Rails separata"
+    },
+    {
+      "id": "VBE-004",
+      "source_ids": [
+        "VBR-0013"
+      ],
+      "type": "GOLDEN_CANDIDATE",
+      "proposed_contract": "Collage packer geometrico multi-layout",
+      "consumer": "Notes/Anna",
+      "cap_matches": "CAP-0029",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Port Dart + fixture + device benchmark"
+    },
+    {
+      "id": "VBE-005",
+      "source_ids": [
+        "VBR-0013"
+      ],
+      "type": "CODE_DONOR_CANDIDATE",
+      "proposed_contract": "Media references/persistenza senza toccare originali",
+      "consumer": "Notes/Anna",
+      "cap_matches": "CAP-0075",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "SAF Android, media missing, backup/restore"
+    },
+    {
+      "id": "VBE-006",
+      "source_ids": [
+        "VBR-0017"
+      ],
+      "type": "CODE_DONOR_CANDIDATE",
+      "proposed_contract": "Document/viewport serializzazione .drawnix e plugin",
+      "consumer": "Notes",
+      "cap_matches": "CAP-0028,CAP-0029,CAP-0149",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Non confondere .drawnix e JSON Canvas"
+    },
+    {
+      "id": "VBE-007",
+      "source_ids": [
+        "VBR-0018"
+      ],
+      "type": "CODE_DONOR_CANDIDATE",
+      "proposed_contract": "Web scene graph drag/pointer/touch",
+      "consumer": "Notes Web",
+      "cap_matches": "CAP-0029",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Valutare solo editor Web, non Flutter nativo"
+    },
+    {
+      "id": "VBE-008",
+      "source_ids": [
+        "VBR-0012"
+      ],
+      "type": "PATTERN_DONOR",
+      "proposed_contract": "Portable imageStore board document .bf",
+      "consumer": "Notes/Anna",
+      "cap_matches": "CAP-0075,CAP-0149",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Solo pattern: codice non commerciale vietato"
+    },
+    {
+      "id": "VBE-009",
+      "source_ids": [
+        "VBR-0009"
+      ],
+      "type": "PATTERN_DONOR",
+      "proposed_contract": "Collaboration presence + history opzionale",
+      "consumer": "Notes (futuro)",
+      "cap_matches": "CAP-0028",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Cloud auth/Liveblocks e license gate, non default Anna"
+    },
+    {
+      "id": "VBE-010",
+      "source_ids": [
+        "VBR-0015"
+      ],
+      "type": "PATTERN_DONOR",
+      "proposed_contract": "Cluster cards e suggestion accept/reject",
+      "consumer": "Notes",
+      "cap_matches": "CAP-0098,CAP-0148",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Versione locale senza Gemini/CDP"
+    },
+    {
+      "id": "VBE-011",
+      "source_ids": [
+        "VBR-0020"
+      ],
+      "type": "PATTERN_DONOR",
+      "proposed_contract": "Board protocol seq/idempotency/agent trace",
+      "consumer": "Dev tools/Notes",
+      "cap_matches": "CAP-0149",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Scope separato e licenze sottoprogetti"
+    },
+    {
+      "id": "VBE-012",
+      "source_ids": [
+        "VBR-0011"
+      ],
+      "type": "UX_REFERENCE",
+      "proposed_contract": "Offline PDF proportional export UX",
+      "consumer": "Notes/Anna",
+      "cap_matches": "CAP-0075",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Solo descrizione: codice proprietario non pubblicato"
+    },
+    {
+      "id": "VBE-013",
+      "source_ids": [
+        "VBR-0006",
+        "VBR-0014"
+      ],
+      "type": "UX_REFERENCE",
+      "proposed_contract": "Search images via provider, captions/attribution",
+      "consumer": "Notes/Anna",
+      "cap_matches": "CAP-0027",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "ToS media, evitare secret lato client"
+    },
+    {
+      "id": "VBE-014",
+      "source_ids": [
+        "VBR-0016",
+        "VBR-0019"
+      ],
+      "type": "DISCOVERY_ONLY",
+      "proposed_contract": "Nuovi motori o template da directory",
+      "consumer": "Notes/Anna",
+      "cap_matches": "—",
+      "status": "UNPROMOTED_CANDIDATE",
+      "next_gate": "Catalogare solo nuovi URL repository reali"
+    }
+  ]
 }

@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-08 — Vision Board lotto 1: 20 fonti e 14 estrazioni candidate
+
+- Registrati VBR-0001..0020: 15 repo reali E1 SHA pinned, 5 directory Topics E0; risolti Ninjafishy/Boardfish e viktorkpkn/ImageCanvas; 20 schede individuali e JSON aggiornato.
+- License gate: 4 MIT LICENSE, 1 MIT in README frontend, 2 restrittive/proprietarie, 8 senza LICENSE nel tree. Boardfish blocca copia commerciale; moodboard-studio ha solo documentazione/LICENZA.
+- Create 14 opportunità VBE di donor/pattern/Golden/CAP (solo candidate); collegamenti al catalogo CAP, focus Notes/Anna e audit comparativo. Nessuna CAP o Golden ufficiale promossa, nessun codice app/roadmap/Factory modificato.
+
+
 ## 2026-11-08 — Nuova sezione 15-VISION-BOARD
 
 - Creata una sezione autonoma per Vision Board, separata dalla ricerca Machine Learning, con Inbox VBR, registro JSON, protocollo di audit, template repository, estrazioni candidate, matrice consumer e crosswalk CAP/Golden.

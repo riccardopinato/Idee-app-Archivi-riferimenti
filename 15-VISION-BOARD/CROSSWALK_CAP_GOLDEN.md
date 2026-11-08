@@ -30,3 +30,8 @@
 
 ## Nuove responsabilità da considerare solo dopo i repository reali
 Vision Board personale/progettuale potrebbe richiedere un **contratto di composizione di visioni e obiettivi** (board→goal/reference→milestone) distinto dal puro motore canvas. Prima di proporre una CAP, provare che non sia già coperto dai contratti sopra; evitare un secondo media store, task engine, planner, sync o lifecycle. Candidate non numerate fino all'ammissione.
+
+
+## Lotto 1 verificato (08/11/2026)
+
+[20 schede](INBOX_REPOSITORY.md) / [14 estrazioni](ESTRAZIONI_CANDIDATE.md) / [audit comparativo](AUDIT_20_RIFERIMENTI_VB_2026-11-08.md). Proposta Golden Layout/Media Composition ancora NON_CERTIFIED e distinta dal core Infinite Canvas/Ink. Proposta CAP Vision Board GoalRefs+MediaRefs NON NUMERATA finché non è dimostrato il delta da CAP-0029/0099/0104/0149. Dal registro CAP: Notes CAP-0029 e 0098 SOURCE_REPORTED, CAP-0099/0104/0149 PROPOSTA. Stati di catalogo, non test runtime.
