@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — HTML.it Flutter: 5 maxi-step catalogazione + audit mirato
+
+- Inseriti nel catalogo [report evidence-gated](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_HTMLIT_FLUTTER_5_MAXISTEP_2026-11-09.md) e [registro JSON delle 12 estrazioni](../12-CAPABILITY-E-IMPLEMENTAZIONI/HTMLIT_FLUTTER_REFERENCE_CROSSWALK_2026-11-09.json) dalla guida HTML.it di 37 lezioni (2019–2020). Provenance: repo esempi SHA pinned, nessun LICENSE root, codice commerciale non approvato.
+- Dedup contro le **199 CAP** correnti: **0 nuovi CAP**, **0 associazioni**, **0 transizioni di stato/decisione prodotto**. Fonte esterna E0 per pattern/learning, non donor né Golden.
+- Audit campionato su repository e percorsi Flutter: lazy lists presenti in Anna/Notes; World Days due schermate a costruzione eager **da benchmarkare**; Anna backend IO/Web condizionale; World Days content-pack temporanei e rollback; CamperBoss geolocation service/permission health; TrailPath stack moderno documentato. Nessun bug di performance e nessun comportamento dispositivo dichiarati provati.
+- Nessuna modifica a repo delle app, App Factory Core, AppLab, cloud, dati o rilasci. Zero promozioni Golden; scan completo su checkout e benchmark restano gate successivi.
+
 ## 2026-11-08 — Vision Board lotto 2: 20 segnalazioni / 19 fonti nuove
 
 - 13 repository con SHA e source E1, 5 directory Topics E0, 1 alias “Mymind Clone” non verificato, 1 duplicato dell'URL VBR-0001; creati VBR-0021..0039 e audit/intake/manifests.
