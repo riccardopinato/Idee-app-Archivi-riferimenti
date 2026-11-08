@@ -115,7 +115,21 @@ def main():
           for f in row["feature_facets"] if f["kind"]=="CAP_EXISTENTE_MATCH_TEMATICO"
         )
         related=[n for n,count in counts.most_common(3)]
-        if not related or any(x not in valid for x in related):
+        if not related:
+            fallback={
+              "analisi":"CAP-0108","editor":"CAP-0093","ricerca":"CAP-0013",
+              "organizzazione":"CAP-0096","sincronizzazione":"CAP-0100",
+              "sicurezza":"CAP-0018","agenda":"CAP-0004",
+              "condivisione":"CAP-0100","pianificazione":"CAP-0102",
+              "accessibilita":"CAP-0084","interoperabilita":"CAP-0075",
+              "widget":"CAP-0144","gamification":"CAP-0145","benessere":"CAP-0145",
+              "automazioni":"CAP-0148","editoriale":"CAP-0042",
+              "documenti":"CAP-0134","esperienza":"CAP-0025",
+              "android":"CAP-0077","voce":"CAP-0031","integrazione":"CAP-0020",
+              "database":"CAP-0096"
+            }
+            related=[fallback[DOMAIN[key]]]
+        if any(x not in valid for x in related):
             raise RuntimeError("Related CAP not found: "+key)
         anti="Delta circoscritto a "+c["title"]+". Non duplicare la responsabilita delle CAP "+", ".join(related)+". Ogni dubbio di sovrapposizione richiede confronto di test/contratti prima di introdurre codice."
         rec={
