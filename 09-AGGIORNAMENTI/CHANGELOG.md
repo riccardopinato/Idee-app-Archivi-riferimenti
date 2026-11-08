@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-08 — OSS95: license-file follow-up 26/26
+
+- Completata la lettura documentale dei file di licenza di **26 repository GitHub** che l'API aveva classificato `NOASSERTION/UNKNOWN`; classificati 7 permissivi scoped, 8 copyleft/misti, 8 source-available restrittivi, 1 documentale, 2 indicizzatori/componenti.
+- Tutti i 26 rimangono abilitati all'estrazione capability: 90 facets già presenti nel totale 329; nessuna esclusione per mancato SPDX API. Il riuso codice non viene erroneamente dichiarato MIT/libero.
+- Aggiornati `AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json`, `REGISTRO_CAPABILITY.json` e report `AUDIT_LICENZE_26_OSS95_2026-11-08.md`. 160 CAP, 385 associazioni e 39 candidate E0 invariati.
+
+
 ## 2026-11-08 — Capability OSS95 audited intake
 
 - Audit documentale su 95 repository GitHub (README, metadata, licenza REST; percorsi README non standard recuperati), con 329 associazioni repository-funzione, 47 CAP tematicamente corrispondenti e 39 candidate E0 con decisione prodotto DA_VALUTARE.

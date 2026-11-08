@@ -19599,6 +19599,27 @@
         "product_decision": "DA_VALUTARE",
         "implementation_in_app": "NOT_INFERRED"
       }
-    ]
+    ],
+    "license_file_followup_20261108": {
+      "scope": "26 OSS95 repositories with REST GitHub license metadata NOASSERTION or UNKNOWN",
+      "result": "ALL_26_ANALYZED_WITHOUT_FUNCTIONAL_EXCLUSION",
+      "evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_LICENZE_26_OSS95_2026-11-08.md",
+      "source_atlas": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json",
+      "repos_inspected": 26,
+      "preexisting_repo_feature_observations": 90,
+      "category_counts": {
+        "PERMISSIVE_SCOPED": 7,
+        "COPYLEFT_OR_MIXED": 8,
+        "RESTRICTED_SOURCE_AVAILABLE": 8,
+        "DOCUMENTATION_REFERENCE_ONLY": 1,
+        "LICENSE_NOT_CLEAR_AT_THIS_REPO": 2
+      },
+      "capability_research_allowed": true,
+      "code_copyleft_commercial_reuse_cleared": false,
+      "incremental_cap_ids_added": 0,
+      "feature_facets_added": 0,
+      "implementation_states_promoted": 0,
+      "reason": "Real license terms govern code reuse; metadata missing is not license-free. Keep all capabilities eligible for research independently."
+    }
   }
 }
