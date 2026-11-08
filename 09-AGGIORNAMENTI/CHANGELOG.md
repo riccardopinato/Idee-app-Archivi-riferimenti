@@ -1,4 +1,11 @@
 # Changelog dell'archivio
+
+## 2026-11-08 — Creazione sezione autonoma Machine Learning
+
+- Creata **14-MACHINE-LEARNING** con README, Inbox, registro fonti JSON, protocollo di audit, template singolo repository e crosswalk agli studi ML23 e ML10 già presenti.
+- La sezione supporta nuovi link GitHub con ID MLR progressivi, audit al commit SHA, separazione codice/pesi/dataset, extraction Donor e Golden **solo candidati**, confronto anti-dup con CAP canoniche e gate E0–E5.
+- **Zero nuovi repo registrati**, nessuna nuova CAP o variazione stati, nessuna modifica alle app, ad AppLab, ad App-Factory-Core o a Golden Index/Registry; il catalogo canonico resta l'unica source of truth delle capability.
+
 ## 2026-11-08 — Comando Stelle: refresh OSS95 e raccomandazioni product-admission
 
 - Connessione GitHub autorizzata ma endpoint `user/starred` bloccato: **nuove stelle live non verificate**; usato il pacchetto curated OSS95 dichiarato, senza spacciarlo per stelle autentiche.

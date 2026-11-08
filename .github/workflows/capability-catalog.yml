@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "12-CAPABILITY-E-IMPLEMENTAZIONI/**"
+      - "14-MACHINE-LEARNING/**"
+      - "scripts/validate_ml_intake.py"
       - "scripts/build_catalog.py"
       - "scripts/build_status_views.py"
       - "scripts/projects_sync.py"
@@ -20,6 +22,8 @@ on:
     branches: [main]
     paths:
       - "12-CAPABILITY-E-IMPLEMENTAZIONI/**"
+      - "14-MACHINE-LEARNING/**"
+      - "scripts/validate_ml_intake.py"
       - "scripts/build_catalog.py"
       - "scripts/build_status_views.py"
       - "scripts/projects_sync.py"
@@ -45,6 +49,8 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Check registry and generated app views
         run: python3 scripts/build_catalog.py --check
+      - name: Validate ML intake registry and links
+        run: python3 scripts/validate_ml_intake.py
       - name: Test evidence state promotions
         run: python3 -m unittest discover -s tests -p 'capability_registry_test.py' -v
       - name: Test integration-vs-pending partition
