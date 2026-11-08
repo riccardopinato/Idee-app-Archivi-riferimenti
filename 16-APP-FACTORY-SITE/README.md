@@ -24,3 +24,8 @@ La sezione Donor & Golden presenta **61 Golden ufficiali (inclusi draft/processi
 **Storico e dati manuali:** la chiave localStorage `appfactory-control-center-v1` non cambia. `syncGitHub` importa i record Golden/Capability e i Passport in sola lettura; i record protetti manualmente continuano a prevalere. Evitare reset dello storage e sostituzioni distruttive. I donor fanno parte della snapshot pubblica; nessuna chiave GitHub/Vercel nel browser. Filtri client-side senza round-trip verso GitHub.
 
 **Gate:** `python3 -m unittest discover -s tests -p site_snapshot_test.py -v`; workflow [App Factory Site snapshot](../../.github/workflows/app-factory-site-snapshot.yml). Deploy Vercel tramite HTML statico (attuale progetto senza Git repository collegato) dopo la PR/CI, con check del dominio produttivo.
+
+
+## Certificazioni E3 incrementali (08/11/2026)
+
+[Sei donor storici verificati](SYNC_DONOR_E3_2026-11-08.md) da App-Factory-Core PR #87; la snapshot ora contiene 15 E3 puntuali. È sufficiente la sincronizzazione dati GitHub, senza nuovo deploy HTML né reset dello storico manuale.
