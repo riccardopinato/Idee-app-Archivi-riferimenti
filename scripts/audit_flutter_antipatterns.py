@@ -26,12 +26,70 @@ SKIP_DIRS = {".git", ".dart_tool", "build", "node_modules", ".symlinks", ".fvm"}
 SKIP_SUFFIXES = (".g.dart", ".freezed.dart", ".gr.dart", ".mocks.dart")
 
 
+def _mask_non_code(source: str) -> str:
+    """Blank strings and Dart comments, preserving character and line offsets.
+
+    This is a conservative lexical filter, not a Dart parser. Interpolation
+    inside strings is intentionally not scanned and remains a documented limit.
+    """
+    masked = list(source)
+    length = len(source)
+
+    def erase(first: int, end: int) -> None:
+        for pos in range(first, end):
+            if source[pos] != "\n":
+                masked[pos] = " "
+
+    index = 0
+    while index < length:
+        if source.startswith("//", index):
+            end = source.find("\n", index)
+            end = length if end == -1 else end
+            erase(index, end)
+            index = end
+            continue
+        if source.startswith("/*", index):
+            depth = 1
+            end = index + 2
+            while end < length and depth:
+                if source.startswith("/*", end):
+                    depth += 1
+                    end += 2
+                elif source.startswith("*/", end):
+                    depth -= 1
+                    end += 2
+                else:
+                    end += 1
+            erase(index, end)
+            index = end
+            continue
+        if source[index] in ("'", '"'):
+            quote = source[index]
+            delim = quote * (3 if source.startswith(quote * 3, index) else 1)
+            end = index + len(delim)
+            while end < length:
+                if source[end] == "\\":
+                    end += 2
+                elif source.startswith(delim, end):
+                    end += len(delim)
+                    break
+                else:
+                    end += 1
+            erase(index, min(end, length))
+            index = min(end, length)
+            continue
+        index += 1
+    return "".join(masked)
+
+
 def scan(root: Path, max_findings: int = 5000) -> dict:
     if not root.is_dir():
         raise ValueError(f"Not a local directory: {root}")
     findings = []
     scanned = 0
     skipped = 0
+    truncated = False
+    legacy_api_detected = False
     for path in sorted(root.rglob("*.dart")):
         rel = path.relative_to(root)
         if any(part in SKIP_DIRS for part in rel.parts) or path.name.endswith(SKIP_SUFFIXES):
@@ -46,15 +104,18 @@ def scan(root: Path, max_findings: int = 5000) -> dict:
             skipped += 1
             continue
         scanned += 1
+        masked = _mask_non_code(content)
         for rid, category, pattern in RULES:
-            for match in pattern.finditer(content):
+            # For import paths, use raw text but require an unmasked keyword.
+            haystack = content if rid == "native_dart_io" else masked
+            for match in pattern.finditer(haystack):
+                if rid == "native_dart_io" and masked[match.start()] == " ":
+                    continue
+                if category == "LEGACY_API":
+                    legacy_api_detected = True
                 if len(findings) >= max_findings:
-                    return {
-                        "root": str(root), "scanned_dart_files": scanned,
-                        "skipped_files": skipped, "truncated": True,
-                        "findings": findings,
-                        "notice": "Heuristic candidates, not confirmed bugs or verified absence.",
-                    }
+                    truncated = True
+                    continue  # Continue scanning for legacy APIs even after cap.
                 line = content.count("\n", 0, match.start()) + 1
                 snippet = content.splitlines()[line - 1].strip()[:160]
                 findings.append({
@@ -63,7 +124,8 @@ def scan(root: Path, max_findings: int = 5000) -> dict:
                 })
     return {
         "root": str(root), "scanned_dart_files": scanned,
-        "skipped_files": skipped, "truncated": False,
+        "skipped_files": skipped, "truncated": truncated,
+        "legacy_api_detected": legacy_api_detected,
         "findings": findings,
         "notice": "Heuristic candidates, not confirmed bugs or verified absence.",
     }
@@ -83,8 +145,7 @@ def main() -> int:
         parser.error(str(exc))
     print(json.dumps({"schema_version": 1, "reports": reports}, ensure_ascii=False, indent=2))
     return int(args.fail_on_legacy_api and any(
-        finding["category"] == "LEGACY_API"
-        for report in reports for finding in report["findings"]
+        report["legacy_api_detected"] for report in reports
     ))
 
 
