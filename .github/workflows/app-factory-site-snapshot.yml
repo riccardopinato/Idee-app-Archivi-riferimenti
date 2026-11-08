@@ -1,0 +1,24 @@
+name: Validate App Factory Site snapshot and source
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '16-APP-FACTORY-SITE/**'
+      - 'tests/site_snapshot_test.py'
+      - '.github/workflows/app-factory-site-snapshot.yml'
+  push:
+    branches: [main]
+    paths:
+      - '16-APP-FACTORY-SITE/**'
+      - 'tests/site_snapshot_test.py'
+      - '.github/workflows/app-factory-site-snapshot.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Validate snapshot and compare basic JS syntax
+        run: python3 -m unittest discover -s tests -p 'site_snapshot_test.py' -v
