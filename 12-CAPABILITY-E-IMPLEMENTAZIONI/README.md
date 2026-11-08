@@ -1,5 +1,12 @@
 # Catalogo centrale capability — App Factory
 
+## 08/11/2026 — Stelle: audit incrementale, refresh fonti e ammissione prodotto (solo raccomandazioni)
+
+[**Audit di ammissione delle 39 CAP / 56 associazioni**](AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md) · [**Snapshot incrementale delle 95 fonti OSS**](OSS95_SOURCE_SNAPSHOT_2026-11-08.json).
+
+Il comando pubblico `Stelle` ha riesaminato **95 repository curate** (non un elenco di stelle correnti autenticato: endpoint GitHub `user/starred` non accessibile). **85** timestamp di push invariati, **10** aggiornati, ma README blob **invariati in tutti e 10**. Non sono stati dimostrati nuovi contratti funzionali nel campione; il codice interno di ogni donor non è stato riesaminato integralmente. I **39 contratti E0** hanno ora raccomandazioni di ammissione per **56 associazioni app**, *separate* dalle decisioni ufficiali ancora `DA_VALUTARE`: **7** proporre approvazione, **10** accorpare, **11** rinviare, **3** bloccate e **8** fuori perimetro *come raccomandazioni CAP prevalenti*. Totale e stati ufficiali **199 CAP / 441 associazioni**, invariati. Nessun codice app, roadmap, provider, Golden o release modificati.
+
+
 ## 08/11/2026 — Formalizzate 39 nuove CAP E0 OSS95
 
 **199 CAP, 441 associazioni app–CAP**. Aggiunte CAP-0161..CAP-0199 come PROPOSTA E0 e decisione per app DA_VALUTARE, non funzionalita implementate. Ogni CAP ha sei file kit, donor README OSS e controllo anti-duplicato. Le 160 CAP e 385 associazioni precedenti restano preservate; nessuna roadmap o app mutata.
