@@ -35,3 +35,12 @@ Vision Board personale/progettuale potrebbe richiedere un **contratto di composi
 ## Lotto 1 verificato (08/11/2026)
 
 [20 schede](INBOX_REPOSITORY.md) / [14 estrazioni](ESTRAZIONI_CANDIDATE.md) / [audit comparativo](AUDIT_20_RIFERIMENTI_VB_2026-11-08.md). Proposta Golden Layout/Media Composition ancora NON_CERTIFIED e distinta dal core Infinite Canvas/Ink. Proposta CAP Vision Board GoalRefs+MediaRefs NON NUMERATA finché non è dimostrato il delta da CAP-0029/0099/0104/0149. Dal registro CAP: Notes CAP-0029 e 0098 SOURCE_REPORTED, CAP-0099/0104/0149 PROPOSTA. Stati di catalogo, non test runtime.
+
+
+## Lotto 2 — allineamento no-duplication, 08/11/2026
+
+[Audit](AUDIT_20_RIFERIMENTI_VB_LOTTO_2_2026-11-08.md) · [VBE-015..028](ESTRAZIONI_CANDIDATE.md). `CAP-0028`, `CAP-0029` e `CAP-0149`: Excalidraw/AFFiNE/tldraw/Fabric propongono pattern di scene e export; **Golden Infinite Canvas/Ink Draft** ha già ownership di world coords, strokes, scene. No secondo engine.
+
+`CAP-0147`: RGL/Muuri/Masonry per layout e interazioni; confrontare con **VBE-004** ImageCanvas layout candidate. `CAP-0094/0099/0104`: AppFlowy, PLANKA, WeKan e Focalboard usati solo come sorgenti di proiezioni multi-view su task unici, non nuovi task store.
+
+`CAP-0136` smart cutout non coincide con Easy Crop: ritaglio geometrico e media-edit vanno riconciliati con **Golden Media Asset Store Draft**, che possiede originals/derivatives. Source flags dal registro CAP live: Notes CAP-0029 e 0098 `SOURCE_REPORTED`, CAP-0094/0099/0104/0149 `PROPOSTA`; Anna CAP-0147 `PROPOSTA`. Questi non sono esiti di test runtime.

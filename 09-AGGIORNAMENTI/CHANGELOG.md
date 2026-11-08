@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-08 — Vision Board lotto 2: 20 segnalazioni / 19 fonti nuove
+
+- 13 repository con SHA e source E1, 5 directory Topics E0, 1 alias “Mymind Clone” non verificato, 1 duplicato dell'URL VBR-0001; creati VBR-0021..0039 e audit/intake/manifests.
+- Corrette ownership di React Grid Layout, Muuri, React Easy Crop, PLANKA, Focalboard. Licenze: 7 MIT in LICENSE, 1 MIT README/header, 1 tldraw production license, 1 AFFiNE mixed, 1 AppFlowy AGPL, 1 PLANKA Fair Use, 1 Focalboard AGPL source (MIT compiled only).
+- VBE-015..028 aggiunte, cumulative 28 opportunità candidate; confronto CAP/Golden e priorità Notes/Anna. Nessun donor/Golden certificato, nuova CAP canonica, codice app, task database, provider, roadmap o test runtime modificato.
+
+
 ## 2026-11-08 — Vision Board lotto 1: 20 fonti e 14 estrazioni candidate
 
 - Registrati VBR-0001..0020: 15 repo reali E1 SHA pinned, 5 directory Topics E0; risolti Ninjafishy/Boardfish e viktorkpkn/ImageCanvas; 20 schede individuali e JSON aggiornato.

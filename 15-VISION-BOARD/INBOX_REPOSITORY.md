@@ -1,6 +1,6 @@
 # Inbox Vision Board — primo lotto 2026-11-08
 
-**20/20 riferimenti registrati: 15 repository fissati a SHA e audit E1 selettivo, 5 GitHub Topic E0.** Nessun test eseguito e nessuna certificazione Donor/Golden. Prossimo ID: `VBR-0021`.
+**40 segnalazioni in due lotti, 39 record unici**: 28 repo E1 SHA, 10 directory Topics con URL E0, 1 alias di ricerca senza topic verificato E0, un input duplicato. **Prossimo ID: `VBR-0040`**. Zero donor/Golden certificati, zero test eseguiti.
 
 | ID | Fonte | Tipo | SHA | Licenza codice | Notes | Anna | Scheda |
 |---|---|---|---|---|---|---|---|
@@ -26,3 +26,32 @@
 | VBR-0020 | [devdotfast/whiteboard](https://github.com/devdotfast/whiteboard) | Repo E1 | `16d979cafba4` | MIT_LICENSE_FILE | P3 | P3 | [Scheda](SCHEDE/VBR-0020.md) |
 
 **Fork:** VBR-0003 upstream MarioReid/project-1; VBR-0005 upstream jmclean-coder/module-3-project-vision-board-frontend. Gli upstream sono provenance, non ulteriori repository auditati.
+
+
+## Secondo lotto — 20 segnalazioni / 19 nuove (VBR-0021..0039)
+
+[Intake con deduplicazioni e alias](LOTTO_2_20_RIFERIMENTI_2026-11-08.md) · [Audit tecnico lotto 2](AUDIT_20_RIFERIMENTI_VB_LOTTO_2_2026-11-08.md).
+
+| ID | Fonte | Tipo | Commit | Licenza | Scheda |
+|---|---|---|---|---|---|
+| VBR-0021 | [tldraw/tldraw](https://github.com/tldraw/tldraw) | Repo E1 | `69f43954f15a` | `CUSTOM_DEV_ONLY_PRODUCTION_LICENSE_REQUIRED` | [Scheda](SCHEDE/VBR-0021.md) |
+| VBR-0022 | [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) | Repo E1 | `701b901a0f1b` | `MIT_FILE` | [Scheda](SCHEDE/VBR-0022.md) |
+| VBR-0023 | [toeverything/AFFiNE](https://github.com/toeverything/AFFiNE) | Repo E1 | `ef401b20cb2a` | `MIXED_MIT_MPL2_EE_FILE_SCOPE` | [Scheda](SCHEDE/VBR-0023.md) |
+| VBR-0024 | Mymind Clone — topic alias senza URL verificato | Alias E0 non verificato | — | `N_A_TOPIC` | [Scheda](SCHEDE/VBR-0024.md) |
+| VBR-0025 | [react-grid-layout/react-grid-layout](https://github.com/react-grid-layout/react-grid-layout) | Repo E1 | `f0dd77c5b2fe` | `MIT_FILE` | [Scheda](SCHEDE/VBR-0025.md) |
+| VBR-0026 | [haltu/muuri](https://github.com/haltu/muuri) | Repo E1 | `219e00893327` | `MIT_FILE` | [Scheda](SCHEDE/VBR-0026.md) |
+| VBR-0027 | [GitHub Topics — bullet-journal](https://github.com/topics/bullet-journal) | Topic E0 | — | `N_A_TOPIC` | [Scheda](SCHEDE/VBR-0027.md) |
+| VBR-0028 | [AppFlowy-IO/AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | Repo E1 | `8fcee27d9bd9` | `AGPL_3_SOURCE` | [Scheda](SCHEDE/VBR-0028.md) |
+| VBR-0029 | [GitHub Topics — daily-journal](https://github.com/topics/daily-journal) | Topic E0 | — | `N_A_TOPIC` | [Scheda](SCHEDE/VBR-0029.md) |
+| VBR-0030 | [GitHub Topics — life-os](https://github.com/topics/life-os) | Topic E0 | — | `N_A_TOPIC` | [Scheda](SCHEDE/VBR-0030.md) |
+| VBR-0031 | [GitHub Topics — habit-tracker](https://github.com/topics/habit-tracker) | Topic E0 | — | `N_A_TOPIC` | [Scheda](SCHEDE/VBR-0031.md) |
+| VBR-0032 | [GitHub Topics — pinterest-clone](https://github.com/topics/pinterest-clone) | Topic E0 | — | `N_A_TOPIC` | [Scheda](SCHEDE/VBR-0032.md) |
+| VBR-0033 | [desandro/masonry](https://github.com/desandro/masonry) | Repo E1 | `3b0883cf4a4a` | `MIT_README_SOURCE_BANNER` | [Scheda](SCHEDE/VBR-0033.md) |
+| VBR-0034 | [fabricjs/fabric.js](https://github.com/fabricjs/fabric.js) | Repo E1 | `5157cd00903e` | `MIT_FILE` | [Scheda](SCHEDE/VBR-0034.md) |
+| VBR-0035 | [ValentinH/react-easy-crop](https://github.com/ValentinH/react-easy-crop) | Repo E1 | `91bfd8f0928e` | `MIT_FILE` | [Scheda](SCHEDE/VBR-0035.md) |
+| VBR-0036 | [scaleflex/filerobot-image-editor](https://github.com/scaleflex/filerobot-image-editor) | Repo E1 | `a7cce3173cb3` | `MIT_FILE` | [Scheda](SCHEDE/VBR-0036.md) |
+| VBR-0037 | [plankanban/planka](https://github.com/plankanban/planka) | Repo E1 | `2cf423824a09` | `PLANKA_FAIR_USE_V1_1_PRO_RESTRICTED` | [Scheda](SCHEDE/VBR-0037.md) |
+| VBR-0038 | [wekan/wekan](https://github.com/wekan/wekan) | Repo E1 | `246ba448384d` | `MIT_FILE` | [Scheda](SCHEDE/VBR-0038.md) |
+| VBR-0039 | [mattermost-community/focalboard](https://github.com/mattermost-community/focalboard) | Repo E1 | `a84bbb65e32e` | `AGPL_3_SOURCE_APACHE2_EXCEPTIONS_MIT_COMPILED_ONLY` | [Scheda](SCHEDE/VBR-0039.md) |
+
+**Input #17:** URL `github.com/topics/vision-board` già `VBR-0001`, quindi nessun secondo ID. Il nome “Kanban-Board” dell'elenco era fuorviante.
