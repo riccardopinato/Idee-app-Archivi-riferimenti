@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-08 — Nuova sezione 15-VISION-BOARD
+
+- Creata una sezione autonoma per Vision Board, separata dalla ricerca Machine Learning, con Inbox VBR, registro JSON, protocollo di audit, template repository, estrazioni candidate, matrice consumer e crosswalk CAP/Golden.
+- Focus di ricerca Notes-Ecosistema e Anna's Diary; possibili riusi secondari in FrameLab e Wonderlog solo se coerenti con le rispettive Product Bible.
+- Riuso-first: Golden Infinite Canvas/Ink e CAP esistenti prima di nuovi editor/registri. Nessuna fonte VBR aggiunta senza URL dell'utente; **0 repository auditati**, nessuna nuova CAP, Golden certificata, modifica alle app o roadmap.
+
+
 ## 2026-11-08 — Machine Learning secondo lotto: 20 riferimenti, 11 fonti nuove
 
 - Analizzati 20 riferimenti GitHub forniti dopo il primo lotto, con dedup SHA: **11 nuovi record MLR-0011..0021**, **9 duplicati/alias** gia catalogati; totale **21 fonti uniche** in sezione 14.

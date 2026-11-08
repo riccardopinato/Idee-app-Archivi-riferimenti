@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "purpose": "Registro di provenienza ed estrazioni candidate Vision Board; non sostituisce la CAP registry o Golden Registry",
+  "repository": "riccardopinato/Idee-app-Archivi-riferimenti",
+  "canonical_capability_registry": "12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY.json",
+  "factory_baseline_at_creation": {
+    "repo": "riccardopinato/App-Factory-Core",
+    "sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
+    "master": "27",
+    "golden_index": 28
+  },
+  "created_at": "2026-11-08",
+  "id_format": "VBR-NNNN stabile e monotono",
+  "next_id": "VBR-0001",
+  "source_audit_levels": [
+    "E0_URL_RECEIVED",
+    "E1_PINNED_SOURCE",
+    "E2_ARCHITECTURE_REVIEWED",
+    "E3_SCOPED_DONOR_VERIFIED",
+    "E5_INDEPENDENT_REUSE"
+  ],
+  "extraction_types": [
+    "CODE_DONOR_CANDIDATE",
+    "PATTERN_DONOR",
+    "UX_REFERENCE",
+    "GOLDEN_CANDIDATE",
+    "CAPABILITY_MATCH",
+    "NEW_CAP_PROPOSAL",
+    "APP_IDEA",
+    "REJECTED"
+  ],
+  "statuses": [
+    "RECEIVED",
+    "AUDITED_E1",
+    "REVIEWED_E2",
+    "DA_STUDIARE",
+    "CANDIDATO_ADOTTABILE",
+    "SOLO_REFERENCE",
+    "BLOCCATO",
+    "SCARTATO"
+  ],
+  "required_record_fields": [
+    "id",
+    "input_url",
+    "canonical_url",
+    "received_at",
+    "source_sha",
+    "audit_depth",
+    "license_scopes",
+    "source_paths",
+    "roles",
+    "capability_matches",
+    "golden_matches",
+    "consumer_assessments",
+    "evidence_refs",
+    "next_gate",
+    "sheet_path"
+  ],
+  "records": [],
+  "extractions": []
+}
