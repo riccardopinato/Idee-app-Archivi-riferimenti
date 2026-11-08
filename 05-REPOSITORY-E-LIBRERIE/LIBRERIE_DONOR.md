@@ -2,6 +2,12 @@
 
 > Snapshot di fonte storica al 30 ottobre 2026. Le sigle [E]/[V]/[C]/[R] riportano provenienza, non certificazione corrente. Originale preservato in 90-STORICO.
 
+## 09/11/2026 — Fonte esterna Flutter (solo pattern, NON donor di codice)
+
+- **HTML.it — Flutter, creare app mobile multipiattaforma:** https://www.html.it/guide/flutter-creare-app-mobile-multipiattaforma/ — 37 lezioni (2019–2020), riferimento didattico; API da confrontare con Flutter/Dart correnti.
+- **Esempi:** https://github.com/antedesk/flutter_tutorial_htmlit/tree/2bf59b6d712eef4e85648b08c22a3203cd1799ce — GitHub `license:null`, nessun LICENSE alla root verificata: **NO copia diretta di codice** in prodotti. Fonte pattern/learning E0.
+- **Crosswalk:** [12 opportunità deduplicate](../12-CAPABILITY-E-IMPLEMENTAZIONI/HTMLIT_FLUTTER_REFERENCE_CROSSWALK_2026-11-09.json) · [audit 5 maxi-step](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_HTMLIT_FLUTTER_5_MAXISTEP_2026-11-09.md). Non creare nuovi Golden o CAP senza prove.
+
 Questa lista è il sottoinsieme curatoriale, NON riproduce le 632 stelle del repo separato. Tutte le licenze vanno ricontrollate PRIMA di integrare codice commerciale.
 
 [E] scrcpy | https://github.com/Genymobile/scrcpy | mirroring/controllo Android | AppLab Physical QA, Android QA Cockpit. Apache-2.0 storico.

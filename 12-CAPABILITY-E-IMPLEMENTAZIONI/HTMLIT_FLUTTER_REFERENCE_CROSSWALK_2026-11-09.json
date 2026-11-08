@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "source_id": "EXT-HTMLIT-FLUTTER-20261109",
+  "source_type": "EXTERNAL_LEARNING_PATTERN_REFERENCE",
+  "title": "Flutter creare app mobile multipiattaforma",
+  "source_url": "https://www.html.it/guide/flutter-creare-app-mobile-multipiattaforma/",
+  "example_repo_url": "https://github.com/antedesk/flutter_tutorial_htmlit",
+  "example_repo_sha": "2bf59b6d712eef4e85648b08c22a3203cd1799ce",
+  "license_status": "NO_REUSABLE_CODE_LICENSE_CONFIRMED",
+  "copy_code_permitted": false,
+  "reference_only": true,
+  "source_audit_date": "2026-11-09",
+  "factory_baseline": "a6d7ff36db7f70b03ccfdf02fa265049d31ae2f1",
+  "catalog_base": "b3ca5c6911ab12a292025d5c82abb4b5571c6b3a",
+  "existing_cap_count": 199,
+  "new_cap_count": 0,
+  "new_app_association_count": 0,
+  "technical_state_transitions": 0,
+  "product_decision_transitions": 0,
+  "source_evidence_grade": "E0_REFERENCE_ONLY",
+  "method": "Documentation review, exact-SHA fetch on selected app files and limited GitHub code search; not full-tree scan, build or physical verification.",
+  "report_path": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_HTMLIT_FLUTTER_5_MAXISTEP_2026-11-09.md",
+  "crosswalk": [
+    {
+      "reference_id": "HTMLIT-01",
+      "capability_name": "FLUTTER_LAZY_LIST_AND_PERF_PATTERNS",
+      "existing_cap_ids": [
+        "CAP-0025",
+        "CAP-0069"
+      ],
+      "dedup_status": "BROAD_EXISTING_QA",
+      "required_gate": "WORLD_DAYS_LIST_BENCHMARK",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-02",
+      "capability_name": "FLUTTER_MODERN_THEME_ADAPTER",
+      "existing_cap_ids": [
+        "CAP-0023"
+      ],
+      "dedup_status": "EXISTING",
+      "required_gate": "THEME_GOLDEN_FIRST",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-03",
+      "capability_name": "FLUTTER_TYPED_NAVIGATION_AND_DEEP_LINK_VALIDATION",
+      "existing_cap_ids": [
+        "CAP-0025",
+        "CAP-0027"
+      ],
+      "dedup_status": "PARTIAL_EXISTING",
+      "required_gate": "DEEP_LINK_WEB_BACK_TEST",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-04",
+      "capability_name": "FLUTTER_PREFERENCES_SAFETY",
+      "existing_cap_ids": [
+        "CAP-0018",
+        "CAP-0023"
+      ],
+      "dedup_status": "BROAD_EXISTING_QA",
+      "required_gate": "MIGRATION_AND_AWAIT_TEST",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-05",
+      "capability_name": "FLUTTER_FILE_IO_PLATFORM_ADAPTER",
+      "existing_cap_ids": [
+        "CAP-0018",
+        "CAP-0019",
+        "CAP-0075"
+      ],
+      "dedup_status": "EXISTING_DATA_SAFETY",
+      "required_gate": "ANDROID_WEB_PARITY",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-06",
+      "capability_name": "FLUTTER_SQLITE_DATA_LAYER_MIGRATION_QA",
+      "existing_cap_ids": [
+        "CAP-0018",
+        "CAP-0075"
+      ],
+      "dedup_status": "EXISTING_DATA_SAFETY",
+      "required_gate": "MIGRATION_RESTART_ROLLBACK",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-07",
+      "capability_name": "FLUTTER_LOCATION_PERMISSION_HEALTH",
+      "existing_cap_ids": [
+        "CAP-0077"
+      ],
+      "dedup_status": "EXISTING",
+      "required_gate": "DEVICE_PERMISSION_HEALTH",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-08",
+      "capability_name": "FLUTTER_MAP_PROVIDER_POLICY",
+      "existing_cap_ids": [
+        "CAP-0047",
+        "CAP-0048",
+        "CAP-0049"
+      ],
+      "dedup_status": "EXISTING_MAP_DOMAIN",
+      "required_gate": "LICENSE_BILLING_PROVIDER_AUDIT",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-09",
+      "capability_name": "FLUTTER_IMAGE_LOAD_FAILURE_UX",
+      "existing_cap_ids": [
+        "CAP-0019",
+        "CAP-0120"
+      ],
+      "dedup_status": "BROAD_EXISTING_QA",
+      "required_gate": "IMAGE_ERROR_MEMORY_BENCHMARK",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-10",
+      "capability_name": "FLUTTER_SNACKBAR_DIALOG_SEMANTICS",
+      "existing_cap_ids": [
+        "CAP-0017",
+        "CAP-0024"
+      ],
+      "dedup_status": "BROAD_EXISTING_QA",
+      "required_gate": "DESTRUCTIVE_FEEDBACK_UNDO_TEST",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-11",
+      "capability_name": "FLUTTER_WIDGET_COMPOSITION_CONSTRAINTS",
+      "existing_cap_ids": [
+        "CAP-0025",
+        "CAP-0023"
+      ],
+      "dedup_status": "EXISTING",
+      "required_gate": "VIEWPORT_TEXT_SCALE_ACCESSIBILITY",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    },
+    {
+      "reference_id": "HTMLIT-12",
+      "capability_name": "FLUTTER_LEGACY_CODE_MIGRATION_LINT_GATE",
+      "existing_cap_ids": [
+        "CAP-0068",
+        "CAP-0070"
+      ],
+      "dedup_status": "BROAD_EXISTING_QA",
+      "required_gate": "WHOLE_REPO_STATIC_SCAN",
+      "evidence": "REFERENCE_ONLY",
+      "app_implementation_claim": false,
+      "golden_promotion": false
+    }
+  ]
+}
