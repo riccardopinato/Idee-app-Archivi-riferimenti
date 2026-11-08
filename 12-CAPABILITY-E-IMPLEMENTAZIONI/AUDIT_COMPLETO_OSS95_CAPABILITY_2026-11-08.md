@@ -5,6 +5,11 @@
 **Atlas machine-readable:** [AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json](AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json).  
 **Evidenze:** [12 batch JSON](AUDIT_OSS95_EVIDENZE_BATCH_01.json) più [6 README con path non standard](AUDIT_OSS95_README_VARIANTS_2026-11-08.json).  
 
+
+## Addendum 08/11/2026 — 26 repository senza SPDX automatico
+
+L'indicazione sottostante "26 licenze REST `NOASSERTION/UNKNOWN`" è un dato dei **metadati API**, non un'assenza di licenza nel codice. Dopo l'audit completo sono stati letti i documenti reali di tutti e 26 i repository: [report licenze](AUDIT_LICENZE_26_OSS95_2026-11-08.md). Queste fonti hanno già contribuito **90 associazioni repository-funzionalità**, comprese nelle 329 rilevate e **tutte ammesse alla ricerca**. Il codice resta riutilizzabile solo alle condizioni delle licenze effettive, senza presumere uso commerciale libero.
+
 ## Risultati del censimento
 
 - **95/95 repository** confrontate per identità, descrizione, licenza REST e README (89 a nome standard, 6 con path alternativo; tutti e 95 recuperati).
