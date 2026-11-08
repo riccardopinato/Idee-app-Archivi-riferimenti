@@ -5,6 +5,7 @@ on:
       - capability-oss95-admit-39-e0-20261108
     paths:
       - .github/workflows/_oss95_admit_once.yml
+      - scripts/formalize_oss95_e0.py
 
 permissions:
   contents: write
