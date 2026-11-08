@@ -3430,6 +3430,31 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0003",
+          "VBR-0006",
+          "VBR-0008",
+          "VBR-0014"
+        ],
+        "repository_source_refs": 4,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Capture patterns only; external source does not certify private media import into app.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -3525,6 +3550,31 @@
         "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
         "products_unchanged": true,
         "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0009",
+          "VBR-0017",
+          "VBR-0021",
+          "VBR-0022"
+        ],
+        "repository_source_refs": 4,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Scene connectors and bindings are external research, not proof of Notes connector end-to-end.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -3622,6 +3672,39 @@
         "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
         "products_unchanged": true,
         "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0009",
+          "VBR-0012",
+          "VBR-0013",
+          "VBR-0017",
+          "VBR-0018",
+          "VBR-0021",
+          "VBR-0022",
+          "VBR-0023",
+          "VBR-0025",
+          "VBR-0033",
+          "VBR-0034",
+          "VBR-0036"
+        ],
+        "repository_source_refs": 12,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Canvas research extends existing Notes Visual Workspace; prevent a second editor/storage.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -9018,6 +9101,33 @@
         "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
         "products_unchanged": true,
         "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0008",
+          "VBR-0011",
+          "VBR-0012",
+          "VBR-0013",
+          "VBR-0036",
+          "VBR-0038"
+        ],
+        "repository_source_refs": 6,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Import/export ideas only; migrations require staging/validation and permission gates.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -11406,6 +11516,33 @@
         "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
         "products_unchanged": true,
         "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0023",
+          "VBR-0026",
+          "VBR-0028",
+          "VBR-0037",
+          "VBR-0038",
+          "VBR-0039"
+        ],
+        "repository_source_refs": 6,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "All Kanban examples must project canonical task IDs; no second task store.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -11837,6 +11974,31 @@
         "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
         "products_unchanged": true,
         "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0015",
+          "VBR-0017",
+          "VBR-0020",
+          "VBR-0023"
+        ],
+        "repository_source_refs": 4,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Mind-map/graph sources do not prove an implemented Notes consumer.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -11919,6 +12081,34 @@
           "after_state": "PROPOSTA",
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
+        }
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0002",
+          "VBR-0003",
+          "VBR-0005",
+          "VBR-0006",
+          "VBR-0028",
+          "VBR-0037",
+          "VBR-0038"
+        ],
+        "repository_source_refs": 7,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Goal planning patterns are optional and do not approve automatic task creation.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
         }
       }
     },
@@ -12523,6 +12713,31 @@
         "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
         "products_unchanged": true,
         "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0002",
+          "VBR-0005",
+          "VBR-0037",
+          "VBR-0039"
+        ],
+        "repository_source_refs": 4,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Milestone and reverse planning remain proposal; no event writing without confirmation.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -16021,6 +16236,29 @@
           "rationale": "RETAIN: no new verified app-source/adaptation evidence",
           "measured": false
         }
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0034",
+          "VBR-0035"
+        ],
+        "repository_source_refs": 2,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "NEGATIVE CONTRACT MATCH: Easy Crop / Fabric geometry does not perform image segmentation or cutout.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -17401,6 +17639,31 @@
           "physical_device_verified": false,
           "product_bible_changed": false
         }
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0025",
+          "VBR-0026",
+          "VBR-0033",
+          "VBR-0039"
+        ],
+        "repository_source_refs": 4,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Responsive layout/drag patterns are not evidence that personalized Home already runs.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -17493,6 +17756,28 @@
         "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
         "products_unchanged": true,
         "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0015"
+        ],
+        "repository_source_refs": 1,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Related to visual intake only; not proof of a verified Smart Inbox workflow.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -17575,6 +17860,33 @@
         "decision": "MATCH_TEMATICO_PER_DEDUP_NON_STATO_IMPLEMENTAZIONE",
         "products_unchanged": true,
         "readme_evidence_index": "12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json"
+      },
+      "vision_board_research_20261108": {
+        "date": "2026-11-08",
+        "source_catalog_ref": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/b57b6bee09528457e7e920216b8bc907b596e508/15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+        "source_catalog_commit": "b57b6bee09528457e7e920216b8bc907b596e508",
+        "vbr_ids": [
+          "VBR-0012",
+          "VBR-0017",
+          "VBR-0018",
+          "VBR-0020",
+          "VBR-0022",
+          "VBR-0034"
+        ],
+        "repository_source_refs": 6,
+        "discovery_refs": 0,
+        "relationship": "TECHNICAL_PATTERN_AND_CONTRACT_MATCH_NOT_PRODUCT_ADMISSION",
+        "reuse_gate": "Excalidraw/Fabric/.drawnix formats do NOT equal JSON Canvas v1; require adapters and lossiness reporting.",
+        "flags": {
+          "catalog_data_owner": true,
+          "production_reuse_authorized": false,
+          "consumer_code_verified": false,
+          "app_state_changed": false,
+          "decision_changed": false,
+          "certified_donor": false,
+          "certified_golden": false,
+          "source_evidence": "REPOSITORY_SHA_README_TARGETED_SOURCE_OR_TOPIC_E0_RESEARCH_ONLY"
+        }
       }
     },
     {
@@ -23119,5 +23431,38 @@
       "decision_evidence_required": true,
       "source_snapshot": "12-CAPABILITY-E-IMPLEMENTAZIONI/OSS95_SOURCE_SNAPSHOT_2026-11-08.json"
     }
+  },
+  "vision_board_reconciliation_20261108": {
+    "date": "2026-11-08",
+    "factory_baseline": "riccardopinato/App-Factory-Core@c709e483d40424c88b6ba316d0c8352eec5370fe",
+    "archive_source_ref": "b57b6bee09528457e7e920216b8bc907b596e508",
+    "archive_section": "15-VISION-BOARD/REGISTRO_FONTI_VB.json",
+    "reference_count": 39,
+    "repo_count": 28,
+    "topic_with_url_count": 10,
+    "unverified_alias_count": 1,
+    "source_extractions": 28,
+    "matched_existing_caps": [
+      "CAP-0027",
+      "CAP-0028",
+      "CAP-0029",
+      "CAP-0075",
+      "CAP-0094",
+      "CAP-0098",
+      "CAP-0099",
+      "CAP-0104",
+      "CAP-0136",
+      "CAP-0147",
+      "CAP-0148",
+      "CAP-0149"
+    ],
+    "reference_to_cap_links": 60,
+    "new_cap_ids": [],
+    "new_app_associations": 0,
+    "technical_status_transitions": 0,
+    "product_decision_transitions": 0,
+    "code_or_golden_changed": false,
+    "license_cleared_for_direct_commercial_copy": false,
+    "comparison": "Research-to-CAP crosswalk only; individual source licensing and app evidence still gate."
   }
 }
