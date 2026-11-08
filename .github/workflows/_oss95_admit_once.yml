@@ -1,0 +1,42 @@
+name: OSS95 one-time E0 CAP admission
+on:
+  push:
+    branches:
+      - capability-oss95-admit-39-e0-20261108
+    paths:
+      - .github/workflows/_oss95_admit_once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Assert exact catalog baseline
+        run: |
+          test "$(git rev-parse HEAD)" = "e606e9e42d31793363f42cd0308a4e95a893f909"
+          python3 -c "import json; p=json.load(open('12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY.json')); assert len(p['records']) == 160"
+      - name: Formalize all 39 researched E0 CAPs and create kits
+        run: python3 scripts/formalize_oss95_e0.py
+      - name: Regenerate canonical derived catalogue and operational views
+        run: python3 scripts/build_catalog.py
+      - name: Validate all generated views
+        run: |
+          python3 scripts/build_catalog.py --check
+          python3 scripts/build_status_views.py --check
+      - name: Remove one-time workflow from resulting commit
+        run: git rm .github/workflows/_oss95_admit_once.yml
+      - name: Commit generated catalogue, kits, and reports to PR branch
+        run: |
+          git config user.name "app-factory-capability-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "feat(capability): admit 39 OSS95 E0 proposals, generate kits and views"
+          git push origin HEAD:capability-oss95-admit-39-e0-20261108
