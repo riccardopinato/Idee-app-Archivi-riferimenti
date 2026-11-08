@@ -2,7 +2,7 @@
 
 Sezione tematica **esclusivamente dedicata alle Vision Board**: bacheche visive di aspirazioni, obiettivi, ispirazioni, immagini, ricordi e progetti. Comprende moodboard e collage soltanto quando utili al caso d'uso. **Non è** un catalogo generico di tutte le whiteboard, una nuova app o una seconda source of truth delle capability.
 
-**Stato dopo lotto 1 (08/11/2026):** **20 riferimenti**, 15 repository E1 a SHA, 5 directory E0, 14 estrazioni candidate; prossimo ID `VBR-0021`. Zero donor/Golden certificati e zero app modificate.
+**Stato dopo lotto 2 (08/11/2026):** **40 segnalazioni, 39 riferimenti unici**: 28 repo E1 SHA, 10 directory Topics E0 con URL e 1 alias non verificato; 1 input duplicato. **28 estrazioni candidate**, prossimo VBR-0040. Nessuna CAP/Golden ufficiale o app modificata.
 
 ## Destinazioni principali
 1. **Notes-Ecosistema (priorità di ricerca primaria):** Vision Board progettuali e creative con immagini, sticky notes, obiettivi, milestone, riferimenti e connessioni a note/task/progetti **canonici**. Preferire estensione della lavagna/Visual Workspace già esistente, senza creare un secondo editor o database.
@@ -10,12 +10,14 @@ Sezione tematica **esclusivamente dedicata alle Vision Board**: bacheche visive 
 3. **Altre app, solo se emerge un caso concreto:** per esempio FrameLab (palette/reference board fotografica), Wonderlog (ispirazione viaggi), o altre app della Factory. Nessuna roadmap è modificata implicitamente.
 
 ## Indice operativo
-- [Inbox dei 20 riferimenti](INBOX_REPOSITORY.md): 15 repository E1 e 5 Topic E0, ID e SHA.
+- [Inbox cumulativa 39 record](INBOX_REPOSITORY.md): 28 repo E1 e 11 fonti di discovery E0.
+- [Lotto 2: 20 input e deduplicazione](LOTTO_2_20_RIFERIMENTI_2026-11-08.md): 19 nuove schede e proprietari canonici corretti.
+- [Audit comparativo lotto 2](AUDIT_20_RIFERIMENTI_VB_LOTTO_2_2026-11-08.md): verifica licenze, codice e priorità.
 - [Audit comparativo primo lotto](AUDIT_20_RIFERIMENTI_VB_2026-11-08.md): confronti, licenze, priorità Notes/Anna.
 - [Registro fonti JSON](REGISTRO_FONTI_VB.json): inventario canonico delle **fonti Vision Board** e delle estrazioni candidate; non sostituisce la CAP registry.
 - [Protocollo di audit](PROTOCOLLO_AUDIT_VB.md): regole di lettura, licenze, confronto, benchmark e admission.
 - [Template per singolo repository](TEMPLATE_SCHEDA_REPOSITORY.md): scheda `SCHEDE/VBR-XXXX.md` da creare dopo l'intake.
-- [14 estrazioni candidate](ESTRAZIONI_CANDIDATE.md): donor/pattern/Golden/CAP, nessuna certificazione.
+- [28 estrazioni candidate](ESTRAZIONI_CANDIDATE.md): donor/pattern/Golden/CAP, nessuna certificazione.
 - [Crosswalk verso CAP e Golden esistenti](CROSSWALK_CAP_GOLDEN.md): evitare duplicazioni e valorizzare i motori già presenti.
 - [Matrice consumer](MATRICE_CONSUMER.md): Notes, Anna e riusi secondari, con confini di prodotto.
 

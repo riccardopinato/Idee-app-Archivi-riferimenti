@@ -32,3 +32,23 @@ La priorità qui è **di ricerca**, non un'autorizzazione di sviluppo. Stato in 
 | Cluster feedback | P2 | P3 | niral Gemini cloud/CDP, pattern locale |
 | Collaborazione | P2 futuro | P3 non default | khalid Liveblocks no LICENSE |
 | Diagramma agentico | P3 dev tools | fuori scope | dev.fast MIT root, sottoprogetti da rivedere |
+
+
+## Lotto 2 — priorità di ricerca, NON roadmap
+
+| Funzione | Notes | Anna | Condizione |
+|---|---|---|---|
+| Doc + whiteboard ibrida | P1 | P3 | AFFiNE mixed MIT/MPL/EE, pattern only |
+| Forme, frecce, scena, codec | P1 | P2 | Excalidraw MIT, adapter Dart |
+| Editor SDK shape/binding | P1 reference | P3 | tldraw production license required |
+| Compattazione griglie responsive | P1 | P2 | React Grid Layout MIT, port Dart |
+| Waterfall foto/collage | P1 | **P1** | Masonry MIT README/source banner |
+| Sort/filter multi-griglia | P2 | P2 | Muuri MIT, Web JS |
+| Kanban Flutter su dati canonici | P1 | P2 | AppFlowy source AGPL, pattern only |
+| Transform/media object compositing | P1 | **P1** | Fabric MIT, Web vs Flutter |
+| Crop geometrico e rotazione | P2 | **P1** | Easy Crop MIT, originali immutati |
+| Editor foto con undo/export | P2 | **P1 reference** | Filerobot MIT, footprint da misurare |
+| Card, dipendenze e import | P2 | P3 | PLANKA restricted, WeKan MIT |
+| Multivista blocchi board/list/gallery/calendar | P1 reference | P2 | Focalboard source AGPL, not maintained |
+
+Privato-by-default Anna, nessun auto-sharing a Noi ♡, font/palette standard e nessun secondo data owner. In Notes extend-before-duplicate del Visual Workspace.
