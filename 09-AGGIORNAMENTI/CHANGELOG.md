@@ -1,5 +1,14 @@
 # Changelog dell'archivio
 
+## 2026-11-08 — Machine Learning secondo lotto: 20 riferimenti, 11 fonti nuove
+
+- Analizzati 20 riferimenti GitHub forniti dopo il primo lotto, con dedup SHA: **11 nuovi record MLR-0011..0021**, **9 duplicati/alias** gia catalogati; totale **21 fonti uniche** in sezione 14.
+- Create 11 schede E1 con URL canonico, commit, licenza codice, evidenze, classi Donor/Golden solo candidate, crosswalk CAP, consumer e gate. Aggiornati Inbox, JSON, README e audit comparativo `AUDIT_20_RIFERIMENTI_ML_LOTTO2_2026-11-08.md`.
+- Corretti link GitHub: `interpret-ml/interpret` -> `interpretml/interpret`; `dvc-org/dvc` -> `treeverse/dvc`; nome abbreviato `500-AI-Machine-learning-Projects` ricondotto a MLR-0007.
+- Evidenze concrete: ONNX Runtime Android Java/JNI e JS Web; tflite-micro targeting microcontroller; coremltools toolchain Python, non runtime iOS; fastText archiviato; awesome-mobile-ai loader/predict ancora placeholder; Awesome LLM Apps include esempi Ollama/Qdrant locali e altri con Qdrant Cloud.
+- Nessuna promozione Donor/Golden, nessuna nuova CAP, codice app, peso modello, dataset, cloud o test su device. Licenze dei modelli e dei dataset separati; benchmark e footprint NON MISURATI.
+
+
 ## 2026-11-08 — Machine Learning: audit MLR-0001..0010 (primo lotto)
 
 - Registrati 10 riferimenti nel catalogo `14-MACHINE-LEARNING`: 10 schede E1 a SHA, Inbox aggiornata, registry JSON, audit comparativo per priorita e riuso.

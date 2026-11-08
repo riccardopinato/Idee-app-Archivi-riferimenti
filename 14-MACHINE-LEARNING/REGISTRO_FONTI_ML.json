@@ -421,6 +421,445 @@
       "tests_executed_in_our_environment": [],
       "runtime_mobile_metrics": "NON_MISURATI",
       "next_gate": "Scegliere repo figlio e verificare licenza e ABI"
+    },
+    {
+      "id": "MLR-0011",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "input_url": "https://github.com/microsoft/onnxruntime",
+      "first_seen_date": "2026-11-08",
+      "status": "DA_STUDIARE",
+      "source_sha": "4e9f07f70be8afdfc096b04a4cb01b50a0ee9193",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "ON_DEVICE_INFERENCE_RUNTIME",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/microsoft/onnxruntime/blob/4e9f07f70be8afdfc096b04a4cb01b50a0ee9193/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "RUNTIME_CANDIDATE",
+        "NATIVE_ADAPTER_DONOR_CANDIDATE"
+      ],
+      "capability_ids": [
+        "CAP-0032",
+        "CAP-0033",
+        "CAP-0132",
+        "CAP-0134"
+      ],
+      "priority_heuristic": "P1",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0011.md",
+      "evidence_urls": [
+        "https://github.com/microsoft/onnxruntime/commit/4e9f07f70be8afdfc096b04a4cb01b50a0ee9193",
+        "https://github.com/microsoft/onnxruntime/blob/4e9f07f70be8afdfc096b04a4cb01b50a0ee9193/README.md",
+        "https://github.com/microsoft/onnxruntime/blob/4e9f07f70be8afdfc096b04a4cb01b50a0ee9193/java/README.md",
+        "https://github.com/microsoft/onnxruntime/blob/4e9f07f70be8afdfc096b04a4cb01b50a0ee9193/js/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "POC Android/Web con un modello realmente licenziato, dimensione APK, ABI e p95"
+    },
+    {
+      "id": "MLR-0012",
+      "url": "https://github.com/tensorflow/tflite-micro",
+      "input_url": "https://github.com/tensorflow/tflite-micro",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE_CONDIZIONATA",
+      "source_sha": "4eaa491c1c8dedd9a3baf421968afd0d5b82f6aa",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "EMBEDDED_MICROCONTROLLER_RUNTIME",
+      "licensing": {
+        "code": {
+          "license": "Apache-2.0",
+          "source": "https://github.com/tensorflow/tflite-micro/blob/4eaa491c1c8dedd9a3baf421968afd0d5b82f6aa/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "MICROCONTROLLER_RUNTIME_REFERENCE"
+      ],
+      "capability_ids": [
+        "CAP-0057",
+        "CAP-0132"
+      ],
+      "priority_heuristic": "P3",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0012.md",
+      "evidence_urls": [
+        "https://github.com/tensorflow/tflite-micro/commit/4eaa491c1c8dedd9a3baf421968afd0d5b82f6aa",
+        "https://github.com/tensorflow/tflite-micro/blob/4eaa491c1c8dedd9a3baf421968afd0d5b82f6aa/README.md",
+        "https://github.com/tensorflow/tflite-micro/blob/4eaa491c1c8dedd9a3baf421968afd0d5b82f6aa/tensorflow/lite/micro/micro_interpreter.cc",
+        "https://github.com/tensorflow/tflite-micro/blob/4eaa491c1c8dedd9a3baf421968afd0d5b82f6aa/tensorflow/lite/micro/micro_allocator.cc"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Solo POC embedded reale; su smartphone valutare runtime mobile"
+    },
+    {
+      "id": "MLR-0013",
+      "url": "https://github.com/apple/coremltools",
+      "input_url": "https://github.com/apple/coremltools",
+      "first_seen_date": "2026-11-08",
+      "status": "DA_STUDIARE",
+      "source_sha": "a207b1a3452eafe02f2d870f486287834af2c82d",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "APPLE_MODEL_CONVERSION_TOOL",
+      "licensing": {
+        "code": {
+          "license": "BSD-3-Clause",
+          "source": "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/LICENSE.txt",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "MODEL_CONVERTER_CANDIDATE",
+        "IOS_RUNTIME_PIPELINE"
+      ],
+      "capability_ids": [
+        "CAP-0032",
+        "CAP-0033",
+        "CAP-0132",
+        "CAP-0134"
+      ],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0013.md",
+      "evidence_urls": [
+        "https://github.com/apple/coremltools/commit/a207b1a3452eafe02f2d870f486287834af2c82d",
+        "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/README.md",
+        "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/coremltools/converters/_converters_entry.py",
+        "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/NOTICE.txt"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Convertire modello autorizzato, test iPhone Core ML, precision e delta app"
+    },
+    {
+      "id": "MLR-0014",
+      "url": "https://github.com/umitkacar/awesome-mobile-ai",
+      "input_url": "https://github.com/umitkacar/awesome-mobile-ai",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "4d0cc45b577c663dcdba4f93ae451f33c05d6afa",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "MOBILE_AI_INDEX_WITH_INCOMPLETE_SCAFFOLD",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/umitkacar/awesome-mobile-ai/blob/4d0cc45b577c663dcdba4f93ae451f33c05d6afa/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "LIBRARY_DISCOVERY",
+        "PYTHON_STUB_NOT_RUNTIME"
+      ],
+      "capability_ids": [],
+      "priority_heuristic": "P3",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0014.md",
+      "evidence_urls": [
+        "https://github.com/umitkacar/awesome-mobile-ai/commit/4d0cc45b577c663dcdba4f93ae451f33c05d6afa",
+        "https://github.com/umitkacar/awesome-mobile-ai/blob/4d0cc45b577c663dcdba4f93ae451f33c05d6afa/README.md",
+        "https://github.com/umitkacar/awesome-mobile-ai/blob/4d0cc45b577c663dcdba4f93ae451f33c05d6afa/src/mobile_ai/core.py",
+        "https://github.com/umitkacar/awesome-mobile-ai/blob/4d0cc45b577c663dcdba4f93ae451f33c05d6afa/pyproject.toml"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Non usare MobileAI come engine; selezionare il tool figlio implementato"
+    },
+    {
+      "id": "MLR-0015",
+      "url": "https://github.com/facebookresearch/fastText",
+      "input_url": "https://github.com/facebookresearch/fastText",
+      "first_seen_date": "2026-11-08",
+      "status": "DA_STUDIARE_MA_ARCHIVIATO",
+      "source_sha": "1142dc4c4ecbc19cc16eee5cdd28472e689267e6",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "ARCHIVED_CPP_TEXT_CLASSIFIER",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/facebookresearch/fastText/blob/1142dc4c4ecbc19cc16eee5cdd28472e689267e6/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "CPP_CODE_DONOR_CANDIDATE",
+        "QUANTIZATION_REFERENCE"
+      ],
+      "capability_ids": [
+        "CAP-0160",
+        "CAP-0134",
+        "CAP-0032"
+      ],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0015.md",
+      "evidence_urls": [
+        "https://github.com/facebookresearch/fastText/commit/1142dc4c4ecbc19cc16eee5cdd28472e689267e6",
+        "https://github.com/facebookresearch/fastText/blob/1142dc4c4ecbc19cc16eee5cdd28472e689267e6/README.md",
+        "https://github.com/facebookresearch/fastText/blob/1142dc4c4ecbc19cc16eee5cdd28472e689267e6/src/quantmatrix.cc",
+        "https://github.com/facebookresearch/fastText/blob/1142dc4c4ecbc19cc16eee5cdd28472e689267e6/src/fasttext.cc"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Verifica licenza models e benchmark classificazione IT; repo archiviato",
+      "archived_on_github": true
+    },
+    {
+      "id": "MLR-0016",
+      "url": "https://github.com/interpretml/interpret",
+      "input_url": "https://github.com/interpret-ml/interpret",
+      "first_seen_date": "2026-11-08",
+      "status": "DA_STUDIARE",
+      "source_sha": "4a492be14d2cba43433ef990ea72ef42084887e4",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "EXPLAINABLE_TRAINING_AND_ANALYSIS",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/interpretml/interpret/blob/4a492be14d2cba43433ef990ea72ef42084887e4/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "EXPLAINABLE_ML_PATTERN",
+        "GLASSBOX_REFERENCE"
+      ],
+      "capability_ids": [
+        "CAP-0153",
+        "CAP-0134"
+      ],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0016.md",
+      "evidence_urls": [
+        "https://github.com/interpretml/interpret/commit/4a492be14d2cba43433ef990ea72ef42084887e4",
+        "https://github.com/interpretml/interpret/blob/4a492be14d2cba43433ef990ea72ef42084887e4/README.md",
+        "https://github.com/interpretml/interpret/blob/4a492be14d2cba43433ef990ea72ef42084887e4/python/interpret-core/interpret/glassbox/_ebm.py",
+        "https://github.com/interpretml/interpret/blob/4a492be14d2cba43433ef990ea72ef42084887e4/python/interpret-core/interpret/glassbox/_linear.py"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Confronto con baseline semplice e dataset tabulare, niente port Python automatico",
+      "alias_resolution": "interpret-ml/interpret e inesistente, canonico interpretml/interpret"
+    },
+    {
+      "id": "MLR-0017",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "input_url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "79a4334e158147d4f36c27d805e0cb163c1e445b",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "GENAI_COURSE_CLOUD_AND_LOCAL",
+      "licensing": {
+        "code": {
+          "license": "MIT",
+          "source": "https://github.com/microsoft/generative-ai-for-beginners/blob/79a4334e158147d4f36c27d805e0cb163c1e445b/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "GENAI_SECURITY_REFERENCE",
+        "RAG_PATTERN_REFERENCE"
+      ],
+      "capability_ids": [
+        "CAP-0097",
+        "CAP-0032",
+        "CAP-0033"
+      ],
+      "priority_heuristic": "P3",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0017.md",
+      "evidence_urls": [
+        "https://github.com/microsoft/generative-ai-for-beginners/commit/79a4334e158147d4f36c27d805e0cb163c1e445b",
+        "https://github.com/microsoft/generative-ai-for-beginners/blob/79a4334e158147d4f36c27d805e0cb163c1e445b/README.md",
+        "https://github.com/microsoft/generative-ai-for-beginners/blob/79a4334e158147d4f36c27d805e0cb163c1e445b/15-rag-and-vector-databases/README.md",
+        "https://github.com/microsoft/generative-ai-for-beginners/blob/79a4334e158147d4f36c27d805e0cb163c1e445b/19-slm/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Selezionare lesson specifica, verificare API/asset prima di fare qualunque uso"
+    },
+    {
+      "id": "MLR-0018",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "input_url": "https://github.com/rasbt/LLMs-from-scratch",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "62f941fe71ed7ddae4005d24fca3d3df38631db7",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "LLM_EDUCATIONAL_PYTORCH",
+      "licensing": {
+        "code": {
+          "license": "Apache-2.0",
+          "source": "https://github.com/rasbt/LLMs-from-scratch/blob/62f941fe71ed7ddae4005d24fca3d3df38631db7/LICENSE.txt",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "TRAINING_EDUCATIONAL_REFERENCE",
+        "ATTENTION_PATTERN"
+      ],
+      "capability_ids": [
+        "CAP-0033"
+      ],
+      "priority_heuristic": "P3",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0018.md",
+      "evidence_urls": [
+        "https://github.com/rasbt/LLMs-from-scratch/commit/62f941fe71ed7ddae4005d24fca3d3df38631db7",
+        "https://github.com/rasbt/LLMs-from-scratch/blob/62f941fe71ed7ddae4005d24fca3d3df38631db7/README.md",
+        "https://github.com/rasbt/LLMs-from-scratch/blob/62f941fe71ed7ddae4005d24fca3d3df38631db7/ch03/01_main-chapter-code/ch03.ipynb",
+        "https://github.com/rasbt/LLMs-from-scratch/blob/62f941fe71ed7ddae4005d24fca3d3df38631db7/pyproject.toml"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Nessun import mobile: scegliere modello e pesi specifici solo con model card"
+    },
+    {
+      "id": "MLR-0019",
+      "url": "https://github.com/treeverse/dvc",
+      "input_url": "https://github.com/dvc-org/dvc",
+      "first_seen_date": "2026-11-08",
+      "status": "DA_STUDIARE_SU_TOOLING",
+      "source_sha": "b59add99ee667f2b352cc1be337619f965fe3fea",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "DEV_MLOPS_DATA_VERSION_CONTROL",
+      "licensing": {
+        "code": {
+          "license": "Apache-2.0",
+          "source": "https://github.com/treeverse/dvc/blob/b59add99ee667f2b352cc1be337619f965fe3fea/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "MLOPS_TOOL_CANDIDATE",
+        "PROVENANCE_PROCESS"
+      ],
+      "capability_ids": [],
+      "priority_heuristic": "P2",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0019.md",
+      "evidence_urls": [
+        "https://github.com/treeverse/dvc/commit/b59add99ee667f2b352cc1be337619f965fe3fea",
+        "https://github.com/treeverse/dvc/blob/b59add99ee667f2b352cc1be337619f965fe3fea/README.rst",
+        "https://github.com/treeverse/dvc/blob/b59add99ee667f2b352cc1be337619f965fe3fea/dvc/repo/experiments/__init__.py",
+        "https://github.com/treeverse/dvc/blob/b59add99ee667f2b352cc1be337619f965fe3fea/pyproject.toml"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "PoC solo su repo di fixture ML, nessun server o cloud richiesti",
+      "alias_resolution": "dvc-org/dvc inesistente, iterative/dvc redirige a treeverse/dvc"
+    },
+    {
+      "id": "MLR-0020",
+      "url": "https://github.com/mlflow/mlflow",
+      "input_url": "https://github.com/mlflow/mlflow",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "490e6be4e704b6c6edfd52390b1449f0b79f7385",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "DEV_MLOPS_MODEL_EXPERIMENT_PLATFORM",
+      "licensing": {
+        "code": {
+          "license": "Apache-2.0",
+          "source": "https://github.com/mlflow/mlflow/blob/490e6be4e704b6c6edfd52390b1449f0b79f7385/LICENSE.txt",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "EXPERIMENT_TRACKING_TOOL",
+        "MODEL_EVALUATION_REFERENCE"
+      ],
+      "capability_ids": [],
+      "priority_heuristic": "P3",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0020.md",
+      "evidence_urls": [
+        "https://github.com/mlflow/mlflow/commit/490e6be4e704b6c6edfd52390b1449f0b79f7385",
+        "https://github.com/mlflow/mlflow/blob/490e6be4e704b6c6edfd52390b1449f0b79f7385/README.md",
+        "https://github.com/mlflow/mlflow/blob/490e6be4e704b6c6edfd52390b1449f0b79f7385/mlflow/tracking/client.py",
+        "https://github.com/mlflow/mlflow/blob/490e6be4e704b6c6edfd52390b1449f0b79f7385/mlflow/tracking/fluent.py"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Confrontare JSON di metriche locali vs servizio MLflow solo se necessario"
+    },
+    {
+      "id": "MLR-0021",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "input_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "first_seen_date": "2026-11-08",
+      "status": "SOLO_REFERENCE",
+      "source_sha": "c129f31036f5ba0bba42cbb63937a66946fdf2c0",
+      "audit_depth": "E1_README_LICENSE_RELEVANT_CODE",
+      "kind": "LLM_AGENT_RAG_PROJECT_COLLECTION",
+      "licensing": {
+        "code": {
+          "license": "Apache-2.0",
+          "source": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/LICENSE",
+          "reuse_status": "SCOPED_REVIEW_REQUIRED"
+        },
+        "weights": "NON_VERIFICATI_E_NON_SCARICATI",
+        "datasets": "NON_VERIFICATI",
+        "assets": "NON_VERIFICATI",
+        "linked_third_party": "LICENSE_INDIPENDENTI"
+      },
+      "technical_roles": [
+        "RAG_REFERENCE",
+        "PROJECT_DISCOVERY"
+      ],
+      "capability_ids": [
+        "CAP-0097",
+        "CAP-0032",
+        "CAP-0033"
+      ],
+      "priority_heuristic": "P3",
+      "summary_file": "14-MACHINE-LEARNING/SCHEDE/MLR-0021.md",
+      "evidence_urls": [
+        "https://github.com/Shubhamsaboo/awesome-llm-apps/commit/c129f31036f5ba0bba42cbb63937a66946fdf2c0",
+        "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/README.md",
+        "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/rag_tutorials/local_rag_agent/README.md",
+        "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/rag_tutorials/deepseek_local_rag_agent/README.md"
+      ],
+      "tests_executed_in_our_environment": [],
+      "runtime_mobile_metrics": "NON_MISURATI",
+      "next_gate": "Scegliere figlio e verificare dipendenze Ollama/Qdrant Cloud/API, no mobile automatico"
     }
   ],
   "last_audit_at": "2026-11-08",
@@ -429,5 +868,22 @@
     "sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
     "master_version": "27",
     "golden_index_version": 28
-  }
+  },
+  "intake_batches": [
+    {
+      "date": "2026-11-08",
+      "name": "primo-lotto",
+      "new_records": 10,
+      "ids": "MLR-0001..0010"
+    },
+    {
+      "date": "2026-11-08",
+      "name": "secondo-lotto",
+      "input_references": 20,
+      "new_records": 11,
+      "deduplicated_existing": 9,
+      "ids": "MLR-0011..0021",
+      "scope": "E1 only, no CAP changes"
+    }
+  ]
 }
