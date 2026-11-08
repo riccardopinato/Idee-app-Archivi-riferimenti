@@ -2,7 +2,7 @@
 
 Sezione tematica **esclusivamente dedicata alle Vision Board**: bacheche visive di aspirazioni, obiettivi, ispirazioni, immagini, ricordi e progetti. Comprende moodboard e collage soltanto quando utili al caso d'uso. **Non è** un catalogo generico di tutte le whiteboard, una nuova app o una seconda source of truth delle capability.
 
-**Stato iniziale (08/11/2026):** infrastruttura di intake pronta; **0 repository Vision Board ricevuti e auditati**. Primo ID disponibile: `VBR-0001`. Le opportunità sotto sono ipotesi di integrazione, non feature già implementate o approvate.
+**Stato dopo lotto 1 (08/11/2026):** **20 riferimenti**, 15 repository E1 a SHA, 5 directory E0, 14 estrazioni candidate; prossimo ID `VBR-0021`. Zero donor/Golden certificati e zero app modificate.
 
 ## Destinazioni principali
 1. **Notes-Ecosistema (priorità di ricerca primaria):** Vision Board progettuali e creative con immagini, sticky notes, obiettivi, milestone, riferimenti e connessioni a note/task/progetti **canonici**. Preferire estensione della lavagna/Visual Workspace già esistente, senza creare un secondo editor o database.
@@ -10,11 +10,12 @@ Sezione tematica **esclusivamente dedicata alle Vision Board**: bacheche visive 
 3. **Altre app, solo se emerge un caso concreto:** per esempio FrameLab (palette/reference board fotografica), Wonderlog (ispirazione viaggi), o altre app della Factory. Nessuna roadmap è modificata implicitamente.
 
 ## Indice operativo
-- [Inbox dei link VBR](INBOX_REPOSITORY.md): URL inviati, ID stabili, deduplicazione, stato e SHA.
+- [Inbox dei 20 riferimenti](INBOX_REPOSITORY.md): 15 repository E1 e 5 Topic E0, ID e SHA.
+- [Audit comparativo primo lotto](AUDIT_20_RIFERIMENTI_VB_2026-11-08.md): confronti, licenze, priorità Notes/Anna.
 - [Registro fonti JSON](REGISTRO_FONTI_VB.json): inventario canonico delle **fonti Vision Board** e delle estrazioni candidate; non sostituisce la CAP registry.
 - [Protocollo di audit](PROTOCOLLO_AUDIT_VB.md): regole di lettura, licenze, confronto, benchmark e admission.
 - [Template per singolo repository](TEMPLATE_SCHEDA_REPOSITORY.md): scheda `SCHEDE/VBR-XXXX.md` da creare dopo l'intake.
-- [Estrazioni candidate](ESTRAZIONI_CANDIDATE.md): vista leggibile di donor, Golden e nuove responsabilità da valutare; nessuna certificazione per sola catalogazione.
+- [14 estrazioni candidate](ESTRAZIONI_CANDIDATE.md): donor/pattern/Golden/CAP, nessuna certificazione.
 - [Crosswalk verso CAP e Golden esistenti](CROSSWALK_CAP_GOLDEN.md): evitare duplicazioni e valorizzare i motori già presenti.
 - [Matrice consumer](MATRICE_CONSUMER.md): Notes, Anna e riusi secondari, con confini di prodotto.
 
