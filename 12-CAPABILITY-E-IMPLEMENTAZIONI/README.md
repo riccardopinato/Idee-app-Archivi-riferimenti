@@ -1,5 +1,10 @@
 # Catalogo centrale capability — App Factory
 
+## 08/11/2026 — Licenze delle 26 fonti REST NOASSERTION/UNKNOWN verificate
+
+**[Analisi licenze 26/26](AUDIT_LICENZE_26_OSS95_2026-11-08.md)**: tutti i 26 repository rimangono nell'estrazione funzionale (90 associazioni repository–capability già presenti nelle 329 totali). Letti i file LICENSE/README reali: 7 permissivi con perimetri, 8 copyleft/misti, 8 source-available con restrizioni, 1 documentazione senza sorgente applicativo, 2 indici/componenti con condizioni separate. Il metadato GitHub `NOASSERTION` NON significa `MIT` o pubblico dominio. L'analisi delle funzionalità è consentita, il riuso di codice commerciale resta vincolato alla licenza del file preciso. Registro: 160 CAP / 385 associazioni / 39 candidate E0 invariati.
+
+
 ## 08/11/2026 — Audit approfondito su 95 repository OSS (ricerca capability)
 
 **[Audit completo delle 95 fonti](AUDIT_COMPLETO_OSS95_CAPABILITY_2026-11-08.md)** · **[Atlas JSON repository→facets](AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json)** · 12 batch JSON di evidenze README/metadata + 6 README con percorsi non standard.
