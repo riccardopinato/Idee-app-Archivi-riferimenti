@@ -1,5 +1,10 @@
 # Catalogo centrale capability — App Factory
 
+## 08/11/2026 — Capability globale: 31 repository + crosswalk Vision Board senza promozioni
+
+[**Riconciliazione incrementale**](CAPABILITY_SYNC_GLOBALE_2026-11-08_VB_NOTES.md): account owner **31/31 HEAD** verificati (**28 invariati, 3 diversi**, Notes unico app delta; Factory e archivio infrastruttura). Notes [PR #84](https://github.com/riccardopinato/Notes-Ecosistema/pull/84) aggiunge UI5 cinque tab, **flag default OFF**, CI exact-head PASS, physical pending; nessun CAP complesso promosso. Le **39 fonti Vision Board e 28 candidate VBE** si ricollegano a **12 CAP già registrate con 60 match**; nessuna CAP nuova né associazione o decisione prodotto variata. Rimangono **199 CAP / 441 associazioni / 48 app/idee**. Aggiornato SOURCE_INVENTORY per i tre HEAD cambiati, con archive self-reference esclusa dai consumer.
+
+
 ## 08/11/2026 — Stelle: audit incrementale, refresh fonti e ammissione prodotto (solo raccomandazioni)
 
 [**Audit di ammissione delle 39 CAP / 56 associazioni**](AUDIT_AMMISSIONE_PRODOTTO_OSS95_39_CAP_2026-11-08.md) · [**Snapshot incrementale delle 95 fonti OSS**](OSS95_SOURCE_SNAPSHOT_2026-11-08.json).

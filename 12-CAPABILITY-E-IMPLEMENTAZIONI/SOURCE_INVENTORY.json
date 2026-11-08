@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_at": "2026-11-08",
-  "scope": "31 authenticated-account repository default-branch HEADs checked 2026-11-08; 27 unchanged and 4 changed since inventory. Changed HEAD compare metadata examined; scoped feature/CI notes in RICERCA_STELLE_OSS_CAPABILITY_2026-11-08.md. HEAD inventory alone is not device, CI, full capability, product decision or release evidence.",
+  "scope": "31 authenticated GitHub owner repositories: 31 HEAD checked on 2026-11-08; 28 unchanged from inventory and 3 changed (Notes UI5 source, App-Factory-Core and catalog infrastructure). Notes 1-commit source diff and exact-head CI checked; infrastructure changes excluded from app capability promotions. No device/Store proof or hidden repository assumptions.",
   "repositories": [
     {
       "name": "1000-AI-collection-tools",
@@ -48,8 +48,8 @@
     {
       "name": "App-Factory-Core",
       "default_branch": "main",
-      "audit_scope": "INVENTORY_ONLY",
-      "head_sha": "85ecbb19aeb02da1b9d04348e043f69bab77bcb9",
+      "audit_scope": "INFRASTRUCTURE_INVENTORY_ONLY_NON_CONSUMER",
+      "head_sha": "c709e483d40424c88b6ba316d0c8352eec5370fe",
       "head_observed_at": "2026-11-08"
     },
     {
@@ -125,9 +125,10 @@
     {
       "name": "Idee-app-Archivi-riferimenti",
       "default_branch": "main",
-      "audit_scope": "INVENTORY_ONLY",
-      "head_sha": "6ed2a9b9983da45b0e1093d497d4c0ea9d0cde28",
-      "head_observed_at": "2026-11-08"
+      "audit_scope": "INFRASTRUCTURE_INVENTORY_ONLY_NON_CONSUMER",
+      "head_sha": "b57b6bee09528457e7e920216b8bc907b596e508",
+      "head_observed_at": "2026-11-08",
+      "self_reference_note": "Head observed before this Capability PR; archive own main will move on merge; this entry must not be used as a consumer/recurring change trigger."
     },
     {
       "name": "In-Cucina-con-gli-Anime",
@@ -146,9 +147,29 @@
     {
       "name": "Notes-Ecosistema",
       "default_branch": "main",
-      "audit_scope": "TREE_AND_ROADMAP_SAMPLE",
-      "head_sha": "d99a30633134e6e800e93e2a04741554d38c839b",
-      "head_observed_at": "2026-11-08"
+      "audit_scope": "SCOPED_ONE_COMMIT_SOURCE_DIFF_EXACT_HEAD_CI",
+      "head_sha": "f11ca0bee1594ccf95ca2876a1df0c658459aeb4",
+      "head_observed_at": "2026-11-08",
+      "last_scoped_diff": {
+        "compared_from": "d99a30633134e6e800e93e2a04741554d38c839b",
+        "compared_to": "f11ca0bee1594ccf95ca2876a1df0c658459aeb4",
+        "commits_ahead": 1,
+        "pr": "https://github.com/riccardopinato/Notes-Ecosistema/pull/84",
+        "changed_paths": [
+          "flutter_app/UI5_NAV_B4_2026_11_07.md",
+          "flutter_app/lib/src/app.dart",
+          "flutter_app/lib/src/domain/mobile_navigation_ui5.dart",
+          "flutter_app/test/mobile_navigation_ui5_test.dart"
+        ],
+        "observed_behavior": "Reversible 5-tab mobile nav mapping under NOTES_UI5_NAV_PREVIEW default false, desktop navigation unchanged",
+        "app_relevant_cap_overlap": "CAP-0025 responsive navigation is adjacent; no new association/state without entire contract matching",
+        "exact_head_ci": "https://github.com/riccardopinato/Notes-Ecosistema/actions/runs/42439836027",
+        "checks_verified": [
+          "verify SUCCESS on exact head; analyze; flutter tests; debug APK build"
+        ],
+        "device_test": "NOT_VERIFIED",
+        "source_flag_default_on": false
+      }
     },
     {
       "name": "Notification-Control",
