@@ -15,6 +15,7 @@ on:
       - ".github/workflows/app-factory-project-sync.yml"
       - "tests/status_views_test.py"
       - "tests/flutter_antipatterns_test.py"
+      - "tests/htmlit_crosswalk_test.py"
       - "11-NUOVE-IDEE/IA-2026-11-02/INTEGRATION_STATUS.json"
       - "11-NUOVE-IDEE/IA-2026-11-02/RANKING_100_COMPLETO.md"
       - "DA_VALUTARE.md"
@@ -34,6 +35,7 @@ on:
       - ".github/workflows/app-factory-project-sync.yml"
       - "tests/status_views_test.py"
       - "tests/flutter_antipatterns_test.py"
+      - "tests/htmlit_crosswalk_test.py"
       - "11-NUOVE-IDEE/IA-2026-11-02/INTEGRATION_STATUS.json"
       - "11-NUOVE-IDEE/IA-2026-11-02/RANKING_100_COMPLETO.md"
       - "DA_VALUTARE.md"
@@ -59,6 +61,8 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'capability_registry_test.py' -v
       - name: Test integration-vs-pending partition
         run: python3 -m unittest discover -s tests -p 'status_views_test.py' -v
+      - name: Test HTML.it reference crosswalk and license guard
+        run: python3 -m unittest discover -s tests -p 'htmlit_crosswalk_test.py' -v
       - name: Test Flutter anti-pattern scanner
         run: python3 -m unittest discover -s tests -p 'flutter_antipatterns_test.py' -v
       - name: Test optional GitHub Projects pilot/full mirror
