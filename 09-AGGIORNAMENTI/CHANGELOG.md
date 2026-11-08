@@ -1,4 +1,10 @@
 # Changelog dell'archivio
+## 2026-11-08 — Formalizzazione OSS95: 39 CAP E0
+
+- CAP-0161..CAP-0199: 39 contratti E0, 56 app-associazioni in PROPOSTA / DA_VALUTARE; 199 CAP e 441 associazioni totali.
+- Nessuna implementazione o donor certificato; sei file kit per ogni CAP, riscontro non duplicazione e stime euristiche.
+- Rigenerate schede, ranking e code tramite scripts/build_catalog.py e status generator.
+
 
 ## 2026-11-08 — OSS95: license-file follow-up 26/26
 

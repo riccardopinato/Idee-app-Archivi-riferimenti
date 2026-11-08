@@ -1,5 +1,10 @@
 # Catalogo centrale capability — App Factory
 
+## 08/11/2026 — Formalizzate 39 nuove CAP E0 OSS95
+
+**199 CAP, 441 associazioni app–CAP**. Aggiunte CAP-0161..CAP-0199 come PROPOSTA E0 e decisione per app DA_VALUTARE, non funzionalita implementate. Ogni CAP ha sei file kit, donor README OSS e controllo anti-duplicato. Le 160 CAP e 385 associazioni precedenti restano preservate; nessuna roadmap o app mutata.
+
+
 ## 08/11/2026 — Licenze delle 26 fonti REST NOASSERTION/UNKNOWN verificate
 
 **[Analisi licenze 26/26](AUDIT_LICENZE_26_OSS95_2026-11-08.md)**: tutti i 26 repository rimangono nell'estrazione funzionale (90 associazioni repository–capability già presenti nelle 329 totali). Letti i file LICENSE/README reali: 7 permissivi con perimetri, 8 copyleft/misti, 8 source-available con restrizioni, 1 documentazione senza sorgente applicativo, 2 indici/componenti con condizioni separate. Il metadato GitHub `NOASSERTION` NON significa `MIT` o pubblico dominio. L'analisi delle funzionalità è consentita, il riuso di codice commerciale resta vincolato alla licenza del file preciso. Registro: 160 CAP / 385 associazioni / 39 candidate E0 invariati.
@@ -39,7 +44,7 @@ Risultato: **95/95 repository esaminate a livello documentazione e metadati, 329
 La rigenerazione è inclusa in `python3 scripts/build_catalog.py`; `--check` controlla che i due file non siano obsoleti.
 
 
-**160 capability individuali, 48 app/idee beneficiarie e 385 associazioni app-capability**, ri-audit 04/11/2026 (audit iniziale + ricerche incrementali).
+**199 capability individuali, 48 app/idee beneficiarie e 441 associazioni app-capability**, ri-audit 04/11/2026 (audit iniziale + ricerche incrementali).
 
 - [Classifica globale](CLASSIFICA_PRIORITA.md)
 - [Matrice per app](MATRICE_APP.md)
@@ -47,7 +52,7 @@ La rigenerazione è inclusa in `python3 scripts/build_catalog.py`; `--check` con
 - [Stato implementazioni](STATO_IMPLEMENTAZIONI.md)
 - [Schede individuali](REGISTRO_CAPABILITY/)
 - [JSON canonico](REGISTRO_CAPABILITY.json)
-- [160 kit tecnici](../13-KIT-INTEGRAZIONE/README.md) e [indice](../13-KIT-INTEGRAZIONE/INDICE.md)
+- [199 kit tecnici](../13-KIT-INTEGRAZIONE/README.md) e [indice](../13-KIT-INTEGRAZIONE/INDICE.md)
 - [Metodologia percentuali facilità](../13-KIT-INTEGRAZIONE/METODOLOGIA_FACILITA.md)
 - [Audit fonti e copertura](AUDIT_TRASVERSALE_2026-11-01.md)
 - [Ricerca r/BestGitHubRepos 01/11](RICERCA_REDDIT_BESTGITHUBREPOS_2026-11-01.md)

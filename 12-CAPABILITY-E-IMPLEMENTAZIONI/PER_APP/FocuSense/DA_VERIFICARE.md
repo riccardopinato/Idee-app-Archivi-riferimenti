@@ -8,4 +8,4 @@ Derivato dal registro canonico per la **singola app**. Riuso parziale, sorgente 
 | --- | --- | --- | --- | --- | --- | --- |
 | [CAP-0062](../../REGISTRO_CAPABILITY/CAP-0062.md) | Best Conditions Engine sensori | 80 | 85% | SOURCE_REPORTED | [Kit tecnico](../../../13-KIT-INTEGRAZIONE/CAP-0062/README.md) | Score sensori non diagnosi e test runtime |
 
-**Totale associazioni app:** 13. Nessuna modifica alla roadmap o al codice dell'app.
+**Totale associazioni app:** 16. Nessuna modifica alla roadmap o al codice dell'app.

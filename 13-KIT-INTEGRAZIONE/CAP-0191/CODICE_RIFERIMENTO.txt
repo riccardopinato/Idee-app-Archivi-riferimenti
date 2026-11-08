@@ -1,0 +1,13 @@
+CAP=CAP-0191
+OSS95_WORKING_ID=OSS95-N31
+EVIDENCE_GRADE=E0_SPEC_ONLY
+CODE_EXTRACTED=NO
+DART_READY=NO
+DONOR_CERTIFIED=NO
+APP_IMPLEMENTED=NOT_VERIFIED
+SOURCE_ATLAS=https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_OSS95_CAPABILITY_ATLAS_2026-11-08.json
+FACTORY=riccardopinato/App-Factory-Core@85ecbb19aeb02da1b9d04348e043f69bab77bcb9
+SOURCE_REPOSITORIES:
+- https://github.com/shuaiplus/inkstone
+
+No third-party code, weights or media has been copied. Require exact SHA/path, file license and direct E3 evidence before donor reuse.
