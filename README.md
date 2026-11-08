@@ -37,6 +37,10 @@ Per le ricerche operative usare **prima** `DA_VALUTARE.md`, non la classifica st
 
 [**14-MACHINE-LEARNING**](14-MACHINE-LEARNING/README.md) raccoglie i repository ML che verranno forniti, con analisi ripetibile di Donor/Golden/capability, provenienza, licenze di codice-modelli-dataset e deduplicazione rispetto alle CAP già esistenti. La sezione parte senza nuovi repo inventati e conserva il crosswalk con ML23 e ML10.
 
+## Ricerca Vision Board — nuova sezione
+
+[**15-VISION-BOARD**](15-VISION-BOARD/README.md) è la sezione per i repository Vision Board che saranno forniti: audit puntuale, estrazione di **donor / Golden candidati / capability**, dedup rispetto alle CAP esistenti e priorità **Notes-Ecosistema + Anna's Diary**, senza imporre feature ai prodotti. Il registro parte con **0 fonti ricevute**, con ID progressivi `VBR-0001+`.
+
 ## Navigazione
 
 | Cartella | Trovi qui |
@@ -56,6 +60,7 @@ Per le ricerche operative usare **prima** `DA_VALUTARE.md`, non la classifica st
 | [12-CAPABILITY-E-IMPLEMENTAZIONI](12-CAPABILITY-E-IMPLEMENTAZIONI/README.md) | **160 capability trasversali**, [ranking](12-CAPABILITY-E-IMPLEMENTAZIONI/CLASSIFICA_PRIORITA.md), [matrice app](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_APP.md), [schede per app](12-CAPABILITY-E-IMPLEMENTAZIONI/PER_APP/), [stati](12-CAPABILITY-E-IMPLEMENTAZIONI/STATO_IMPLEMENTAZIONI.md), audit e inventario per aggiornamenti futuri |
 | [13-KIT-INTEGRAZIONE](13-KIT-INTEGRAZIONE/README.md) | Kit tecnici per le capability canoniche |
 | [14-MACHINE-LEARNING](14-MACHINE-LEARNING/README.md) | **Repository ML**, registrazione incrementale, donor, Golden candidati, crosswalk CAP, licenze e benchmark |
+| [15-VISION-BOARD](15-VISION-BOARD/README.md) | **Vision Board**: intake repository, studio donor, Golden candidati, crosswalk capability e consumer Notes/Anna |
 | [90-STORICO](90-STORICO/REGISTRO_MASTER_2026-10-30.txt) | Registro integrale originale, immutato |
 
 ## Versioni centrali: snapshot letto il 30 ottobre 2026
