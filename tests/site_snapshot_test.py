@@ -40,7 +40,9 @@ class SiteSnapshotTests(unittest.TestCase):
         for name in ("hybrid_local_search_engine", "gpx_interoperability_engine"):
             self.assertIn("DRAFT", by_id[name]["status"])
         self.assertEqual(sum(x["status"] == "CERTIFIED GOLDEN" for x in d["goldens"]), 2)
-        self.assertEqual(sum(x["certification"] == "E3_EXACT_HEAD_TESTS" for x in d["passports"]), 9)
+        self.assertEqual(sum(x["certification"] == "E3_EXACT_HEAD_TESTS" for x in d["passports"]), 15)
+        self.assertEqual(self.rows["registryMetrics"]["normalized_e3_certified"], 15)
+        self.assertEqual(self.rows["registryMetrics"]["exact_head_e3_upgrade_batch"], 6)
         for p in d["passports"]:
             self.assertTrue(SHA40.fullmatch(p["source_sha"]))
             self.assertTrue(p["ci_url"].startswith("https://github.com/"))
