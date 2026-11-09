@@ -48,6 +48,14 @@ I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobil
 
 [Stato e confini delle integrazioni Notes/Anna](UX_STEP4_CATALOGO_NATIVO_2026_11_09.md): Notes [#97](https://github.com/riccardopinato/Notes-Ecosistema/pull/97) e Anna [#291](https://github.com/riccardopinato/Agenda-per-Anna/pull/291) **MERGED / CI PR PASS**. Interfacce gratuite con anteprima; device non verificati, commercio, SKU e checkout ancora non approvati.
 
+## Maxi-step 5 — Donor / Golden senza promozione prematura
+
+[Ledger provenance e E3 limitati](STEP5_DONOR_PROVENANCE_2026-11-09.md): fonte SHA, code/test/CI e limiti distinti per Notes, Anna e Wonderlog. **Nessuna nuova CAP o Golden certificata.**
+
+## Quattro priorità operative parallele
+
+[Registro delle esecuzioni e dei gate residui](EXECUTION_4_PRIORITIES_2026-11-09.md) · [Blueprint di quattro template premium originali](BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md). I pack sono PROPOSTE non autorizzate per billing o pubblicazione.
+
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
 - [Protocollo delle fonti, varianti e privacy](PROTOCOLLO_FONTI_E_PRIVACY.md) — evidence ladder, regole di export e diritti.

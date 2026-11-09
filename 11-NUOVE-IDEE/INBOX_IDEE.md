@@ -9,7 +9,7 @@ Nuovo [protocollo multi-app](../17-RICERCA-TEMPLATE-UX/ROUTING_MULTI_APP.md) per
 
 **Decisione dell'utente:** conservare come **idea valida** lo store di template acquistabili separatamente all'interno di Notes e Anna's Diary; **€3,99 per template** è un'ipotesi di prezzo, non un prezzo approvato/attivato. La [scheda tecnica e commerciale](../17-RICERCA-TEMPLATE-UX/IDEA_STORE_TEMPLATE_INTERNO_2026-11-09.md) definisce catalogo, anteprime, acquisti una tantum, diritti, ripristino, compatibilità e gate. **Non autorizza** oggi sviluppo, nuove API/cloud, billing o release.
 
-La vendita deve riguardare **template originali per le app**. Gli ZIP Notion di terzi sono fonti di ricerca, **non merce rivendibile**. Second Brain, Book Tracker e quattro altri export hanno [schede E2 o incompleto](../17-RICERCA-TEMPLATE-UX/README.md) con assegnazione primaria specifica.
+**Progettazione quattro pack originali (09/11):** [blueprint Notes/Anna](../17-RICERCA-TEMPLATE-UX/BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md), con due ipotesi Notes (Project Launch Studio e Study Sprint Studio) e due Anna (Atlante dei ricordi e Dodici settimane che contano). **DESIGN CANDIDATE / nessuna approvazione dello sviluppo premium**: non sono SKU, prodotti acquistabili, contenuti già realizzati o entitlement. \n\nLa vendita deve riguardare **template originali per le app**. Gli ZIP Notion di terzi sono fonti di ricerca, **non merce rivendibile**. Second Brain, Book Tracker e quattro altri export hanno [schede E2 o incompleto](../17-RICERCA-TEMPLATE-UX/README.md) con assegnazione primaria specifica.
 
 
 ## Ricerca template UX (09/11/2026) — TPLUX-001…008

@@ -2,7 +2,7 @@
 
 | ID locale ricerca | Pattern | Ownership tecnico suggerito | Consumer | Stato e prova necessaria |
 |---|---|---|---|---|
-| TPLUX-001 | Catalogo e preview di template guidati | Estendere `PersonalTemplates`/editor canonico; Anna `diaryTemplatePresets` | Notes, Anna | **PROPOSTA**; verificare UX e dati originali dei template |
+| TPLUX-001 | Catalogo e preview di template guidati | Notes `PageTemplates`/`PersonalTemplates` + `TemplatesScreen`; Anna `DiaryTemplatePreset`/editor; Wonderlog `Journey` | Notes, Anna, Wonderlog (implementazioni distinte) | **SOURCE-INTEGRATED / CI SCOPED**; [ledger di riuso](STEP5_DONOR_PROVENANCE_2026-11-09.md) con SHA e test. Consumer indipendente, Golden E5, device e billing NON VERIFICATI |
 | TPLUX-002 | Vision Board come preset canvas | Notes `WhiteboardDocument`; Anna sketchbook/memories, scope per tipo di record | Notes, Anna | **PROPOSTA**; fare riferimento a `15-VISION-BOARD`, niente doppio motore |
 | TPLUX-003 | Card Home/preset visuali | Notes UI5, Anna DS6 / `AgendaPreferences` | Notes, Anna | **PROPOSTA**; visual gate Notes #85 e custom colors compatibilità |
 | TPLUX-004 | Obiettivi e review contestuale | Note/Task del planner; Anna rituali e weekly review esistenti | Notes, Anna | **PROPOSTA**; solo contatori derivati e interazione opt-in |
