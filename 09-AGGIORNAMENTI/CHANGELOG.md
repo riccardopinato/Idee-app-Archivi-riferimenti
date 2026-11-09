@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Template Step5: donor provenance e quattro priorità attivate
+
+- [Registro esecuzione quattro filoni](../17-RICERCA-TEMPLATE-UX/EXECUTION_4_PRIORITIES_2026-11-09.md): retry Pages Wonderlog sullo stesso SHA, PR QA Notes #98 / Anna #293 / Wonderlog #27, ledger donor E3 limitati e blueprint quattro premium originali.
+- [Provenance con SHA, codice, test e limiti](../17-RICERCA-TEMPLATE-UX/STEP5_DONOR_PROVENANCE_2026-11-09.md): TPLUX-001 allineato agli owner reali senza attribuire E5 o nuova Golden/CAP.
+- [Blueprint premium](../17-RICERCA-TEMPLATE-UX/BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md): due concept per Notes e due per Anna, `DESIGN CANDIDATE`; nessun SKU, acquisto, app store, rilascio, import di materiale Notion o nuova entitlements.
+- Device/backup/account reali e provider billing rimangono **NOT VERIFIED**; verificare l'esito del retry e delle nuove CI, non promuovere una PR aperta a PASS.
+
 ## 2026-11-09 — Maxi-step 4: chiusura delle due integrazioni native
 
 - **Notes:** [PR #97](https://github.com/riccardopinato/Notes-Ecosistema/pull/97) unita a `f057c81c92532cd22b504116c14ccef8a2ad6612`; `verify`, `verify-web`, `build-web` SUCCESS sul PR head `ae93ff2a`. Catalogo gratuito / I miei, senza nuova persistenza.
