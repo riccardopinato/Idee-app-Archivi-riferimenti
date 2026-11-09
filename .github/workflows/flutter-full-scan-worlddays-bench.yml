@@ -1,0 +1,129 @@
+name: Flutter source full-scan and World Days list benchmark
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/flutter-full-scan-worlddays-bench.yml"
+      - "scripts/run_portfolio_flutter_source_scan.py"
+      - "scripts/audit_flutter_antipatterns.py"
+      - "scripts/parse_world_days_widget_bench.py"
+      - "benchmark/world_days_lists_perf_test.dart"
+  push:
+    branches: [audit/flutter-full-checkouts-worlddays-bench-20261109]
+    paths:
+      - ".github/workflows/flutter-full-scan-worlddays-bench.yml"
+      - "scripts/run_portfolio_flutter_source_scan.py"
+      - "scripts/parse_world_days_widget_bench.py"
+      - "benchmark/world_days_lists_perf_test.dart"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portfolio-full-scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout catalog at exact source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Verify scanner unit tests
+        run: python3 -m unittest discover -s tests -p flutter_antipatterns_test.py -v
+      - name: Full Git checkout and bounded Dart source scan
+        shell: bash
+        run: |
+          mkdir -p reports
+          set -o pipefail
+          python3 scripts/run_portfolio_flutter_source_scan.py \
+            --workdir /tmp/app-factory-flutter-checkouts \
+            --output reports/flutter_portfolio_source_scan.json \
+            --markdown reports/flutter_portfolio_source_scan.md \
+            2>&1 | tee reports/portfolio_source_scan.log
+      - name: Preserve exact scan evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: app-factory-flutter-source-scan
+          path: reports/
+          if-no-files-found: warn
+          retention-days: 20
+
+  world-days-widget-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout benchmark harness and catalog
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Checkout World Days on pinned source SHA
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: riccardopinato/World-Days
+          ref: bb662cb21506b6157658f43070c2059c960637b5
+          path: target-world-days
+          persist-credentials: false
+      - name: Set up Flutter
+        uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2.23.0
+        with:
+          flutter-version: '3.47.3'
+          channel: stable
+          cache: true
+      - name: Generate exact catalog assets and localization
+        working-directory: target-world-days
+        shell: bash
+        run: |
+          python3 tool/build_dataset.py
+          python3 tool/build_editorial.py
+          python3 tool/build_editorial_locales.py
+          flutter pub get
+          flutter gen-l10n
+      - name: Record real content sizes for interpretation
+        shell: bash
+        run: |
+          mkdir -p reports
+          python3 - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          raw=json.loads(Path("target-world-days/assets/data/official_core.json").read_text(encoding="utf-8"))
+          records=raw["records"]
+          count=Counter()
+          for rec in records:
+              for market in rec.get("countries",[]):
+                  count[market]+=1
+          output={"source_sha":"bb662cb21506b6157658f43070c2059c960637b5",
+                  "total_records":len(records),
+                  "country_counts":dict(sorted(count.items(),key=lambda e:-e[1])),
+                  "max_favorite_ids_if_all_saved":len(records)}
+          Path("reports/world_days_catalog_counts.json").write_text(json.dumps(output,indent=2)+"\n",encoding="utf-8")
+          print("WORLD_DAYS_REAL_CATALOG|"+json.dumps(output))
+          PY
+      - name: Install temporary widget benchmark (no production source changes)
+        shell: bash
+        run: |
+          mkdir -p target-world-days/test/performance
+          cp benchmark/world_days_lists_perf_test.dart target-world-days/test/performance/world_days_lists_perf_test.dart
+      - name: Measure actual SavedPage and AroundTheWorldPage widget pumps
+        working-directory: target-world-days
+        shell: bash
+        run: |
+          set -o pipefail
+          flutter test --reporter expanded \
+            --dart-define=WD_SOURCE_SHA=bb662cb21506b6157658f43070c2059c960637b5 \
+            test/performance/world_days_lists_perf_test.dart 2>&1 | tee ../reports/world_days_widget_benchmark.log
+      - name: Parse timings into reproducible JSON and Markdown
+        shell: bash
+        run: |
+          python3 scripts/parse_world_days_widget_bench.py \
+            --log reports/world_days_widget_benchmark.log \
+            --dataset reports/world_days_catalog_counts.json \
+            --output reports/world_days_widget_benchmark.json \
+            --markdown reports/world_days_widget_benchmark.md
+      - name: Preserve exact measurements and raw logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: world-days-saved-and-around-list-benchmark
+          path: reports/
+          if-no-files-found: warn
+          retention-days: 20
