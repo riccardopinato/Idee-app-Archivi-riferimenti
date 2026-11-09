@@ -41,6 +41,11 @@ Per le ricerche operative usare **prima** `DA_VALUTARE.md`, non la classifica st
 
 [**15-VISION-BOARD**](15-VISION-BOARD/README.md) è la sezione per i repository Vision Board che saranno forniti: audit puntuale, estrazione di **donor / Golden candidati / capability**, dedup rispetto alle CAP esistenti e priorità **Notes-Ecosistema + Anna's Diary**, senza imporre feature ai prodotti. Il registro parte con **0 fonti ricevute**, con ID progressivi `VBR-0001+`.
 
+
+## Ricerca Template UX / Second Brain — Notes + Anna
+
+[**17-RICERCA-TEMPLATE-UX**](17-RICERCA-TEMPLATE-UX/README.md): crosswalk sui sorgenti di Notes/Anna, protocollo di fonti pubbliche e contenuti autorizzati, roadmap differenziale e otto candidati di riuso. **Nessun dato sugli acquisti personali nel repository pubblico; nessuna nuova CAP o modifica app.**
+
 ## Navigazione
 
 | Cartella | Trovi qui |
@@ -61,6 +66,7 @@ Per le ricerche operative usare **prima** `DA_VALUTARE.md`, non la classifica st
 | [13-KIT-INTEGRAZIONE](13-KIT-INTEGRAZIONE/README.md) | Kit tecnici per le capability canoniche |
 | [14-MACHINE-LEARNING](14-MACHINE-LEARNING/README.md) | **Repository ML**, registrazione incrementale, donor, Golden candidati, crosswalk CAP, licenze e benchmark |
 | [15-VISION-BOARD](15-VISION-BOARD/README.md) | **Vision Board**: intake repository, studio donor, Golden candidati, crosswalk capability e consumer Notes/Anna |
+| [17-RICERCA-TEMPLATE-UX](17-RICERCA-TEMPLATE-UX/README.md) | **Pattern di template**: Second Brain, planner, diario, grafica e riuso Notes/Anna; solo fonti pubblicabili |
 | [90-STORICO](90-STORICO/REGISTRO_MASTER_2026-10-30.txt) | Registro integrale originale, immutato |
 
 ## Versioni centrali: snapshot letto il 30 ottobre 2026
