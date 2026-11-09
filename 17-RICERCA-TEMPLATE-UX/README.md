@@ -44,6 +44,10 @@ I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobil
 
 [Registro dei tre piloti, adapter e gate residui](UX_STEP3_IMPLEMENTAZIONE_2026_11_09.md) · Notes [#96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96), Anna [#290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290), Wonderlog [#26](https://github.com/riccardopinato/Wonderlog/pull/26). Tutte le PR Step3 integrate in `main` con check CI superati; stato runtime fisico ancora non verificato.
 
+## Maxi-step 4 — Catalogo nativo gratuito
+
+[Stato e confini delle integrazioni Notes/Anna](UX_STEP4_CATALOGO_NATIVO_2026_11_09.md): interfacce gratuite con anteprima; commercio, SKU, licenze e checkout ancora non approvati.
+
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
 - [Protocollo delle fonti, varianti e privacy](PROTOCOLLO_FONTI_E_PRIVACY.md) — evidence ladder, regole di export e diritti.
