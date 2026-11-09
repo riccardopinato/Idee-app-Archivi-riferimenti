@@ -9,3 +9,7 @@ La ricerca sul design dei template e le opportunità per Notes-Ecosistema e Anna
 **Stato**: RESEARCH_ONLY. Zero modifiche a `REGISTRO_CAPABILITY.json`, `SOURCE_INVENTORY.json`, Product Bible, Golden, app code o viste derivate. Nessun nuovo donor e nessuna promozione. Non sono presenti elenchi di acquisti personali, ricevute o file commerciali.
 
 **Baseline**: App Factory Core `2b3ae9e01764b7504980efca34f2543949dc7b89` (v27/Index 29), Notes `2780847a0779573ab54d0d68a088e4f552e2840a`, Anna `d82e2d12593683cf8bd5af8c05ee33ab19906f56`.
+
+## Primo riferimento con evidenza E1
+
+- [TPLUX-REF-0001 — Second Brain (PARA Dashboard), Abdo Karamallah](../17-RICERCA-TEMPLATE-UX/SCHEDE/TPLUX-REF-0001-SECOND_BRAIN_PARA_ABDO.md): screenshot e descrizione verificati sul Marketplace; link originale Notion non accessibile via integrazione, file e formule **E2 non verificati**. Riuso solo concettuale, nessun codice/asset esterno copiato.

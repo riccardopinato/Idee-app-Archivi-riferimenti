@@ -2,6 +2,9 @@
 
 Ricerca **pubblica** su pattern di template, Second Brain, planner, journal e dashboard. Scopo: selezionare idee riusabili senza importare contenuti privati o copiare asset. La matrice è ancorata ai sorgenti GitHub, non a descrizioni commerciali.
 
+## Fonti analizzate
+- **TPLUX-REF-0001** — [Second Brain (PARA Dashboard), Abdo Karamallah](SCHEDE/TPLUX-REF-0001-SECOND_BRAIN_PARA_ABDO.md): E1 su Marketplace e anteprima; pagina Notion originale non letta; E2 pending. Pattern: Quick Actions, Areas, Projects, Resources, Archive e Tasks. Nessun asset copiato.
+
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
 - [Protocollo delle fonti, varianti e privacy](PROTOCOLLO_FONTI_E_PRIVACY.md) — evidence ladder, regole di export e diritti.

@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Second Brain PARA (Abdo): prima scheda E1
+
+- Registrata [TPLUX-REF-0001](../17-RICERCA-TEMPLATE-UX/SCHEDE/TPLUX-REF-0001-SECOND_BRAIN_PARA_ABDO.md) con evidenza E1 su Marketplace e preview pubblica, collegamento originale non accessibile in Notion, E2 non verificata. Crosswalk per Notes e Anna, no duplicazione dei motori esistenti.
+- Nessuna redistribuzione degli asset del creatore, elenco acquisti, email, ID Gumroad o contenuti privati. Zero modifiche app, CAP canoniche o Golden; stato research-only.
+
+
 ## 2026-11-09 — Template UX — crosswalk Notes/Anna e protocollo fonti
 
 - Creata [ricerca pubblicabile sui pattern di template](../17-RICERCA-TEMPLATE-UX/README.md): matrice del delta su file sorgente puntati Notes/Anna, protocollo privacy/varianti, roadmap di cinque maxi-step e otto candidati locali `TPLUX` in inbox. Nessun contenuto commerciale o registro personale di acquisti pubblicato.
