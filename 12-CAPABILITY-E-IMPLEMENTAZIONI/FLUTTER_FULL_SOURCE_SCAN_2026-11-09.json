@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "dated": "2026-11-09",
+  "factory_baseline": "a6d7ff36db7f70b03ccfdf02fa265049d31ae2f1",
+  "public_scan_workflow": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/42538515322",
+  "public_checkout_count": 12,
+  "public_dart_scanned": 1390,
+  "private_flutter_scanned": 1,
+  "private_dart_scanned": 77,
+  "total_flutter_repos_scanned": 13,
+  "total_dart_scanned": 1467,
+  "legacy_api_repo_count": 0,
+  "public_checkout_failures": 0,
+  "method": "Full git checkout of public source in GitHub Actions; private FrameLab in separate private repository runner. Scanner is lexical and excludes generated Dart. No flutter analyze of all consumer repos.",
+  "status_classes": {
+    "SCANNED": "full public checkout scanned",
+    "SCANNED_PRIVATE_RUNNER_SUMMARY_ONLY": "full private checkout scanned, detailed findings private",
+    "NOT_FLUTTER": "repository without Flutter pubspec",
+    "EXCLUDED_INFRASTRUCTURE": "not app runtime target",
+    "SKIPPED_PRIVATE_GITHUB_ACTIONS": "inaccessible from catalog token"
+  },
+  "results": [
+    {
+      "repo": "1000-AI-collection-tools",
+      "default_branch": "main",
+      "source_sha": "3fec0fc008894f364cdef0f18419b5b575c24d55",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "180FlipCharge",
+      "default_branch": "main",
+      "source_sha": "1d4a9f3492afab2c4486738c466ce2acc38719c0",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "Agenda-per-Anna",
+      "default_branch": "main",
+      "source_sha": "9f2c308099aef9ed584395e96c94afe53d648352",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 300,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "legacy_preferences": 56,
+        "native_dart_io": 125,
+        "async_void_handler": 1,
+        "eager_listview": 63
+      }
+    },
+    {
+      "repo": "Analisi-delle-mie-stelle-github",
+      "default_branch": "main",
+      "source_sha": "493db7d438f530957ddae03a4fe1777548c5f4f6",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "Android-Omni-Cleaner",
+      "default_branch": "main",
+      "source_sha": "a753baa8ad0b647be747050ac7e2f6d1fde85465",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "App-corpo-umano",
+      "default_branch": "main",
+      "source_sha": "0a0cdbd2564e2e6db20f6aab9f6c07eba6722556",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 10,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "eager_listview": 30,
+        "legacy_preferences": 7
+      }
+    },
+    {
+      "repo": "App-Factory-Core",
+      "default_branch": "main",
+      "status": "EXCLUDED_INFRASTRUCTURE"
+    },
+    {
+      "repo": "app-fotografia",
+      "default_branch": "main",
+      "source_sha": "e7538d7dfc484f81f37a8e4363cd56a5b742e804",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 75,
+      "skipped_dart_files": 1,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "native_dart_io": 11,
+        "eager_listview": 3
+      }
+    },
+    {
+      "repo": "AppLab",
+      "default_branch": "main",
+      "status": "EXCLUDED_INFRASTRUCTURE"
+    },
+    {
+      "repo": "Battery_Guard",
+      "default_branch": "main",
+      "source_sha": "d8cf237ab2df2daf427b87ca057871e3143bccc7",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 62,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "eager_listview": 9,
+        "native_dart_io": 3
+      }
+    },
+    {
+      "repo": "btrader",
+      "default_branch": "master",
+      "source_sha": "59721c9ca1601f29bfa382e0a3131b9dfc02cc2d",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "CamperBoss",
+      "default_branch": "main",
+      "source_sha": "ae30d08f23aa7e8c835927bc98127f25662d2f6a",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 213,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "native_dart_io": 30,
+        "legacy_preferences": 1,
+        "eager_listview": 3
+      }
+    },
+    {
+      "repo": "Cozy-game-nome-da-scegliere-",
+      "default_branch": "main",
+      "status": "SKIPPED_PRIVATE_GITHUB_ACTIONS"
+    },
+    {
+      "repo": "Design-App",
+      "default_branch": "main",
+      "source_sha": "546a1c187824a416b5caf3b841c8f143b373aae1",
+      "flutter_pubspec_paths": [
+        "packs/icons/flutter/example/pubspec.yaml",
+        "packs/icons/flutter/pubspec.yaml",
+        "packs/motion/flutter/example/pubspec.yaml",
+        "packs/motion/flutter/pubspec.yaml",
+        "packs/sound/adapters/flutter/example/pubspec.yaml",
+        "packs/sound/adapters/flutter/pubspec.yaml",
+        "packs/visual-qa/flutter/example/pubspec.yaml",
+        "packs/visual-qa/flutter/pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 24,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "eager_listview": 5,
+        "native_dart_io": 1
+      }
+    },
+    {
+      "repo": "desktop-tutorial",
+      "default_branch": "main",
+      "status": "SKIPPED_PRIVATE_GITHUB_ACTIONS"
+    },
+    {
+      "repo": "FocuSense",
+      "default_branch": "main",
+      "source_sha": "bdc8becfff1b1a5f629456deb34170f0d905d8b7",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "FrameLab-Google-AI-Studio",
+      "default_branch": "main",
+      "status": "SKIPPED_PRIVATE_GITHUB_ACTIONS"
+    },
+    {
+      "repo": "Idee-app-Archivi-riferimenti",
+      "default_branch": "main",
+      "status": "EXCLUDED_INFRASTRUCTURE"
+    },
+    {
+      "repo": "In-Cucina-con-gli-Anime",
+      "default_branch": "main",
+      "source_sha": "478f6db6d6cdcfe9adcbddacfe834cb7fbc345e7",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 56,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "legacy_theme_field": 6,
+        "eager_listview": 1,
+        "legacy_preferences": 4
+      }
+    },
+    {
+      "repo": "Neon-arcade-runner",
+      "default_branch": "main",
+      "source_sha": "ecb79f6fc2ed24513cc04dab5a44ca4606b5ab59",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "Notes-Ecosistema",
+      "default_branch": "main",
+      "source_sha": "2780847a0779573ab54d0d68a088e4f552e2840a",
+      "flutter_pubspec_paths": [
+        "flutter_app/pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 223,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "legacy_preferences": 38,
+        "native_dart_io": 19,
+        "eager_listview": 53
+      }
+    },
+    {
+      "repo": "Notification-Control",
+      "default_branch": "main",
+      "source_sha": "664cf8c7eaaa8843711ddc99b62b547a1997fcb9",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "PDF-Unifier",
+      "default_branch": "main",
+      "source_sha": "3aacb3e2ac4822db4601fe5c217c016cecc6cbf4",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "Phone-Guard",
+      "default_branch": "main",
+      "source_sha": "ba377aa0fadbe2d7e5ec603f5abd4b69d411ed3c",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "Pocket-Guard",
+      "default_branch": "main",
+      "source_sha": "dcec7d82e374e955f1e06c2c8d0a9143c418b6d7",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "Send-to-pc",
+      "default_branch": "main",
+      "source_sha": "bd271cb96b565e4b937f0e7cfe14058759f830b3",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "Tabletop-Motion-Alarm",
+      "default_branch": "main",
+      "source_sha": "9e67bcbd84e8add7d183349644d3f6f6bbe9ffe0",
+      "flutter_pubspec_paths": [],
+      "status": "NOT_FLUTTER"
+    },
+    {
+      "repo": "TasteAI",
+      "default_branch": "main",
+      "source_sha": "fc2f80e43f91b441863f8e3a77ae7196251979cf",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 59,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "legacy_preferences": 8,
+        "eager_listview": 6
+      }
+    },
+    {
+      "repo": "TrailPath",
+      "default_branch": "main",
+      "source_sha": "3f44ab37c0881e4315033797c451cec723e23cd2",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 69,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "native_dart_io": 9,
+        "eager_listview": 6
+      }
+    },
+    {
+      "repo": "Wonderlog",
+      "default_branch": "main",
+      "source_sha": "b4840e845336fb6df6f823986b8cf0a731e66a35",
+      "flutter_pubspec_paths": [
+        "flutter/pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 213,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "native_dart_io": 13,
+        "legacy_preferences": 14,
+        "eager_listview": 12
+      }
+    },
+    {
+      "repo": "World-Days",
+      "default_branch": "main",
+      "source_sha": "bb662cb21506b6157658f43070c2059c960637b5",
+      "flutter_pubspec_paths": [
+        "pubspec.yaml"
+      ],
+      "status": "SCANNED",
+      "scanned_dart_files": 86,
+      "skipped_dart_files": 0,
+      "truncated": false,
+      "legacy_api_detected": false,
+      "counts": {
+        "native_dart_io": 5,
+        "legacy_preferences": 8,
+        "eager_listview": 7
+      }
+    },
+    {
+      "repo": "FrameLab-Google-AI-Studio",
+      "source_sha": "7104ecc8470a705cddc8f0366b129348b3b23f6d",
+      "status": "SCANNED_PRIVATE_RUNNER_SUMMARY_ONLY",
+      "scanned_dart_files": 77,
+      "skipped_dart_files": 1,
+      "legacy_api_detected": false,
+      "truncated": false,
+      "counts": {
+        "native_dart_io": 13,
+        "eager_listview": 3
+      },
+      "source_run": "https://github.com/riccardopinato/FrameLab-Google-AI-Studio/actions/runs/42538883595",
+      "private_findings_location": "private_workflow_artifact_only"
+    }
+  ]
+}
