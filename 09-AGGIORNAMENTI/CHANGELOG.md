@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Scansione Flutter completa e benchmark World Days CI
+
+- Eseguiti **12 checkout completi Flutter pubblici / 1.390 Dart** e **1 checkout privato FrameLab / 77 Dart**; per ciascuno fissato SHA e registrati i conteggi. Zero match dei soli pattern API legacy cercati; 573 segnali euristici REVIEW non trasformati in bug senza triage.
+- Eseguito benchmark `SavedPage` e `AroundTheWorldPage` World Days su `bb662cb2`, Flutter 3.47.3, 8 scenari 10/50/150/300 record, 7 sample ciascuno. Tempi/figli/widget nel [JSON](../12-CAPABILITY-E-IMPLEMENTAZIONI/WORLD_DAYS_LIST_BENCHMARK_2026-11-09.json); non sono frame GPU o benchmark fisici.
+- Dataset distribuito: 296 record, massimo 4 per Paese. Nessuna prova di rallentamento monotono e nessun refactor lazy immediato autorizzato. Identificato un **overflow reale di 12 px a viewport 390px in AroundTheWorldPage**, [World Days issue #52](https://github.com/riccardopinato/World-Days/issues/52).
+- [Report completo](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_FLUTTER_COMPLETO_WORLD_DAYS_BENCH_2026-11-09.md) e [evidenze scansione](../12-CAPABILITY-E-IMPLEMENTAZIONI/FLUTTER_FULL_SOURCE_SCAN_2026-11-09.json) aggiunti come fonti; nessuna modifica a registry CAP, app production code, App Factory Core o Golden.
+
 ## 2026-11-09 — HTML.it Flutter: 5 maxi-step catalogazione + audit mirato
 
 - Inseriti nel catalogo [report evidence-gated](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_HTMLIT_FLUTTER_5_MAXISTEP_2026-11-09.md) e [registro JSON delle 12 estrazioni](../12-CAPABILITY-E-IMPLEMENTAZIONI/HTMLIT_FLUTTER_REFERENCE_CROSSWALK_2026-11-09.json) dalla guida HTML.it di 37 lezioni (2019–2020). Provenance: repo esempi SHA pinned, nessun LICENSE root, codice commerciale non approvato.
