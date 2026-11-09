@@ -63,3 +63,9 @@ Ancorato agli SHA documentati in `17-RICERCA-TEMPLATE-UX/README.md`.
 5. Ammettere una feature solo dopo dedup CAP, Product Bible, UX approval e test; mantenere il percorso di import staging/validate/commit.
 
 **Esito attuale**: candidato alto per migliorare il punto di ingresso Notes e il catalogo dei template. Per Anna selezionare solo idee leggere per vita personale. Nessuna implementazione suggerita come già pronta a partire da questo template da solo.
+
+## Aggiornamento E2 — Export autorizzato esaminato il 09/11/2026
+
+Esaminato uno ZIP Notion con **42 file (25 Markdown, 17 CSV)** della pagina Second Brain (PARA Dashboard). Sono presenti i dataset `Projects` (6 righe), `Areas` (4), `Resources` (4), `Tasks` (6), e pagine di dettaglio con link fra progetti/aree/risorse/task. CSV con campi di status, due date, priorità, relazioni testuali, progress e timeline. **Questo conferma la struttura esportata, non le formule in Notion, la logica dei pulsanti, le viste runtime o l'esatta fidelità visuale.** Le percentuali sono valori esportati, non definizioni delle formule.
+
+**Stato aggiornato:** `E2_EXPORT_STRUCTURE_VERIFIED` limitatamente a tali file; E3 non raggiunto. Il precedente limite di accesso al link Notion resta valido per l'istanza live. Nessun contenuto commerciale è copiato nel repository.

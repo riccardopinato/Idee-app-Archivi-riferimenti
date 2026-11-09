@@ -16,6 +16,16 @@ Questa cartella conserva il **riferimento pubblico master** (un record TPLUX-REF
 
 **Routing nuovo template**: esaminare il Product Bible e scegliere la destinazione primaria prima di aggiungere una scheda. Il master TPLUX-REF conserva le prove della fonte; le schede locali individuano solo opportunità e gate pertinenti a quella app. I cataloghi privati delle ricevute rimangono fuori da GitHub.
 
+## Nuovi export Notion analizzati — 09/11/2026
+
+- **TPLUX-REF-0002** — [Routines Activities](SCHEDE/TPLUX-REF-0002-ROUTINES_ACTIVITIES.md). **Destinazione:** Anna's Diary. E2 export strutturale (1 MD/4 JPEG); routine statiche, non un habit tracker completo.
+- **TPLUX-REF-0003** — [Weekly Planner](SCHEDE/TPLUX-REF-0003-WEEKLY_PLANNER.md). **Destinazione:** Anna's Diary, solo attesa. Export incompleto: 1 MD introduttivo/upsell, non il planner reale.
+- **TPLUX-REF-0004** — [Book Tracker (Mindful Setups)](SCHEDE/TPLUX-REF-0004-BOOK_TRACKER.md). **Destinazione:** Notes-Ecosistema. E2 export (24 MD/14 CSV/23 immagini); licenza esplicita personal-use, resale vietata.
+- **TPLUX-REF-0005** — [Subscription Tracker](SCHEDE/TPLUX-REF-0005-SUBSCRIPTION_TRACKER.md). **Destinazione:** CashMate, NON Notes/Anna. E2 export (10 MD/3 CSV/MP4); analytics dipendono da NotionStats esterno.
+- **TPLUX-REF-0006** — [Weight Loss Tracker](SCHEDE/TPLUX-REF-0006-WEIGHT_LOSS_TRACKER.md). **Destinazione:** Anna solo valutazione privacy. E2 export (5 MD/2 CSV/GIF), dati sensibili; nessuna adozione di prodotto.
+
+**Monetizzazione, idea valida (backlog):** [Store interno di template originali, prezzo candidato €3,99](IDEA_STORE_TEMPLATE_INTERNO_2026-11-09.md). Valida come concetto, **non approvata per implementazione o pubblicazione**. Non rivendere ZIP o asset di terzi.
+
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
 - [Protocollo delle fonti, varianti e privacy](PROTOCOLLO_FONTI_E_PRIVACY.md) — evidence ladder, regole di export e diritti.

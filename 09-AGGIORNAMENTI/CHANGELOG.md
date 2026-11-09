@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Cinque nuovi export Notion e idea store interno
+
+- Registrati `TPLUX-REF-0002…0006` con audit strutturale dei file forniti; aggiornato `TPLUX-REF-0001` Second Brain da E1 a E2 **solo sulla struttura Markdown/CSV**. Classificati Notes, Anna e fuori-scope CashMate; Weekly Planner marcato export landing incompleto, non planner verificato.
+- Conservata in inbox `TPL-STORE-2026-01` come **IDEA VALIDA / BACKLOG**, prezzo ipotetico €3,99 a template originale, prima di alcun billing, SKU, vendita o modifica app. Book Tracker contiene divieto esplicito di redistribuzione/rivendita; nessuna copia di media o ZIP commerciali.
+- Nessuna modifica a `REGISTRO_CAPABILITY.json`, Product Bible, Golden, licenze, codice app, backup, APK o Store.
+
+
 ## 2026-11-09 — Second Brain PARA (Abdo): prima scheda E1
 
 - Registrata [TPLUX-REF-0001](../17-RICERCA-TEMPLATE-UX/SCHEDE/TPLUX-REF-0001-SECOND_BRAIN_PARA_ABDO.md) con evidenza E1 su Marketplace e preview pubblica, collegamento originale non accessibile in Notion, E2 non verificata. Crosswalk per Notes e Anna, no duplicazione dei motori esistenti.
