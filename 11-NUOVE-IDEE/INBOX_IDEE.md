@@ -1,5 +1,12 @@
 # Inbox nuove idee — da valutare e conservare
 
+## TPL-STORE-2026-01 — Store interno di template originali (IDEA VALIDA, 09/11/2026)
+
+**Decisione dell'utente:** conservare come **idea valida** lo store di template acquistabili separatamente all'interno di Notes e Anna's Diary; **€3,99 per template** è un'ipotesi di prezzo, non un prezzo approvato/attivato. La [scheda tecnica e commerciale](../17-RICERCA-TEMPLATE-UX/IDEA_STORE_TEMPLATE_INTERNO_2026-11-09.md) definisce catalogo, anteprime, acquisti una tantum, diritti, ripristino, compatibilità e gate. **Non autorizza** oggi sviluppo, nuove API/cloud, billing o release.
+
+La vendita deve riguardare **template originali per le app**. Gli ZIP Notion di terzi sono fonti di ricerca, **non merce rivendibile**. Second Brain, Book Tracker e quattro altri export hanno [schede E2 o incompleto](../17-RICERCA-TEMPLATE-UX/README.md) con assegnazione primaria specifica.
+
+
 ## Ricerca template UX (09/11/2026) — TPLUX-001…008
 
 Otto candidati di miglioramento, NON nuove app e NON nuove CAP, deduplicabili nella [scheda di riuso](../17-RICERCA-TEMPLATE-UX/CANDIDATI_RIUSO.md). Area di ricerca: template guidati, vision board sui canvas esistenti, home modulare, goal/review, mini-planner Noi, Second Brain read-only, Study Web e giornata realistica. [Matrice sorgente per Notes e Anna](../17-RICERCA-TEMPLATE-UX/CROSSWALK_NOTES_ANNA_2026-11-09.md). **PROPOSTA**: nessuna modifica a Product Bible, runtime, roadmap delle app o CAP registry; dati privati delle ricevute esclusi.
