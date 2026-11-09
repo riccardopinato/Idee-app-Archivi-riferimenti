@@ -54,6 +54,8 @@ I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobil
 
 ## Quattro priorità operative parallele
 
+**Aggiornamento source 09/11:** Notes [#98](https://github.com/riccardopinato/Notes-Ecosistema/pull/98), Anna [#293](https://github.com/riccardopinato/Agenda-per-Anna/pull/293), Wonderlog [#27](https://github.com/riccardopinato/Wonderlog/pull/27) sono **merged con CI PR PASS**. Wonderlog [nuovo deploy Pages workflow SUCCESS](https://github.com/riccardopinato/Wonderlog/actions/runs/42710542583); browser HTTP live e QA dispositivo/account ancora **NOT_VERIFIED**. Nessun nuovo Golden/CAP o template vendibile.
+
 [Registro delle esecuzioni e dei gate residui](EXECUTION_4_PRIORITIES_2026-11-09.md) · [Blueprint di quattro template premium originali](BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md). I pack sono PROPOSTE non autorizzate per billing o pubblicazione.
 
 ## Documenti
