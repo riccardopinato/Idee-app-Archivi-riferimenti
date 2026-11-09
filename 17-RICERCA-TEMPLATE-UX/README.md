@@ -26,6 +26,14 @@ Questa cartella conserva il **riferimento pubblico master** (un record TPLUX-REF
 
 **Monetizzazione, idea valida (backlog):** [Store interno di template originali, prezzo candidato €3,99](IDEA_STORE_TEMPLATE_INTERNO_2026-11-09.md). Valida come concetto, **non approvata per implementazione o pubblicazione**. Non rivendere ZIP o asset di terzi.
 
+## Routing multi-app (12 ZIP, 11 fonti uniche)
+
+- [Audit degli export e assegnazione alle app](LOTTO_NOTION_2026_11_09_12_ZIP.md)
+- [Routing e schema dei cataloghi locali](ROUTING_MULTI_APP.md)
+- [Registro centrale JSON](TEMPLATE_ROUTING_REGISTRY.json)
+
+I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobiliari senza app coerente restano non assegnate. Nessun template viene copiato o venduto.
+
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
 - [Protocollo delle fonti, varianti e privacy](PROTOCOLLO_FONTI_E_PRIVACY.md) — evidence ladder, regole di export e diritti.
