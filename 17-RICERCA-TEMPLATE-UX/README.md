@@ -5,6 +5,17 @@ Ricerca **pubblica** su pattern di template, Second Brain, planner, journal e da
 ## Fonti analizzate
 - **TPLUX-REF-0001** — [Second Brain (PARA Dashboard), Abdo Karamallah](SCHEDE/TPLUX-REF-0001-SECOND_BRAIN_PARA_ABDO.md): E1 su Marketplace e anteprima; pagina Notion originale non letta; E2 pending. Pattern: Quick Actions, Areas, Projects, Resources, Archive e Tasks. Nessun asset copiato.
 
+## Cataloghi Template Notion per app
+
+Questa cartella conserva il **riferimento pubblico master** (un record TPLUX-REF per fonte); ciascuna app conserva la propria **scheda di ammissione e utilizzo**. Non registrare duplicati come fonti distinte.
+
+| Destinazione | Sezione proprietaria | Stato |
+|---|---|---|
+| **Notes-Ecosistema** | [Template Notion — Notes](https://github.com/riccardopinato/Notes-Ecosistema/tree/main/docs/TEMPLATE_NOTION) | Primo record `TN-NOTES-0001` per Second Brain / PARA; ricerca E1, nessuna feature implementata per questo riferimento |
+| **Anna's Diary** | [Template Notion — Anna](https://github.com/riccardopinato/Agenda-per-Anna/tree/main/docs/TEMPLATE_NOTION) | Catalogo indipendente inizialmente vuoto; Second Brain solo riferimento trasversale, non prodotto Anna |
+
+**Routing nuovo template**: esaminare il Product Bible e scegliere la destinazione primaria prima di aggiungere una scheda. Il master TPLUX-REF conserva le prove della fonte; le schede locali individuano solo opportunità e gate pertinenti a quella app. I cataloghi privati delle ricevute rimangono fuori da GitHub.
+
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
 - [Protocollo delle fonti, varianti e privacy](PROTOCOLLO_FONTI_E_PRIVACY.md) — evidence ladder, regole di export e diritti.
