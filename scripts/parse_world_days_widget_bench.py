@@ -22,10 +22,12 @@ def main() -> int:
             continue
         data = json.loads(line.split(PREFIX, 1)[1])
         rows.append(data)
+    ui_rows = [json.loads(line.split("WORLD_DAYS_UI_AUDIT|", 1)[1])
+               for line in log.splitlines() if "WORLD_DAYS_UI_AUDIT|" in line]
     expected = {(page, n) for page in ("saved", "around_the_world")
                 for n in (10, 50, 150, 300)}
     found = {(row["page"], row["scenario_record_count"]) for row in rows}
-    complete = found == expected and len(rows) == len(expected)
+    complete = found == expected and len(rows) == len(expected) and len(ui_rows) == 1
     dataset = {}
     if args.dataset and args.dataset.is_file():
         dataset = json.loads(args.dataset.read_text(encoding="utf-8"))
@@ -40,6 +42,7 @@ def main() -> int:
         "observed": len(rows),
         "dataset": dataset,
         "rows": sorted(rows, key=lambda x: (x["page"], x["scenario_record_count"])),
+        "ui_regression_390px": ui_rows[0] if ui_rows else None,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -47,7 +50,8 @@ def main() -> int:
         "# World Days — benchmark widget di due liste",
         "",
         "Fonte: widget reali SavedPage e AroundTheWorldPage montati in test Flutter",
-        "Motore: Flutter widget test CI (Linux), viewport 390x844 logici.",
+        "Motore: Flutter widget test CI (Linux), viewport 480x844 logici per misure.",
+        "Test separato a 390x844 documenta il difetto UI del menu Paese.",
         "Misura: wall-clock pumpWidget+pump, 2 warmup + 7 sample, mediana e p95.",
         "NON misura frame GPU su telefono, RAM fisica, scroll reale o successo Store.",
         "",
@@ -56,6 +60,9 @@ def main() -> int:
     ]
     for row in payload["rows"]:
         lines.append("| {page} | {scenario_record_count} | {list_delegate_total_children} | {mounted_visible_observance_cards} | {median_pump_ms} | {p95_pump_ms} |".format(**row))
+    if ui_rows:
+        lines.extend(["", "## Regressione UI a 390 px", "",
+                      json.dumps(ui_rows[0], ensure_ascii=False)])
     if dataset:
         lines.extend(["", "## Dataset distribuito (contesto reale)", "",
                       "Record totali: " + str(dataset.get("total_records")),
