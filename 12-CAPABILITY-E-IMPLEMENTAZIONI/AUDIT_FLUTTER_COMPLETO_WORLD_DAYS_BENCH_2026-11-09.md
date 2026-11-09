@@ -12,7 +12,7 @@
 - **1.467 file Dart** effettivamente analizzati (**1.390 pubblici + 77 privati**). Il filtro esclude generati e path non pertinenti; per ogni repo SHA e raggruppamento dei pattern sono nel JSON.
 - **0 match di API LEGACY_API nel set circoscritto** (tra cui `RaisedButton`, `FlatButton`, `OutlineButton`, `Scaffold.of(...).showSnackBar`, istanza storica `Geolocator()`). Non significa assenza di tutte le API deprecate in Flutter, né certificazione `flutter analyze`.
 - I `REVIEW` sono **indicatori euristici, non bug**: `ListView(children:...)` può essere appropriato, `dart:io` può essere isolato per piattaforma e `SharedPreferences.getInstance()` è una API legacy ancora supportata. **Nessun refactor automatico**.
-- Indicatori puntuali da ispezionare se si apre uno step futuro: Anna `async_void_handler` 1, Cooking Anime `legacy_theme_field` 6; entrambi classificati REVIEW e **non dimostrati difetti**.
+- Indicatori puntuali: Anna `async_void_handler` 1 ancora da triagiare. I **6 `legacy_theme_field` di Cooking Anime sono stati verificati come falsi positivi benigni**: i sei `accentColor:` definiscono il campo personalizzato `DecorativeCharacterDefinition.accentColor` in [`decorative_character_registry.dart`](https://github.com/riccardopinato/In-Cucina-con-gli-Anime/blob/478f6db6d6cdcfe9adcbddacfe834cb7fbc345e7/lib/core/decorative_characters/decorative_character_registry.dart), NON la vecchia proprietà di `ThemeData`. Non modificarli.
 
 | Repository | SHA sorgente | Dart letti | Pattern legacy | Segnali REVIEW |
 |---|---|---:|---:|---:|
