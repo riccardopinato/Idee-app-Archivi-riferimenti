@@ -46,7 +46,7 @@ I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobil
 
 ## Maxi-step 4 — Catalogo nativo gratuito
 
-[Stato e confini delle integrazioni Notes/Anna](UX_STEP4_CATALOGO_NATIVO_2026_11_09.md): interfacce gratuite con anteprima; commercio, SKU, licenze e checkout ancora non approvati.
+[Stato e confini delle integrazioni Notes/Anna](UX_STEP4_CATALOGO_NATIVO_2026_11_09.md): Notes [#97](https://github.com/riccardopinato/Notes-Ecosistema/pull/97) e Anna [#291](https://github.com/riccardopinato/Agenda-per-Anna/pull/291) **MERGED / CI PR PASS**. Interfacce gratuite con anteprima; device non verificati, commercio, SKU e checkout ancora non approvati.
 
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
