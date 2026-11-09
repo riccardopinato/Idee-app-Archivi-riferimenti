@@ -11,10 +11,10 @@ Questa cartella conserva il **riferimento pubblico master** (un record TPLUX-REF
 
 | Destinazione | Sezione proprietaria | Stato |
 |---|---|---|
-| **Notes-Ecosistema** | [Template Notion — Notes](https://github.com/riccardopinato/Notes-Ecosistema/tree/main/docs/TEMPLATE_NOTION) | Sei riferimenti di ricerca; prototipo Book Tracker come una nota nativa, ancora in revisione UX |
-| **Anna's Diary** | [Template Notion — Anna](https://github.com/riccardopinato/Agenda-per-Anna/tree/main/docs/TEMPLATE_NOTION) | Cinque riferimenti di ricerca; prototipo Rituali gentili privati, ancora in revisione UX |
+| **Notes-Ecosistema** | [Template Notion — Notes](https://github.com/riccardopinato/Notes-Ecosistema/tree/main/docs/TEMPLATE_NOTION) | Sei riferimenti di ricerca; UX Book Tracker approvata; Step3 in [PR #96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96), CI/merge separati |
+| **Anna's Diary** | [Template Notion — Anna](https://github.com/riccardopinato/Agenda-per-Anna/tree/main/docs/TEMPLATE_NOTION) | Cinque riferimenti di ricerca; UX Rituali gentili approvata; Step3 in [PR #290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290) |
 
-| **Wonderlog** | [Template Notion — Wonderlog](https://github.com/riccardopinato/Wonderlog/tree/main/docs/TEMPLATE_NOTION) | Trip Planner in bozza UX nativa; non routing o prenotazioni |
+| **Wonderlog** | [Template Notion — Wonderlog](https://github.com/riccardopinato/Wonderlog/tree/main/docs/TEMPLATE_NOTION) | UX Trip Planner approvata; Step3 in [PR #26](https://github.com/riccardopinato/Wonderlog/pull/26); non routing o prenotazioni |
 
 **Routing nuovo template**: esaminare il Product Bible e scegliere la destinazione primaria prima di aggiungere una scheda. Il master TPLUX-REF conserva le prove della fonte; le schede locali individuano solo opportunità e gate pertinenti a quella app. I cataloghi privati delle ricevute rimangono fuori da GitHub.
 
@@ -38,7 +38,11 @@ I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobil
 
 ## Maxi-step 2 — Template nativi in progettazione
 
-[Piloti UX Notes / Anna / Wonderlog](UX_STEP2_PILOTI_2026_11_09.md): tre demo app-specifiche, documentate e ancora **da approvare**. Nessuna implementazione Flutter o Store derivata dalle demo.
+[Piloti UX Notes / Anna / Wonderlog](UX_STEP2_PILOTI_2026_11_09.md): tre demo app-specifiche, UX **approvate il 09/11/2026**. Implementazioni Flutter in PR Step3 separate da CI/merge/QA; nessuno Store derivato dalle demo.
+
+## Maxi-step 3 — Implementazione nativa
+
+[Registro dei tre piloti, adapter e gate residui](UX_STEP3_IMPLEMENTAZIONE_2026_11_09.md) · Notes [#96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96), Anna [#290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290), Wonderlog [#26](https://github.com/riccardopinato/Wonderlog/pull/26). Stato di CI/merge controllato nelle PR, non nel mock-up.
 
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.

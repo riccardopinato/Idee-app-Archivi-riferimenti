@@ -1,6 +1,6 @@
 # Maxi-step 2 — Tre UX nativi per i template App Factory
 
-**Stato: DESIGN DRAFT / ATTESA APPROVAZIONE UTENTE.** Le PR documentali sono state integrate. NON sono template installati, app Flutter aggiornate, Store attivi né Golden certificati.
+**Stato: UX APPROVATA per i tre piloti tramite comando «procedi» del 09/11/2026.** Le PR documentali sono state integrate. NON sono template installati, app Flutter aggiornate, Store attivi né Golden certificati.
 
 | App | Fonte | Proposta originale | UX + demo standalone | PR | SHA main |
 |---|---|---|---|---|---|
@@ -17,9 +17,9 @@
 
 ## Decisioni e prossimo gate
 
-1. Mostrare i tre prototipi e raccogliere **approvazione UX esplicita**, separata dallo stato GitHub MERGED.
-2. Se approvati, scegliere un pilota gratuito e specificare adapter, scope, writer, idempotenza, validazione, rollback e QA in Maxi-step 3.
+1. **APPROVATO**: scope UX dei tre piloti. La validazione è separata dallo stato GitHub MERGED.
+2. **IN ESECUZIONE**: tre pilot gratuiti indipendenti (Notes #96, Anna #290, Wonderlog #26); writer esistenti, no nuovi store. CI, idempotenza effettiva e QA restano gate distinti.
 3. Il prezzo ipotetico €3,99 rimane riservato a template premium originali di valore aggiuntivo; non rivendere le funzioni gratuite o i file Notion di terzi.
 4. App Factory Core Template Engine Standard v1 resta static-only: [contratto](https://github.com/riccardopinato/App-Factory-Core/tree/main/contracts/template_engine_v1), SHA d4ed1185d36d419228fba6b57a979cde308bd321.
 
-**Questa matrice non promuove i template allo stato APPROVATO e non cambia la roadmap di alcuna app.**
+**Approvazione UX e implementazione in branch NON significano runtime verificato, merge completato o nuovo Store monetizzato.**
