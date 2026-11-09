@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Maxi-step 4: catalogo nativo gratuito, PR aperte
+
+- [Matrice Step4](../17-RICERCA-TEMPLATE-UX/UX_STEP4_CATALOGO_NATIVO_2026_11_09.md) e due sorgenti in PR: [Notes #97](https://github.com/riccardopinato/Notes-Ecosistema/pull/97), [Anna #291](https://github.com/riccardopinato/Agenda-per-Anna/pull/291); confermare CI e merge dai rispettivi head prima di promuovere lo stato.
+- Separazione rigorosa catalogo gratuito / modelli personali / futura vendita di premium originali. Nessuna variazione al prezzo ipotetico €3,99, nessun pagamento, SKU, nuovo database, copia di asset Notion, CAP o Golden.
+- Wonderlog #26 rimane nel precedente Step3, fuori da questo catalogo. Verifica fisica, account, backup e Store ancora NON VERIFICATA.
+
 ## 2026-11-09 — Chiusura integrazione sorgente Maxi-step 3
 
 - Notes-Ecosistema [PR #96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96) merged a `42efc5b9` dopo verify, verify-web e build-web PASS. Fix della validazione titoli con emoji.
