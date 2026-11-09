@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Maxi-step 4: chiusura delle due integrazioni native
+
+- **Notes:** [PR #97](https://github.com/riccardopinato/Notes-Ecosistema/pull/97) unita a `f057c81c92532cd22b504116c14ccef8a2ad6612`; `verify`, `verify-web`, `build-web` SUCCESS sul PR head `ae93ff2a`. Catalogo gratuito / I miei, senza nuova persistenza.
+- **Anna:** [PR #291](https://github.com/riccardopinato/Agenda-per-Anna/pull/291) unita a `2c77c764ecf9982817aee8fc6ecc31ee75b741f9`; `check`, UI5 source e `build-web` SUCCESS sul PR head `6316a4c`. Anteprima prima dell'editor, 5 lingue; adeguati i test storici di annullamento/errore salvataggio.
+- [Matrice esatta e gate residui](../17-RICERCA-TEMPLATE-UX/UX_STEP4_CATALOGO_NATIVO_2026_11_09.md): **source/CI PR PASS, merged main**. CI post-merge, device, account/backup, billing e Store non si inferiscono dal merge. Nessun CAP/Golden, SKU, provider billing o asset Notion importato.
+
 ## 2026-11-09 — Maxi-step 4: catalogo nativo gratuito, PR aperte
 
 - [Matrice Step4](../17-RICERCA-TEMPLATE-UX/UX_STEP4_CATALOGO_NATIVO_2026_11_09.md) e due sorgenti in PR: [Notes #97](https://github.com/riccardopinato/Notes-Ecosistema/pull/97), [Anna #291](https://github.com/riccardopinato/Agenda-per-Anna/pull/291); confermare CI e merge dai rispettivi head prima di promuovere lo stato.
