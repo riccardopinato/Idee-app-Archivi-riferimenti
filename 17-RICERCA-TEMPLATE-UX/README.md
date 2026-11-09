@@ -11,10 +11,10 @@ Questa cartella conserva il **riferimento pubblico master** (un record TPLUX-REF
 
 | Destinazione | Sezione proprietaria | Stato |
 |---|---|---|
-| **Notes-Ecosistema** | [Template Notion — Notes](https://github.com/riccardopinato/Notes-Ecosistema/tree/main/docs/TEMPLATE_NOTION) | Sei riferimenti di ricerca; UX Book Tracker approvata; Step3 in [PR #96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96), CI/merge separati |
-| **Anna's Diary** | [Template Notion — Anna](https://github.com/riccardopinato/Agenda-per-Anna/tree/main/docs/TEMPLATE_NOTION) | Cinque riferimenti di ricerca; UX Rituali gentili approvata; Step3 in [PR #290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290) |
+| **Notes-Ecosistema** | [Template Notion — Notes](https://github.com/riccardopinato/Notes-Ecosistema/tree/main/docs/TEMPLATE_NOTION) | Sei riferimenti di ricerca; UX Book Tracker approvata; Step3 [PR #96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96) **MERGED**, CI source PASS; device NOT VERIFIED |
+| **Anna's Diary** | [Template Notion — Anna](https://github.com/riccardopinato/Agenda-per-Anna/tree/main/docs/TEMPLATE_NOTION) | Cinque riferimenti di ricerca; UX Rituali gentili approvata; Step3 [PR #290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290) **MERGED**, CI source PASS; device NOT VERIFIED |
 
-| **Wonderlog** | [Template Notion — Wonderlog](https://github.com/riccardopinato/Wonderlog/tree/main/docs/TEMPLATE_NOTION) | UX Trip Planner approvata; Step3 in [PR #26](https://github.com/riccardopinato/Wonderlog/pull/26); non routing o prenotazioni |
+| **Wonderlog** | [Template Notion — Wonderlog](https://github.com/riccardopinato/Wonderlog/tree/main/docs/TEMPLATE_NOTION) | UX Trip Planner approvata; Step3 [PR #26](https://github.com/riccardopinato/Wonderlog/pull/26) **MERGED**, CI source PASS; device NOT VERIFIED; non routing o prenotazioni |
 
 **Routing nuovo template**: esaminare il Product Bible e scegliere la destinazione primaria prima di aggiungere una scheda. Il master TPLUX-REF conserva le prove della fonte; le schede locali individuano solo opportunità e gate pertinenti a quella app. I cataloghi privati delle ricevute rimangono fuori da GitHub.
 
@@ -42,7 +42,7 @@ I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobil
 
 ## Maxi-step 3 — Implementazione nativa
 
-[Registro dei tre piloti, adapter e gate residui](UX_STEP3_IMPLEMENTAZIONE_2026_11_09.md) · Notes [#96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96), Anna [#290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290), Wonderlog [#26](https://github.com/riccardopinato/Wonderlog/pull/26). Stato di CI/merge controllato nelle PR, non nel mock-up.
+[Registro dei tre piloti, adapter e gate residui](UX_STEP3_IMPLEMENTAZIONE_2026_11_09.md) · Notes [#96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96), Anna [#290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290), Wonderlog [#26](https://github.com/riccardopinato/Wonderlog/pull/26). Tutte le PR Step3 integrate in `main` con check CI superati; stato runtime fisico ancora non verificato.
 
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
