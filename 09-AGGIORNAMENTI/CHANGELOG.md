@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Chiusura sorgente delle quattro priorità template
+
+- Notes [PR #98](https://github.com/riccardopinato/Notes-Ecosistema/pull/98) merged `cf9f9c515a87f438ab0112e7efd4a0ce0471fbd6`, test/CI PR PASS e fix controller del dialogo Book Tracker (bug riprodotto dal nuovo test). QA fisico/account non attestato.
+- Anna [PR #293](https://github.com/riccardopinato/Agenda-per-Anna/pull/293) merged `260dd753a3f7d1b7cd501ce38cf6e4a78ea773b3`, check/UI5 PASS, test anteprima → annulla → conferma, riallineamento main Vision Board protetto.
+- Wonderlog [PR #27](https://github.com/riccardopinato/Wonderlog/pull/27) merged `f045588dd5dbd668541fec380f184f3ebcd8bb6f`, verify/Apple/legacy PASS. Pages build+deploy **SUCCESS** sul nuovo main nella [run #42710542583](https://github.com/riccardopinato/Wonderlog/actions/runs/42710542583); due retry del precedente commit falliti per timeout, documentati in [issue #28](https://github.com/riccardopinato/Wonderlog/issues/28). La visita HTTP reale del sito resta NOT_VERIFIED.
+- [Ledger donor](../17-RICERCA-TEMPLATE-UX/STEP5_DONOR_PROVENANCE_2026-11-09.md): E3 limitato con SHA/CI, senza falsa promozione E5/Golden. [Quattro blueprint premium originali](../17-RICERCA-TEMPLATE-UX/BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md): DESIGN CANDIDATE, niente SKU/billing/Store.
+- [Registro completo](../17-RICERCA-TEMPLATE-UX/EXECUTION_4_PRIORITIES_2026-11-09.md). Collaudo real-device, account, backup e autorizzazione commerciale restano gate separati.
+
 ## 2026-11-09 — Template Step5: donor provenance e quattro priorità attivate
 
 - [Registro esecuzione quattro filoni](../17-RICERCA-TEMPLATE-UX/EXECUTION_4_PRIORITIES_2026-11-09.md): retry Pages Wonderlog sullo stesso SHA, PR QA Notes #98 / Anna #293 / Wonderlog #27, ledger donor E3 limitati e blueprint quattro premium originali.
