@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Maxi-step 3: approvazione UX e implementazioni in PR
+
+- Approvati come piloti gratuiti Book Tracker Notes, Rituali gentili Anna e Trip Planner Wonderlog; i tre prototipi di Maxi-step 2 rimangono documentazione storica.
+- [Crosswalk Step3](../17-RICERCA-TEMPLATE-UX/UX_STEP3_IMPLEMENTAZIONE_2026_11_09.md) collega le PR native [Notes #96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96), [Anna #290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290), [Wonderlog #26](https://github.com/riccardopinato/Wonderlog/pull/26) e i writer canonici. Stato fonte in PR, senza dichiarare merge o test fisici non attestati.
+- Nessun nuovo Store, API pagamento, database, Golden/CAP o asset Notion redistribuito. Fonte: approvazione utente nella chat del 09/11/2026; Factory baseline d4ed1185.
+
 ## 2026-11-09 — Template Engine Maxi-step 2: primi tre progetti UX
 
 - [Matrice dei tre prototipi](../17-RICERCA-TEMPLATE-UX/UX_STEP2_PILOTI_2026_11_09.md) per Notes (#95), Anna (#286) e Wonderlog (#25), con documentazione e HTML interattivo sintetico. Stato: UX DRAFT / pending review.
