@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Chiusura integrazione sorgente Maxi-step 3
+
+- Notes-Ecosistema [PR #96](https://github.com/riccardopinato/Notes-Ecosistema/pull/96) merged a `42efc5b9` dopo verify, verify-web e build-web PASS. Fix della validazione titoli con emoji.
+- Anna’s Diary [PR #290](https://github.com/riccardopinato/Agenda-per-Anna/pull/290) merged a `0b49de46` dopo Development check, UI5 source e Web PASS.
+- Wonderlog [PR #26](https://github.com/riccardopinato/Wonderlog/pull/26) merged a `c238afd8` dopo verify, apple-build e legacy-contract PASS. Fix date bloccate in fase di salvataggio confermato.
+- [Stato per app e gate residui](../17-RICERCA-TEMPLATE-UX/UX_STEP3_IMPLEMENTAZIONE_2026_11_09.md): integrazione di codice completata; collaudo fisico, backup/account e pubblicazione Store **NON VERIFICATI**. Nessun CAP/Golden o billing introdotto.
+
 ## 2026-11-09 — Maxi-step 3: approvazione UX e implementazioni in PR
 
 - Approvati come piloti gratuiti Book Tracker Notes, Rituali gentili Anna e Trip Planner Wonderlog; i tre prototipi di Maxi-step 2 rimangono documentazione storica.
