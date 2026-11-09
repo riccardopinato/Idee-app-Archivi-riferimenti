@@ -10,6 +10,10 @@ Nessuna modifica implicita alle roadmap delle app; questa è una **proposta di c
 | 4. PR integrate e testate | Estensioni minime, a release separate | Web-first, persistence scaling e preview; Smart Inbox non prod finché #46 aperta | No sync silenziosa, ACL Noi, no nuovo DB, no AI/cloud automatico | PR esatta, analyze/test/web build, AppLab e physical se richiesti |
 | 5. Donor/Golden | Riuso registrato senza promozione prematura | Produrre consumer/test ed evidenze di esecuzione | Consumer distinto con UX/privacy specifiche | SHA, licenze, adattamento, tests, nessun nuovo CAP duplicato |
 
+## Stato esecuzione Template Native — 09/11/2026
+
+Gli Step 2–4 dei **tre piloti nativi** sono già source-integrated; l'inventario di terze parti resta un filone separato con dipendenze di acquisto/licenze. Per Step 5 è stata predisposta [la provenance per tre donor scoping](STEP5_DONOR_PROVENANCE_2026-11-09.md), senza promuovere un nuovo Golden. [QA sorgente e limiti](EXECUTION_4_PRIORITIES_2026-11-09.md) includono PR #98/#293/#27 e device ancora NON VERIFICATI. Il [blueprint premium](BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md) è progettazione futura: non significa Step 5 billing o Store READY.
+
 ## Dipendenze ad alto impatto
 - **Notes Web**: lo snapshot bounded in localStorage precede grandi importazioni commerciali; migrazione/backup vanno verificati prima di un importer.
 - **Smart Inbox #46**: la compensazione cross-store QA non è una transazione atomica; non attivare in production con una semplice toggle.
