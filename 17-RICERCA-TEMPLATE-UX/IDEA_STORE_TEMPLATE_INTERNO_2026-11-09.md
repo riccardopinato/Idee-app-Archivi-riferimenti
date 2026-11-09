@@ -10,7 +10,11 @@
 
 ## Maxi-step 2 — UX nativi preparati (09/11/2026)
 
-[Tre progetti UX con prototipi HTML e riferimenti GitHub](UX_STEP2_PILOTI_2026_11_09.md). PR documentali integrate per Notes, Anna's Diary e Wonderlog. **UX DRAFT / IN ATTESA DI APPROVAZIONE**, non nuovi template Flutter installati, non prodotto vendibile e non estensione dei Golden.
+[Tre progetti UX con prototipi HTML e riferimenti GitHub](UX_STEP2_PILOTI_2026_11_09.md). PR documentali integrate per Notes, Anna's Diary e Wonderlog. **UX APPROVATA per i tre piloti il 09/11/2026**; le relative [Step3](UX_STEP3_IMPLEMENTAZIONE_2026_11_09.md) e [Step4](UX_STEP4_CATALOGO_NATIVO_2026_11_09.md) sono source-integrated con CI, ma nessuno Store acquistabile o estensione Golden.
+
+## Progettazione commerciale successiva — quattro pack originali (09/11)
+
+[Blueprint dettagliato di due template Notes e due template Anna](BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md): `DESIGN CANDIDATE` senza SKU, checkout, prodotti su store, approvazione UX premium o implementazione nel codice. Preservare il prezzo €3,99 come ipotesi e lo stato `IDEA VALIDA` per lo Store, senza promuovere a `PRODUCT_APPROVED`.
 
 ## Proposta
 Uno **store interno a ciascuna app** con catalogo di modelli **originali per l'app**, scheda anteprima, contenuti inclusi, pulsante Acquista, sblocco permanente, installazione **reversibile** e sezione 'I miei template'. Non creare una nuova app-store né costringere l'utente ad abbonarsi. Prevedere alcuni preset gratuiti utili, senza impoverire le funzioni base.
