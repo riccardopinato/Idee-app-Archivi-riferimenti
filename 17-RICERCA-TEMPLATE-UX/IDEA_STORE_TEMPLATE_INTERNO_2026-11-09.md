@@ -8,6 +8,10 @@
 - Contratto **CANDIDATE / static-only**: manifest JSON Schema v1, esempi Notes/Anna, validatore e test collegati alla CI Factory. **Non** è un engine Flutter utilizzabile, un Golden certificato, un catalogo prodotti Play/Apple o un sistema di acquisto.
 - Gli step 2–5 restano separati: UX app-native → adapter reale + template gratuito → store UI → billing verificato. Lo standard non autorizza automaticamente SKU, nuove CAP, cambi Product Bible o modifiche ai repository delle app.
 
+## Maxi-step 2 — UX nativi preparati (09/11/2026)
+
+[Tre progetti UX con prototipi HTML e riferimenti GitHub](UX_STEP2_PILOTI_2026_11_09.md). PR documentali integrate per Notes, Anna's Diary e Wonderlog. **UX DRAFT / IN ATTESA DI APPROVAZIONE**, non nuovi template Flutter installati, non prodotto vendibile e non estensione dei Golden.
+
 ## Proposta
 Uno **store interno a ciascuna app** con catalogo di modelli **originali per l'app**, scheda anteprima, contenuti inclusi, pulsante Acquista, sblocco permanente, installazione **reversibile** e sezione 'I miei template'. Non creare una nuova app-store né costringere l'utente ad abbonarsi. Prevedere alcuni preset gratuiti utili, senza impoverire le funzioni base.
 

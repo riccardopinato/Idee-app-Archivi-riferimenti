@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Template Engine Maxi-step 2: primi tre progetti UX
+
+- [Matrice dei tre prototipi](../17-RICERCA-TEMPLATE-UX/UX_STEP2_PILOTI_2026_11_09.md) per Notes (#95), Anna (#286) e Wonderlog (#25), con documentazione e HTML interattivo sintetico. Stato: UX DRAFT / pending review.
+- Nessun codice Flutter, database, SKU, asset Notion, licenza di terzi, CAP o Golden modificato. Il contratto Template Engine v1 è ancora static-only.
+
 ## 2026-11-09 — Catalogazione Notion trasversale a tutte le app
 
 - 12 ZIP analizzati, **11 template unici**; Design Brief duplicato identico internamente. [Audit con E2 strutturale](../17-RICERCA-TEMPLATE-UX/LOTTO_NOTION_2026_11_09_12_ZIP.md), [protocollo routing](../17-RICERCA-TEMPLATE-UX/ROUTING_MULTI_APP.md), [registro JSON](../17-RICERCA-TEMPLATE-UX/TEMPLATE_ROUTING_REGISTRY.json).
