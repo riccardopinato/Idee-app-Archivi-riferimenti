@@ -32,3 +32,15 @@ Per una promozione futura servono: owner e contratto di estrazione generalizzato
 2. Eseguire le matrici `docs/TEMPLATE_NOTION/QA_PHYSICAL_MATRIX_20261109.md` con identità di browser/device/versione e output osservati.
 3. Rivalutare TPLUX-001 come candidato di **processo** (non SDK) solo dopo almeno un consumer indipendente; riusare il template manifest standard centrale senza clonare parser.
 4. Per premium originali distinguere `CatalogManifest` vs `StoreProduct` vs `EntitlementSnapshot` vs `InstallReceipt`. Nessuna certificazione provider dai test statici.
+
+## Aggiunta evidence dei consumer QA nativi — 09/11/2026
+
+Il catalogo è aggiornato *senza modificare le baseline donor storiche* (immutabilità della fonte):
+
+| Consumer/QA | Nuovo main merge SHA | Esito PR head | Ambito |
+|---|---|---|---|
+| Notes QA [#98](https://github.com/riccardopinato/Notes-Ecosistema/pull/98) | `cf9f9c515a87f438ab0112e7efd4a0ce0471fbd6` | `verify`, `verify-web`, `build-web` PASS | Fixed dialog controller lifetime, tests canceled/invalid title/backup round trip |
+| Anna QA [#293](https://github.com/riccardopinato/Agenda-per-Anna/pull/293) | `260dd753a3f7d1b7cd501ce38cf6e4a78ea773b3` | `check` e `UI5 source and visual-flow contracts` PASS | Dialog preview cancel vs confirm in existing Diary, no new writer |
+| Wonderlog QA [#27](https://github.com/riccardopinato/Wonderlog/pull/27) | `f045588dd5dbd668541fec380f184f3ebcd8bb6f` | `verify`, `apple-build`, `legacy-contract` PASS | Header validation and explicit Premium gate order; new Pages run SUCCESS |
+
+**E5 remains NOT VERIFIED**: non sono consumer indipendenti dello stesso package/generalized code. No Store READY or hardware proof. The E3 historical donor source identities above remain valid at their pinned commits, while new QA adds evidence under separate commits.
