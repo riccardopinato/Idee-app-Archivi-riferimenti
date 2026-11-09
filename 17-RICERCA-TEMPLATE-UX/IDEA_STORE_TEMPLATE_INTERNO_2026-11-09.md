@@ -2,6 +2,12 @@
 
 **Data**: 9 novembre 2026. **Stato decisionale:** **IDEA VALIDA / BACKLOG APPROVATO COME CONCETTO**, non approvazione di sviluppo, pubblicazione, prezzo o variazione del Product Bible. **Prezzo candidato:** **€3,99 per singolo template**, da testare; non una tariffa già attiva.
 
+## Maxi-step 1 — Standard tecnico condiviso integrato (09/11/2026)
+
+- [**Template Engine Standard v1 — App-Factory-Core**](https://github.com/riccardopinato/App-Factory-Core/tree/main/contracts/template_engine_v1) è stato creato e integrato con la [PR Core #89](https://github.com/riccardopinato/App-Factory-Core/pull/89), commit `d4ed1185d36d419228fba6b57a979cde308bd321`.
+- Contratto **CANDIDATE / static-only**: manifest JSON Schema v1, esempi Notes/Anna, validatore e test collegati alla CI Factory. **Non** è un engine Flutter utilizzabile, un Golden certificato, un catalogo prodotti Play/Apple o un sistema di acquisto.
+- Gli step 2–5 restano separati: UX app-native → adapter reale + template gratuito → store UI → billing verificato. Lo standard non autorizza automaticamente SKU, nuove CAP, cambi Product Bible o modifiche ai repository delle app.
+
 ## Proposta
 Uno **store interno a ciascuna app** con catalogo di modelli **originali per l'app**, scheda anteprima, contenuti inclusi, pulsante Acquista, sblocco permanente, installazione **reversibile** e sezione 'I miei template'. Non creare una nuova app-store né costringere l'utente ad abbonarsi. Prevedere alcuni preset gratuiti utili, senza impoverire le funzioni base.
 

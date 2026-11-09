@@ -2,6 +2,10 @@
 
 **Decisione utente 09/11/2026**: catalogo `Template Notion` **separato in ogni repository di app**, non soltanto Notes e Anna. Nuovi export: inventario centrale unico, assegnazione per affinità prodotto, indici locali specifici.
 
+## Template Engine Standard v1 — contratto tecnico (Maxi-step 1)
+
+La classificazione di questo archivio si collega al [contratto v1 condiviso di App-Factory-Core](https://github.com/riccardopinato/App-Factory-Core/tree/main/contracts/template_engine_v1) (Core PR #89, SHA `d4ed1185d36d419228fba6b57a979cde308bd321`). Il contratto definisce identità, localizzazioni, preview, compatibilità, opzioni e installazione reversibile; è stato staticamente validato con CI della PR. **Non** è installato nelle app e non converte o distribuisce template Notion. Le schede `TPLUX-REF` rimangono ricerca; eventuali manifest app-specifici devono essere originali e passare Product Bible, licenze, adattatore e QA propri.
+
 ## Architettura di proprietà
 1. Questo repository conserva `TPLUX-REF-NNNN`: fonte, evidenza, limiti, rischi di licenza e deduplicazione.
 2. **Ogni app** conserva `docs/TEMPLATE_NOTION/README.md` e `CATALOGO.json`. Le app senza candidati hanno `entries: []`, senza filler.
