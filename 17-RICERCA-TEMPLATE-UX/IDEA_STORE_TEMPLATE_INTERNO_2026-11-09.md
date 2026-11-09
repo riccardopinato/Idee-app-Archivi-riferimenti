@@ -11,6 +11,18 @@ Uno **store interno a ciascuna app** con catalogo di modelli **originali per l'a
 | Modalità di installazione | Istanziare `PersonalTemplates` e i writer Note/Task/Projects canonici | Istanziare preset diario/rituali/agenda canonici, con confini privato/`Noi ♡` |
 | Cosa NON vendere | Altri engine duplicati o export commerciali di terzi | Privacy/Vault, attività di base, permessi condivisi o funzioni fuori dal Product Bible |
 
+## Requisito vincolante: template nativi e su misura per ciascuna app
+
+**Decisione esplicita del proprietario (09/11/2026):** ogni template destinato allo store deve essere **progettato specificamente per l'app che lo vende**. Non basta esportare, caricare o imitare un template Notion. Notion è esclusivamente una fonte di ispirazione/ricerca; il prodotto acquistato è una configurazione o un'esperienza **originale e nativa** che funziona in Notes-Ecosistema o Anna's Diary senza dipendere da un account Notion.
+
+- **Notes-Ecosistema**: un template deve attivare flussi concreti per note, task, progetti, collezioni, knowledge o lavagna usando **modelli, editor, writer e persistenza canonici di Notes**. Navigazione, anteprime, filtri, personalizzazione e backup devono essere coerenti con il prodotto, non un clone delle pagine Notion.
+- **Anna's Diary**: un template deve essere calibrato su **agenda leggera, diario, ricordi, routine, obiettivi personali o Noi ♡**, riutilizzando editor, rituali, agenda, preferenze e permessi esistenti. Deve rispettare design **DS6/editoriale**, cinque lingue, private-by-default e confini Vault/Noi. Non aggiungere un sistema PARA/workspace professionale o una seconda source of truth.
+- **Esperienza di acquisto e uso**: preview fedele a come apparirà *dentro l'app*, scelta di opzioni prima dell'applicazione, creazione di contenuto **modificabile** dall'utente nei flussi normali, installazione reversibile, nessuna perdita di dati e compatibilità esplicita per piattaforma/versione. Il template deve apportare valore reale, non un semplice cambio di colori o una pagina statica a €3,99.
+- **Varianti per due app**: se lo stesso concetto è utile a entrambe, sviluppare **due adattamenti originali separati**, con UX/permessi/modello dati propri; catalogazione e titolarità commerciale rimangono per-app. Il riferimento di ricerca centrale resta unico, senza doppia copia del materiale esterno.
+- **Gate di ammissione allo store**: una scheda di ricerca E1/E2 **non** è un articolo vendibile. Occorrono specifica per app, asset originali con diritti, dati sintetici per anteprima, test su editor/store canonici, backup/restore, accessibilità, permessi e acquisto/ripristino. Solo dopo tali prove si può considerare lo stato `STORE_READY`.
+
+**Stato di questa modifica:** requisito di progettazione documentato, **NON** implementazione dello store, della UI, di template premium o dell'acquisto in-app.
+
 ## Vincolo assoluto: originalità/licenze
 Gli ZIP Notion analizzati **non sono stock da rivendere**. Il Book Tracker Mindful Setups dichiara esplicitamente divieto di rivendita/redistribuzione senza autorizzazione. Anche quando una licenza non è riportata, non presumere il diritto commerciale di copiare media, formule, testi, contenuti o strutture puntuali.
 
