@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-09",
+  "source_count": 12,
+  "unique_template_count": 11,
+  "duplicated_source": "TPLUX-REF-0010",
+  "items": [
+    {
+      "id": "TPLUX-REF-0007",
+      "title": "Angel Investment Tracker",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "9 MD, 4 CSV; investment and founders linked records",
+      "observed_fields": "Investment name/status/sector, date, invested amount, valuation, ownership, stage, expected exit, founder contact metadata",
+      "primary_repo": null,
+      "secondary_repos": [],
+      "routing_status": "UNASSIGNED_REVIEW",
+      "restrictions": "Private investor/founder metadata; no appropriate deployed app demonstrated",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0008",
+      "title": "Photography Gear Checklist",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "8 MD, 2 CSV; 7 gear records",
+      "observed_fields": "Gear name, category, brand, model, condition, packed, notes",
+      "primary_repo": "riccardopinato/FrameLab-Google-AI-Studio",
+      "secondary_repos": [
+        "riccardopinato/app-fotografia"
+      ],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Gear checklist/packing; original app-first workflow, no new asset imports",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0009",
+      "title": "Shopping List",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "22 MD, 4 CSV; 13 shopping rows, 7 categories",
+      "observed_fields": "Product, quantity, category, price, done, notes, inclusion flag",
+      "primary_repo": "riccardopinato/Agenda-per-Anna",
+      "secondary_repos": [
+        "riccardopinato/In-Cucina-con-gli-Anime"
+      ],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Relate to canonical shopping and optional cooking ingredients, no parallel store",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0010",
+      "title": "Design Brief",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "6 MD, 4 CSV; **uploaded twice, identical extracted files**",
+      "observed_fields": "Objective, scope, success metrics, target audience, brand system, milestones with status and dates",
+      "primary_repo": "riccardopinato/Design-App",
+      "secondary_repos": [
+        "riccardopinato/Notes-Ecosistema"
+      ],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Design reference only for Design-App; Notes project-brief preset candidate",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0011",
+      "title": "Trip Planner",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "15 MD, 6 CSV, 4 images; itinerary 4, expenses 4, packing 3",
+      "observed_fields": "Trip itinerary/location/transport, expenses/budget, packing/status/quantity/weight",
+      "primary_repo": "riccardopinato/Wonderlog",
+      "secondary_repos": [
+        "riccardopinato/CamperBoss",
+        "riccardopinato/TrailPath"
+      ],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Build on travel domain; TrailPath limited to route/outdoor planning, not bookings finance",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0012",
+      "title": "Meal & Diet Planner",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "44 MD, 6 CSV, 3 images; ingredients 37 and recipes 3",
+      "observed_fields": "Weekly meals, recipes/difficulty/cooking time, ingredients with sample nutrition columns",
+      "primary_repo": "riccardopinato/TasteAI",
+      "secondary_repos": [
+        "riccardopinato/In-Cucina-con-gli-Anime"
+      ],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Nutrition data not independently validated, no medical/diet prescription",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0013",
+      "title": "Photography Portfolio",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "10 MD, 8 CSV, 8 images; three project rows",
+      "observed_fields": "Photo project, client/category/status, equipment, linked photo lists",
+      "primary_repo": "riccardopinato/FrameLab-Google-AI-Studio",
+      "secondary_repos": [
+        "riccardopinato/app-fotografia"
+      ],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Photo portfolio pattern, privacy of clients, original copyrighted images excluded",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0014",
+      "title": "Rental Property Tracker",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "13 MD, 9 CSV, 3 images; properties and tenants 3 each",
+      "observed_fields": "Property, tenant, rent and finance data tables, payment records",
+      "primary_repo": null,
+      "secondary_repos": [],
+      "routing_status": "UNASSIGNED_REVIEW",
+      "restrictions": "Sensitive tenants, addresses and financial details; no owned property-management app verified",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0015",
+      "title": "Grade Tracker",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "7 MD, 2 CSV; five assignments",
+      "observed_fields": "Subject, assignment type, due date, status, score, max points, grade, weighting",
+      "primary_repo": "riccardopinato/Notes-Ecosistema",
+      "secondary_repos": [],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Study planner / coursework grade tracker, no invented grading formulas",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0016",
+      "title": "Social Media Content Calendar",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "30 MD, 6 CSV; 16 content rows, six platforms",
+      "observed_fields": "Platform, content type, status, schedule, URL, notes, followers progress",
+      "primary_repo": "riccardopinato/Notes-Ecosistema",
+      "secondary_repos": [
+        "riccardopinato/FrameLab-Google-AI-Studio",
+        "riccardopinato/World-Days",
+        "riccardopinato/Design-App"
+      ],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Editorial planning/reference only, avoid fabricated analytics or automatic social posting",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    },
+    {
+      "id": "TPLUX-REF-0017",
+      "title": "Ideas OS",
+      "source_type": "USER_PROVIDED_NOTION_EXPORT",
+      "evidence": "E2_EXPORT_FILE_STRUCTURE_ONLY",
+      "export_inventory": "16 MD, 4 CSV; eight ideas, six categories",
+      "observed_fields": "Idea, category, creation date, description, priority, status",
+      "primary_repo": "riccardopinato/Notes-Ecosistema",
+      "secondary_repos": [
+        "riccardopinato/Design-App"
+      ],
+      "routing_status": "RESEARCH_REFERENCE",
+      "restrictions": "Inbox/brainstorming template via canonical notes and collections; don't duplicate Factory registry",
+      "implementation_status": "NOT_IMPLEMENTED_BY_THIS_SOURCE",
+      "rights": "ORIGINAL_APP_NATIVE_IMPLEMENTATION_ONLY",
+      "user_data_published": false
+    }
+  ]
+}

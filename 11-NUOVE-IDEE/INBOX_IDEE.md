@@ -1,5 +1,10 @@
 # Inbox nuove idee — da valutare e conservare
 
+## Template Notion — catalogazione per tutte le app (09/11/2026)
+
+Nuovo [protocollo multi-app](../17-RICERCA-TEMPLATE-UX/ROUTING_MULTI_APP.md) per la sezione `docs/TEMPLATE_NOTION` in ogni app, alimentata da un [registro unico di 11 fonti](../17-RICERCA-TEMPLATE-UX/TEMPLATE_ROUTING_REGISTRY.json) ricavate da 12 ZIP (Design Brief duplicato). Nessuna CAP/Golden, integrazione Flutter, store o acquisto automatico; l'[idea template premium originale](../17-RICERCA-TEMPLATE-UX/IDEA_STORE_TEMPLATE_INTERNO_2026-11-09.md) resta backlog.
+
+
 ## TPL-STORE-2026-01 — Store interno di template originali (IDEA VALIDA, 09/11/2026)
 
 **Decisione dell'utente:** conservare come **idea valida** lo store di template acquistabili separatamente all'interno di Notes e Anna's Diary; **€3,99 per template** è un'ipotesi di prezzo, non un prezzo approvato/attivato. La [scheda tecnica e commerciale](../17-RICERCA-TEMPLATE-UX/IDEA_STORE_TEMPLATE_INTERNO_2026-11-09.md) definisce catalogo, anteprime, acquisti una tantum, diritti, ripristino, compatibilità e gate. **Non autorizza** oggi sviluppo, nuove API/cloud, billing o release.

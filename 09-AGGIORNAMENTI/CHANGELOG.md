@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Catalogazione Notion trasversale a tutte le app
+
+- 12 ZIP analizzati, **11 template unici**; Design Brief duplicato identico internamente. [Audit con E2 strutturale](../17-RICERCA-TEMPLATE-UX/LOTTO_NOTION_2026_11_09_12_ZIP.md), [protocollo routing](../17-RICERCA-TEMPLATE-UX/ROUTING_MULTI_APP.md), [registro JSON](../17-RICERCA-TEMPLATE-UX/TEMPLATE_ROUTING_REGISTRY.json).
+- App primaria/secondarie e fonti non assegnabili separati; nessun dato dei ZIP o asset commerciale pubblicato. Preparazione di cataloghi locali nelle app, senza certificare app runtime o store.
+
+
 ## 2026-11-09 — Cinque nuovi export Notion e idea store interno
 
 - Registrati `TPLUX-REF-0002…0006` con audit strutturale dei file forniti; aggiornato `TPLUX-REF-0001` Second Brain da E1 a E2 **solo sulla struttura Markdown/CSV**. Classificati Notes, Anna e fuori-scope CashMate; Weekly Planner marcato export landing incompleto, non planner verificato.
