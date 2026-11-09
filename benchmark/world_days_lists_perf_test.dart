@@ -90,10 +90,39 @@ double _roundMs(int microseconds) =>
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+  testWidgets('UI audit: Italy country picker overflows at 390 px',
+      (tester) async {
+    await tester.binding.setSurfaceSize(const Size(390, 844));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final controller = _createFixture(10);
+    addTearDown(controller.dispose);
+    await tester.pumpWidget(_appFor('around_the_world', controller));
+    final issues = <Object>[];
+    while (true) {
+      final issue = tester.takeException();
+      if (issue == null) break;
+      issues.add(issue);
+    }
+    final overflow = issues.any((issue) =>
+        issue.toString().contains('RenderFlex overflowed'));
+    print('WORLD_DAYS_UI_AUDIT|' + jsonEncode({
+      'page': 'around_the_world',
+      'viewport_logical_px': '390x844',
+      'locale': 'it',
+      'renderflex_overflow_detected': overflow,
+      'exception_count': issues.length,
+      'widget_location': 'lib/features/discover/around_the_world_page.dart:57',
+      'source_sha': const String.fromEnvironment('WD_SOURCE_SHA',
+          defaultValue: 'unknown'),
+    }));
+    expect(overflow, isTrue,
+        reason: 'The existing 390px overflow must be recorded, not ignored.');
+  });
+
   for (final page in ['saved', 'around_the_world']) {
     for (final count in [10, 50, 150, 300]) {
       testWidgets('widget-pump benchmark $page N=$count', (tester) async {
-        await tester.binding.setSurfaceSize(const Size(390, 844));
+        await tester.binding.setSurfaceSize(const Size(480, 844));
         addTearDown(() => tester.binding.setSurfaceSize(null));
         final controller = _createFixture(count);
         addTearDown(controller.dispose);
@@ -122,7 +151,7 @@ void main() {
         print('WORLD_DAYS_BENCH|' + jsonEncode({
           'page': page,
           'scenario_record_count': count,
-          'viewport_logical_px': '390x844',
+          'viewport_logical_px': '480x844',
           'metric': 'flutter_widget_test_pump_wall_clock_not_device_frame',
           'warmups': 2,
           'samples': samples.length,
