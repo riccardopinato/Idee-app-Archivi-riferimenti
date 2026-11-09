@@ -1,5 +1,10 @@
 # Inbox nuove idee — da valutare e conservare
 
+## Ricerca template UX (09/11/2026) — TPLUX-001…008
+
+Otto candidati di miglioramento, NON nuove app e NON nuove CAP, deduplicabili nella [scheda di riuso](../17-RICERCA-TEMPLATE-UX/CANDIDATI_RIUSO.md). Area di ricerca: template guidati, vision board sui canvas esistenti, home modulare, goal/review, mini-planner Noi, Second Brain read-only, Study Web e giornata realistica. [Matrice sorgente per Notes e Anna](../17-RICERCA-TEMPLATE-UX/CROSSWALK_NOTES_ANNA_2026-11-09.md). **PROPOSTA**: nessuna modifica a Product Bible, runtime, roadmap delle app o CAP registry; dati privati delle ricevute esclusi.
+
+
 ## Algoritmi ML leggeri, zero API e on-device — 04/11/2026
 
 [Catalogo decisionale di 23 tecniche, 10 candidature nuove e mappa verso CAP/Golden](./CATALOGO_ALGORITMI_ON_DEVICE_2026-11-04.md). Fonte: Machine Learning.txt dell'utente. ID stabili ML26-001…023. Nessun modello o codice integrato. Le 10 idee sono ora ammesse come CAP proposte, senza mutare le app.

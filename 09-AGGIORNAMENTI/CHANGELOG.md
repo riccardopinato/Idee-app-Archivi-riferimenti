@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-09 — Template UX — crosswalk Notes/Anna e protocollo fonti
+
+- Creata [ricerca pubblicabile sui pattern di template](../17-RICERCA-TEMPLATE-UX/README.md): matrice del delta su file sorgente puntati Notes/Anna, protocollo privacy/varianti, roadmap di cinque maxi-step e otto candidati locali `TPLUX` in inbox. Nessun contenuto commerciale o registro personale di acquisti pubblicato.
+- Baseline Factory Core `2b3ae9e` (Master 27 / Golden Index 29), Notes `2780847a`, Anna `d82e2d1`. Stato delle app distinto da ipotesi ricavate da titoli e pagine di marketing. Nessuna nuova CAP, donor/Golden, modifica app, release o test applicativo dichiarato.
+
+
 ## 2026-11-09 — Scansione Flutter completa e benchmark World Days CI
 
 - Eseguiti **12 checkout completi Flutter pubblici / 1.390 Dart** e **1 checkout privato FrameLab / 77 Dart**; per ciascuno fissato SHA e registrati i conteggi. Zero match dei soli pattern API legacy cercati; 573 segnali euristici REVIEW non trasformati in bug senza triage.
