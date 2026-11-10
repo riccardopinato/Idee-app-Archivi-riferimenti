@@ -7,6 +7,8 @@ Consultare [DA_VALUTARE](../DA_VALUTARE.md) per le opportunità attive, e [GIA_I
 
 Questa cartella raccoglie **solo le idee ancora in valutazione**, separate dal catalogo delle app già registrate in [01-PORTAFOGLIO](../01-PORTAFOGLIO/CATALOGO_APP.md).
 
+- [Adaptive Landscape Android — AL-ANDROID-2026-001](ADAPTIVE_LANDSCAPE_ANDROID_2026-11-10.md): wallpaper originale Flutter+Kotlin ispirato al concetto Deskland (GPL); E1 reference, calibrazione icone manuale, 5 maxi-step e prezzi ipotetici €1,99–€2,99. Sorgente locale, Android/CI/Play non verificati.
+
 ## Dove scrivere
 
 - **[INBOX_IDEE.md](INBOX_IDEE.md)** — elenco unico delle nuove proposte, anche incomplete; conservarle senza eliminarle.
