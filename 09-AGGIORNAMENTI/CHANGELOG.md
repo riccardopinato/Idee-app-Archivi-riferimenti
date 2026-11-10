@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-10 — Adaptive Landscape Beach v0.3.3, correzione feedback Web
+
+- User Web v0.3.2: avvio non da mare vuoto, resa mare non realistica (**NON ACCETTATA**).
+- Fix [app PR #10 merged](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/10): default Beach senza guides, comando Solo mare anche nei vecchi profili, status GPU/fallback, preview grande, shader rifinito, cache fallback doppia.
+- CI [#42854917650](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42854917650) **39 test + analyze/Android/Web PASS**; main `e81907f0`, [Pages #42855928354](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42855928354) **SUCCESS**.
+- Qualità/realismo 4K Web da rivalutare con l'utente; Android release/battery e Play non certificati; Deskland resta E1 reference, nessuna CAP/Golden promossa.
+
+
 ## 2026-11-10 — Adaptive Landscape Beach v0.3.2 GPU e dock
 
 - User feedback: rimuovere pixelatura del mare (qualità 4K-capable Web), sabbia solo intorno a icone/cartelle/widget/dock, solo oceano quando tutto vuoto.
