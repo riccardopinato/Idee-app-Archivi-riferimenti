@@ -9,7 +9,7 @@
 | Notes-Ecosistema | [Study Sprint Studio](https://github.com/riccardopinato/Notes-Ecosistema/blob/main/docs/TEMPLATE_NOTION/UX_STEP7/PROTOTIPO_STUDY_SPRINT_STUDIO.html) | [UX draft e gate](https://github.com/riccardopinato/Notes-Ecosistema/blob/main/docs/TEMPLATE_NOTION/UX_STEP7/README_STUDY_SPRINT_STUDIO.md) | [PR #100](https://github.com/riccardopinato/Notes-Ecosistema/pull/100) MERGED, `main@09fbd28728178078fa281f5a0010b50ca1eb5375` | Documento + HTML statico navigabile: fonte manuale, argomenti, preview, conferma simulata. Nessun writer, AI, store, pagamento, runtime CI specifico di questa UX. |
 | Anna's Diary | [Dodici settimane che contano](https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/TEMPLATE_NOTION/UX_STEP7/PROTOTIPO_DODICI_SETTIMANE.html) | [UX draft e gate](https://github.com/riccardopinato/Agenda-per-Anna/blob/main/docs/TEMPLATE_NOTION/UX_STEP7/README_DODICI_SETTIMANE.md) | [PR #298](https://github.com/riccardopinato/Agenda-per-Anna/pull/298) MERGED, `main@8bfb4bcd58e820c995bd913e2c8f08c223c2b45d`; HEAD `f32ef532bf7b4f9882c2122aa895b2de09f1dcfe` | `check` e `UI5 source and visual-flow contracts` SUCCESS su HEAD. HTML simulato non integrato nel diario, no data/device QA. |
 
-**Decisione di prodotto:** entrambi i manifest Core restano `research_candidate`. I mockup sono `UX_DRAFT_PENDING_APPROVAL`: il merge della documentazione non implica approvazione UX/commerciale né autorizza checkout, SKU, RevenueCat product o Cloud. L'applicazione Flutter richiede una decisione prodotto separata e un adapter ai writer canonici per ogni app.
+**Decisione di prodotto (agg. 10/11/2026):** l'utente ha approvato **provvisoriamente entrambi i prototipi** (Notes Study Sprint Studio e Anna Dodici settimane che contano). Stato UX `UX_APPROVED_PROVISIONAL`, con modifiche future possibili. Entrambi i manifest Core restano `research_candidate`: il merge della documentazione non implica approvazione UX/commerciale né autorizza checkout, SKU, RevenueCat product o Cloud. L'applicazione Flutter richiede una decisione prodotto separata e un adapter ai writer canonici per ogni app.
 
 ## Contesto Free verificato
 
@@ -27,7 +27,7 @@ Gli HTML sono interattivi ma **GitHub mostra normalmente il sorgente**: il teste
 
 - Manifest statici JSON di quattro pack originali: Core PR #90, schema/static CI **PASS**; nessun adapter.
 - UX clickable draft HTML: **SOURCE MERGED** nei due repo; su Anna anche PR CI **PASS**. L'esecuzione manuale nel browser del tester rimane **NOT VERIFIED**.
-- Product/UX approval: **PENDING**; Flutter runtime, esercizio utenti, acquisti, restore, physical QA: **NOT IMPLEMENTED / NOT VERIFIED**.
+- Approvazione dei due prototipi UX: **PROVISIONAL APPROVED (10/11/2026)**; Product Bible/Store admission **PENDING**, Flutter runtime, esercizio utenti, acquisti, restore e physical QA **NOT IMPLEMENTED / NOT VERIFIED**.
 - Nessuna promozione Donor/Golden, SKU o CAP. Nessun cambiamento a Master, Registry, Supabase o repository Wonderlog.
 
-La roadmap [Step6](STEP6_MANIFEST_ORIGINALI_2026-11-10.md) rimane valida: dopo approval UX, primo adapter Notes e poi Anna, sempre con le verifiche e i vincoli proprietari di ciascuna app.
+La roadmap [Step6](STEP6_MANIFEST_ORIGINALI_2026-11-10.md) rimane valida: dopo scope e Product Bible admission, primo adapter Notes e poi Anna, sempre con le verifiche e i vincoli proprietari di ciascuna app.
