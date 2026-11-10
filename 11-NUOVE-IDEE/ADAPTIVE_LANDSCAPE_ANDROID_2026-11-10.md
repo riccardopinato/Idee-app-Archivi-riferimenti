@@ -2,9 +2,18 @@
 
 **Data:** 10/11/2026  
 **Origine:** richiesta esplicita nuova app Android standalone, Flutter preferito, vendita una tantum ipotizzata €1,99/€2,99.  
-**Stato prodotto (10/11/2026, aggiornamento):** `ACTIVE_REPOSITORY / v0.3.1 SOURCE_MERGED`; Flutter/Dart test e build Android/Web, incluso APK debug e release-mode per ABI, **CI VERIFIED su PR #3**. Web v0.2 confermato dall'utente come base valida. Beach v0.3 GitHub Pages deploy main SUCCESS [run #42822909836](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42822909836); v0.3.1 main pipeline, APK + Web Pages [run #42825324425 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42825324425); Web visuale v0.3.x ancora non validato dall'utente. Test fisico Android, compatibilità OEM, batteria, firma stabile e Google Play **NON ATTESTATI**. Repo: https://github.com/riccardopinato/Adaptive-Landscape-Android; main source commit `72de4ff0bdd6204a9e26b0f19aa9585343e891e3`.  
+**Stato prodotto (10/11/2026, aggiornamento):** `ACTIVE_REPOSITORY / v0.3.2 SOURCE_MERGED`; Flutter/Dart test e build Android/Web, incluso APK debug e release-mode per ABI, **CI VERIFIED su PR #3**. Web v0.2 confermato dall'utente come base valida. Beach v0.3 GitHub Pages deploy main SUCCESS [run #42822909836](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42822909836); v0.3.1 main pipeline, APK + Web Pages [run #42825324425 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42825324425); Web visuale v0.3.x ancora non validato dall'utente. Test fisico Android, compatibilità OEM, batteria, firma stabile e Google Play **NON ATTESTATI**. Repo: https://github.com/riccardopinato/Adaptive-Landscape-Android; main source commit `6e434c0a5c60d98421e54aed68a49e9c673502eb`.  
 **Posizionamento:** Android live wallpaper offline, senza account/AI/ads; paesaggio che lascia spazio alle icone della Home; espandibile a scenari successivi.  
 **Package Android previsto da Flutter scaffold:** `it.riccardopinato.adaptive_landscape` (Activity e Service Kotlin in namespace distinto); nome commerciale provvisorio, da distinguere nettamente da Deskland.
+
+## Beach v0.3.2 — GPU Web e sabbia esclusivamente da occupazione
+
+- **Requisito confermato dall'utente:** mare quasi reale ad altissima definizione, senza pixel del reticolo; se la Home è vuota (incluse le app fisse sotto) il canvas Beach mostra solo oceano; icone/cartelle/widget e dock 3–4 app generano isole di sabbia che si uniscono.
+- [App PR #9](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/9), merge source [`main@6e434c0a`](https://github.com/riccardopinato/Adaptive-Landscape-Android/commit/6e434c0a5c60d98421e54aed68a49e9c673502eb). Exact-head CI [#42847066074 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42847066074): Flutter analyze/test, JDK17, APK debug/ottimizzati e build Web. Deploy main [#42848475579](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42848475579) **SUCCESS**.
+- GPU shader `shaders/beach_ocean.frag`: calcola acqua/schiuma per pixel di framebuffer (4K-capable se display/GPU/renderer compatibili), usando una texture 512×1024 **solo per geometria occupata**, non una fotografia acqua 512px. Fallback a mesh se lo shader non è disponibile: non certificare qualità 4K in quel caso.
+- Dock **manuale**, 0/3/4 icone in `zones` schema-2; il wallpaper Android non legge posizioni launcher. Kotlin adeguato a oceano vuoto/sabbia con zone, ma **NON 4K e NON fisicamente verificato**.
+- Quattro finding Code Review corretti: cache celle >40, armoniche cicliche, repaint shader statico e limite 80 zone. Unit test aggiunti.
+- **Web visuale v0.3.2 non ancora approvata dall'utente**, test OEM/prestazioni/Play non attestati. Nessuna copia GPL, nessuna certificazione Donor E3, Golden o nuova CAP.
 
 ## Correzione grafica Beach v0.3.0–v0.3.1 — SOURCE + CI
 

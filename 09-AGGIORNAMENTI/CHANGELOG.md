@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-10 — Adaptive Landscape Beach v0.3.2 GPU e dock
+
+- User feedback: rimuovere pixelatura del mare (qualità 4K-capable Web), sabbia solo intorno a icone/cartelle/widget/dock, solo oceano quando tutto vuoto.
+- [App PR #9 merged](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/9), main `6e434c0a`, [CI PR #42847066074 PASS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42847066074); [main #42848475579](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42848475579) Pages SUCCESS.
+- Shader GPU per pixel Web + texture statica geometria 512×1024; dock manuale 0/3/4; fallback mesh su browser incompatibili, Android non ancora 4K/testato.
+- Qualità estetica/4K reale sul browser dell'utente non attestata, QA fisica e Play rimandati, nessuna promozione E1→E3/Golden.
+
+
 ## 2026-11-10 — Adaptive Landscape Beach: top-down v0.3/0.3.1
 
 - Correzione visiva richiesta dall'utente: Beach visto dall'alto, soltanto sabbia, fascia bagnata, acqua turchese/deep sea, onde/schiuma dinamiche, NO cielo/nuvole/sole; Meadow separato.
