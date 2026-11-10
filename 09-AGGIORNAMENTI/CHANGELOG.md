@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-10 — Adaptive Landscape Beach v0.4 Ultra: target realismo 4K
+
+- Input utente: concentrare le modifiche sul realismo 4K dell'immagine del mare, non sul solo numero di pixel.
+- [App PR #11](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/11) merged `main@a05bec6a`: shader GPU più ricco, palette cromatica originale campionata in atlas RGB565 24×42, preset Bilanciata/Alta/Ultra, continuità scene mare vuoto e costa condizionata da icone.
+- [CI PR #42881502356 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42881502356): 42 test, Flutter analyze, APK debug/release per ABI, Web. Main Pages [#42882654064](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42882654064) **SUCCESS**.
+- La texture di riferimento 2160×3840 è ricampionata e NON è fotografia ottica 4K nativa; la Web shading a risoluzione framebuffer non implica pixel fisici 4K garantiti. Realismo utente, FPS/browser e Kotlin Android restano NON CERTIFICATI; nessuna copia GPL o Golden E3.
+
+
 ## 2026-11-10 — Adaptive Landscape Beach v0.3.3, correzione feedback Web
 
 - User Web v0.3.2: avvio non da mare vuoto, resa mare non realistica (**NON ACCETTATA**).
