@@ -1,5 +1,10 @@
 # Inbox nuove idee — da valutare e conservare
 
+## AL-ANDROID-2026-001 — Adaptive Landscape, wallpaper Android adattivo (10/11/2026)
+
+**NUOVA APP RICHIESTA / IN_ROADMAP**, con codice MVP preparato localmente in chat ma **non ancora nel repo app, non compilato, non testato su device**. Fonte [Deskland GPL-3.0](https://github.com/BLEZZ0102/Deskland) bloccata al commit `9818b577402ff476e1b59da07970c56472713126`: solo **reference E1**, nessun Donor E3 certificato, nessuna copia codice/asset. Flutter UI + WallpaperService Kotlin; griglia di calibrazione manuale perché Android non fornisce coordinate universali delle icone. Vendita standalone ipotizzata **€1,99–€2,99**, niente abbonamenti o ads. [Scheda tecnica, licenze, Golden e cinque maxi-step](ADAPTIVE_LANDSCAPE_ANDROID_2026-11-10.md).
+
+
 ## Template Notion — catalogazione per tutte le app (09/11/2026)
 
 Nuovo [protocollo multi-app](../17-RICERCA-TEMPLATE-UX/ROUTING_MULTI_APP.md) per la sezione `docs/TEMPLATE_NOTION` in ogni app, alimentata da un [registro unico di 11 fonti](../17-RICERCA-TEMPLATE-UX/TEMPLATE_ROUTING_REGISTRY.json) ricavate da 12 ZIP (Design Brief duplicato). Nessuna CAP/Golden, integrazione Flutter, store o acquisto automatico; l'[idea template premium originale](../17-RICERCA-TEMPLATE-UX/IDEA_STORE_TEMPLATE_INTERNO_2026-11-09.md) resta backlog.

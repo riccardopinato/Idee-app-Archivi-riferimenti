@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-10 — Nuova app Adaptive Landscape / Deskland Android, intake E1
+
+- Creata [scheda prodotto](../11-NUOVE-IDEE/ADAPTIVE_LANDSCAPE_ANDROID_2026-11-10.md), con source SHA upstream `9818b577402ff476e1b59da07970c56472713126`, GPL-3.0, distinzione reference E1 / Donor E3 e piano Flutter + wallpaper nativo.
+- Sorgenti MVP preparati in chat come file `.txt`, senza backend/AI e senza codice/asset GPL importati; build/test/Android reale e Play **non verificati**.
+- Non modificati Golden Core, capability registry, repository di app, billing o pubblicazioni.
+
+
 ## 2026-11-09 — Chiusura sorgente delle quattro priorità template
 
 - Notes [PR #98](https://github.com/riccardopinato/Notes-Ecosistema/pull/98) merged `cf9f9c515a87f438ab0112e7efd4a0ce0471fbd6`, test/CI PR PASS e fix controller del dialogo Book Tracker (bug riprodotto dal nuovo test). QA fisico/account non attestato.
