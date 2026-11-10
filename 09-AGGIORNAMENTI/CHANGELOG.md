@@ -4,7 +4,7 @@
 
 - Correzione visiva richiesta dall'utente: Beach visto dall'alto, soltanto sabbia, fascia bagnata, acqua turchese/deep sea, onde/schiuma dinamiche, NO cielo/nuvole/sole; Meadow separato.
 - [PR app #7](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/7) e [CI #42821824304 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42821824304), Pages [#42822909836 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42822909836), commit `c220b64e`.
-- [PR app #8](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/8) e [CI #42824258762 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42824258762), speed continuity merged `72de4ff0`; main deploy v0.3.1 in verifica.
+- [PR app #8](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/8) e [CI #42824258762 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42824258762), speed continuity merged `72de4ff0`; main deploy v0.3.1 [run #42825324425 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42825324425).
 - Nessuna prova fisica/OEM, nessuna validazione estetica utente v0.3.x, nessuna firma Play; Deskland resta reference E1 GPL, non donor E3/Golden.
 
 
