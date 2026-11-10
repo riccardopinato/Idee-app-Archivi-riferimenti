@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-10 — Adaptive Landscape Beach: top-down v0.3/0.3.1
+
+- Correzione visiva richiesta dall'utente: Beach visto dall'alto, soltanto sabbia, fascia bagnata, acqua turchese/deep sea, onde/schiuma dinamiche, NO cielo/nuvole/sole; Meadow separato.
+- [PR app #7](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/7) e [CI #42821824304 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42821824304), Pages [#42822909836 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42822909836), commit `c220b64e`.
+- [PR app #8](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/8) e [CI #42824258762 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42824258762), speed continuity merged `72de4ff0`; main deploy v0.3.1 in verifica.
+- Nessuna prova fisica/OEM, nessuna validazione estetica utente v0.3.x, nessuna firma Play; Deskland resta reference E1 GPL, non donor E3/Golden.
+
+
 ## 2026-11-10 — Adaptive Landscape Android v0.2: sync stato repository
 
 - Allineati dossier e inbox all'implementazione reale [main@9538849c](https://github.com/riccardopinato/Adaptive-Landscape-Android/commit/9538849c3c478c677bba246359c646e9fef04a11), dopo [PR #3](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/3) e [CI #42812771584 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42812771584).
