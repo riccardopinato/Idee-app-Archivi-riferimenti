@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-10 — Android Adaptive Landscape v0.4: user real-device FAIL, PR13 test pre-merge
+
+- User phone test v0.4 **FAIL**: sea pixelated/sbiadito, foam border harsh, motion weak, only manually placed dock creates sand. Root Android Canvas bitmap capped at 360px and generic WallpaperService no launcher icon coordinates.
+- Experimental [PR13](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/13) with first-party EGL14/GLES20 full-framebuffer shader plus local screenshot-assisted manual calibration; [CI SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42903313882), head `ef6bcfd5`, **NOT MERGED pending physical acceptance**. Does not deliver automatic detection/true source 4K.
+- P0 automatic icon detection [issue #14](https://github.com/riccardopinato/Adaptive-Landscape-Android/issues/14) remains open; any accessibility approach requires separate user permission, policy disclosure, OEM tests. No release certification or Golden promotion.
+
+
 ## 2026-11-10 — Adaptive Landscape Beach v0.4 Ultra: target realismo 4K
 
 - Input utente: concentrare le modifiche sul realismo 4K dell'immagine del mare, non sul solo numero di pixel.
