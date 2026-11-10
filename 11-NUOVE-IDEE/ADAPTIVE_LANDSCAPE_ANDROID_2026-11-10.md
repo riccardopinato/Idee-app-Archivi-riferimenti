@@ -2,9 +2,18 @@
 
 **Data:** 10/11/2026  
 **Origine:** richiesta esplicita nuova app Android standalone, Flutter preferito, vendita una tantum ipotizzata €1,99/€2,99.  
-**Stato prodotto:** `IN_ROADMAP` come obiettivo; **sorgente MVP locale preparato fuori dal repository delle idee**, **NOT VERIFIED** su Flutter/Android/CI/dispositivo/Store. Nessun nuovo repo app creato, APK non prodotto.  
+**Stato prodotto (10/11/2026, aggiornamento):** `ACTIVE_REPOSITORY / v0.2.0 SOURCE_MERGED`; Flutter/Dart test e build Android/Web, incluso APK debug e release-mode per ABI, **CI VERIFIED su PR #3**. Web v0.1 confermato dall'utente; Web v0.2 deploy main in verifica. Test fisico Android, compatibilità OEM, batteria, firma stabile e Google Play **NON ATTESTATI**. Repo: https://github.com/riccardopinato/Adaptive-Landscape-Android; main source commit `9538849c3c478c677bba246359c646e9fef04a11`.  
 **Posizionamento:** Android live wallpaper offline, senza account/AI/ads; paesaggio che lascia spazio alle icone della Home; espandibile a scenari successivi.  
-**Package MVP proposto:** `it.riccardopinato.adaptivelandscape`; nome commerciale provvisorio, da distinguere nettamente da Deskland.
+**Package Android previsto da Flutter scaffold:** `it.riccardopinato.adaptive_landscape` (Activity e Service Kotlin in namespace distinto); nome commerciale provvisorio, da distinguere nettamente da Deskland.
+
+## Evidenza aggiornata v0.2.0 — release gates separati
+
+- Applicazione: [Adaptive-Landscape-Android](https://github.com/riccardopinato/Adaptive-Landscape-Android), PR [#3](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/3) squash merge su `main@9538849c3c478c677bba246359c646e9fef04a11`.
+- PR head `4f5d4e4df7e59cec6ed87acc2e56bb4c7fbde222`: GitHub Actions [#42812771584](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42812771584) **SUCCESS** (contratto privacy/locales, Flutter analyze, 19 tests, Kotlin build APK debug, APK ottimizzati release-mode per ABI, Web build).
+- Cinque maxi-step: architettura schema V2; griglia 3–8 × 3–12 e widget zones; Meadow/Beach palette e night/animazioni; 6 lingue/profili JSON/offline; CI QA build, privacy, matrice QA Play — **implementati a livello source/CI**. La validazione fisica e Play non sono state svolte.
+- APK ARM64 release-mode interno 17.762.708 byte, APK ARM32 15.262.138, APK x86_64 19.140.583; **NOT Play signed**. Conservare artefatto + hash per device QA successivo.
+- Issue da collaudare: [#4 device/OEM](https://github.com/riccardopinato/Adaptive-Landscape-Android/issues/4), [#5 Store/signing](https://github.com/riccardopinato/Adaptive-Landscape-Android/issues/5), [#6 visual/energy/parity](https://github.com/riccardopinato/Adaptive-Landscape-Android/issues/6).
+- Nessuna promozione **Deskland E1 → E3**, nessuna nuova capability/Golden automaticamente certificata: la certificazione richiede evidenza donor e consumer disciplinata dal Core corrente.
 
 ## Fonte OSS fissata — evidence E1
 

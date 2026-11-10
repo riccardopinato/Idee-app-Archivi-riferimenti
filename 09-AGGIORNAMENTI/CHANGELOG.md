@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-10 — Adaptive Landscape Android v0.2: sync stato repository
+
+- Allineati dossier e inbox all'implementazione reale [main@9538849c](https://github.com/riccardopinato/Adaptive-Landscape-Android/commit/9538849c3c478c677bba246359c646e9fef04a11), dopo [PR #3](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/3) e [CI #42812771584 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42812771584).
+- v0.2 codificata: griglie flessibili/widget zones, profili JSON locali, scene native+Flutter, 6 ARB, CI debug e APK interni ottimizzati. Device/Play/qualità premium NON attestati; issue app #4/#5/#6 aperte.
+- Deskland resta riferimento E1, nessuna nuova CAP o Golden certificata. Il rilascio Web v0.2 su main resta soggetto a SUCCESS del deploy separato.
+
+
 ## 2026-11-10 — Nuova app Adaptive Landscape / Deskland Android, intake E1
 
 - Creata [scheda prodotto](../11-NUOVE-IDEE/ADAPTIVE_LANDSCAPE_ANDROID_2026-11-10.md), con source SHA upstream `9818b577402ff476e1b59da07970c56472713126`, GPL-3.0, distinzione reference E1 / Donor E3 e piano Flutter + wallpaper nativo.
