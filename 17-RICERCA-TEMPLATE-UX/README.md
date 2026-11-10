@@ -58,6 +58,10 @@ I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobil
 
 [Registro delle esecuzioni e dei gate residui](EXECUTION_4_PRIORITIES_2026-11-09.md) · [Blueprint di quattro template premium originali](BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md). I pack sono PROPOSTE non autorizzate per billing o pubblicazione.
 
+## Maxi-step 6 — Quattro manifest originali (research only) + qualità catalogo gratuito
+
+[Registro Step6, evidence e prossimi cinque step](STEP6_MANIFEST_ORIGINALI_2026-11-10.md). Core [PR #90](https://github.com/riccardopinato/App-Factory-Core/pull/90) **MERGED**: quattro manifest statici (due Notes, due Anna), JSON Schema+validator **PASS**, solo `research_candidate`, nessun prodotto vendibile, adapter runtime o billing. Notes [PR #99](https://github.com/riccardopinato/Notes-Ecosistema/pull/99) corregge ricerca e paragrafi nei modelli gratuiti; CI/merge/deploy sono un gate separato. Wonderlog rimane sul pilota Travel gratuito, Google/cloud sospesi.
+
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
 - [Protocollo delle fonti, varianti e privacy](PROTOCOLLO_FONTI_E_PRIVACY.md) — evidence ladder, regole di export e diritti.

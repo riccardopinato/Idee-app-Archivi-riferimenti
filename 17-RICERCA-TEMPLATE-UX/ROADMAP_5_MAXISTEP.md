@@ -23,3 +23,10 @@ Gli Step 2–4 dei **tre piloti nativi** sono già source-integrated; l'inventar
 
 ## Uscita di questa PR
 Solo **ricerca, protocollo, scheda di crosswalk e inbox proposte**. Niente sorgente app, dati di acquisto, token, CAP registry, cloud, workflow o Golden modifica. Nessun test applicativo dichiarato.
+
+
+## Step 6 — Nuova tranche, 10/11/2026
+
+Quattro concept originali Notes/Anna sono stati codificati come manifest **statici** con `catalog_status=research_candidate` in Core [PR #90](https://github.com/riccardopinato/App-Factory-Core/pull/90), merge `2953e9b50f5f43fbd5a1702cb41785a4235592a5`. [Evidenza e prossima roadmap](STEP6_MANIFEST_ORIGINALI_2026-11-10.md). Questo passaggio NON sblocca la UI Premium, entitlement, acquisti o nuove capability Golden; la prima integrazione runtime attende UX/Product Bible esplicita.
+
+La manutenzione gratuita del catalogo Notes è [PR #99](https://github.com/riccardopinato/Notes-Ecosistema/pull/99); mantenere separati i relativi gate CI/merge, e non alterare la galleria Anna o il Trip Planner Wonderlog. Login/cloud Wonderlog sospesi.
