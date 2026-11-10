@@ -2,7 +2,7 @@
 
 **Data:** 10/11/2026  
 **Origine:** richiesta esplicita nuova app Android standalone, Flutter preferito, vendita una tantum ipotizzata €1,99/€2,99.  
-**Stato prodotto (10/11/2026, aggiornamento):** `ACTIVE_REPOSITORY / v0.2.0 SOURCE_MERGED`; Flutter/Dart test e build Android/Web, incluso APK debug e release-mode per ABI, **CI VERIFIED su PR #3**. Web v0.1 confermato dall'utente; Web v0.2 deploy main in verifica. Test fisico Android, compatibilità OEM, batteria, firma stabile e Google Play **NON ATTESTATI**. Repo: https://github.com/riccardopinato/Adaptive-Landscape-Android; main source commit `9538849c3c478c677bba246359c646e9fef04a11`.  
+**Stato prodotto (10/11/2026, aggiornamento):** `ACTIVE_REPOSITORY / v0.2.0 SOURCE_MERGED`; Flutter/Dart test e build Android/Web, incluso APK debug e release-mode per ABI, **CI VERIFIED su PR #3**. Web v0.1 confermato dall'utente; Web v0.2 GitHub Pages deploy main SUCCESS [run #42813678089](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42813678089), HTTP/browser utente v0.2 ancora non confermato. Test fisico Android, compatibilità OEM, batteria, firma stabile e Google Play **NON ATTESTATI**. Repo: https://github.com/riccardopinato/Adaptive-Landscape-Android; main source commit `9538849c3c478c677bba246359c646e9fef04a11`.  
 **Posizionamento:** Android live wallpaper offline, senza account/AI/ads; paesaggio che lascia spazio alle icone della Home; espandibile a scenari successivi.  
 **Package Android previsto da Flutter scaffold:** `it.riccardopinato.adaptive_landscape` (Activity e Service Kotlin in namespace distinto); nome commerciale provvisorio, da distinguere nettamente da Deskland.
 
