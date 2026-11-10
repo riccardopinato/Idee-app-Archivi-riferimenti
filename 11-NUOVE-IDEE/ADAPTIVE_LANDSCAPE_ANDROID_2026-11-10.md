@@ -6,6 +6,15 @@
 **Posizionamento:** Android live wallpaper offline, senza account/AI/ads; paesaggio che lascia spazio alle icone della Home; espandibile a scenari successivi.  
 **Package Android previsto da Flutter scaffold:** `it.riccardopinato.adaptive_landscape` (Activity e Service Kotlin in namespace distinto); nome commerciale provvisorio, da distinguere nettamente da Deskland.
 
+## Android v0.4 primo test fisico — FAIL; v0.4.1 PR #13 sperimentale
+
+- **Feedback dell'utente:** la v0.4 Android installata è visivamente sgranata/sbiadita, bordo mare-sabbia innaturale, moto dell'acqua quasi impercettibile; la sabbia appare soltanto sotto tre icone del dock impostate manualmente, non sotto le vere app/cartelle/widget della Home. **NON ATTESTARE DEVICE PASS.**
+- Causa confermata: `CoastalBeachRenderer.kt` produce l'oceano in una bitmap con **lato massimo 360px** e la ingrandisce sull'intero wallpaper. Lo shader Flutter Web Ultra non era il renderer Android. La Home non viene letta automaticamente: il wallpaper possiede soltanto posizioni marcate in schema2, non le coordinate del launcher.
+- Correzione sperimentale [app PR #13](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/13): renderer EGL14/GLES20 full-framebuffer, acqua con caustiche/foam dinamici, indicatore backend GPU/fallback; opzionale screenshot Home selezionato dall'utente per **calibrazione MANUALE**, temporaneo e senza permessi sensibili. Zero riconoscimento automatico. `main` resta v0.4: PR13 **NON MERGED** in attesa QA fisica.
+- [CI PR13 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42903313882), head `ef6bcfd5db8a35f7e0b76df61d793c3b9219ed2c`. APK test ARM64 SHA256 `62c8809bc09a239009d0cc340ce57267c815618239cfc55aec28b4918bddca8a`; firma interna non stabile Play. L'uso reale, i fps, la batteria e il realismo fotografico NON sono verificati.
+- [Issue #14](https://github.com/riccardopinato/Adaptive-Landscape-Android/issues/14) P0 aperta per rilevamento **davvero automatico** di app/cartelle/widget; richiederebbe consenso opt-in e potenziale API Accessibilità con verifica Play, oppure integrazione launcher-specific. Non promettere universale.
+- Il target **4K fotografico** resta aperto: GPU shading alla risoluzione schermo NON equivale a asset fotografico nativo 4K. [Issue #12](https://github.com/riccardopinato/Adaptive-Landscape-Android/issues/12).
+
 ## Beach v0.4.0 — realismo 4K come obiettivo, fonte/prove
 
 - **Input utente**: puntare al realismo 4K per la Beach Web, dopo rifiuto della resa precedente.
