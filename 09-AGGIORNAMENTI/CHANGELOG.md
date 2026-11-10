@@ -4,7 +4,7 @@
 
 - Input utente: concentrare le modifiche sul realismo 4K dell'immagine del mare, non sul solo numero di pixel.
 - [App PR #11](https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/11) merged `main@a05bec6a`: shader GPU più ricco, palette cromatica originale campionata in atlas RGB565 24×42, preset Bilanciata/Alta/Ultra, continuità scene mare vuoto e costa condizionata da icone.
-- [CI PR #42881502356 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42881502356): 42 test, Flutter analyze, APK debug/release per ABI, Web. Main Pages [#42882654064](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42882654064) **IN VERIFICA**.
+- [CI PR #42881502356 SUCCESS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42881502356): 42 test, Flutter analyze, APK debug/release per ABI, Web. Main Pages [#42882654064](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/42882654064) **SUCCESS**.
 - La texture di riferimento 2160×3840 è ricampionata e NON è fotografia ottica 4K nativa; la Web shading a risoluzione framebuffer non implica pixel fisici 4K garantiti. Realismo utente, FPS/browser e Kotlin Android restano NON CERTIFICATI; nessuna copia GPL o Golden E3.
 
 
