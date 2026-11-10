@@ -19,7 +19,7 @@ Il validatore centrale verifica solo schema/dati e anti-regressione. Gli adapter
 
 ## Cataloghi gratuiti e Wonderlog
 
-- Notes-Ecosistema [PR #99](https://github.com/riccardopinato/Notes-Ecosistema/pull/99): corregge la ricerca del catalogo e newline letterali nei quattro modelli Free e nel Daily. È un cambio sorgente con test; verificare l'esito finale CI/merge/deploy separatamente, senza inventare PASS.
+- Notes-Ecosistema [PR #99](https://github.com/riccardopinato/Notes-Ecosistema/pull/99): **MERGED** `main@b119180e4eca578f055dd55d75cfb0d7d6d806f5` con `verify`, `verify-web`, `build-web` PASS exact-head; [Pages Web #42808861763](https://github.com/riccardopinato/Notes-Ecosistema/actions/runs/42808861763) SUCCESS sullo stesso commit. Corregge ricerca di tutti i modelli Free e newline letterali; browser manuale ancora NOT VERIFIED.
 - Anna's Diary: sei template di diario gratuiti e preview nativa già in main, invariati; confini privato/Vault/Noi preservati.
 - Wonderlog: pilota Trip Planner già in main, invariato. Bug Web risolto in PR #29, Pages [run #42719570479](https://github.com/riccardopinato/Wonderlog/actions/runs/42719570479) build/deploy/live assets PASS. Login Google/cloud resta SOSPESO per decisione utente.
 
@@ -32,3 +32,7 @@ Il validatore centrale verifica solo schema/dati e anti-regressione. Gli adapter
 5. Valutazione commerciale distinta: soltanto con approvazione esplicita, UX soddisfacente, diritti e proof si implementeranno billing e Store. Prezzo 3,99 euro ancora ipotetico.
 
 Registro precedente: [4 priorità eseguite](EXECUTION_4_PRIORITIES_2026-11-09.md) e [blueprint dei 4 pack](BLUEPRINT_PREMIUM_ORIGINALI_2026-11-09.md). Non promuovere Golden/CAP da semplici manifest.
+
+## Step 7 — Design UX eseguito dopo questo registro
+
+[Prototipi originali e ricevute source/CI](STEP7_UX_ORIGINALI_2026-11-10.md): Notes Study Sprint Studio [PR #100](https://github.com/riccardopinato/Notes-Ecosistema/pull/100) e Anna Dodici settimane [PR #298](https://github.com/riccardopinato/Agenda-per-Anna/pull/298) **MERGED come UX DRAFT**, non come template Flutter/Store. L'approvazione dell'esperienza resta esplicita e precedente agli adapter futuri. Nessun Golden/CAP promosso.
