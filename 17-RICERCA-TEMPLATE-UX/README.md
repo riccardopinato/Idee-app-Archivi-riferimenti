@@ -62,6 +62,10 @@ I due ZIP Design Brief sono duplicati nei contenuti; fonti finanziarie e immobil
 
 [Registro Step6, evidence e prossimi cinque step](STEP6_MANIFEST_ORIGINALI_2026-11-10.md). Core [PR #90](https://github.com/riccardopinato/App-Factory-Core/pull/90) **MERGED**: quattro manifest statici (due Notes, due Anna), JSON Schema+validator **PASS**, solo `research_candidate`, nessun prodotto vendibile, adapter runtime o billing. Notes [PR #99](https://github.com/riccardopinato/Notes-Ecosistema/pull/99) corregge ricerca e paragrafi nei modelli gratuiti; CI/merge/deploy sono un gate separato. Wonderlog rimane sul pilota Travel gratuito, Google/cloud sospesi.
 
+## Maxi-step 7 — Prototipi originali dei primi due pack
+
+[Registro dei prototipi UX e gate di approvazione](STEP7_UX_ORIGINALI_2026-11-10.md). Notes [PR #100](https://github.com/riccardopinato/Notes-Ecosistema/pull/100) e Anna [PR #298](https://github.com/riccardopinato/Agenda-per-Anna/pull/298) sono **MERGED** come **UX_DRAFT_PENDING_APPROVAL**. I due HTML sono interattivi, con soli dati sintetici; non costituiscono Flutter, template installabili o SKU. Il precedente fix Free Notes [PR #99](https://github.com/riccardopinato/Notes-Ecosistema/pull/99) è in main, con CI e Web deploy PASS.
+
 ## Documenti
 - [Crosswalk di opportunità e gap](CROSSWALK_NOTES_ANNA_2026-11-09.md) — stato verificato di repository vs proposte.
 - [Protocollo delle fonti, varianti e privacy](PROTOCOLLO_FONTI_E_PRIVACY.md) — evidence ladder, regole di export e diritti.
