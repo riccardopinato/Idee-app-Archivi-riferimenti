@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — Avviata la coda 10x con due audit realmente revisionati
+- [PR #100](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/100) merged, `ae9a491d3c544bccc105178f84f154076ad19d7d`: [X10-001](../19-APP-FACTORY-10X/EVIDENCE_X10-001_BASELINE_2026-11-12.md) baseline/gap per 8 repo e [X10-004](../19-APP-FACTORY-10X/EVIDENCE_X10-004_APPLAB_REUSE_2026-11-12.md) riuso codice AppLab pinned. Audit source-only, non nuove funzionalità runtime.
+- La [queue 10x](../19-APP-FACTORY-10X/PROGRAM_QUEUE.json) registra due task VERIFIED con evidence e gate review; il resolver sblocca i successori senza segnare automaticamente altre attività come completate.
+- Nessuna promozione Golden, import Windows, build APK o Store effettuata.
+
+
 ## 2026-11-12 — Programma 10x continuo approvato: 57 task e 8 ondate
 - Nuova [sezione strategica](../19-APP-FACTORY-10X/README.md) con cinque pilastri prioritari e governance: Agent Core integrato con AppLab v6 (riuso prima di riscrivere); Flutter Golden packages; QA/release; prodotti e monetizzazione evidence-based; intelligenza del riuso.
 - [Roadmap completa](../19-APP-FACTORY-10X/ROADMAP_10X.md) e [queue JSON](../19-APP-FACTORY-10X/PROGRAM_QUEUE.json) con 57 task a ID stabili, otto ondate, dipendenze, repository owner, acceptance gate, rischio operativo e successori pronti.
