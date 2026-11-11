@@ -169,6 +169,12 @@ Il resolver trova inizialmente `X10-001` (baseline/gap), `X10-002` (shortlist co
 
 Le prossime dipendenze sono già codificate: quando 001 è effettivamente verificato si sbloccano 005/006/007; 004 sblocca 009/027; 003 sblocca 017/040; e così per tutte le 57 attività. Le approvazioni umane richieste sono isolate e non fermano le lane indipendenti.
 
+## Primo ciclo di esecuzione — 12 novembre 2026
+- **X10-001 = VERIFIED (audit statico delimitato):** inventario e gap analysis di 8 repo con SHA e regole di precedenza nel [rapporto](EVIDENCE_X10-001_BASELINE_2026-11-12.md), review/CI della [PR #100](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/100), merge `ae9a491d3c544bccc105178f84f154076ad19d7d`.
+- **X10-004 = VERIFIED (audit statico delimitato):** moduli di queue/patch/investigator/PR già esistenti e limiti AppLab `SELF_CANARY`, [rapporto](EVIDENCE_X10-004_APPLAB_REUSE_2026-11-12.md), stessa PR #100; nessun runner importato, `0/3` live repairs non promossi.
+- Questi due audit sono prove documentali, **non** task di sviluppo Agent Core o release. Il resolver aggiornato proporrà i successori `X10-002` (ricerca commerciale), `X10-007` (sorgente locale Agent Core) e `X10-009` (adapter AppLab), in tre repository distinti; eventuali nuovi blocchi richiedono evidenze e decisioni.
+- La progressione è registrata in `PROGRAM_QUEUE.json` con `gate_reviewed=true` e receipt GitHub a commit SHA; nessun task viene chiuso dal cron.
+
 ## Riferimenti
 - [Contratto di esecuzione e recovery](OPERATING_CONTRACT.md)
 - [App Factory Agent Core](https://github.com/riccardopinato/App-Factory-Agent-Core)
