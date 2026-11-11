@@ -1,0 +1,1156 @@
+{
+  "schema_version": 1,
+  "program_id": "APP_FACTORY_10X_2026",
+  "title": "App Factory 10x — Continuous Program",
+  "approved_on": "2026-11-12",
+  "approved_scope": "Strategic direction and backlog authorized; normal repo Product Bible, CI, reviews, credentials, privacy, release and Golden admission gates remain binding.",
+  "factory_baseline": "c5adc147046beb7024629466d10eeb799c3c2619",
+  "master_version": "27",
+  "golden_index_version": 29,
+  "success_definition": "10x is a target, not a verified multiplier; measure lead time, verified deliveries, manual interventions, quality, user outcomes and revenue with baseline cohorts.",
+  "operating_rules": {
+    "max_parallel": 3,
+    "parallel_only_distinct_owner_repos": true,
+    "no_auto_merge_without_gate": true,
+    "never_autoclose_from_scheduled_run": true,
+    "continuous_followup": "scheduled audit may prioritize and execute authorized safe steps only when a real runner/Chat automation is available; no unbounded Chat self-resume.",
+    "auto_safe_mode": "READ_ONLY",
+    "human_gate_mode": "HUMAN_GATE",
+    "other_write_mode": "PR_GATED",
+    "risk_and_auth": "One baseline per execution; correct exact-head check+review; no new billing, production deploy, Windows source import or Store publishing without separate gate",
+    "queue_exhaustion": "Append W8+ before W7 completion; never recycle VERIFIED IDs; preserve history."
+  },
+  "waves": [
+    {
+      "id": "W0",
+      "title": "Governance, selezione e misurazione",
+      "goal": "Stabilire baseline reale, portafoglio pilota, risorse e metriche prima di scalare."
+    },
+    {
+      "id": "W1",
+      "title": "Agente AI integrato e controllato",
+      "goal": "Integrare i moduli AppLab esistenti con l'agent locale, senza ricostruire ciò che esiste."
+    },
+    {
+      "id": "W2",
+      "title": "Componenti Flutter riutilizzabili",
+      "goal": "Estrarre componenti versionati con test di compatibilità e doppio consumer."
+    },
+    {
+      "id": "W3",
+      "title": "Qualità, APK/AAB e release",
+      "goal": "Creare delivery verificabile, QA visivo e identità dei build artifact."
+    },
+    {
+      "id": "W4",
+      "title": "Portafoglio, utenti e monetizzazione",
+      "goal": "Validare pochi prodotti con dati di domanda e utilizzo reali."
+    },
+    {
+      "id": "W5",
+      "title": "Intelligenza e riuso trans-app",
+      "goal": "Trasformare modifiche e problemi in proposte con provenance e approval."
+    },
+    {
+      "id": "W6",
+      "title": "Piloti e hardening",
+      "goal": "Provare la Factory su due prodotti diversi e recuperare failure reali."
+    },
+    {
+      "id": "W7",
+      "title": "Scala e ottimizzazione continua",
+      "goal": "Gestione permanente, costi, rinnovi, batch successivi e manutenzione."
+    }
+  ],
+  "streams": {
+    "GOV": "Governance e orchestrazione",
+    "AGENT": "Agente AI",
+    "REUSE": "Golden e riuso",
+    "QA": "AppLab QA/release",
+    "BUSINESS": "Prodotto e monetizzazione",
+    "INTEL": "Intelligenza centrale"
+  },
+  "metrics": [
+    {
+      "id": "verified_features_per_week",
+      "baseline": "NOT_MEASURED",
+      "target": "increase without reducing test evidence"
+    },
+    {
+      "id": "lead_time_hours",
+      "baseline": "NOT_MEASURED",
+      "target": "real request→verified PR, exclude passive time"
+    },
+    {
+      "id": "manual_interventions_per_feature",
+      "baseline": "NOT_MEASURED",
+      "target": "decrease measurable copy/paste handoffs"
+    },
+    {
+      "id": "reuse_ratio",
+      "baseline": "NOT_MEASURED",
+      "target": "increase validated reuse in new products"
+    },
+    {
+      "id": "qa_regressions_escaped",
+      "baseline": "NOT_MEASURED",
+      "target": "zero known blocker escapes"
+    },
+    {
+      "id": "pilot_retention_d30",
+      "baseline": "NOT_MEASURED",
+      "target": "measured in selected launched products only"
+    },
+    {
+      "id": "net_revenue_per_product",
+      "baseline": "NOT_MEASURED",
+      "target": "positive unit economics with provider fees"
+    },
+    {
+      "id": "agent_job_success_recovery",
+      "baseline": "NOT_MEASURED",
+      "target": "real crash/retry proof in 2 repos"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "X10-001",
+      "wave": "W0",
+      "stream": "GOV",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [],
+      "title": "Baseline multi-repo fonte verità e gap analysis",
+      "acceptance": "Inventario HEAD/AGENTS/Product Bible/roadmap e prove con SHA; AppLab riusato, non duplicato",
+      "impact": 5,
+      "effort": 1,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-002",
+      "wave": "W0",
+      "stream": "BUSINESS",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [],
+      "title": "Selezione shortlist 2–3 app commerciali",
+      "acceptance": "Score domanda, gap mercato, execution cost, distribuzione, ricavi attesi come ipotesi esplicite",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-003",
+      "wave": "W0",
+      "stream": "REUSE",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [],
+      "title": "Inventario Golden/donor e consumatori",
+      "acceptance": "Mappa versione, license, SHA, test, readiness e gap per componenti core",
+      "impact": 5,
+      "effort": 1,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-004",
+      "wave": "W0",
+      "stream": "QA",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [],
+      "title": "Audit capability AppLab riusabili",
+      "acceptance": "Mappa closed-loop v5/v6, CI/evidence, costo, missing integration; nessuna duplicazione",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-005",
+      "wave": "W0",
+      "stream": "BUSINESS",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-001"
+      ],
+      "title": "North Star KPI e ledger tempi/costi/ricavi",
+      "acceptance": "Definizioni e baseline per verified-feature/week, cycle time, QA, reuse, retention e revenue",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-006",
+      "wave": "W0",
+      "stream": "GOV",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-001"
+      ],
+      "title": "Coda esecuzione con evidence gates",
+      "acceptance": "Task DAG, runner read-only, progress receipt e rispetto gate branch/PR; nessuna falsa chiusura",
+      "impact": 5,
+      "effort": 1,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-007",
+      "wave": "W0",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-001"
+      ],
+      "title": "Inventario agente Windows locale richiesto",
+      "acceptance": "Dossier sorgenti attesi v0.1-v0.4; import rimane BLOCKED finché file privati non forniti",
+      "impact": 5,
+      "effort": 1,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-008",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-007"
+      ],
+      "title": "Acquisizione codice Windows verificato",
+      "acceptance": "Repository private, SHA/manifest e secret scan, scelta source canonica senza dati personali",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-009",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-004"
+      ],
+      "title": "Selezione adapter AppLab esistente",
+      "acceptance": "Specifica interfacce queue/executor/QA con file e test citati; nessun nuovo worker duplicato",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-010",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-009"
+      ],
+      "title": "Contract API job e permission gateway",
+      "acceptance": "Schema request/result/versioni, allowlist e test deny-all per repo/path/azione",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-011",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-010"
+      ],
+      "title": "Coda durevole / retry/idempotency",
+      "acceptance": "Stati, lease, checkpoint, dedup, interruzione e recovery con fixture offline",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-012",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-010"
+      ],
+      "title": "Workspace isolato con source SHA",
+      "acceptance": "Restricted path, diff auditabile, verify no secret/force push, rollback",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-013",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-011",
+        "X10-012"
+      ],
+      "title": "Orchestrazione bounded con adapter",
+      "acceptance": "Integrazione componenti AppLab senza rifacimento; due test di replay, no auto-merge",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-014",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-013"
+      ],
+      "title": "PR agent con CI exact-head",
+      "acceptance": "Proposta branch+PR, review/retry fail-closed; no default branch direct writes",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-015",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P1",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-008",
+        "X10-013"
+      ],
+      "title": "Test end-to-end agente locale",
+      "acceptance": "PC Windows presente, comandi reali, log sanitizzati, crash/resume, 2 repo pilota",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-016",
+      "wave": "W1",
+      "stream": "AGENT",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-014"
+      ],
+      "title": "Adapter agenti ricerca/QA",
+      "acceptance": "Interfaccia riuso AppLab e Research, output evidence/provenance; niente accesso Finance live",
+      "impact": 4,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-017",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-003"
+      ],
+      "title": "Contratto package Golden e versioning",
+      "acceptance": "API, ownership, matrix Flutter versions, license, pin SHA e test consumer",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-018",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-004",
+        "X10-017"
+      ],
+      "title": "Harness compatibility per Golden",
+      "acceptance": "Tests donor+consumer e rollback versioni senza modifiche massive non autorizzate",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-019",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-017"
+      ],
+      "title": "Flutter starter kit minimale",
+      "acceptance": "Bootstrap scaffold, design tokens, l10n e docs; no product scope implicito",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-020",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-019"
+      ],
+      "title": "Kit identity/login opt-in",
+      "acceptance": "OAuth/provider gates, sessione/sicurezza, test autorizzazioni e sample",
+      "impact": 4,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-021",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-019"
+      ],
+      "title": "Kit profilo/impostazioni",
+      "acceptance": "Theme, lingua, preferenze, privacy e migrazioni, golden pinned",
+      "impact": 4,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-022",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-019"
+      ],
+      "title": "Kit backup/recovery",
+      "acceptance": "Export/import manifest, integrity, staging e restore test, no data loss",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-023",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-019"
+      ],
+      "title": "Kit notifiche/health",
+      "acceptance": "Android permissions, foreground/timezones, reliability con platform tests",
+      "impact": 4,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-024",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-019"
+      ],
+      "title": "Kit monetizzazione modulare",
+      "acceptance": "Pricing/Ads/IAP solo dopo scope/consenso per-app e provider test",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-025",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-020",
+        "X10-021",
+        "X10-022"
+      ],
+      "title": "Kit composizione e dependency chooser",
+      "acceptance": "Compatibilità inter-kits, fixture demo, matrice di esclusione/feature flags",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-026",
+      "wave": "W2",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-018",
+        "X10-025"
+      ],
+      "title": "Due consumer Flutter certificati per kit",
+      "acceptance": "Test reali su due app scelte, version pins e rollback prima di admission Golden",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-027",
+      "wave": "W3",
+      "stream": "QA",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-004"
+      ],
+      "title": "Matrice QA esistente e gap release",
+      "acceptance": "Test unit, integration, emulator, physical, artifact e store separati",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-028",
+      "wave": "W3",
+      "stream": "QA",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-027"
+      ],
+      "title": "QA test router condiviso",
+      "acceptance": "Runner per-app selective tests con output receipt, non ricostruzione v6",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-029",
+      "wave": "W3",
+      "stream": "QA",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-028"
+      ],
+      "title": "Visual regression automation",
+      "acceptance": "Screenshot baseline diff, UI interaction, review false positives",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-030",
+      "wave": "W3",
+      "stream": "QA",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-028"
+      ],
+      "title": "Performance e accessibilità gate",
+      "acceptance": "Benchmark startup/memory, a11y 48dp, low-end device e evidenze",
+      "impact": 4,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-031",
+      "wave": "W3",
+      "stream": "QA",
+      "priority": "P0",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-028"
+      ],
+      "title": "Signed release provenance pipeline",
+      "acceptance": "APK/AAB hash/versionCode/signature identity, source commit verified",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-032",
+      "wave": "W3",
+      "stream": "QA",
+      "priority": "P1",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-031"
+      ],
+      "title": "Physical QA e Play internal testing",
+      "acceptance": "Dispositivo reale, install/upgrade data retention, Play Console proof",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-033",
+      "wave": "W3",
+      "stream": "QA",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-029",
+        "X10-030",
+        "X10-031"
+      ],
+      "title": "Gate CI->QA->release decision",
+      "acceptance": "Fail-closed, regressions, source SHA artifacts; no auto-store publish",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-034",
+      "wave": "W4",
+      "stream": "BUSINESS",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-002"
+      ],
+      "title": "Validazione ricerca domanda/competitor",
+      "acceptance": "Domanda, alternative, differenziazione, canali organic, dati/quote con fonti",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-035",
+      "wave": "W4",
+      "stream": "BUSINESS",
+      "priority": "P0",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-002",
+        "X10-034"
+      ],
+      "title": "Decisione 2–3 prodotti e budget",
+      "acceptance": "Owner conferma go/no-go e budget; niente upgrade prodotto implicitamente approvato",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-036",
+      "wave": "W4",
+      "stream": "BUSINESS",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-005",
+        "X10-035"
+      ],
+      "title": "Sistema privacy-first product analytics",
+      "acceptance": "Funnel, conversion, retention, attribution; privacy/consent per app",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-037",
+      "wave": "W4",
+      "stream": "BUSINESS",
+      "priority": "P1",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-035"
+      ],
+      "title": "Pricing e monetization experiment plan",
+      "acceptance": "Prezzi/preferenze, economics, user impact e provider approval",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-038",
+      "wave": "W4",
+      "stream": "BUSINESS",
+      "priority": "P1",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-036",
+        "X10-037"
+      ],
+      "title": "Pilot acquisition e release approval",
+      "acceptance": "A/B controllati e review Play/Store, nessun pubblicazione automatica",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-039",
+      "wave": "W4",
+      "stream": "BUSINESS",
+      "priority": "P1",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-038"
+      ],
+      "title": "Decisioni basate su coorti reali",
+      "acceptance": "Cohort retention, install/click-to-paid, confidence, no fabricated KPIs",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-040",
+      "wave": "W5",
+      "stream": "INTEL",
+      "priority": "P0",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-003",
+        "X10-006"
+      ],
+      "title": "Architettura knowledge/reuse centrale",
+      "acceptance": "Schema provenienza per repo/file/CI/License e sintesi senza doppio SSOT",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-041",
+      "wave": "W5",
+      "stream": "INTEL",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-040"
+      ],
+      "title": "Diff-aware monitor repository",
+      "acceptance": "Event → diff commit/paths → candidate, no arbitrary source PRs",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-042",
+      "wave": "W5",
+      "stream": "INTEL",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-041"
+      ],
+      "title": "Dedup capability/donor hypotheses",
+      "acceptance": "Mappa deterministica CAP-ID e consumer candidates prima di proposte",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-043",
+      "wave": "W5",
+      "stream": "INTEL",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-042"
+      ],
+      "title": "Semantic review workflow supervisionato",
+      "acceptance": "Proposal docs con exact source SHA, tests, license, human approval",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-044",
+      "wave": "W5",
+      "stream": "INTEL",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-043"
+      ],
+      "title": "Riuso recommendation cockpit",
+      "acceptance": "Priorità per impatto/rischio/sforzo/dipendenze, nessuna promozione falsa",
+      "impact": 4,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-045",
+      "wave": "W5",
+      "stream": "INTEL",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-043",
+        "X10-028"
+      ],
+      "title": "Feedback loop failure→donor",
+      "acceptance": "Correlazione test failure, bug pattern 3 ricorrenze, replay evidence",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-046",
+      "wave": "W6",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-014",
+        "X10-031"
+      ],
+      "title": "Pilota sviluppo feature A",
+      "acceptance": "Una feature non critica end-to-end su repo scelto, PR e QA indipendente",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-047",
+      "wave": "W6",
+      "stream": "AGENT",
+      "priority": "P0",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/App-Factory-Agent-Core",
+      "dependencies": [
+        "X10-046"
+      ],
+      "title": "Pilota feature B su repo diverso",
+      "acceptance": "Secondo consumer con branch rules, recovery e verifiche indipendenti",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-048",
+      "wave": "W6",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-026",
+        "X10-047"
+      ],
+      "title": "Compatibilità kit nel secondo consumer",
+      "acceptance": "Risultati integrazione reale, regression screenshot/device dove necessario",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-049",
+      "wave": "W6",
+      "stream": "QA",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-033",
+        "X10-047"
+      ],
+      "title": "Campaign regressioni cross-app",
+      "acceptance": "Due app, metriche false-positive, isolation e rollback report",
+      "impact": 4,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-050",
+      "wave": "W6",
+      "stream": "INTEL",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-044",
+        "X10-047"
+      ],
+      "title": "Knowledge feedback su due consumer",
+      "acceptance": "Proposte riuso confermate/rettificate su evidenze, non chat memory",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-051",
+      "wave": "W7",
+      "stream": "GOV",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-006",
+        "X10-047"
+      ],
+      "title": "Portfolio queue continua con recovery",
+      "acceptance": "Sequenza successori, blocked/deferred accounting, check ogni ciclo e storico receipts",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-052",
+      "wave": "W7",
+      "stream": "GOV",
+      "priority": "P1",
+      "mode": "READ_ONLY",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-051"
+      ],
+      "title": "Cost/performance benchmark rispetto al baseline",
+      "acceptance": "Confronto evidence-backed di lead time e costi; non promessa 10x automatica",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-053",
+      "wave": "W7",
+      "stream": "REUSE",
+      "priority": "P1",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/App-Factory-Core",
+      "dependencies": [
+        "X10-048"
+      ],
+      "title": "Scoped donor/process admission",
+      "acceptance": "Proposta Golden solo se gate source/test/consumer/rollback soddisfatti",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-054",
+      "wave": "W7",
+      "stream": "QA",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/AppLab",
+      "dependencies": [
+        "X10-049"
+      ],
+      "title": "Release train per 2–3 app",
+      "acceptance": "CI gates, no automatic production publishing, immutable artifacts",
+      "impact": 5,
+      "effort": 4,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-055",
+      "wave": "W7",
+      "stream": "BUSINESS",
+      "priority": "P1",
+      "mode": "HUMAN_GATE",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-039",
+        "X10-052"
+      ],
+      "title": "Conferma scaling prodotti",
+      "acceptance": "Go/no-go secondo dati retention/revenue/coorti/costo supportati",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-056",
+      "wave": "W7",
+      "stream": "INTEL",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-050",
+        "X10-052"
+      ],
+      "title": "Reprioritizzazione cross-app basata su dati",
+      "acceptance": "Aggiorna backlog per prove con link; app-roadmap decisions restano per-app",
+      "impact": 5,
+      "effort": 3,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "X10-057",
+      "wave": "W7",
+      "stream": "GOV",
+      "priority": "P1",
+      "mode": "PR_GATED",
+      "owner_repo": "riccardopinato/Idee-app-Archivi-riferimenti",
+      "dependencies": [
+        "X10-052",
+        "X10-056"
+      ],
+      "title": "Nuova ondata mantenendo storico",
+      "acceptance": "Versione 2 del backlog con task aggiuntivi prima di terminare la prima coda",
+      "impact": 5,
+      "effort": 2,
+      "status": "PLANNED",
+      "evidence": [],
+      "blocker": null
+    }
+  ]
+}
