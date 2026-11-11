@@ -38,7 +38,8 @@ Ogni modifica: task/issue -> branch -> commit -> PR -> exact-head tests -> merge
 
 - **Installazione MERGED:** 35/35 repository (`main` oppure `master`); 32 workflow di rollout `app-factory-context.yml` e 3 workflow originali `context-snapshot.yml` con hardening.
 - **CI di contratto:** validazioni delle PR effettuate, con pin Action SHA Golden e aggiornamento dei branch senza bypass. Esempi conclusivi: [CamperBoss PR #32](https://github.com/riccardopinato/CamperBoss/pull/32), [World Days PR #88](https://github.com/riccardopinato/World-Days/pull/88).
-- **Non ancora verificato:** primo `schedule`/`workflow_dispatch` su default branch, `PR bot` creata realmente dal job di snapshot e recovery dopo permessi mancanti.
+- **Prova E2E parziale osservata:** 5 trigger reali `push` canary, snapshot e branch bot verificati; su [btrader PR #5](https://github.com/riccardopinato/btrader/pull/5) creata davvero da `github-actions[bot]`, con rerun idempotente. **Quattro** altri canary bloccati da permesso GitHub Actions di creare PR. [Evidence completa](EVIDENCE_M1_CONTEXT_SYNC_CANARY_2026-11-11.md).
+- **NON VERIFICATI:** gli eventi `schedule` e `workflow_dispatch`, il recupero delle quattro PR dopo configurazione admin e la capacità di creare PR dei restanti 30 repository.
 - **Non implementato:** aggiornamento semantico automatico di codice, Product Bible, roadmap, CAP e Golden; il cron osserva commit SHA/data pubblici e propone **solo** snapshot documentali tramite PR.
 - **Factory CURRENT:** Master v27 / Golden Index v29, baseline del successivo audit `c5adc147046beb7024629466d10eeb799c3c2619`; il precedente `ee72dbb...` nell'intestazione documenta il bootstrap originale.
 - La sincronizzazione semantica ChatGPT dedicata resta distinta da questo workflow; nessuna nuova attività ChatGPT è stata creata.
