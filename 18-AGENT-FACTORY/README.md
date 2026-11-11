@@ -33,6 +33,12 @@ Ogni modifica: task/issue -> branch -> commit -> PR -> exact-head tests -> merge
 5. Per INT estrai dal repo Adaptive Landscape soltanto dopo benchmark, review licenze e test di consumer.
 6. Collegamento reciproco con il presente hub e con il dossier principale. Non sovrascrivere repository preesistenti.
 
+## Context control — M2/M3/M4/M5 (11/11/2026)
+- [**Registro tecnico 35/35**](../16-APP-FACTORY-SITE/data/context_fleet.json) con tre repo privati anonimi, verificato da CI e mostrato nella sezione Repository del [sorgente Site](../16-APP-FACTORY-SITE/src/index.html); nessun deploy online attestato.
+- [**Review semantiche candidate**](SEMANTIC_REVIEW_CANDIDATES_2026-11-11.md): proposte con diff/source/test, nessuna capability o Golden auto-promossa.
+- [**Ammissione Donor/Golden**](CONTEXT_SYNC_REUSE_ADMISSION_2026-11-11.md): stato PROCESS_CANDIDATE, secondo consumer indipendente e cron reali ancora mancanti.
+- [**Recovery playbook**](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/CONTEXT_SYNC_RECOVERY_PLAYBOOK.md) e [**guardrail offline**](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/scripts/context_reliability.py), PR #12 merged con CI.
+
 ## Automatic maintenance — rollout 35/35 (11/11/2026)
 **Roadmap operativa aggiornata:** [Automazione contesto su tutti i 35 repo — 5 maxi-step](ROADMAP_CONTEXT_AUTOMATION_35_REPOS_2026-11-11.md).
 
