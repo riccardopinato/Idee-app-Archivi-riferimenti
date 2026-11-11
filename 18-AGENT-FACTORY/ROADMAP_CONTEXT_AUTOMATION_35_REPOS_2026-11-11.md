@@ -45,28 +45,40 @@
 
 **Gate M1:** `PARTIAL_E2E_VERIFIED`, non `SCHEDULE_VERIFIED`, non `ALL_35_PR_BOT_VERIFIED`. I test push provano funzionamento del worker e idempotenza su un repo; la configurazione amministrativa attuale impedisce un rollout end-to-end globale. La prima PR bot osservata non è stata auto-mergiata.
 
-### 2. Resilienza, least privilege e manutenzione del template — P0 / FIX_CURRENT_STEP
+### 2. Resilienza, least privilege e manutenzione del template — P0 / OFFLINE_CI_VERIFIED + RUNTIME_OPEN
+**Eseguito:** [Agent Core PR #12](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/12) (merge `32d4d41`) contiene helper stdlib con test CI per retry bounded 429/5xx, permission-denial, branch conflict, bad SHA, idempotenza, private redaction e semantic-review fail-closed. [Playbook di recovery e rollback](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/CONTEXT_SYNC_RECOVERY_PLAYBOOK.md) documentato.
+**NON eseguito:** fault injection runtime, misure quote/costi reali, propagazione helper ai 35 workflow. Nessun owner PR-setting bypass.
+
 - [ ] Testare fallimenti API/rate-limit, disattivazione Actions, token senza permesso PR, branch bot divergente e conflitti con `main`; fallire senza perdere snapshot precedente.
 - [ ] Testare retry dopo «branch push riuscito ma PR create fallita», `workflow_dispatch` da feature branch, snapshot senza diff e branch principale avanzato.
 - [ ] Verificare `permissions` minimi per job, Action SHA Golden, assenza di token custom, dati privati e segreti nei log.
 - [ ] Distinguere un upstream `SOURCE_CHANGED` da una modifica `CI_VERIFIED`; validare policy di consumo/rate-limit per 35 repo.
 **Gate:** test positivi e negativi, registri di recovery, test idempotenza, nessun bypass protezioni e nessuna auto-promozione Donor/Golden.
 
-### 3. Registro centrale di stato e riconciliazione 35/35 — P1 / BACKGROUND_MAINTENANCE
+### 3. Registro centrale di stato e riconciliazione 35/35 — P1 / SOURCE_MERGED + CI_VERIFIED
+**Eseguito:** [PR #97](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/97) ha integrato il [registro JSON dei 35](../16-APP-FACTORY-SITE/data/context_fleet.json), 32 public + 3 private anonimizzati, fonte SHA e run/PR separati, [validatore e append-only reconciliation offline](../scripts/context_fleet.py), test negativi e vista filtrabile nel [sorgente Control Center](../16-APP-FACTORY-SITE/src/index.html). I dati precedenti del Site e `localStorage` manuale rimangono intatti.
+**NON eseguito:** refresh periodico verificato e deploy/collegamento del Site live. La fotografia iniziale è puntuale e può invecchiare; non viene presentata come dashboard real-time.
+
 - [ ] Consolidare inventario persistente `repo, visibility, default_branch, workflow_version, last_run, last_success, last_checked_SHA, open_snapshot_PR, error, blocked_reason` con provenance.
 - [ ] Classificare `INSTALLED`, `CONTRACT_CI_VERIFIED`, `SCHEDULE_VERIFIED`, `PR_FLOW_VERIFIED`, `SEMANTIC_REVIEW_PENDING`, `BLOCKED`.
 - [ ] Collegare al catalogo CAP e alla dashboard App Factory tramite **lettura dei dati**, non tramite riscrittura di stati applicativi.
 - [ ] Analizzare nuovi repository GitHub, repository archiviati, cambio di visibilità e rename; preparare onboarding esplicito non distruttivo.
 **Gate:** riconciliazione 35/35 replicabile, failure evidenziati e nessuna confusione tra test CI, device e release.
 
-### 4. Aggiornamento semantico supervisionato, fonti e costo — P1 / FUTURE (richiede scope approvato)
+### 4. Aggiornamento semantico supervisionato, fonti e costo — P1 / PROTOCOL_AND_PROPOSALS_READY
+**Eseguito:** helper `semantic_review` offline CI in Agent Core, [protocollo revisione](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/SEMANTIC_REVIEW_PROTOCOL.md), [tre candidate con source/CI/consumer/limiti](SEMANTIC_REVIEW_CANDIDATES_2026-11-11.md). Nessuna modifica automatica a CAP, Golden, Product Bible o roadmap delle app.
+**NON eseguito:** revisione umana e ammissione per-app, pipeline autonoma di interpretazione, misure costo reali.
+
 - [ ] Definire diff semantici con source SHA e owner: cosa è cambiato, cosa richiede aggiornamento di roadmap/idea/CAP, quali test realmente dimostrano la funzione.
 - [ ] Preparare PR di documentazione **solo dopo revisione esplicita delle evidenze**, non in base al solo incremento di SHA.
 - [ ] Deduplicare notifiche, proteggere quote Actions, mantenere log minimizzati; nessuna API LLM a pagamento senza consenso.
 - [ ] Valutare integrazione opzionale con App-Factory-Agent-Core **solo dopo import e test della sua sorgente locale**, separando orchestrazione persistente da chat.
 **Gate:** nessun falso `IMPLEMENTED/PASS/CERTIFIED`, costi misurati, provenance e review obbligatoria.
 
-### 5. Promozione a processo riutilizzabile e manutenzione stabile — P2 / FUTURE
+### 5. Promozione a processo riutilizzabile e manutenzione stabile — P2 / CANDIDATE_DOCUMENTED
+**Eseguito:** [gate candidate M5](CONTEXT_SYNC_REUSE_ADMISSION_2026-11-11.md) con provenance, evidenze canary, limiti e rollback. Il registro Golden Factory NON viene modificato.
+**NON eseguito:** due consumer con reali cron+PR+recovery, benchmark e review Golden nel Core. Nessun donor/Golden certificato.
+
 - [ ] Raccogliere evidenze di due consumer indipendenti con cron + PR + recovery provati, non soltanto workflow CI verdi.
 - [ ] Distinguere donor locale, candidato Golden e processo riutilizzabile; eventuale proposta al Core solo tramite admission gate e PR dedicata.
 - [ ] Stabilire controlli periodici drift template/Golden, manutenzione Action SHA, branch orfani e prossima scadenza del runner.
@@ -74,7 +86,7 @@
 **Gate:** evidence multi-repo, recovery rehearsal e decisione separata sulla certificazione.
 
 ## Dipendenze e priorità
-`M0 [MERGED]` → `M1 [NEXT/P0]` → `M2 [P0]` → `M3 [P1]` → `M4 [P1, APPROVAL-REQUIRED]` → `M5 [P2]`.
+`M0 [MERGED]` → `M1 [BLOCKED_ADMIN / CRON_NOT_VERIFIED]` → `M2 [OFFLINE_CI_VERIFIED, RUNTIME_OPEN]` → `M3 [SOURCE+CI_VERIFIED, LIVE_SITE_OPEN]` → `M4 [REVIEW_CANDIDATES_ONLY]` → `M5 [PROCESS_CANDIDATE_NOT_CERTIFIED]`.
 
 La priorità è il collaudo operativo dell'Action e delle PR, **non** aggiungere altre automazioni prima di aver verificato le prime. I cinque maxi-step della [roadmap di prodotto Agent Core](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/ROADMAP.md) restano separati e aperti.
 
