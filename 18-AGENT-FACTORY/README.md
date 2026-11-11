@@ -36,6 +36,8 @@ Ogni modifica: task/issue -> branch -> commit -> PR -> exact-head tests -> merge
 ## Automatic maintenance — rollout 35/35 (11/11/2026)
 **Roadmap operativa aggiornata:** [Automazione contesto su tutti i 35 repo — 5 maxi-step](ROADMAP_CONTEXT_AUTOMATION_35_REPOS_2026-11-11.md).
 
+**Ultimo audit M1 35/35:** [prova live, retry reali, difetto Git corretto e permessi amministrativi ancora bloccanti](EVIDENCE_M1_35_REPO_SWEEP_AND_RETRY_2026-11-11.md). I trigger cron/dispatch sono installati ma **non ancora eseguiti**; nessuna nuova attività pianificata è stata creata (limite 5 attive).
+
 - **Installazione MERGED:** 35/35 repository (`main` oppure `master`); 32 workflow di rollout `app-factory-context.yml` e 3 workflow originali `context-snapshot.yml` con hardening.
 - **CI di contratto:** validazioni delle PR effettuate, con pin Action SHA Golden e aggiornamento dei branch senza bypass. Esempi conclusivi: [CamperBoss PR #32](https://github.com/riccardopinato/CamperBoss/pull/32), [World Days PR #88](https://github.com/riccardopinato/World-Days/pull/88).
 - **Prova E2E parziale osservata:** 5 trigger reali `push` canary, snapshot e branch bot verificati; su [btrader PR #5](https://github.com/riccardopinato/btrader/pull/5) creata davvero da `github-actions[bot]`, con rerun idempotente. **Quattro** altri canary bloccati da permesso GitHub Actions di creare PR. [Evidence completa](EVIDENCE_M1_CONTEXT_SYNC_CANARY_2026-11-11.md).

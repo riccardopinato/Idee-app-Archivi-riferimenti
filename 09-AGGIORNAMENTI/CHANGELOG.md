@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-11 — Retry effettivi e audit di tutta la flotta di 35 repo (M1)
+- Audit statico workflow su default branch 35/35, schedule/dispatch e write scopes; nessun evento `schedule` o `workflow_dispatch` del workflow di contesto risulta eseguito alla verifica. Altri schedule/manual non vanno scambiati per questo job.
+- Rilanciati quattro job falliti: tre ancora bloccati dalla permission GitHub PR creation; Agent Core ha manifestato un nuovo difetto di configurazione bot identity prima del merge.
+- Fix reali CI+merge nei tre originali: [App-Factory-Agent-Core #8](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/8), [Finance #4](https://github.com/riccardopinato/Finance-Intelligence-Agent/pull/4), [Interactive #4](https://github.com/riccardopinato/Interactive-Scene-Core/pull/4). [Run E2E Agent Core](https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43052705998) verifica il merge e lo snapshot dopo il fix, ma non la creazione PR, bloccata dall'amministrazione. Cleanup [#10](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/10) merged.
+- Esiste una sola PR bot aperta verificata, [btrader #5](https://github.com/riccardopinato/btrader/pull/5); 30 non-canary sono solo static audited. Una nuova automazione ChatGPT per ricontrollo cron è stata rifiutata perché 5 attività risultano già attive; nessuna esistente modificata.
+- [Evidence completa](../18-AGENT-FACTORY/EVIDENCE_M1_35_REPO_SWEEP_AND_RETRY_2026-11-11.md) e [roadmap](../18-AGENT-FACTORY/ROADMAP_CONTEXT_AUTOMATION_35_REPOS_2026-11-11.md) restano `M1 PARTIALLY_VERIFIED`, `ADMIN_BLOCKED`, `SCHEDULE_NOT_VERIFIED`.
+
+
 ## 2026-11-11 — Collaudo live M1 GitHub Actions: 1 E2E PASS, 4 blocker admin
 - Eseguiti **5 veri workflow di snapshot** con evento `push` temporaneo limitato al file workflow su pubblico, privato (anonimizzato nel catalogo), `master`, workflow originale e branch protetto. Cinque snapshot/branch bot verificati sui commit upstream.
 - [btrader E2E run 43040885976](https://github.com/riccardopinato/btrader/actions/runs/43040885976) PASS con [PR #5](https://github.com/riccardopinato/btrader/pull/5) creata automaticamente da `github-actions[bot]`, rerun PASS e nessuna PR duplicata. La PR di metadata resta aperta per revisione.

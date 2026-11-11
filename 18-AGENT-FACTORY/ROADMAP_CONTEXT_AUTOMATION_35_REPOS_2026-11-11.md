@@ -32,6 +32,17 @@
 - [ ] Raccogliere almeno una prova reale `schedule` cron, con log e differenze/NO_OP. Nessun `push` canary equivale a schedulazione.
 - [x] Verificato nuovo upstream SHA reale: dopo il merge di [Ideas PR #94](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/94), il rerun `attempt=3` del [workflow btrader](https://github.com/riccardopinato/btrader/actions/runs/43040885976) ha aggiornato i due file della **PR #5** esistente allo SHA Idee `9a32d3cf6ea960cbc6e5ff15da2df3b7f74a4e39`, conservando una sola PR bot.
 
+**Verifica estesa 35/35 — 11/11/2026:** [Rapporto di audit, retry e correzione Git](EVIDENCE_M1_35_REPO_SWEEP_AND_RETRY_2026-11-11.md).
+- [x] Audit sul workflow corrente dei **35/35 repo**: source su default branch, `schedule`, `workflow_dispatch` e scope `pull-requests: write` presenti. I 30 repo non inclusi nei canary restano **SOLO STATIC_VERIFIED**, non E2E collaudati.
+- [x] Interrogate tutte le 35 cronologie Actions, distinguendo il workflow di contesto dagli altri; `event=schedule` e `event=workflow_dispatch` del **workflow contesto = 0** su tutti i 35 alla verifica.
+- [x] Interrogate tutte le PR aperte dai branch bot: una sola `github-actions[bot]` PR osservata ([btrader #5](https://github.com/riccardopinato/btrader/pull/5)).
+- [x] Rilanciati effettivamente i quattro job falliti (`attempt=2`): 180FlipCharge, repository privato, World-Days rimangono bloccati dall'impostazione GitHub `createPullRequest`; Agent Core ha rivelato anche un errore di `git merge` dovuto a `git config` tardivo.
+- [x] Corretto il difetto in **tre workflow originali** tramite [Agent #8](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/8), [Finance #4](https://github.com/riccardopinato/Finance-Intelligence-Agent/pull/4), [Scene #4](https://github.com/riccardopinato/Interactive-Scene-Core/pull/4), tutti merged con CI verde.
+- [x] [E2E post-fix Agent Core run #43052705998](https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43052705998): merge Git riuscito, `CONTEXT_SNAPSHOT_WRITE_PASS`, `CHECK_PASS`, branch bot pubblicato; resta bloccata solo PR creation. Trigger QA eliminato tramite [cleanup #10](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/10), verificato sul default branch.
+- [ ] **P0 ADMIN BLOCKER:** cambiare l'opzione GitHub `Allow GitHub Actions to create and approve pull requests` nei quattro canary e poi ripetere i job. Questo collegamento non ha API amministrative, quindi **NON MODIFICATA**.
+- [ ] **P0 CRON VERIFICATION:** eseguire l'audit dopo il successivo ciclo `schedule`, non prima; il monitor one-shot ChatGPT per domani non è stato creato (limite 5/5 automazioni già attive).
+- [ ] Confermare con eventi reali su tutti i 35 che la configurazione repo consenta le PR. Non promuovere nessuna app a `TESTATO` o `CERTIFIED` solo per questo rollout.
+
 **Gate M1:** `PARTIAL_E2E_VERIFIED`, non `SCHEDULE_VERIFIED`, non `ALL_35_PR_BOT_VERIFIED`. I test push provano funzionamento del worker e idempotenza su un repo; la configurazione amministrativa attuale impedisce un rollout end-to-end globale. La prima PR bot osservata non è stata auto-mergiata.
 
 ### 2. Resilienza, least privilege e manutenzione del template — P0 / FIX_CURRENT_STEP
