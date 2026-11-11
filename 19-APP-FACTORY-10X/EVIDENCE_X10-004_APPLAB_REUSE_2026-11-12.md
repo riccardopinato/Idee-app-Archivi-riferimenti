@@ -1,6 +1,6 @@
 # X10-004 — Mappa AppLab closed-loop esistente e gap Agent 10x
 
-**Data:** 12/11/2026. **Fonte pinned:** [AppLab/main@2d57d9cea85ac03016b24e103046e47b6b6b2521a](https://github.com/riccardopinato/AppLab/commit/2d57d9cea85ac03016b24e103046e47b6f02acb5) (commit nel link autorevole; abbreviazione interna di questa riga non è hash di prova).  
+**Data:** 12/11/2026. **Fonte pinned:** [AppLab/main@2d57d9cea85ac03016b24e103046e47b6f02acb5](https://github.com/riccardopinato/AppLab/commit/2d57d9cea85ac03016b24e103046e47b6f02acb5) (commit nel link autorevole; abbreviazione interna di questa riga non è hash di prova).  
 **Metodo:** audit statico di file e documentazione di contratto, non test runtime. L'AppLab v6.2 non è certificato oltre `SELF_CANARY`.
 
 ## Componenti esistenti da riusare (non reimplementare)
