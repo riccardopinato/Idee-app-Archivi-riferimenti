@@ -1,0 +1,41 @@
+name: Validate Agent Factory ideas intake
+on:
+  pull_request:
+    paths:
+      - '18-AGENT-FACTORY/**'
+      - '11-NUOVE-IDEE/AGENT_FACTORY_FINANCE_DESKLAND_2026-11-11.md'
+      - '11-NUOVE-IDEE/INBOX_IDEE.md'
+      - '09-AGGIORNAMENTI/CHANGELOG.md'
+      - 'README.md'
+  push:
+    paths:
+      - '18-AGENT-FACTORY/**'
+      - '11-NUOVE-IDEE/AGENT_FACTORY_FINANCE_DESKLAND_2026-11-11.md'
+      - '11-NUOVE-IDEE/INBOX_IDEE.md'
+      - '09-AGGIORNAMENTI/CHANGELOG.md'
+      - 'README.md'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate canonical intake links and states
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          source=Path("11-NUOVE-IDEE/AGENT_FACTORY_FINANCE_DESKLAND_2026-11-11.md")
+          hub=Path("18-AGENT-FACTORY/README.md")
+          inbox=Path("11-NUOVE-IDEE/INBOX_IDEE.md")
+          for file in (source,hub,inbox,Path("18-AGENT-FACTORY/BOOTSTRAP_REPOS.md"),Path("18-AGENT-FACTORY/REUSE_MATRIX.md")):
+              assert file.exists() and file.read_text(encoding="utf-8").strip(), str(file)
+          for stable_id in ("AGF-2026-001","FIN-2026-001","INT-2026-001"):
+              assert stable_id in source.read_text(encoding="utf-8"), stable_id
+              assert stable_id in hub.read_text(encoding="utf-8"), stable_id
+          for repo in ("App-Factory-Agent-Core","Finance-Intelligence-Agent","Interactive-Scene-Core"):
+              assert ("https://github.com/riccardopinato/" + repo) in hub.read_text(encoding="utf-8"), repo
+          assert "READ-ONLY" in source.read_text(encoding="utf-8") or "READ_ONLY" in source.read_text(encoding="utf-8") or "READ-ONLY" in hub.read_text(encoding="utf-8") or "read-only" in source.read_text(encoding="utf-8")
+          print("AGENT_FACTORY_INTAKE_CHECK_PASS")
+          PY

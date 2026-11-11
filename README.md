@@ -1,5 +1,10 @@
 # Idee app — archivio e riferimenti
 
+## Agent Factory e Finance Intelligence — 11 novembre 2026
+
+[Nuovo hub Agent Factory](18-AGENT-FACTORY/README.md) e [dossier delle tre iniziative](11-NUOVE-IDEE/AGENT_FACTORY_FINANCE_DESKLAND_2026-11-11.md): Agent Factory Core, Finance Intelligence Agent e Interactive Scene Core, riusando **Adaptive Landscape** già esistente senza duplicarlo. Include [blueprint repository](18-AGENT-FACTORY/BOOTSTRAP_REPOS.md) e [matrice riuso](18-AGENT-FACTORY/REUSE_MATRIX.md). I [tre nuovi repository](18-AGENT-FACTORY/README.md) ora esistono con bootstrap documentale, CI e workflow di snapshot periodico in PR. Nessun codice finanziario runtime o dell'agente locale dichiarato importato.
+
+
 **Audit 360° del 05/11/2026:** [31 repository, 160 capability e 385 associazioni](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_360_RICONCILIAZIONE_2026-11-05.md). Lo snapshot del 30 ottobre riportato più sotto è storico: la fonte corrente rimane Factory CURRENT e gli HEAD GitHub. Il rapporto non certifica APK, dispositivi o Store. Le viste GIA_INTEGRATI e DA_VALUTARE si rigenerano solo dopo modifiche supportate da evidence al JSON canonico.
 
 
