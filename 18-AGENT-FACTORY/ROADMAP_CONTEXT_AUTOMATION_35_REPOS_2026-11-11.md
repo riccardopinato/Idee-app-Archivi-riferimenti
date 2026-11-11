@@ -18,13 +18,21 @@
 
 ## Prossimi 5 maxi-step — ordine di esecuzione
 
-### 1. Collaudo end-to-end dello scheduler e PR bot — P0 / BLOCKING_NOW
-- [ ] Eseguire `workflow_dispatch` in canary mirati: repo pubblico standard (180FlipCharge), repo privato (desktop-tutorial), `master` (btrader), workflow originale (`App-Factory-Agent-Core`), repo con regole rigide (World-Days o AppLab).
-- [ ] Registrare run URL, evento, head SHA, timestamp UTC, token scope e risultato; confermare l'uso del default branch.
-- [ ] Verificare la configurazione GitHub Actions «Allow GitHub Actions to create and approve pull requests», ove necessaria, senza ridurre branch protection.
-- [ ] Testare su ambiente isolato il ciclo *nuovo upstream SHA → files docs modificati → branch bot → PR → no duplicate PR → review → merge*, senza forzare cambiamenti non necessari ai repository sorgente di produzione.
-- [ ] Eseguire/registrare almeno un `schedule` reale dopo l'integrazione (la sola presenza del cron non prova l'esecuzione).
-**Gate:** evidenza di trigger reale + PR correttamente creata o NO_OP verificato, inclusi almeno un pubblico e un privato. Se un runner non dispone del permesso richiesto, stato `BLOCKED`, mai `PASS` presunto.
+### 1. Collaudo end-to-end dello scheduler e PR bot — P0 / PARTIALLY_VERIFIED + BLOCKED_ADMIN_SETTINGS
+**Risultati live dell'11/11:** [Matrice di prove effettive E2E su cinque canary](EVIDENCE_M1_CONTEXT_SYNC_CANARY_2026-11-11.md).
+- [x] Trigger reale `push` su 5/5 canary: pubblico standard, privato (nome non pubblicato qui), `master`, workflow originale e repo con regole rigide.
+- [x] Eseguito il job reale e verificato lo snapshot GitHub upstream in 5/5 branch bot, non solo job CI di contratto.
+- [x] PR **automaticamente creata da `github-actions[bot]`** su [btrader #5](https://github.com/riccardopinato/btrader/pull/5), default `master`, esclusivamente due file di metadata; [run E2E](https://github.com/riccardopinato/btrader/actions/runs/43040885976) PASS.
+- [x] Rerun del job btrader `attempt=2`: PASS, `SNAPSHOT_UNCHANGED`, numero PR bot aperte sul branch = 1; nessuna PR duplicata.
+- [x] Fail-closed effettivamente osservato su 4/5: branch e JSON/MD corretti ma `gh pr create` rifiutato da impostazione GitHub Actions. Log esempio [180FlipCharge](https://github.com/riccardopinato/180FlipCharge/actions/runs/43040857811) e [World-Days](https://github.com/riccardopinato/World-Days/actions/runs/43041253853).
+- [x] Trigger QA temporanei **rimossi** da tutti e cinque i default branch tramite PR e CI; `schedule`/`workflow_dispatch` preservati.
+- [ ] **Owner action P0:** abilitare GitHub Actions a creare PR nei 4 canary bloccati sotto `Settings → Actions → General → Workflow permissions`, senza estendere i permessi del token ad altri job; verificare la restrizione nei restanti 30.
+- [ ] Rilanciare job falliti e registrare prova completa di recovery `branch pushed → PR denied → admin setting fixed → bot PR created`.
+- [ ] Avviare almeno un vero `workflow_dispatch` per pubblico, privato, originale e ruleset (il connettore attuale non espone l'azione dispatch).
+- [ ] Raccogliere almeno una prova reale `schedule` cron, con log e differenze/NO_OP. Nessun `push` canary equivale a schedulazione.
+- [ ] Verificare un nuovo upstream SHA che aggiorna una PR bot esistente, mantenendo solo metadata e senza merge automatico.
+
+**Gate M1:** `PARTIAL_E2E_VERIFIED`, non `SCHEDULE_VERIFIED`, non `ALL_35_PR_BOT_VERIFIED`. I test push provano funzionamento del worker e idempotenza su un repo; la configurazione amministrativa attuale impedisce un rollout end-to-end globale. La prima PR bot osservata non è stata auto-mergiata.
 
 ### 2. Resilienza, least privilege e manutenzione del template — P0 / FIX_CURRENT_STEP
 - [ ] Testare fallimenti API/rate-limit, disattivazione Actions, token senza permesso PR, branch bot divergente e conflitti con `main`; fallire senza perdere snapshot precedente.
