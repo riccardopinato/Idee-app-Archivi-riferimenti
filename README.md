@@ -1,5 +1,10 @@
 # Idee app — archivio e riferimenti
 
+## App Factory 10x — programma continuo approvato (12/11/2026)
+
+[Programma strategico 10x](19-APP-FACTORY-10X/README.md): **57 task distribuiti su 8 ondate** e cinque pilastri (agente AI, Golden Flutter, AppLab QA/release, prodotti e ricavi, intelligenza trasversale), più governance continua. [Roadmap](19-APP-FACTORY-10X/ROADMAP_10X.md), [coda con dipendenze](19-APP-FACTORY-10X/PROGRAM_QUEUE.json), [router successori](scripts/factory_10x_queue.py) e [workflow di verifica quotidiana](.github/workflows/app-factory-10x-queue.yml). Stato: `PROGRAM_APPROVED / QUEUE_IMPLEMENTED`, non agent runtime o risultato 10x già certificato. Il lavoro prosegue nelle esecuzioni realmente pianificate e nei runner disponibili, con gate per merge, codice Windows, dati utente e release.
+
+
 ## Agent Factory e Finance Intelligence — 11 novembre 2026
 
 [Nuovo hub Agent Factory](18-AGENT-FACTORY/README.md) e [dossier delle tre iniziative](11-NUOVE-IDEE/AGENT_FACTORY_FINANCE_DESKLAND_2026-11-11.md): Agent Factory Core, Finance Intelligence Agent e Interactive Scene Core, riusando **Adaptive Landscape** già esistente senza duplicarlo. Include [blueprint repository](18-AGENT-FACTORY/BOOTSTRAP_REPOS.md) e [matrice riuso](18-AGENT-FACTORY/REUSE_MATRIX.md). I [tre nuovi repository](18-AGENT-FACTORY/README.md) ora esistono con bootstrap documentale, CI e workflow di snapshot periodico in PR. Nessun codice finanziario runtime o dell'agente locale dichiarato importato.

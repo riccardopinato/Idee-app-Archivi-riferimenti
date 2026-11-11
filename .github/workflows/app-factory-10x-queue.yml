@@ -1,0 +1,41 @@
+name: App Factory 10x — continuous queue (read-only)
+on:
+  pull_request:
+    paths:
+      - '19-APP-FACTORY-10X/**'
+      - 'scripts/factory_10x_queue.py'
+      - 'tests/factory_10x_queue_test.py'
+      - '.github/workflows/app-factory-10x-queue.yml'
+  push:
+    branches: [main]
+    paths:
+      - '19-APP-FACTORY-10X/**'
+      - 'scripts/factory_10x_queue.py'
+      - 'tests/factory_10x_queue_test.py'
+      - '.github/workflows/app-factory-10x-queue.yml'
+  workflow_dispatch:
+  schedule:
+    # Daily queue validation and "next ready" summary, not a code-executing agent.
+    - cron: '23 6 * * *'
+
+permissions:
+  contents: read
+concurrency:
+  group: app-factory-10x-queue-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout pinned source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Verify DAG and evidence guardrails offline
+        run: |
+          python3 scripts/factory_10x_queue.py --check
+          python3 -m unittest discover -s tests -p 'factory_10x_queue_test.py' -v
+      - name: Publish next-task proposal without writing any repo
+        shell: bash
+        run: |
+          python3 scripts/factory_10x_queue.py --next >> "$GITHUB_STEP_SUMMARY"
+          python3 scripts/factory_10x_queue.py --next --json

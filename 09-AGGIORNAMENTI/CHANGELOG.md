@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — Programma 10x continuo approvato: 57 task e 8 ondate
+- Nuova [sezione strategica](../19-APP-FACTORY-10X/README.md) con cinque pilastri prioritari e governance: Agent Core integrato con AppLab v6 (riuso prima di riscrivere); Flutter Golden packages; QA/release; prodotti e monetizzazione evidence-based; intelligenza del riuso.
+- [Roadmap completa](../19-APP-FACTORY-10X/ROADMAP_10X.md) e [queue JSON](../19-APP-FACTORY-10X/PROGRAM_QUEUE.json) con 57 task a ID stabili, otto ondate, dipendenze, repository owner, acceptance gate, rischio operativo e successori pronti.
+- [Validatore/selettore](../scripts/factory_10x_queue.py) e [workflow](../.github/workflows/app-factory-10x-queue.yml): CI e riepilogo cron quotidiano in sola lettura, nessuna auto-approvazione o falso completamento.
+- Nessun import automatico di sorgenti Windows né nuova API a pagamento/deploy/store; esecuzione di codice richiede un runner realmente connesso e gate indipendenti.
+
+
 ## 2026-11-11 — Infrastruttura Context Sync: M2–M5 implementazioni progressive
 - [Agent Core #12](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/12) merged con helper offline di recovery, status, privacy e semantic review e test negativi; non importato nei 35 workflow.
 - [Ideas #97](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/97) merged con registro dei 35 e vista Site sorgente, CI verde. Nessun deploy Site live rivendicato.
