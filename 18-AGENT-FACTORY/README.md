@@ -39,6 +39,10 @@ Ogni modifica: task/issue -> branch -> commit -> PR -> exact-head tests -> merge
 - [**Ammissione Donor/Golden**](CONTEXT_SYNC_REUSE_ADMISSION_2026-11-11.md): stato PROCESS_CANDIDATE, secondo consumer indipendente e cron reali ancora mancanti.
 - [**Recovery playbook**](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/CONTEXT_SYNC_RECOVERY_PLAYBOOK.md) e [**guardrail offline**](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/scripts/context_reliability.py), PR #12 merged con CI.
 
+## Programma strategico App Factory 10x
+
+Il programma trasversale approvato e la coda di **57 task in 8 ondate** sono in [19-APP-FACTORY-10X](../19-APP-FACTORY-10X/README.md). Il presente hub resta responsabile dei fatti e del riuso Agent Factory, mentre i task di prodotto rimangono vincolati alle proprie Product Bible/roadmap.
+
 ## Automatic maintenance — rollout 35/35 (11/11/2026)
 **Roadmap operativa aggiornata:** [Automazione contesto su tutti i 35 repo — 5 maxi-step](ROADMAP_CONTEXT_AUTOMATION_35_REPOS_2026-11-11.md).
 
