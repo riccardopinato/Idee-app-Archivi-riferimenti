@@ -1,4 +1,4 @@
-# Blueprint tecnico per i repository dedicati (non ancora creati)
+# Blueprint tecnico dei repository dedicati (bootstrap creato e mergiato 11/11/2026)
 Versione 1 — 2026-11-11
 
 ## App-Factory-Agent-Core — IN_ROADMAP
@@ -44,3 +44,9 @@ Non estrarre subito: primo step mappa dipendenze ed evidence sul codice Adaptive
 ## Template di aggiornamento obbligatorio
 Date | Repo | Main SHA | PR/issue | Modulo | Stato prima/dopo | Test/CI | Device/Provider | Licenza | Consumer | Blocker | Next action.
 Tutti i campi di evidenza non osservati devono dire NOT_VERIFIED, mai PASS presunto.
+
+## Stato implementazione bootstrap
+- [Agent Core](https://github.com/riccardopinato/App-Factory-Agent-Core): README/Product Bible/AGENTS/roadmap, status locale v0.1–v0.4, job schema DESIGN, CI/context updater.
+- [Finance Agent](https://github.com/riccardopinato/Finance-Intelligence-Agent): market-event e position schema DESIGN, data quality/risk/security docs, CI/context updater.
+- [Interactive Scene](https://github.com/riccardopinato/Interactive-Scene-Core): source extraction map, Schema-2 design schema, licences/visual QA docs, CI/context updater.
+**Import codice applicativo, provider reali, consumer tests e Golden restano separati e NON_VERIFICATI.**

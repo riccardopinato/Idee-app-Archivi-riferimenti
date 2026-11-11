@@ -14,7 +14,7 @@ Questa scheda registra una decisione di ARCHITETTURA/PORTFOLIO; non autorizza ac
 - Riferimento originale: https://github.com/BLEZZ0102/Deskland , GPL-3.0 al commit 9818b577402ff476e1b59da07970c56472713126, citato nell'archivio: reference prodotto/UX E1; codice e asset NON copiati nell'app proprietaria.
 - Agente Windows in sperimentazione locale nella conversazione del 10/11/2026: il repository GitHub non è stato identificato e nessun codice dell'agente è stato importato qui. Non dichiarare "codice pronto" senza percorso, SHA, test e licenza.
 - https://github.com/riccardopinato/btrader è un repository esistente che documenta arbitraggio crypto/Binance in Rust, NON il Finance Intelligence Agent per azioni: solo candidato da valutare come reference, nessun riuso assunto.
-- Nuovi repository di destinazione PROPOSTI: riccardopinato/App-Factory-Agent-Core, riccardopinato/Finance-Intelligence-Agent, riccardopinato/Interactive-Scene-Core. Riservati come nomi, NON ESISTENZA CONFERMATA. Verificare disponibilità e crearli con permessi appropriati prima di scrivervi.
+- Nuovi repository di destinazione PROPOSTI: riccardopinato/App-Factory-Agent-Core, riccardopinato/Finance-Intelligence-Agent, riccardopinato/Interactive-Scene-Core. **CREATI E POPOLATI 11/11/2026**; tutte le PR bootstrap #1 superate in CI e mergiate. Codice agente locale Windows e runtime Finance/Scene ancora non importati. Workflow automatici tracciano solo SHAs upstream in PR.
 
 ## Architettura: riuso e isolamento
 App-Factory-Core (policy e Golden) -> Agent Factory Core (runner/tool gateway/job state) -> agenti Developer, QA, Research, Finance.
@@ -63,3 +63,9 @@ Per ogni passaggio: issue/PR, SOURCE SHA, owner, acceptance tests, rischio, cost
 - Ogni modifica significativa nei repo dedicati aggiorna README/ROADMAP/CHANGELOG/EVIDENCE con SHA/PR/test esatti e torna a linkare questo dossier.
 - Non duplicare interi sorgenti tra repo; usare dipendenze versionate/pacchetti, contract tests, documentazione dell'API e compatibilità.
 - Stato operativo iniziale delle tre iniziative: proposta strutturata. Nessun repo nuovo, implementazione, deploy o test dichiarato senza verifica separata.
+
+## Reconciliation — 11/11/2026 (evidence GitHub)
+- AGF repo [App-Factory-Agent-Core](https://github.com/riccardopinato/App-Factory-Agent-Core) PR #1 merged, main `b697b639c0bf0e0fad416d0585c43069b22656d3`; documentazione + snapshot workflow, no imported Windows agent.
+- FIN repo [Finance-Intelligence-Agent](https://github.com/riccardopinato/Finance-Intelligence-Agent) PR #1 merged, main `d42662902f0ec21e7e337ef1c13f13b05bf1474a`; schemi dati DESIGN e nessun broker/provider attivo.
+- INT repo [Interactive-Scene-Core](https://github.com/riccardopinato/Interactive-Scene-Core) PR #1 merged, main `a5da105e4c05b1901a7e5fd2913a3b6643ace46c`; inventario consumer, nessun renderer estratto o Device/Golden certified.
+- Tutti: PR exact-head validation CI PASS, ma cron context-snapshot non ancora verificato con esecuzione schedulata/permesso bot PR; possibili configurazioni Actions richieste. Le successive SHA saranno aggiornate nei repo veri e non sovrascrivono la storia di questo intake.

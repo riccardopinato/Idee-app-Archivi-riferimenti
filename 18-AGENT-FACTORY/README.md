@@ -6,9 +6,9 @@ Dossier: [Agent Factory / Finance / Deskland](../11-NUOVE-IDEE/AGENT_FACTORY_FIN
 ## Destinazioni e stato attuale
 | ID | Repo destinazione proposto | Stato |
 |---|---|---|
-| AGF-2026-001 | riccardopinato/App-Factory-Agent-Core | DA CREARE; codice locale agente Windows ancora da acquisire |
-| FIN-2026-001 | riccardopinato/Finance-Intelligence-Agent | DA CREARE; MVP azionario read-only |
-| INT-2026-001 | riccardopinato/Interactive-Scene-Core | DA CREARE solo quando extraction seam dimostrato |
+| AGF-2026-001 | [App-Factory-Agent-Core](https://github.com/riccardopinato/App-Factory-Agent-Core) | BOOTSTRAP MERGED + CI PASS; sorgenti Windows non importate |
+| FIN-2026-001 | [Finance-Intelligence-Agent](https://github.com/riccardopinato/Finance-Intelligence-Agent) | BOOTSTRAP MERGED + CI PASS; motore finanziario non implementato |
+| INT-2026-001 | [Interactive-Scene-Core](https://github.com/riccardopinato/Interactive-Scene-Core) | BOOTSTRAP MERGED + CI PASS; estrazione renderer non avviata |
 | DESK-EXISTING | riccardopinato/Adaptive-Landscape-Android | ESISTE; code owner del prodotto Android |
 | REF-CRYPTO | riccardopinato/btrader | ESISTE; arbitraggio crypto, diverso prodotto |
 
@@ -32,3 +32,6 @@ Ogni modifica: task/issue -> branch -> commit -> PR -> exact-head tests -> merge
 4. Per FIN importa solo modelli dati anonimi/sintetici, nessuna chiave né posizioni personali.
 5. Per INT estrai dal repo Adaptive Landscape soltanto dopo benchmark, review licenze e test di consumer.
 6. Collegamento reciproco con il presente hub e con il dossier principale. Non sovrascrivere repository preesistenti.
+
+## Automatic maintenance (11/11/2026)
+Nei tre repo esistono GitHub Actions cron giornalieri (`context-snapshot.yml`) che osservano gli HEAD pubblici e aprono PR di snapshot quando cambiati. Le narrazioni e il codice si aggiornano **solo** tramite revisione fondata su prove. La sincronizzazione semantica ChatGPT dedicata non è stata programmata per limite di cinque automazioni attive; GitHub Actions rimane indipendente.
