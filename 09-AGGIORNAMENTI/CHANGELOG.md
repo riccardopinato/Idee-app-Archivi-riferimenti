@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-11 — Infrastruttura Context Sync: M2–M5 implementazioni progressive
+- [Agent Core #12](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/12) merged con helper offline di recovery, status, privacy e semantic review e test negativi; non importato nei 35 workflow.
+- [Ideas #97](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/97) merged con registro dei 35 e vista Site sorgente, CI verde. Nessun deploy Site live rivendicato.
+- Nuovi [candidate semantic-review](../18-AGENT-FACTORY/SEMANTIC_REVIEW_CANDIDATES_2026-11-11.md) e [process-admission](../18-AGENT-FACTORY/CONTEXT_SYNC_REUSE_ADMISSION_2026-11-11.md); nessun CAP/Golden promosso. Restano permission admin sui quattro repo, cron/dispatch reali, fault injection, secondo consumer e deploy.
+- Roadmap M1–M5 aggiornata con stati per evidence diversi e rollback [Agent Core](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/CONTEXT_SYNC_RECOVERY_PLAYBOOK.md).
+
+
 ## 2026-11-11 — Retry effettivi e audit di tutta la flotta di 35 repo (M1)
 - Audit statico workflow su default branch 35/35, schedule/dispatch e write scopes; nessun evento `schedule` o `workflow_dispatch` del workflow di contesto risulta eseguito alla verifica. Altri schedule/manual non vanno scambiati per questo job.
 - Rilanciati quattro job falliti: tre ancora bloccati dalla permission GitHub PR creation; Agent Core ha manifestato un nuovo difetto di configurazione bot identity prima del merge.

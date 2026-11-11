@@ -4,6 +4,12 @@ La dashboard HTML locale usa il JSON in `data/snapshot.json` come input pubblico
 
 **Aggiornamento:** l'attività ChatGPT esistente «App Factory v27 — Tempo reale» alle 09:30 Europe/Rome è configurata per proporre aggiornamenti incrementali del JSON tramite PR, senza altre automazioni. Se non può scrivere o validare, deve dichiarare esplicitamente il blocco: non esiste una sincronizzazione implicita della pagina né del browser.
 
+## Workflow Context Sync (11/11/2026)
+
+Il [registro separato `data/context_fleet.json`](data/context_fleet.json) copre 35 slot, espone soltanto i 32 repo pubblici e anonimizza gli altri tre. La vista **Repository** nel file [src/index.html](src/index.html) mostra lo stato workflow, HEAD osservato, run e PR bot con filtri; i dati manuali `localStorage` e la snapshot precedente non sono modificati. [`scripts/context_fleet.py`](../scripts/context_fleet.py) applica validazione offline e riconciliazione **solo da ricevute reali con URL**, preservando la cronologia append-only. `python3 -m unittest discover -s tests -p context_fleet_test.py -v` è in CI.
+
+**Non è aggiornamento real-time:** dati della fotografia osservata, nessun cron di refresh aggiuntivo, nessuna attivazione remota del Site/Vercel dimostrata. L'eventuale deploy segue controlli separati. **Non sostituisce** `data/snapshot.json` né il catalogo CAP.
+
 **Schema:** `schemaVersion: 1`, `generatedAt`, `sourceRepository`, `catalog_source_sha`, `factoryBaseline`, `completeness`, `data`. Ogni record supportato mantiene origine URL, SHA, orario di consultazione, stato di evidenza. `data.capabilityCounts` rappresenta **associazioni app×CAP**, non il numero di capability uniche. `data.repoObservations` registra veri commit GitHub osservati; main HEAD non certifica comportamenti o release.
 
 **Regola di prova:** SOURCE_REPORTED non significa implementato; SOURCE_CONFIRMED non significa CI; CI non significa device PASS; device PASS non significa Store Ready. Non dedurre certificazioni senza prove puntuali e separate. La versione iniziale dichiara copertura CAP parziale; per copertura integrale usare il registro canonico JSON, non inventare record.
