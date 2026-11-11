@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-11 — Collaudo live M1 GitHub Actions: 1 E2E PASS, 4 blocker admin
+- Eseguiti **5 veri workflow di snapshot** con evento `push` temporaneo limitato al file workflow su pubblico, privato (anonimizzato nel catalogo), `master`, workflow originale e branch protetto. Cinque snapshot/branch bot verificati sui commit upstream.
+- [btrader E2E run 43040885976](https://github.com/riccardopinato/btrader/actions/runs/43040885976) PASS con [PR #5](https://github.com/riccardopinato/btrader/pull/5) creata automaticamente da `github-actions[bot]`, rerun PASS e nessuna PR duplicata. La PR di metadata resta aperta per revisione.
+- Quattro casi hanno fallito **solo** `gh pr create` con `GitHub Actions is not permitted to create or approve pull requests`, pur avendo scritto branch/documenti validi. Il connettore non consente la modifica dell'impostazione admin.
+- Eliminati tutti i trigger `on.push` di QA con PR validate e merged. `schedule` e `workflow_dispatch` su default branch sono intatti ma **non ancora collaudati** in esecuzione reale.
+- [Documento evidence](../18-AGENT-FACTORY/EVIDENCE_M1_CONTEXT_SYNC_CANARY_2026-11-11.md) e [roadmap aggiornata](../18-AGENT-FACTORY/ROADMAP_CONTEXT_AUTOMATION_35_REPOS_2026-11-11.md) marcano M1 `PARTIAL_E2E_VERIFIED / BLOCKED_ADMIN_SETTING`, senza falsa certificazione sui 35 repository.
+
+
 ## 2026-11-11 — Roadmap cross-repo context sync aggiornata (35/35)
 - Verificato inventario dei 35 repository owner: 32 pubblici, 3 privati. Il workflow di snapshot è stato integrato nelle default branch di tutti: 32 nuovi rollout e hardening dei 3 repo Agent/Finance/Scene già inizializzati.
 - Ultimi gate e merge: [CamperBoss #32](https://github.com/riccardopinato/CamperBoss/pull/32) `fe3b10d`, [World-Days #88](https://github.com/riccardopinato/World-Days/pull/88) `d06cb1d`, [AppLab #215](https://github.com/riccardopinato/AppLab/pull/215) `2d57d9c`, [Notification-Control #37](https://github.com/riccardopinato/Notification-Control/pull/37) `3a38648`.
