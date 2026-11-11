@@ -1,5 +1,13 @@
 # Changelog dell'archivio
 
+## 2026-11-11 — Agent Factory / Finance Intelligence / Interactive Scene Core, intake strutturato
+
+- Decisione dell'utente: conservare come iniziative consistenti, preparare repo separati e mantenere documentazione/codice aggiornati incrementalmente.
+- Registrati ID AGF-2026-001, FIN-2026-001, INT-2026-001 nell'Inbox e nel [dossier tecnico](../11-NUOVE-IDEE/AGENT_FACTORY_FINANCE_DESKLAND_2026-11-11.md); creati [hub](../18-AGENT-FACTORY/README.md), [bootstrap](../18-AGENT-FACTORY/BOOTSTRAP_REPOS.md) e [reuse matrix](../18-AGENT-FACTORY/REUSE_MATRIX.md).
+- Riconciliato prodotto Android esistente Adaptive-Landscape-Android, senza clonarlo; Deskland GPL-3.0 reference only. btrader crypto NON identificato come Finance Agent azionario.
+- Baseline Factory v27 / Golden Index 29 pin ee72dbb1b0de2cd71bc4aac42c350853c6915159. Nessun nuovo repo creato, nessun nuovo CAP/Golden o codice agente/Finance importato; stati NOT_VERIFIED dove manca evidence.
+
+
 ## 2026-11-10 — Android Adaptive Landscape v0.4: user real-device FAIL, PR13 test pre-merge
 
 - User phone test v0.4 **FAIL**: sea pixelated/sbiadito, foam border harsh, motion weak, only manually placed dock creates sand. Root Android Canvas bitmap capped at 360px and generic WallpaperService no launcher icon coordinates.
