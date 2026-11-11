@@ -21,4 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Validate snapshot and compare basic JS syntax
-        run: python3 -m unittest discover -s tests -p 'site_snapshot_test.py' -v
+        run: |
+          python3 -m unittest discover -s tests -p 'site_snapshot_test.py' -v
+          python3 -m unittest discover -s tests -p 'context_fleet_test.py' -v
+          python3 scripts/context_fleet.py --check
