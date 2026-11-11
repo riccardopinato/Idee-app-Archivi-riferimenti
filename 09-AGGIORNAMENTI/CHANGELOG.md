@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-11 — Roadmap cross-repo context sync aggiornata (35/35)
+- Verificato inventario dei 35 repository owner: 32 pubblici, 3 privati. Il workflow di snapshot è stato integrato nelle default branch di tutti: 32 nuovi rollout e hardening dei 3 repo Agent/Finance/Scene già inizializzati.
+- Ultimi gate e merge: [CamperBoss #32](https://github.com/riccardopinato/CamperBoss/pull/32) `fe3b10d`, [World-Days #88](https://github.com/riccardopinato/World-Days/pull/88) `d06cb1d`, [AppLab #215](https://github.com/riccardopinato/AppLab/pull/215) `2d57d9c`, [Notification-Control #37](https://github.com/riccardopinato/Notification-Control/pull/37) `3a38648`.
+- Aggiunta la [roadmap operativa 35 repo](../18-AGENT-FACTORY/ROADMAP_CONTEXT_AUTOMATION_35_REPOS_2026-11-11.md) con cinque maxi-step e i gate di rollout; priorità immediata al collaudo `schedule`/`workflow_dispatch` e creazione PR bot, ancora NON_VERIFICATI. CI delle PR non equivale a funzionamento schedulato.
+- Nessun progresso attribuito al runtime Windows AppFactoryAgent, Finance trading, Interactive Scene renderer, device/store, Golden certification o aggiornamento semantico automatico. Factory baseline riconsultata `c5adc147046beb7024629466d10eeb799c3c2619`, Master v27, Index v29.
+
+
 ## 2026-11-11 — Tre repo Agent/Finance/Scene creati e documentati
 
 - AGF, FIN e INT bootstrap #1 mergiate con CI PASS sui commit esatti: [AGF](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/1), [FIN](https://github.com/riccardopinato/Finance-Intelligence-Agent/pull/1), [INT](https://github.com/riccardopinato/Interactive-Scene-Core/pull/1).
