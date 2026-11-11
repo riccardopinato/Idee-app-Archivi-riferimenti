@@ -25,7 +25,7 @@ Un trigger `push` provato è evidenza del job e dei suoi permessi **per quell'ev
 - I quattro branch bot pubblicati nei test con blocco contengono le versioni allineate degli upstream: `App-Factory-Core/main@c5adc147046beb7024629466d10eeb799c3c2619` e `Idee-app-Archivi-riferimenti/main@c2a1aa39766828d60ec5994f489f268a4a9c8bf8` al momento dell'esecuzione.
 - Il workflow Agent Core osserva anche `AppLab/main@2d57d9cea85ac03016b24e103046e47b6f02acb5`.
 - La PR di btrader contiene **esclusivamente** `docs/APP_FACTORY_CONTEXT.json` e `docs/APP_FACTORY_CONTEXT.md`, con SHA upstream e date corrispondenti alla fonte GitHub. Nessun codice di trading è stato aggiornato dal workflow.
-- Su btrader il secondo tentativo del run non ha creato una seconda PR: conteggio delle PR aperte sul branch bot = **1**. L'ulteriore scenario reale di cambio upstream dopo il retry non è ancora stato eseguito.
+- Su btrader il secondo tentativo del run non ha creato una seconda PR: conteggio delle PR aperte sul branch bot = **1**. Dopo l'integrazione del rapporto M1, `Idee-app-Archivi-riferimenti/main` è avanzato a `9a32d3cf6ea960cbc6e5ff15da2df3b7f74a4e39`. Il **terzo tentativo effettivo** del medesimo [run 43040885976](https://github.com/riccardopinato/btrader/actions/runs/43040885976) ha aggiornato la **stessa** [PR #5](https://github.com/riccardopinato/btrader/pull/5), nuova HEAD `1bfb3d644a14908ad6d30ceaeb0f9b59e58af68c`, e i due file JSON/MD ora riportano tale SHA. Stato PASS `UPSTREAM_SHA_CHANGE / EXISTING_PR_RECONCILED / IDEMPOTENT`, con un'unica PR bot aperta.
 - I cinque file workflow sui default branch sono stati ricontrollati dopo il cleanup: trigger temporaneo `push` **assente**, `schedule` e `workflow_dispatch` **presenti**; nessuna regola di branch protection è stata abbassata.
 
 ## Root cause verificata su quattro repository
@@ -39,6 +39,7 @@ Dopo l'abilitazione, usare `rerun failed job` sulle esecuzioni esistenti o `work
 - [x] Lanciare un job snapshot reale su pubblico, privato, `master`, originale e ruleset rigido tramite *push canary* delimitato.
 - [x] Validare snapshot con source SHA e branch bot, comportamento fail-closed su permesso negato.
 - [x] Confermare PR Actions realmente creata almeno su un consumer e retry senza duplicazione.
+- [x] Cambiamento upstream vero e successiva riconciliazione automatica della PR bot #5 già aperta (`attempt=3` PASS), senza nuova PR.
 - [x] Rimuovere trigger temporaneo attraverso CI e PR; confermare assenza di `on.push` in tutti e cinque.
 - [ ] Abilitare opzione Actions create PR nei **quattro canary bloccati** e ripetere gli stessi job, senza confondere rerun con schedule.
 - [ ] Eseguire e registrare `workflow_dispatch` effettivo su pubblico, privato e originale (tramite UI o tool con permessi).

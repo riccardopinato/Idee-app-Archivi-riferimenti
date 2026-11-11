@@ -5,6 +5,7 @@
 - [btrader E2E run 43040885976](https://github.com/riccardopinato/btrader/actions/runs/43040885976) PASS con [PR #5](https://github.com/riccardopinato/btrader/pull/5) creata automaticamente da `github-actions[bot]`, rerun PASS e nessuna PR duplicata. La PR di metadata resta aperta per revisione.
 - Quattro casi hanno fallito **solo** `gh pr create` con `GitHub Actions is not permitted to create or approve pull requests`, pur avendo scritto branch/documenti validi. Il connettore non consente la modifica dell'impostazione admin.
 - Eliminati tutti i trigger `on.push` di QA con PR validate e merged. `schedule` e `workflow_dispatch` su default branch sono intatti ma **non ancora collaudati** in esecuzione reale.
+  - Riconciliazione ulteriormente verificata su btrader: un nuovo commit reale di Idee ha aggiornato la PR bot #5 già aperta (`run attempt=3`, success), senza PR duplicate o altri file modificati.
 - [Documento evidence](../18-AGENT-FACTORY/EVIDENCE_M1_CONTEXT_SYNC_CANARY_2026-11-11.md) e [roadmap aggiornata](../18-AGENT-FACTORY/ROADMAP_CONTEXT_AUTOMATION_35_REPOS_2026-11-11.md) marcano M1 `PARTIAL_E2E_VERIFIED / BLOCKED_ADMIN_SETTING`, senza falsa certificazione sui 35 repository.
 
 

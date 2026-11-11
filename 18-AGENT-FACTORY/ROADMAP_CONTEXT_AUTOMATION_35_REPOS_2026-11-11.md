@@ -30,7 +30,7 @@
 - [ ] Rilanciare job falliti e registrare prova completa di recovery `branch pushed → PR denied → admin setting fixed → bot PR created`.
 - [ ] Avviare almeno un vero `workflow_dispatch` per pubblico, privato, originale e ruleset (il connettore attuale non espone l'azione dispatch).
 - [ ] Raccogliere almeno una prova reale `schedule` cron, con log e differenze/NO_OP. Nessun `push` canary equivale a schedulazione.
-- [ ] Verificare un nuovo upstream SHA che aggiorna una PR bot esistente, mantenendo solo metadata e senza merge automatico.
+- [x] Verificato nuovo upstream SHA reale: dopo il merge di [Ideas PR #94](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/94), il rerun `attempt=3` del [workflow btrader](https://github.com/riccardopinato/btrader/actions/runs/43040885976) ha aggiornato i due file della **PR #5** esistente allo SHA Idee `9a32d3cf6ea960cbc6e5ff15da2df3b7f74a4e39`, conservando una sola PR bot.
 
 **Gate M1:** `PARTIAL_E2E_VERIFIED`, non `SCHEDULE_VERIFIED`, non `ALL_35_PR_BOT_VERIFIED`. I test push provano funzionamento del worker e idempotenza su un repo; la configurazione amministrativa attuale impedisce un rollout end-to-end globale. La prima PR bot osservata non è stata auto-mergiata.
 
