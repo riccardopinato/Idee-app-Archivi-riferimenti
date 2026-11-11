@@ -125,9 +125,17 @@
       "acceptance": "Inventario HEAD/AGENTS/Product Bible/roadmap e prove con SHA; AppLab riusato, non duplicato",
       "impact": 5,
       "effort": 1,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/100",
+          "source_sha": "ae9a491d3c544bccc105178f84f154076ad19d7d"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "completed_on": "2026-11-12"
     },
     {
       "id": "X10-002",
@@ -173,9 +181,17 @@
       "acceptance": "Mappa closed-loop v5/v6, CI/evidence, costo, missing integration; nessuna duplicazione",
       "impact": 5,
       "effort": 2,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/100",
+          "source_sha": "2d57d9cea85ac03016b24e103046e47b6f02acb5"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "completed_on": "2026-11-12"
     },
     {
       "id": "X10-005",
