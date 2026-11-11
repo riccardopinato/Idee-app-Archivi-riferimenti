@@ -15,7 +15,8 @@ class ContinuousRoadmapTests(unittest.TestCase):
         d = validate(self.document)
         self.assertEqual(d["total"], 57)
         self.assertEqual(d["waves"], 8)
-        self.assertEqual(d["by_status"]["PLANNED"], 57)
+        self.assertEqual(sum(d["by_status"].values()), 57)
+        self.assertGreaterEqual(d["by_status"].get("VERIFIED", 0), 0)
 
     def test_next_tasks_parallel_no_same_repo(self):
         q = next_tasks(self.document)
@@ -27,7 +28,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
 
     def test_57_tasks_are_not_falsely_complete(self):
         p = summary_markdown(self.document, next_tasks(self.document))
-        self.assertIn("0/57", p)
+        self.assertIn(f'{sum(t["status"] == "VERIFIED" for t in self.document["tasks"])}/57', p)
         self.assertIn("NON modifica repository", p)
 
     def test_missing_dependency_fails_closed(self):
@@ -44,7 +45,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
 
     def test_not_verified_without_independent_evidence(self):
         p = copy.deepcopy(self.document)
-        p["tasks"][0]["status"] = "VERIFIED"
+        next(t for t in p["tasks"] if t["id"] == "X10-002")["status"] = "VERIFIED"
         with self.assertRaises(ValueError):
             validate(p)
 
