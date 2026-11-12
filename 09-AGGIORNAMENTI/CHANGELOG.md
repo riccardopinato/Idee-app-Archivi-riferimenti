@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-019 generatore di starter Flutter
+- Inserito generator Python di sorgenti Flutter localizzate IT/EN, token Material 3, widget test e validazioni di sicurezza/non overwrite: [dossier](../19-APP-FACTORY-10X/FLUTTER_STARTER_KIT_X10-019.md).
+- Stato prima della PR/review: proposta di implementation SOURCE, non consumer Flutter compilato o Golden certificato. La coda X10-019 resta PLANNED fino alla riconciliazione post CI.
+
+
 ## 2026-11-12 — X10-027 e X10-040 verificati nello scope documentale
 - [AppLab PR #217](https://github.com/riccardopinato/AppLab/pull/217), merge `7d07e0fa`: audit QA/release e mappa riuso dei gate esistenti, con CI verde; nessuna nuova run certificata.
 - [Idee PR #110](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/110), merge `db8bf17f`: architettura CAP/Golden/AppLab e boundary del monitor diff-aware, con CI verde; nessun monitor runtime installato.
