@@ -1234,7 +1234,8 @@
       "owner_repo": "riccardopinato/App-Factory-Agent-Core",
       "dependencies": [
         "X10-014",
-        "X10-031"
+        "X10-031",
+        "X10-015"
       ],
       "title": "Pilota sviluppo feature A",
       "acceptance": "Una feature non critica end-to-end su repo scelto, PR e QA indipendente",
@@ -1486,6 +1487,17 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/106"
       ],
       "note": "Agent gateway and package contract complete as source+CI only. No physical runtime or certified multi-consumer Golden."
+    },
+    {
+      "at": "2026-11-12",
+      "type": "DEPENDENCY_CORRECTION",
+      "task_id": "X10-046",
+      "added_dependency": "X10-015",
+      "reason": "An actual source-authenticated Windows agent pilot cannot be admitted before real end-to-end local worker crash/resume verification. X10-015 itself depends on blocked X10-008 sanitized original agent source. This corrects readiness routing, not execution or feature approval.",
+      "refs": [
+        "https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/X10-046_047_TWO_REPO_PILOT_HANDOFF.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/19-APP-FACTORY-10X/PROGRAM_QUEUE.json"
+      ]
     }
   ]
 }
