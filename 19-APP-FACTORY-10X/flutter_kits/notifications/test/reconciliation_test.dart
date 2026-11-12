@@ -204,7 +204,7 @@ void main() {
   });
 
   test('duplicate IDs and impossible civil time reject the whole batch', () {
-    const planner = ReconciliationPlanner(FakeTz());
+    final planner = ReconciliationPlanner(FakeTz());
     expect(() => planner.plan([fixed(), fixed()], env()), throwsFormatException);
     final invalid = StoredReminderIntent(
       id: 'invalid_date',
