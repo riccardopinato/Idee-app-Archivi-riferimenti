@@ -31,9 +31,11 @@ Una task `VERIFIED` richiede `gate_reviewed: true`, almeno una receipt `{kind, u
 Non dichiarare mai `continuous_code_execution` sulla sola base del job read-only di GitHub. Distingui `SCHEDULE_INSTALLED` da `SCHEDULE_RUNTIME_VERIFIED` dopo il primo run.
 
 ## 5. Parallelismo e resilienza
-- Max 3 task selezionati e owner repo distinti. Nessun writer parallelo sullo stesso repo, nessun merge a catena senza validazione head.
+- **Nessun limite numerico artificiale ai task paralleli**: selezionare TUTTI i task READY compatibili nel DAG. La capacità reale di runner, tool, token, rate-limit e risorse determina quanti si eseguono simultaneamente, non una regola `max_parallel=3`. I task READ_ONLY possono lavorare contemporaneamente anche sullo stesso repository.
+- Due task `PR_GATED` sullo stesso repository possono lavorare simultaneamente solo quando `write_paths` è esplicito e non sovrapposto, `scope_reviewed=true` in entrambi e i branch sono distinti. Senza prove di isolamento si coordinano i writer, mai due PR che si sovrascrivono o merge senza verifica exact-head.
+- **Rimpiazzo immediato del blocco:** task `BLOCKED` non riserva slot né lock di scrittura; registrare motivo e prova, rilanciare `--next` e avviare tutti i nuovi ready indipendenti. Una task `IN_PROGRESS` riserva invece il suo eventuale write-scope. Nessun busy wait in presenza di gate umani.
 - Ogni ramo ha budget di scope; in caso di fail, retry limitato e motivato, non loop infinito. Non fare force-push, delete token/branch, override protections o modifiche non reversibili.
-- Seconda lane procede se la prima è bloccata da un gate umano; non mascherare un blocco di sicurezza.
+- Tutte le lane indipendenti proseguono quando una è bloccata da un gate umano; non mascherare un blocco di sicurezza.
 - Per failure di Actions: conservare last known good, distinguere PR bot denied da snapshot dato riuscito e dalla sola CI, registrare URL reale.
 
 ## 6. Loop senza fine della roadmap
