@@ -1115,11 +1115,16 @@
           "kind": "CI",
           "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/129",
           "source_sha": "6d1e0bbcb5b79474d169bcd66f2feaf2c14f3634"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/133",
+          "source_sha": "fd5f976774eec8997e336a32d713e55f0b41e52d"
         }
       ],
       "blocker": null,
       "gate_reviewed": true,
-      "review_scope": "SOURCE+PYTHON_CI only: deterministic advisory rank of X10-043 scoped proposals by impact, cross-app reuse, evidence, risk, effort and dependency estimates; source and consumer SHA inventory staleness checks, no auto approvals, consumers, Golden promotion, live CI/provider verified licenses, market demand, measured time savings or realtime UI."
+      "review_scope": "SOURCE+PYTHON_CI only. Original PR #129 advisory ranking plus post-merge P2 regression fix PR #133: preserves X10-043 upstream CAP stale, block and human rejection/provenance reasons, rejects forged approved states and puts denied items below review backlog. No real authenticated approval, consumer PR, runtime/physical verification, Golden promotion or validated impact data."
     },
     {
       "id": "X10-045",
