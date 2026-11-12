@@ -85,7 +85,7 @@ void main() {
   });
 
   test('app start leaves already scheduled instant unchanged; not a receipt', () {
-    final row = const ReconciliationPlanner(FakeTz()).plan(
+    final row = ReconciliationPlanner(FakeTz()).plan(
       [fixed(scheduled: future)],
       env(trigger: ReconcileTrigger.appStart),
     ).single;
@@ -94,7 +94,7 @@ void main() {
   });
 
   test('timezone change preserves fixed UTC instant', () {
-    final row = const ReconciliationPlanner(FakeTz()).plan(
+    final row = ReconciliationPlanner(FakeTz()).plan(
       [fixed()],
       env(trigger: ReconcileTrigger.deviceTimezoneChanged, zone: 'Asia/Tokyo'),
     ).single;
@@ -157,7 +157,7 @@ void main() {
       healthy(permission: false),
       healthy(channel: false),
     ]) {
-      final row = const ReconciliationPlanner(FakeTz()).plan(
+      final row = ReconciliationPlanner(FakeTz()).plan(
         [fixed()], env(health: h),
       ).single;
       expect(row.action, anyOf(
@@ -174,7 +174,7 @@ void main() {
       healthy(checkedAt: now.subtract(const Duration(hours: 1))),
       healthy(scheduler: false),
     ]) {
-      final row = const ReconciliationPlanner(FakeTz()).plan(
+      final row = ReconciliationPlanner(FakeTz()).plan(
         [fixed()], env(health: h),
       ).single;
       expect(row.action, anyOf(
@@ -186,16 +186,16 @@ void main() {
 
   test('exact alarm fallback is never implicit', () {
     final context = env(health: healthy(exact: false));
-    final strict = const ReconciliationPlanner(FakeTz())
+    final strict = ReconciliationPlanner(FakeTz())
         .plan([fixed(exact: true)], context).single;
     expect(strict.action, ReconcileAction.blockedExactAlarm);
-    final consent = const ReconciliationPlanner(FakeTz())
+    final consent = ReconciliationPlanner(FakeTz())
         .plan([fixed(exact: true, fallback: true)], context).single;
     expect(consent.action, ReconcileAction.proposeInexactSchedule);
   });
 
   test('disabled user reminders and expired records are preserved', () {
-    final items = const ReconciliationPlanner(FakeTz()).plan([
+    final items = ReconciliationPlanner(FakeTz()).plan([
       fixed(enabled: false),
       fixed(id: 'expired', at: now),
     ], env());
@@ -223,7 +223,7 @@ void main() {
 
   test('reconciliation batch upper bound rejects massive replays', () {
     final items = List.generate(129, (index) => fixed(id: 'id_${index}'));
-    expect(() => const ReconciliationPlanner(FakeTz())
+    expect(() => ReconciliationPlanner(FakeTz())
         .plan(items, env()), throwsFormatException);
   });
 }
