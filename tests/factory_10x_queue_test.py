@@ -130,7 +130,8 @@ class ContinuousRoadmapTests(unittest.TestCase):
             validate(p)
 
     def test_not_verified_without_independent_evidence(self):
-        p = copy.deepcopy(self.document)
+        # Use an unverified fixture: the live X10-002 may already carry valid receipts.
+        p = self.fixture_baseline()
         next(t for t in p["tasks"] if t["id"] == "X10-002")["status"] = "VERIFIED"
         with self.assertRaises(ValueError):
             validate(p)
