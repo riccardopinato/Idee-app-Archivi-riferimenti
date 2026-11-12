@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-002 shortlist commerciale proposta in PR
+- [Dossier X10-002](../19-APP-FACTORY-10X/EVIDENCE_X10-002_COMMERCIAL_SHORTLIST_2026-11-12.md): selezionati Battery Guard, Rotate 180° e World Days (condizionale) da documentazione pinned, con Cooking Anime come possibile sostituto.
+- Task ancora PLANNED fino a review/CI/merge e riconciliazione della coda; domanda, retention, ricavi e budget non misurati/approvati; successori X10-034 e X10-035 restano separati.
+
 ## 2026-11-12 — X10-010 e X10-017 gate sorgente+CI integrati
 - [Agent Core PR #15](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/15): gateway di autorizzazione offline, modalità consentite, job/idempotency, exact source SHA e scope, receipt scoped; review e CI (fix dei rilievi) verificati. Nessun agente Windows runtime importato e nessun job eseguito.
 - [Idee-app PR #106](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/106): contratto di package Golden con licenza, SDK, donor/consumer CI e gate rigorosi; nessun package Flutter estratto o certificato.
