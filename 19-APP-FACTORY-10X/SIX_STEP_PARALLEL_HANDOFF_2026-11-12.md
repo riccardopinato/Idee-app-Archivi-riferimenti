@@ -2,6 +2,8 @@
 
 Date: 12 November 2026. Factory baseline `App-Factory-Core@c5adc147046beb7024629466d10eeb799c3c2619`, Master v27 / Index v29.
 
+**Nota di riconciliazione X10-035:** la shortlist originaria Battery/Rotate/World Days riportata storicamente in questa scheda è stata superata **come proposta** dal [confronto 12 novembre](X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md): Rotate, Omni Cleaner, Battery come primi esperimenti da valutare; World Days organico/editoriale. Nessuna app approvata, budget solo come tetto €100, spesa automatica €0.
+
 ## Actual technical artifacts and remaining gates
 
 | Task | Current execution artifact | Boundary / reason not marked VERIFIED |

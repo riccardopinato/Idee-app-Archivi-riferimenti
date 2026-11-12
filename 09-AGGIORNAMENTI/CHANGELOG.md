@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-035: tetto €100, confronto commerciale, nessuna approvazione prodotti
+- [Audit commerciale trasversale](../19-APP-FACTORY-10X/X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md): Rotate 180°, Android Omni Cleaner e Battery Guard proposti; World Days in fase organica condizionale. Il proprietario ha confermato SOLO il tetto massimo 100 EUR, autorizzazione di spesa automatica 0 EUR; nessun GO/NO-GO finale, nessuna campagna, nessuna pubblicazione, nessun billing nuovo. X10-035 rimane PLANNED.
+
 ## 2026-11-12 — X10-026 Anna #307 and X10-032 AppLab #230 source/CI merges documented
 - [Six-step handoff](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md): Anna #307 MERGED after 4/4 CI, AppLab #230 MERGED after 7/7; CamperBoss #33 DRAFT with source Flutter CI only, no second consumer approval/physical QA. Source-only privacy prototype #147 and agent pilot contract #23 already merged. Human-gate six-task status remains PLANNED; checkpoint still 34 VERIFIED / 22 PLANNED / 1 BLOCKED.
 

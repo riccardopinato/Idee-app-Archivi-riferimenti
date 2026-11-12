@@ -2,24 +2,78 @@
   "schema_version": 1,
   "program": "APP_FACTORY_10X",
   "task_id": "X10-035",
-  "status": "AWAITING_OWNER_GO_NO_GO_AND_BUDGET",
+  "status": "BUDGET_CAP_CONFIRMED_PRODUCTS_UNDECIDED",
   "authority": "PROPOSAL_ONLY",
   "owner_approved": false,
   "approved_budget_eur": null,
   "approved_products": [],
   "candidate_products": [
-    {"id": "Battery_Guard", "role": "pilot_primary", "proposal": "GO_CANDIDATE", "release_status": "HUMAN_QA_REQUIRED"},
-    {"id": "180FlipCharge", "role": "small_native_control", "proposal": "GO_CANDIDATE", "release_status": "DEVICE_AND_PLAY_REVIEW_REQUIRED"},
-    {"id": "World-Days", "role": "conditional_editorial", "proposal": "CONDITIONAL", "release_status": "EDITORIAL_SOURCES_AND_RETENTION_REQUIRED"}
+    {
+      "id": "180FlipCharge",
+      "role": "near_term_speed_and_upfront_price_test",
+      "proposal": "UNAPPROVED_FOR_VALIDATION_ONLY",
+      "release_status": "DEVICE_AND_PLAY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "Android-Omni-Cleaner",
+      "role": "near_term_broad_utility_challenger",
+      "proposal": "UNAPPROVED_FOR_VALIDATION_ONLY",
+      "release_status": "STORE_SIGNING_PROVIDER_AND_QA_REQUIRED"
+    },
+    {
+      "id": "Battery_Guard",
+      "role": "near_term_freemium_lifetime_challenger",
+      "proposal": "UNAPPROVED_FOR_VALIDATION_ONLY",
+      "release_status": "OEM_TRUSTED_PURCHASE_AND_PLAY_INTERNAL_REQUIRED"
+    },
+    {
+      "id": "World-Days",
+      "role": "editorial_organic_conditional_future",
+      "proposal": "DEFERRED_FROM_FIRST_PAID_TEST_PROPOSAL",
+      "release_status": "EDITORIAL_SOURCES_AND_RETENTION_REQUIRED"
+    }
   ],
   "explicit_restrictions": [
     "NO_PAID_CAMPAIGNS",
     "NO_ANALYTICS_OR_CONSENT_SDK_ACTIVATION",
     "NO_STORE_RELEASE",
     "NO_BILLING_CHANGES",
-    "NO_PRODUCT_BIBLE_SCOPE_UPGRADE"
+    "NO_PRODUCT_BIBLE_SCOPE_UPGRADE",
+    "BUDGET_CEILING_IS_NOT_SPENDING_AUTHORIZATION",
+    "NO_PRODUCT_GO_NO_GO_YET",
+    "NO_AUTOMATIC_EXPENDITURE"
   ],
-  "basis": ["X10-002", "X10-034"],
+  "basis": [
+    "X10-002",
+    "X10-034"
+  ],
   "analytics_task_id": "X10-036",
-  "analytics_implementation_status": "SOURCE_PROTOTYPE_NOT_ENABLED"
+  "analytics_implementation_status": "SOURCE_PROTOTYPE_NOT_ENABLED",
+  "budget_ceiling_confirmed_eur": 100,
+  "budget_ceiling_currency": "EUR",
+  "budget_ceiling_owner_confirmed": true,
+  "automatic_spend_authorized": false,
+  "expenditure_authorized_eur": 0,
+  "spend_requires_explicit_separate_approval": true,
+  "product_selection_status": "COMPARISON_COMPLETE_PENDING_EXPLICIT_OWNER_PRODUCT_GO_NO_GO",
+  "comparison_report": "X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md",
+  "comparison_candidates": [
+    "Android-Omni-Cleaner",
+    "Battery_Guard",
+    "180FlipCharge",
+    "Send-to-pc",
+    "PDF-Unifier",
+    "Notification-Control",
+    "Phone-Guard",
+    "FocuSense",
+    "World-Days",
+    "TasteAI",
+    "In-Cucina-con-gli-Anime",
+    "Notes-Ecosistema",
+    "Agenda-per-Anna",
+    "CamperBoss",
+    "TrailPath",
+    "Wonderlog",
+    "WEB-012 Sun & Moon"
+  ]
 }
