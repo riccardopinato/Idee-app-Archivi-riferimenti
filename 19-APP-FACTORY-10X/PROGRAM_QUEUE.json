@@ -704,9 +704,17 @@
       "acceptance": "Compatibilità inter-kits, fixture demo, matrice di esclusione/feature flags",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/131",
+          "source_sha": "3857d4ec3b89b7a73cb5b73f30d9c1c7e19d00d6"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+DART_CI only: pure Dart composition package with real profile, identity, backup, notifications path-dependencies, deterministic feature flags and product/provider/native exclusions, 5/5 Dart test matrix green. No Flutter UI/platform runner, consumer app wiring, OAuth callbacks, physical notification/backup or Store/Play tests. Notification kit X10-023 remains PLANNED for native platform tests."
     },
     {
       "id": "X10-026",
