@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-031 Provenienza APK/AAB verificata SOURCE+CI (29/57)
+- [AppLab PR #225](https://github.com/riccardopinato/AppLab/pull/225) MERGED `a1ddbbe4be15b8cadd7f3614f4ec7a33e12e6658`; exact head `107e005d2d6ee5a3d389b50f3fc9321e091d4edb` con 7/7 workflow CI PASS, review Codex senza rilievi e tre thread review precedenti risolti. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-031_SIGNED_PROVENANCE_SOURCE_CI_2026-11-12.md) — binding sorgente/hash/firma/versionCode/ABI nel codice, con fixture sintetiche e inspector iniettati. **Nessun APK/AAB realmente firmato o pubblicato.** Registro 29 VERIFIED / 27 PLANNED / 1 BLOCKED, X10-032 HUMAN_GATE ora eleggibile; X10-033 attende X10-029/030.
+
 ## 2026-11-12 — X10-014 PR Agent + X10-018 Golden harness (28/57)
 - [Agent Core #21](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/21) MERGED `82d58f1d7e288a8aa50ad2ee20d8fe7848f18d67` da head `c535f8d05c6d6f4df149b0bad9f375d73c885b18`; Python CI e review Codex exact-head senza rilievi dopo correzione dei due P1. [Dossier X10-014](../19-APP-FACTORY-10X/EVIDENCE_X10-014_AGENT_PR_SOURCE_CI_2026-11-12.md). PR draft adapter riusa AppLab v6.0E, non prova worker Windows, PR live o auto-merge.
 - [AppLab #223](https://github.com/riccardopinato/AppLab/pull/223) MERGED `25a298b5fe3b2ee093e7aa4fda8c690f27f027dc` da head `f601f2fec36b32ec44a73c6289daf161de32dba5`; 7/7 CI, WebRTC E2E al rerun dopo timeout iniziale, review exact-head pulita. [Dossier X10-018](../19-APP-FACTORY-10X/EVIDENCE_X10-018_COMPAT_HARNESS_SOURCE_CI_2026-11-12.md). Compatibilità solo source/CI, non consumer fisici o Golden certificate.
