@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-027 e X10-040 verificati nello scope documentale
+- [AppLab PR #217](https://github.com/riccardopinato/AppLab/pull/217), merge `7d07e0fa`: audit QA/release e mappa riuso dei gate esistenti, con CI verde; nessuna nuova run certificata.
+- [Idee PR #110](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/110), merge `db8bf17f`: architettura CAP/Golden/AppLab e boundary del monitor diff-aware, con CI verde; nessun monitor runtime installato.
+- Coda **12 VERIFIED / 44 PLANNED / 1 BLOCKED**; successori X10-028 e X10-041 eleggibili, ancora PLANNED. Nessun agent Windows importato o release/Golden promossi.
+
+
 ## 2026-11-12 — X10-040 proposta di architettura knowledge/reuse
 - [Dossier X10-040](../19-APP-FACTORY-10X/EVIDENCE_X10-040_CROSS_APP_KNOWLEDGE_ARCHITECTURE_2026-11-12.md): mappate autorità CAP/Donor/Golden, snapshot SHA, intelligence AppLab e proposta di monitor diff-aware X10-041 senza database parallelo.
 - Source audit soltanto; X10-040 rimane PLANNED fino a review CI e riconciliazione della coda. Nessun consumer o Golden aggiornato.
