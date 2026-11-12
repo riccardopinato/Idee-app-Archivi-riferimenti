@@ -848,9 +848,17 @@
       "acceptance": "Domanda, alternative, differenziazione, canali organic, dati/quote con fonti",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/114",
+          "source_sha": "025e858b6947f443e3d4b4762b7601f15a4a6c9d"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "READ_ONLY public competitor research with dated product URLs and organic channel hypotheses. Google Play competitor install totals are third-party historical signals, not our installs, keyword volumes, conversion, paid demand, retention or revenues. No budget or release; X10-035 remains HUMAN_GATE."
     },
     {
       "id": "X10-035",
