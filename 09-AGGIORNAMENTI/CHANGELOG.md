@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-046: riparata dipendenza effettiva dal test Windows X10-015
+- Il pilot A dell'agente richiede anche X10-015 (E2E PC Windows) prima di essere READY. X10-015 resta in attesa del sorgente X10-008 BLOCKED. Nessuna modifica ad approvazioni, repo consumer, contatori VERIFIED o dati sensibili; soltanto correzione DAG e audit trail.
+
 ## 2026-11-12 — X10-023 Flutter plugin notification bridge (source-only; not verified on device)
 - [Flutter notification adapter](../19-APP-FACTORY-10X/flutter_kits/notifications_flutter/README.md): new optional Android plugin bridge to existing pure-Dart policy, local notification permission/channel/exact-alarm probes, IANA timezone scheduling and stable ID/cancel, Flutter CI/test fake device. No real device/FGS/Play certification or consumer integration; X10-023 remains PLANNED.
 

@@ -1,5 +1,7 @@
 # App Factory 10x — programma continuo
 
+**X10-046 DAG correction:** il pilota agente A richiede **X10-015 E2E Windows reale**, a sua volta dipendente da **X10-008 sorgente originale ancora BLOCKED**. Un adapter o PR creato solo via Chat non prova un worker AI Windows; X10-046/047 non vanno segnati READY finché tale evidenza manca. Nessuna promozione fittizia.
+
 **X10-023 Flutter Android native adapter SOURCE CANDIDATE:** [new real plugin-backed Flutter bridge](flutter_kits/notifications_flutter/README.md) with pinned Flutter CI and fake-device unit cases, no consumer/native physical device certification. Task stays PLANNED until actual Android receiver/platform/phone evidence.
 
 **X10-035 budget (confermato solo il limite; spesa automatica vietata):** [Tetto 100€ e confronto trasversale delle app](X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md). Scelta prodotti NON approvata. X10-035 e X10-036 restano PLANNED; nessun acquisto/SDK/store attivato.
