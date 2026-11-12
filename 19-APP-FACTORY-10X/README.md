@@ -1,5 +1,7 @@
 # App Factory 10x — programma continuo
 
+**X10-023 Flutter Android native adapter SOURCE CANDIDATE:** [new real plugin-backed Flutter bridge](flutter_kits/notifications_flutter/README.md) with pinned Flutter CI and fake-device unit cases, no consumer/native physical device certification. Task stays PLANNED until actual Android receiver/platform/phone evidence.
+
 **X10-035 budget (confermato solo il limite; spesa automatica vietata):** [Tetto 100€ e confronto trasversale delle app](X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md). Scelta prodotti NON approvata. X10-035 e X10-036 restano PLANNED; nessun acquisto/SDK/store attivato.
 
 **Six-step parallel lane checkpoint (NON CERTIFICATO; Anna #307 + AppLab #230 SOURCE+CI MERGED):** [X10-026, X10-032, X10-035/036, X10-046/047](SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md) — consumer PR reali, Physical/Play planner, business decision draft, privacy metrics pure Dart e agent pilot source gate. Human/runtime/Store gates non promossi.
