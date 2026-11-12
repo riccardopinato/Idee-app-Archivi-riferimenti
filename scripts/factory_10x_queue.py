@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""App Factory 10x continuous roadmap: offline DAG validator and bounded next-task selector.
+"""App Factory 10x continuous roadmap: offline DAG validator and uncapped safe-ready selector.
 
 No GitHub writes, no network, no async agents, no automatic approval/promotion.
 This is a durable executable queue contract, NOT a self-resuming ChatGPT worker.
@@ -93,8 +93,30 @@ def validate(program):
     for tid in ids:
         walk(tid)
     policy = program.get("operating_rules", {})
-    if policy.get("max_parallel") not in (1, 2, 3) or policy.get("auto_safe_mode") != "READ_ONLY":
-        raise ValueError("Parallel or autonomous safety policy invalid")
+    parallel = policy.get("parallelism", {})
+    if (policy.get("auto_safe_mode") != "READ_ONLY"
+            or parallel.get("strategy") != "ALL_READY_WITHOUT_FIXED_NUMERIC_CAP"
+            or parallel.get("numeric_task_limit", "MISSING") is not None
+            or parallel.get("read_only_same_repository_allowed") is not True
+            or parallel.get("uncoordinated_writers_same_repository_forbidden") is not True
+            or parallel.get("replace_blocked_tasks_immediately") is not True
+            or parallel.get("replan_on_verified_or_blocked") is not True):
+        raise ValueError("Dynamic parallelism safety policy invalid")
+    if "max_parallel" in policy or policy.get("parallel_only_distinct_owner_repos") is True:
+        raise ValueError("Legacy numeric cap detected")
+    for task in tasks:
+        if "write_paths" not in task and "scope_reviewed" not in task:
+            continue
+        if task["mode"] != "PR_GATED" or task.get("scope_reviewed") is not True:
+            raise ValueError("Isolated scopes require PR_GATED review: " + task["id"])
+        paths = task.get("write_paths")
+        branch = task.get("write_branch")
+        if (not isinstance(paths, list) or not paths or len(set(paths)) != len(paths)
+                or any(not isinstance(path, str) or not path or path.startswith("/")
+                       or ".." in path.split("/") or "*" in path for path in paths)
+                or not isinstance(branch, str)
+                or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_./-]*", branch)):
+            raise ValueError("Unsafe or ambiguous write scope: " + task["id"])
     if policy.get("never_autoclose_from_scheduled_run") is not True:
         raise ValueError("Automatic task completion prohibited")
     return {"total": len(tasks), "waves": len(phases),
