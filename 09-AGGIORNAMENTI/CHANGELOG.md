@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — Reconcile backup X10-022 (22/57)
+- [Backup source PR #124](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/124) e [hardening PR #125](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/125) verificati Dart CI e integrati: coda X10-022 VERIFIED nel solo scope SOURCE+DART_CI. Nessun restore Android/consumer, media transazione reale o Golden certificato; X10-023 resta PLANNED per mancati test Android. Programma 22 VERIFIED / 33 PLANNED / 2 BLOCKED.
+
+
 ## 2026-11-12 — X10-023 notification health Dart (partial)
 - [Core X10-023](../19-APP-FACTORY-10X/EVIDENCE_X10-023_NOTIFICATION_HEALTH_2026-11-12.md): controllo staleness di permesso/canale/scheduler, receipt distinto da schedule accepted, fallback inexact solo esplicito, unit test Dart. Nessun provider Android attivo: X10-023 non ancora accettato integralmente.
 
