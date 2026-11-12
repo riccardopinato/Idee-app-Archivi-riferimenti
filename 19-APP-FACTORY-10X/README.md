@@ -1,6 +1,6 @@
 # App Factory 10x — programma continuo
 
-**Checkpoint 12/11/2026:** **7/57 task VERIFIED** (solo scope esplicitamente attestato) · **49 PLANNED** · **1 BLOCKED** (X10-008, sorgenti Windows). Le prove sono [Golden/donor X10-003](EVIDENCE_X10-003_GOLDEN_DONOR_2026-11-12.md), [KPI X10-005](EVIDENCE_X10-005_METRICS_CONTRACT_2026-11-12.md), [coda X10-006](EVIDENCE_X10-006_QUEUE_2026-11-12.md), [Agent Windows X10-007](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/X10-007_WINDOWS_SOURCE_INTAKE.md) e [AppLab X10-009](https://github.com/riccardopinato/AppLab/blob/main/integration/agent_core/X10-009_ADAPTER_SELECTION.md). Nessun APK o agente Windows runtime certificato.
+**Checkpoint 12/11/2026:** **9/57 task VERIFIED** (solo scope esplicitamente attestato) · **47 PLANNED** · **1 BLOCKED** (X10-008, sorgenti Windows). Le prove sono [Golden/donor X10-003](EVIDENCE_X10-003_GOLDEN_DONOR_2026-11-12.md), [KPI X10-005](EVIDENCE_X10-005_METRICS_CONTRACT_2026-11-12.md), [coda X10-006](EVIDENCE_X10-006_QUEUE_2026-11-12.md), [Agent Windows X10-007](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/X10-007_WINDOWS_SOURCE_INTAKE.md) e [AppLab X10-009](https://github.com/riccardopinato/AppLab/blob/main/integration/agent_core/X10-009_ADAPTER_SELECTION.md). Nessun APK o agente Windows runtime certificato.
 
 **Direzione strategica approvata:** 12/11/2026. La Factory deve costruire e distribuire prodotti con meno passaggi manuali, sfruttando agenti, Golden versionati, AppLab, metriche business e conoscenza inter-app.
 
