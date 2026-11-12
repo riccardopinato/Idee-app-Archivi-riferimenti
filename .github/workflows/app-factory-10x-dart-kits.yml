@@ -1,0 +1,41 @@
+name: App Factory 10x — Dart kit contracts
+on:
+  pull_request:
+    paths:
+      - '19-APP-FACTORY-10X/flutter_kits/**'
+      - '.github/workflows/app-factory-10x-dart-kits.yml'
+  push:
+    branches: [main]
+    paths:
+      - '19-APP-FACTORY-10X/flutter_kits/**'
+      - '.github/workflows/app-factory-10x-dart-kits.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dart-core-tests:
+    name: Dart source contract — ${{ matrix.kit }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        kit: [profile]
+    defaults:
+      run:
+        working-directory: 19-APP-FACTORY-10X/flutter_kits/${{ matrix.kit }}
+    steps:
+      - name: Checkout exact event commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Setup pinned Dart SDK
+        uses: dart-lang/setup-dart@6afc89df92d6eb3834022f73cd65adc8cdfcb92d # v1.8.1
+        with:
+          sdk: '3.6.0'
+      - name: Resolve test dependencies
+        run: dart pub get
+      - name: Static source analysis
+        run: dart analyze --fatal-infos
+      - name: Exercise real Dart unit tests
+        run: dart test --reporter expanded

@@ -1,0 +1,9 @@
+# X10-021 — Profile and settings Dart core
+
+**Factory baseline:** `App-Factory-Core@c5adc147046beb7024629466d10eeb799c3c2619`, Master v27, Golden Index v29. **Donor source:** COPY_READY Golden `golden/identity/GOLDEN_PROFILE_STANDARD_FLUTTER_v1.txt` (review 2026-10-01, provider-independent); identity remains a separate concern.
+
+**Implementation**: [profile package](flutter_kits/profile/) `factory_profile_kit 0.1.0`, no production cloud/store dependencies. `ProfilePreferences` validates local display name, language override, light/dark/system and analytics opt-in (default **false**). `ProfileSettingsController` uses an injected, per-consumer, owner-scoped `ProfilePreferencesStore` interface with atomic write; serializes concurrent writes, never swaps current state on storage error, migrates schema 0 in memory and preserves corrupted backing data without auto-purge. OAuth sessions, Google names/avatar, credentials, password, tokens, account deletion and sync are explicitly out of scope.
+
+**Real test plan**: `.github/workflows/app-factory-10x-dart-kits.yml` uses pinned `dart-lang/setup-dart@6afc89df92d6eb3834022f73cd65adc8cdfcb92d` with Dart 3.6.0; `dart pub get`, `dart analyze --fatal-infos`, `dart test --reporter expanded` on the committed source, not copied Python expectations. Failure paths include partial storage failure, concurrent edits, corrupted and future-schema preferences, explicit consent, and token-free projection.
+
+**Evidence scope**: SOURCE+DART_CI if exact-head Actions succeeds. NOT VERIFIED: Flutter widget/UI layout, Android/iOS plugin storage, encrypted preferences, account switching isolation across real identities, physical restoration, consumer integration, production release. Tests prove pure logic; they do not independently attest an actual app's UX/consent or migrations. No Golden Registry promotion or Product Bible changes.
