@@ -13,6 +13,16 @@ Date: 12 November 2026. Factory baseline `App-Factory-Core@c5adc147046beb7024629
 | **X10-046** feature A real agent pilot | [Agent Core #23](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/23) | Merged source gate for provenance / draft PR / QA. Agent Windows source X10-008 remains unavailable; no real worker run or human product approval. AppLab SELF_CANARY is the proposed safe first target only. |
 | **X10-047** feature B other repo pilot | same Agent Core #23 plus [two-repo handoff](https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/X10-046_047_TWO_REPO_PILOT_HANDOFF.md) | Must use a different authorized repository after actual feature-A accepted, with real independent worker/PR tests and recovery. World-Days is only a proposed second target, not yet authorized for agent rollout. |
 
+## Verified updates on 12 November 2026
+
+- **X10-026 / Anna:** [Agenda-per-Anna PR #307](https://github.com/riccardopinato/Agenda-per-Anna/pull/307) MERGED to `6004677f6e1a4e04abe4147a3a706a8a35a7a94b`, exact head `19a15278895f4c395dbc256ff3ae15b171245bd8`; 4/4 exact-head workflow SUCCESS (Development checks, AppLab Source Gate, Deploy Web, Android calendar native compile), Codex clean. This is the first **SOURCE+CI Flutter consumer** for the pinned profile kit, not a physical/GOLDEN certification. The other consumer CamperBoss #33 remains DRAFT under blocked roadmap.
+- **X10-032 / AppLab:** [PR #230](https://github.com/riccardopinato/AppLab/pull/230) MERGED `53b4f653ac63e253058d0420f5b871a879026ab9` after 7/7 required CI and Codex clean. PLAN_ONLY generator, no real phone, Play testing or release.
+- **X10-035/036:** [Archive #147](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/147) MERGED `42a6e528df1c205168bfe8f7be5d435c8cbf128e`; source/Dart-CI only, no human go/no-go or budget.
+- **X10-046/047:** [Agent Core #23](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/23) MERGED `7616459c91311f7ce0b5d3ca8b0d97a9363b7a52`; pilot evidence contract CI and Codex verified, no live agent workflow.
+- **X10-026 / CamperBoss:** [PR #33](https://github.com/riccardopinato/CamperBoss/pull/33) DRAFT; Flutter CI SUCCESS after preserving existing supply-chain guard and using source-pinned internal donor; release/AppLab checks and STEP16 human sequencing must be resolved independently.
+
+None of the above source/CI receipts prove installation, data preservation on real hardware, Store delivery or autonomous Windows-agent output. Thus six task statuses remain `PLANNED` until genuine acceptance.
+
 ## Required sequence and independent lanes
 1. **Consumer lane** — finish exact-head CI/Codex on Anna #307 and CamperBoss #33; keep latter DRAFT while its roadmap blocks. Capture full dependency supply-chain and rollback evidence before X10-026 promotion.
 2. **QA lane** — merge AppLab #230 only after its seven required workflows and Codex review; then obtain actual same-APK physical hub and Play Console Internal Testing evidence. No fake physical PASS.
