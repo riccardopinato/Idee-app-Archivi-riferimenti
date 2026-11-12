@@ -113,6 +113,8 @@ class ReuseCockpitTests(unittest.TestCase):
         self.assertFalse(ranked["license_verified_by_cockpit"])
         self.assertFalse(ranked["product_approved_by_cockpit"])
         self.assertEqual(ranked["state"], "REVIEW_BACKLOG")
+        self.assertNotIn("Illustrative assessment only", str(ranked))
+        self.assertEqual(ranked["estimate_factors"]["risk"], 2)
 
     def test_incoherent_claimed_approval_rejected(self):
         inv, p, e = fixture()
@@ -161,6 +163,9 @@ class ReuseCockpitTests(unittest.TestCase):
             ):
                 run([p("x10_bad")], [estimate], inv)
         estimate = e("x10_bad", dependencies=["X10-008", "X10-008"])
+        with self.assertRaisesRegex(CockpitError, "DUPLICATE_DEPENDENCIES"):
+            run([p("x10_bad")], [estimate], inv)
+        estimate["dependencies"] = [{"nested": "invalid"}]
         with self.assertRaisesRegex(CockpitError, "INVALID_DEPENDENCIES"):
             run([p("x10_bad")], [estimate], inv)
 
