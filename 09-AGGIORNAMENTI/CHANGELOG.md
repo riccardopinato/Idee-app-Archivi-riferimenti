@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-026 Anna #307 and X10-032 AppLab #230 source/CI merges documented
+- [Six-step handoff](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md): Anna #307 MERGED after 4/4 CI, AppLab #230 MERGED after 7/7; CamperBoss #33 DRAFT with source Flutter CI only, no second consumer approval/physical QA. Source-only privacy prototype #147 and agent pilot contract #23 already merged. Human-gate six-task status remains PLANNED; checkpoint still 34 VERIFIED / 22 PLANNED / 1 BLOCKED.
+
 ## 2026-11-12 — Handoff operativo sei task 10x, senza promozioni fittizie
 - [Checkpoint operativo](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md) per X10-026/032/035/036/046/047: link alle due PR consumer Flutter, planner AppLab #230, owner decision e privacy metrics, Agent Core #23. Distinti SOURCE/CI, i HUMAN_GATE e i collaudi fisici/Play. Il registro resta 34 VERIFIED / 22 PLANNED / 1 BLOCKED fino a evidenza finale.
 
