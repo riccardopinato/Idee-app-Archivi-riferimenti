@@ -75,7 +75,7 @@ StoredReminderIntent wall({
 void main() {
   test('reboot reschedule is only a proposal and no fake delivery', () {
     final resolver = FakeTz();
-    final item = const ReconciliationPlanner(resolver)
+    final item = ReconciliationPlanner(resolver)
         .plan([fixed(scheduled: future)], env()).single;
     expect(item.action, ReconcileAction.proposeInexactSchedule);
     expect(item.proposedAtUtc, future);
