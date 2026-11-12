@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-044 integrato e riconciliato (23/57)
+- [PR #129](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/129), merge `6d1e0bbcb5b79474d169bcd66f2feaf2c14f3634`: cockpit di priorità consultivo, analisi impatto/riuso/evidenza/rischio/sforzo/dipendenze, test Python e controlli inventario stale; nessuna proposta reale verificata, nessuna autorizzazione di adozione/Golden.
+- Coda: 23 VERIFIED nel solo scope provato, 32 PLANNED, 2 BLOCKED. X10-023 ancora PLANNED per mancanza test Android; AppLab #220 indipendent-review pending.
+
+
 ## 2026-11-12 — X10-044 cockpit di priorità per il riuso (source)
 - Aggiunto [X10-044](../19-APP-FACTORY-10X/EVIDENCE_X10-044_REUSE_RECOMMENDATION_COCKPIT_2026-11-12.md): scoring trasparente impatto/rischio/sforzo/dipendenze, snapshot SHA/date, staleness e fail-closed sui claim di review; solo proposta non esecutiva. Il codice non genera dati di mercato, non crea PR consumer e non certifica l'adozione.
 
