@@ -22,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        kit: [profile, identity, backup]
+        kit: [profile, identity, backup, notifications]
     defaults:
       run:
         working-directory: 19-APP-FACTORY-10X/flutter_kits/${{ matrix.kit }}
