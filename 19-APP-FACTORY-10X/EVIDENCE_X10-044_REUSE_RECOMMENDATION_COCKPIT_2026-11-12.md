@@ -19,3 +19,11 @@ Confronta inoltre l'HEAD immutabile di producer e consumer e la data di osservaz
 - Nessuna dashboard web interattiva, scansione live webhook, sistema di autorizzazione GitHub, consumer CI o risparmio 10x reale è stato realizzato in X10-044.
 
 [Regression suite](../tests/factory_10x_reuse_cockpit_test.py) esercita ranking, input incompleti, staleness, falsi claim di review, blocchi e immutabilità del perimetro. Eseguita nella [CI queue](../.github/workflows/app-factory-10x-queue.yml) con verifica exact-head. **Stato di evidenza:** SOURCE+PYTHON_CI soltanto dopo la CI e il merge effettivi.
+
+## Correzione follow-up review post-merge
+
+La review della PR #129 ha rilevato che una proposta X10-043 con `CANDIDATE_STALE`, `CANDIDATE_BLOCKED` o `HUMAN_REJECTED` poteva perdere il motivo upstream quando gli SHA e le date dell'inventario erano correnti. **Regressione di gate:** un record respinto poteva rientrare nella graduatoria `REVIEW_BACKLOG`.
+
+Il fix mantiene e valida esplicitamente i `reason_codes` X10-043: source/CAP stale -> `STALE_RECHECK` con recheck **di provenance CAP e Factory**, non solo dell'inventario; rifiuto umano o CAP bloccato -> `BLOCKED_UPSTREAM`; verifica indipendente della review non dimostrata -> `BLOCKED_REVIEW_PROVENANCE`. Gli stati bloccati non superano proposte ancora revisionabili, qualunque sia il punteggio. Codici upstream sconosciuti/mancanti e false review approvate con motivi di blocco vengono rifiutati. Aggiunti test specifici usando inventory con SHA e date *correnti*.
+
+La PR di correzione non attribuisce comunque autenticità ai receipt, al reviewer o ai run GitHub: valida soltanto la coerenza del contratto offline.
