@@ -851,9 +851,17 @@
       "acceptance": "Benchmark startup/memory, a11y 48dp, low-end device e evidenze",
       "impact": 4,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/227",
+          "source_sha": "5cf99a11ad8654cc788f74bcffb814f3329969ba"
+        }
+      ],
+      "blocker": null,
+      "review_scope": "SOURCE+CI ONLY. AppLab #227 exact-head 5cf99a11ad8654cc788f74bcffb814f3329969ba passed seven required workflows + Codex final clean review, all six prior CodeQL/Codex threads resolved; merged as db263d48cf1dbdaf85933e3c044dd5d9ccbf7559. Report-only adapter uses repeated samples, existing AppLab Performance Lab comparison, density-aware touch-target checks. No physical-device/consumer benchmark, low-end profile attestation, TalkBack or Play certification.",
+      "gate_reviewed": true
     },
     {
       "id": "X10-031",
