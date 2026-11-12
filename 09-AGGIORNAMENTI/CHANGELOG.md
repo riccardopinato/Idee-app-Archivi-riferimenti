@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-034: competitor e domanda pubblica
+- [Dossier X10-034](../19-APP-FACTORY-10X/EVIDENCE_X10-034_MARKET_COMPETITORS_2026-11-12.md): competitor Battery Guard, Rotate 180° e World Days verificati da schede pubbliche Google Play/sito ufficiale; funzioni, posizionamento e canali organici candidati.
+- Ogni installazione pubblica altrui è un proxy storico, non una prova di ricavi, conversione, retention o TAM per la Factory. Restano da misurare con coorti e budget di X10-035; lo stato della coda è invariato fino a PR/CI/review.
+
+
 ## 2026-11-12 — X10-011/012/019 integrati, gate AppLab bloccato
 - [Agent #16](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/16) CI/merge: adapter esistente AppLab queue, 8 fixture offline (no runtime reale); [Agent #17](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/17): guard worktree exact SHA con 9 fixture (no Windows worker).
 - [Ideas #112](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/112): starter source Flutter e test Python; generazione e regressioni verificati, ma nessuna compilazione Flutter.
