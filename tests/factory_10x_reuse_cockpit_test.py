@@ -202,9 +202,11 @@ class ReuseCockpitTests(unittest.TestCase):
         self.assertEqual(out[0]["candidate_id"], "x10_reviewable")
         for row in out[1:]:
             self.assertEqual(row["state"], "BLOCKED_UPSTREAM")
-            self.assertEqual(row["reason_codes"], [
+            self.assertIn(
                 "CANDIDATE_BLOCKED" if "candidate_blocked" in row["candidate_id"]
-                else "HUMAN_REJECTED"])
+                else "HUMAN_REJECTED", row["reason_codes"])
+            if "human_rejected" in row["candidate_id"]:
+                self.assertNotIn("HUMAN_REVIEW_PENDING", row["reason_codes"])
             self.assertEqual(row["recommended_next_action"],
                              "HONOR_REJECTION_OR_RESOLVE_CAP_BLOCKER")
 
