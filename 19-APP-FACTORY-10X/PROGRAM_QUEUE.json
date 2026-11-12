@@ -688,9 +688,17 @@
       "acceptance": "Test unit, integration, emulator, physical, artifact e store separati",
       "impact": 5,
       "effort": 2,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/AppLab/pull/217",
+          "source_sha": "7d07e0fae2cc709d09ce5512efb160b9d4b4faa7"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Source-pinned AppLab QA/release gate matrix docs-only with PR CI; no new runtime, physical QA or production release"
     },
     {
       "id": "X10-028",
@@ -928,9 +936,17 @@
       "acceptance": "Schema provenienza per repo/file/CI/License e sintesi senza doppio SSOT",
       "impact": 5,
       "effort": 2,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/110",
+          "source_sha": "db8bf17fcab0f10196a67dfb5f827da9c26994bc"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Source-pinned architectural join across Core/CAP/AppLab with PR CI; DESIGN_ONLY, no live diff monitor or automated reuse"
     },
     {
       "id": "X10-041",
