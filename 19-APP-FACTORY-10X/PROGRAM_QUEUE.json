@@ -352,9 +352,17 @@
       "acceptance": "Schema request/result/versioni, allowlist e test deny-all per repo/path/azione",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/15",
+          "source_sha": "091f4f3534266bffa4e306a2dd55cd3cd2ed2cb6"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Scoped/offline authorization gateway CI tested, real agent runtime and identity/lease checks still open"
     },
     {
       "id": "X10-011",
@@ -480,9 +488,17 @@
       "acceptance": "API, ownership, matrix Flutter versions, license, pin SHA e test consumer",
       "impact": 5,
       "effort": 2,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/106",
+          "source_sha": "b352e1e2f3104a3307de8467e009b829249b7a28"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Versioned Golden package contract/schema validated; no Flutter package extracted or consumer tested"
     },
     {
       "id": "X10-018",
@@ -1246,6 +1262,20 @@
         "https://github.com/riccardopinato/AppLab/pull/216"
       ],
       "note": "Five source/test-scoped tasks verified. No Windows import, real runtime adapter, product feature, Golden promotion or numerical 10x claim."
+    },
+    {
+      "at": "2026-11-12",
+      "type": "EVIDENCE_RECONCILIATION",
+      "completed_task_ids": [
+        "X10-010",
+        "X10-017"
+      ],
+      "blocked_task_ids": [],
+      "evidence_refs": [
+        "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/15",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/106"
+      ],
+      "note": "Agent gateway and package contract complete as source+CI only. No physical runtime or certified multi-consumer Golden."
     }
   ]
 }
