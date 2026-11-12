@@ -635,9 +635,22 @@
       "acceptance": "Export/import manifest, integrity, staging e restore test, no data loss",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/124",
+          "source_sha": "eeed65f8a073222465d2015465e776259d51cc5e"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/125",
+          "source_sha": "b395e280dda9db51df131fdf60c65b575d6e86eb"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+DART_CI only: allowlisted uncompressed manifest, SHA256 integrity, bounded 128 entries/16 MiB each/32 MiB total, preflight before copy on public constructor, staged restore with injected snapshot/commit/rollback and failure-injection unit tests. NOT a real app/no-data-loss certification: no native file picker or archive streaming, no consumer DB/media atomic integration, device/process-crash recovery, encryption, signed backup or Golden promotion."
     },
     {
       "id": "X10-023",
