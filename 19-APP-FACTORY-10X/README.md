@@ -6,6 +6,7 @@
 
 - [Roadmap con 57 task e 8 ondate](ROADMAP_10X.md)
 - [Knowledge/reuse cross-app X10-040](EVIDENCE_X10-040_CROSS_APP_KNOWLEDGE_ARCHITECTURE_2026-11-12.md) — audit architetturale ADVISORY_ONLY, nessun monitor diff live installato.
+- [X10-019 — Flutter starter source kit](FLUTTER_STARTER_KIT_X10-019.md) — generator, Material 3 token, IT/EN localizations, offline Python tests. Flutter runtime/consumer still unverified.
 - [Shortlist commerciale X10-002 — Battery Guard, Rotate 180°, World Days](EVIDENCE_X10-002_COMMERCIAL_SHORTLIST_2026-11-12.md) — prevalidazione SOURCE, niente domanda/ricavi misurati né decisione budget.
 - [Primi due audit di partenza](EVIDENCE_X10-001_BASELINE_2026-11-12.md) · [Mappa AppLab riutilizzabile](EVIDENCE_X10-004_APPLAB_REUSE_2026-11-12.md) — X10-001 e X10-004 con prove source e review.
 - [Coda machine-readable e dipendenze](PROGRAM_QUEUE.json)
