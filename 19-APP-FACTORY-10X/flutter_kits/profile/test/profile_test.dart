@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:factory_profile_kit/factory_profile_kit.dart';
@@ -22,6 +23,23 @@ class MemoryStore implements ProfilePreferencesStore {
   }
 }
 
+class DeferredReadStore implements ProfilePreferencesStore {
+  final Completer<String?> completion = Completer<String?>();
+  int reads = 0;
+  String? document;
+
+  @override
+  Future<String?> read() {
+    reads++;
+    return completion.future;
+  }
+
+  @override
+  Future<void> writeAtomically(String jsonDocument) async {
+    document = jsonDocument;
+  }
+}
+
 void main() {
   test('defaults to local-first, no telemetry consent and system theme', () async {
     final controller = ProfileSettingsController(MemoryStore());
@@ -30,6 +48,26 @@ void main() {
     expect(prefs.locale, 'system');
     expect(prefs.theme, ProfileTheme.system);
     expect(prefs.analyticsOptIn, isFalse);
+  });
+
+  test('simultaneous load shares one read and cannot clobber a later update', () async {
+    final store = DeferredReadStore();
+    final controller = ProfileSettingsController(store);
+    final first = controller.load();
+    final second = controller.load();
+    expect(store.reads, 1);
+    store.completion.complete(jsonEncode({
+      'schema_version': 1,
+      'display_name': 'Old',
+      'locale': 'it',
+      'theme': 'system',
+      'analytics_opt_in': false,
+    }));
+    await Future.wait([first, second]);
+    await controller.update((p) => p.copyWith(displayName: 'New'));
+    expect((await controller.load()).displayName, 'New');
+    expect(store.reads, 1);
+    expect(jsonDecode(store.document!)['display_name'], 'New');
   });
 
   test('atomic write failure never changes the visible state', () async {
