@@ -1,0 +1,9 @@
+# X10-023 — Notification / health: Dart policy core
+
+**Factory baseline:** `App-Factory-Core@c5adc147046beb7024629466d10eeb799c3c2619`, Master v27, Golden Index v29. Golden `notification_reliability` COPY_READY, provider-sensitive **NEEDS_REVIEW**, and `capability_permission_health` still CANDIDATE. The X10-023 package is not a certified Native Android notifier.
+
+[Package](flutter_kits/notifications/): explicit `NotificationPlatformPort` with real OS permission/channel/scheduler probe, schedule and cancel commands, immutable reminder IDs, UTC schedule validation, explicit opt-in to degraded inexact schedule, stale/unknown health. `ScheduleDecision.acceptedExact`/ `acceptedInexact` mean the adapter accepted scheduling, **NOT delivery**. `CapabilityStatus.healthy` requires a **separately verified matching reminder receipt** in a fresh diagnostic snapshot. Even if `schedule()` succeeds, health cannot be promoted without delivery evidence.
+
+**Dart tests**: fake platform checks permission versus channel, exact alarm unsupported without silent degradation, explicit fallback, invalid/old timezone UTC timestamps, native exceptions, cancel, stale diagnostic and lack of fake delivery. Pinned Dart 3.6.0 workflow checks static analysis and tests on actual source.
+
+**Not implemented:** actual `flutter_local_notifications` provider, OS notification permission or channel probe, background/foreground service lifecycle, reboot/update reconciliation, receiver callbacks, timezone/IANA conversion, physical delivery receipt, accessibility/native text localization, permissions in Android Manifest, foreground service policy, emulator/device acceptance. Consumer owns the canonical reminder database and rescheduling. Because the X10-023 acceptance explicitly requires **Android platform tests**, this initial package is **PARTIAL SOURCE+CI**, not a complete task acceptance or release claim until a platform integration and device verification are supplied.
