@@ -5,6 +5,7 @@ on:
       - '19-APP-FACTORY-10X/**'
       - 'scripts/factory_10x_queue.py'
       - 'tests/factory_10x_queue_test.py'
+      - 'tests/factory_10x_reuse_inventory_test.py'
       - '.github/workflows/app-factory-10x-queue.yml'
   push:
     branches: [main]
@@ -12,6 +13,7 @@ on:
       - '19-APP-FACTORY-10X/**'
       - 'scripts/factory_10x_queue.py'
       - 'tests/factory_10x_queue_test.py'
+      - 'tests/factory_10x_reuse_inventory_test.py'
       - '.github/workflows/app-factory-10x-queue.yml'
   workflow_dispatch:
   schedule:
@@ -34,6 +36,7 @@ jobs:
         run: |
           python3 scripts/factory_10x_queue.py --check
           python3 -m unittest discover -s tests -p 'factory_10x_queue_test.py' -v
+          python3 -m unittest discover -s tests -p 'factory_10x_reuse_inventory_test.py' -v
       - name: Publish next-task proposal without writing any repo
         shell: bash
         run: |
