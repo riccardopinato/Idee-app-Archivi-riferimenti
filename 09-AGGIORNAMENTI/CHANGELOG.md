@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-13 — X10-026: real consumers/source rollback (partial, not Golden)
+- [Evidence checkpoint](../19-APP-FACTORY-10X/EVIDENCE_X10-026_REAL_CONSUMERS_2026-11-13.md): Anna main CI + signed build, TasteAI full main CI, and AppLab #231 **7/7** with actual pinned donor and two consumer tests plus pre-adoption source rollback. **No** semver-version downgrade receipt, physical installed-data rollback, Golden promotion or status change; X10-026 remains PLANNED. Source snapshot preflight flagged historical.
+
 ## 2026-11-12 — X10-046: riparata dipendenza effettiva dal test Windows X10-015
 - Il pilot A dell'agente richiede anche X10-015 (E2E PC Windows) prima di essere READY. X10-015 resta in attesa del sorgente X10-008 BLOCKED. Nessuna modifica ad approvazioni, repo consumer, contatori VERIFIED o dati sensibili; soltanto correzione DAG e audit trail.
 
