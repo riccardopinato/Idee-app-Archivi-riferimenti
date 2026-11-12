@@ -510,9 +510,17 @@
       "acceptance": "Interfaccia riuso AppLab e Research, output evidence/provenance; niente accesso Finance live",
       "impact": 4,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/22",
+          "source_sha": "8d7efc65b436bc05e2b55a735a8350e688fa233b"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY. Agent Core PR #22 merged as 35a0e4f111e00d7193ac087f122afcfaf0eda68f; exact head 8d7efc65b436bc05e2b55a735a8350e688fa233b had Validate context contracts success, independent Codex review completed no findings, prior path URL encoding P2 replied/resolved. Research candidate intake/source pin/declaration of license and QA injection via AppLab router only. Windows agent runtime, actual research source resolution, real QA and live finance intentionally NOT VERIFIED."
     },
     {
       "id": "X10-017",

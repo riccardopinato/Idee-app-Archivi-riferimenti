@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-016 adapter research/QA verificati SOURCE+CI (32/57)
+- [Agent Core #22](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/22) MERGED `35a0e4f111e00d7193ac087f122afcfaf0eda68f`; exact head `8d7efc65b436bc05e2b55a735a8350e688fa233b` workflow PASS e review Codex pulita, thread P2 URL encoding risolto. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-016_SPECIALIST_ADAPTERS_SOURCE_CI_2026-11-12.md). Candidate donor non certificati, QA non trusted runtime, nessun Finance live/Windows worker import. Conteggio 32 VERIFIED / 24 PLANNED / 1 BLOCKED.
+
 ## 2026-11-12 — X10-030 Performance/accessibilità SOURCE+CI (31/57)
 - [AppLab PR #227](https://github.com/riccardopinato/AppLab/pull/227) MERGED `db263d48cf1dbdaf85933e3c044dd5d9ccbf7559`, exact head `5cf99a11ad8654cc788f74bcffb814f3329969ba` 7/7 workflow pass e Codex review senza rilievi dopo fix a due finding P2 e pattern CodeQL. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-030_PERFORMANCE_A11Y_SOURCE_CI_2026-11-12.md) — test su fixture sintetiche, >3 sample same-source/device/repo, 48dp, baseline verificata e fail-closed; senza collaudo fisico o certificazione consumer. Registro 31 VERIFIED / 25 PLANNED / 1 BLOCKED; X10-033 eleggibile.
 
