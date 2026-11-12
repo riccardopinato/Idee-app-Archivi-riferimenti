@@ -5,7 +5,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as timezone_data;
 import 'package:timezone/timezone.dart' as tz;
 
-import 'factory_notification_flutter_adapter.dart';
+import 'factory_flutter_notification_adapter.dart';
 
 /// Real flutter_local_notifications Android backend, isolated from source
 /// policy. The app owns its reminders, Manifest/receivers, channel and UX.
