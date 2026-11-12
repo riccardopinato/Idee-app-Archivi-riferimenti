@@ -142,3 +142,7 @@ Le sette nuove CAP sono **PROPOSTA**, non integrazioni. La classifica originale 
 ## Anna's Diary — Audit delle 58 voci DA_VERIFICARE (04/11/2026)
 
 [Audit trasversale su 58 capability e decisione individuale](AUDIT_ANNA_58_DA_VERIFICARE_2026-11-04.md), basato su [Anna main@ab5360b78187a643e2b101be21e6951441406059](https://github.com/riccardopinato/Agenda-per-Anna/tree/ab5360b78187a643e2b101be21e6951441406059), Core Master v27 / Golden Index v28 @8052b45b771bf3c5694fc6dd8d037bd83233b37a e fonti Donor/Golden pertinenti. Sei sole candidature `PROPOSTA / PARTIAL_REUSE` ammesse **alla valutazione di prodotto** (CAP-0092, 0093, 0101, 0120, 0145, 0147); 52 rimangono da verificare, otto restano integrate. [Da valutare Anna](PER_APP/Agenda-per-Anna/DA_VALUTARE.md) · [Da verificare Anna](PER_APP/Agenda-per-Anna/DA_VERIFICARE.md). Nessuna modifica alla roadmap/prodotto, punteggi, stati tecnici, codice app o Golden.
+
+## 13/11/2026 — Design reference intake (solo ricerca)
+
+[Crosswalk e priorità di audit per 66 nuovi riferimenti](DESIGN_INTAKE_RIUSO_2026-11-13.md) · [changelog dedicato](CHANGELOG_DESIGN_INTAKE_2026-11-13.md). 77 invii; 11 SHA-256 duplicati; nessuna modifica al registro canonico CAP (199 record secondo il JSON corrente), a kit/score/stati app o alle viste generate. Gestire tutto come REFERENCE_ONLY finché licenze, codice e prove non siano verificate.
