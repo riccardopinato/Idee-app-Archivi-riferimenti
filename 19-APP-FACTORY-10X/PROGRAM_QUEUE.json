@@ -439,9 +439,17 @@
       "acceptance": "Integrazione componenti AppLab senza rifacimento; due test di replay, no auto-merge",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/20",
+          "source_sha": "a8e000ad831d00a6bba566e2ba1f782cce9e01f8"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+PYTHON_CI only. AppLab-backed bounded orchestration adapter with persisted queue lease identity (original generation frozen across preflight), canonical WorkItem reconstruction, permission fail-closed and synthetic replay/recovery tests; PR #20 merged into Agent Core main f0f8085cb2609a79cbdccee8de1223a97bf9ea09 after independent Codex code_review exact head a8e000ad831d00a6bba566e2ba1f782cce9e01f8 and CI PASS. Actual Windows worker import, live AppLab dispatch, atomic runtime fencing across processes, physical consumer QA, release/auto-merge NOT VERIFIED. X10-014 becomes eligible as separate source+CI PR task only."
     },
     {
       "id": "X10-014",
