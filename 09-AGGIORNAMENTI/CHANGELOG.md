@@ -1,7 +1,10 @@
 # Changelog dell'archivio
 
-## 2026-11-12 — X10-035: budget massimo 100 € confermato, prodotti NON approvati
-- [Confronto commerciale trasversale](../19-APP-FACTORY-10X/X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md): Rotate 180°, Omni Cleaner e Battery Guard proposti per primo test; World Days sviluppo organico condizionale; alternative Send-to-PC, PDF, Phone Guard, FocusSense e altre confrontate. Confermato solo TETTO 100 €, **0 € di spesa automatica autorizzata**, nessun prodotto approvato, nessuna campagna/SDK/store/price mutation. Il task X10-035 resta PLANNED.
+## 2026-11-12 — X10-035: tetto €100, confronto commerciale, nessuna approvazione prodotti
+- [Audit commerciale trasversale](../19-APP-FACTORY-10X/X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md): Rotate 180°, Android Omni Cleaner e Battery Guard proposti; World Days in fase organica condizionale. Il proprietario ha confermato SOLO il tetto massimo 100 EUR, autorizzazione di spesa automatica 0 EUR; nessun GO/NO-GO finale, nessuna campagna, nessuna pubblicazione, nessun billing nuovo. X10-035 rimane PLANNED.
+
+## 2026-11-12 — X10-026 Anna #307 and X10-032 AppLab #230 source/CI merges documented
+- [Six-step handoff](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md): Anna #307 MERGED after 4/4 CI, AppLab #230 MERGED after 7/7; CamperBoss #33 DRAFT with source Flutter CI only, no second consumer approval/physical QA. Source-only privacy prototype #147 and agent pilot contract #23 already merged. Human-gate six-task status remains PLANNED; checkpoint still 34 VERIFIED / 22 PLANNED / 1 BLOCKED.
 
 ## 2026-11-12 — Handoff operativo sei task 10x, senza promozioni fittizie
 - [Checkpoint operativo](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md) per X10-026/032/035/036/046/047: link alle due PR consumer Flutter, planner AppLab #230, owner decision e privacy metrics, Agent Core #23. Distinti SOURCE/CI, i HUMAN_GATE e i collaudi fisici/Play. Il registro resta 34 VERIFIED / 22 PLANNED / 1 BLOCKED fino a evidenza finale.
