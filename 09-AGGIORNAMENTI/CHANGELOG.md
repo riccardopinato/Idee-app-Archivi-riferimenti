@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-025 Dart kit dependency chooser
+- Implementato [X10-025](../19-APP-FACTORY-10X/EVIDENCE_X10-025_COMPOSITION_AND_CHOOSER_2026-11-12.md): package composizione e fixture importando realmente profile/identity/backup/notifications; esclusioni billing/native Web, provider e owner gates espliciti; test CI Dart 3.6.0. Source-only: nessuna app consumer certificata.
+
+
 ## 2026-11-12 — X10-044 integrato e riconciliato (23/57)
 - [PR #129](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/129), merge `6d1e0bbcb5b79474d169bcd66f2feaf2c14f3634`: cockpit di priorità consultivo, analisi impatto/riuso/evidenza/rischio/sforzo/dipendenze, test Python e controlli inventario stale; nessuna proposta reale verificata, nessuna autorizzazione di adozione/Golden.
 - Coda: 23 VERIFIED nel solo scope provato, 32 PLANNED, 2 BLOCKED. X10-023 ancora PLANNED per mancanza test Android; AppLab #220 indipendent-review pending.
