@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-035/036 staging commerciale e analytics opt-in (non verificati come prodotto)
+- [Proposta decisione owner](../19-APP-FACTORY-10X/X10-035_036_DECISION_AND_ANALYTICS_PROPOSAL.md) e [schema](../19-APP-FACTORY-10X/X10-035_OWNER_DECISION_PROPOSAL.json): Battery Guard e Rotate 180° candidati, World Days condizionale; prodotti/budget **non approvati**. [Pure-Dart privacy metrics](../19-APP-FACTORY-10X/flutter_kits/privacy_metrics/README.md) è un prototipo in memoria con test di consenso/revoca; nessun SDK o app integrato, nessuna retention e attribution reali. X10-035 e X10-036 restano PLANNED.
+
 ## 2026-11-12 — X10-033 e X10-045 adapter SOURCE+CI integrati (34/57)
 - [AppLab #228](https://github.com/riccardopinato/AppLab/pull/228) X10-033 MERGED `13c22b13e0d3bf2948ce0f26b7559705f923b8f7`, exact head `812b910740f60380baaf541af4bd4248692df20f` 7/7 CI e review Codex senza rilievi. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-033_RELEASE_DECISION_SOURCE_CI_2026-11-12.md); riusa release assurance e QA per report fail-closed, **non autorizza pubblicazione**.
 - [AppLab #229](https://github.com/riccardopinato/AppLab/pull/229) X10-045 MERGED `0888d71e3ce163db4af94d9694c34f18b4041ec3`, exact head `e6c1e2e1c1bbc066c3a8f6b4f91e45aeb0f6c6b2` 7/7 CI e review Codex pulita. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-045_FAILURE_DONOR_SOURCE_CI_2026-11-12.md); engine Pattern-3 riusato, **nessun replay reale** o donor Golden promosso. Registro 34 VERIFIED, 22 PLANNED, 1 BLOCKED.

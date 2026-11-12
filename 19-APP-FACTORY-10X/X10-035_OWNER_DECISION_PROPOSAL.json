@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "program": "APP_FACTORY_10X",
+  "task_id": "X10-035",
+  "status": "AWAITING_OWNER_GO_NO_GO_AND_BUDGET",
+  "authority": "PROPOSAL_ONLY",
+  "owner_approved": false,
+  "approved_budget_eur": null,
+  "approved_products": [],
+  "candidate_products": [
+    {"id": "Battery_Guard", "role": "pilot_primary", "proposal": "GO_CANDIDATE", "release_status": "HUMAN_QA_REQUIRED"},
+    {"id": "180FlipCharge", "role": "small_native_control", "proposal": "GO_CANDIDATE", "release_status": "DEVICE_AND_PLAY_REVIEW_REQUIRED"},
+    {"id": "World-Days", "role": "conditional_editorial", "proposal": "CONDITIONAL", "release_status": "EDITORIAL_SOURCES_AND_RETENTION_REQUIRED"}
+  ],
+  "explicit_restrictions": [
+    "NO_PAID_CAMPAIGNS",
+    "NO_ANALYTICS_OR_CONSENT_SDK_ACTIVATION",
+    "NO_STORE_RELEASE",
+    "NO_BILLING_CHANGES",
+    "NO_PRODUCT_BIBLE_SCOPE_UPGRADE"
+  ],
+  "basis": ["X10-002", "X10-034"],
+  "analytics_task_id": "X10-036",
+  "analytics_implementation_status": "SOURCE_PROTOTYPE_NOT_ENABLED"
+}
