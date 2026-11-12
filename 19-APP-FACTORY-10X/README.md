@@ -5,6 +5,7 @@
 **Direzione strategica approvata:** 12/11/2026. La Factory deve costruire e distribuire prodotti con meno passaggi manuali, sfruttando agenti, Golden versionati, AppLab, metriche business e conoscenza inter-app.
 
 - [Roadmap con 57 task e 8 ondate](ROADMAP_10X.md)
+- [X10-042 CAP-ID dedup/join source+CI](EVIDENCE_X10-042_CAP_DEDUP_SOURCE_2026-11-12.md) — join di segnali hash con CAP esistenti/consumer e stato STALE, nessun nuovo CAP o consumer merge.
 - [Diff-aware intake X10-041 source+CI](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/19): pinned SHA and hashed-path hints only, no live webhook; X10-042 registry join now eligible.
 - [Knowledge/reuse cross-app X10-040](EVIDENCE_X10-040_CROSS_APP_KNOWLEDGE_ARCHITECTURE_2026-11-12.md) — audit architetturale ADVISORY_ONLY, nessun monitor diff live installato.
 - [X10-019 — Flutter starter source kit](FLUTTER_STARTER_KIT_X10-019.md) — generator, Material 3 token, IT/EN localizations, offline Python tests. Flutter runtime/consumer still unverified.
