@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-020, identity/local-first opt-in in Dart
+- [Pacchetto identity](../19-APP-FACTORY-10X/EVIDENCE_X10-020_IDENTITY_OPTIN_KIT_2026-11-12.md): accesso solo dietro azione esplicita, verifier e partizione dati iniettati, rifiuto OAuth invalidi, test Dart reali su SDK pin; senza segreti/provider/configurazione cloud. Nessuna app consumer modificata.
+
+
 ## 2026-11-12 — X10-021, profilo/impostazioni con veri unit test Dart
 - Aggiunto [Profile Kit](../19-APP-FACTORY-10X/EVIDENCE_X10-021_PROFILE_SETTINGS_KIT_2026-11-12.md): preferenze locali, privacy opt-in esplicito, migration v0/v1, atomicità scritture, test di concorrenza/caricamento. Nuovo workflow con Dart 3.6.0 e setup-action SHA-pinnata; nessun consumer o Golden certificato automaticamente.
 
