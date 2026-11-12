@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-023 notifier health contract (partial)
+- [Core notifiche X10-023](../19-APP-FACTORY-10X/EVIDENCE_X10-023_NOTIFICATION_HEALTH_2026-11-12.md): stati permesso/canale/scheduler, scadenza diagnosi, receipt distinto dall'accettazione schedule, fallback inexact esplicito e test Dart con fake platform. Mancano native Android/provider/device, quindi la task non viene certificata come completata.
+
+
 ## 2026-11-12 — X10-022 kit backup/recovery con staged restore
 - [Dossier X10-022](../19-APP-FACTORY-10X/EVIDENCE_X10-022_BACKUP_RECOVERY_KIT_2026-11-12.md): core Dart con manifest SHA-256, limite media, inspection-before-restore, safety snapshot, rollback e tests di failure; Golden centrale backup ancora DRAFT, no hardware/migrazione consumer.
 
