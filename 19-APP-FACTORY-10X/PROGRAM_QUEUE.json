@@ -1101,9 +1101,17 @@
       "acceptance": "Priorità per impatto/rischio/sforzo/dipendenze, nessuna promozione falsa",
       "impact": 4,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/129",
+          "source_sha": "6d1e0bbcb5b79474d169bcd66f2feaf2c14f3634"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+PYTHON_CI only: deterministic advisory rank of X10-043 scoped proposals by impact, cross-app reuse, evidence, risk, effort and dependency estimates; source and consumer SHA inventory staleness checks, no auto approvals, consumers, Golden promotion, live CI/provider verified licenses, market demand, measured time savings or realtime UI."
     },
     {
       "id": "X10-045",
