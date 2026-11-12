@@ -27,7 +27,7 @@ Il programma aggiunge una sesta corsia trasversale **governance/operatività con
 La coda contiene **57 task stabili, 8 ondate e sei lane**. Ogni task ha ID, dipendenze DAG, repo owner, modalità, descrizione del gate e stato; una volta `VERIFIED` tramite **PR documentata e prove con commit SHA**, i dipendenti diventano automaticamente eleggibili nella prossima selezione. I task già svolti non sono riscritti o eliminati.
 
 - `python3 scripts/factory_10x_queue.py --check`: controlla DAG, sicurezza, fonti di prova e struttura.
-- `python3 scripts/factory_10x_queue.py --next`: propone fino a **tre task indipendenti** con owner repository differenti; evidenzia gate umani, dipendenze e blocchi.
+- `python3 scripts/factory_10x_queue.py --next`: propone **tutti** i task pronti e compatibili senza cap numerici. Consente audit READ_ONLY multipli sullo stesso repository; coordina PR writer potenzialmente conflittuali, o ammette writer paralleli con path disgiunti e scope/branch verificati. Elenca gate umani, dipendenze, task bloccati e conflitti di scrittura.
 - [Workflow GitHub Actions](../.github/workflows/app-factory-10x-queue.yml): su PR/push, run manuale e cron quotidiano **06:23 UTC** verifica la coda e scrive il prossimo piano nel GitHub Job Summary, **senza usare token in scrittura, né fare commit/merge o eseguire sviluppo**.
 - Il task ChatGPT già esistente `App Factory v27 — Tempo reale` può consumare la coda durante i suoi run programmati per tentare progressivamente **lavoro autorizzato in Chat** e registrare le prove. Non equivale a un ChatGPT sempre in esecuzione: tra i run non esiste lavoro di Chat asincrono. L'agente locale, quando davvero importato e collaudato, potrà eseguire i task compatibili in autonomia secondo contratti e permessi.
 - Se la lane principale è bloccata si opera sulle altre lane pronte, non si inventa una chiusura `PASS`. Prima che W7 finisca, si aggiunge **W8+** per nuovi problemi/supporto, sempre con IDs nuovi e revisione.
@@ -159,20 +159,20 @@ La Factory deve dimostrare, attraverso [metriche nella coda](PROGRAM_QUEUE.json)
 
 ## Regole di priorità e parallelismo
 - P0 e prerequisiti prima dei P1; a parità, ondata e rapporto impatto/sforzo. Non interrompere un lavoro in corso solo perché appare un nuovo task.
-- Massimo **tre task simultanei**, su repository distinti, con scope indipendente. Un solo writer PR per repository alla volta; QA/ricerca READ_ONLY possono avanzare in parallelo.
+- **Parallelismo senza tetto numerico:** eseguire tutti i task READY compatibili con dipendenze, privacy, risorse e governance. Più attività READ_ONLY sul medesimo repo sono compatibili. Più PR writer sul medesimo repo soltanto con path e branch disgiunti, scope documentati e review. Il selettore non limita a tre task; le risorse del runner restano finite.
 - BLOCCHI P0 per privacy, permessi, dato non verificato o branch protection. Nessuna modifica al Master/Golden senza PR separata.
 - Durata attesa è una stima di complessità (1–5), non un calendario promesso né ore di lavoro misurate.
 - Salva ogni avanzamento nella coda e CHANGELOG con link a PR/evidenza; le differenze di prodotto richiedono aggiornamento dei documenti canonici della singola app, non semplici tick in questa tabella.
 
 ## Primi lavori eleggibili
-Il resolver trova inizialmente `X10-001` (baseline/gap), `X10-002` (shortlist commerciale), `X10-003` (inventario Golden) e `X10-004` (audit AppLab). Poiché 001/002/003 condividono l'archivio, il selettore sceglie al massimo uno di questi come writer corrente insieme a X10-004, così nessuna PR concorrente può sovrascrivere lo stesso repo.
+Il resolver individua tutti i task READY con i prerequisiti già VERIFIED. Audit `READ_ONLY` quali X10-002 e X10-003 possono avanzare contemporaneamente anche se condividono l'archivio; i task `PR_GATED` X10-005 e X10-006 devono invece coordinare il write-scope salvo isolamento approvato. Il codice distingue pianificazione e vera esecuzione: la schedule di GitHub pubblica solo il prossimo piano.
 
 Le prossime dipendenze sono già codificate: quando 001 è effettivamente verificato si sbloccano 005/006/007; 004 sblocca 009/027; 003 sblocca 017/040; e così per tutte le 57 attività. Le approvazioni umane richieste sono isolate e non fermano le lane indipendenti.
 
 ## Primo ciclo di esecuzione — 12 novembre 2026
 - **X10-001 = VERIFIED (audit statico delimitato):** inventario e gap analysis di 8 repo con SHA e regole di precedenza nel [rapporto](EVIDENCE_X10-001_BASELINE_2026-11-12.md), review/CI della [PR #100](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/100), merge `ae9a491d3c544bccc105178f84f154076ad19d7d`.
 - **X10-004 = VERIFIED (audit statico delimitato):** moduli di queue/patch/investigator/PR già esistenti e limiti AppLab `SELF_CANARY`, [rapporto](EVIDENCE_X10-004_APPLAB_REUSE_2026-11-12.md), stessa PR #100; nessun runner importato, `0/3` live repairs non promossi.
-- Questi due audit sono prove documentali, **non** task di sviluppo Agent Core o release. Il resolver aggiornato proporrà i successori `X10-003` (inventario Golden/Donor), `X10-007` (sorgente locale Agent Core) e `X10-009` (adapter AppLab), in tre repository distinti; eventuali nuovi blocchi richiedono evidenze e decisioni.
+- Questi due audit sono prove documentali, **non** task di sviluppo Agent Core o release. Il resolver aggiornato elenca tutti i task READY, fra cui `X10-002`, `X10-003`, `X10-007`, `X10-009` e `X10-027`, oltre ai writer PR compatibili; eventuali nuovi blocchi richiedono evidenze e decisioni.
 - La progressione è registrata in `PROGRAM_QUEUE.json` con `gate_reviewed=true` e receipt GitHub a commit SHA; nessun task viene chiuso dal cron.
 
 ## Riferimenti
