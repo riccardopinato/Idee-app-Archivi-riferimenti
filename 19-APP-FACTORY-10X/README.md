@@ -6,6 +6,7 @@
 
 - [Roadmap con 57 task e 8 ondate](ROADMAP_10X.md)
 - **X10-042 VERIFIED SOURCE+CI:** [PR #117](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/117) aggiorna il join, nessuna implementazione automatica in consumer; X10-043 review semantica ora eleggibile.
+- **X10-044 post-review gate fixed:** [PR #133](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/133) preserves upstream CAP stale/blocked and HUMAN_REJECTED; source+Python CI only. 24/57 counts unchanged.
 - [X10-044 — Recommendation cockpit del riuso](EVIDENCE_X10-044_REUSE_RECOMMENDATION_COCKPIT_2026-11-12.md): classifica advisory CAP per impatto/rischio/sforzo/dipendenze, inventario stale mai pronto e nessuna adozione automatica.
 - [X10-043 — Revisione semantica supervisionata](EVIDENCE_X10-043_SEMANTIC_REVIEW_2026-11-12.md) — SHA, test e licenza per-file + prova di approvazione; solo advisory, mai auto-merge.
 - [X10-042 CAP-ID dedup/join source+CI](EVIDENCE_X10-042_CAP_DEDUP_SOURCE_2026-11-12.md) — join di segnali hash con CAP esistenti/consumer e stato STALE, nessun nuovo CAP o consumer merge.

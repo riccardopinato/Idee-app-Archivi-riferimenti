@@ -5,6 +5,8 @@
 **Approvazione strategica:** 12 novembre 2026 · **Baseline unica di questa sessione:** `riccardopinato/App-Factory-Core@c5adc147046beb7024629466d10eeb799c3c2619`, Master v27, Golden Index v29.  
 **Fonte della coda:** [PROGRAM_QUEUE.json](PROGRAM_QUEUE.json) · **Validazione/successori:** [script](../scripts/factory_10x_queue.py) · **Regole di continuità:** [OPERATING_CONTRACT.md](OPERATING_CONTRACT.md).
 
+<!-- X10-044 post-review regression: #133 merged; SOURCE+PYTHON_CI only, no consumer auto-adoption. -->
+
 ## Missione, non solo cinque migliorie
 L'obiettivo non è sviluppare indiscriminatamente più repository: è moltiplicare il numero di **funzionalità utili, verificate e distribuibili** per unità di tempo/costo, costruendo un sistema che seleziona, riusa, sviluppa, verifica, pubblica sotto gate e impara da risultati reali.
 
