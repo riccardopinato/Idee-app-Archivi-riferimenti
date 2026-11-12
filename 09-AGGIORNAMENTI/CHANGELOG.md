@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-022 kit backup/recovery con staged restore
+- [Dossier X10-022](../19-APP-FACTORY-10X/EVIDENCE_X10-022_BACKUP_RECOVERY_KIT_2026-11-12.md): core Dart con manifest SHA-256, limite media, inspection-before-restore, safety snapshot, rollback e tests di failure; Golden centrale backup ancora DRAFT, no hardware/migrazione consumer.
+
+
 ## 2026-11-12 — W2 Identity/Profile + W5 Semantic: 21/57
 - [X10-021 PR #119](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/119) merge f52864ab: Dart 3.6.0 analyze/test su preferenze locali e collisioni di caricamento. [X10-020 PR #121](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/121) merge c00135db: login opt-in con verifier/partizione dati iniettati e test Dart, non provider reale. [X10-043 PR #122](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/122) merge 57bdc2cc: semantica e review umana fail-closed in contract Python, nessuna autorizzazione reale acquisita.
 - Coda ora 21 VERIFIED / 34 PLANNED / 2 BLOCKED (solo scope source+CI). X10-044 può procedere; app Windows/Play/device e provider restano gate indipendenti.
