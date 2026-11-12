@@ -783,9 +783,17 @@
       "acceptance": "Runner per-app selective tests con output receipt, non ricostruzione v6",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/224",
+          "source_sha": "6735183a9baa78124d14a2dcdb02c643fc00b766"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY: AppLab PR #224 merged to main 4409c77862cc83aa25bd4303a8066b6eea78b170. Exactly seven workflows succeeded at PR head 6735183a9baa78124d14a2dcdb02c643fc00b766: Canonical Runtime Fixture Build, AppLab CI, True Autonomous App Review v5.3.5, CodeQL, Emulator Self Test, Live Emulator Browser E2E, Repository Governance Audit. Independent Codex code_review completed at same SHA with zero unresolved findings. QA router dispatches FAST/FULL app-scoped selective tests, preserves strict mandatory gates and source-bound runner receipts. No individual consumer physical QA, signed release, Store, or real device certification. X10-029, X10-030, X10-031 and X10-045 become independently eligible."
     },
     {
       "id": "X10-029",
