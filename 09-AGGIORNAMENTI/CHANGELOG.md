@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-030 Performance/accessibilità SOURCE+CI (31/57)
+- [AppLab PR #227](https://github.com/riccardopinato/AppLab/pull/227) MERGED `db263d48cf1dbdaf85933e3c044dd5d9ccbf7559`, exact head `5cf99a11ad8654cc788f74bcffb814f3329969ba` 7/7 workflow pass e Codex review senza rilievi dopo fix a due finding P2 e pattern CodeQL. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-030_PERFORMANCE_A11Y_SOURCE_CI_2026-11-12.md) — test su fixture sintetiche, >3 sample same-source/device/repo, 48dp, baseline verificata e fail-closed; senza collaudo fisico o certificazione consumer. Registro 31 VERIFIED / 25 PLANNED / 1 BLOCKED; X10-033 eleggibile.
+
 ## 2026-11-12 — X10-029 Visual regression verificata SOURCE+CI (30/57)
 - [AppLab PR #226](https://github.com/riccardopinato/AppLab/pull/226) MERGED `de6058c78bc572821635e8cf0f5b3079ee716b7b`; exact head `4c9de3873ee9ba526eeabace808e6cf9801e5e80`, 7/7 workflow + Codex independent review no findings. Prima CI fallita per due fixture di test con stato mutabile condiviso, corrette prima di rieseguire tutte le check. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-029_VISUAL_BASELINE_SOURCE_CI_2026-11-12.md): baseline approvate per profilo e schermata, screenshot/XML hash e receipts interazioni; WARN/false positive richiedono review umana. **Solo source+CI**, no app consumer/device test. Registro **30 VERIFIED / 26 PLANNED / 1 BLOCKED**, X10-033 ancora dipendente da X10-030.
 
