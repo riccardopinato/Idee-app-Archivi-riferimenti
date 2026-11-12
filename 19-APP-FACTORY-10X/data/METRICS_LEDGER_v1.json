@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "program_id": "APP_FACTORY_10X_2026",
+  "created_on": "2026-11-12",
+  "factory_baseline_sha": "c5adc147046beb7024629466d10eeb799c3c2619",
+  "authority_note": "This is 10x metric contract and evidence index, NOT the canonical v27 delivery ledger and not financial/accounting system",
+  "canonical_delivery_ledger": "https://github.com/riccardopinato/App-Factory-Core/blob/c5adc147046beb7024629466d10eeb799c3c2619/evidence/v27-observability/DELIVERY_LEDGER.json",
+  "privacy_policy": "No personal identifiers, raw analytics, customer records, broker positions, purchase receipts, account numbers, keys or payment provider credentials. Financial revenue proofs remain private and external.",
+  "causality_note": "PR opened-to-merged includes waiting, CI, human review; never infer active effort, speedup or 10x causality from it",
+  "metrics": [
+    {
+      "id": "verified_features_per_week",
+      "unit": "count/week",
+      "definition": "Verified product feature per measured week",
+      "acceptance": "Product PR + exact-head CI + acceptance receipt; docs and audits do not count",
+      "baseline": {
+        "status": "NOT_MEASURED",
+        "value": null
+      },
+      "observations": [],
+      "assurance": "UNVERIFIED"
+    },
+    {
+      "id": "lead_time_hours",
+      "unit": "h",
+      "definition": "Request→first actual coding→verified delivery, with active time separately",
+      "acceptance": "Independent work timestamp evidence; PR open→merge is elapsed lifecycle, not labor",
+      "baseline": {
+        "status": "NOT_MEASURED",
+        "value": null
+      },
+      "observations": [],
+      "assurance": "UNVERIFIED"
+    },
+    {
+      "id": "manual_interventions_per_feature",
+      "unit": "count/feature",
+      "definition": "Explicit manual copy/paste/approval handoffs",
+      "acceptance": "Observed manual interactions per shipped verified product feature",
+      "baseline": {
+        "status": "NOT_MEASURED",
+        "value": null
+      },
+      "observations": [],
+      "assurance": "UNVERIFIED"
+    },
+    {
+      "id": "reuse_ratio",
+      "unit": "share",
+      "definition": "Verified reused components in shipped feature set",
+      "acceptance": "Adoption tested in consumer and release, no inferred Golden promotion",
+      "baseline": {
+        "status": "NOT_MEASURED",
+        "value": null
+      },
+      "observations": [],
+      "assurance": "UNVERIFIED"
+    },
+    {
+      "id": "qa_regressions_escaped",
+      "unit": "count/release",
+      "definition": "Confirmed regressions escaped pre-release",
+      "acceptance": "Reproduced issue with release SHA and subsequent diagnosis",
+      "baseline": {
+        "status": "NOT_MEASURED",
+        "value": null
+      },
+      "observations": [],
+      "assurance": "UNVERIFIED"
+    },
+    {
+      "id": "pilot_retention_d30",
+      "unit": "share",
+      "definition": "D30 retained cohort for consented product",
+      "acceptance": "Anonymized aggregate cohort, privacy and consent review, no raw user data",
+      "baseline": {
+        "status": "NOT_MEASURED",
+        "value": null
+      },
+      "observations": [],
+      "assurance": "UNVERIFIED"
+    },
+    {
+      "id": "net_revenue_per_product",
+      "unit": "EUR/month",
+      "definition": "Revenue after platform costs, aggregated for a product",
+      "acceptance": "Private provider/accounting source, never personal transaction details in public repo",
+      "baseline": {
+        "status": "NOT_MEASURED",
+        "value": null
+      },
+      "observations": [],
+      "assurance": "UNVERIFIED"
+    },
+    {
+      "id": "agent_job_success_recovery",
+      "unit": "share",
+      "definition": "Verified recovered agent jobs/attempts",
+      "acceptance": "Actual runner receipts and retry events on two independent consumers",
+      "baseline": {
+        "status": "NOT_MEASURED",
+        "value": null
+      },
+      "observations": [],
+      "assurance": "UNVERIFIED"
+    }
+  ]
+}
