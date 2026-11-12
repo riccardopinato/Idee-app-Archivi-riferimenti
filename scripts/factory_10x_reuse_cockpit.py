@@ -8,6 +8,7 @@ No network, CAP/Golden write, release, hidden approval or CI authority.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -89,9 +90,10 @@ def rank(
             _score_number(estimate.get(key), key.upper())
         dependencies = estimate.get("dependencies")
         _require(isinstance(dependencies, list) and len(dependencies) <= 12
-                 and len(dependencies) == len(set(dependencies))
                  and all(isinstance(x, str) and 1 <= len(x) <= 100 for x in dependencies),
                  "INVALID_DEPENDENCIES")
+        _require(len(dependencies) == len(set(dependencies)),
+                 "DUPLICATE_DEPENDENCIES")
         by_id[cid] = estimate
 
     seen = set()
@@ -165,7 +167,10 @@ def rank(
             "state": state,
             "reason_codes": reasons,
             "dependencies": list(assessment["dependencies"]),
-            "input_assumptions": assessment["assumptions"],
+            "estimate_factors": {key: assessment[key] for key in
+                                 ("impact", "cross_app_reuse", "evidence", "risk", "effort")},
+            "assumptions_sha256": hashlib.sha256(
+                assessment["assumptions"].encode("utf-8")).hexdigest(),
             "recommended_next_action": ("REFRESH_PINNED_INVENTORY"
                                         if state == "STALE_RECHECK" else
                                         "HUMAN_SCOPE_AND_LICENSE_REVIEW"),
