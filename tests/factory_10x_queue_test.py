@@ -150,7 +150,9 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertTrue(any(t["id"] == "X10-006" for t in next_tasks(p)["ready_not_selected"] + next_tasks(p)["selected"]))
 
     def test_precondition_blocks_active(self):
-        p = copy.deepcopy(self.document)
+        # Use the dependency-incomplete fixture, not the changing live checkpoint:
+        # X10-011/012 can become VERIFIED without weakening this negative case.
+        p = self.fixture_baseline()
         next(t for t in p["tasks"] if t["id"] == "X10-013")["status"] = "IN_PROGRESS"
         with self.assertRaises(ValueError):
             validate(p)
