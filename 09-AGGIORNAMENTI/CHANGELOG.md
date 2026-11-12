@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — Hardening backup X10-022 dopo review
+- Corretto il preflight del restore anche per bundle creati dal costruttore pubblico: il numero di entry e le dimensioni vengono validati PRIMA delle copie in memoria. Tre test con fake list non copiabili verificano i limiti senza allocazioni massive; nessun comportamento device/consumer è certificato.
+
+
 ## 2026-11-12 — X10-022 kit backup/recovery con staged restore
 - [Dossier X10-022](../19-APP-FACTORY-10X/EVIDENCE_X10-022_BACKUP_RECOVERY_KIT_2026-11-12.md): core Dart con manifest SHA-256, limite media, inspection-before-restore, safety snapshot, rollback e tests di failure; Golden centrale backup ancora DRAFT, no hardware/migrazione consumer.
 

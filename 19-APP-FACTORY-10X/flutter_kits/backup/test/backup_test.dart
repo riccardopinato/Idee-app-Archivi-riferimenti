@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:collection';
 import 'dart:convert';
 
 import 'package:factory_backup_kit/factory_backup_kit.dart';
@@ -18,6 +19,26 @@ BackupBundle bundle({Map<String, List<int>>? entries}) => BackupBundle.build(
             'media/img_001.bin': [1, 2, 3, 4],
           },
     );
+
+// Public constructor inputs may be huge even if BackupBundle.build() is safe.
+// Any access to entries (instead of length preflight) fails this regression.
+class NoCopyOversizeList extends ListBase<int> {
+  NoCopyOversizeList(this.fakeLength);
+  final int fakeLength;
+
+  @override
+  int get length => fakeLength;
+
+  @override
+  set length(int value) => throw UnsupportedError('not mutable');
+
+  @override
+  int operator [](int index) => throw StateError('UNSAFE_ALLOCATING_COPY');
+
+  @override
+  void operator []=(int index, int value) =>
+      throw UnsupportedError('not mutable');
+}
 
 class FakeRestorePort implements RestoreTransactionPort {
   String active = 'original';
@@ -148,6 +169,51 @@ void main() {
       }),
       throwsFormatException,
     );
+  });
+
+  test('public constructor oversized single entry rejected before copying', () async {
+    final valid = bundle();
+    final oversized = BackupBundle(
+      manifest: valid.manifest,
+      entries: {
+        'data.json': NoCopyOversizeList(BackupLimit.maxEntryBytes + 1),
+      },
+    );
+    final port = FakeRestorePort();
+    expect(await BackupRestorer(port, expectedAppId: appId).restore(oversized),
+        RestoreOutcome.invalidBundle);
+    expect(port.snapshots, 0);
+    expect(port.stages, 0);
+  });
+
+  test('public constructor over total bytes rejected before copying', () async {
+    final valid = bundle();
+    final oversized = BackupBundle(
+      manifest: valid.manifest,
+      entries: {
+        'data.json': NoCopyOversizeList(12 * 1024 * 1024),
+        'media/a.bin': NoCopyOversizeList(12 * 1024 * 1024),
+        'media/b.bin': NoCopyOversizeList(12 * 1024 * 1024),
+      },
+    );
+    final port = FakeRestorePort();
+    expect(await BackupRestorer(port, expectedAppId: appId).restore(oversized),
+        RestoreOutcome.invalidBundle);
+    expect(port.snapshots, 0);
+  });
+
+  test('public constructor excess entry count rejected before copying', () async {
+    final valid = bundle();
+    final entries = <String, List<int>>{
+      'data.json': NoCopyOversizeList(1),
+      for (var i = 0; i < BackupLimit.maxEntries; i++)
+        'media/e${i}.bin': NoCopyOversizeList(1),
+    };
+    final port = FakeRestorePort();
+    expect(await BackupRestorer(port, expectedAppId: appId).restore(
+      BackupBundle(manifest: valid.manifest, entries: entries)),
+      RestoreOutcome.invalidBundle);
+    expect(port.snapshots, 0);
   });
 
   test('successful restore stages and commits only verified bytes', () async {
