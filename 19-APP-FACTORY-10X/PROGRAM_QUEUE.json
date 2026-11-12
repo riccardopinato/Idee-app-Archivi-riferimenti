@@ -931,9 +931,17 @@
       "acceptance": "Fail-closed, regressions, source SHA artifacts; no auto-store publish",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/228",
+          "source_sha": "812b910740f60380baaf541af4bd4248692df20f"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY. Read-only X10 release decision brief binds same source/artifact and existing QA router, visual baseline, perf/a11y, signed APK provenance, canonical release assurance and all seven CI workflows via injected independently trusted evidence lookup. No consumer runtime/device/Store evidence collected, no product-owner approval, no automatic publication. PR #228 seven workflows SUCCESS, Codex clean exact-head review and resolved threads."
     },
     {
       "id": "X10-034",
@@ -1205,9 +1213,17 @@
       "acceptance": "Correlazione test failure, bug pattern 3 ricorrenze, replay evidence",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/229",
+          "source_sha": "e6c1e2e1c1bbc066c3a8f6b4f91e45aeb0f6c6b2"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY. Thin Pattern-3 failure-to-donor adapter reuses AppLab pattern3_discovery_v57c and factory_feedback_packager_v58d; each counted failure must be independently source/run/test/category/code/digest-verified and distinct run/evidence; canonical repo casing; proposes replay plan NOT_EXECUTED. No real failure replay, consumer fix, donor promotion or Golden certification performed. PR #229 7/7 workflows SUCCESS and Codex clean exact-head review, discussions resolved."
     },
     {
       "id": "X10-046",
