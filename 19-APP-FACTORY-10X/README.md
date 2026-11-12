@@ -6,6 +6,7 @@
 
 - [Roadmap con 57 task e 8 ondate](ROADMAP_10X.md)
 - **X10-042 VERIFIED SOURCE+CI:** [PR #117](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/117) aggiorna il join, nessuna implementazione automatica in consumer; X10-043 review semantica ora eleggibile.
+- [X10-043 — Revisione semantica supervisionata](EVIDENCE_X10-043_SEMANTIC_REVIEW_2026-11-12.md) — SHA, test e licenza per-file + prova di approvazione; solo advisory, mai auto-merge.
 - [X10-042 CAP-ID dedup/join source+CI](EVIDENCE_X10-042_CAP_DEDUP_SOURCE_2026-11-12.md) — join di segnali hash con CAP esistenti/consumer e stato STALE, nessun nuovo CAP o consumer merge.
 - [Diff-aware intake X10-041 source+CI](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/19): pinned SHA and hashed-path hints only, no live webhook; X10-042 registry join now eligible.
 - [Knowledge/reuse cross-app X10-040](EVIDENCE_X10-040_CROSS_APP_KNOWLEDGE_ARCHITECTURE_2026-11-12.md) — audit architetturale ADVISORY_ONLY, nessun monitor diff live installato.

@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-043 gate semantico supervisionato
+- [Review X10-043](../19-APP-FACTORY-10X/EVIDENCE_X10-043_SEMANTIC_REVIEW_2026-11-12.md): donor e consumer pin, test/CI, file license, Product Bible, approvazione verificata esterna. Proposta informativa; nessun codice consumer o Golden promosso. La coda si allinea solo dopo CI/merge.
+
 ## 2026-11-12 — X10-020, identity/local-first opt-in in Dart
 - [Pacchetto identity](../19-APP-FACTORY-10X/EVIDENCE_X10-020_IDENTITY_OPTIN_KIT_2026-11-12.md): accesso solo dietro azione esplicita, verifier e partizione dati iniettati, rifiuto OAuth invalidi, test Dart reali su SDK pin; senza segreti/provider/configurazione cloud. Nessuna app consumer modificata.
 
