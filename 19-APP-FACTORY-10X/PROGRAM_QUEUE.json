@@ -174,9 +174,17 @@
       "acceptance": "Mappa versione, license, SHA, test, readiness e gap per componenti core",
       "impact": 5,
       "effort": 1,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/103",
+          "source_sha": "0b850d3480518cd745097ef48dcf30b0c41e6aea"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Golden source inventory, no consumer package verified"
     },
     {
       "id": "X10-004",
@@ -216,9 +224,17 @@
       "acceptance": "Definizioni e baseline per verified-feature/week, cycle time, QA, reuse, retention e revenue",
       "impact": 5,
       "effort": 2,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/104",
+          "source_sha": "570544f99e12caced0bd860300fc280002fb40fd"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "KPI definitions and negative tests; no numerical metrics measured"
     },
     {
       "id": "X10-006",
@@ -234,9 +250,17 @@
       "acceptance": "Task DAG, runner read-only, progress receipt e rispetto gate branch/PR; nessuna falsa chiusura",
       "impact": 5,
       "effort": 1,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/102",
+          "source_sha": "8fe0beb38e3c08da681e30bbbefab6248d8f95f7"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Queue selector source+CI with read-only workflow; cron event runtime not certified"
     },
     {
       "id": "X10-007",
@@ -252,9 +276,17 @@
       "acceptance": "Dossier sorgenti attesi v0.1-v0.4; import rimane BLOCKED finché file privati non forniti",
       "impact": 5,
       "effort": 1,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/14",
+          "source_sha": "b40e9fd40dc6d650a8ca9b28193976889f14154a"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Source inventory + offline scanner only; Windows source not imported"
     },
     {
       "id": "X10-008",
@@ -270,9 +302,15 @@
       "acceptance": "Repository private, SHA/manifest e secret scan, scelta source canonica senza dati personali",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "BLOCKED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/14",
+          "source_sha": "b40e9fd40dc6d650a8ca9b28193976889f14154a"
+        }
+      ],
+      "blocker": "Human action: provide sanitized original Windows AppFactoryAgent v0.1-v0.4 source + license/manifest via appropriate private channel, not available through GitHub connector; no actual import performed."
     },
     {
       "id": "X10-009",
@@ -288,9 +326,17 @@
       "acceptance": "Specifica interfacce queue/executor/QA con file e test citati; nessun nuovo worker duplicato",
       "impact": 5,
       "effort": 2,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/AppLab/pull/216",
+          "source_sha": "9bbb424929fe8916e84e2b0a9da384961c26f1e1"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Pinned AppLab API selection; not runtime integration"
     },
     {
       "id": "X10-010",
@@ -1176,6 +1222,30 @@
       "status": "PLANNED",
       "evidence": [],
       "blocker": null
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-12",
+      "type": "EVIDENCE_RECONCILIATION",
+      "completed_task_ids": [
+        "X10-003",
+        "X10-005",
+        "X10-006",
+        "X10-007",
+        "X10-009"
+      ],
+      "blocked_task_ids": [
+        "X10-008"
+      ],
+      "evidence_refs": [
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/103",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/104",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/102",
+        "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/14",
+        "https://github.com/riccardopinato/AppLab/pull/216"
+      ],
+      "note": "Five source/test-scoped tasks verified. No Windows import, real runtime adapter, product feature, Golden promotion or numerical 10x claim."
     }
   ]
 }
