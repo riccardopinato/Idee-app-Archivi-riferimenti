@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-026 preflight due consumer (PLANNED, senza certificazione)
+- [Dossier Anna's Diary e CamperBoss](../19-APP-FACTORY-10X/EVIDENCE_X10-026_TWO_CONSUMER_PREFLIGHT_2026-11-12.md): source SHA e CI osservati nei rispettivi repository, nessuna integrazione dei nuovi kit Factory nei pubspec fissati. X10-026 rimane PLANNED. Occorrono due reali PR consumer, compatibilità SDK, rollback, prove AppLab e gate fisici dove applicabili. Non modifica stato dei prodotti né dati utente.
+
 ## 2026-11-12 — X10-016 adapter research/QA verificati SOURCE+CI (32/57)
 - [Agent Core #22](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/22) MERGED `35a0e4f111e00d7193ac087f122afcfaf0eda68f`; exact head `8d7efc65b436bc05e2b55a735a8350e688fa233b` workflow PASS e review Codex pulita, thread P2 URL encoding risolto. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-016_SPECIALIST_ADAPTERS_SOURCE_CI_2026-11-12.md). Candidate donor non certificati, QA non trusted runtime, nessun Finance live/Windows worker import. Conteggio 32 VERIFIED / 24 PLANNED / 1 BLOCKED.
 

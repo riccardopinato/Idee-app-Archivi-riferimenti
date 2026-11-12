@@ -1,5 +1,7 @@
 # App Factory 10x — programma continuo
 
+**X10-026 — preflight due consumer (NON CERTIFICATO):** [Anna's Diary + CamperBoss](EVIDENCE_X10-026_TWO_CONSUMER_PREFLIGHT_2026-11-12.md) verificati a SHA fissati; configurazioni Flutter e CI presenti, ma kit Factory non ancora integrati nei due consumer. X10-026 resta PLANNED finché PR consumer, rollback, prove device e review indipendente non sono completati.
+
 **Nota AppLab #220 (12/11):** runner Ubuntu 24.04/Playwright 1.55 **MERGED** a `62660ae0` dopo 7/7 CI e review indipendente exact-head. X10-018 ora VERIFIED SOURCE+CI dopo [AppLab PR #223](https://github.com/riccardopinato/AppLab/pull/223); QA router [PR #224](https://github.com/riccardopinato/AppLab/pull/224) MERGED/X10-028 VERIFIED source+CI; Golden harness [PR #223](https://github.com/riccardopinato/AppLab/pull/223) MERGED/X10-018 SOURCE+CI. Nessun bypass E2E.
 
 **Checkpoint 12/11/2026 — X10-030 accettato SOURCE+CI:** [AppLab #227](https://github.com/riccardopinato/AppLab/pull/227) MERGED `db263d48cf1dbdaf85933e3c044dd5d9ccbf7559` dopo 7/7 exact-head checks e Codex clean review sul commit `5cf99a11ad8654cc788f74bcffb814f3329969ba`. [Dossier X10-030](EVIDENCE_X10-030_PERFORMANCE_A11Y_SOURCE_CI_2026-11-12.md); il gate report-only non certifica app fisiche o low-end. **X10-033 ora eleggibile.**
