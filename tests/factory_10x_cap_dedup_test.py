@@ -86,6 +86,19 @@ class DedupTests(unittest.TestCase):
             r["records"][0]["app_states"]["FocuSense"] = "CI_VERIFIED"
         self.assertEqual(self.assess(already)["candidates"], [])
 
+    def test_explicit_blocked_consumer_does_not_become_review_ready(self):
+        def blocked(m, r, i):
+            r["records"][0]["app_states"]["FocuSense"] = "BLOCKED"
+        row = self.assess(blocked)["candidates"][0]
+        self.assertEqual(row["status"], "BLOCKED")
+        self.assertIn("RECORDED_CONSUMER_BLOCKER", row["reason_codes"])
+
+    def test_unknown_consumer_status_is_invalid_not_proposed(self):
+        def wrong(m, r, i):
+            r["records"][0]["app_states"]["FocuSense"] = "SHIPPED_MAYBE"
+        with self.assertRaisesRegex(DedupError, "CAP_CONSUMER_STATE_INVALID"):
+            self.assess(wrong)
+
     def test_two_records_same_cap_id_fail_closed(self):
         def duplicate(m, r, i):
             r["records"].append(copy.deepcopy(r["records"][0]))
