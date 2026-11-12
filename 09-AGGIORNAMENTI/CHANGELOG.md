@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-014 PR Agent + X10-018 Golden harness (28/57)
+- [Agent Core #21](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/21) MERGED `82d58f1d7e288a8aa50ad2ee20d8fe7848f18d67` da head `c535f8d05c6d6f4df149b0bad9f375d73c885b18`; Python CI e review Codex exact-head senza rilievi dopo correzione dei due P1. [Dossier X10-014](../19-APP-FACTORY-10X/EVIDENCE_X10-014_AGENT_PR_SOURCE_CI_2026-11-12.md). PR draft adapter riusa AppLab v6.0E, non prova worker Windows, PR live o auto-merge.
+- [AppLab #223](https://github.com/riccardopinato/AppLab/pull/223) MERGED `25a298b5fe3b2ee093e7aa4fda8c690f27f027dc` da head `f601f2fec36b32ec44a73c6289daf161de32dba5`; 7/7 CI, WebRTC E2E al rerun dopo timeout iniziale, review exact-head pulita. [Dossier X10-018](../19-APP-FACTORY-10X/EVIDENCE_X10-018_COMPAT_HARNESS_SOURCE_CI_2026-11-12.md). Compatibilità solo source/CI, non consumer fisici o Golden certificate.
+- Registro: **28 VERIFIED / 28 PLANNED / 1 BLOCKED** (X10-008); X10-016 e X10-026 READY con gate PR, X10-015 resta vincolato ai sorgenti Windows.
+
 ## 2026-11-12 — X10-028 QA Router AppLab accettato SOURCE+CI (26/57)
 - [AppLab PR #224](https://github.com/riccardopinato/AppLab/pull/224) MERGED `4409c77862cc83aa25bd4303a8066b6eea78b170`; head esatto `6735183a9baa78124d14a2dcdb02c643fc00b766`, 7/7 workflow CI PASS e Codex review senza rilievi sullo stesso SHA. [Dossier X10-028](../19-APP-FACTORY-10X/EVIDENCE_X10-028_QA_ROUTER_SOURCE_CI_2026-11-12.md). Router FAST/FULL con receipt source-bound, gate obbligatori e risultati fail-closed; **solo codice + CI**, non consumer/device/APK firmati/Store. Coda: **26 VERIFIED / 29 PLANNED / 2 BLOCKED**; X10-029, X10-030, X10-031 e X10-045 diventano eleggibili. X10-018 resta BLOCKED fino all'harness #223 e alla riconciliazione delle prove.
 
