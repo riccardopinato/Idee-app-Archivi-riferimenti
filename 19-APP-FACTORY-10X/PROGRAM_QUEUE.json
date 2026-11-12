@@ -783,9 +783,17 @@
       "acceptance": "Runner per-app selective tests con output receipt, non ricostruzione v6",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/224",
+          "source_sha": "6735183a9baa78124d14a2dcdb02c643fc00b766"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+APPLAB_CI+LIVE_EMULATOR_E2E on AppLab's own self-test only. PR #224 merged into AppLab main 4409c77862cc83aa25bd4303a8066b6eea78b170 after 7/7 exact-head workflows (including Browser WebRTC/Emulator) and independent Codex review exact head no findings. Router keeps existing smart_test_plan and certification gates, source-SHA/FAST-FULL/mandatory-labs tests, trusted runner report only and no false release. NO actual Anna/World Days/consumer QA executed; NO Android device/store/Golden certification. X10-029/030/031/045 newly eligible source work."
     },
     {
       "id": "X10-029",
