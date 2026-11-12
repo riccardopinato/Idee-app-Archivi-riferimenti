@@ -190,6 +190,22 @@ class BackupRestorer {
     if (_working) return RestoreOutcome.busy;
     _working = true;
     try {
+      // Reject oversized public-constructor inputs before allocating a second
+      // copy. No await occurs between these checks and the byte freeze;
+      // after freezing the same immutable byte snapshot is inspected/staged.
+      if (bundle.entries.length > BackupLimit.maxEntries ||
+          bundle.manifest.entries.length > BackupLimit.maxEntries) {
+        return RestoreOutcome.invalidBundle;
+      }
+      var prospectiveBytes = 0;
+      for (final entry in bundle.entries.entries) {
+        final length = entry.value.length;
+        if (length > BackupLimit.maxEntryBytes ||
+            prospectiveBytes + length > BackupLimit.maxTotalBytes) {
+          return RestoreOutcome.invalidBundle;
+        }
+        prospectiveBytes += length;
+      }
       // Freeze caller-owned memory before the first await. The same frozen
       // bytes are inspected and staged; data can't change while awaiting I/O.
       final snapshotEntries = <String, List<int>>{
