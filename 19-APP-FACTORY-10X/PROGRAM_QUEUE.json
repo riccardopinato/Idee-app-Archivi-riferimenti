@@ -994,9 +994,17 @@
       "acceptance": "Event → diff commit/paths → candidate, no arbitrary source PRs",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/19",
+          "source_sha": "f6b4d6fd022e34c1784e2915733b89bf5ee24d74"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI scope only: pure event+AppLab-pinned diff-to-advisory hashed-path hints, deterministic monitor key, source SHA and safety tests, no real authenticated webhook or GitHub event transport, no CAP join, no recurring live monitoring, no worker, no private source copying."
     },
     {
       "id": "X10-042",
