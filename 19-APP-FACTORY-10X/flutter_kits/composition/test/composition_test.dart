@@ -61,9 +61,13 @@ class MemoryRestore implements RestoreTransactionPort {
     transactions++;
   }
   @override
-  Future<void> commitStaged() async => state = 'restored';
+  Future<void> commitStaged() async {
+    state = 'restored';
+  }
   @override
-  Future<void> rollbackTo(Object safetySnapshot) async => state = safetySnapshot as String;
+  Future<void> rollbackTo(Object safetySnapshot) async {
+    state = safetySnapshot as String;
+  }
 }
 
 class DeniedNativeNotifier implements NotificationPlatformPort {
