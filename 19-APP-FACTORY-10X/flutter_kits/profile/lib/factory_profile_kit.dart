@@ -100,24 +100,37 @@ class ProfileSettingsController {
   Future<void> _tail = Future<void>.value();
   bool _loaded = false;
   bool _corrupt = false;
+  Future<ProfilePreferences>? _loading;
 
   ProfilePreferences get current => _current;
   bool get loaded => _loaded;
   bool get recoveredFromInvalidPreferences => _corrupt;
 
-  Future<ProfilePreferences> load() async {
-    if (_loaded) return _current;
-    final document = await _store.read();
-    if (document != null) {
-      try {
-        _current = ProfilePreferences.fromJson(jsonDecode(document));
-      } on FormatException {
-        // Preserve the original bytes for independent recovery: no auto-wipe.
-        _corrupt = true;
+  // One shared read prevents a delayed, older read from overwriting a
+  // successful update after a concurrent load has already completed.
+  Future<ProfilePreferences> load() {
+    if (_loaded) return Future.value(_current);
+    return _loading ??= _loadOnce();
+  }
+
+  Future<ProfilePreferences> _loadOnce() async {
+    try {
+      final document = await _store.read();
+      if (document != null) {
+        try {
+          _current = ProfilePreferences.fromJson(jsonDecode(document));
+        } on FormatException {
+          // Keep prior bytes for independent recovery: no automatic wipe.
+          _corrupt = true;
+        }
       }
+      _loaded = true;
+      return _current;
+    } catch (_) {
+      // Storage/network read failure is retryable, without marking loaded.
+      _loading = null;
+      rethrow;
     }
-    _loaded = true;
-    return _current;
   }
 
   /// Serializes concurrent updates. Do not expose a successful state until
