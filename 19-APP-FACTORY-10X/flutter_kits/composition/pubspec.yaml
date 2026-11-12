@@ -1,0 +1,17 @@
+name: factory_kit_composition
+description: App Factory X10-025 offline dependency chooser and pure Dart kit integration fixture.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+dependencies:
+  factory_profile_kit:
+    path: ../profile
+  factory_identity_kit:
+    path: ../identity
+  factory_backup_kit:
+    path: ../backup
+  factory_notification_kit:
+    path: ../notifications
+dev_dependencies:
+  test: ^1.25.0
