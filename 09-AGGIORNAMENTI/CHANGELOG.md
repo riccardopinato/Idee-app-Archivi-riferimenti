@@ -1,5 +1,14 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — Esecuzione App Factory 10x / checkpoint di 5 task
+- PR [Golden/Donor #103](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/103): inventario 61 Golden e 20 donor con snapshot/provenance e test. X10-003 evidence scope SOURCE.
+- PR [Windows preflight #14](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/14): script offline hash/source exclusions con test; X10-007 evidence scope SOURCE+CI. X10-008 BLOCKED: attende sorgenti locali Windows sanitizzati.
+- PR [AppLab adapter #216](https://github.com/riccardopinato/AppLab/pull/216): mappa API reale e limiti pilot runtime, nessun adapter eseguito; X10-009 SOURCE+CI (docs CI), non runtime.
+- PR [KPI #104](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/104): ledger metriche 8/8 NOT_MEASURED e validatore, scope SOURCE+CI; X10-005 chiuso come strumentazione, non risultato numerico.
+- X10-006 chiuso dalla [PR #102](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/102) e CI del selettore/workflow read-only; [dossier dedicato](../19-APP-FACTORY-10X/EVIDENCE_X10-006_QUEUE_2026-11-12.md). Nessuna schedule runtime dimostrata.
+- Coda ora 7 VERIFIED / 49 PLANNED / 1 BLOCKED; nessun donor/Golden auto promosso e nessun test dispositivo inferito.
+
+
 ## 2026-11-12 — Parallelismo 10x senza limite numerico arbitrario
 - Rimosso `max_parallel: 3` dal programma 10x; l'algoritmo seleziona tutti i task READY compatibili, anche read-only sul medesimo repository, con gestione separata dei writer e blocco di modifiche concorrenti non isolate.
 - Se un task resta `BLOCKED`, non trattiene più capacità; rivalutazione della coda e sostituzione con un altro READY. Fixture CI per selezione oltre 3, sostituzione blocco e scoping PR disgiunto.
