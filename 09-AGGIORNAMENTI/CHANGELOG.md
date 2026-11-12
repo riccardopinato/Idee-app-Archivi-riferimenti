@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-035: budget massimo 100 € confermato, prodotti NON approvati
+- [Confronto commerciale trasversale](../19-APP-FACTORY-10X/X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md): Rotate 180°, Omni Cleaner e Battery Guard proposti per primo test; World Days sviluppo organico condizionale; alternative Send-to-PC, PDF, Phone Guard, FocusSense e altre confrontate. Confermato solo TETTO 100 €, **0 € di spesa automatica autorizzata**, nessun prodotto approvato, nessuna campagna/SDK/store/price mutation. Il task X10-035 resta PLANNED.
+
 ## 2026-11-12 — Handoff operativo sei task 10x, senza promozioni fittizie
 - [Checkpoint operativo](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md) per X10-026/032/035/036/046/047: link alle due PR consumer Flutter, planner AppLab #230, owner decision e privacy metrics, Agent Core #23. Distinti SOURCE/CI, i HUMAN_GATE e i collaudi fisici/Play. Il registro resta 34 VERIFIED / 22 PLANNED / 1 BLOCKED fino a evidenza finale.
 
