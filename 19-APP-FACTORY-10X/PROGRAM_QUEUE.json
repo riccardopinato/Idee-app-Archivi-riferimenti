@@ -465,9 +465,17 @@
       "acceptance": "Proposta branch+PR, review/retry fail-closed; no default branch direct writes",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/21",
+          "source_sha": "c535f8d05c6d6f4df149b0bad9f375d73c885b18"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+PYTHON_CI ONLY. Agent Core #21 merged main 82d58f1d7e288a8aa50ad2ee20d8fe7848f18d67; latest head c535f8d05c6d6f4df149b0bad9f375d73c885b18 passed Validate context contracts including synthetic negative tests and independent Codex exact-head review with zero findings after P1 fixes (deny MERGE_PR/PUBLISH_RELEASE/DEPLOY_PRODUCTION, enforce signed max_attempts). Delegates to EXISTING AppLab v6.0E draft PR steward, no independent PR worker, live Windows/remote PR or auto-merge test; no release authority. X10-016 now eligible; real E2E X10-015 awaits human-provided Windows source X10-008."
     },
     {
       "id": "X10-015",
@@ -547,9 +555,17 @@
       "acceptance": "Tests donor+consumer e rollback versioni senza modifiche massive non autorizzate",
       "impact": 5,
       "effort": 3,
-      "status": "BLOCKED",
-      "evidence": [],
-      "blocker": "AppLab runner remediation #220 MERGED to main 62660ae0d86feecaa293261417fd57b4ff886064 after exact-head 7/7 checks and Codex review. Golden compatibility source PR #218 (Ubuntu 26.04 E2E failure) closed as superseded by fresh-base PR #223 on supported Ubuntu 24.04, head 99b07ae6efe1602a6a0b20ebbef4f42cc0c3089b. X10-018 remains BLOCKED until #223 exact-head 7/7 workflows, fresh independent review, gated merge and canonical evidence reconciliation; no Golden/physical consumer certification inferred."
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/223",
+          "source_sha": "f601f2fec36b32ec44a73c6289daf161de32dba5"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY. AppLab #223 merged to main 25a298b5fe3b2ee093e7aa4fda8c690f27f027dc; head f601f2fec36b32ec44a73c6289daf161de32dba5 passed exact-head 7/7 named workflows after one failed Live Emulator Browser E2E attempt (WebRTC no decoded frame) and targeted successful rerun. Independent Codex exact-head review completed zero findings. Golden compatibility harness checks source-bound donor/consumer/version/rollback contracts; no paired real consumer execution, physical device, Golden promotion or Store proof. X10-026 now eligible."
     },
     {
       "id": "X10-019",
