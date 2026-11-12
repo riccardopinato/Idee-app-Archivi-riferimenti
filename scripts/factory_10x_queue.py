@@ -136,15 +136,39 @@ def receipt_ok(receipt):
     return True
 
 
-def next_tasks(program, limit=None):
-    """Select only dependency-ready tasks; do not schedule two PRs on one repo."""
+def _paths_overlap(first, second):
+    """A parent directory overlaps its descendants; same file also overlaps."""
+    return any(a == b or a.startswith(b.rstrip("/") + "/")
+               or b.startswith(a.rstrip("/") + "/")
+               for a in first for b in second)
+
+
+def _writers_compatible(left, right):
+    """No concurrent writes to shared source without a reviewed isolated scope."""
+    if left["owner_repo"] != right["owner_repo"]:
+        return True
+    if not (left.get("scope_reviewed") is True and right.get("scope_reviewed") is True):
+        return False
+    if left.get("write_branch") == right.get("write_branch"):
+        return False
+    return not _paths_overlap(left["write_paths"], right["write_paths"])
+
+
+def next_tasks(program):
+    """Select ALL safely compatible tasks: no arbitrary numeric task ceiling.
+
+    Independent READ_ONLY tasks can overlap even inside one repository.
+    PR_GATED writers share a repo only after explicitly reviewed disjoint
+    paths AND distinct branches. Existing IN_PROGRESS writers reserve scopes.
+    A BLOCKED task reserves nothing; re-run this selector on every change.
+    Running these selections requires an actual executor; this is planning only.
+    """
     validate(program)
     by_id = {t["id"]: t for t in program["tasks"]}
     wave_index = {w["id"]: i for i, w in enumerate(program["waves"])}
-    ready = []
-    waiting = []
+    ready, waiting = [], []
     for t in program["tasks"]:
-        if t["status"] not in ("PLANNED",):
+        if t["status"] != "PLANNED":
             continue
         missing = [d for d in t["dependencies"] if by_id[d]["status"] != "VERIFIED"]
         if missing:
@@ -153,18 +177,23 @@ def next_tasks(program, limit=None):
             ready.append(t)
     ready.sort(key=lambda t: (PRIORITY[t["priority"]], wave_index[t["wave"]],
                               -(t["impact"] / t["effort"]), t["id"]))
-    max_parallel = limit or program["operating_rules"]["max_parallel"]
-    selected, approval, skipped, repos = [], [], [], set()
+    selected, approval, conflicts = [], [], []
+    active_writers = [t for t in program["tasks"]
+                      if t["status"] == "IN_PROGRESS" and t["mode"] == "PR_GATED"]
     for t in ready:
         if t["mode"] == "HUMAN_GATE":
             approval.append(t)
-        elif len(selected) >= max_parallel or t["owner_repo"] in repos:
-            skipped.append(t)
-        else:
+        elif t["mode"] == "READ_ONLY":
             selected.append(t)
-            repos.add(t["owner_repo"])
+        elif all(_writers_compatible(t, w) for w in active_writers):
+            selected.append(t)
+            active_writers.append(t)
+        else:
+            conflicts.append({"id": t["id"], "owner_repo": t["owner_repo"],
+                              "reason": "WRITE_SCOPE_CONFLICT_OR_NOT_REVIEWED"})
     return {"selected": selected, "awaiting_human_gate": approval,
-            "ready_not_selected": skipped, "awaiting_dependencies": waiting,
+            "writer_conflicts": conflicts, "ready_not_selected": conflicts,
+            "awaiting_dependencies": waiting,
             "blocked": [t for t in program["tasks"] if t["status"] == "BLOCKED"],
             "verified": sum(t["status"] == "VERIFIED" for t in program["tasks"]),
             "total": len(program["tasks"])}
@@ -175,12 +204,12 @@ def summary_markdown(program, selection):
         return f'- **{t["id"]}** [{t["priority"]}, {t["mode"]}, {t["stream"]}] {t["title"]} — {t["owner_repo"]}. Gate: {t["acceptance"]}.'
     lines = ["## App Factory 10x — prossima coda (non esecuzione)",
              f'Factory: {program["factory_baseline"]}; {selection["verified"]}/{selection["total"]} task con gate VERIFIED.',
-             "", "### Prossimi task eseguibili — repository distinti"]
+             "", "### Tutti i task READY compatibili (senza limite numerico)"]
     lines += [show(t) for t in selection["selected"]] or ["- Nessun task eseguibile: controllare prerequisiti e gate."]
     lines += ["", "### Gate umani già pronti"]
     lines += [show(t) for t in selection["awaiting_human_gate"]] or ["- Nessun gate umano pronto."]
     lines += ["", f'In attesa di dipendenze: {len(selection["awaiting_dependencies"])}; '
-              f'in coda dopo i limiti di parallelismo: {len(selection["ready_not_selected"])}; '
+              f'writer in attesa di coordinamento path/branch: {len(selection["writer_conflicts"])}; '
               f'bloccati: {len(selection["blocked"])}.', "",
               "**Attenzione:** la schedule verifica/ordina la coda ma NON modifica repository, "
               "non sviluppa codice, non auto-mergia PR, non marca VERIFIED e non riapre ChatGPT da sola."]
@@ -201,6 +230,7 @@ def main():
             print(json.dumps({"selected": [t["id"] for t in result["selected"]],
                               "human_gate": [t["id"] for t in result["awaiting_human_gate"]],
                               "waiting": len(result["awaiting_dependencies"]),
+                              "writer_conflicts": result["writer_conflicts"],
                               "blocked": len(result["blocked"]),
                               "verified": result["verified"]}, indent=2))
         else:
