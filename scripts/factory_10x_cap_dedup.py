@@ -15,6 +15,8 @@ CAP = re.compile(r"^CAP-[0-9]{4,}$")
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 IMPLEMENTED = {"SOURCE_CONFIRMED", "CI_VERIFIED", "DEVICE_VERIFIED", "RELEASE"}
+KNOWN_STATES = IMPLEMENTED | {"PROPOSTA", "ROADMAP_STORICA", "SOURCE_REPORTED",
+                              "DONOR_REPORTED", "BLOCKED"}
 REPO_PREFIX = "riccardopinato/"
 
 
@@ -106,7 +108,10 @@ def join(
         states = cap.get("app_states", {})
         _require(isinstance(states, dict), "CAP_APP_STATES_INVALID")
         for app, state in sorted(states.items()):
-            if not isinstance(app, str) or not isinstance(state, str) or state in IMPLEMENTED:
+            _require(isinstance(app, str) and bool(app.strip())
+                     and isinstance(state, str) and state in KNOWN_STATES,
+                     "CAP_CONSUMER_STATE_INVALID")
+            if state in IMPLEMENTED:
                 continue
             if app.casefold() == source_repo.split("/", 1)[1].casefold():
                 continue
@@ -124,6 +129,8 @@ def join(
                 reason.append("CAP_REGISTRY_FACTORY_BASELINE_STALE")
             if consumer.get("head_observed_at") != observed_on:
                 reason.append("CONSUMER_INVENTORY_STALE")
+            if state == "BLOCKED":
+                reason.append("RECORDED_CONSUMER_BLOCKER")
             identity = [source_repo.casefold(), source_sha, cap["id"],
                         (REPO_PREFIX + app).casefold(), consumer_sha, "REVIEW_REUSE"]
             found.append({
@@ -132,7 +139,8 @@ def join(
                 "producer_sha": source_sha, "source_path_sha256": path_hash,
                 "consumer_repo": REPO_PREFIX + app, "consumer_inventory_sha": consumer_sha,
                 "consumer_state_recorded": state,
-                "status": "STALE" if reason else "NEEDS_REVIEW",
+                "status": "BLOCKED" if state == "BLOCKED" else
+                          "STALE" if reason else "NEEDS_REVIEW",
                 "reason_codes": sorted(reason), "requires_license_review": True,
                 "requires_product_owner_approval": True,
                 "automatic_adoption": False, "ci_verified_this_run": False,
