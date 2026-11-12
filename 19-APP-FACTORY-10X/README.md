@@ -5,6 +5,7 @@
 **Direzione strategica approvata:** 12/11/2026. La Factory deve costruire e distribuire prodotti con meno passaggi manuali, sfruttando agenti, Golden versionati, AppLab, metriche business e conoscenza inter-app.
 
 - [Roadmap con 57 task e 8 ondate](ROADMAP_10X.md)
+- [Shortlist commerciale X10-002 — Battery Guard, Rotate 180°, World Days](EVIDENCE_X10-002_COMMERCIAL_SHORTLIST_2026-11-12.md) — prevalidazione SOURCE, niente domanda/ricavi misurati né decisione budget.
 - [Primi due audit di partenza](EVIDENCE_X10-001_BASELINE_2026-11-12.md) · [Mappa AppLab riutilizzabile](EVIDENCE_X10-004_APPLAB_REUSE_2026-11-12.md) — X10-001 e X10-004 con prove source e review.
 - [Coda machine-readable e dipendenze](PROGRAM_QUEUE.json)
 - [Contratto per la continuità](OPERATING_CONTRACT.md)
