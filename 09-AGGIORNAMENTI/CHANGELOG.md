@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-025 kit composition integrato (24/57)
+- [PR #131](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/131), merge `3857d4ec3b89b7a73cb5b73f30d9c1c7e19d00d6`: test Dart veri tra cinque package (composition + quattro kit), chooser deterministico con flags e blocchi native/monetizzazione. Non sostituisce review dei provider o integrazione consumer/device. Coda 24 VERIFIED / 31 PLANNED / 2 BLOCKED; X10-023 native pending.
+
+
 ## 2026-11-12 — X10-025 Dart kit dependency chooser
 - Implementato [X10-025](../19-APP-FACTORY-10X/EVIDENCE_X10-025_COMPOSITION_AND_CHOOSER_2026-11-12.md): package composizione e fixture importando realmente profile/identity/backup/notifications; esclusioni billing/native Web, provider e owner gates espliciti; test CI Dart 3.6.0. Source-only: nessuna app consumer certificata.
 
