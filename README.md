@@ -116,3 +116,7 @@ Archiviate **100 schede individuali**, **6 proposte extra senza numero** e **14 
 ## Motori ML on-device replicabili — audit 04/11/2026
 
 [Audit ML23 / Golden](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md) con 10 nuove CAP e grafo dipendenze che abilita riuso a catena. Nessun import in app per effetto del catalogo.
+
+## Intake visuale App Factory — 13/11/2026
+
+[**66 riferimenti grafici nuovi, 77 upload e 11 duplicati esatti**](12-CAPABILITY-E-IMPLEMENTAZIONI/DESIGN_INTAKE_RIUSO_2026-11-13.md): ricerca e crosswalk verso CAP esistenti. Source of truth visuale: Design-App, branch catalog/visual-references-2026-11-13. Nessuna nuova CAP, app o Golden promossa, né codice di terzi riutilizzato senza diritti.
