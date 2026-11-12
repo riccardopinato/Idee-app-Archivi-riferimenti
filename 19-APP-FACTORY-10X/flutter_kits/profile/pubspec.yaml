@@ -1,0 +1,8 @@
+name: factory_profile_kit
+description: Offline-first, opt-in profile preferences contract for App Factory 10x.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.0
