@@ -1,4 +1,8 @@
 # Changelog dell'archivio
+## 2026-11-12 — X10-023: policy di ricostruzione reminder (parziale)
+
+- Introdotto [planner Dart X10-023](../19-APP-FACTORY-10X/EVIDENCE_X10-023_RECONCILIATION_SOURCE_2026-11-12.md) per riavvio, cambio fuso e DST; fail-closed su permessi e exact alarm senza opt-in. Stato X10-023 **PLANNED** finché non esistono Android platform tests e prove di consegna fisica.
+
 
 
 ## 2026-11-12 — Fix X10-044 conservazione blockers upstream

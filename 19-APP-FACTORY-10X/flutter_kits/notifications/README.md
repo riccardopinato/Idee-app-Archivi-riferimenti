@@ -18,3 +18,7 @@ NEEDS_REVIEW. No native or Android notification can be certified by
 these pure Dart unit tests.
 
 Run dart pub get && dart analyze --fatal-infos && dart test.
+
+## OS-state reconciliation source extension (12/11/2026)
+
+[notification_reconciliation.dart](lib/notification_reconciliation.dart) produces **advisory-only** reschedule decisions after reboot, app/clock/timezone or permission changes. Fixed UTC instants remain fixed; local civil times require a real externally verified IANA timezone resolver, with gaps/overlaps failing closed. No Android receiver, notification plugin or foreground capability is installed. [Regressions](test/reconciliation_test.dart) are Dart-only and are not physical/device certification.

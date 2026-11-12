@@ -13,6 +13,7 @@
 - [Diff-aware intake X10-041 source+CI](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/19): pinned SHA and hashed-path hints only, no live webhook; X10-042 registry join now eligible.
 - [Knowledge/reuse cross-app X10-040](EVIDENCE_X10-040_CROSS_APP_KNOWLEDGE_ARCHITECTURE_2026-11-12.md) — audit architetturale ADVISORY_ONLY, nessun monitor diff live installato.
 - **W2/W5 SOURCE+CI completati:** [Profile #119](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/119), [Identity #121](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/121), [Semantic Review #122](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/122). Nessun OAuth/device/consumer o approvazione umana reale dimostrata.
+- **X10-023 ancora PLANNED:** [Source di riconciliazione restart/timezone/DST](EVIDENCE_X10-023_RECONCILIATION_SOURCE_2026-11-12.md) e regressioni Dart; non sono Android platform/device tests, nessuna notifica certificata.
 - [X10-025 — Kit composition/chooser](EVIDENCE_X10-025_COMPOSITION_AND_CHOOSER_2026-11-12.md): quattro package Dart interoperabili in test, senza servizi native/monetizzazione attivi o consumer modificati.
 - [X10-023 — Notification/health Dart contract](EVIDENCE_X10-023_NOTIFICATION_HEALTH_2026-11-12.md) — test Dart e no false delivery; native Android e device non verificati.
 - [X10-022 — Bounded backup/restore Dart kit](EVIDENCE_X10-022_BACKUP_RECOVERY_KIT_2026-11-12.md) — SHA256, manifest, staging/rollback e failure-injection tests; nessun restore reale/device certificato.
