@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-028 QA router source+CI verificato (26/57)
+- [AppLab #224](https://github.com/riccardopinato/AppLab/pull/224) MERGED a `4409c77862cc83aa25bd4303a8066b6eea78b170`, code review Codex exact-head e sette check verdi incluso Browser E2E su runner aggiornato. [Evidence](../19-APP-FACTORY-10X/EVIDENCE_X10-028_QA_ROUTER_SOURCE_CI_2026-11-12.md). X10-028 VERIFIED solo come adapter source+CI: no consumer QA/device/Play. X10-029/030/031/045 READY; X10-018 ancora BLOCKED finché #223 non termina i gate.
+
+
 ## 2026-11-12 — X10-013 Agent bounded source+CI verificato (25/57)
 - [Agent Core PR #20](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/20) MERGED `f0f8085cb2609a79cbdccee8de1223a97bf9ea09` dopo check e Codex review exact-head senza rilievi. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-013_BOUNDED_ORCHESTRATION_SOURCE_CI_2026-11-12.md): work item/lease/replay solo CI sintetica, nessun agente Windows reale. X10-014 abilitato, conteggio 25 VERIFIED / 30 PLANNED / 2 BLOCKED.
 - [AppLab #220](https://github.com/riccardopinato/AppLab/pull/220) MERGED `62660ae0d86feecaa293261417fd57b4ff886064` con 7/7 CI e review Codex, sblocco runner Ubuntu 24.04. #218 e #221 sostituite da #223/#224 sulle nuove basi; X10-018 resta BLOCKED fino a verifica propria.
