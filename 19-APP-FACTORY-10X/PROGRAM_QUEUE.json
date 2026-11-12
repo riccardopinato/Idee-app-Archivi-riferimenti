@@ -851,7 +851,7 @@
       "status": "VERIFIED",
       "evidence": [
         {
-          "kind": "SOURCE",
+          "kind": "AUDIT",
           "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/114",
           "source_sha": "025e858b6947f443e3d4b4762b7601f15a4a6c9d"
         }
