@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-023 notification health Dart (partial)
+- [Core X10-023](../19-APP-FACTORY-10X/EVIDENCE_X10-023_NOTIFICATION_HEALTH_2026-11-12.md): controllo staleness di permesso/canale/scheduler, receipt distinto da schedule accepted, fallback inexact solo esplicito, unit test Dart. Nessun provider Android attivo: X10-023 non ancora accettato integralmente.
+
+
 ## 2026-11-12 — Hardening backup X10-022 dopo review
 - Corretto il preflight del restore anche per bundle creati dal costruttore pubblico: il numero di entry e le dimensioni vengono validati PRIMA delle copie in memoria. Tre test con fake list non copiabili verificano i limiti senza allocazioni massive; nessun comportamento device/consumer è certificato.
 
