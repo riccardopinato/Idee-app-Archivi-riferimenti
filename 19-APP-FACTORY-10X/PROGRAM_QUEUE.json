@@ -1020,9 +1020,17 @@
       "acceptance": "Mappa deterministica CAP-ID e consumer candidates prima di proposte",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/117",
+          "source_sha": "5525bf4bc1e8dffd7353c9ec78167c0b2786ce16"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI only: deterministic join of hashed path hints to existing CAP implementation_evidence and SOURCE_INVENTORY; preserve source/consumer SHA mismatch as STALE and recorded BLOCKED states; no new CAP, no real consumer verification, no license approval, no automatic code adoption."
     },
     {
       "id": "X10-043",
