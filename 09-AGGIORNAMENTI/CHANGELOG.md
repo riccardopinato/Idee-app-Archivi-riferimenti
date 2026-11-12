@@ -1,5 +1,12 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-011/012/019 integrati, gate AppLab bloccato
+- [Agent #16](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/16) CI/merge: adapter esistente AppLab queue, 8 fixture offline (no runtime reale); [Agent #17](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/17): guard worktree exact SHA con 9 fixture (no Windows worker).
+- [Ideas #112](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/112): starter source Flutter e test Python; generazione e regressioni verificati, ma nessuna compilazione Flutter.
+- [AppLab #218](https://github.com/riccardopinato/AppLab/pull/218): X10-018 harness source con AppLab CI green, **NON merged**: il workflow browser obbligatorio fallisce prima dei test su Ubuntu 26.04 / Playwright 1.55.0, [run #43137216273](https://github.com/riccardopinato/AppLab/actions/runs/43137216273). Non aggirare CI; serve rimedio runner/toolchain autorizzato.
+- Coda: **15 VERIFIED / 40 PLANNED / 2 BLOCKED**; evidenze X10-011/012/019 limitate a SOURCE+CI. Nessun Golden package certificato, agente Windows live o release.
+
+
 ## 2026-11-12 — X10-019 generatore di starter Flutter
 - Inserito generator Python di sorgenti Flutter localizzate IT/EN, token Material 3, widget test e validazioni di sicurezza/non overwrite: [dossier](../19-APP-FACTORY-10X/FLUTTER_STARTER_KIT_X10-019.md).
 - Stato prima della PR/review: proposta di implementation SOURCE, non consumer Flutter compilato o Golden certificato. La coda X10-019 resta PLANNED fino alla riconciliazione post CI.
