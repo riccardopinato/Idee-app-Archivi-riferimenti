@@ -861,9 +861,17 @@
       "acceptance": "APK/AAB hash/versionCode/signature identity, source commit verified",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/225",
+          "source_sha": "107e005d2d6ee5a3d389b50f3fc9321e091d4edb"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY: AppLab PR #225 merged to main a1ddbbe4be15b8cadd7f3614f4ec7a33e12e6658. Exact reviewed/testing PR head 107e005d2d6ee5a3d389b50f3fc9321e091d4edb passed seven GitHub workflows and independent Codex review completed no findings, all three earlier review conversations resolved with source fixes. Adapter validates APK/AAB hash, package/versionCode, signing certificate, source SHA, APK native ABI, AAB source-bound build contract, workflow hosting repo distinction. Synthetic fixture tests and injected platform inspector; no real signed artifact built or uploaded, no physical consumer/Store proof. X10-032 HUMAN_GATE eligible; X10-033 requires X10-029 and X10-030."
     },
     {
       "id": "X10-032",
