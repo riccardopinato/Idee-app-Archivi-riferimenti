@@ -386,9 +386,17 @@
       "acceptance": "Stati, lease, checkpoint, dedup, interruzione e recovery con fixture offline",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/16",
+          "source_sha": "ac9ab9e9e4762edb5dcdc519662bef3b345beee8"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Scoped AppLab durable queue facade with offline replay/recovery tests; NO live Windows executor, lease integration or autonomous runtime"
     },
     {
       "id": "X10-012",
@@ -404,9 +412,17 @@
       "acceptance": "Restricted path, diff auditabile, verify no secret/force push, rollback",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/17",
+          "source_sha": "05897470bc99be3ca2dda9d41871b739d54617da"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Source-bound HMAC exact-SHA/workspace guard with ephemeral Git fixture CI; actual AppLab worker invocation/rollback on a consumer NOT VERIFIED"
     },
     {
       "id": "X10-013",
@@ -523,9 +539,9 @@
       "acceptance": "Tests donor+consumer e rollback versioni senza modifiche massive non autorizzate",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
+      "status": "BLOCKED",
       "evidence": [],
-      "blocker": null
+      "blocker": "AppLab PR #218 SOURCE+AppLab CI PASS but required Live Emulator Browser E2E failed before tests: runner ubuntu-26.04 + Playwright 1.55.0 Chromium unsupported. Failing run https://github.com/riccardopinato/AppLab/actions/runs/43137216273. Workflow/runner remediation requires separate authorized CI governance change and exact-head rerun; no bypass."
     },
     {
       "id": "X10-019",
@@ -541,9 +557,17 @@
       "acceptance": "Bootstrap scaffold, design tokens, l10n e docs; no product scope implicito",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/112",
+          "source_sha": "5f7dd78324cfc829e24aef545808fdbb14ae6e6f"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Flutter scaffold generator, Material3 tokens and IT/EN l10n with Python CI tests; Flutter compilation and consumer adoption NOT VERIFIED"
     },
     {
       "id": "X10-020",
