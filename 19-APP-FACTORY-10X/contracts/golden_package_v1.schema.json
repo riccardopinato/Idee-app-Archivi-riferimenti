@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AppFactoryGoldenPackageCandidateV1",
+  "description": "Contract for future versioned Flutter/Dart packages; data alone cannot certify software.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "package_name",
+    "version",
+    "package_state",
+    "factory_sha",
+    "golden",
+    "provenance",
+    "license",
+    "compatibility",
+    "dependencies",
+    "tests",
+    "consumers",
+    "release"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "package_name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{2,63}$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "package_state": {
+      "enum": [
+        "DESIGN_ONLY",
+        "SOURCE_EXTRACTED",
+        "PACKAGE_TESTED",
+        "CONSUMER_VERIFIED",
+        "CERTIFIED_MULTI_CONSUMER"
+      ]
+    },
+    "factory_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "golden": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "path",
+        "registry_status",
+        "registry_sha"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 2
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^golden/"
+        },
+        "registry_status": {
+          "type": "string",
+          "minLength": 3
+        },
+        "registry_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin",
+        "donor_repo",
+        "donor_sha",
+        "source_files",
+        "source_url"
+      ],
+      "properties": {
+        "origin": {
+          "enum": [
+            "INTERNAL_GOLDEN",
+            "INTERNAL_DONOR",
+            "NEW_IMPLEMENTATION"
+          ]
+        },
+        "donor_repo": {
+          "type": "string"
+        },
+        "donor_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "source_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "license": {
+      "enum": [
+        "NOT_REVIEWED",
+        "INTERNAL_APPROVED",
+        "SPDX_VERIFIED"
+      ]
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dart_sdk",
+        "flutter_sdk",
+        "tested_pairs"
+      ],
+      "properties": {
+        "dart_sdk": {
+          "type": "string"
+        },
+        "flutter_sdk": {
+          "type": "string"
+        },
+        "tested_pairs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "dart",
+              "flutter",
+              "test_url"
+            ],
+            "properties": {
+              "dart": {
+                "type": "string"
+              },
+              "flutter": {
+                "type": "string"
+              },
+              "test_url": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "tests": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "donor_ci_urls",
+        "consumer_ci_urls"
+      ],
+      "properties": {
+        "donor_ci_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "consumer_ci_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "consumers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "repo",
+          "source_sha",
+          "approved",
+          "test_url"
+        ],
+        "properties": {
+          "repo": {
+            "type": "string"
+          },
+          "source_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "approved": {
+            "type": "boolean"
+          },
+          "test_url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "publish_authorized",
+        "artifact_sha256",
+        "rollback_version"
+      ],
+      "properties": {
+        "publish_authorized": {
+          "type": "boolean"
+        },
+        "artifact_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "rollback_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
