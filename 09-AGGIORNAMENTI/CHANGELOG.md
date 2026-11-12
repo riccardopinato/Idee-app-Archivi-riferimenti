@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-044 cockpit di priorità per il riuso (source)
+- Aggiunto [X10-044](../19-APP-FACTORY-10X/EVIDENCE_X10-044_REUSE_RECOMMENDATION_COCKPIT_2026-11-12.md): scoring trasparente impatto/rischio/sforzo/dipendenze, snapshot SHA/date, staleness e fail-closed sui claim di review; solo proposta non esecutiva. Il codice non genera dati di mercato, non crea PR consumer e non certifica l'adozione.
+
+
 ## 2026-11-12 — Reconcile backup X10-022 (22/57)
 - [Backup source PR #124](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/124) e [hardening PR #125](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/125) verificati Dart CI e integrati: coda X10-022 VERIFIED nel solo scope SOURCE+DART_CI. Nessun restore Android/consumer, media transazione reale o Golden certificato; X10-023 resta PLANNED per mancati test Android. Programma 22 VERIFIED / 33 PLANNED / 2 BLOCKED.
 
