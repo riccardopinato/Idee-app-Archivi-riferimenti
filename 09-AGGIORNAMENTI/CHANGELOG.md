@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-040 proposta di architettura knowledge/reuse
+- [Dossier X10-040](../19-APP-FACTORY-10X/EVIDENCE_X10-040_CROSS_APP_KNOWLEDGE_ARCHITECTURE_2026-11-12.md): mappate autorità CAP/Donor/Golden, snapshot SHA, intelligence AppLab e proposta di monitor diff-aware X10-041 senza database parallelo.
+- Source audit soltanto; X10-040 rimane PLANNED fino a review CI e riconciliazione della coda. Nessun consumer o Golden aggiornato.
+
+
 ## 2026-11-12 — X10-002 shortlist commerciale integrata e coda riconciliata
 - [PR #108](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/108) merge `6cf22eba`: audit statico e confronto di tre piloti; non validazione commerciale.
 - Registro: **10 VERIFIED / 46 PLANNED / 1 BLOCKED**; X10-034 diventa eleggibile senza impegnare budget o pubblicare app.
