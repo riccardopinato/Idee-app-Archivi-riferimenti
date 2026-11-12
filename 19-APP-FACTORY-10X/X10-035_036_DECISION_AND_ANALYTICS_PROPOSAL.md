@@ -1,5 +1,7 @@
 # X10-035 — Decisione prodotti e budget: proposta pronta, approvazione assente
 
+> **Aggiornamento dopo confronto 12/11/2026:** la proposta originale Battery/Rotate/World Days qui sotto è **STORICA e SUPERATA come prima coorte**. La proposta corrente, ancora NON APPROVATA dal proprietario, è **Rotate 180°, Android Omni Cleaner, Battery Guard**, con World Days corsia organica/editoriale condizionale. [Leggi il confronto](X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md) e il [JSON operativo](X10-035_OWNER_DECISION_PROPOSAL.json). **Confermato solo il tetto €100**, autorizzazione automatica di spesa €0 e nessun prodotto approvato. X10-035 e X10-036 rimangono PLANNED.
+
 Factory baseline: Core@c5adc147046beb7024629466d10eeb799c3c2619 (Master v27, Golden Index v29).
 
 **Precondizioni soddisfatte:** X10-002 shortlist, X10-034 competitor audit, basati sulle evidenze già presenti in archivio. Nessun dato Play privato o misura di willingness-to-pay è stato usato come fatto.

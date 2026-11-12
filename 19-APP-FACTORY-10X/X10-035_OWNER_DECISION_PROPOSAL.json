@@ -9,21 +9,27 @@
   "approved_products": [],
   "candidate_products": [
     {
-      "id": "Battery_Guard",
-      "role": "pilot_primary",
-      "proposal": "GO_CANDIDATE",
-      "release_status": "HUMAN_QA_REQUIRED"
-    },
-    {
       "id": "180FlipCharge",
-      "role": "small_native_control",
-      "proposal": "GO_CANDIDATE",
+      "role": "near_term_speed_and_upfront_price_test",
+      "proposal": "UNAPPROVED_FOR_VALIDATION_ONLY",
       "release_status": "DEVICE_AND_PLAY_REVIEW_REQUIRED"
     },
     {
+      "id": "Android-Omni-Cleaner",
+      "role": "near_term_broad_utility_challenger",
+      "proposal": "UNAPPROVED_FOR_VALIDATION_ONLY",
+      "release_status": "STORE_SIGNING_PROVIDER_AND_QA_REQUIRED"
+    },
+    {
+      "id": "Battery_Guard",
+      "role": "near_term_freemium_lifetime_challenger",
+      "proposal": "UNAPPROVED_FOR_VALIDATION_ONLY",
+      "release_status": "OEM_TRUSTED_PURCHASE_AND_PLAY_INTERNAL_REQUIRED"
+    },
+    {
       "id": "World-Days",
-      "role": "conditional_editorial",
-      "proposal": "CONDITIONAL",
+      "role": "editorial_organic_conditional_future",
+      "proposal": "DEFERRED_FROM_FIRST_PAID_TEST_PROPOSAL",
       "release_status": "EDITORIAL_SOURCES_AND_RETENTION_REQUIRED"
     }
   ],
