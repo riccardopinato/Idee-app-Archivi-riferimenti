@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-042 in coda (18/57)
+- [PR #117](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/117), merge `5525bf4bc1e8dffd7353c9ec78167c0b2786ce16`: source+CI test del join CAP/consumer, conservazione BLOCKED/STALE, niente consumer code write; successore X10-043 semantic review pronto.
+- Programma 18 VERIFIED / 37 PLANNED / 2 BLOCKED. Agent X10-013 e QA X10-018/028 restano sotto review/CI gate separati.
+
+
 ## 2026-11-12 — X10-042 join CAP/consumer con stale e dedup
 - [Dossier X10-042](../19-APP-FACTORY-10X/EVIDENCE_X10-042_CAP_DEDUP_SOURCE_2026-11-12.md): introdotto join source-only delle impronte percorso X10-041 al CAP Registry e SOURCE_INVENTORY; test su no dup, consumer già implementati, licenza da verificare, vecchie prove/stale. Nessun CAP autopromosso, no dati privati o QA consumer.
 - Stato X10-042 rimane PLANNED fino a PR/CI/review e riconciliazione; X10-043 semantica richiede Product Bible e gate indipendente.
