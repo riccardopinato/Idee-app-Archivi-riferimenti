@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-023 Flutter plugin notification bridge (source-only; not verified on device)
+- [Flutter notification adapter](../19-APP-FACTORY-10X/flutter_kits/notifications_flutter/README.md): new optional Android plugin bridge to existing pure-Dart policy, local notification permission/channel/exact-alarm probes, IANA timezone scheduling and stable ID/cancel, Flutter CI/test fake device. No real device/FGS/Play certification or consumer integration; X10-023 remains PLANNED.
+
 ## 2026-11-12 — X10-035: tetto €100, confronto commerciale, nessuna approvazione prodotti
 - [Audit commerciale trasversale](../19-APP-FACTORY-10X/X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md): Rotate 180°, Android Omni Cleaner e Battery Guard proposti; World Days in fase organica condizionale. Il proprietario ha confermato SOLO il tetto massimo 100 EUR, autorizzazione di spesa automatica 0 EUR; nessun GO/NO-GO finale, nessuna campagna, nessuna pubblicazione, nessun billing nuovo. X10-035 rimane PLANNED.
 

@@ -1,0 +1,40 @@
+name: App Factory 10x — Flutter notification Android adapter source
+on:
+  pull_request:
+    paths:
+      - '19-APP-FACTORY-10X/flutter_kits/notifications_flutter/**'
+      - '19-APP-FACTORY-10X/flutter_kits/notifications/**'
+      - '.github/workflows/app-factory-10x-flutter-notifications.yml'
+  push:
+    branches: [main]
+    paths:
+      - '19-APP-FACTORY-10X/flutter_kits/notifications_flutter/**'
+      - '19-APP-FACTORY-10X/flutter_kits/notifications/**'
+      - '.github/workflows/app-factory-10x-flutter-notifications.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  flutter-adapter-source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: 19-APP-FACTORY-10X/flutter_kits/notifications_flutter
+    steps:
+      - name: Checkout exact source SHA
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Setup Flutter
+        uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2.23.0
+        with:
+          flutter-version: '3.47.5'
+          channel: stable
+          cache: true
+      - name: Resolve dependencies
+        run: flutter pub get
+      - name: Analyze typed plugin API
+        run: flutter analyze
+      - name: Offline fake-device contract tests
+        run: flutter test --reporter expanded
+      - name: Distinguish host test from real Android acceptance
+        run: echo 'SOURCE+CI only. X10-023 physical Android delivery NOT_VERIFIED.'
