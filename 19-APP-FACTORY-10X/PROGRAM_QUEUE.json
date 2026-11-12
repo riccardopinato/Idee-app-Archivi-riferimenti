@@ -439,9 +439,17 @@
       "acceptance": "Integrazione componenti AppLab senza rifacimento; due test di replay, no auto-merge",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/20",
+          "source_sha": "a8e000ad831d00a6bba566e2ba1f782cce9e01f8"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+PYTHON_CI only. AppLab-backed bounded orchestration adapter with persisted queue lease identity (original generation frozen across preflight), canonical WorkItem reconstruction, permission fail-closed and synthetic replay/recovery tests; PR #20 merged into Agent Core main f0f8085cb2609a79cbdccee8de1223a97bf9ea09 after independent Codex code_review exact head a8e000ad831d00a6bba566e2ba1f782cce9e01f8 and CI PASS. Actual Windows worker import, live AppLab dispatch, atomic runtime fencing across processes, physical consumer QA, release/auto-merge NOT VERIFIED. X10-014 becomes eligible as separate source+CI PR task only."
     },
     {
       "id": "X10-014",
@@ -541,7 +549,7 @@
       "effort": 3,
       "status": "BLOCKED",
       "evidence": [],
-      "blocker": "AppLab #218 remains BLOCKED: its required Live Emulator Browser E2E failed on Ubuntu 26.04 / Playwright 1.55; this is not waived. Remediation PR #220 pins ubuntu-24.04 and as of 2026-11-12 all 7 exact-head workflows PASS on c6f8f1c33194e7a5a3b23f3dc799a9f06ec2433f, including browser and emulator; however independent current-head review and merge of #220 are still REQUIRED, then #218 must be reconciled/retested on that merged baseline. No AppLab or device certification yet."
+      "blocker": "AppLab runner remediation #220 MERGED to main 62660ae0d86feecaa293261417fd57b4ff886064 after exact-head 7/7 checks and Codex review. Golden compatibility source PR #218 (Ubuntu 26.04 E2E failure) closed as superseded by fresh-base PR #223 on supported Ubuntu 24.04, head 99b07ae6efe1602a6a0b20ebbef4f42cc0c3089b. X10-018 remains BLOCKED until #223 exact-head 7/7 workflows, fresh independent review, gated merge and canonical evidence reconciliation; no Golden/physical consumer certification inferred."
     },
     {
       "id": "X10-019",
