@@ -9,8 +9,6 @@
   "golden_index_version": 29,
   "success_definition": "10x is a target, not a verified multiplier; measure lead time, verified deliveries, manual interventions, quality, user outcomes and revenue with baseline cohorts.",
   "operating_rules": {
-    "max_parallel": 3,
-    "parallel_only_distinct_owner_repos": true,
     "no_auto_merge_without_gate": true,
     "never_autoclose_from_scheduled_run": true,
     "continuous_followup": "scheduled audit may prioritize and execute authorized safe steps only when a real runner/Chat automation is available; no unbounded Chat self-resume.",
@@ -18,7 +16,18 @@
     "human_gate_mode": "HUMAN_GATE",
     "other_write_mode": "PR_GATED",
     "risk_and_auth": "One baseline per execution; correct exact-head check+review; no new billing, production deploy, Windows source import or Store publishing without separate gate",
-    "queue_exhaustion": "Append W8+ before W7 completion; never recycle VERIFIED IDs; preserve history."
+    "queue_exhaustion": "Append W8+ before W7 completion; never recycle VERIFIED IDs; preserve history.",
+    "parallelism": {
+      "strategy": "ALL_READY_WITHOUT_FIXED_NUMERIC_CAP",
+      "numeric_task_limit": null,
+      "read_only_same_repository_allowed": true,
+      "uncoordinated_writers_same_repository_forbidden": true,
+      "allow_multiple_writers_only_with_reviewed_disjoint_scopes": true,
+      "replace_blocked_tasks_immediately": true,
+      "replan_on_verified_or_blocked": true,
+      "real_runner_capacity_and_api_quotas_apply": true,
+      "execution_note": "The selector returns all compatible READY tasks and defers conflicting writers, not a 3-task cap. Scheduler read-only summary does not launch coding jobs."
+    }
   },
   "waves": [
     {
