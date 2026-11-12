@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-021, profilo/impostazioni con veri unit test Dart
+- Aggiunto [Profile Kit](../19-APP-FACTORY-10X/EVIDENCE_X10-021_PROFILE_SETTINGS_KIT_2026-11-12.md): preferenze locali, privacy opt-in esplicito, migration v0/v1, atomicità scritture, test di concorrenza/caricamento. Nuovo workflow con Dart 3.6.0 e setup-action SHA-pinnata; nessun consumer o Golden certificato automaticamente.
+
+
 ## 2026-11-12 — X10-042 in coda (18/57)
 - [PR #117](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/117), merge `5525bf4bc1e8dffd7353c9ec78167c0b2786ce16`: source+CI test del join CAP/consumer, conservazione BLOCKED/STALE, niente consumer code write; successore X10-043 semantic review pronto.
 - Programma 18 VERIFIED / 37 PLANNED / 2 BLOCKED. Agent X10-013 e QA X10-018/028 restano sotto review/CI gate separati.
