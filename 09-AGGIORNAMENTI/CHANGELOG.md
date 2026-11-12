@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-034 ricondotto alla coda (16/57)
+- [PR #114](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/114) CI verde e merge `025e858b6947f443e3d4b4762b7601f15a4a6c9d`: audit competitor documentato; validazione SOURCE di X10-034, non business measured.
+- Programma 16 VERIFIED / 39 PLANNED / 2 BLOCKED. X10-035 rimane HUMAN_GATE: decisione piloti/budget non automatica.
+
+
 ## 2026-11-12 — X10-034: competitor e domanda pubblica
 - [Dossier X10-034](../19-APP-FACTORY-10X/EVIDENCE_X10-034_MARKET_COMPETITORS_2026-11-12.md): competitor Battery Guard, Rotate 180° e World Days verificati da schede pubbliche Google Play/sito ufficiale; funzioni, posizionamento e canali organici candidati.
 - Ogni installazione pubblica altrui è un proxy storico, non una prova di ricavi, conversione, retention o TAM per la Factory. Restano da misurare con coorti e budget di X10-035; lo stato della coda è invariato fino a PR/CI/review.
