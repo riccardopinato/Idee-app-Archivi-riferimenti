@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-041 monitor diff come SOURCE+CI (17/57)
+- [Agent Core PR #19](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/19), merge `f6b4d6fd022e34c1784e2915733b89bf5ee24d74`: ingest di eventi autenticati e diff AppLab già prodotto, confronto SHA, fingerprint stabile, segnali CAP consultivi con filename/ref in hash e regressioni offline; niente servizio live o capacità di merge.
+- Programma 17 VERIFIED / 38 PLANNED / 2 BLOCKED. X10-042 join CAP/donor sbloccato, mentre i gate reali di orchestrazione e QA restano indipendenti.
+
+
 ## 2026-11-12 — X10-034 ricondotto alla coda (16/57)
 - [PR #114](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/114) CI verde e merge `025e858b6947f443e3d4b4762b7601f15a4a6c9d`: audit competitor documentato; validazione SOURCE di X10-034, non business measured.
 - Programma 16 VERIFIED / 39 PLANNED / 2 BLOCKED. X10-035 rimane HUMAN_GATE: decisione piloti/budget non automatica.
