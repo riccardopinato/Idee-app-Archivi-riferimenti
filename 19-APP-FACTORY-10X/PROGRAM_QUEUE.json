@@ -541,7 +541,7 @@
       "effort": 3,
       "status": "BLOCKED",
       "evidence": [],
-      "blocker": "AppLab PR #218 SOURCE+AppLab CI PASS but required Live Emulator Browser E2E failed before tests: runner ubuntu-26.04 + Playwright 1.55.0 Chromium unsupported. Failing run https://github.com/riccardopinato/AppLab/actions/runs/43137216273. Workflow/runner remediation requires separate authorized CI governance change and exact-head rerun; no bypass."
+      "blocker": "AppLab #218 remains BLOCKED: its required Live Emulator Browser E2E failed on Ubuntu 26.04 / Playwright 1.55; this is not waived. Remediation PR #220 pins ubuntu-24.04 and as of 2026-11-12 all 7 exact-head workflows PASS on c6f8f1c33194e7a5a3b23f3dc799a9f06ec2433f, including browser and emulator; however independent current-head review and merge of #220 are still REQUIRED, then #218 must be reconciled/retested on that merged baseline. No AppLab or device certification yet."
     },
     {
       "id": "X10-019",

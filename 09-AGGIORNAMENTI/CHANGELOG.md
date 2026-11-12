@@ -1,4 +1,8 @@
 # Changelog dell'archivio
+
+## 2026-11-12 — AppLab #220 runner compatibilità browser, evidenza pre-merge
+- PR AppLab [#220](https://github.com/riccardopinato/AppLab/pull/220) aggiornata: OS Ubuntu 24.04, guardia di compatibilità Playwright 1.55 e regressioni anti-skip; 7 check CI exact-head verdi. X10-018 continua BLOCKED fino a review indipendente, merge #220 e successivo rerun #218. Nessun rilascio/provider/Android fisico certificato.
+
 ## 2026-11-12 — X10-023: policy di ricostruzione reminder (parziale)
 
 - Introdotto [planner Dart X10-023](../19-APP-FACTORY-10X/EVIDENCE_X10-023_RECONCILIATION_SOURCE_2026-11-12.md) per riavvio, cambio fuso e DST; fail-closed su permessi e exact alarm senza opt-in. Stato X10-023 **PLANNED** finché non esistono Android platform tests e prove di consegna fisica.
