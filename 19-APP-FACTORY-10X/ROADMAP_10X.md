@@ -1,6 +1,6 @@
 # App Factory 10x — roadmap continua approvata
 
-**Checkpoint di esecuzione 12/11:** 9 task con prova (X10-001/003/004/005/006/007/009/010/017), 47 PLANNED, X10-008 BLOCKED dal mancato import sorgenti Windows. I progressi puntuali e successori si leggono **solo** dal [JSON canonico](PROGRAM_QUEUE.json), non dai titoli statici di questa roadmap. La validazione PR/CI non equivale a runtime per-app, release o 10x misurato.
+**Checkpoint di esecuzione 12/11:** 10 task con prova (X10-001/002/003/004/005/006/007/009/010/017), 46 PLANNED, X10-008 BLOCKED dal mancato import sorgenti Windows. X10-002 documenta solo la shortlist tecnica [Battery Guard / Rotate 180° / World Days](EVIDENCE_X10-002_COMMERCIAL_SHORTLIST_2026-11-12.md) con CI e PR; non certifica domanda o budget. I progressi puntuali e successori si leggono **solo** dal [JSON canonico](PROGRAM_QUEUE.json), non dai titoli statici di questa roadmap. La validazione PR/CI non equivale a runtime per-app, release o 10x misurato.
 
 **Approvazione strategica:** 12 novembre 2026 · **Baseline unica di questa sessione:** `riccardopinato/App-Factory-Core@c5adc147046beb7024629466d10eeb799c3c2619`, Master v27, Golden Index v29.  
 **Fonte della coda:** [PROGRAM_QUEUE.json](PROGRAM_QUEUE.json) · **Validazione/successori:** [script](../scripts/factory_10x_queue.py) · **Regole di continuità:** [OPERATING_CONTRACT.md](OPERATING_CONTRACT.md).
