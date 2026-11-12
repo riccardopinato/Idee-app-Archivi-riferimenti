@@ -11,6 +11,17 @@ class ContinuousRoadmapTests(unittest.TestCase):
     def setUpClass(cls):
         cls.document = load()
 
+    def fixture_baseline(self):
+        # Scenario tests must not depend on the current live program checkpoint.
+        p = copy.deepcopy(self.document)
+        for task in p["tasks"]:
+            if task["id"] not in {"X10-001", "X10-004"}:
+                task["status"] = "PLANNED"
+                task["evidence"] = []
+                task["blocker"] = None
+                task.pop("gate_reviewed", None)
+        return p
+
     def test_57_tasks_and_8_waves(self):
         d = validate(self.document)
         self.assertEqual(d["total"], 57)
@@ -19,7 +30,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertGreaterEqual(d["by_status"].get("VERIFIED", 0), 0)
 
     def test_uncapped_parallel_selection_including_same_repo_read_only(self):
-        result = next_tasks(self.document)
+        result = next_tasks(self.fixture_baseline())
         ids = {t["id"] for t in result["selected"]}
         self.assertGreater(len(ids), 3)
         self.assertIn("X10-002", ids)
@@ -32,8 +43,14 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertEqual({c["id"] for c in result["writer_conflicts"]} & writers, writers - ids)
         self.assertTrue(all(t["status"] == "PLANNED" for t in result["selected"]))
 
+    def test_live_queue_checkpoint_preserves_future_work(self):
+        live = next_tasks(self.document)
+        self.assertNotIn("X10-008", {t["id"] for t in live["selected"]})
+        self.assertNotIn("X10-015", {t["id"] for t in live["selected"]})
+        self.assertEqual(live["verified"], sum(t["status"] == "VERIFIED" for t in self.document["tasks"]))
+
     def test_unlimited_ready_read_only_tasks_no_fixed_number(self):
-        p = copy.deepcopy(self.document)
+        p = self.fixture_baseline()
         seed = next(t for t in p["tasks"] if t["id"] == "X10-003")
         for i in range(58, 70):
             t = copy.deepcopy(seed)
@@ -49,7 +66,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertGreater(len(result["selected"]), 12)
 
     def test_blocked_writer_is_replaced_with_other_ready(self):
-        p = copy.deepcopy(self.document)
+        p = self.fixture_baseline()
         current = next_tasks(p)
         first = next(t for t in current["selected"] if t["mode"] == "PR_GATED")
         first["status"] = "BLOCKED"
@@ -62,7 +79,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertIn("X10-003", ids)
 
     def test_in_progress_writer_reserves_repo(self):
-        p = copy.deepcopy(self.document)
+        p = self.fixture_baseline()
         first = next(t for t in p["tasks"] if t["id"] == "X10-005")
         first["status"] = "IN_PROGRESS"
         result = next_tasks(p)
@@ -70,7 +87,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertIn("X10-003", {t["id"] for t in result["selected"]})
 
     def test_two_writers_can_run_with_reviewed_nonoverlapping_paths(self):
-        p = copy.deepcopy(self.document)
+        p = self.fixture_baseline()
         left = next(t for t in p["tasks"] if t["id"] == "X10-005")
         right = next(t for t in p["tasks"] if t["id"] == "X10-006")
         left.update(write_paths=["docs/a.md"], write_branch="feat/x10-005", scope_reviewed=True)
@@ -80,7 +97,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertIn("X10-006", ids)
 
     def test_overlapping_scopes_still_block_parallel_writes(self):
-        p = copy.deepcopy(self.document)
+        p = self.fixture_baseline()
         left = next(t for t in p["tasks"] if t["id"] == "X10-005")
         right = next(t for t in p["tasks"] if t["id"] == "X10-006")
         left.update(write_paths=["docs"], write_branch="feat/x10-005", scope_reviewed=True)
@@ -89,7 +106,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertEqual(len(selected & {"X10-005", "X10-006"}), 1)
 
     def test_write_scope_needs_review(self):
-        p = copy.deepcopy(self.document)
+        p = self.fixture_baseline()
         next(t for t in p["tasks"] if t["id"] == "X10-005").update(
             write_paths=["docs/a.md"], write_branch="feat/x10-005", scope_reviewed=False)
         with self.assertRaises(ValueError):
@@ -119,7 +136,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
             validate(p)
 
     def test_valid_reviewed_evidence_unblocks_dependent(self):
-        p = copy.deepcopy(self.document)
+        p = self.fixture_baseline()
         r = next(t for t in p["tasks"] if t["id"] == "X10-001")
         r["status"] = "VERIFIED"
         r["gate_reviewed"] = True
@@ -143,7 +160,7 @@ class ContinuousRoadmapTests(unittest.TestCase):
         self.assertFalse(receipt_ok({"kind": "CERTIFIED_GOLDEN", "url": "https://github.com/a/b", "source_sha": "a" * 40}))
 
     def test_human_gate_not_auto_executable(self):
-        p = copy.deepcopy(self.document)
+        p = self.fixture_baseline()
         for task in p["tasks"]:
             if task["id"] == "X10-008":
                 task["dependencies"] = []
