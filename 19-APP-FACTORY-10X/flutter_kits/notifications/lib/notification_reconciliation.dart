@@ -259,6 +259,6 @@ class ReconciliationPlanner {
   bool _zoneLabelSafe(String zone) {
     if (zone == 'UTC') return true;
     return zone.length <= 80 &&
-        RegExp(r'^[A-Za-z_]+(?:/[A-Za-z0-9_+\\-]+)+$').hasMatch(zone);
+        RegExp(r'^[A-Za-z_]+(?:/[A-Za-z0-9_+-]+)+$').hasMatch(zone);
   }
 }
