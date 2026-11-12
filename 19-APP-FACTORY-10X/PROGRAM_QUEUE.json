@@ -158,9 +158,17 @@
       "acceptance": "Score domanda, gap mercato, execution cost, distribuzione, ricavi attesi come ipotesi esplicite",
       "impact": 5,
       "effort": 2,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "AUDIT",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/108",
+          "source_sha": "6cf22ebaff5146c3ceb72cc38d40b1ebf3ec98c9"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "Source-pinned preliminary shortlist/CI docs only; no market demand, business KPIs, budget, physical QA or production release"
     },
     {
       "id": "X10-003",

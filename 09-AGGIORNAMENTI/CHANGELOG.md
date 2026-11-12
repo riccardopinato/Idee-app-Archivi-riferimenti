@@ -1,5 +1,9 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-002 shortlist commerciale integrata e coda riconciliata
+- [PR #108](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/108) merge `6cf22eba`: audit statico e confronto di tre piloti; non validazione commerciale.
+- Registro: **10 VERIFIED / 46 PLANNED / 1 BLOCKED**; X10-034 diventa eleggibile senza impegnare budget o pubblicare app.
+
 ## 2026-11-12 — X10-002 shortlist commerciale proposta in PR
 - [Dossier X10-002](../19-APP-FACTORY-10X/EVIDENCE_X10-002_COMMERCIAL_SHORTLIST_2026-11-12.md): selezionati Battery Guard, Rotate 180° e World Days (condizionale) da documentazione pinned, con Cooking Anime come possibile sostituto.
 - Task ancora PLANNED fino a review/CI/merge e riconciliazione della coda; domanda, retention, ricavi e budget non misurati/approvati; successori X10-034 e X10-035 restano separati.
