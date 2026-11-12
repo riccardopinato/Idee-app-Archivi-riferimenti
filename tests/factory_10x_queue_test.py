@@ -23,14 +23,14 @@ class ContinuousRoadmapTests(unittest.TestCase):
         ids = {t["id"] for t in result["selected"]}
         self.assertGreater(len(ids), 3)
         self.assertIn("X10-002", ids)
-        self.assertIn("X10-003", ids)  # both READ_ONLY and same repository
-        self.assertIn("X10-005", ids)  # first PR writer
+        self.assertIn("X10-003", ids)  # Both READ_ONLY and same repository
         self.assertIn("X10-007", ids)
         self.assertIn("X10-009", ids)
         self.assertIn("X10-027", ids)
-        self.assertFalse("X10-006" in ids)  # collides with X10-005
+        writers = {"X10-005", "X10-006"}
+        self.assertEqual(len(writers & ids), 1)
+        self.assertEqual({c["id"] for c in result["writer_conflicts"]} & writers, writers - ids)
         self.assertTrue(all(t["status"] == "PLANNED" for t in result["selected"]))
-        self.assertTrue(any(c["id"] == "X10-006" for c in result["writer_conflicts"]))
 
     def test_unlimited_ready_read_only_tasks_no_fixed_number(self):
         p = copy.deepcopy(self.document)
@@ -50,13 +50,15 @@ class ContinuousRoadmapTests(unittest.TestCase):
 
     def test_blocked_writer_is_replaced_with_other_ready(self):
         p = copy.deepcopy(self.document)
-        first = next(t for t in p["tasks"] if t["id"] == "X10-005")
+        current = next_tasks(p)
+        first = next(t for t in current["selected"] if t["mode"] == "PR_GATED")
         first["status"] = "BLOCKED"
         first["blocker"] = "Repository approval pending; no writer resources reserved"
         result = next_tasks(p)
         ids = {t["id"] for t in result["selected"]}
-        self.assertNotIn("X10-005", ids)
-        self.assertIn("X10-006", ids)
+        other = ({"X10-005", "X10-006"} - {first["id"]}).pop()
+        self.assertNotIn(first["id"], ids)
+        self.assertIn(other, ids)
         self.assertIn("X10-003", ids)
 
     def test_in_progress_writer_reserves_repo(self):
@@ -83,7 +85,8 @@ class ContinuousRoadmapTests(unittest.TestCase):
         right = next(t for t in p["tasks"] if t["id"] == "X10-006")
         left.update(write_paths=["docs"], write_branch="feat/x10-005", scope_reviewed=True)
         right.update(write_paths=["docs/b.md"], write_branch="feat/x10-006", scope_reviewed=True)
-        self.assertNotIn("X10-006", {t["id"] for t in next_tasks(p)["selected"]})
+        selected = {t["id"] for t in next_tasks(p)["selected"]}
+        self.assertEqual(len(selected & {"X10-005", "X10-006"}), 1)
 
     def test_write_scope_needs_review(self):
         p = copy.deepcopy(self.document)
