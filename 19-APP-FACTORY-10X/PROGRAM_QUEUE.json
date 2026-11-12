@@ -764,8 +764,25 @@
       "impact": 5,
       "effort": 4,
       "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43331970619",
+          "source_sha": "f2a70d1ce7eb96a34f3077fbc40a696e3e8061a9"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/43328842284",
+          "source_sha": "984a34462ba527b2ea98dbc3a337bdd8614b88d4"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/TasteAI/actions/runs/43330930127",
+          "source_sha": "61a83aa638654f4e885d503e024408d2dcddebc2"
+        }
+      ],
+      "blocker": "Remaining gate: independently verified X10-018 compatible semver package-version rollback receipt and Golden-admission scope review; source checkout rollback does not satisfy this. No fabricated 0.0.0 package or device PASS.",
+      "review_scope": "PARTIAL_SOURCE_AND_CI_EVIDENCE: actual shared factory_profile_kit@1d1a8628e25f58b788b013cf6955763d00363cdc 0.1.0 installed and used in two real Flutter consumers with source regression, actual AppLab cross-repo source-rollback worktree tests. AppLab #231 merged exact 7/7 and Codex clean. UNVERIFIED: X10-018 semver downgrade rollback receipt (0.0.0 not real); native on-device install/upgrade, installed data rollback, Golden admission. X10-026 stays PLANNED."
     },
     {
       "id": "X10-027",
@@ -1498,6 +1515,21 @@
         "https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/X10-046_047_TWO_REPO_PILOT_HANDOFF.md",
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/19-APP-FACTORY-10X/PROGRAM_QUEUE.json"
       ]
+    },
+    {
+      "at": "2026-11-13",
+      "type": "PARTIAL_EVIDENCE_NOT_PROMOTED",
+      "task_id": "X10-026",
+      "completed_task_ids": [],
+      "source_scope": "TWO_REAL_FLUTTER_CONSUMER_SOURCE_CI_AND_PREADOPTION_SOURCE_ROLLBACK_ONLY",
+      "evidence_refs": [
+        "https://github.com/riccardopinato/AppLab/pull/231",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/308",
+        "https://github.com/riccardopinato/TasteAI/pull/6",
+        "https://github.com/riccardopinato/TasteAI/pull/7",
+        "https://github.com/riccardopinato/AppLab/actions/runs/43331970619"
+      ],
+      "note": "Source+CI 2 consumer tests and source rollback truly executed. No published semver version downgrade, installed-device persistence validation, Play or Golden certification; task remains PLANNED."
     }
   ]
 }

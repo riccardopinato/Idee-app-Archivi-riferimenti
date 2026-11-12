@@ -1,5 +1,7 @@
 # X10-026 — Due consumer Flutter: intake e gap reali (NON certificato)
 
+> **Aggiornamento 13/11/2026:** preflight storico; il test reale sui due consumer è stato eseguito con esito positivo in [AppLab #231](EVIDENCE_X10-026_REAL_CONSUMERS_2026-11-13.md), ma manca il rollback **semver** richiesto da X10-018. X10-026 rimane PLANNED; non usare le righe preflight qui sotto come stato corrente.
+
 Baseline Factory: [App-Factory-Core@c5adc147046beb7024629466d10eeb799c3c2619](https://github.com/riccardopinato/App-Factory-Core/commit/c5adc147046beb7024629466d10eeb799c3c2619), Master 27, Golden Index 29.
 
 ## SOURCE CHECKED at 12 Nov 2026
