@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+
+## 2026-11-12 — Fix X10-044 conservazione blockers upstream
+
+- Dopo review post-merge [#129](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/129), impedito che record X10-043 `CANDIDATE_STALE`, `CANDIDATE_BLOCKED` o `HUMAN_REJECTED` si trasformino in review backlog usando soltanto l'inventario. Conservati reason code e negata falsa promozione per score alto; integrazione Python CI, nessun nuovo consumer o Golden.
+
+
 ## 2026-11-12 — X10-025 kit composition integrato (24/57)
 - [PR #131](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/131), merge `3857d4ec3b89b7a73cb5b73f30d9c1c7e19d00d6`: test Dart veri tra cinque package (composition + quattro kit), chooser deterministico con flags e blocchi native/monetizzazione. Non sostituisce review dei provider o integrazione consumer/device. Coda 24 VERIFIED / 31 PLANNED / 2 BLOCKED; X10-023 native pending.
 
