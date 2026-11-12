@@ -583,9 +583,17 @@
       "acceptance": "OAuth/provider gates, sessione/sicurezza, test autorizzazioni e sample",
       "impact": 4,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/121",
+          "source_sha": "c00135db1e952726f2a74bb02c9f4e85072d466b"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+DART_CI only. Provider-agnostic Dart opt-in identity adapter, external verification, account partitioning/cancellation/expired claims tests. NO real Google/Supabase OAuth, provider token/PKCE validation, Android/Web redirects, per-app consumer/device tests."
     },
     {
       "id": "X10-021",
@@ -601,9 +609,17 @@
       "acceptance": "Theme, lingua, preferenze, privacy e migrazioni, golden pinned",
       "impact": 4,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/119",
+          "source_sha": "f52864ab549db8e69128b22e43fa22408da6366f"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+DART_CI only. Actual Dart 3.6.0 analysis/tests green on pinned kit: theme/locale/opt-in privacy, schema v0-v1, serialized load/write failure resilience. No Flutter UI, secure native store, real owner switching, consumer/device/Store adoption."
     },
     {
       "id": "X10-022",
@@ -1046,9 +1062,17 @@
       "acceptance": "Proposal docs con exact source SHA, tests, license, human approval",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/122",
+          "source_sha": "57bdc2cce4787d70f4713889ff19958561d03f86"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+PYTHON_CI only. Supervised semantic reuse proposal gate with exact SHA, donor CI URL, per-file license, Product Bible and independent approval verifier port. No actual human approval receipt, license signoff, consumer PR/code change or Golden promotion."
     },
     {
       "id": "X10-044",
