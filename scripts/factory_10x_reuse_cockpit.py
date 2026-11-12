@@ -19,6 +19,15 @@ SHA256 = re.compile(r"^[a-f0-9]{64}$")
 CAP = re.compile(r"^CAP-[0-9]{4,}$")
 REPO = re.compile(r"^riccardopinato/[A-Za-z0-9_.-]+$")
 BLOCKED_STATES = {"BLOCKED_PENDING_REVIEW", "SCOPED_REVIEW_RECORDED"}
+# X10-043.prepare() emits these codes. Unknown future codes must not
+# disappear silently: update this adapter and its regression fixtures first.
+UPSTREAM_CODES = frozenset({
+    "CANDIDATE_STALE", "CANDIDATE_BLOCKED", "HUMAN_REJECTED", "HUMAN_DEFERRED",
+    "INDEPENDENT_REVIEW_PROVENANCE_NOT_VERIFIED",
+})
+HARD_BLOCK = frozenset({"CANDIDATE_BLOCKED", "HUMAN_REJECTED"})
+UPSTREAM_STALE = frozenset({"CANDIDATE_STALE"})
+REVIEW_UNVERIFIED = frozenset({"INDEPENDENT_REVIEW_PROVENANCE_NOT_VERIFIED"})
 
 
 class CockpitError(ValueError):
@@ -127,13 +136,23 @@ def rank(
                  "PROPOSAL_PROVENANCE_MISSING")
         _require((p["review_state"] == "SCOPED_REVIEW_RECORDED")
                  == p["approval_verified"], "INCOHERENT_REVIEW_STATE")
+        upstream = p.get("reason_codes")
+        _require(isinstance(upstream, list) and len(upstream) <= len(UPSTREAM_CODES)
+                 and all(isinstance(code, str) and code in UPSTREAM_CODES
+                         for code in upstream)
+                 and len(set(upstream)) == len(upstream),
+                 "UNKNOWN_OR_INVALID_UPSTREAM_REASONS")
+        _require(not (p["review_state"] == "SCOPED_REVIEW_RECORDED" and upstream),
+                 "REVIEW_APPROVAL_CONTRADICTS_UPSTREAM_REASONS")
         _require(cid not in seen, "DUPLICATE_PROPOSAL")
         seen.add(cid)
         assessment = by_id.get(cid)
         _require(assessment is not None, "MISSING_ASSESSMENT")
         producer = indexed.get(src.split("/", 1)[1].casefold())
         consumer = indexed.get(dst.split("/", 1)[1].casefold())
-        reasons = []
+        # Preserve the exact X10-043 source-side blockers, even if a newer
+        # inventory snapshot happens to match both current source SHAs.
+        reasons = list(upstream)
         if producer is None or producer["head_sha"] != srcsha:
             reasons.append("PRODUCER_SOURCE_STALE_OR_UNKNOWN")
         elif producer.get("head_observed_at") != observed_on:
@@ -155,8 +174,23 @@ def rank(
                     - 3 * assessment["risk"]
                     - 2 * assessment["effort"]
                     - 2 * len(assessment["dependencies"]))
-        state = ("STALE_RECHECK" if any("STALE" in x or "UNKNOWN" in x for x in reasons)
-                 else "REVIEW_BACKLOG")
+        # A reviewed or high-score estimate cannot rehabilitate a donor
+        # rejected by the owner or blocked by its upstream CAP provenance.
+        if HARD_BLOCK.intersection(upstream):
+            state = "BLOCKED_UPSTREAM"
+            next_action = "HONOR_REJECTION_OR_RESOLVE_CAP_BLOCKER"
+        elif UPSTREAM_STALE.intersection(upstream):
+            state = "STALE_RECHECK"
+            next_action = "RECHECK_UPSTREAM_CAP_SOURCE_AND_FACTORY"
+        elif REVIEW_UNVERIFIED.intersection(upstream):
+            state = "BLOCKED_REVIEW_PROVENANCE"
+            next_action = "VERIFY_INDEPENDENT_REVIEW_PROVENANCE"
+        elif any("STALE" in x or "UNKNOWN" in x for x in reasons):
+            state = "STALE_RECHECK"
+            next_action = "REFRESH_PINNED_INVENTORY"
+        else:
+            state = "REVIEW_BACKLOG"
+            next_action = "HUMAN_SCOPE_AND_LICENSE_REVIEW"
         results.append({
             "candidate_id": cid, "cap_id": cap,
             "producer_repo": src, "producer_sha": srcsha,
@@ -171,17 +205,20 @@ def rank(
                                  ("impact", "cross_app_reuse", "evidence", "risk", "effort")},
             "assumptions_sha256": hashlib.sha256(
                 assessment["assumptions"].encode("utf-8")).hexdigest(),
-            "recommended_next_action": ("REFRESH_PINNED_INVENTORY"
-                                        if state == "STALE_RECHECK" else
-                                        "HUMAN_SCOPE_AND_LICENSE_REVIEW"),
+            "recommended_next_action": next_action,
             "automatic_adoption": False,
             "license_verified_by_cockpit": False,
             "product_approved_by_cockpit": False,
             "consumer_ci_verified_by_cockpit": False,
         })
     _require(len(by_id) == len(seen), "UNMATCHED_ASSESSMENT")
-    # Never place stale proposals ahead of fresh items solely for high score.
-    results.sort(key=lambda item: (item["state"] == "STALE_RECHECK",
+    # Only normal review backlog can rank ahead of upstream stale, denied,
+    # or unverifiable candidates. Score NEVER overrides a hard blocker.
+    state_order = {
+        "REVIEW_BACKLOG": 0, "STALE_RECHECK": 1,
+        "BLOCKED_REVIEW_PROVENANCE": 2, "BLOCKED_UPSTREAM": 3,
+    }
+    results.sort(key=lambda item: (state_order[item["state"]],
                                    -item["triage_score"], item["cap_id"],
                                    item["consumer_repo"], item["candidate_id"]))
     for i, item in enumerate(results):
