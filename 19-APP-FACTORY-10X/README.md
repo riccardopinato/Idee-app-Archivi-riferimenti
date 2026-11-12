@@ -9,6 +9,7 @@
 - [X10-042 CAP-ID dedup/join source+CI](EVIDENCE_X10-042_CAP_DEDUP_SOURCE_2026-11-12.md) — join di segnali hash con CAP esistenti/consumer e stato STALE, nessun nuovo CAP o consumer merge.
 - [Diff-aware intake X10-041 source+CI](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/19): pinned SHA and hashed-path hints only, no live webhook; X10-042 registry join now eligible.
 - [Knowledge/reuse cross-app X10-040](EVIDENCE_X10-040_CROSS_APP_KNOWLEDGE_ARCHITECTURE_2026-11-12.md) — audit architetturale ADVISORY_ONLY, nessun monitor diff live installato.
+- [X10-020 — Identity opt-in Dart kit](EVIDENCE_X10-020_IDENTITY_OPTIN_KIT_2026-11-12.md) — interfaccia OAuth e verifica indipendente dei claims, senza provider attivo, consent solo esplicito e isolamento account.
 - [X10-021 — Profile & Settings Dart kit](EVIDENCE_X10-021_PROFILE_SETTINGS_KIT_2026-11-12.md) — package Dart reale con CI, preferenze local-first e schema migrato; niente OAuth/device/consumer runtime implicito.
 - [X10-019 — Flutter starter source kit](FLUTTER_STARTER_KIT_X10-019.md) — generator, Material 3 token, IT/EN localizations, offline Python tests. Flutter runtime/consumer still unverified.
 - [X10-034 — Ricerca competitor e segnali di domanda datati](EVIDENCE_X10-034_MARKET_COMPETITORS_2026-11-12.md) — fonti Play/Sito, differenziazione, canali organici e metriche ancora NOT_MEASURED; nessuna validazione di ricavi.
