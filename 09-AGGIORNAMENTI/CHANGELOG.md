@@ -1,5 +1,10 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-042 join CAP/consumer con stale e dedup
+- [Dossier X10-042](../19-APP-FACTORY-10X/EVIDENCE_X10-042_CAP_DEDUP_SOURCE_2026-11-12.md): introdotto join source-only delle impronte percorso X10-041 al CAP Registry e SOURCE_INVENTORY; test su no dup, consumer già implementati, licenza da verificare, vecchie prove/stale. Nessun CAP autopromosso, no dati privati o QA consumer.
+- Stato X10-042 rimane PLANNED fino a PR/CI/review e riconciliazione; X10-043 semantica richiede Product Bible e gate indipendente.
+
+
 ## 2026-11-12 — X10-041 monitor diff come SOURCE+CI (17/57)
 - [Agent Core PR #19](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/19), merge `f6b4d6fd022e34c1784e2915733b89bf5ee24d74`: ingest di eventi autenticati e diff AppLab già prodotto, confronto SHA, fingerprint stabile, segnali CAP consultivi con filename/ref in hash e regressioni offline; niente servizio live o capacità di merge.
 - Programma 17 VERIFIED / 38 PLANNED / 2 BLOCKED. X10-042 join CAP/donor sbloccato, mentre i gate reali di orchestrazione e QA restano indipendenti.

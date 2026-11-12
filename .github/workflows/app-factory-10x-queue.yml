@@ -12,6 +12,8 @@ on:
       - 'tests/factory_10x_reuse_inventory_test.py'
       - 'scripts/factory_10x_flutter_starter.py'
       - 'tests/factory_10x_flutter_starter_test.py'
+      - 'scripts/factory_10x_cap_dedup.py'
+      - 'tests/factory_10x_cap_dedup_test.py'
       - '.github/workflows/app-factory-10x-queue.yml'
   push:
     branches: [main]
@@ -26,6 +28,8 @@ on:
       - 'tests/factory_10x_reuse_inventory_test.py'
       - 'scripts/factory_10x_flutter_starter.py'
       - 'tests/factory_10x_flutter_starter_test.py'
+      - 'scripts/factory_10x_cap_dedup.py'
+      - 'tests/factory_10x_cap_dedup_test.py'
       - '.github/workflows/app-factory-10x-queue.yml'
   workflow_dispatch:
   schedule:
@@ -54,6 +58,7 @@ jobs:
           python3 -m unittest discover -s tests -p 'factory_10x_package_contract_test.py' -v
           python3 -m unittest discover -s tests -p 'factory_10x_reuse_inventory_test.py' -v
           python3 -m unittest discover -s tests -p 'factory_10x_flutter_starter_test.py' -v
+          python3 -m unittest discover -s tests -p 'factory_10x_cap_dedup_test.py' -v
       - name: Publish next-task proposal without writing any repo
         shell: bash
         run: |
