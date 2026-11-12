@@ -161,7 +161,8 @@ def rank(
             reasons.append("CONSUMER_SOURCE_STALE_OR_UNKNOWN")
         elif consumer.get("head_observed_at") != observed_on:
             reasons.append("CONSUMER_OBSERVATION_STALE")
-        if p["review_state"] != "SCOPED_REVIEW_RECORDED":
+        if (p["review_state"] != "SCOPED_REVIEW_RECORDED"
+                and "HUMAN_REJECTED" not in upstream):
             reasons.append("HUMAN_REVIEW_PENDING")
         if assessment["dependencies"]:
             reasons.append("UNRESOLVED_DEPENDENCIES")
