@@ -1,5 +1,7 @@
 # App Factory 10x — programma continuo
 
+**Six-step parallel lane checkpoint (NON CERTIFICATO):** [X10-026, X10-032, X10-035/036, X10-046/047](SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md) — consumer PR reali, Physical/Play planner, business decision draft, privacy metrics pure Dart e agent pilot source gate. Human/runtime/Store gates non promossi.
+
 **X10-035/036 (STAGING, NON APPROVATI):** [decisione prodotti/budget in attesa dell'owner](X10-035_036_DECISION_AND_ANALYTICS_PROPOSAL.md), [proposta dati X10-035](X10-035_OWNER_DECISION_PROPOSAL.json) e [kit Dart privacy metrics](flutter_kits/privacy_metrics/README.md) testato solo come core locale opt-in, senza rete, identificativi o integrazione nelle app. X10-035 rimane HUMAN_GATE / PLANNED, X10-036 dipende dalla scelta e resta PLANNED; nessun budget impegnato o SDK analytics attivato.
 
 **Checkpoint 12/11/2026 — X10-033 e X10-045 accettati SOURCE+CI:** [X10-033 AppLab #228](https://github.com/riccardopinato/AppLab/pull/228) MERGED `13c22b13e0d3bf2948ce0f26b7559705f923b8f7`; [X10-045 AppLab #229](https://github.com/riccardopinato/AppLab/pull/229) MERGED `0888d71e3ce163db4af94d9694c34f18b4041ec3`. Entrambe 7/7 workflow + review Codex clean exact-head; [dossier X10-033](EVIDENCE_X10-033_RELEASE_DECISION_SOURCE_CI_2026-11-12.md) e [X10-045](EVIDENCE_X10-045_FAILURE_DONOR_SOURCE_CI_2026-11-12.md). Sono adapter report/proposta senza collaudi fisici, certificazione Store o replay effettivo. Coda **34 VERIFIED / 22 PLANNED / 1 BLOCKED**.

@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — Handoff operativo sei task 10x, senza promozioni fittizie
+- [Checkpoint operativo](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md) per X10-026/032/035/036/046/047: link alle due PR consumer Flutter, planner AppLab #230, owner decision e privacy metrics, Agent Core #23. Distinti SOURCE/CI, i HUMAN_GATE e i collaudi fisici/Play. Il registro resta 34 VERIFIED / 22 PLANNED / 1 BLOCKED fino a evidenza finale.
+
 ## 2026-11-12 — X10-035/036 staging commerciale e analytics opt-in (non verificati come prodotto)
 - [Proposta decisione owner](../19-APP-FACTORY-10X/X10-035_036_DECISION_AND_ANALYTICS_PROPOSAL.md) e [schema](../19-APP-FACTORY-10X/X10-035_OWNER_DECISION_PROPOSAL.json): Battery Guard e Rotate 180° candidati, World Days condizionale; prodotti/budget **non approvati**. [Pure-Dart privacy metrics](../19-APP-FACTORY-10X/flutter_kits/privacy_metrics/README.md) è un prototipo in memoria con test di consenso/revoca; nessun SDK o app integrato, nessuna retention e attribution reali. X10-035 e X10-036 restano PLANNED.
 
