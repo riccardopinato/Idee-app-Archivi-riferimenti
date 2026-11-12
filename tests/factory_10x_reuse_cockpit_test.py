@@ -32,6 +32,7 @@ def fixture():
             "consumer_repo": "riccardopinato/" + target, "consumer_sha": target_sha,
             "source_path_sha256": H, "review_fingerprint": H,
             "review_state": "BLOCKED_PENDING_REVIEW", "approval_verified": False,
+            "reason_codes": ["HUMAN_DEFERRED"],
             "requires_scoped_pr": True,
             "independent_consumer_ci_required": True,
             "automatic_code_change": False, "automatic_merge": False,
@@ -107,6 +108,7 @@ class ReuseCockpitTests(unittest.TestCase):
         row = p("x10_approved")
         row["review_state"] = "SCOPED_REVIEW_RECORDED"
         row["approval_verified"] = True
+        row["reason_codes"] = []
         ranked = run([row], [e("x10_approved")], inv)["ranked"][0]
         self.assertFalse(ranked["automatic_adoption"])
         self.assertFalse(ranked["consumer_ci_verified_by_cockpit"])
@@ -168,6 +170,81 @@ class ReuseCockpitTests(unittest.TestCase):
         estimate["dependencies"] = [{"nested": "invalid"}]
         with self.assertRaisesRegex(CockpitError, "INVALID_DEPENDENCIES"):
             run([p("x10_bad")], [estimate], inv)
+
+    def test_upstream_cap_stale_must_not_become_ready_with_fresh_inventory(self):
+        inv, p, e = fixture()
+        stale = p("x10_cap_stale")
+        stale["reason_codes"] = ["CANDIDATE_STALE", "HUMAN_DEFERRED"]
+        fresh = p("x10_candidate_fresh", target="World-Days", target_sha=C)
+        out = run([stale, fresh], [
+            e("x10_cap_stale", impact=5),
+            e("x10_candidate_fresh", impact=1, risk=5, effort=5),
+        ], inv)["ranked"]
+        self.assertEqual(out[0]["candidate_id"], "x10_candidate_fresh")
+        self.assertEqual(out[1]["state"], "STALE_RECHECK")
+        self.assertIn("CANDIDATE_STALE", out[1]["reason_codes"])
+        self.assertEqual(out[1]["recommended_next_action"],
+                         "RECHECK_UPSTREAM_CAP_SOURCE_AND_FACTORY")
+
+    def test_rejected_or_upstream_blocked_never_ranks_ahead_of_review(self):
+        inv, p, e = fixture()
+        reviewable = p("x10_reviewable", target="World-Days", target_sha=C)
+        blocked = []
+        for code in ("CANDIDATE_BLOCKED", "HUMAN_REJECTED"):
+            row = p("x10_" + code.lower())
+            row["reason_codes"] = [code]
+            blocked.append(row)
+        out = run([*blocked, reviewable], [
+            e("x10_reviewable", impact=0, risk=5, effort=5),
+            *(e(row["candidate_id"], impact=5, risk=0, effort=0)
+              for row in blocked)
+        ], inv)["ranked"]
+        self.assertEqual(out[0]["candidate_id"], "x10_reviewable")
+        for row in out[1:]:
+            self.assertEqual(row["state"], "BLOCKED_UPSTREAM")
+            self.assertIn(
+                "CANDIDATE_BLOCKED" if "candidate_blocked" in row["candidate_id"]
+                else "HUMAN_REJECTED", row["reason_codes"])
+            if "human_rejected" in row["candidate_id"]:
+                self.assertNotIn("HUMAN_REVIEW_PENDING", row["reason_codes"])
+            self.assertEqual(row["recommended_next_action"],
+                             "HONOR_REJECTION_OR_RESOLVE_CAP_BLOCKER")
+
+    def test_unverified_approval_provenance_keeps_upstream_barrier(self):
+        inv, p, e = fixture()
+        row = p("x10_fake_verifier")
+        row["reason_codes"] = ["INDEPENDENT_REVIEW_PROVENANCE_NOT_VERIFIED"]
+        output = run([row], [e("x10_fake_verifier")], inv)["ranked"][0]
+        self.assertEqual(output["state"], "BLOCKED_REVIEW_PROVENANCE")
+        self.assertEqual(output["recommended_next_action"],
+                         "VERIFY_INDEPENDENT_REVIEW_PROVENANCE")
+
+    def test_unknown_missing_or_duplicate_upstream_reason_is_not_accepted(self):
+        inv, p, e = fixture()
+        for reasons in (None, ["NEW_UPSTREAM_REASON"], ["CANDIDATE_STALE"] * 2,
+                        "CANDIDATE_STALE", [None], [42], [""], {}):
+            row = p("x10_invalid_reason")
+            if reasons is None:
+                row.pop("reason_codes")
+            else:
+                row["reason_codes"] = reasons
+            with self.subTest(reasons=reasons), self.assertRaisesRegex(
+                CockpitError, "UNKNOWN_OR_INVALID_UPSTREAM_REASONS"
+            ):
+                run([row], [e("x10_invalid_reason")], inv)
+
+    def test_fabricated_approved_state_does_not_erase_upstream_blocker(self):
+        inv, p, e = fixture()
+        for bad in ("CANDIDATE_STALE", "HUMAN_REJECTED",
+                    "INDEPENDENT_REVIEW_PROVENANCE_NOT_VERIFIED"):
+            row = p("x10_approved_unsafe")
+            row["review_state"] = "SCOPED_REVIEW_RECORDED"
+            row["approval_verified"] = True
+            row["reason_codes"] = [bad]
+            with self.subTest(code=bad), self.assertRaisesRegex(
+                CockpitError, "REVIEW_APPROVAL_CONTRADICTS_UPSTREAM_REASONS"
+            ):
+                run([row], [e("x10_approved_unsafe")], inv)
 
     def test_dependency_and_high_risk_cannot_disappear_from_results(self):
         inv, p, e = fixture()
