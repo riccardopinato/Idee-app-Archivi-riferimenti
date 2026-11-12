@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-029 Visual regression verificata SOURCE+CI (30/57)
+- [AppLab PR #226](https://github.com/riccardopinato/AppLab/pull/226) MERGED `de6058c78bc572821635e8cf0f5b3079ee716b7b`; exact head `4c9de3873ee9ba526eeabace808e6cf9801e5e80`, 7/7 workflow + Codex independent review no findings. Prima CI fallita per due fixture di test con stato mutabile condiviso, corrette prima di rieseguire tutte le check. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-029_VISUAL_BASELINE_SOURCE_CI_2026-11-12.md): baseline approvate per profilo e schermata, screenshot/XML hash e receipts interazioni; WARN/false positive richiedono review umana. **Solo source+CI**, no app consumer/device test. Registro **30 VERIFIED / 26 PLANNED / 1 BLOCKED**, X10-033 ancora dipendente da X10-030.
+
 ## 2026-11-12 — X10-031 Provenienza APK/AAB verificata SOURCE+CI (29/57)
 - [AppLab PR #225](https://github.com/riccardopinato/AppLab/pull/225) MERGED `a1ddbbe4be15b8cadd7f3614f4ec7a33e12e6658`; exact head `107e005d2d6ee5a3d389b50f3fc9321e091d4edb` con 7/7 workflow CI PASS, review Codex senza rilievi e tre thread review precedenti risolti. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-031_SIGNED_PROVENANCE_SOURCE_CI_2026-11-12.md) — binding sorgente/hash/firma/versionCode/ABI nel codice, con fixture sintetiche e inspector iniettati. **Nessun APK/AAB realmente firmato o pubblicato.** Registro 29 VERIFIED / 27 PLANNED / 1 BLOCKED, X10-032 HUMAN_GATE ora eleggibile; X10-033 attende X10-029/030.
 

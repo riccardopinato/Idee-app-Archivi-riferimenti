@@ -825,9 +825,17 @@
       "acceptance": "Screenshot baseline diff, UI interaction, review false positives",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/226",
+          "source_sha": "4c9de3873ee9ba526eeabace808e6cf9801e5e80"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY. AppLab PR #226 merged main de6058c78bc572821635e8cf0f5b3079ee716b7b. Exact head 4c9de3873ee9ba526eeabace808e6cf9801e5e80 passed seven workflows (Canonical Runtime Fixture Build, AppLab CodeQL, Repository Governance Audit, Autonomous App Review, Live Emulator Browser E2E, AppLab CI, Emulator Self Test) and independent Codex exact-head review with zero findings. Initial CI found two mutable-profile fixture contamination failures, fixed and rerun on exact head. Adapter reuses existing visual_regression comparator, approved baseline lookup, screenshot/UI hashes, profile and interaction receipts, WARN/manual false-positive review. Not consumer-specific baseline or device certification; no actual physical visual acceptance. X10-033 still requires X10-030."
     },
     {
       "id": "X10-030",
