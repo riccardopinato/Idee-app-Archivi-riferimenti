@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — X10-010 e X10-017 gate sorgente+CI integrati
+- [Agent Core PR #15](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/15): gateway di autorizzazione offline, modalità consentite, job/idempotency, exact source SHA e scope, receipt scoped; review e CI (fix dei rilievi) verificati. Nessun agente Windows runtime importato e nessun job eseguito.
+- [Idee-app PR #106](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/106): contratto di package Golden con licenza, SDK, donor/consumer CI e gate rigorosi; nessun package Flutter estratto o certificato.
+- Coda riallineata a **9 VERIFIED, 47 PLANNED, 1 BLOCKED**. X10-011/012 e X10-018/019 sono nuove dipendenze eleggibili secondo i gate; nessuna release certificata.
+
+
 ## 2026-11-12 — Esecuzione App Factory 10x / checkpoint di 5 task
 - PR [Golden/Donor #103](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/103): inventario 61 Golden e 20 donor con snapshot/provenance e test. X10-003 evidence scope SOURCE.
 - PR [Windows preflight #14](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/14): script offline hash/source exclusions con test; X10-007 evidence scope SOURCE+CI. X10-008 BLOCKED: attende sorgenti locali Windows sanitizzati.
