@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""App Factory 10x continuous roadmap: offline DAG validator and bounded next-task selector.
+"""App Factory 10x continuous roadmap: offline DAG validator and uncapped safe-ready selector.
 
 No GitHub writes, no network, no async agents, no automatic approval/promotion.
 This is a durable executable queue contract, NOT a self-resuming ChatGPT worker.
@@ -93,8 +93,30 @@ def validate(program):
     for tid in ids:
         walk(tid)
     policy = program.get("operating_rules", {})
-    if policy.get("max_parallel") not in (1, 2, 3) or policy.get("auto_safe_mode") != "READ_ONLY":
-        raise ValueError("Parallel or autonomous safety policy invalid")
+    parallel = policy.get("parallelism", {})
+    if (policy.get("auto_safe_mode") != "READ_ONLY"
+            or parallel.get("strategy") != "ALL_READY_WITHOUT_FIXED_NUMERIC_CAP"
+            or parallel.get("numeric_task_limit", "MISSING") is not None
+            or parallel.get("read_only_same_repository_allowed") is not True
+            or parallel.get("uncoordinated_writers_same_repository_forbidden") is not True
+            or parallel.get("replace_blocked_tasks_immediately") is not True
+            or parallel.get("replan_on_verified_or_blocked") is not True):
+        raise ValueError("Dynamic parallelism safety policy invalid")
+    if "max_parallel" in policy or policy.get("parallel_only_distinct_owner_repos") is True:
+        raise ValueError("Legacy numeric cap detected")
+    for task in tasks:
+        if "write_paths" not in task and "scope_reviewed" not in task:
+            continue
+        if task["mode"] != "PR_GATED" or task.get("scope_reviewed") is not True:
+            raise ValueError("Isolated scopes require PR_GATED review: " + task["id"])
+        paths = task.get("write_paths")
+        branch = task.get("write_branch")
+        if (not isinstance(paths, list) or not paths or len(set(paths)) != len(paths)
+                or any(not isinstance(path, str) or not path or path.startswith("/")
+                       or ".." in path.split("/") or "*" in path for path in paths)
+                or not isinstance(branch, str)
+                or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_./-]*", branch)):
+            raise ValueError("Unsafe or ambiguous write scope: " + task["id"])
     if policy.get("never_autoclose_from_scheduled_run") is not True:
         raise ValueError("Automatic task completion prohibited")
     return {"total": len(tasks), "waves": len(phases),
@@ -114,15 +136,39 @@ def receipt_ok(receipt):
     return True
 
 
-def next_tasks(program, limit=None):
-    """Select only dependency-ready tasks; do not schedule two PRs on one repo."""
+def _paths_overlap(first, second):
+    """A parent directory overlaps its descendants; same file also overlaps."""
+    return any(a == b or a.startswith(b.rstrip("/") + "/")
+               or b.startswith(a.rstrip("/") + "/")
+               for a in first for b in second)
+
+
+def _writers_compatible(left, right):
+    """No concurrent writes to shared source without a reviewed isolated scope."""
+    if left["owner_repo"] != right["owner_repo"]:
+        return True
+    if not (left.get("scope_reviewed") is True and right.get("scope_reviewed") is True):
+        return False
+    if left.get("write_branch") == right.get("write_branch"):
+        return False
+    return not _paths_overlap(left["write_paths"], right["write_paths"])
+
+
+def next_tasks(program):
+    """Select ALL safely compatible tasks: no arbitrary numeric task ceiling.
+
+    Independent READ_ONLY tasks can overlap even inside one repository.
+    PR_GATED writers share a repo only after explicitly reviewed disjoint
+    paths AND distinct branches. Existing IN_PROGRESS writers reserve scopes.
+    A BLOCKED task reserves nothing; re-run this selector on every change.
+    Running these selections requires an actual executor; this is planning only.
+    """
     validate(program)
     by_id = {t["id"]: t for t in program["tasks"]}
     wave_index = {w["id"]: i for i, w in enumerate(program["waves"])}
-    ready = []
-    waiting = []
+    ready, waiting = [], []
     for t in program["tasks"]:
-        if t["status"] not in ("PLANNED",):
+        if t["status"] != "PLANNED":
             continue
         missing = [d for d in t["dependencies"] if by_id[d]["status"] != "VERIFIED"]
         if missing:
@@ -131,18 +177,23 @@ def next_tasks(program, limit=None):
             ready.append(t)
     ready.sort(key=lambda t: (PRIORITY[t["priority"]], wave_index[t["wave"]],
                               -(t["impact"] / t["effort"]), t["id"]))
-    max_parallel = limit or program["operating_rules"]["max_parallel"]
-    selected, approval, skipped, repos = [], [], [], set()
+    selected, approval, conflicts = [], [], []
+    active_writers = [t for t in program["tasks"]
+                      if t["status"] == "IN_PROGRESS" and t["mode"] == "PR_GATED"]
     for t in ready:
         if t["mode"] == "HUMAN_GATE":
             approval.append(t)
-        elif len(selected) >= max_parallel or t["owner_repo"] in repos:
-            skipped.append(t)
-        else:
+        elif t["mode"] == "READ_ONLY":
             selected.append(t)
-            repos.add(t["owner_repo"])
+        elif all(_writers_compatible(t, w) for w in active_writers):
+            selected.append(t)
+            active_writers.append(t)
+        else:
+            conflicts.append({"id": t["id"], "owner_repo": t["owner_repo"],
+                              "reason": "WRITE_SCOPE_CONFLICT_OR_NOT_REVIEWED"})
     return {"selected": selected, "awaiting_human_gate": approval,
-            "ready_not_selected": skipped, "awaiting_dependencies": waiting,
+            "writer_conflicts": conflicts, "ready_not_selected": conflicts,
+            "awaiting_dependencies": waiting,
             "blocked": [t for t in program["tasks"] if t["status"] == "BLOCKED"],
             "verified": sum(t["status"] == "VERIFIED" for t in program["tasks"]),
             "total": len(program["tasks"])}
@@ -153,12 +204,12 @@ def summary_markdown(program, selection):
         return f'- **{t["id"]}** [{t["priority"]}, {t["mode"]}, {t["stream"]}] {t["title"]} — {t["owner_repo"]}. Gate: {t["acceptance"]}.'
     lines = ["## App Factory 10x — prossima coda (non esecuzione)",
              f'Factory: {program["factory_baseline"]}; {selection["verified"]}/{selection["total"]} task con gate VERIFIED.',
-             "", "### Prossimi task eseguibili — repository distinti"]
+             "", "### Tutti i task READY compatibili (senza limite numerico)"]
     lines += [show(t) for t in selection["selected"]] or ["- Nessun task eseguibile: controllare prerequisiti e gate."]
     lines += ["", "### Gate umani già pronti"]
     lines += [show(t) for t in selection["awaiting_human_gate"]] or ["- Nessun gate umano pronto."]
     lines += ["", f'In attesa di dipendenze: {len(selection["awaiting_dependencies"])}; '
-              f'in coda dopo i limiti di parallelismo: {len(selection["ready_not_selected"])}; '
+              f'writer in attesa di coordinamento path/branch: {len(selection["writer_conflicts"])}; '
               f'bloccati: {len(selection["blocked"])}.', "",
               "**Attenzione:** la schedule verifica/ordina la coda ma NON modifica repository, "
               "non sviluppa codice, non auto-mergia PR, non marca VERIFIED e non riapre ChatGPT da sola."]
@@ -179,6 +230,7 @@ def main():
             print(json.dumps({"selected": [t["id"] for t in result["selected"]],
                               "human_gate": [t["id"] for t in result["awaiting_human_gate"]],
                               "waiting": len(result["awaiting_dependencies"]),
+                              "writer_conflicts": result["writer_conflicts"],
                               "blocked": len(result["blocked"]),
                               "verified": result["verified"]}, indent=2))
         else:

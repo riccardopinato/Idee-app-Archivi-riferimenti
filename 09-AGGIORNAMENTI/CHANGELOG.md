@@ -1,5 +1,11 @@
 # Changelog dell'archivio
 
+## 2026-11-12 — Parallelismo 10x senza limite numerico arbitrario
+- Rimosso `max_parallel: 3` dal programma 10x; l'algoritmo seleziona tutti i task READY compatibili, anche read-only sul medesimo repository, con gestione separata dei writer e blocco di modifiche concorrenti non isolate.
+- Se un task resta `BLOCKED`, non trattiene più capacità; rivalutazione della coda e sostituzione con un altro READY. Fixture CI per selezione oltre 3, sostituzione blocco e scoping PR disgiunto.
+- L'esecuzione reale resta vincolata alle risorse del tool/runner, alle dipendenze e ai gate; il cron read-only non sviluppa codice in background.
+
+
 ## 2026-11-12 — Avviata la coda 10x con due audit realmente revisionati
 - [PR #100](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/100) merged, `ae9a491d3c544bccc105178f84f154076ad19d7d`: [X10-001](../19-APP-FACTORY-10X/EVIDENCE_X10-001_BASELINE_2026-11-12.md) baseline/gap per 8 repo e [X10-004](../19-APP-FACTORY-10X/EVIDENCE_X10-004_APPLAB_REUSE_2026-11-12.md) riuso codice AppLab pinned. Audit source-only, non nuove funzionalità runtime.
 - La [queue 10x](../19-APP-FACTORY-10X/PROGRAM_QUEUE.json) registra due task VERIFIED con evidence e gate review; il resolver sblocca i successori senza segnare automaticamente altre attività come completate.
