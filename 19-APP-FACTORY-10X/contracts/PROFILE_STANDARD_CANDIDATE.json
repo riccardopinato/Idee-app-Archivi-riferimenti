@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "package_name": "app_factory_profile_standard",
+  "version": "0.0.0",
+  "package_state": "DESIGN_ONLY",
+  "factory_sha": "c5adc147046beb7024629466d10eeb799c3c2619",
+  "golden": {
+    "id": "profile_standard",
+    "path": "golden/identity/GOLDEN_PROFILE_STANDARD_FLUTTER_v1.txt",
+    "registry_status": "COPY-READY GOLDEN",
+    "registry_sha": "c5adc147046beb7024629466d10eeb799c3c2619"
+  },
+  "provenance": {
+    "origin": "INTERNAL_GOLDEN",
+    "donor_repo": "riccardopinato/FrameLab-Google-AI-Studio",
+    "donor_sha": "239995759e2b56f5315a061a169404c591d77f39",
+    "source_files": [],
+    "source_url": "https://github.com/riccardopinato/App-Factory-Core/blob/c5adc147046beb7024629466d10eeb799c3c2619/golden/identity/GOLDEN_PROFILE_STANDARD_FLUTTER_v1.txt"
+  },
+  "license": "NOT_REVIEWED",
+  "compatibility": {
+    "dart_sdk": "NOT_TESTED",
+    "flutter_sdk": "NOT_TESTED",
+    "tested_pairs": []
+  },
+  "dependencies": {},
+  "tests": {
+    "donor_ci_urls": [],
+    "consumer_ci_urls": []
+  },
+  "consumers": [],
+  "release": {
+    "publish_authorized": false,
+    "artifact_sha256": null,
+    "rollback_version": null
+  }
+}
