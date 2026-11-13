@@ -146,3 +146,7 @@ Le sette nuove CAP sono **PROPOSTA**, non integrazioni. La classifica originale 
 ## 13/11/2026 — Design reference intake (solo ricerca)
 
 [Crosswalk e priorità di audit per 66 nuovi riferimenti](DESIGN_INTAKE_RIUSO_2026-11-13.md) · [changelog dedicato](CHANGELOG_DESIGN_INTAKE_2026-11-13.md). 77 invii; 11 SHA-256 duplicati; nessuna modifica al registro canonico CAP (199 record secondo il JSON corrente), a kit/score/stati app o alle viste generate. Gestire tutto come REFERENCE_ONLY finché licenze, codice e prove non siano verificate.
+
+## App ↔ Stili: navigazione molti-a-molti
+
+[Matrice di compatibilità grafica per 19 app](MATRICE_VISUAL_APP_STILI_2026-11-13.md) con 28 famiglie e 99 immagini uniche. Ogni stile può essere usato in più app e ogni app può adottare più stili; i legami sono proposte, non implementazioni. Il record relazionale completo è conservato nel repository Design-App, senza duplicare gli asset.
