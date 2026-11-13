@@ -847,7 +847,8 @@
         }
       ],
       "blocker": null,
-      "review_scope": "VERIFIED SOURCE+CI SCOPE ONLY (13 Nov 2026): real factory_profile_kit 0.1.0→0.1.1→0.1.0 immutable SemVer rollback exercised on two real Flutter consumers (AppLab PR #232, CI #43337856699, X10-018 harness STRUCTURAL_PASS_REVIEW_REQUIRED); independent exact PR-head Codex review green. Anna PR #310 main ffa3d98 and TasteAI PR #9 main 2e6cb12 adopted pinned 0.1.1; AppLab main bb59e05, Anna main and TasteAI main post-merge CI SUCCESS. VERIFIED does NOT mean Golden admission, device-installed APK rollback, physical user-data retention, Play, Store release, provider billing or external service. X10-053 Golden admission separately gated."
+      "review_scope": "VERIFIED SOURCE+CI SCOPE ONLY (13 Nov 2026): real factory_profile_kit 0.1.0→0.1.1→0.1.0 immutable SemVer rollback exercised on two real Flutter consumers (AppLab PR #232, CI #43337856699, X10-018 harness STRUCTURAL_PASS_REVIEW_REQUIRED); independent exact PR-head Codex review green. Anna PR #310 main ffa3d98 and TasteAI PR #9 main 2e6cb12 adopted pinned 0.1.1; AppLab main bb59e05, Anna main and TasteAI main post-merge CI SUCCESS. VERIFIED does NOT mean Golden admission, device-installed APK rollback, physical user-data retention, Play, Store release, provider billing or external service. X10-053 Golden admission separately gated. Independent manual review matched exact CI, source/package SHAs, donor/consumer logs and X10-018 receipt structure; reviewer is not the harness.",
+      "gate_reviewed": true
     },
     {
       "id": "X10-027",
