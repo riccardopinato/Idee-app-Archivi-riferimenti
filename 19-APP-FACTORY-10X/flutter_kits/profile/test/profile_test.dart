@@ -125,6 +125,16 @@ void main() {
     expect(store.writes, 0);
   });
 
+  test('oversized stored profile is not decoded, erased, or rewritten', () async {
+    final original = '{"schema_version":1,"display_name":"${'x' * 20000}"}';
+    final store = MemoryStore()..document = original;
+    final controller = ProfileSettingsController(store);
+    expect((await controller.load()).displayName, '');
+    expect(controller.recoveredFromInvalidPreferences, isTrue);
+    expect(store.document, original);
+    expect(store.writes, 0);
+  });
+
   test('future schema and unknown locale do not get silently migrated', () {
     expect(
       () => ProfilePreferences.fromJson({'schema_version': 2}),
