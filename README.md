@@ -120,3 +120,7 @@ Archiviate **100 schede individuali**, **6 proposte extra senza numero** e **14 
 ## Intake visuale App Factory — 13/11/2026
 
 [**66 riferimenti grafici nuovi, 77 upload e 11 duplicati esatti**](12-CAPABILITY-E-IMPLEMENTAZIONI/DESIGN_INTAKE_RIUSO_2026-11-13.md): ricerca e crosswalk verso CAP esistenti. Source of truth visuale: Design-App, branch catalog/visual-references-2026-11-13. Nessuna nuova CAP, app o Golden promossa, né codice di terzi riutilizzato senza diritti.
+
+## Matrice grafica App ↔ Stili (13/11/2026)
+
+[Vista delle 19 app e 28 stili](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_VISUAL_APP_STILI_2026-11-13.md), derivata da Design-App e collegata alle 99 reference uniche; classificazione molti-a-molti, senza nuova CAP né modifica roadmap.
