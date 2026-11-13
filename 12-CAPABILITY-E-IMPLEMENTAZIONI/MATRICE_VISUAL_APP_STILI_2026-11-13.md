@@ -1,6 +1,6 @@
 # Catalogo visuale ↔ App Factory — matrice di compatibilità
 
-**Stato: proposte UI/UX, NON approvazioni o implementazioni**. Questa vista è una fotografia di ricerca. La fonte autorevole delle associazioni tra i **99 riferimenti**, i **28 stili** e le **19 app** è [Design-App — registro relazionale](https://github.com/riccardopinato/Design-App/blob/catalog/visual-references-2026-11-13/UI-UX/MATRICE_BIDIREZIONALE_APP_STILI_2026-11-13.json). Navigazione: [App → Stili](https://github.com/riccardopinato/Design-App/blob/catalog/visual-references-2026-11-13/UI-UX/PER_APP_STILI_2026-11-13.md) oppure [Stile → App](https://github.com/riccardopinato/Design-App/blob/catalog/visual-references-2026-11-13/UI-UX/PER_STILE_APP_2026-11-13.md). I link saranno puntati al ramo `main` dopo un merge effettivamente verificato.
+**Stato: proposte UI/UX, NON approvazioni o implementazioni**. Questa vista è una fotografia di ricerca. La fonte autorevole delle associazioni tra i **99 riferimenti**, i **28 stili** e le **19 app** è [Design-App — registro relazionale](https://github.com/riccardopinato/Design-App/blob/main/UI-UX/MATRICE_BIDIREZIONALE_APP_STILI_2026-11-13.json). Navigazione: [App → Stili](https://github.com/riccardopinato/Design-App/blob/main/UI-UX/PER_APP_STILI_2026-11-13.md) oppure [Stile → App](https://github.com/riccardopinato/Design-App/blob/main/UI-UX/PER_STILE_APP_2026-11-13.md). I link puntano ai file verificati nel ramo `main` di Design-App.
 
 | App | Famiglie UI/UX compatibili | Famiglie estetiche compatibili | Reference uniche |
 |---|---|---|---:|
