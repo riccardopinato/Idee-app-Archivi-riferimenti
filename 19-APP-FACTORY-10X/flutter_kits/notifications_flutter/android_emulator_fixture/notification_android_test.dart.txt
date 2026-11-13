@@ -28,11 +28,19 @@ void main() {
       ) ?? false;
       return initialized;
     }
+    String? nativeScheduleFailure;
     final backend = PluginAndroidNotificationBackend(
       plugin: plugin, nowUtc: () => DateTime.now().toUtc(),
       channelId: 'x10_android_smoke', channelName: 'X10 reminders',
       ensureConsumerPluginInitialized: init,
       androidSdkInt: () => channel.invokeMethod<int>('sdkInt'),
+      onNativeOperationError: (operation, error) {
+        if (operation == 'schedule') {
+          nativeScheduleFailure = error is PlatformException
+              ? '${error.code}: ${error.message}'
+              : error.runtimeType.toString();
+        }
+      },
     );
     final state = await backend.probeDevice();
     expect(state.supported, isTrue);
@@ -50,7 +58,8 @@ void main() {
       title: 'Android native scheduling test',
       body: 'Registered, not delivered', timezoneId: 'UTC',
     ));
-    expect(outcome, ScheduleDecision.acceptedInexact);
+    expect(outcome, ScheduleDecision.acceptedInexact,
+        reason: 'Native schedule error: ${nativeScheduleFailure ?? 'none reported'}');
     expect((await plugin.pendingNotificationRequests()).map((p) => p.id),
       contains(notificationIdFor(stableId)));
     expect(await coordinator.cancel(stableId), isTrue);

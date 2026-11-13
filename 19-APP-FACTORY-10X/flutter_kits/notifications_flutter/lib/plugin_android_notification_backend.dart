@@ -20,6 +20,7 @@ class PluginAndroidNotificationBackend implements NotificationDeviceBackend {
     required this.channelName,
     required this.ensureConsumerPluginInitialized,
     required this.androidSdkInt,
+    this.onNativeOperationError,
     this.channelDescription = 'Scheduled reminders',
   });
 
@@ -36,6 +37,9 @@ class PluginAndroidNotificationBackend implements NotificationDeviceBackend {
   /// Actual Android Build.VERSION.SDK_INT, supplied by the consumer platform.
   /// No SDK inference from a channel list (API 24-25 have no channels).
   final Future<int?> Function() androidSdkInt;
+
+  /// Optional consumer-owned diagnostics; never log reminder IDs or content.
+  final void Function(String operation, Object error)? onNativeOperationError;
 
   bool _initialized = false;
   bool get _android =>
@@ -140,7 +144,8 @@ class PluginAndroidNotificationBackend implements NotificationDeviceBackend {
       );
       // Only OS scheduling requested: no delivery receipt is generated.
       return true;
-    } catch (_) {
+    } catch (error) {
+      onNativeOperationError?.call('schedule', error);
       return false;
     }
   }
