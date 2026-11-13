@@ -1,7 +1,11 @@
 # Changelog dell'archivio
 
 ## 2026-11-13 — X10-023 Android emulator native plugin API test candidate
-- [Emulator native smoke](../19-APP-FACTORY-10X/flutter_kits/notifications_flutter/android_emulator_fixture/README.md): isolated generated Android API29 Flutter host, real native SDK MethodChannel, notification channel, inexact schedule registration/pending and cancellation. CI must also trigger when the shared Dart notification policy changes. **NOT** a delivery receipt, physical OEM, Play/Store or Golden certification; task remains PLANNED pending tests and consumer/device integration.
+- [Emulator native smoke](../19-APP-FACTORY-10X/flutter_kits/notifications_flutter/android_emulator_fixture/README.md): isolated generated Android API29 Flutter host, real native SDK MethodChannel, notification channel, inexact schedule registration/pending and cancellation. CI must trigger for shared Dart notification policy changes. **NOT** a delivered receipt, physical OEM, Play/Store or Golden certification; current Android scheduling test still must pass before merge and X10-023 remains PLANNED.
+
+## 2026-11-13 — factory_profile_kit v0.1.1 candidate (rollback-ready baseline)
+- Patch source: prevent implicit overwrites of malformed persisted profile data until explicit recovery review; preserve valid legacy profiles unchanged and avoid implicit writes. Schema v1 and consumer APIs unchanged; `0.1.0` remains immutable baseline for prospective real SemVer downgrade QA.
+- **CANDIDATE ONLY** until exact-head donor/consumer CI and X10-018 rollback receipts pass; no package publication, new Golden admission, physical certification, or X10-026 queue promotion implied.
 
 ## 2026-11-13 — X10-026: real consumers/source rollback (partial, not Golden)
 - [Evidence checkpoint](../19-APP-FACTORY-10X/EVIDENCE_X10-026_REAL_CONSUMERS_2026-11-13.md): Anna main CI + signed build, TasteAI full main CI, and AppLab #231 **7/7** with actual pinned donor and two consumer tests plus pre-adoption source rollback. **No** semver-version downgrade receipt, physical installed-data rollback, Golden promotion or status change; X10-026 remains PLANNED. Source snapshot preflight flagged historical.
