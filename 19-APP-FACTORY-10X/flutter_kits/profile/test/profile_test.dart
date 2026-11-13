@@ -125,14 +125,38 @@ void main() {
     expect(store.writes, 0);
   });
 
-  test('oversized stored profile is not decoded, erased, or rewritten', () async {
-    final original = jsonEncode({'schema_version': 1, 'display_name': List.filled(20000, 'x').join()});
+  test('valid legacy oversized whitespace profile still round trips', () async {
+    final displayName = List.filled(20000, ' ').join() + 'Anna';
+    final original = jsonEncode(ProfilePreferences(displayName: displayName).toJson());
     final store = MemoryStore()..document = original;
     final controller = ProfileSettingsController(store);
-    expect((await controller.load()).displayName, '');
-    expect(controller.recoveredFromInvalidPreferences, isTrue);
-    expect(store.document, original);
+    expect((await controller.load()).displayName, displayName);
+    await controller.update((p) => p.copyWith(locale: 'it'));
+    expect(controller.current.displayName, displayName);
+    expect(jsonDecode(store.document!)['display_name'], displayName);
+  });
+
+  test('corrupt data needs explicit recovery review before overwrite', () async {
+    final store = MemoryStore()..document = '{corrupt';
+    final controller = ProfileSettingsController(store);
+    await controller.load();
+    await expectLater(
+      controller.update((p) => p.copyWith(locale: 'it')),
+      throwsStateError,
+    );
+    expect(store.document, '{corrupt');
     expect(store.writes, 0);
+    controller.confirmOverwriteAfterCorruptDataReview();
+    store.failNextWrite = true;
+    await expectLater(
+      controller.update((p) => p.copyWith(locale: 'it')),
+      throwsStateError,
+    );
+    expect(store.document, '{corrupt');
+    await controller.update((p) => p.copyWith(locale: 'it'));
+    expect(controller.current.locale, 'it');
+    expect(controller.recoveredFromInvalidPreferences, isFalse);
+    expect(store.writes, 1);
   });
 
   test('future schema and unknown locale do not get silently migrated', () {
