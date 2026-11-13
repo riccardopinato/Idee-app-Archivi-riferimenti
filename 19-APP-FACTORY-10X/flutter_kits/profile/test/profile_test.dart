@@ -126,7 +126,7 @@ void main() {
   });
 
   test('oversized stored profile is not decoded, erased, or rewritten', () async {
-    final original = '{"schema_version":1,"display_name":"${'x' * 20000}"}';
+    final original = jsonEncode({'schema_version': 1, 'display_name': List.filled(20000, 'x').join()});
     final store = MemoryStore()..document = original;
     final controller = ProfileSettingsController(store);
     expect((await controller.load()).displayName, '');
