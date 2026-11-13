@@ -92,6 +92,10 @@ abstract interface class ProfilePreferencesStore {
   Future<void> writeAtomically(String jsonDocument);
 }
 
+// Profile snapshots are deliberately small. Refuse oversized untrusted JSON
+// without decoding or overwriting the original stored bytes.
+const int _maxProfileDocumentChars = 16 * 1024;
+
 class ProfileSettingsController {
   ProfileSettingsController(this._store);
 
@@ -117,6 +121,11 @@ class ProfileSettingsController {
     try {
       final document = await _store.read();
       if (document != null) {
+        if (document.length > _maxProfileDocumentChars) {
+          _corrupt = true;
+          _loaded = true;
+          return _current;
+        }
         try {
           _current = ProfilePreferences.fromJson(jsonDecode(document));
         } on FormatException {
