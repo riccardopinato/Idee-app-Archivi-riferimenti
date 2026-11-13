@@ -1,3 +1,8 @@
+## 2026-11-13 — X10-026 rollback gate: post-merge source CI verificata, SemVer ancora aperto
+- [Dossier rollback X10-026](../19-APP-FACTORY-10X/EVIDENCE_X10-026_ROLLBACK_GATE_REVIEW_2026-11-13.md): AppLab [PR #231](https://github.com/riccardopinato/AppLab/pull/231) merged `d1ec6f9`; [CI post-merge 43332484371](https://github.com/riccardopinato/AppLab/actions/runs/43332484371) PASS con donor, Anna, TasteAI e rollback alle sorgenti pre-adozione. AppLab CI/CodeQL post-merge PASS.
+- Gate X10-018 **NON SUPERATO**: `factory_profile_kit 0.1.0` non dispone di un rollback SemVer precedente dimostrato da prova reale; source checkout rollback non equivale a downgrade di versione. Nessun receipt fittizio `0.0.0`, nessun Golden o test fisico/Play promosso.
+- `PROGRAM_QUEUE.json` riconciliata con evidence CI immutable SHA; X10-026 resta **PLANNED** e coda invariata **34 VERIFIED / 22 PLANNED / 1 BLOCKED**.
+
 # Changelog dell'archivio
 
 ## 2026-11-13 — factory_profile_kit v0.1.1 candidate (rollback-ready baseline)

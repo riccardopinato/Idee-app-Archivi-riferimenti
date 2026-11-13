@@ -779,10 +779,15 @@
           "kind": "CI",
           "url": "https://github.com/riccardopinato/TasteAI/actions/runs/43330930127",
           "source_sha": "61a83aa638654f4e885d503e024408d2dcddebc2"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43332484371",
+          "source_sha": "d1ec6f94198b0ef9ddd2e520ec39b71df6887e23"
         }
       ],
-      "blocker": "Remaining gate: independently verified X10-018 compatible semver package-version rollback receipt and Golden-admission scope review; source checkout rollback does not satisfy this. No fabricated 0.0.0 package or device PASS.",
-      "review_scope": "PARTIAL_SOURCE_AND_CI_EVIDENCE: actual shared factory_profile_kit@1d1a8628e25f58b788b013cf6955763d00363cdc 0.1.0 installed and used in two real Flutter consumers with source regression, actual AppLab cross-repo source-rollback worktree tests. AppLab #231 merged exact 7/7 and Codex clean. UNVERIFIED: X10-018 semver downgrade rollback receipt (0.0.0 not real); native on-device install/upgrade, installed data rollback, Golden admission. X10-026 stays PLANNED."
+      "blocker": "X10-018 real SemVer package-version rollback receipt still absent: factory_profile_kit 0.1.0 has no evidenced valid earlier version. Source worktree rollback is verified, but cannot substitute versioned package downgrade. See EVIDENCE_X10-026_ROLLBACK_GATE_REVIEW_2026-11-13.md; Golden admission separate.",
+      "review_scope": "SOURCE+CI VERIFIED ON 2 ACTUAL CONSUMERS and AppLab post-merge exact main d1ec6f9 run 43332484371 incl. donor+consumer tests and historical source rollback; X10-018 real SemVer package rollback NOT VERIFIED. Physical/Play/Golden NOT VERIFIED; status remains PLANNED."
     },
     {
       "id": "X10-027",
@@ -1530,6 +1535,19 @@
         "https://github.com/riccardopinato/AppLab/actions/runs/43331970619"
       ],
       "note": "Source+CI 2 consumer tests and source rollback truly executed. No published semver version downgrade, installed-device persistence validation, Play or Golden certification; task remains PLANNED."
+    },
+    {
+      "at": "2026-11-13",
+      "type": "X10_026_ROLLBACK_GATE_REVIEW",
+      "task_id": "X10-026",
+      "completed_task_ids": [],
+      "source_scope": "INDEPENDENT_POSTMERGE_SOURCE_CI_PASS; SEMVER_ROLLBACK_GATE_OPEN",
+      "evidence_refs": [
+        "https://github.com/riccardopinato/AppLab/actions/runs/43332484371",
+        "https://github.com/riccardopinato/AppLab/pull/231",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/docs/x10-026-rollback-gate-evidence-20261113/19-APP-FACTORY-10X/EVIDENCE_X10-026_ROLLBACK_GATE_REVIEW_2026-11-13.md"
+      ],
+      "note": "Post-merge AppLab donor/Anna/TasteAI source tests and pre-adoption worktree rollback verified. Genuine lower-version package SemVer rollback receipt absent, so X10-018 and X10-026 not promoted. No Golden or physical/Play evidence."
     }
   ]
 }
