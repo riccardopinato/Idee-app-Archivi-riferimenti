@@ -1,8 +1,9 @@
 # X10-021 — Profile & Settings (Dart core)
 
 Version 0.1.1, pure Dart. Backwards-compatible with 0.1.0: schema v1 unchanged.
-Patch hardening: oversized preference documents are rejected before JSON decode;
-original storage bytes remain intact, with an explicit corruption indicator. No Flutter/plugin/provider dependencies.
+Patch hardening: invalid stored data cannot be overwritten by an unrelated setting
+change without explicit recovery review; original bytes remain intact by default.
+Existing valid v0 and v1 profiles, including whitespace-heavy legacy names, round-trip. No Flutter/plugin/provider dependencies.
 Adapt through a consumer-approved Product Bible and the authoritative
 Core Golden `profile_standard` at c5adc147. It is not itself a certified Golden.
 
