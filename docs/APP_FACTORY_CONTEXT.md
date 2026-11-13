@@ -5,7 +5,7 @@
 | Repository | Uso | Branch | Commit | Ultimo commit (UTC) |
 |---|---|---|---|---|
 | [riccardopinato/App-Factory-Core](https://github.com/riccardopinato/App-Factory-Core) | Master, Golden e policy | `main` | [`c5adc147046b`](https://github.com/riccardopinato/App-Factory-Core/commit/c5adc147046beb7024629466d10eeb799c3c2619) | 2026-11-11T12:33:47Z |
-| [riccardopinato/AppLab](https://github.com/riccardopinato/AppLab) | QA e orchestrazione | `main` | [`de6058c78bc5`](https://github.com/riccardopinato/AppLab/commit/de6058c78bc572821635e8cf0f5b3079ee716b7b) | 2026-11-12T16:29:00Z |
+| [riccardopinato/AppLab](https://github.com/riccardopinato/AppLab) | QA e orchestrazione | `main` | [`0b45e4a474fe`](https://github.com/riccardopinato/AppLab/commit/0b45e4a474fe958a141430a6447c50ccf6d114b2) | 2026-11-13T01:23:45Z |
 
 ## Limiti
 
