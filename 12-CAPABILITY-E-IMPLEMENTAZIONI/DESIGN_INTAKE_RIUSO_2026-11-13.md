@@ -1,6 +1,6 @@
 # Intake visuale App Factory — 13/11/2026
 
-**Sorgente verificata per i file di riferimento**: [Design-App, registro JSON di 66 immagini](https://github.com/riccardopinato/Design-App/blob/catalog/visual-references-2026-11-13/UI-UX/REGISTRO_RIFERIMENTI_UTENTE_2026-11-13.json), [catalogo descrittivo](https://github.com/riccardopinato/Design-App/blob/catalog/visual-references-2026-11-13/UI-UX/RIFERIMENTI_UTENTE_2026-11-13.md), [matrice per app](https://github.com/riccardopinato/Design-App/blob/catalog/visual-references-2026-11-13/UI-UX/MATRICE_APP_RIFERIMENTI_2026-11-13.md). Allegati utente: 77, di cui 66 SHA-256 diversi e 11 ripetizioni esatte. Introdurre come **reference**, non come codice o asset autorizzati alla distribuzione.
+**Sorgente verificata per i file di riferimento**: [Design-App, registro JSON di 66 immagini](https://github.com/riccardopinato/Design-App/blob/main/UI-UX/REGISTRO_RIFERIMENTI_UTENTE_2026-11-13.json), [catalogo descrittivo](https://github.com/riccardopinato/Design-App/blob/main/UI-UX/RIFERIMENTI_UTENTE_2026-11-13.md), [matrice per app](https://github.com/riccardopinato/Design-App/blob/main/UI-UX/MATRICE_APP_RIFERIMENTI_2026-11-13.md). Allegati utente: 77, di cui 66 SHA-256 diversi e 11 ripetizioni esatte. Introdurre come **reference**, non come codice o asset autorizzati alla distribuzione.
 
 ## Differenziale rispetto alle capability esistenti (main 13/11/2026)
 
@@ -40,4 +40,4 @@ Questo documento è una crosswalk tra cataloghi, non una nuova source of truth d
 
 ## Consolidamento relazionale (12–13 novembre 2026)
 
-L'intake del 13/11 aggiunge 66 visual distinti ai 33 già presenti in Design-App (totale 99). Consultare la [matrice trasversale di 19 app e 28 stili](MATRICE_VISUAL_APP_STILI_2026-11-13.md) e il [registro canonico delle 254 associazioni stile–app](https://github.com/riccardopinato/Design-App/blob/catalog/visual-references-2026-11-13/UI-UX/MATRICE_BIDIREZIONALE_APP_STILI_2026-11-13.json). Stato delle associazioni: PROPOSTA, senza automatica introduzione nel backlog CAP o nelle app.
+L'intake del 13/11 aggiunge 66 visual distinti ai 33 già presenti in Design-App (totale 99). Consultare la [matrice trasversale di 19 app e 28 stili](MATRICE_VISUAL_APP_STILI_2026-11-13.md) e il [registro canonico delle 254 associazioni stile–app](https://github.com/riccardopinato/Design-App/blob/main/UI-UX/MATRICE_BIDIREZIONALE_APP_STILI_2026-11-13.json). Stato delle associazioni: PROPOSTA, senza automatica introduzione nel backlog CAP o nelle app.
