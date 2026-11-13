@@ -1,3 +1,6 @@
+## 2026-11-13 — X10-023 real Android API29 source smoke verified
+- Transplanted real isolated Android API29 plugin schedule/pending/cancel smoke [PR #155](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/155) onto current main preserving X10-024 and X10-026 changes. CI [run 43336767350 attempt 2](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43336767350/attempts/2) PASS; a prior attempt on same source was retried after an ADB emulator disappearance. No physical device delivery, product adoption, Play or Golden certification; X10-023 remains PLANNED.
+
 ## 2026-11-13 — X10-026 rollback gate: post-merge source CI verificata, SemVer ancora aperto
 - [Dossier rollback X10-026](../19-APP-FACTORY-10X/EVIDENCE_X10-026_ROLLBACK_GATE_REVIEW_2026-11-13.md): AppLab [PR #231](https://github.com/riccardopinato/AppLab/pull/231) merged `d1ec6f9`; [CI post-merge 43332484371](https://github.com/riccardopinato/AppLab/actions/runs/43332484371) PASS con donor, Anna, TasteAI e rollback alle sorgenti pre-adozione. AppLab CI/CodeQL post-merge PASS.
 - Gate X10-018 **NON SUPERATO**: `factory_profile_kit 0.1.0` non dispone di un rollback SemVer precedente dimostrato da prova reale; source checkout rollback non equivale a downgrade di versione. Nessun receipt fittizio `0.0.0`, nessun Golden o test fisico/Play promosso.

@@ -20,6 +20,7 @@ class PluginAndroidNotificationBackend implements NotificationDeviceBackend {
     required this.channelName,
     required this.ensureConsumerPluginInitialized,
     required this.androidSdkInt,
+    this.onNativeOperationError,
     this.channelDescription = 'Scheduled reminders',
   });
 
@@ -36,6 +37,9 @@ class PluginAndroidNotificationBackend implements NotificationDeviceBackend {
   /// Actual Android Build.VERSION.SDK_INT, supplied by the consumer platform.
   /// No SDK inference from a channel list (API 24-25 have no channels).
   final Future<int?> Function() androidSdkInt;
+
+  /// Optional consumer-owned diagnostics; never log reminder IDs or content.
+  final void Function(String operation, Object error)? onNativeOperationError;
 
   bool _initialized = false;
   bool get _android =>
@@ -116,7 +120,11 @@ class PluginAndroidNotificationBackend implements NotificationDeviceBackend {
           health.channelEnabled != true ||
           health.schedulerAvailable != true ||
           (exact && health.exactAllowed != true)) return false;
-      final zone = tz.getLocation(reminder.timezoneId);
+      // UTC is a valid IANA alias but is not included as a named location
+      // by every timezone dataset. Use the built-in immutable UTC zone.
+      final zone = reminder.timezoneId == 'UTC'
+          ? tz.UTC
+          : tz.getLocation(reminder.timezoneId);
       final at = tz.TZDateTime.from(reminder.scheduledAtUtc, zone);
       if (!reminder.scheduledAtUtc.isAfter(nowUtc().toUtc())) return false;
       await plugin.zonedSchedule(
@@ -140,7 +148,8 @@ class PluginAndroidNotificationBackend implements NotificationDeviceBackend {
       );
       // Only OS scheduling requested: no delivery receipt is generated.
       return true;
-    } catch (_) {
+    } catch (error) {
+      onNativeOperationError?.call('schedule', error);
       return false;
     }
   }

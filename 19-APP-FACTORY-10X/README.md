@@ -1,5 +1,7 @@
 # App Factory 10x — programma continuo
 
+**X10-023 Android emulator native plugin API smoke:** [Android API29 fixture](flutter_kits/notifications_flutter/android_emulator_fixture/README.md) and [pinned workflow](../.github/workflows/app-factory-x10-native-notifications.yml) test native schedule/cancel with synthetic reminders. [CI attempt 2](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43336767350/attempts/2) PASS; no real OEM delivery, Store, Golden or user-consumer certification; X10-023 PLANNED.
+
 **X10-024 monetization policy SOURCE CANDIDATE:** [pure Dart policy](flutter_kits/monetization/README.md) for verified paid access, bounded offline grace and ad request safety. Separate [CI workflow](../.github/workflows/app-factory-x10-monetization-source.yml) tests logic only. Provider SDK, owner product approval, ad placements, purchases and Play tests remain **NOT VERIFIED**; X10-024 stays HUMAN_GATE/PLANNED.
 
 **X10-026 two real Flutter consumers SOURCE+CI and source rollback:** [AppLab #231 merged, 7/7 CI and read-only real source rollback rehearsal](EVIDENCE_X10-026_REAL_CONSUMERS_2026-11-13.md); Anna #308 and TasteAI #6/#7 merged. **PLANNED** for X10-018 semver rollback and independent Golden version admission, no Android installed-data or Store claims. Count still **34/57 VERIFIED**.
