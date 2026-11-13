@@ -74,9 +74,7 @@ jobs:
           arch: x86_64
           profile: pixel_7_pro
           disable-animations: true
-          script: |
-            cd 19-APP-FACTORY-10X/flutter_kits/notifications_flutter/android_host_generated
-            flutter test integration_test/notification_android_test.dart -d emulator-5554 --reporter expanded
+          script: cd 19-APP-FACTORY-10X/flutter_kits/notifications_flutter/android_host_generated && flutter test integration_test/notification_android_test.dart -d emulator-5554 --reporter expanded
       - name: Explicit proof boundary
         run: |
           echo 'Android emulator native plugin registration and cancel; NOT delivered notification, device/OEM, reboot, Play or Golden certification.' >> "$GITHUB_STEP_SUMMARY"
