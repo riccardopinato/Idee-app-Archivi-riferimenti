@@ -1,5 +1,7 @@
 # App Factory 10x — six-task gated execution, 13 November 2026
 
+**X10-026 FINAL SCOPED ACCEPTANCE:** Real versioned Dart source-package rollback `0.1.1 → 0.1.0` and two consumer integrations are **VERIFIED SOURCE+CI**, following independently green exact-head reviews and post-merge CI on AppLab `bb59e05`, Anna `ffa3d98` and TasteAI `2e6cb12`. Original sections below preserve the historical pre-merge gate sequence. This is NOT Golden certification, Android installed APK/device user-data rollback, or Play testing. Canonical queue: 35 VERIFIED / 21 PLANNED / 1 BLOCKED.
+
 **Factory baseline:** `App-Factory-Core@c5adc147046beb7024629466d10eeb799c3c2619` (Master v27; Golden Index v29). This evidence dossier is not a release decision, does not promote any Golden and does not grant spending/Store or device authority.
 
 ## X10-026 — Two real Flutter consumer integrations with genuine SemVer rollback
