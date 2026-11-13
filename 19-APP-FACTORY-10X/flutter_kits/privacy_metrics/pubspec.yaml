@@ -1,0 +1,8 @@
+name: factory_privacy_metrics_kit
+description: X10-036 local-only opt-in aggregate counters; no storage, network, identifiers or SDK.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.0

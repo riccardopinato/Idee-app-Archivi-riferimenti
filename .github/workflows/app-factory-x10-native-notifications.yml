@@ -1,0 +1,81 @@
+name: App Factory X10-023 — Android emulator native notification API
+on:
+  pull_request:
+    paths:
+      - "19-APP-FACTORY-10X/flutter_kits/notifications_flutter/**"
+      - "19-APP-FACTORY-10X/flutter_kits/notifications/**"
+      - ".github/workflows/app-factory-x10-native-notifications.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-api:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Setup Java
+        uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Setup Flutter
+        uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2.23.0
+        with:
+          flutter-version: '3.47.5'
+          channel: stable
+          cache: true
+      - name: Generate isolated Android test host
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd 19-APP-FACTORY-10X/flutter_kits/notifications_flutter
+          flutter create android_host_generated --platforms=android --org=com.riccardopinato --project-name=x10_notification_host
+          cp android_emulator_fixture/main.dart.txt android_host_generated/lib/main.dart
+          mkdir -p android_host_generated/integration_test
+          cp android_emulator_fixture/notification_android_test.dart.txt android_host_generated/integration_test/notification_android_test.dart
+          cp android_emulator_fixture/MainActivity.kt.txt android_host_generated/android/app/src/main/kotlin/com/riccardopinato/x10_notification_host/MainActivity.kt
+          python3 - <<'PY'
+          from pathlib import Path
+          root = Path('android_host_generated')
+          pub = root / 'pubspec.yaml'
+          text = pub.read_text().replace('dependencies:\n',
+            'dependencies:\n  factory_notification_flutter_adapter:\n    path: ..\n  flutter_local_notifications: 22.3.1\n', 1)
+          text = text.replace('dev_dependencies:\n',
+            'dev_dependencies:\n  integration_test:\n    sdk: flutter\n', 1)
+          pub.write_text(text)
+          gradle = root / 'android/app/build.gradle.kts'
+          text = gradle.read_text()
+          assert 'compileOptions {' in text
+          text = text.replace('compileOptions {', 'compileOptions {\n        isCoreLibraryDesugaringEnabled = true', 1)
+          text += '\n\ndependencies {\n    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")\n}\n'
+          gradle.write_text(text)
+          manifest = root / 'android/app/src/main/AndroidManifest.xml'
+          content = manifest.read_text()
+          assert '</application>' in content
+          content = content.replace('</application>',
+            '<receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" android:exported="false" />\n    </application>', 1)
+          manifest.write_text(content)
+          PY
+          cd android_host_generated
+          flutter pub get
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Real Android API29 integration test
+        uses: reactivecircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2
+        with:
+          api-level: 29
+          target: google_apis
+          arch: x86_64
+          profile: pixel_7_pro
+          disable-animations: true
+          script: cd 19-APP-FACTORY-10X/flutter_kits/notifications_flutter/android_host_generated && flutter test integration_test/notification_android_test.dart -d emulator-5554 --reporter expanded
+      - name: Explicit proof boundary
+        run: |
+          echo 'Android emulator native plugin registration and cancel; NOT delivered notification, device/OEM, reboot, Play or Golden certification.' >> "$GITHUB_STEP_SUMMARY"

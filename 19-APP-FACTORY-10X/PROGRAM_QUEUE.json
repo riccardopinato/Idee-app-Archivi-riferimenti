@@ -494,7 +494,8 @@
       "effort": 3,
       "status": "PLANNED",
       "evidence": [],
-      "blocker": null
+      "blocker": "Dependency X10-008 remains BLOCKED on sanitized original Windows AppFactoryAgent source. No authenticated Windows/WSL actual worker execution, interrupted-run recovery or genuine worker-owned PR E2E proof.",
+      "review_scope": "INTAKE_ONLY: Agent Core X10-007 static preflight tool and user-reported v0.1–v0.4 status; not source-verified operational agent. GBrain/AppLab are not substitutes."
     },
     {
       "id": "X10-016",
@@ -510,9 +511,17 @@
       "acceptance": "Interfaccia riuso AppLab e Research, output evidence/provenance; niente accesso Finance live",
       "impact": 4,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/22",
+          "source_sha": "8d7efc65b436bc05e2b55a735a8350e688fa233b"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY. Agent Core PR #22 merged as 35a0e4f111e00d7193ac087f122afcfaf0eda68f; exact head 8d7efc65b436bc05e2b55a735a8350e688fa233b had Validate context contracts success, independent Codex review completed no findings, prior path URL encoding P2 replied/resolved. Research candidate intake/source pin/declaration of license and QA injection via AppLab router only. Windows agent runtime, actual research source resolution, real QA and live finance intentionally NOT VERIFIED."
     },
     {
       "id": "X10-017",
@@ -691,8 +700,15 @@
       "impact": 4,
       "effort": 4,
       "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43336767350",
+          "source_sha": "a04a382292ea93172a32005b0c67f4c45cb1cf2b"
+        }
+      ],
+      "blocker": "Android API29 native plugin schedule/pending/cancel source smoke passed on #155 retry; merged source candidate is re-submitted as #160 because #155 became conflicted. Await exact #160 CI/review; Android phone delivery/OEM and independent consumer adoption NOT VERIFIED.",
+      "review_scope": "SOURCE+EMULATOR API29 ONLY: actual flutter_local_notifications channel, inexact scheduling and cancellation. No delivery receipt, phone/OEM, Doze/reboot or Golden."
     },
     {
       "id": "X10-024",
@@ -709,8 +725,15 @@
       "impact": 5,
       "effort": 4,
       "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43338039970",
+          "source_sha": "605db390bfcfc7ffe0fc24260d8e7765642853df"
+        }
+      ],
+      "blocker": "Pure Dart policy candidate merged via #159; owner product selection/monetization consent and provider-specific AdMob/UMP/IAP/Play sandbox physical acceptance remain HUMAN_GATE. No ad/billing SDK or production traffic enabled.",
+      "review_scope": "SOURCE+CI ONLY: provider-neutral entitlement, expiry, offline grace and pre-ad-request gate tests. NOT_VERIFIED: payment/ads provider, Play/Store, owner approval."
     },
     {
       "id": "X10-025",
@@ -755,9 +778,77 @@
       "acceptance": "Test reali su due app scelte, version pins e rollback prima di admission Golden",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43331970619",
+          "source_sha": "f2a70d1ce7eb96a34f3077fbc40a696e3e8061a9"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/43328842284",
+          "source_sha": "984a34462ba527b2ea98dbc3a337bdd8614b88d4"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/TasteAI/actions/runs/43330930127",
+          "source_sha": "61a83aa638654f4e885d503e024408d2dcddebc2"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43332484371",
+          "source_sha": "d1ec6f94198b0ef9ddd2e520ec39b71df6887e23"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43337856699",
+          "source_sha": "105c586f6b756cc9f2a02d9b6024d268d67844c1"
+        },
+        {
+          "kind": "PR",
+          "url": "https://github.com/riccardopinato/Agenda-per-Anna/pull/310",
+          "source_sha": "6cff251e64d46f03fb45b02f48c1550574567e85"
+        },
+        {
+          "kind": "PR",
+          "url": "https://github.com/riccardopinato/TasteAI/pull/9",
+          "source_sha": "dadcd809c2837d2151e69f69bf38d5de3c09a305"
+        },
+        {
+          "kind": "PR",
+          "url": "https://github.com/riccardopinato/AppLab/pull/232",
+          "source_sha": "105c586f6b756cc9f2a02d9b6024d268d67844c1"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43339326040",
+          "source_sha": "bb59e05dea0e0aace1128cf965fa1a2ae7ab8ab7"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43339325915",
+          "source_sha": "bb59e05dea0e0aace1128cf965fa1a2ae7ab8ab7"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/43339334709",
+          "source_sha": "ffa3d98c21b6f04c8d5fe904e930cff003c6aa31"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/TasteAI/actions/runs/43339342657",
+          "source_sha": "2e6cb127a081365efe565d5f0b8ad1435c2fe4ba"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/TasteAI/actions/runs/43339342658",
+          "source_sha": "2e6cb127a081365efe565d5f0b8ad1435c2fe4ba"
+        }
+      ],
+      "blocker": null,
+      "review_scope": "VERIFIED SOURCE+CI SCOPE ONLY (13 Nov 2026): real factory_profile_kit 0.1.0→0.1.1→0.1.0 immutable SemVer rollback exercised on two real Flutter consumers (AppLab PR #232, CI #43337856699, X10-018 harness STRUCTURAL_PASS_REVIEW_REQUIRED); independent exact PR-head Codex review green. Anna PR #310 main ffa3d98 and TasteAI PR #9 main 2e6cb12 adopted pinned 0.1.1; AppLab main bb59e05, Anna main and TasteAI main post-merge CI SUCCESS. VERIFIED does NOT mean Golden admission, device-installed APK rollback, physical user-data retention, Play, Store release, provider billing or external service. X10-053 Golden admission separately gated. Independent manual review matched exact CI, source/package SHAs, donor/consumer logs and X10-018 receipt structure; reviewer is not the harness.",
+      "gate_reviewed": true
     },
     {
       "id": "X10-027",
@@ -851,9 +942,17 @@
       "acceptance": "Benchmark startup/memory, a11y 48dp, low-end device e evidenze",
       "impact": 4,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/227",
+          "source_sha": "5cf99a11ad8654cc788f74bcffb814f3329969ba"
+        }
+      ],
+      "blocker": null,
+      "review_scope": "SOURCE+CI ONLY. AppLab #227 exact-head 5cf99a11ad8654cc788f74bcffb814f3329969ba passed seven required workflows + Codex final clean review, all six prior CodeQL/Codex threads resolved; merged as db263d48cf1dbdaf85933e3c044dd5d9ccbf7559. Report-only adapter uses repeated samples, existing AppLab Performance Lab comparison, density-aware touch-target checks. No physical-device/consumer benchmark, low-end profile attestation, TalkBack or Play certification.",
+      "gate_reviewed": true
     },
     {
       "id": "X10-031",
@@ -896,8 +995,15 @@
       "impact": 5,
       "effort": 4,
       "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43343304828",
+          "source_sha": "6504450002a5f2fea3a44ee1bf4e68dea6f3360e"
+        }
+      ],
+      "blocker": "Real X10-032 physical and Play acceptance remains HUMAN_GATE: no authenticated real-phone exact stable-signed APK downgrade/recovery receipts, actual retained user data or Play Internal Testing proof. Emulator debug synthetic-file proof is NOT a physical or signed release certificate.",
+      "review_scope": "EMULATOR_DEBUG_ROLLBACK_PASS on isolated dev.applab.selftest v101/102 builds: same signer, synthetic app-private file retained on upgrade 101->102, unflagged downgrade correctly denied, debug-only -d downgrade 102->101 retained file. AppLab #233 exact PR head 6504450 and Actions #43343304828. Not Anna/TasteAI APKs, not stable release, not physical device, user data, Play or Golden."
     },
     {
       "id": "X10-033",
@@ -915,9 +1021,17 @@
       "acceptance": "Fail-closed, regressions, source SHA artifacts; no auto-store publish",
       "impact": 5,
       "effort": 3,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/228",
+          "source_sha": "812b910740f60380baaf541af4bd4248692df20f"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY. Read-only X10 release decision brief binds same source/artifact and existing QA router, visual baseline, perf/a11y, signed APK provenance, canonical release assurance and all seven CI workflows via injected independently trusted evidence lookup. No consumer runtime/device/Store evidence collected, no product-owner approval, no automatic publication. PR #228 seven workflows SUCCESS, Codex clean exact-head review and resolved threads."
     },
     {
       "id": "X10-034",
@@ -962,7 +1076,8 @@
       "effort": 2,
       "status": "PLANNED",
       "evidence": [],
-      "blocker": null
+      "blocker": "Owner has confirmed total experiment ceiling EUR 100, but authorized spend remains EUR 0 and no 2–3 product go/no-go selection has been approved. HUMAN_GATE.",
+      "review_scope": "COMPARISON_ONLY: 180FlipCharge, Android-Omni-Cleaner and Battery_Guard candidate shortlist (World-Days conditional). Not a selected portfolio, no data-driven conversion estimates or expense authority."
     },
     {
       "id": "X10-036",
@@ -1189,9 +1304,17 @@
       "acceptance": "Correlazione test failure, bug pattern 3 ricorrenze, replay evidence",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/pull/229",
+          "source_sha": "e6c1e2e1c1bbc066c3a8f6b4f91e45aeb0f6c6b2"
+        }
+      ],
+      "blocker": null,
+      "gate_reviewed": true,
+      "review_scope": "SOURCE+CI ONLY. Thin Pattern-3 failure-to-donor adapter reuses AppLab pattern3_discovery_v57c and factory_feedback_packager_v58d; each counted failure must be independently source/run/test/category/code/digest-verified and distinct run/evidence; canonical repo casing; proposes replay plan NOT_EXECUTED. No real failure replay, consumer fix, donor promotion or Golden certification performed. PR #229 7/7 workflows SUCCESS and Codex clean exact-head review, discussions resolved."
     },
     {
       "id": "X10-046",
@@ -1202,7 +1325,8 @@
       "owner_repo": "riccardopinato/App-Factory-Agent-Core",
       "dependencies": [
         "X10-014",
-        "X10-031"
+        "X10-031",
+        "X10-015"
       ],
       "title": "Pilota sviluppo feature A",
       "acceptance": "Una feature non critica end-to-end su repo scelto, PR e QA indipendente",
@@ -1454,6 +1578,95 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/106"
       ],
       "note": "Agent gateway and package contract complete as source+CI only. No physical runtime or certified multi-consumer Golden."
+    },
+    {
+      "at": "2026-11-12",
+      "type": "DEPENDENCY_CORRECTION",
+      "task_id": "X10-046",
+      "added_dependency": "X10-015",
+      "reason": "An actual source-authenticated Windows agent pilot cannot be admitted before real end-to-end local worker crash/resume verification. X10-015 itself depends on blocked X10-008 sanitized original agent source. This corrects readiness routing, not execution or feature approval.",
+      "refs": [
+        "https://github.com/riccardopinato/App-Factory-Agent-Core/blob/main/docs/X10-046_047_TWO_REPO_PILOT_HANDOFF.md",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/main/19-APP-FACTORY-10X/PROGRAM_QUEUE.json"
+      ]
+    },
+    {
+      "at": "2026-11-13",
+      "type": "PARTIAL_EVIDENCE_NOT_PROMOTED",
+      "task_id": "X10-026",
+      "completed_task_ids": [],
+      "source_scope": "TWO_REAL_FLUTTER_CONSUMER_SOURCE_CI_AND_PREADOPTION_SOURCE_ROLLBACK_ONLY",
+      "evidence_refs": [
+        "https://github.com/riccardopinato/AppLab/pull/231",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/308",
+        "https://github.com/riccardopinato/TasteAI/pull/6",
+        "https://github.com/riccardopinato/TasteAI/pull/7",
+        "https://github.com/riccardopinato/AppLab/actions/runs/43331970619"
+      ],
+      "note": "Source+CI 2 consumer tests and source rollback truly executed. No published semver version downgrade, installed-device persistence validation, Play or Golden certification; task remains PLANNED."
+    },
+    {
+      "at": "2026-11-13",
+      "type": "X10_026_ROLLBACK_GATE_REVIEW",
+      "task_id": "X10-026",
+      "completed_task_ids": [],
+      "source_scope": "INDEPENDENT_POSTMERGE_SOURCE_CI_PASS; SEMVER_ROLLBACK_GATE_OPEN",
+      "evidence_refs": [
+        "https://github.com/riccardopinato/AppLab/actions/runs/43332484371",
+        "https://github.com/riccardopinato/AppLab/pull/231",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/docs/x10-026-rollback-gate-evidence-20261113/19-APP-FACTORY-10X/EVIDENCE_X10-026_ROLLBACK_GATE_REVIEW_2026-11-13.md"
+      ],
+      "note": "Post-merge AppLab donor/Anna/TasteAI source tests and pre-adoption worktree rollback verified. Genuine lower-version package SemVer rollback receipt absent, so X10-018 and X10-026 not promoted. No Golden or physical/Play evidence."
+    },
+    {
+      "at": "2026-11-13",
+      "type": "SIX_TASK_EXECUTION_PARTIAL_GATE_RECONCILIATION",
+      "completed_task_ids": [],
+      "task_ids": [
+        "X10-026",
+        "X10-023",
+        "X10-024",
+        "X10-032",
+        "X10-035",
+        "X10-015"
+      ],
+      "source_scope": "Genuine source-package SemVer rollback and merged two consumer adoption; native Android source emulation verified; pure Dart monetization candidate merged. Human/device/product/Windows gates remain independent.",
+      "evidence_refs": [
+        "https://github.com/riccardopinato/AppLab/actions/runs/43337856699",
+        "https://github.com/riccardopinato/AppLab/pull/232",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/310",
+        "https://github.com/riccardopinato/TasteAI/pull/9",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/159",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/160"
+      ],
+      "note": "Reconciled pre-certification evidence only; X10-026 still awaits exact main post-merge checks, X10-023 replacement PR #160, X10-024 HUMAN_GATE owner/provider, X10-032 physical/Play, X10-035 product choice, X10-015 Windows source and worker E2E. No invented completion."
+    },
+    {
+      "at": "2026-11-13",
+      "type": "SCOPED_SOURCE_CI_ACCEPTANCE",
+      "task_id": "X10-026",
+      "completed_task_ids": [
+        "X10-026"
+      ],
+      "evidence_scope": "VERSIONED_PACKAGE_TWO_CONSUMER_SOURCE_CI_ONLY",
+      "evidence_refs": [
+        "https://github.com/riccardopinato/AppLab/pull/232",
+        "https://github.com/riccardopinato/AppLab/actions/runs/43337856699",
+        "https://github.com/riccardopinato/AppLab/actions/runs/43339326040",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/310",
+        "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/43339334709",
+        "https://github.com/riccardopinato/TasteAI/pull/9",
+        "https://github.com/riccardopinato/TasteAI/actions/runs/43339342657"
+      ],
+      "note": "X10-018 genuine donor 0.1.1→0.1.0 SemVer rollback and two independently merged consumer 0.1.1 pins verified on exact PR heads and post-merge main CI. Scope deliberately SOURCE+CI: device APK/user-data/Play/Golden not certified; X10-053 remains HUMAN_GATE."
+    },
+    {
+      "at": "2026-11-13",
+      "type": "EMULATOR_DEBUG_ROLLBACK_SOURCE_EVIDENCE_ONLY",
+      "task_id": "X10-032",
+      "source_sha": "6504450002a5f2fea3a44ee1bf4e68dea6f3360e",
+      "evidence_ref": "https://github.com/riccardopinato/AppLab/actions/runs/43343304828",
+      "note": "Android API35 isolated AppLab selftest APK 101/102 synthetic data rehearsal: actual upgrade, ordinary downgrade rejection, debug -d downgrade and synthetic file persistence. PR #233 not equivalent to installed Anna APK rollback; no physical/Play/Golden acceptance, X10-032 PLANNED."
     }
   ]
 }

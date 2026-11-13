@@ -2,7 +2,7 @@
 
 ## App Factory 10x — programma continuo approvato (12/11/2026)
 
-[Programma strategico 10x](19-APP-FACTORY-10X/README.md): **57 task distribuiti su 8 ondate** e cinque pilastri (agente AI, Golden Flutter, AppLab QA/release, prodotti e ricavi, intelligenza trasversale), più governance continua. [Roadmap](19-APP-FACTORY-10X/ROADMAP_10X.md), [coda con dipendenze](19-APP-FACTORY-10X/PROGRAM_QUEUE.json), [router successori](scripts/factory_10x_queue.py) e [workflow di verifica quotidiana](.github/workflows/app-factory-10x-queue.yml). Stato: `PROGRAM_APPROVED / QUEUE_IMPLEMENTED` · checkpoint **30/57 VERIFIED nei rispettivi perimetri source+CI** (26 PLANNED, 1 BLOCKED), non agent runtime o risultato 10x già certificato. [Dossier X10-028](19-APP-FACTORY-10X/EVIDENCE_X10-028_QA_ROUTER_SOURCE_CI_2026-11-12.md). Il lavoro prosegue nelle esecuzioni realmente pianificate e nei runner disponibili, con gate per merge, codice Windows, dati utente e release.
+[Programma strategico 10x](19-APP-FACTORY-10X/README.md): **57 task distribuiti su 8 ondate** e cinque pilastri (agente AI, Golden Flutter, AppLab QA/release, prodotti e ricavi, intelligenza trasversale), più governance continua. [Roadmap](19-APP-FACTORY-10X/ROADMAP_10X.md), [coda con dipendenze](19-APP-FACTORY-10X/PROGRAM_QUEUE.json), [router successori](scripts/factory_10x_queue.py) e [workflow di verifica quotidiana](.github/workflows/app-factory-10x-queue.yml). Stato: `PROGRAM_APPROVED / QUEUE_IMPLEMENTED` · checkpoint **34/57 VERIFIED nei rispettivi perimetri source+CI** (22 PLANNED, 1 BLOCKED), non agent runtime o risultato 10x già certificato. [Dossier X10-028](19-APP-FACTORY-10X/EVIDENCE_X10-028_QA_ROUTER_SOURCE_CI_2026-11-12.md). Il lavoro prosegue nelle esecuzioni realmente pianificate e nei runner disponibili, con gate per merge, codice Windows, dati utente e release.
 
 
 ## Agent Factory e Finance Intelligence — 11 novembre 2026
@@ -116,3 +116,11 @@ Archiviate **100 schede individuali**, **6 proposte extra senza numero** e **14 
 ## Motori ML on-device replicabili — audit 04/11/2026
 
 [Audit ML23 / Golden](12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_GOLDEN_ML_23_ALGORITMI_2026-11-04.md) con 10 nuove CAP e grafo dipendenze che abilita riuso a catena. Nessun import in app per effetto del catalogo.
+
+## Intake visuale App Factory — 13/11/2026
+
+[**66 riferimenti grafici nuovi, 77 upload e 11 duplicati esatti**](12-CAPABILITY-E-IMPLEMENTAZIONI/DESIGN_INTAKE_RIUSO_2026-11-13.md): ricerca e crosswalk verso CAP esistenti. Source of truth visuale: Design-App, ramo main (PR #18 merged). Nessuna nuova CAP, app o Golden promossa, né codice di terzi riutilizzato senza diritti.
+
+## Matrice grafica App ↔ Stili (13/11/2026)
+
+[Vista delle 19 app e 28 stili](12-CAPABILITY-E-IMPLEMENTAZIONI/MATRICE_VISUAL_APP_STILI_2026-11-13.md), derivata da Design-App e collegata alle 99 reference uniche; classificazione molti-a-molti, senza nuova CAP né modifica roadmap.

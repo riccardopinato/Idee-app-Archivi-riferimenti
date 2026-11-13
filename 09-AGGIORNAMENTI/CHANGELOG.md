@@ -1,4 +1,64 @@
+## 2026-11-13 — Riconciliazione Anna Android ↔ 57 task App Factory 10x (audit documentale)
+- [Matrice completa](../19-APP-FACTORY-10X/ANNA_ANDROID_57_TASK_CROSSWALK_20261113.md): 57/57 ID distinti, stati tratti dalla coda canonica (35 VERIFIED, 21 PLANNED, 1 BLOCKED), evidenza e collegamento reale con Anna.
+- Anna [PR #311](https://github.com/riccardopinato/Agenda-per-Anna/pull/311) e [#312](https://github.com/riccardopinato/Agenda-per-Anna/pull/312) documentano identita' APK firmati storici e rehearsal su emulatore con una **sola categoria Inbox sintetica**, non retention completa, QA fisico o Play.
+- **X10-032 rimane PLANNED/HUMAN_GATE**. Nessun cambio a `PROGRAM_QUEUE.json`, nessuna certificazione fisica/Store e nessun nuovo APK. Questo audit non estende scope runtime o privacy.
+
+## 2026-11-13 — X10-032 isolated emulator APK downgrade proof (not physical)
+- AppLab [PR #233](https://github.com/riccardopinato/AppLab/pull/233), [CI #43343304828](https://github.com/riccardopinato/AppLab/actions/runs/43343304828) exact-head source SHA `6504450`: real debug fixture APK 101/102 same signer, private synthetic file preserved on upgrade/downgrade, ordinary downgrade correctly rejected. The receipt was corrected to bind Git checkout SHA, not GitHub synthetic PR merge SHA. **Emulator/DEBUG only; no real data, stable-signed APK, physical/Play/Golden. X10-032 PLANNED.**
+
+## 2026-11-13 — X10-026 SOURCE+CI accepted, not Golden
+- Real `factory_profile_kit` SemVer 0.1.1→0.1.0 rollback proven on Anna and TasteAI (AppLab [#232](https://github.com/riccardopinato/AppLab/pull/232), [CI #43337856699](https://github.com/riccardopinato/AppLab/actions/runs/43337856699)); consumer [Anna #310](https://github.com/riccardopinato/Agenda-per-Anna/pull/310) and [TasteAI #9](https://github.com/riccardopinato/TasteAI/pull/9) merged with exact post-merge CI green. `PROGRAM_QUEUE.json`: X10-026 becomes **VERIFIED SOURCE+CI ONLY**; total 35 VERIFIED / 21 PLANNED / 1 BLOCKED. Native device APK rollback, real persisted-user-data retention, Play and Golden admission remain NOT VERIFIED.
+
+## 2026-11-13 — X10-023 real Android API29 source smoke verified
+- Transplanted real isolated Android API29 plugin schedule/pending/cancel smoke [PR #155](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/155) onto current main preserving X10-024 and X10-026 changes. CI [run 43336767350 attempt 2](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43336767350/attempts/2) PASS; a prior attempt on same source was retried after an ADB emulator disappearance. No physical device delivery, product adoption, Play or Golden certification; X10-023 remains PLANNED.
+
+## 2026-11-13 — X10-026 rollback gate: post-merge source CI verificata, SemVer ancora aperto
+- [Dossier rollback X10-026](../19-APP-FACTORY-10X/EVIDENCE_X10-026_ROLLBACK_GATE_REVIEW_2026-11-13.md): AppLab [PR #231](https://github.com/riccardopinato/AppLab/pull/231) merged `d1ec6f9`; [CI post-merge 43332484371](https://github.com/riccardopinato/AppLab/actions/runs/43332484371) PASS con donor, Anna, TasteAI e rollback alle sorgenti pre-adozione. AppLab CI/CodeQL post-merge PASS.
+- Gate X10-018 **NON SUPERATO**: `factory_profile_kit 0.1.0` non dispone di un rollback SemVer precedente dimostrato da prova reale; source checkout rollback non equivale a downgrade di versione. Nessun receipt fittizio `0.0.0`, nessun Golden o test fisico/Play promosso.
+- `PROGRAM_QUEUE.json` riconciliata con evidence CI immutable SHA; X10-026 resta **PLANNED** e coda invariata **34 VERIFIED / 22 PLANNED / 1 BLOCKED**.
+
 # Changelog dell'archivio
+
+## 2026-11-13 — X10-024 candidate provider-neutral monetization decisions
+- Added [pure Dart X10-024 policy kit](../19-APP-FACTORY-10X/flutter_kits/monetization/README.md), automatic source-only tests and explicit fail-closed entitlement/ads gates. No billing/AdMob SDK, network, permissions, production traffic or product launch. Provider and owner HUMAN_GATE remain PLANNED.
+
+## 2026-11-13 — factory_profile_kit v0.1.1 candidate (rollback-ready baseline)
+- Patch source: prevent implicit overwrites of malformed persisted profile data until explicit recovery review; preserve valid legacy profiles unchanged and avoid implicit writes. Schema v1 and consumer APIs unchanged; `0.1.0` remains immutable baseline for prospective real SemVer downgrade QA.
+- **CANDIDATE ONLY** until exact-head donor/consumer CI and X10-018 rollback receipts pass; no package publication, new Golden admission, physical certification, or X10-026 queue promotion implied.
+
+## 2026-11-13 — X10-026: real consumers/source rollback (partial, not Golden)
+- [Evidence checkpoint](../19-APP-FACTORY-10X/EVIDENCE_X10-026_REAL_CONSUMERS_2026-11-13.md): Anna main CI + signed build, TasteAI full main CI, and AppLab #231 **7/7** with actual pinned donor and two consumer tests plus pre-adoption source rollback. **No** semver-version downgrade receipt, physical installed-data rollback, Golden promotion or status change; X10-026 remains PLANNED. Source snapshot preflight flagged historical.
+
+## 2026-11-12 — X10-046: riparata dipendenza effettiva dal test Windows X10-015
+- Il pilot A dell'agente richiede anche X10-015 (E2E PC Windows) prima di essere READY. X10-015 resta in attesa del sorgente X10-008 BLOCKED. Nessuna modifica ad approvazioni, repo consumer, contatori VERIFIED o dati sensibili; soltanto correzione DAG e audit trail.
+
+## 2026-11-12 — X10-023 Flutter plugin notification bridge (source-only; not verified on device)
+- [Flutter notification adapter](../19-APP-FACTORY-10X/flutter_kits/notifications_flutter/README.md): new optional Android plugin bridge to existing pure-Dart policy, local notification permission/channel/exact-alarm probes, IANA timezone scheduling and stable ID/cancel, Flutter CI/test fake device. No real device/FGS/Play certification or consumer integration; X10-023 remains PLANNED.
+
+## 2026-11-12 — X10-035: tetto €100, confronto commerciale, nessuna approvazione prodotti
+- [Audit commerciale trasversale](../19-APP-FACTORY-10X/X10-035_PORTFOLIO_COMMERCIAL_COMPARISON_2026-11-12.md): Rotate 180°, Android Omni Cleaner e Battery Guard proposti; World Days in fase organica condizionale. Il proprietario ha confermato SOLO il tetto massimo 100 EUR, autorizzazione di spesa automatica 0 EUR; nessun GO/NO-GO finale, nessuna campagna, nessuna pubblicazione, nessun billing nuovo. X10-035 rimane PLANNED.
+
+## 2026-11-12 — X10-026 Anna #307 and X10-032 AppLab #230 source/CI merges documented
+- [Six-step handoff](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md): Anna #307 MERGED after 4/4 CI, AppLab #230 MERGED after 7/7; CamperBoss #33 DRAFT with source Flutter CI only, no second consumer approval/physical QA. Source-only privacy prototype #147 and agent pilot contract #23 already merged. Human-gate six-task status remains PLANNED; checkpoint still 34 VERIFIED / 22 PLANNED / 1 BLOCKED.
+
+## 2026-11-12 — Handoff operativo sei task 10x, senza promozioni fittizie
+- [Checkpoint operativo](../19-APP-FACTORY-10X/SIX_STEP_PARALLEL_HANDOFF_2026-11-12.md) per X10-026/032/035/036/046/047: link alle due PR consumer Flutter, planner AppLab #230, owner decision e privacy metrics, Agent Core #23. Distinti SOURCE/CI, i HUMAN_GATE e i collaudi fisici/Play. Il registro resta 34 VERIFIED / 22 PLANNED / 1 BLOCKED fino a evidenza finale.
+
+## 2026-11-12 — X10-035/036 staging commerciale e analytics opt-in (non verificati come prodotto)
+- [Proposta decisione owner](../19-APP-FACTORY-10X/X10-035_036_DECISION_AND_ANALYTICS_PROPOSAL.md) e [schema](../19-APP-FACTORY-10X/X10-035_OWNER_DECISION_PROPOSAL.json): Battery Guard e Rotate 180° candidati, World Days condizionale; prodotti/budget **non approvati**. [Pure-Dart privacy metrics](../19-APP-FACTORY-10X/flutter_kits/privacy_metrics/README.md) è un prototipo in memoria con test di consenso/revoca; nessun SDK o app integrato, nessuna retention e attribution reali. X10-035 e X10-036 restano PLANNED.
+
+## 2026-11-12 — X10-033 e X10-045 adapter SOURCE+CI integrati (34/57)
+- [AppLab #228](https://github.com/riccardopinato/AppLab/pull/228) X10-033 MERGED `13c22b13e0d3bf2948ce0f26b7559705f923b8f7`, exact head `812b910740f60380baaf541af4bd4248692df20f` 7/7 CI e review Codex senza rilievi. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-033_RELEASE_DECISION_SOURCE_CI_2026-11-12.md); riusa release assurance e QA per report fail-closed, **non autorizza pubblicazione**.
+- [AppLab #229](https://github.com/riccardopinato/AppLab/pull/229) X10-045 MERGED `0888d71e3ce163db4af94d9694c34f18b4041ec3`, exact head `e6c1e2e1c1bbc066c3a8f6b4f91e45aeb0f6c6b2` 7/7 CI e review Codex pulita. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-045_FAILURE_DONOR_SOURCE_CI_2026-11-12.md); engine Pattern-3 riusato, **nessun replay reale** o donor Golden promosso. Registro 34 VERIFIED, 22 PLANNED, 1 BLOCKED.
+
+## 2026-11-12 — X10-026 preflight due consumer (PLANNED, senza certificazione)
+- [Dossier Anna's Diary e CamperBoss](../19-APP-FACTORY-10X/EVIDENCE_X10-026_TWO_CONSUMER_PREFLIGHT_2026-11-12.md): source SHA e CI osservati nei rispettivi repository, nessuna integrazione dei nuovi kit Factory nei pubspec fissati. X10-026 rimane PLANNED. Occorrono due reali PR consumer, compatibilità SDK, rollback, prove AppLab e gate fisici dove applicabili. Non modifica stato dei prodotti né dati utente.
+
+## 2026-11-12 — X10-016 adapter research/QA verificati SOURCE+CI (32/57)
+- [Agent Core #22](https://github.com/riccardopinato/App-Factory-Agent-Core/pull/22) MERGED `35a0e4f111e00d7193ac087f122afcfaf0eda68f`; exact head `8d7efc65b436bc05e2b55a735a8350e688fa233b` workflow PASS e review Codex pulita, thread P2 URL encoding risolto. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-016_SPECIALIST_ADAPTERS_SOURCE_CI_2026-11-12.md). Candidate donor non certificati, QA non trusted runtime, nessun Finance live/Windows worker import. Conteggio 32 VERIFIED / 24 PLANNED / 1 BLOCKED.
+
+## 2026-11-12 — X10-030 Performance/accessibilità SOURCE+CI (31/57)
+- [AppLab PR #227](https://github.com/riccardopinato/AppLab/pull/227) MERGED `db263d48cf1dbdaf85933e3c044dd5d9ccbf7559`, exact head `5cf99a11ad8654cc788f74bcffb814f3329969ba` 7/7 workflow pass e Codex review senza rilievi dopo fix a due finding P2 e pattern CodeQL. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-030_PERFORMANCE_A11Y_SOURCE_CI_2026-11-12.md) — test su fixture sintetiche, >3 sample same-source/device/repo, 48dp, baseline verificata e fail-closed; senza collaudo fisico o certificazione consumer. Registro 31 VERIFIED / 25 PLANNED / 1 BLOCKED; X10-033 eleggibile.
 
 ## 2026-11-12 — X10-029 Visual regression verificata SOURCE+CI (30/57)
 - [AppLab PR #226](https://github.com/riccardopinato/AppLab/pull/226) MERGED `de6058c78bc572821635e8cf0f5b3079ee716b7b`; exact head `4c9de3873ee9ba526eeabace808e6cf9801e5e80`, 7/7 workflow + Codex independent review no findings. Prima CI fallita per due fixture di test con stato mutabile condiviso, corrette prima di rieseguire tutte le check. [Dossier](../19-APP-FACTORY-10X/EVIDENCE_X10-029_VISUAL_BASELINE_SOURCE_CI_2026-11-12.md): baseline approvate per profilo e schermata, screenshot/XML hash e receipts interazioni; WARN/false positive richiedono review umana. **Solo source+CI**, no app consumer/device test. Registro **30 VERIFIED / 26 PLANNED / 1 BLOCKED**, X10-033 ancora dipendente da X10-030.
@@ -668,3 +728,6 @@ Nuove voci changelog: data, file/ID, fonte e tipo evidenza, decisione, impatto, 
 - Verificato lo stato di Anna main `ab5360b78187a643e2b101be21e6951441406059`, Product Bible, roadmap attiva/issue, App Factory Core main `8052b45b771bf3c5694fc6dd8d037bd83233b37a` e Golden/Donor per capacità.
 - [Dossier con verdetto di tutte le 58 CAP](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_ANNA_58_DA_VERIFICARE_2026-11-04.md): promosse **solo nella coda di valutazione di prodotto** le CAP-0092, 0093, 0101, 0120, 0145, 0147, tutte con `PROPOSTA / PARTIAL_REUSE` conservato.
 - Ripartizione Anna: 8→14 da valutare, 58→52 da verificare, già integrati invariati a 8; 74 associazioni Anna e 160 CAP/385 associazioni totali inalterate. Generatore e test fail-closed per distinguere valutazione e prove di codice; nessun deployment/Golden/stato prodotto implicito.
+
+## 2026-11-13 — Six-task App Factory 10x evidence reconciliation
+- [Execution dossier](../19-APP-FACTORY-10X/SIX_TASK_EXECUTION_2026-11-13.md) and canonical queue now reconcile X10-026 real `0.1.1 → 0.1.0` SemVer test in AppLab #232 and merged Anna #310/TasteAI #9, native X10-023 source emulator CI and X10-024 pure Dart monetization candidate #159. Explicitly preserve all unverified device/Play, owner budget/products, Windows source and Golden gates. Any task status promotion waits for independently verified exact `main` checks.
