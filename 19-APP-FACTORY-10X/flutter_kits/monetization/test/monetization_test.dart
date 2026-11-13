@@ -17,6 +17,12 @@ void main() {
     expect(snapshot.hasPaidAccess(now), isTrue);
     expect(snapshot.hasPaidAccess(now.add(const Duration(days: 1))), isFalse);
   });
+  test('premium missing expiry must fail closed instead of becoming lifetime', () {
+    final missingExpiry = FactoryEntitlement(
+      plan: FactoryPlan.premium, source: FactoryEntitlementSource.providerVerified,
+      verifiedAtUtc: now);
+    expect(missingExpiry.hasPaidAccess(now), isFalse);
+  });
   test('lifetime requires verification but not recurring expiry', () {
     final snapshot = FactoryEntitlement(
       plan: FactoryPlan.lifetime, source: FactoryEntitlementSource.providerVerified,
@@ -73,7 +79,7 @@ void main() {
   test('verified premium suppresses ads before any SDK request', () {
     final paid = FactoryEntitlement(plan: FactoryPlan.premium,
       source: FactoryEntitlementSource.providerVerified,
-      verifiedAtUtc: now);
+      verifiedAtUtc: now, expiresAtUtc: now.add(const Duration(days: 1)));
     expect(const FactoryAdRequestPolicy(ownerApprovedPlacement: true,
       providerMayRequestAds: true, isReleaseBuild: true,
       usesTestAdUnits: false).mayRequestAds(paid, now), isFalse);
