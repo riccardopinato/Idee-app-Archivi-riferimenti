@@ -1,5 +1,7 @@
 # App Factory 10x — programma continuo
 
+**Riconciliazione Anna Android ↔ 57 task (13 Nov 2026):** [matrice completa ID-per-ID](ANNA_ANDROID_57_TASK_CROSSWALK_20261113.md) con 35 VERIFIED / 21 PLANNED / 1 BLOCKED nel programma globale. I [Maxi-step Android 1 e 2 di Anna](https://github.com/riccardopinato/Agenda-per-Anna/pull/312) riguardano APK firmati originali e persistenza di una sola categoria Inbox sintetica su emulatore; **X10-032 e Maxi-step 3 rimangono physical/Play HUMAN_GATE non verificati**. Nessuna modifica allo stato della coda o a Product Bible.
+
 **X10-032 emulator-only APK rollback evidence (13 Nov):** [AppLab PR #233](https://github.com/riccardopinato/AppLab/pull/233), [real Android API35 debug fixture CI run](https://github.com/riccardopinato/AppLab/actions/runs/43343304828) PASS on exact head. Verified `101→102→101` in disposable `dev.applab.selftest` and synthetic private-file retention; normal downgrade refused. **No Anna/Taste signed APK or phone; X10-032 remains PLANNED/HUMAN_GATE, not Golden/Play**.
 
 **X10-026 source milestone VERIFIED (13 Nov):** [evidence matrix](SIX_TASK_EXECUTION_2026-11-13.md) now includes genuine SemVer `factory_profile_kit 0.1.1 → 0.1.0` CI and two real merged consumers with post-merge CI green; **only SOURCE+CI**. No Golden/device/Play promotion. Queue **35 VERIFIED / 21 PLANNED / 1 BLOCKED**.
