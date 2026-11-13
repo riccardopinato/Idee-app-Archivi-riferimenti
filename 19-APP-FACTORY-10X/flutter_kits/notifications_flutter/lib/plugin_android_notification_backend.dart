@@ -120,7 +120,11 @@ class PluginAndroidNotificationBackend implements NotificationDeviceBackend {
           health.channelEnabled != true ||
           health.schedulerAvailable != true ||
           (exact && health.exactAllowed != true)) return false;
-      final zone = tz.getLocation(reminder.timezoneId);
+      // UTC is a valid IANA alias but is not included as a named location
+      // by every timezone dataset. Use the built-in immutable UTC zone.
+      final zone = reminder.timezoneId == 'UTC'
+          ? tz.UTC
+          : tz.getLocation(reminder.timezoneId);
       final at = tz.TZDateTime.from(reminder.scheduledAtUtc, zone);
       if (!reminder.scheduledAtUtc.isAfter(nowUtc().toUtc())) return false;
       await plugin.zonedSchedule(
