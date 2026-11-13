@@ -68,3 +68,7 @@
 La coda non si arresta ai primi cinque: ogni task approvato e verificato sblocca automaticamente il prossimo nel resolver; ai gate umani si continua nelle lane indipendenti. Il job Actions propone la sequenza ma **non sviluppa codice automaticamente**. L'esecuzione autonoma del coding-agent richiede invece import dell'agente locale o un runner reale e testato, CI, credenziali autorizzate, approval gates e misura della qualità.
 
 **Factory baseline:** `App-Factory-Core@c5adc147046beb7024629466d10eeb799c3c2619`, Master v27, Golden Index v29. Nessuna modifica di Master, Golden o Product Bible implicita.
+
+## Six-task gated execution (13 Nov 2026)
+
+[Execution and independent evidence matrix: X10-026 + five additional tasks](SIX_TASK_EXECUTION_2026-11-13.md). Includes source-package rollback on real Anna/TasteAI consumers, notifications source/emulator tests, provider-neutral monetization candidate, and explicit gates for real physical/Play QA, commercial owner choice and original Windows agent code. Never read a source test as a Golden, Play, revenue or device certification.
