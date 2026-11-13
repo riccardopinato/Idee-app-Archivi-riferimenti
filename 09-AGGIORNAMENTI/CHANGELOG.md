@@ -5,6 +5,9 @@
 
 # Changelog dell'archivio
 
+## 2026-11-13 — X10-024 candidate provider-neutral monetization decisions
+- Added [pure Dart X10-024 policy kit](../19-APP-FACTORY-10X/flutter_kits/monetization/README.md), automatic source-only tests and explicit fail-closed entitlement/ads gates. No billing/AdMob SDK, network, permissions, production traffic or product launch. Provider and owner HUMAN_GATE remain PLANNED.
+
 ## 2026-11-13 — factory_profile_kit v0.1.1 candidate (rollback-ready baseline)
 - Patch source: prevent implicit overwrites of malformed persisted profile data until explicit recovery review; preserve valid legacy profiles unchanged and avoid implicit writes. Schema v1 and consumer APIs unchanged; `0.1.0` remains immutable baseline for prospective real SemVer downgrade QA.
 - **CANDIDATE ONLY** until exact-head donor/consumer CI and X10-018 rollback receipts pass; no package publication, new Golden admission, physical certification, or X10-026 queue promotion implied.
