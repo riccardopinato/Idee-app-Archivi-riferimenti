@@ -1,5 +1,8 @@
 # Changelog dell'archivio
 
+## 2026-11-13 — X10-023 Android emulator native plugin API test candidate
+- [Emulator native smoke](../19-APP-FACTORY-10X/flutter_kits/notifications_flutter/android_emulator_fixture/README.md): isolated generated Android API29 Flutter host, real native SDK MethodChannel, notification channel, inexact schedule registration/pending and cancellation. CI must also trigger when the shared Dart notification policy changes. **NOT** a delivery receipt, physical OEM, Play/Store or Golden certification; task remains PLANNED pending tests and consumer/device integration.
+
 ## 2026-11-13 — X10-026: real consumers/source rollback (partial, not Golden)
 - [Evidence checkpoint](../19-APP-FACTORY-10X/EVIDENCE_X10-026_REAL_CONSUMERS_2026-11-13.md): Anna main CI + signed build, TasteAI full main CI, and AppLab #231 **7/7** with actual pinned donor and two consumer tests plus pre-adoption source rollback. **No** semver-version downgrade receipt, physical installed-data rollback, Golden promotion or status change; X10-026 remains PLANNED. Source snapshot preflight flagged historical.
 

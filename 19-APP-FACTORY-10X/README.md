@@ -1,5 +1,7 @@
 # App Factory 10x — programma continuo
 
+**X10-023 Android emulator native plugin API TEST IN PR (not device certification):** [native Android API29 fixture](flutter_kits/notifications_flutter/android_emulator_fixture/README.md) and [GitHub Actions workflow](../.github/workflows/app-factory-x10-native-notifications.yml) run actual plugin channel/registration/cancel against emulator, not notification delivery, user app, OEM phone, Play or Golden promotion. X10-023 remains PLANNED until independent verification and physical evidence.
+
 **X10-026 two real Flutter consumers SOURCE+CI and source rollback:** [AppLab #231 merged, 7/7 CI and read-only real source rollback rehearsal](EVIDENCE_X10-026_REAL_CONSUMERS_2026-11-13.md); Anna #308 and TasteAI #6/#7 merged. **PLANNED** for X10-018 semver rollback and independent Golden version admission, no Android installed-data or Store claims. Count still **34/57 VERIFIED**.
 
 **X10-046 DAG correction:** il pilota agente A richiede **X10-015 E2E Windows reale**, a sua volta dipendente da **X10-008 sorgente originale ancora BLOCKED**. Un adapter o PR creato solo via Chat non prova un worker AI Windows; X10-046/047 non vanno segnati READY finché tale evidenza manca. Nessuna promozione fittizia.

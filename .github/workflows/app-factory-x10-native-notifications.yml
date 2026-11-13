@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - "19-APP-FACTORY-10X/flutter_kits/notifications_flutter/**"
+      - "19-APP-FACTORY-10X/flutter_kits/notifications/**"
       - ".github/workflows/app-factory-x10-native-notifications.yml"
   workflow_dispatch:
 permissions:
