@@ -23,6 +23,9 @@ class FactoryEntitlement {
   /// QA entitlement is usable only in explicitly marked non-release tests.
   bool hasPaidAccess(DateTime nowUtc, {bool qaOverrideAllowed = false}) {
     if (plan == FactoryPlan.free) return false;
+    // Recurring Premium without an authoritative expiry must never become
+    // an accidental permanent entitlement; only Lifetime is non-expiring.
+    if (plan == FactoryPlan.premium && expiresAtUtc == null) return false;
     final now = nowUtc.toUtc();
     if (source == FactoryEntitlementSource.qaOverride) return qaOverrideAllowed;
     if (source == FactoryEntitlementSource.unknown ||
