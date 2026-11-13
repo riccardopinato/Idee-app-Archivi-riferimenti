@@ -995,9 +995,15 @@
       "impact": 5,
       "effort": 4,
       "status": "PLANNED",
-      "evidence": [],
-      "blocker": "No authenticated physical-evidence hub receipts bound to exact signed artifact SHA, signer and device; no real in-place upgrade/persisted-data or Play Internal Testing proof. Existing PLAN_ONLY is not execution.",
-      "review_scope": "PLAN_ONLY: AppLab x10_physical_play_plan and physical_evidence hub available; needs verified same-bytes artifact, actual phone/model/OS, signed identity, upgrade data observations and Play internal receipt."
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43343304828",
+          "source_sha": "6504450002a5f2fea3a44ee1bf4e68dea6f3360e"
+        }
+      ],
+      "blocker": "Real X10-032 physical and Play acceptance remains HUMAN_GATE: no authenticated real-phone exact stable-signed APK downgrade/recovery receipts, actual retained user data or Play Internal Testing proof. Emulator debug synthetic-file proof is NOT a physical or signed release certificate.",
+      "review_scope": "EMULATOR_DEBUG_ROLLBACK_PASS on isolated dev.applab.selftest v101/102 builds: same signer, synthetic app-private file retained on upgrade 101->102, unflagged downgrade correctly denied, debug-only -d downgrade 102->101 retained file. AppLab #233 exact PR head 6504450 and Actions #43343304828. Not Anna/TasteAI APKs, not stable release, not physical device, user data, Play or Golden."
     },
     {
       "id": "X10-033",
@@ -1653,6 +1659,14 @@
         "https://github.com/riccardopinato/TasteAI/actions/runs/43339342657"
       ],
       "note": "X10-018 genuine donor 0.1.1→0.1.0 SemVer rollback and two independently merged consumer 0.1.1 pins verified on exact PR heads and post-merge main CI. Scope deliberately SOURCE+CI: device APK/user-data/Play/Golden not certified; X10-053 remains HUMAN_GATE."
+    },
+    {
+      "at": "2026-11-13",
+      "type": "EMULATOR_DEBUG_ROLLBACK_SOURCE_EVIDENCE_ONLY",
+      "task_id": "X10-032",
+      "source_sha": "6504450002a5f2fea3a44ee1bf4e68dea6f3360e",
+      "evidence_ref": "https://github.com/riccardopinato/AppLab/actions/runs/43343304828",
+      "note": "Android API35 isolated AppLab selftest APK 101/102 synthetic data rehearsal: actual upgrade, ordinary downgrade rejection, debug -d downgrade and synthetic file persistence. PR #233 not equivalent to installed Anna APK rollback; no physical/Play/Golden acceptance, X10-032 PLANNED."
     }
   ]
 }
