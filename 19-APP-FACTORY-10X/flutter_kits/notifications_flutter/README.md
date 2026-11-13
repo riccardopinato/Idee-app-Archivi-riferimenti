@@ -21,3 +21,7 @@ The Dart-only policy and reconciliation live in [../notifications](../notificati
 - Stable SHA256 IDs map to Android's 31 bits, so rare collisions are possible. App's canonical reminder store must detect/reject ambiguous IDs before registration; do not change existing ID scheme without a reviewed migration.
 
 Tests: run `flutter pub get && flutter analyze && flutter test` in this package, Flutter 3.47.5 pinned in CI. Source uses versions already present in Anna's Diary; no external cost.
+
+## Android emulator native API verification candidate
+
+See the [X10-023 Android emulator fixture](android_emulator_fixture/README.md) and [workflow](../../../.github/workflows/app-factory-x10-native-notifications.yml). This separate host exercises real flutter_local_notifications API29 channel/schedule/cancel and preserves the difference between scheduling acceptance and actual delivery. No user app or physical OEM device is certified.
