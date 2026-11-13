@@ -92,10 +92,6 @@ abstract interface class ProfilePreferencesStore {
   Future<void> writeAtomically(String jsonDocument);
 }
 
-// Profile snapshots are deliberately small. Refuse oversized untrusted JSON
-// without decoding or overwriting the original stored bytes.
-const int _maxProfileDocumentChars = 16 * 1024;
-
 class ProfileSettingsController {
   ProfileSettingsController(this._store);
 
@@ -104,11 +100,20 @@ class ProfileSettingsController {
   Future<void> _tail = Future<void>.value();
   bool _loaded = false;
   bool _corrupt = false;
+  bool _corruptOverwriteConfirmed = false;
   Future<ProfilePreferences>? _loading;
 
   ProfilePreferences get current => _current;
   bool get loaded => _loaded;
   bool get recoveredFromInvalidPreferences => _corrupt;
+
+  /// Explicit acknowledgement is required before replacing invalid stored
+  /// bytes. Callers must let the user review and back up the original data.
+  /// Normal (including legacy v0) valid profiles remain fully writable.
+  void confirmOverwriteAfterCorruptDataReview() {
+    if (!_loaded || !_corrupt) throw StateError('no_invalid_profile_to_recover');
+    _corruptOverwriteConfirmed = true;
+  }
 
   // One shared read prevents a delayed, older read from overwriting a
   // successful update after a concurrent load has already completed.
@@ -121,11 +126,6 @@ class ProfileSettingsController {
     try {
       final document = await _store.read();
       if (document != null) {
-        if (document.length > _maxProfileDocumentChars) {
-          _corrupt = true;
-          _loaded = true;
-          return _current;
-        }
         try {
           _current = ProfilePreferences.fromJson(jsonDecode(document));
         } on FormatException {
@@ -149,11 +149,15 @@ class ProfileSettingsController {
   ) {
     final result = _tail.then((_) async {
       if (!_loaded) throw StateError('profile_not_loaded');
+      if (_corrupt && !_corruptOverwriteConfirmed) {
+        throw StateError('explicit_corrupt_profile_recovery_required');
+      }
       final next = edit(_current);
       final data = jsonEncode(next.toJson());
       await _store.writeAtomically(data);
       _current = next;
       _corrupt = false;
+      _corruptOverwriteConfirmed = false;
       return next;
     });
     _tail = result.then<void>((_) {}, onError: (Object _, StackTrace __) {});
