@@ -494,7 +494,8 @@
       "effort": 3,
       "status": "PLANNED",
       "evidence": [],
-      "blocker": null
+      "blocker": "Dependency X10-008 remains BLOCKED on sanitized original Windows AppFactoryAgent source. No authenticated Windows/WSL actual worker execution, interrupted-run recovery or genuine worker-owned PR E2E proof.",
+      "review_scope": "INTAKE_ONLY: Agent Core X10-007 static preflight tool and user-reported v0.1–v0.4 status; not source-verified operational agent. GBrain/AppLab are not substitutes."
     },
     {
       "id": "X10-016",
@@ -699,8 +700,15 @@
       "impact": 4,
       "effort": 4,
       "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43336767350",
+          "source_sha": "a04a382292ea93172a32005b0c67f4c45cb1cf2b"
+        }
+      ],
+      "blocker": "Android API29 native plugin schedule/pending/cancel source smoke passed on #155 retry; merged source candidate is re-submitted as #160 because #155 became conflicted. Await exact #160 CI/review; Android phone delivery/OEM and independent consumer adoption NOT VERIFIED.",
+      "review_scope": "SOURCE+EMULATOR API29 ONLY: actual flutter_local_notifications channel, inexact scheduling and cancellation. No delivery receipt, phone/OEM, Doze/reboot or Golden."
     },
     {
       "id": "X10-024",
@@ -717,8 +725,15 @@
       "impact": 5,
       "effort": 4,
       "status": "PLANNED",
-      "evidence": [],
-      "blocker": null
+      "evidence": [
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43338039970",
+          "source_sha": "605db390bfcfc7ffe0fc24260d8e7765642853df"
+        }
+      ],
+      "blocker": "Pure Dart policy candidate merged via #159; owner product selection/monetization consent and provider-specific AdMob/UMP/IAP/Play sandbox physical acceptance remain HUMAN_GATE. No ad/billing SDK or production traffic enabled.",
+      "review_scope": "SOURCE+CI ONLY: provider-neutral entitlement, expiry, offline grace and pre-ad-request gate tests. NOT_VERIFIED: payment/ads provider, Play/Store, owner approval."
     },
     {
       "id": "X10-025",
@@ -784,10 +799,30 @@
           "kind": "CI",
           "url": "https://github.com/riccardopinato/AppLab/actions/runs/43332484371",
           "source_sha": "d1ec6f94198b0ef9ddd2e520ec39b71df6887e23"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43337856699",
+          "source_sha": "105c586f6b756cc9f2a02d9b6024d268d67844c1"
+        },
+        {
+          "kind": "PR",
+          "url": "https://github.com/riccardopinato/Agenda-per-Anna/pull/310",
+          "source_sha": "6cff251e64d46f03fb45b02f48c1550574567e85"
+        },
+        {
+          "kind": "PR",
+          "url": "https://github.com/riccardopinato/TasteAI/pull/9",
+          "source_sha": "dadcd809c2837d2151e69f69bf38d5de3c09a305"
+        },
+        {
+          "kind": "PR",
+          "url": "https://github.com/riccardopinato/AppLab/pull/232",
+          "source_sha": "105c586f6b756cc9f2a02d9b6024d268d67844c1"
         }
       ],
-      "blocker": "X10-018 real SemVer package-version rollback receipt still absent: factory_profile_kit 0.1.0 has no evidenced valid earlier version. Source worktree rollback is verified, but cannot substitute versioned package downgrade. See EVIDENCE_X10-026_ROLLBACK_GATE_REVIEW_2026-11-13.md; Golden admission separate.",
-      "review_scope": "SOURCE+CI VERIFIED ON 2 ACTUAL CONSUMERS and AppLab post-merge exact main d1ec6f9 run 43332484371 incl. donor+consumer tests and historical source rollback; X10-018 real SemVer package rollback NOT VERIFIED. Physical/Play/Golden NOT VERIFIED; status remains PLANNED."
+      "blocker": "Genuine package SemVer downgrade gate now exercised on 2 real consumer source trees (AppLab #232, CI #43337856699). Await exact post-merge main CI checks and final scoped acceptance reconciliation. Physical APK downgrade, stored user data, Play and Golden are distinct NOT_VERIFIED gates.",
+      "review_scope": "REAL VERSIONED SOURCE+CI: genuine factory_profile_kit 0.1.0 -> 0.1.1 -> 0.1.0, frozen Git SHA and package lock, donor + Anna + TasteAI tests, X10-018 STRUCTURAL_PASS_REVIEW_REQUIRED (1 donor/2 consumer/1 rollback); independent exact-head Codex clean. AppLab #232, Anna #310 and TasteAI #9 merged, post-merge CI pending final verification; no APK/Play/Golden claims."
     },
     {
       "id": "X10-027",
@@ -935,7 +970,8 @@
       "effort": 4,
       "status": "PLANNED",
       "evidence": [],
-      "blocker": null
+      "blocker": "No authenticated physical-evidence hub receipts bound to exact signed artifact SHA, signer and device; no real in-place upgrade/persisted-data or Play Internal Testing proof. Existing PLAN_ONLY is not execution.",
+      "review_scope": "PLAN_ONLY: AppLab x10_physical_play_plan and physical_evidence hub available; needs verified same-bytes artifact, actual phone/model/OS, signed identity, upgrade data observations and Play internal receipt."
     },
     {
       "id": "X10-033",
@@ -1008,7 +1044,8 @@
       "effort": 2,
       "status": "PLANNED",
       "evidence": [],
-      "blocker": null
+      "blocker": "Owner has confirmed total experiment ceiling EUR 100, but authorized spend remains EUR 0 and no 2–3 product go/no-go selection has been approved. HUMAN_GATE.",
+      "review_scope": "COMPARISON_ONLY: 180FlipCharge, Android-Omni-Cleaner and Battery_Guard candidate shortlist (World-Days conditional). Not a selected portfolio, no data-driven conversion estimates or expense authority."
     },
     {
       "id": "X10-036",
@@ -1548,6 +1585,29 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/docs/x10-026-rollback-gate-evidence-20261113/19-APP-FACTORY-10X/EVIDENCE_X10-026_ROLLBACK_GATE_REVIEW_2026-11-13.md"
       ],
       "note": "Post-merge AppLab donor/Anna/TasteAI source tests and pre-adoption worktree rollback verified. Genuine lower-version package SemVer rollback receipt absent, so X10-018 and X10-026 not promoted. No Golden or physical/Play evidence."
+    },
+    {
+      "at": "2026-11-13",
+      "type": "SIX_TASK_EXECUTION_PARTIAL_GATE_RECONCILIATION",
+      "completed_task_ids": [],
+      "task_ids": [
+        "X10-026",
+        "X10-023",
+        "X10-024",
+        "X10-032",
+        "X10-035",
+        "X10-015"
+      ],
+      "source_scope": "Genuine source-package SemVer rollback and merged two consumer adoption; native Android source emulation verified; pure Dart monetization candidate merged. Human/device/product/Windows gates remain independent.",
+      "evidence_refs": [
+        "https://github.com/riccardopinato/AppLab/actions/runs/43337856699",
+        "https://github.com/riccardopinato/AppLab/pull/232",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/310",
+        "https://github.com/riccardopinato/TasteAI/pull/9",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/159",
+        "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/160"
+      ],
+      "note": "Reconciled pre-certification evidence only; X10-026 still awaits exact main post-merge checks, X10-023 replacement PR #160, X10-024 HUMAN_GATE owner/provider, X10-032 physical/Play, X10-035 product choice, X10-015 Windows source and worker E2E. No invented completion."
     }
   ]
 }
