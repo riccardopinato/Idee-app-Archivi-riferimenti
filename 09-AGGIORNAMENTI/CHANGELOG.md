@@ -1,3 +1,8 @@
+## 2026-11-13 — Riconciliazione Anna Android ↔ 57 task App Factory 10x (audit documentale)
+- [Matrice completa](../19-APP-FACTORY-10X/ANNA_ANDROID_57_TASK_CROSSWALK_20261113.md): 57/57 ID distinti, stati tratti dalla coda canonica (35 VERIFIED, 21 PLANNED, 1 BLOCKED), evidenza e collegamento reale con Anna.
+- Anna [PR #311](https://github.com/riccardopinato/Agenda-per-Anna/pull/311) e [#312](https://github.com/riccardopinato/Agenda-per-Anna/pull/312) documentano identita' APK firmati storici e rehearsal su emulatore con una **sola categoria Inbox sintetica**, non retention completa, QA fisico o Play.
+- **X10-032 rimane PLANNED/HUMAN_GATE**. Nessun cambio a `PROGRAM_QUEUE.json`, nessuna certificazione fisica/Store e nessun nuovo APK. Questo audit non estende scope runtime o privacy.
+
 ## 2026-11-13 — X10-032 isolated emulator APK downgrade proof (not physical)
 - AppLab [PR #233](https://github.com/riccardopinato/AppLab/pull/233), [CI #43343304828](https://github.com/riccardopinato/AppLab/actions/runs/43343304828) exact-head source SHA `6504450`: real debug fixture APK 101/102 same signer, private synthetic file preserved on upgrade/downgrade, ordinary downgrade correctly rejected. The receipt was corrected to bind Git checkout SHA, not GitHub synthetic PR merge SHA. **Emulator/DEBUG only; no real data, stable-signed APK, physical/Play/Golden. X10-032 PLANNED.**
 
