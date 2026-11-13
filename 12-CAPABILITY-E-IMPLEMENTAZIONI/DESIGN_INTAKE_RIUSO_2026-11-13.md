@@ -37,3 +37,7 @@ Il registro canonico consultato è `12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAP
 ## Tracciabilità
 
 Questo documento è una crosswalk tra cataloghi, non una nuova source of truth dei prodotti. Alla selezione di un componente per un'app: aprire il repo/HEAD e Product Bible relativi, verificarne il delta con i CAP già esistenti, proporre task approvati e validare CI/accessibilità/device. Evitare conteggi cumulativi che confondano i precedenti 33 visual con i nuovi 66.
+
+## Consolidamento relazionale (12–13 novembre 2026)
+
+L'intake del 13/11 aggiunge 66 visual distinti ai 33 già presenti in Design-App (totale 99). Consultare la [matrice trasversale di 19 app e 28 stili](MATRICE_VISUAL_APP_STILI_2026-11-13.md) e il [registro canonico delle 254 associazioni stile–app](https://github.com/riccardopinato/Design-App/blob/catalog/visual-references-2026-11-13/UI-UX/MATRICE_BIDIREZIONALE_APP_STILI_2026-11-13.json). Stato delle associazioni: PROPOSTA, senza automatica introduzione nel backlog CAP o nelle app.
