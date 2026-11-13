@@ -1,5 +1,7 @@
 # App Factory 10x — programma continuo
 
+**X10-032 emulator-only APK rollback evidence (13 Nov):** [AppLab PR #233](https://github.com/riccardopinato/AppLab/pull/233), [real Android API35 debug fixture CI run](https://github.com/riccardopinato/AppLab/actions/runs/43343304828) PASS on exact head. Verified `101→102→101` in disposable `dev.applab.selftest` and synthetic private-file retention; normal downgrade refused. **No Anna/Taste signed APK or phone; X10-032 remains PLANNED/HUMAN_GATE, not Golden/Play**.
+
 **X10-026 source milestone VERIFIED (13 Nov):** [evidence matrix](SIX_TASK_EXECUTION_2026-11-13.md) now includes genuine SemVer `factory_profile_kit 0.1.1 → 0.1.0` CI and two real merged consumers with post-merge CI green; **only SOURCE+CI**. No Golden/device/Play promotion. Queue **35 VERIFIED / 21 PLANNED / 1 BLOCKED**.
 
 **X10-023 Android emulator native plugin API smoke:** [Android API29 fixture](flutter_kits/notifications_flutter/android_emulator_fixture/README.md) and [pinned workflow](../.github/workflows/app-factory-x10-native-notifications.yml) test native schedule/cancel with synthetic reminders. [CI attempt 2](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43336767350/attempts/2) PASS; no real OEM delivery, Store, Golden or user-consumer certification; X10-023 PLANNED.

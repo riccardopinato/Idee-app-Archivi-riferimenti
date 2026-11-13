@@ -1,3 +1,6 @@
+## 2026-11-13 — X10-032 isolated emulator APK downgrade proof (not physical)
+- AppLab [PR #233](https://github.com/riccardopinato/AppLab/pull/233), [CI #43343304828](https://github.com/riccardopinato/AppLab/actions/runs/43343304828) exact-head source SHA `6504450`: real debug fixture APK 101/102 same signer, private synthetic file preserved on upgrade/downgrade, ordinary downgrade correctly rejected. The receipt was corrected to bind Git checkout SHA, not GitHub synthetic PR merge SHA. **Emulator/DEBUG only; no real data, stable-signed APK, physical/Play/Golden. X10-032 PLANNED.**
+
 ## 2026-11-13 — X10-026 SOURCE+CI accepted, not Golden
 - Real `factory_profile_kit` SemVer 0.1.1→0.1.0 rollback proven on Anna and TasteAI (AppLab [#232](https://github.com/riccardopinato/AppLab/pull/232), [CI #43337856699](https://github.com/riccardopinato/AppLab/actions/runs/43337856699)); consumer [Anna #310](https://github.com/riccardopinato/Agenda-per-Anna/pull/310) and [TasteAI #9](https://github.com/riccardopinato/TasteAI/pull/9) merged with exact post-merge CI green. `PROGRAM_QUEUE.json`: X10-026 becomes **VERIFIED SOURCE+CI ONLY**; total 35 VERIFIED / 21 PLANNED / 1 BLOCKED. Native device APK rollback, real persisted-user-data retention, Play and Golden admission remain NOT VERIFIED.
 
