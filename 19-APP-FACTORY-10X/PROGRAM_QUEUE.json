@@ -778,7 +778,7 @@
       "acceptance": "Test reali su due app scelte, version pins e rollback prima di admission Golden",
       "impact": 5,
       "effort": 4,
-      "status": "PLANNED",
+      "status": "VERIFIED",
       "evidence": [
         {
           "kind": "CI",
@@ -819,10 +819,36 @@
           "kind": "PR",
           "url": "https://github.com/riccardopinato/AppLab/pull/232",
           "source_sha": "105c586f6b756cc9f2a02d9b6024d268d67844c1"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43339326040",
+          "source_sha": "bb59e05dea0e0aace1128cf965fa1a2ae7ab8ab7"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/AppLab/actions/runs/43339325915",
+          "source_sha": "bb59e05dea0e0aace1128cf965fa1a2ae7ab8ab7"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/43339334709",
+          "source_sha": "ffa3d98c21b6f04c8d5fe904e930cff003c6aa31"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/TasteAI/actions/runs/43339342657",
+          "source_sha": "2e6cb127a081365efe565d5f0b8ad1435c2fe4ba"
+        },
+        {
+          "kind": "CI",
+          "url": "https://github.com/riccardopinato/TasteAI/actions/runs/43339342658",
+          "source_sha": "2e6cb127a081365efe565d5f0b8ad1435c2fe4ba"
         }
       ],
-      "blocker": "Genuine package SemVer downgrade gate now exercised on 2 real consumer source trees (AppLab #232, CI #43337856699). Await exact post-merge main CI checks and final scoped acceptance reconciliation. Physical APK downgrade, stored user data, Play and Golden are distinct NOT_VERIFIED gates.",
-      "review_scope": "REAL VERSIONED SOURCE+CI: genuine factory_profile_kit 0.1.0 -> 0.1.1 -> 0.1.0, frozen Git SHA and package lock, donor + Anna + TasteAI tests, X10-018 STRUCTURAL_PASS_REVIEW_REQUIRED (1 donor/2 consumer/1 rollback); independent exact-head Codex clean. AppLab #232, Anna #310 and TasteAI #9 merged, post-merge CI pending final verification; no APK/Play/Golden claims."
+      "blocker": null,
+      "review_scope": "VERIFIED SOURCE+CI SCOPE ONLY (13 Nov 2026): real factory_profile_kit 0.1.0→0.1.1→0.1.0 immutable SemVer rollback exercised on two real Flutter consumers (AppLab PR #232, CI #43337856699, X10-018 harness STRUCTURAL_PASS_REVIEW_REQUIRED); independent exact PR-head Codex review green. Anna PR #310 main ffa3d98 and TasteAI PR #9 main 2e6cb12 adopted pinned 0.1.1; AppLab main bb59e05, Anna main and TasteAI main post-merge CI SUCCESS. VERIFIED does NOT mean Golden admission, device-installed APK rollback, physical user-data retention, Play, Store release, provider billing or external service. X10-053 Golden admission separately gated. Independent manual review matched exact CI, source/package SHAs, donor/consumer logs and X10-018 receipt structure; reviewer is not the harness.",
+      "gate_reviewed": true
     },
     {
       "id": "X10-027",
@@ -1608,6 +1634,25 @@
         "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/160"
       ],
       "note": "Reconciled pre-certification evidence only; X10-026 still awaits exact main post-merge checks, X10-023 replacement PR #160, X10-024 HUMAN_GATE owner/provider, X10-032 physical/Play, X10-035 product choice, X10-015 Windows source and worker E2E. No invented completion."
+    },
+    {
+      "at": "2026-11-13",
+      "type": "SCOPED_SOURCE_CI_ACCEPTANCE",
+      "task_id": "X10-026",
+      "completed_task_ids": [
+        "X10-026"
+      ],
+      "evidence_scope": "VERSIONED_PACKAGE_TWO_CONSUMER_SOURCE_CI_ONLY",
+      "evidence_refs": [
+        "https://github.com/riccardopinato/AppLab/pull/232",
+        "https://github.com/riccardopinato/AppLab/actions/runs/43337856699",
+        "https://github.com/riccardopinato/AppLab/actions/runs/43339326040",
+        "https://github.com/riccardopinato/Agenda-per-Anna/pull/310",
+        "https://github.com/riccardopinato/Agenda-per-Anna/actions/runs/43339334709",
+        "https://github.com/riccardopinato/TasteAI/pull/9",
+        "https://github.com/riccardopinato/TasteAI/actions/runs/43339342657"
+      ],
+      "note": "X10-018 genuine donor 0.1.1→0.1.0 SemVer rollback and two independently merged consumer 0.1.1 pins verified on exact PR heads and post-merge main CI. Scope deliberately SOURCE+CI: device APK/user-data/Play/Golden not certified; X10-053 remains HUMAN_GATE."
     }
   ]
 }

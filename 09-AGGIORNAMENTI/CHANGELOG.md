@@ -1,3 +1,6 @@
+## 2026-11-13 — X10-026 SOURCE+CI accepted, not Golden
+- Real `factory_profile_kit` SemVer 0.1.1→0.1.0 rollback proven on Anna and TasteAI (AppLab [#232](https://github.com/riccardopinato/AppLab/pull/232), [CI #43337856699](https://github.com/riccardopinato/AppLab/actions/runs/43337856699)); consumer [Anna #310](https://github.com/riccardopinato/Agenda-per-Anna/pull/310) and [TasteAI #9](https://github.com/riccardopinato/TasteAI/pull/9) merged with exact post-merge CI green. `PROGRAM_QUEUE.json`: X10-026 becomes **VERIFIED SOURCE+CI ONLY**; total 35 VERIFIED / 21 PLANNED / 1 BLOCKED. Native device APK rollback, real persisted-user-data retention, Play and Golden admission remain NOT VERIFIED.
+
 ## 2026-11-13 — X10-023 real Android API29 source smoke verified
 - Transplanted real isolated Android API29 plugin schedule/pending/cancel smoke [PR #155](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/pull/155) onto current main preserving X10-024 and X10-026 changes. CI [run 43336767350 attempt 2](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/actions/runs/43336767350/attempts/2) PASS; a prior attempt on same source was retried after an ADB emulator disappearance. No physical device delivery, product adoption, Play or Golden certification; X10-023 remains PLANNED.
 
