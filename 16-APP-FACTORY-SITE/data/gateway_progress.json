@@ -4,10 +4,10 @@
   "observed_on": "2026-11-14",
   "factory_baseline_sha": "c5adc147046beb7024629466d10eeb799c3c2619",
   "source_repository": "riccardopinato/App-Factory-Agent-Core",
-  "source": "Authenticated GitHub PR, workflow and review observations. Date scoped; not a live feed.",
+  "source": "Authenticated GitHub PR and exact-head workflow observations; dated manual snapshot, not a live feed.",
   "auto_refresh_verified": false,
-  "pr_count": 8,
-  "observed_pr_ci_pass": 8,
+  "pr_count": 9,
+  "observed_pr_ci_pass": 9,
   "merged_count": 0,
   "source_is_canonical": false,
   "certification_granted": false,
@@ -16,7 +16,8 @@
     "CI PASS only at cited PR HEADs; current main and new commits may change.",
     "Review comments resolved does not imply an APPROVED review.",
     "GitHub connector returned 403 for branch protection; required approvals cannot be certified.",
-    "Local Windows state is outside this dataset; no automatic site deployment verified."
+    "Local Windows state is outside this dataset; no automatic site deployment verified.",
+    "Integrated PR #33 source-level test uses pinned actual GBrain and AppLab modules with synthetic GitHub/memory envelopes; not production OAuth or deployed runtime."
   ],
   "prs": [
     {
@@ -150,7 +151,7 @@
       "title": "Gateway MCP + memoria opzionale",
       "repository": "riccardopinato/App-Factory-Agent-Core",
       "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/29",
-      "head_sha": "57fa910fa6c2b8fa33df2b141536275f2c9d38ce",
+      "head_sha": "3ba7a2c21bb36e4c56b17fd6f44412b3235fb503",
       "base_branch": "feat/factory-gateway-v02-evidence-20261114",
       "draft": false,
       "merged": false,
@@ -159,14 +160,14 @@
         {
           "name": "Validate context contracts",
           "result": "success",
-          "source_sha": "57fa910fa6c2b8fa33df2b141536275f2c9d38ce",
-          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43546964918"
+          "source_sha": "3ba7a2c21bb36e4c56b17fd6f44412b3235fb503",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43549421789"
         },
         {
           "name": "Factory MCP SDK v2 read-only contract",
           "result": "success",
-          "source_sha": "57fa910fa6c2b8fa33df2b141536275f2c9d38ce",
-          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43546964836"
+          "source_sha": "3ba7a2c21bb36e4c56b17fd6f44412b3235fb503",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43549421772"
         }
       ],
       "formal_approval_observed": false,
@@ -252,7 +253,7 @@
       "title": "MCP runtime preflight",
       "repository": "riccardopinato/App-Factory-Agent-Core",
       "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/32",
-      "head_sha": "bda3328985c4629f8d601d91f971bc701852d02b",
+      "head_sha": "712a73b0b68bf5a7e255bccc2d40638d60c57ba8",
       "base_branch": "feat/factory-mcp-readonly-adapter-20261114",
       "draft": true,
       "merged": false,
@@ -261,8 +262,8 @@
         {
           "name": "Validate context contracts",
           "result": "success",
-          "source_sha": "bda3328985c4629f8d601d91f971bc701852d02b",
-          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43548546256"
+          "source_sha": "712a73b0b68bf5a7e255bccc2d40638d60c57ba8",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43549520285"
         }
       ],
       "formal_approval_observed": false,
@@ -275,6 +276,46 @@
         "DEPENDS_ON_PR_29",
         "REMOTE_AUTH_AND_DEPLOY_NOT_VERIFIED",
         "FORMAL_APPROVAL_NOT_OBSERVED"
+      ],
+      "deploy_verified": false,
+      "device_verified": false,
+      "certification_granted": false
+    },
+    {
+      "number": 33,
+      "title": "Integrazione MCP/GBrain/AppLab in CI",
+      "repository": "riccardopinato/App-Factory-Agent-Core",
+      "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/33",
+      "head_sha": "ac50e97816454c351fd0f03f36c1053bd0e18ac8",
+      "base_branch": "feat/factory-mcp-runtime-preflight-20261114",
+      "draft": true,
+      "merged": false,
+      "ci_state": "OBSERVED_PR_WORKFLOWS_SUCCESS",
+      "ci_evidence": [
+        {
+          "name": "Validate context contracts",
+          "result": "success",
+          "source_sha": "ac50e97816454c351fd0f03f36c1053bd0e18ac8",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43549528008"
+        },
+        {
+          "name": "Factory full read-only pinned source integration",
+          "result": "success",
+          "source_sha": "ac50e97816454c351fd0f03f36c1053bd0e18ac8",
+          "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/actions/runs/43549528062"
+        }
+      ],
+      "formal_approval_observed": false,
+      "branch_protection_verified": false,
+      "source_review_thread_blockers_observed": 0,
+      "depends_on": [
+        31,
+        32
+      ],
+      "blockers": [
+        "DEPENDS_ON_PR_31_AND_32",
+        "FORMAL_APPROVAL_NOT_OBSERVED",
+        "REMOTE_AUTH_AND_DEPLOY_NOT_VERIFIED"
       ],
       "deploy_verified": false,
       "device_verified": false,
