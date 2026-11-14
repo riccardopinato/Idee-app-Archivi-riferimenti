@@ -2,7 +2,7 @@
 
 ## App Factory Control Center — Gateway MCP (14/11/2026)
 
-[Dashboard sorgente in italiano](16-APP-FACTORY-SITE/src/index.html) · [registro PR/CI Gateway](16-APP-FACTORY-SITE/data/gateway_progress.json) · [changelog](16-APP-FACTORY-SITE/CHANGELOG.md). Snapshot storico e pubblico di otto PR Agent Core, con SHA/CI/dipendenze e indicazione dei gate NON certificati. Non è un servizio GitHub live, non modifica lo stato manuale salvato nel browser e non dimostra un deploy del Site.
+[Dashboard sorgente in italiano](16-APP-FACTORY-SITE/src/index.html) · [registro PR/CI Gateway](16-APP-FACTORY-SITE/data/gateway_progress.json) · [changelog](16-APP-FACTORY-SITE/CHANGELOG.md). Snapshot storico e pubblico di nove PR Agent Core, con SHA/CI/dipendenze e indicazione dei gate NON certificati. Non è un servizio GitHub live, non modifica lo stato manuale salvato nel browser e non dimostra un deploy del Site.
 
 
 ## App Factory 10x — programma continuo approvato (12/11/2026)
