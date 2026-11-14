@@ -223,7 +223,7 @@
       "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/31",
       "head_sha": "11e9c8ed834838ebe49a7c68693daa84ccffdfd7",
       "base_branch": "feat/gbrain-memory-read-adapter-20261114",
-      "draft": true,
+      "draft": false,
       "merged": false,
       "ci_state": "OBSERVED_PR_WORKFLOWS_SUCCESS",
       "ci_evidence": [
@@ -255,7 +255,7 @@
       "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/32",
       "head_sha": "712a73b0b68bf5a7e255bccc2d40638d60c57ba8",
       "base_branch": "feat/factory-mcp-readonly-adapter-20261114",
-      "draft": true,
+      "draft": false,
       "merged": false,
       "ci_state": "OBSERVED_PR_WORKFLOWS_SUCCESS",
       "ci_evidence": [
@@ -288,7 +288,7 @@
       "url": "https://github.com/riccardopinato/App-Factory-Agent-Core/pull/33",
       "head_sha": "ac50e97816454c351fd0f03f36c1053bd0e18ac8",
       "base_branch": "feat/factory-mcp-runtime-preflight-20261114",
-      "draft": true,
+      "draft": false,
       "merged": false,
       "ci_state": "OBSERVED_PR_WORKFLOWS_SUCCESS",
       "ci_evidence": [
