@@ -32,7 +32,7 @@ class GatewaySiteTests(unittest.TestCase):
     def test_exact_head_ci_and_no_false_approvals(self):
         d = self.rows
         self.assertEqual(len(d["prs"]), len({r["number"] for r in d["prs"]}))
-        self.assertEqual([r["number"] for r in d["prs"]], list(range(25, 33)))
+        self.assertEqual([r["number"] for r in d["prs"]], list(range(25, 34)))
         for r in d["prs"]:
             self.assertTrue(SHA.fullmatch(r["head_sha"]))
             self.assertFalse(r["merged"])
