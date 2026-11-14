@@ -23,5 +23,6 @@ jobs:
       - name: Validate snapshot and compare basic JS syntax
         run: |
           python3 -m unittest discover -s tests -p 'site_snapshot_test.py' -v
+          python3 -m unittest discover -s tests -p 'gateway_site_test.py' -v
           python3 -m unittest discover -s tests -p 'context_fleet_test.py' -v
           python3 scripts/context_fleet.py --check
