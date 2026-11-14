@@ -1,5 +1,10 @@
 # Idee app — archivio e riferimenti
 
+## App Factory Control Center — Gateway MCP (14/11/2026)
+
+[Dashboard sorgente in italiano](16-APP-FACTORY-SITE/src/index.html) · [registro PR/CI Gateway](16-APP-FACTORY-SITE/data/gateway_progress.json) · [changelog](16-APP-FACTORY-SITE/CHANGELOG.md). Snapshot storico e pubblico di otto PR Agent Core, con SHA/CI/dipendenze e indicazione dei gate NON certificati. Non è un servizio GitHub live, non modifica lo stato manuale salvato nel browser e non dimostra un deploy del Site.
+
+
 ## App Factory 10x — programma continuo approvato (12/11/2026)
 
 [Programma strategico 10x](19-APP-FACTORY-10X/README.md): **57 task distribuiti su 8 ondate** e cinque pilastri (agente AI, Golden Flutter, AppLab QA/release, prodotti e ricavi, intelligenza trasversale), più governance continua. [Roadmap](19-APP-FACTORY-10X/ROADMAP_10X.md), [coda con dipendenze](19-APP-FACTORY-10X/PROGRAM_QUEUE.json), [router successori](scripts/factory_10x_queue.py) e [workflow di verifica quotidiana](.github/workflows/app-factory-10x-queue.yml). Stato: `PROGRAM_APPROVED / QUEUE_IMPLEMENTED` · checkpoint **34/57 VERIFIED nei rispettivi perimetri source+CI** (22 PLANNED, 1 BLOCKED), non agent runtime o risultato 10x già certificato. [Dossier X10-028](19-APP-FACTORY-10X/EVIDENCE_X10-028_QA_ROUTER_SOURCE_CI_2026-11-12.md). Il lavoro prosegue nelle esecuzioni realmente pianificate e nei runner disponibili, con gate per merge, codice Windows, dati utente e release.
