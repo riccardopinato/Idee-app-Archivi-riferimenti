@@ -219,13 +219,23 @@ async function loadGatewayStatus(){
   const d=await rsp.json();
   if(d.schema_version!==1||d.record_type!=='APP_FACTORY_GATEWAY_SOURCE_SNAPSHOT'||
      !Array.isArray(d.prs)||d.prs.length>32||d.prs.length!==d.pr_count||
+     !Number.isSafeInteger(d.pr_count)||!Number.isSafeInteger(d.observed_pr_ci_pass)||
+     !Number.isSafeInteger(d.merged_count)||d.observed_pr_ci_pass<0||
+     d.observed_pr_ci_pass>d.pr_count||d.merged_count<0||d.merged_count>d.pr_count||
      d.auto_refresh_verified!==false||d.source_is_canonical!==false)throw Error('Schema Gateway non valido');
   const ids=new Set();
   for(const p of d.prs){
    if(!Number.isSafeInteger(p.number)||ids.has(p.number)||
       !/^[a-f0-9]{40}$/.test(p.head_sha)||p.repository!=='riccardopinato/App-Factory-Agent-Core'||
-      typeof p.url!=='string'||!p.url.startsWith('https://github.com/riccardopinato/App-Factory-Agent-Core/pull/')||
-      !Array.isArray(p.blockers)||p.blockers.length>20||!Array.isArray(p.ci_evidence)||
+      typeof p.url!=='string'||p.url!=='https://github.com/riccardopinato/App-Factory-Agent-Core/pull/'+p.number||
+      typeof p.title!=='string'||p.title.length>160||!p.title.trim()||
+      typeof p.base_branch!=='string'||p.base_branch.length>160||
+      !Array.isArray(p.blockers)||p.blockers.length>20||
+      !p.blockers.every(x=>typeof x==='string'&&/^[A-Z0-9_]{1,96}$/.test(x))||
+      !Array.isArray(p.depends_on)||p.depends_on.length>16||
+      !p.depends_on.every(n=>Number.isSafeInteger(n)&&n>0&&n!==p.number)||
+      !Array.isArray(p.ci_evidence)||p.ci_evidence.length>32||
+      typeof p.draft!=='boolean'||p.ci_state!=='OBSERVED_PR_WORKFLOWS_SUCCESS'||
       p.merged!==false||p.certification_granted!==false||p.formal_approval_observed!==false)throw Error('Evidenze Gateway incoerenti');
    ids.add(p.number);
    for(const c of p.ci_evidence)if(!/^[a-f0-9]{40}$/.test(c.source_sha)||
@@ -258,15 +268,16 @@ function gatewayPage(){
    '<div class="notice">'+esc(gatewayError||'Caricamento dati GitHub…')+
    '</div>','Nessuna promozione dello stato in caso di errore');
  const d=gatewayData;const metrics='<div class="metrics">'+
-  metric('PR osservate',d.pr_count,'Solo Agent Core')+
-  metric('CI osservate verdi',d.observed_pr_ci_pass,'Sugli SHA riportati')+
-  metric('Merge registrati',d.merged_count,'Non implica deploy')+
+  metric('PR osservate',esc(d.pr_count),'Solo Agent Core')+
+  metric('CI osservate verdi',esc(d.observed_pr_ci_pass),'Sugli SHA riportati')+
+  metric('Merge registrati',esc(d.merged_count),'Non implica deploy')+
   metric('Review formali',d.prs.filter(p=>p.formal_approval_observed).length,'Nessun APPROVED osservato')+'</div>';
  const controls='<div class="filters"><input id="gatewaySearch" class="filter search" placeholder="Cerca PR, titolo, blocker…" value="'+esc(gatewayQuery)+'">'+
   '<select id="gatewayFilter" class="filter"><option value="">Tutte le PR</option>'+
   '<option value="DRAFT"'+(gatewayFilter==='DRAFT'?' selected':'')+'>Solo bozze</option>'+
   '<option value="BLOCKED"'+(gatewayFilter==='BLOCKED'?' selected':'')+'>Con blocchi</option></select></div>';
- return hdr+'<div class="notice"><strong>Fotografia del '+esc(d.observed_on)+
+ return hdr+(gatewayError?'<div class="notice">Aggiornamento Gateway non riuscito; mostro la snapshot valida precedente. '+esc(gatewayError)+'</div>':'')+
+  '<div class="notice"><strong>Fotografia del '+esc(d.observed_on)+
   ':</strong> CI osservata a commit esatto ≠ review APPROVED ≠ merge autorizzato ≠ servizio MCP online. '+
   'Non è un feed live. La branch protection non era verificabile dal connettore GitHub.</div>'+
   metrics+panel('Registro PR e dipendenze',controls+
