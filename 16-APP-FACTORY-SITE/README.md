@@ -38,6 +38,6 @@ La sezione Donor & Golden presenta **61 Golden ufficiali (inclusi draft/processi
 
 ## Gateway MCP: registro sorgente read-only · 14 novembre 2026
 
-La pagina [src/index.html](src/index.html) contiene la vista «Gateway MCP» con ricerca, filtro e collegamenti alle otto PR #25–#32 di Agent Core; legge unicamente il nuovo [data/gateway_progress.json](data/gateway_progress.json). Le informazioni riportano lo SHA dei commit osservati, esiti CI pubblici, dipendenze, bozze e gate ancora aperti. Questo dataset è **puntuale, non real-time**: non deve aggiornare automaticamente `data/snapshot.json` né gli stati manuali in `localStorage`.
+La pagina [src/index.html](src/index.html) contiene la vista «Gateway MCP» con ricerca, filtro e collegamenti alle nove PR #25–#33 di Agent Core; legge unicamente il nuovo [data/gateway_progress.json](data/gateway_progress.json). Le informazioni riportano lo SHA dei commit osservati, esiti CI pubblici, dipendenze, bozze e gate ancora aperti. Questo dataset è **puntuale, non real-time**: non deve aggiornare automaticamente `data/snapshot.json` né gli stati manuali in `localStorage`.
 
 Il CI esegue `tests/gateway_site_test.py` per controllare SHA, URL delle workflow run, assenza di false approvazioni o certificazioni, preservazione dello storage e sintassi JS. I dati GitHub non attestano review formali `APPROVED`, né disponibilità di un servizio MCP remoto. Nessun deploy o refresh schedulato è dichiarato. La cronologia delle modifiche è in [CHANGELOG.md](CHANGELOG.md).
