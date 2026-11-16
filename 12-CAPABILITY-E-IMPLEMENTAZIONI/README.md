@@ -1,5 +1,10 @@
 # Catalogo centrale capability — App Factory
 
+## 16/11/2026 — Audit specifico app × stelle: 197 interventi con due punteggi
+
+[**Apri l'audit completo: 35 repository verificati documentalmente e 24 app/idee CAP-only**](STARS_750_AUDIT_APP_2026-11-16/00-INDEX.md). Include **59 schede, 197 interventi**, per ciascuno priorità P e fattibilità F /100, CAP esistenti, motivazione, fonte HEAD e distinzione stato. [Applicazioni A–M](STARS_750_AUDIT_APP_2026-11-16/01_APP_A_M.md) · [Applicazioni N–Z](STARS_750_AUDIT_APP_2026-11-16/02_APP_N_Z.md) · [Infrastrutture/Agenti](STARS_750_AUDIT_APP_2026-11-16/03_INFRA_AGENTI.md) · [App solo CAP, repo non verificato](STARS_750_AUDIT_APP_2026-11-16/04_CAP_ONLY_NO_REPO.md). La ricognizione NON è certificazione di runtime né modifica delle app; nessun nuovo ID CAP.
+
+
 ## 16/11/2026 — Nuove stelle GitHub: 737 pubbliche, 110 delta, 17 non coperte da precedenti dossier
 
 [**Audit incrementale, 17 repository e crosswalk per app/CAP**](STELLE_750_DELTA_110_OSS95_AUDIT_2026-11-16.md). Tra le 110 nuove nel confronto con le 632 di ottobre, 89 erano già nell'audit curato OSS95 e 4 in altri lavori. Le 13 mancanti al contatore UI 750 non sono enumerabili via API pubblica. **Nessun nuovo CAP o Product Bible automaticamente modificato.**
