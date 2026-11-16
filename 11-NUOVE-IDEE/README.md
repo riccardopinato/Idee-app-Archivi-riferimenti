@@ -9,6 +9,8 @@ Questa cartella raccoglie **solo le idee ancora in valutazione**, separate dal c
 
 - [Adaptive Landscape Android — AL-ANDROID-2026-001](ADAPTIVE_LANDSCAPE_ANDROID_2026-11-10.md): wallpaper originale Flutter+Kotlin ispirato al concetto Deskland (GPL); E1 reference, calibrazione icone manuale, 5 maxi-step e prezzi ipotetici €1,99–€2,99. Sorgente locale, Android/CI/Play non verificati.
 
+- [DOCK-2026-001 — Dock Windows e widget](INBOX_IDEE.md): proposta research/non approvata con [audit tecnico e riuso](../12-CAPABILITY-E-IMPLEMENTAZIONI/STELLE_DOCK_WIDGET_INTAKE_2026-11-16.md), OpenTaskbar MIT e lumabar proprietario.
+
 ## Dove scrivere
 
 - **[INBOX_IDEE.md](INBOX_IDEE.md)** — elenco unico delle nuove proposte, anche incomplete; conservarle senza eliminarle.

@@ -1,5 +1,15 @@
 # Inbox nuove idee — da valutare e conservare
 
+## STARS-2026-11-16 — 17 fonti nuove e crosswalk trasversale da 110 stelle
+
+**RESEARCH / NON APPROVATE**. Censimento pubblico GitHub: 737 su 750 stelle indicate; 110 nuove rispetto alle 632 storiche, di cui 89 già OSS95 e quattro già note. Le **17 fonti senza precedente dossier** suggeriscono soprattutto sicurezza per AppLab, Agent Canvas con OpenHands, widget desktop per App Factory Control Center; gli spunti Notes/Anna rimandano principalmente alle CAP già catalogate. [Scheda idee](STELLE_750_OPPORTUNITA_2026-11-16.md) · [Audit CAP e licenze](../12-CAPABILITY-E-IMPLEMENTAZIONI/STELLE_750_DELTA_110_OSS95_AUDIT_2026-11-16.md). Nessun nuovo prodotto, provider, CAP o codice approvato.
+
+
+## DOCK-2026-001 — Dock desktop modulare e widget contestuali (16/11/2026)
+
+**Stato: IDEA DI RICERCA / NON APPROVATA.** Due fonti fornite dall'utente: [OpenTaskbar (MIT, codice Windows)](https://github.com/alztrk/opentaskbar) e [lumabar (commerciale, source non pubblico)](https://github.com/Acadbek/lumabar). Non creare automaticamente un terzo launcher o duplicare Deskland: il prodotto autonomo avrebbe senso solo come piccola utility Windows molto diversa da un clone, con dock leggero, workflow app e widget opzionali utili (es. stato App Factory PR/CI). Prima verificare domanda, concorrenza, differenziazione, accessibilità, policy e coste di sviluppo. **Nessuna stella confermata dall'API autenticata; nessuna roadmap app modificata.** [Scheda tecnica con crosswalk CAP-0088, CAP-0144, CAP-0182 e source-pin](../12-CAPABILITY-E-IMPLEMENTAZIONI/STELLE_DOCK_WIDGET_INTAKE_2026-11-16.md).
+
+
 ## AGF-2026-001 / FIN-2026-001 / INT-2026-001 — Agent Factory, Finance Agent, Interactive Scene Core (11/11/2026)
 
 **Decisione utente: CONSERVARE E STRUTTURARE** con repo dedicati e aggiornamenti progressivi. [Dossier completo](AGENT_FACTORY_FINANCE_DESKLAND_2026-11-11.md) · [Hub e bootstrap](../18-AGENT-FACTORY/README.md). Agent Factory Core per automazione cross-app, Finance Intelligence Agent per azioni/portafoglio read-only e paper trading, Interactive Scene Core ricavabile soltanto dal codice effettivamente testato di Adaptive Landscape. Il prodotto Android esiste già: [Adaptive-Landscape-Android](https://github.com/riccardopinato/Adaptive-Landscape-Android); l'upstream Deskland è GPL-3.0, **solo reference**, non copiare codice/asset nel progetto proprietario. I tre nuovi repo sono **CREATI, DOCUMENTATI e MERGED con CI PASS**: [Agent](https://github.com/riccardopinato/App-Factory-Agent-Core), [Finance](https://github.com/riccardopinato/Finance-Intelligence-Agent), [Scene](https://github.com/riccardopinato/Interactive-Scene-Core). Il codice agente Windows/WSL non è stato ancora importato su GitHub. Nessun trading live, nessuna nuova CAP o Golden promossa automaticamente.
