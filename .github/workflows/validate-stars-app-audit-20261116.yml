@@ -1,0 +1,26 @@
+name: Validate 2026-11-16 App-by-App Stars Audit
+on:
+  push:
+    branches:
+      - audit/app-by-app-stars-20261116
+    paths:
+      - '12-CAPABILITY-E-IMPLEMENTAZIONI/STARS_750_AUDIT_APP_2026-11-16/**'
+      - scripts/validate_stars_app_20261116.py
+      - .github/workflows/validate-stars-app-audit-20261116.yml
+  pull_request:
+    paths:
+      - '12-CAPABILITY-E-IMPLEMENTAZIONI/STARS_750_AUDIT_APP_2026-11-16/**'
+      - scripts/validate_stars_app_20261116.py
+      - .github/workflows/validate-stars-app-audit-20261116.yml
+permissions:
+  contents: read
+jobs:
+  audit-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate 197 scored interventions, 59 scopes and CAP references
+        run: python3 scripts/validate_stars_app_20261116.py
