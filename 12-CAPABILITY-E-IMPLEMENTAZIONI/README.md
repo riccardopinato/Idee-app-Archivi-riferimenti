@@ -1,5 +1,10 @@
 # Catalogo centrale capability — App Factory
 
+## 16/11/2026 — Nuove stelle GitHub: 737 pubbliche, 110 delta, 17 non coperte da precedenti dossier
+
+[**Audit incrementale, 17 repository e crosswalk per app/CAP**](STELLE_750_DELTA_110_OSS95_AUDIT_2026-11-16.md). Tra le 110 nuove nel confronto con le 632 di ottobre, 89 erano già nell'audit curato OSS95 e 4 in altri lavori. Le 13 mancanti al contatore UI 750 non sono enumerabili via API pubblica. **Nessun nuovo CAP o Product Bible automaticamente modificato.**
+
+
 ## 09/11/2026 — Full scan Flutter (13 repo/1.467 Dart) e misure World Days
 
 [**Audit completo e benchmark reale dei widget**](AUDIT_FLUTTER_COMPLETO_WORLD_DAYS_BENCH_2026-11-09.md) · [**Evidenze scanner JSON**](FLUTTER_FULL_SOURCE_SCAN_2026-11-09.json) · [**8 misure World Days JSON**](WORLD_DAYS_LIST_BENCHMARK_2026-11-09.json). GitHub Actions ha fatto checkout e scansione di **12 repo Flutter pubblici (1.390 Dart)** e **FrameLab privato (77 Dart)** in un runner separato. Nessun match dei pattern API legacy cercati; gli altri 573 indicatori sono solo REVIEW e non bug accertati. World Days: le liste sono eager, ma i paesi reali hanno massimo 4 record e il test CI non dimostra un rallentamento monotono; **P2 confermato il Dropdown Paese che va in overflow a 390px**, [issue #52](https://github.com/riccardopinato/World-Days/issues/52). Nessun codice app, Golden o stato CAP modificato; benchmark widget non equivale a profilo su dispositivo.
