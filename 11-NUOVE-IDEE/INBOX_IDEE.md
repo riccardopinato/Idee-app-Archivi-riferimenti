@@ -1,5 +1,10 @@
 # Inbox nuove idee — da valutare e conservare
 
+## STARS-2026-11-16 — 17 fonti nuove e crosswalk trasversale da 110 stelle
+
+**RESEARCH / NON APPROVATE**. Censimento pubblico GitHub: 737 su 750 stelle indicate; 110 nuove rispetto alle 632 storiche, di cui 89 già OSS95 e quattro già note. Le **17 fonti senza precedente dossier** suggeriscono soprattutto sicurezza per AppLab, Agent Canvas con OpenHands, widget desktop per App Factory Control Center; gli spunti Notes/Anna rimandano principalmente alle CAP già catalogate. [Scheda idee](STELLE_750_OPPORTUNITA_2026-11-16.md) · [Audit CAP e licenze](../12-CAPABILITY-E-IMPLEMENTAZIONI/STELLE_750_DELTA_110_OSS95_AUDIT_2026-11-16.md). Nessun nuovo prodotto, provider, CAP o codice approvato.
+
+
 ## DOCK-2026-001 — Dock desktop modulare e widget contestuali (16/11/2026)
 
 **Stato: IDEA DI RICERCA / NON APPROVATA.** Due fonti fornite dall'utente: [OpenTaskbar (MIT, codice Windows)](https://github.com/alztrk/opentaskbar) e [lumabar (commerciale, source non pubblico)](https://github.com/Acadbek/lumabar). Non creare automaticamente un terzo launcher o duplicare Deskland: il prodotto autonomo avrebbe senso solo come piccola utility Windows molto diversa da un clone, con dock leggero, workflow app e widget opzionali utili (es. stato App Factory PR/CI). Prima verificare domanda, concorrenza, differenziazione, accessibilità, policy e coste di sviluppo. **Nessuna stella confermata dall'API autenticata; nessuna roadmap app modificata.** [Scheda tecnica con crosswalk CAP-0088, CAP-0144, CAP-0182 e source-pin](../12-CAPABILITY-E-IMPLEMENTAZIONI/STELLE_DOCK_WIDGET_INTAKE_2026-11-16.md).
