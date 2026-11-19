@@ -2,6 +2,8 @@
 
 ## Viste operative: ancora da valutare oppure già integrato
 
+**Anna's Diary (19/11/2026):** [sette opportunità riservate a rivalutazione futura](INBOX_IDEE.md#annas-diary--idee-congelate-dallaudit-di-consolidamento-19112026), ID `AD-OPP-20261119-01…07`, **NON APPROVATE / NON DA SVILUPPARE ORA**. Il consolidamento delle 20 attività dell'audit rimane nel repo dell'app: le nuove idee non diventano automaticamente task di roadmap.
+
 Consultare [DA_VALUTARE](../DA_VALUTARE.md) per le opportunità attive, e [GIA_INTEGRATI](../GIA_INTEGRATI.md) per i riusi effettivamente confermati in codice. Le 100 schede IA26 rimangono archiviate anche dopo integrazione: il campo di stato conservativo si trova in [INTEGRATION_STATUS.json](IA-2026-11-02/INTEGRATION_STATUS.json). Una fusione o la semplice somiglianza con un'app non basta a classificarla come integrata.
 
 

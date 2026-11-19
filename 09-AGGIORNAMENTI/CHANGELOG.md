@@ -1,3 +1,7 @@
+## 2026-11-19 — Anna's Diary: opportunità salvate, sviluppo differito
+- Registrate in [Inbox nuove idee](../11-NUOVE-IDEE/INBOX_IDEE.md) **sette proposte** `AD-OPP-20261119-01…07`: Ricordi contestuali, stato sync verificato, backup guidato, help secondario, album a rapporto naturale, mini-planner di Insieme, semplificazione dei percorsi. Cross-link agli issue Anna #224/#225/#327/#329/#355 e PR #365.
+- Tutte `DA_VALUTARE / DEFERRED`, non nuove CAP, non installate, non approvate. La priorità confermata dall'utente è la finalizzazione affidabile di Anna, non l'espansione funzionale. Nessuna modifica alla matrice CAP, alle classifiche o ai repository delle app.
+
 ## 2026-11-13 — Riconciliazione Anna Android ↔ 57 task App Factory 10x (audit documentale)
 - [Matrice completa](../19-APP-FACTORY-10X/ANNA_ANDROID_57_TASK_CROSSWALK_20261113.md): 57/57 ID distinti, stati tratti dalla coda canonica (35 VERIFIED, 21 PLANNED, 1 BLOCKED), evidenza e collegamento reale con Anna.
 - Anna [PR #311](https://github.com/riccardopinato/Agenda-per-Anna/pull/311) e [#312](https://github.com/riccardopinato/Agenda-per-Anna/pull/312) documentano identita' APK firmati storici e rehearsal su emulatore con una **sola categoria Inbox sintetica**, non retention completa, QA fisico o Play.
