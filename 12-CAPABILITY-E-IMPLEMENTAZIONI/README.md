@@ -2,7 +2,7 @@
 
 ## 19/11/2026 — Reverse Engineering & Software Intelligence (REA)
 
-[Candidato E1 e dossier donor](REVERSE_INTELLIGENCE_REA_2026-11-19.md) · [metadati strutturati](REVERSE_INTELLIGENCE_REA_2026-11-19.json). AppLab ora dispone del bridge **REA CLI** (nessun MCP) e del [test reale PASS su PE sintetico](https://github.com/riccardopinato/AppLab/actions/runs/44604806371); **non una CAP E3, non una Golden**, installer storico Deskland indisponibile e nessuna analisi binaria del file originale.
+[Candidato E1 e dossier donor](REVERSE_INTELLIGENCE_REA_2026-11-19.md) · [metadati strutturati](REVERSE_INTELLIGENCE_REA_2026-11-19.json). AppLab dispone del bridge **REA CLI** (nessun MCP), del [test reale PASS su PE sintetico](https://github.com/riccardopinato/AppLab/actions/runs/44604806371) e del [pilota statico PASS sulla release pubblica Deskland Preview v0.1.3](https://github.com/riccardopinato/AppLab/actions/runs/44615407360) con 43/43 SHA pubblicati verificati; **non una CAP E3, non una Golden**, installer storico Deskland indisponibile e nessuna analisi binaria del file originale.
 
 
 

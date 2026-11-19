@@ -19,8 +19,30 @@
     "upstream_sha": "9818b577402ff476e1b59da07970c56472713126",
     "upstream_license": "GPL-3.0",
     "installer_bytes_available": false,
-    "binary_analysis": "NOT_VERIFIED",
-    "source_analysis": "DOCUMENTED"
+    "binary_analysis": "HISTORIC_INSTALLER_NOT_VERIFIED",
+    "source_analysis": "DOCUMENTED",
+    "public_preview_binary_evidence": {
+      "source": "OFFICIAL_UPSTREAM_RELEASE_v0.1.3_NOT_HISTORIC_USER_UPLOAD",
+      "binary_sha256": "e253cad56f1ea0ee2fb9d13ebe8a44f7dbe7232a506ba752cbe54c939c17bf44",
+      "binary_size_bytes": 28001125,
+      "outer_installer_architecture": "PE32_x86",
+      "nsis_extracted_file_count": 48,
+      "published_payload_sha256_matched": 43,
+      "published_payload_sha256_total": 43,
+      "managed_host_sha256": "5337c513e8c14dc492900d315cd57e287e9dfb4ba750ccf96c2fb668fa4ea530",
+      "managed_host_architecture": "PE32PLUS_x86_64",
+      "managed_host_assembly_version": "0.1.3.0",
+      "managed_host_methods": 200,
+      "managed_host_pinvoke_mappings": 40,
+      "managed_host_assembly_references": 7,
+      "rea_cli_pass": true,
+      "real_bin_run": "https://github.com/riccardopinato/AppLab/actions/runs/44615407360",
+      "applab_pr": "https://github.com/riccardopinato/AppLab/pull/237",
+      "new_portable_android_capabilities": 0,
+      "product_decision": "NO_CHANGE_ANDROID",
+      "admission": "E1_RESEARCH_ONLY"
+    },
+    "historic_installer_status": "NOT_AVAILABLE"
   },
   "delivery": {
     "applab_script": "scripts/rea_artifact_intake.py",

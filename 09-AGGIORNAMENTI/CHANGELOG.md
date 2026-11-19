@@ -1,3 +1,7 @@
+## 2026-11-19 — REA CLI: binario pubblico Deskland verificato, E1 invariato
+
+[REA AppLab run #44615407360](https://github.com/riccardopinato/AppLab/actions/runs/44615407360): checksum ufficiale del Preview 0.1.3 PASS, 43/43 payload SHA PASS tramite estrazione statica, real host CIL x64 e WebView2 1.0.4191.47; nessuna nuova capability Android trasferibile. Il diverso installer storico dell'utente non è disponibile. Aggiunto evidence record al dossier REI-REA-20261119, senza modifiche a REGISTRO_CAPABILITY, Golden, app code o release.
+
 ## 2026-11-19 — Anna's Diary: opportunità salvate, sviluppo differito
 
 ## 19/11/2026 — REA CLI static research proof (E1)
