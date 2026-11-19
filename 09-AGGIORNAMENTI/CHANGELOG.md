@@ -1,3 +1,7 @@
+## 2026-11-19 — REA CLI Golden COPY-READY PROCESS / Core Index v30
+
+Core [PR #119](https://github.com/riccardopinato/App-Factory-Core/pull/119) merged `43e9c6cd83fe162d9979c8ca9ff73d3e6c3d4ac6`: nuovo processo Golden `rea_cli_reverse_intelligence`, `COPY_READY`, report AppLab real binary PASS. Catalogo donor E1 sincronizzato con puntatore a Golden centrale; `golden=false` resta valido per la **fonte esterna**, che non è un donor certificato o una libreria runtime. Nessuna promozione E5/CERTIFIED, nessun nuovo modulo app.
+
 ## 2026-11-19 — REA CLI: binario pubblico Deskland verificato, E1 invariato
 
 [REA AppLab run #44615407360](https://github.com/riccardopinato/AppLab/actions/runs/44615407360): checksum ufficiale del Preview 0.1.3 PASS, 43/43 payload SHA PASS tramite estrazione statica, real host CIL x64 e WebView2 1.0.4191.47; nessuna nuova capability Android trasferibile. Il diverso installer storico dell'utente non è disponibile. Aggiunto evidence record al dossier REI-REA-20261119, senza modifiche a REGISTRO_CAPABILITY, Golden, app code o release.

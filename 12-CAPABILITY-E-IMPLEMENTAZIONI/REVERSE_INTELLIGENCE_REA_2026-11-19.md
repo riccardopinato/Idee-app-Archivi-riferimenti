@@ -1,6 +1,8 @@
 # Reverse Engineering & Software Intelligence — candidato di ricerca REA
 
-**19/11/2026 · E1 / RESEARCH ONLY · NON CERTIFIED DONOR · NON GOLDEN**
+**19/11/2026 · Fonte esterna E1 / RESEARCH ONLY · Processo REA CLI: GOLDEN COPY-READY PROCESS (Index v30) · NON CERTIFIED GOLDEN/DONOR**
+
+Il **processo riutilizzabile** è ora registrato centralmente come Golden COPY-READY; il **repository esterno REA** resta una fonte E1 e non diventa automaticamente donor certificato, libreria distribuita o Golden E5. Master v27 e Core Index v30 sono la source of truth. Nessun MCP o nuovo servizio per le app.
 
 ## Fonte e diritti
 
@@ -22,7 +24,7 @@
 | Intake sicuro di un file locale | AppLab scripts/rea_artifact_intake.py | Integrato con test e CI; identità statica, non decompila |
 | REA CLI statico (imports/certificates) | AppLab scripts/rea_cli_bridge.py, [PR #236](https://github.com/riccardopinato/AppLab/pull/236) | [REA invocato davvero: smoke PASS](https://github.com/riccardopinato/AppLab/actions/runs/44604806371) su PE sintetico; PR #236 **merged** |
 | Dossier pilota Deskland | [AppLab report binario pubblico](https://github.com/riccardopinato/AppLab/blob/main/integration/intelligence/REA_DESKLAND_PREVIEW_BINARY_REPORT_2026-11-19.md) + Adaptive-Landscape-Android/docs/REA_DESKLAND_PILOT_2026-11-19.md | **REAL PUBLIC PREVIEW BINARY PASS**; installer storico assente |
-| Admission e certificazione | Factory Golden OSS Reconnaissance / Single-Donor Admission | NON E3/E5, Registry invariato |
+| Processo di analisi autorizzata | [GOLDEN_REA_CLI_REVERSE_INTELLIGENCE_v1.txt](https://github.com/riccardopinato/App-Factory-Core/blob/main/golden/governance/GOLDEN_REA_CLI_REVERSE_INTELLIGENCE_v1.txt) · [PR #119](https://github.com/riccardopinato/App-Factory-Core/pull/119) | **COPY-READY PROCESS** registrato in Index v30/Registry v2; E5 non ottenuto |
 
 Il bridge AppLab invoca la CLI REA 6.9.0 in modo esplicito (senza MCP o server); conserva evidenze JSON e rifiuta automaticamente input non ammessi. **Non** è stato eseguito sul vecchio installer Deskland e il test sintetico non ne certifica la ricostruzione.
 
