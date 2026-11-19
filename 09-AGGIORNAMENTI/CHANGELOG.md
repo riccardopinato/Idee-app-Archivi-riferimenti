@@ -1,3 +1,7 @@
+## 2026-11-19 — REA: Omni independent APK and Flutter AOT PASS
+
+Second REA consumer [Android Omni Cleaner PR #44 merged](https://github.com/riccardopinato/Android-Omni-Cleaner/pull/44), debug APK compiled from exact head and statically inspected by real REA/JADX [run #44627485559](https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44627485559), negative hash and native nonFlutter control, general Android/visual CI GREEN. AppLab real public Flutter Gallery AOT [run #44627824726](https://github.com/riccardopinato/AppLab/actions/runs/44627824726) also PASS, 3 ABI. AppLab PR #238 integration still gated; Golden remains COPY_READY until separate review.
+
 ## 2026-11-19 — REA Software Intelligence: 5 lanes independently gated
 
 Prepared AppLab CLI Desktop/managed/Android/Flutter adapters (PR #238), SHA-checked Desktop manifest, source-vs-REA donor decision gates, catalog read-only intake proposal script/tests, and second independent APK research harness in Android Omni Cleaner (PR #44). Both PR CI and real consumer proof initially PENDING; no E3/E5/certified promotion. No app source code, API, settings, or store release changed.
