@@ -85,5 +85,26 @@
     "scope": "BOUNDED_ON_DEMAND_CLI_PE_RESEARCH_NO_MCP",
     "evidence_url": "https://github.com/riccardopinato/AppLab/actions/runs/44615407360",
     "admission_pr": "https://github.com/riccardopinato/App-Factory-Core/pull/119"
+  },
+  "multi_platform_adoption": {
+    "status": "SOURCE_IMPLEMENTED_IN_PR_TEST_EVIDENCE_PENDING",
+    "applab_pr": "https://github.com/riccardopinato/AppLab/pull/238",
+    "app_lab_compatibility_contract": "scripts/rea_cli_research.py",
+    "desktop_manifest_comparator": "scripts/rea_desktop_manifest_verify.py",
+    "android_apk_engine": "inspect-android-package",
+    "flutter_build_engine": "identify-flutter-build",
+    "flutter_aot_engine": "inspect-dart-aot",
+    "donor_review_adapter": "scripts/rea_donor_review.py",
+    "catalog_e1_importer": "scripts/rea_review_to_catalog.py",
+    "catalog_write_policy": "READ_ONLY_PROPOSAL_BRANCH_PR_REQUIRED",
+    "independent_pilot": {
+      "repository": "riccardopinato/Android-Omni-Cleaner",
+      "pr": "https://github.com/riccardopinato/Android-Omni-Cleaner/pull/44",
+      "target_artifact": "OWN_DEBUG_APK_FROM_PR_HEAD",
+      "outcome": "PENDING_REAL_REA_RUN",
+      "not_certified": true
+    },
+    "golden_maturity": "COPY_READY_NOT_CERTIFIED_PROCESS",
+    "no_mcp": true
   }
 }

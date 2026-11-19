@@ -1,3 +1,7 @@
+## 2026-11-19 — REA Software Intelligence: 5 lanes independently gated
+
+Prepared AppLab CLI Desktop/managed/Android/Flutter adapters (PR #238), SHA-checked Desktop manifest, source-vs-REA donor decision gates, catalog read-only intake proposal script/tests, and second independent APK research harness in Android Omni Cleaner (PR #44). Both PR CI and real consumer proof initially PENDING; no E3/E5/certified promotion. No app source code, API, settings, or store release changed.
+
 ## 2026-11-19 — REA CLI Golden COPY-READY PROCESS / Core Index v30
 
 Core [PR #119](https://github.com/riccardopinato/App-Factory-Core/pull/119) merged `43e9c6cd83fe162d9979c8ca9ff73d3e6c3d4ac6`: nuovo processo Golden `rea_cli_reverse_intelligence`, `COPY_READY`, report AppLab real binary PASS. Catalogo donor E1 sincronizzato con puntatore a Golden centrale; `golden=false` resta valido per la **fonte esterna**, che non è un donor certificato o una libreria runtime. Nessuna promozione E5/CERTIFIED, nessun nuovo modulo app.

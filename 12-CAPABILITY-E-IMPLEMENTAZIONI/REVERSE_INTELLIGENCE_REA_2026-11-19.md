@@ -35,6 +35,15 @@ La pipeline CAP può leggere l'identità fonte/commit e link di evidenza,
 ma non aggiunge oggi un ID CAP per una funzione non collaudata.
 Usare la stessa evidenza per non duplicare registri E1.
 
+## Espansione 5 maxi-step — Desktop / Android / Flutter / Donor / Consumatore indipendente
+
+- **AppLab [PR #238](https://github.com/riccardopinato/AppLab/pull/238):** `scripts/rea_cli_research.py` con quattro modalità (Desktop tree, assembly .NET, APK Android via JADX, APK Flutter build/AOT). Nuovo confronto manifest desktop `scripts/rea_desktop_manifest_verify.py`. Non esegue il target; richiede binario locale, SHA-256, limiti di tempo/dimensione ed evidenze JSON.
+- **Pipeline donor:** `scripts/rea_donor_review.py` verifica report raw e confronto con sorgenti, quindi `scripts/rea_review_to_catalog.py` (questo repository) genera proposte E1 importabili tramite normale PR, **mai un CAP/Donor E3 automatico**.
+- **Secondo consumer indipendente:** [Omni Cleaner PR #44](https://github.com/riccardopinato/Android-Omni-Cleaner/pull/44), workflow separato che compila e ispeziona un APK Kotlin/Compose dell'app stessa e verifica il controllo negativo Flutter. **Esecuzione e accettazione ancora da verificare**; non anticipare E5 o `CERTIFIED PROCESS`.
+- **Golden centrale:** `rea_cli_reverse_intelligence` resta `COPY-READY PROCESS`, Master v27 / Index v30. I test su campione sintetico e sul precedente installer pubblico Deskland non costituiscono nuova prova di secondo consumer.
+
+Il catalogo non conserva di default report di decompilazione, dati di dispositivi, APK privati, credenziali o altri materiali potenzialmente protetti. Promozioni E3/E5 richiedono decisione indipendente e ammissione centrale.
+
 ## Prova reale di reverse engineering (release pubblica, non file storico)
 
 REA CLI v6.9.0 ha ispezionato il pacchetto ufficiale Deskland Preview v0.1.3 sul runner GitHub, [run #44615407360](https://github.com/riccardopinato/AppLab/actions/runs/44615407360). SHA-256 ufficiale dell'installer `e253cad56f1ea0ee2fb9d13ebe8a44f7dbe7232a506ba752cbe54c939c17bf44`; **43/43** contenuti pubblicati estratti e validati per SHA-256, più 5 file NSIS di supporto. Outer installer x86 PE32 con 7 DLL/163 importazioni; vero host `Deskland.exe` 94.208 byte, .NET x64 IL-only, assembly v0.1.3.0, 200 metodi, 40 mapping P/Invoke e WebView2 1.0.4191.47. **Nessuna nuova capability Android trasferibile** trovata rispetto ai sorgenti; l'adozione generalizzata di REA rimane opzionale. Il vecchio `Deskland-Setup.exe` fornito dall'utente **non è stato analizzato**; non usarne i riferimenti per inferire stessi bytes/versione.
