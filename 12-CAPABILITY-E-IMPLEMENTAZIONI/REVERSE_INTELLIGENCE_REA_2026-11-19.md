@@ -35,6 +35,13 @@ La pipeline CAP può leggere l'identità fonte/commit e link di evidenza,
 ma non aggiunge oggi un ID CAP per una funzione non collaudata.
 Usare la stessa evidenza per non duplicare registri E1.
 
+## Evidenze aggiornate — secondo consumer verificato
+
+- **Omni Cleaner PR #44 MERGED**: `5067d3713e3b76919386bdcee93f2da2d54d367d`; [run reale REA/JADX #44627485559](https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44627485559) PASS su APK compilato dal proprio commit sorgente, con controllo SHA negativo, controllo Flutter negativo e CI Android/visual PASS. Il run precedente [#44626294217](https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44626294217) è anch'esso PASS; il primo tentativo fallito per prerequisito JADX mancante è conservato.
+- **Flutter Gallery pubblico reale**: SHA-256 APK `659b5fc6a4319dfe4f117d00ad4e7ec004915ebcadcb96628797fb3544040e29`; [run AppLab #44627824726](https://github.com/riccardopinato/AppLab/actions/runs/44627824726) PASS per `identify-flutter-build` e `inspect-dart-aot` su tre ABI.
+- **AppLab PR #238**: runner multi-piattaforma e test mirati reali PASS, ma integrazione `main` ancora soggetta agli altri gate globali della PR.
+- **Certificazione superiore**: la seconda esecuzione è dimostrata, **ma non costituisce da sola promozione CERTIFIED PROCESS o E5**; serve audit esplicito delle evidenze e aggiornamento governato del Golden Core.
+
 ## Espansione 5 maxi-step — Desktop / Android / Flutter / Donor / Consumatore indipendente
 
 - **AppLab [PR #238](https://github.com/riccardopinato/AppLab/pull/238):** `scripts/rea_cli_research.py` con quattro modalità (Desktop tree, assembly .NET, APK Android via JADX, APK Flutter build/AOT). Nuovo confronto manifest desktop `scripts/rea_desktop_manifest_verify.py`. Non esegue il target; richiede binario locale, SHA-256, limiti di tempo/dimensione ed evidenze JSON.
