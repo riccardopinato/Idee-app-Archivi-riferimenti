@@ -87,7 +87,7 @@
     "admission_pr": "https://github.com/riccardopinato/App-Factory-Core/pull/119"
   },
   "multi_platform_adoption": {
-    "status": "SOURCE_IMPLEMENTED_IN_PR_TEST_EVIDENCE_PENDING",
+    "status": "REAL_CLI_STATIC_PROOF_PASS_APPLAB_MERGE_PENDING",
     "applab_pr": "https://github.com/riccardopinato/AppLab/pull/238",
     "app_lab_compatibility_contract": "scripts/rea_cli_research.py",
     "desktop_manifest_comparator": "scripts/rea_desktop_manifest_verify.py",
@@ -100,11 +100,34 @@
     "independent_pilot": {
       "repository": "riccardopinato/Android-Omni-Cleaner",
       "pr": "https://github.com/riccardopinato/Android-Omni-Cleaner/pull/44",
-      "target_artifact": "OWN_DEBUG_APK_FROM_PR_HEAD",
-      "outcome": "PENDING_REAL_REA_RUN",
+      "merge_commit": "5067d3713e3b76919386bdcee93f2da2d54d367d",
+      "run_url": "https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44627485559",
+      "source_sha": "764f58aae7273f29673d3f0f1bb40e3c248761ad",
+      "artifact_type": "OWN_KOTLIN_COMPOSE_DEBUG_APK_FROM_EXACT_PR_HEAD",
+      "analyzer": "REA_CLI_ANDROID_JADX_6_9_0",
+      "outcome": "PASS_REAL_REA_AND_APPLAB_SOURCE_BOUND",
+      "negative_flutter_build_check": "PASS_NO_LIBAPP_SO",
+      "wrong_expected_sha_rejection": "PASS",
+      "android_ci": "PASS",
+      "visual_ci": "PASS",
+      "merged": true,
+      "runtime_verified": false,
       "not_certified": true
     },
     "golden_maturity": "COPY_READY_NOT_CERTIFIED_PROCESS",
-    "no_mcp": true
+    "no_mcp": true,
+    "flutter_public_proof": {
+      "source_repo": "flutter-team-archive/gallery",
+      "source_sha": "56dc27b62f1b93be9aa6ff93a730fc8952a35085",
+      "release": "v2.9.2",
+      "apk_sha256": "659b5fc6a4319dfe4f117d00ad4e7ec004915ebcadcb96628797fb3544040e29",
+      "cli_real_run": "https://github.com/riccardopinato/AppLab/actions/runs/44627824726",
+      "flutter_abis": 3,
+      "identify_flutter_build": "PASS",
+      "inspect_dart_aot": "PASS",
+      "source_code_recovered": false
+    },
+    "app_lab_exact_head_ci_url": "https://github.com/riccardopinato/AppLab/actions/runs/44627824803",
+    "app_lab_pr_merged": false
   }
 }
