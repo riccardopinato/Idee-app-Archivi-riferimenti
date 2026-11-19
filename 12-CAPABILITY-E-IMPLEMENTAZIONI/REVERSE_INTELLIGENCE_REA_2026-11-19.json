@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "research_id": "REI-REA-20261119",
+  "title": "Reverse Engineering & Software Intelligence",
+  "record_type": "OSS_RESEARCH_CANDIDATE",
+  "admission_level": "E1",
+  "certified_donor": false,
+  "golden": false,
+  "source": {
+    "repository": "morluto/rea",
+    "sha": "4491c84c82140a43fa12390b727840a433875ba8",
+    "license": "MIT",
+    "version": "6.9.0"
+  },
+  "pilot": {
+    "consumer_repository": "riccardopinato/Adaptive-Landscape-Android",
+    "source_sha": "2dcaf70a1d4962e9e81490d84df4f89f355cb7d4",
+    "upstream_repository": "BLEZZ0102/Deskland",
+    "upstream_sha": "9818b577402ff476e1b59da07970c56472713126",
+    "upstream_license": "GPL-3.0",
+    "installer_bytes_available": false,
+    "binary_analysis": "NOT_VERIFIED",
+    "source_analysis": "DOCUMENTED"
+  },
+  "delivery": {
+    "applab_script": "scripts/rea_artifact_intake.py",
+    "catalog_dossier": "12-CAPABILITY-E-IMPLEMENTAZIONI/REVERSE_INTELLIGENCE_REA_2026-11-19.md",
+    "deskland_dossier": "docs/REA_DESKLAND_PILOT_2026-11-19.md"
+  },
+  "guards": [
+    "NO_COPY_OF_GPL_CODE_OR_ASSETS",
+    "NO_EXECUTION_OF_UNTRUSTED_INSTALLER",
+    "NO_AUTOMATIC_DONOR_PROMOTION",
+    "NO_FALSE_RUNTIME_CLAIMS"
+  ]
+}
