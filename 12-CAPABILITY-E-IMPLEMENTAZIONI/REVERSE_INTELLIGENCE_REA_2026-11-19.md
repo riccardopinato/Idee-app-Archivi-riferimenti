@@ -19,10 +19,12 @@
 | Elemento | Owner canonico | Stato |
 |---|---|---|
 | Ricerca/fonte OSS e diritti | Idee-app / Capability catalog | E1 pinned / proposta |
-| Intake sicuro di un file locale | AppLab scripts/rea_artifact_intake.py | Codice candidato e test; CI da verificare |
-| Reverse engineering REA | morluto/rea, esterno | Documentato, NON installato o eseguito qui |
+| Intake sicuro di un file locale | AppLab scripts/rea_artifact_intake.py | Integrato con test e CI; identità statica, non decompila |
+| REA CLI statico (imports/certificates) | AppLab scripts/rea_cli_bridge.py, [PR #236](https://github.com/riccardopinato/AppLab/pull/236) | [REA invocato davvero: smoke PASS](https://github.com/riccardopinato/AppLab/actions/runs/44604806371) su PE sintetico; PR AppLab con gate finali in corso |
 | Report di ricostruzione app | Adaptive-Landscape-Android/docs/REA_DESKLAND_PILOT_2026-11-19.md | Source-side; installer assente |
 | Admission e certificazione | Factory Golden OSS Reconnaissance / Single-Donor Admission | NON E3/E5, Registry invariato |
+
+Il bridge AppLab invoca la CLI REA 6.9.0 in modo esplicito (senza MCP o server); conserva evidenze JSON e rifiuta automaticamente input non ammessi. **Non** è stato eseguito sul vecchio installer Deskland e il test sintetico non ne certifica la ricostruzione.
 
 Il report AppLab è un *annesso di ricerca read-only*, non entra negli
 artifact trusted di certificazione, non abilita agente, code execution,

@@ -1,4 +1,9 @@
 ## 2026-11-19 — Anna's Diary: opportunità salvate, sviluppo differito
+
+## 19/11/2026 — REA CLI static research proof (E1)
+
+REA 6.9.0 invocato realmente tramite CLI nel test AppLab su PE sintetico ([run #44604806371](https://github.com/riccardopinato/AppLab/actions/runs/44604806371)); adapter AppLab PR #236. Aggiornati dossier e metadati E1, senza modificare REGISTRO_CAPABILITY, senza analisi dell'installer Deskland storico e senza promozione donor/Golden.
+
 - Registrate in [Inbox nuove idee](../11-NUOVE-IDEE/INBOX_IDEE.md) **sette proposte** `AD-OPP-20261119-01…07`: Ricordi contestuali, stato sync verificato, backup guidato, help secondario, album a rapporto naturale, mini-planner di Insieme, semplificazione dei percorsi. Cross-link agli issue Anna #224/#225/#327/#329/#355 e PR #365.
 - Tutte `DA_VALUTARE / DEFERRED`, non nuove CAP, non installate, non approvate. La priorità confermata dall'utente è la finalizzazione affidabile di Anna, non l'espansione funzionale. Nessuna modifica alla matrice CAP, alle classifiche o ai repository delle app.
 
