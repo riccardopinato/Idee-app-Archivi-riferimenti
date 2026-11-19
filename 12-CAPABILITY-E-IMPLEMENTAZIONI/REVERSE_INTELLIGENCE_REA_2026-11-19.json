@@ -25,12 +25,27 @@
   "delivery": {
     "applab_script": "scripts/rea_artifact_intake.py",
     "catalog_dossier": "12-CAPABILITY-E-IMPLEMENTAZIONI/REVERSE_INTELLIGENCE_REA_2026-11-19.md",
-    "deskland_dossier": "docs/REA_DESKLAND_PILOT_2026-11-19.md"
+    "deskland_dossier": "docs/REA_DESKLAND_PILOT_2026-11-19.md",
+    "applab_cli_script": "scripts/rea_cli_bridge.py",
+    "applab_cli_pr": "https://github.com/riccardopinato/AppLab/pull/236",
+    "real_cli_smoke_run": "https://github.com/riccardopinato/AppLab/actions/runs/44604806371"
   },
   "guards": [
     "NO_COPY_OF_GPL_CODE_OR_ASSETS",
     "NO_EXECUTION_OF_UNTRUSTED_INSTALLER",
     "NO_AUTOMATIC_DONOR_PROMOTION",
     "NO_FALSE_RUNTIME_CLAIMS"
-  ]
+  ],
+  "cli_proof": {
+    "mode": "CLI_ONLY_NO_MCP",
+    "version": "6.9.0",
+    "npm_pinned": true,
+    "engine_invoked": true,
+    "environment": "EPHEMERAL_GITHUB_RUNNER",
+    "test_artifact": "SYNTHETIC_PE_NOT_DESKLAND",
+    "result": "PASS",
+    "deskland_installer_analysis": "NOT_VERIFIED",
+    "overall_admission": "E1_RESEARCH_ONLY",
+    "source_sha": "9e9273f313770d5da9fbaca06a7e54b4a05c8f04"
+  }
 }
