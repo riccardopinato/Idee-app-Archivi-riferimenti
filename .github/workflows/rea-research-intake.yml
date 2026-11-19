@@ -1,0 +1,31 @@
+name: REA research donor intake validation (E1 only)
+
+on:
+  pull_request:
+    paths:
+      - "scripts/rea_review_to_catalog.py"
+      - "tests/test_rea_review_to_catalog.py"
+      - ".github/workflows/rea-research-intake.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact proposal head
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.12"
+      - name: Negative/positive REA donor route cases
+        run: |
+          python -m pip install pytest
+          python -m pytest tests/test_rea_review_to_catalog.py -q
