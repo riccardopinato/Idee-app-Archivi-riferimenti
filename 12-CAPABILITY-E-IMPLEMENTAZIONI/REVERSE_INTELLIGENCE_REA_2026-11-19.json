@@ -74,20 +74,21 @@
     "id": "rea_cli_reverse_intelligence",
     "title": "REA CLI / Reverse Engineering & Software Intelligence",
     "factory_repository": "riccardopinato/App-Factory-Core",
-    "factory_commit": "43e9c6cd83fe162d9979c8ca9ff73d3e6c3d4ac6",
-    "index_version": 30,
+    "factory_commit": "f8f4a8bb5f36ad272711f3d90dafbc7828dbbe09",
+    "index_version": 31,
     "registry_version": 2,
-    "registry_status": "COPY-READY PROCESS",
-    "admission_level": "COPY_READY",
+    "registry_status": "CERTIFIED PROCESS",
+    "admission_level": "CERTIFIED_PROCESS",
     "file": "golden/governance/GOLDEN_REA_CLI_REVERSE_INTELLIGENCE_v1.txt",
     "certified_golden": false,
-    "certified_process": false,
-    "scope": "BOUNDED_ON_DEMAND_CLI_PE_RESEARCH_NO_MCP",
-    "evidence_url": "https://github.com/riccardopinato/AppLab/actions/runs/44615407360",
-    "admission_pr": "https://github.com/riccardopinato/App-Factory-Core/pull/119"
+    "certified_process": true,
+    "scope": "SCOPED_ON_DEMAND_STATIC_CLI_WINDOWS_FLUTTER_ANDROID_INDEPENDENT_CONSUMER_NO_MCP",
+    "evidence_url": "https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44626294217",
+    "admission_pr": "https://github.com/riccardopinato/App-Factory-Core/pull/119",
+    "certification_pr": "https://github.com/riccardopinato/App-Factory-Core/pull/122"
   },
   "multi_platform_adoption": {
-    "status": "SOURCE_IMPLEMENTED_IN_PR_TEST_EVIDENCE_PENDING",
+    "status": "MERGED_AND_REAL_CLI_VERIFIED_CROSS_PROJECT",
     "applab_pr": "https://github.com/riccardopinato/AppLab/pull/238",
     "app_lab_compatibility_contract": "scripts/rea_cli_research.py",
     "desktop_manifest_comparator": "scripts/rea_desktop_manifest_verify.py",
@@ -101,10 +102,31 @@
       "repository": "riccardopinato/Android-Omni-Cleaner",
       "pr": "https://github.com/riccardopinato/Android-Omni-Cleaner/pull/44",
       "target_artifact": "OWN_DEBUG_APK_FROM_PR_HEAD",
-      "outcome": "PENDING_REAL_REA_RUN",
-      "not_certified": true
+      "outcome": "REAL_REA_JADX_PASS_EXACT_HEAD",
+      "not_certified": false,
+      "scope_only_process": true,
+      "run": "https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44626294217",
+      "apk_sha256": "b2cb75cd332f1261ba5bfee69c47c994fd8acc0d64df88886be81c32fa14e977",
+      "source_sha": "b594adc670bce482d0768638648196d92a3b8eaf"
     },
-    "golden_maturity": "COPY_READY_NOT_CERTIFIED_PROCESS",
-    "no_mcp": true
+    "golden_maturity": "CERTIFIED_PROCESS_SCOPED_NOT_CERTIFIED_GOLDEN",
+    "no_mcp": true,
+    "applab_merge_sha": "b8bfeb0765451adc95eda15f0c6d6abf5e10639f",
+    "real_flutter_gallery_run": "https://github.com/riccardopinato/AppLab/actions/runs/44626932001",
+    "independent_flutter_pilot": {
+      "repository": "riccardopinato/Adaptive-Landscape-Android",
+      "pr": "https://github.com/riccardopinato/Adaptive-Landscape-Android/pull/42",
+      "main_merge_sha": "ae76dea3af9e23dfd078107ad9ee40af2e7041ed",
+      "source_sha": "03fa33b7e6e563fd6021e0522bd40e82825945a1",
+      "apk_sha256": "70cdf981ae8cae0832066b5d29657105baa0f275256c35fef3594724f95be33d",
+      "apk_bytes": 17805211,
+      "commands": [
+        "identify-flutter-build",
+        "inspect-dart-aot",
+        "inspect-android-package"
+      ],
+      "result": "REAL_REA_CLI_PASS_NO_RUNTIME_CERTIFICATION",
+      "run": "https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/44630662704"
+    }
   }
 }
