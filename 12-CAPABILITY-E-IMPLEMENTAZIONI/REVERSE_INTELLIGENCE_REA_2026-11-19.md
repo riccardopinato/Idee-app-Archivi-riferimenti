@@ -1,8 +1,18 @@
 # Reverse Engineering & Software Intelligence — candidato di ricerca REA
 
-**19/11/2026 · Fonte esterna E1 / RESEARCH ONLY · Processo REA CLI: GOLDEN COPY-READY PROCESS (Index v30) · NON CERTIFIED GOLDEN/DONOR**
+**19/11/2026 · Fonte esterna E1 / RESEARCH ONLY · Processo REA CLI: GOLDEN CERTIFIED PROCESS (Index v31; scope statico) · NON CERTIFIED GOLDEN/DONOR**
 
-Il **processo riutilizzabile** è ora registrato centralmente come Golden COPY-READY; il **repository esterno REA** resta una fonte E1 e non diventa automaticamente donor certificato, libreria distribuita o Golden E5. Master v27 e Core Index v30 sono la source of truth. Nessun MCP o nuovo servizio per le app.
+Il **processo riutilizzabile** è ora registrato centralmente come Golden CERTIFIED PROCESS (scope statico); il **repository esterno REA** resta una fonte E1 e non diventa automaticamente donor certificato, libreria distribuita o Golden E5. Master v27 e Core Index v30 sono la source of truth. Nessun MCP o nuovo servizio per le app.
+
+## Riconciliazione dei cinque maxi-step — verificati e integrati
+
+- **Desktop / managed:** AppLab PR #238 merged `b8bfeb0765451adc95eda15f0c6d6abf5e10639f` con adapter e verificatore manifest canonici; [Deskland reale PASS](https://github.com/riccardopinato/AppLab/actions/runs/44615407360).
+- **Android / JADX:** [Omni Cleaner PR #44](https://github.com/riccardopinato/Android-Omni-Cleaner/pull/44) merged: proprio APK debug ispezionato via REA CLI [PASS](https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44626294217) con hash, controllo Flutter negativo e rifiuto SHA errato.
+- **Flutter / Dart AOT:** [Flutter Gallery real CLI PASS](https://github.com/riccardopinato/AppLab/actions/runs/44626932001) e [Adaptive Landscape proprio APK ARM64 PASS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/44630662704) con identificazione Flutter, AOT e Android/JADX; PR #42 merged.
+- **Donor:** `scripts/rea_donor_review.py` e `scripts/rea_review_to_catalog.py` in AppLab/catalogo producono/propongono E1 con confronto e diritti espliciti; nessuna promozione di codice esterno senza test.
+- **Golden:** il *processo di ricerca REA CLI* ora `CERTIFIED PROCESS` nell'Index **v31**, Core [PR #122 merged](https://github.com/riccardopinato/App-Factory-Core/pull/122), commit `f8f4a8bb5f36ad272711f3d90dafbc7828dbbe09`. **NON** significa `CERTIFIED GOLDEN`, donor E3 o app pronta allo Store. La fonte terza REA resta E1.
+
+L'adapter CLI canonico è uno solo: `riccardopinato/AppLab/scripts/rea_cli_research.py` (PR #238). La PR #239 alternativa è stata chiusa senza merge per evitare un secondo engine concorrente. Analisi solo di artefatti autorizzati; no MCP, no upload di APK o evidenze grezze private. Il vecchio installer personale `Deskland-Setup.exe` resta non disponibile e non analizzato.
 
 ## Fonte e diritti
 
@@ -24,7 +34,7 @@ Il **processo riutilizzabile** è ora registrato centralmente come Golden COPY-R
 | Intake sicuro di un file locale | AppLab scripts/rea_artifact_intake.py | Integrato con test e CI; identità statica, non decompila |
 | REA CLI statico (imports/certificates) | AppLab scripts/rea_cli_bridge.py, [PR #236](https://github.com/riccardopinato/AppLab/pull/236) | [REA invocato davvero: smoke PASS](https://github.com/riccardopinato/AppLab/actions/runs/44604806371) su PE sintetico; PR #236 **merged** |
 | Dossier pilota Deskland | [AppLab report binario pubblico](https://github.com/riccardopinato/AppLab/blob/main/integration/intelligence/REA_DESKLAND_PREVIEW_BINARY_REPORT_2026-11-19.md) + Adaptive-Landscape-Android/docs/REA_DESKLAND_PILOT_2026-11-19.md | **REAL PUBLIC PREVIEW BINARY PASS**; installer storico assente |
-| Processo di analisi autorizzata | [GOLDEN_REA_CLI_REVERSE_INTELLIGENCE_v1.txt](https://github.com/riccardopinato/App-Factory-Core/blob/main/golden/governance/GOLDEN_REA_CLI_REVERSE_INTELLIGENCE_v1.txt) · [PR #119](https://github.com/riccardopinato/App-Factory-Core/pull/119) | **COPY-READY PROCESS** registrato in Index v30/Registry v2; E5 non ottenuto |
+| Processo di analisi autorizzata | [GOLDEN_REA_CLI_REVERSE_INTELLIGENCE_v1.txt](https://github.com/riccardopinato/App-Factory-Core/blob/main/golden/governance/GOLDEN_REA_CLI_REVERSE_INTELLIGENCE_v1.txt) · [PR #119](https://github.com/riccardopinato/App-Factory-Core/pull/119) | **CERTIFIED PROCESS** limitato registrato in Index v31/Registry v2; CERTIFIED GOLDEN/E5 non ottenuto |
 
 Il bridge AppLab invoca la CLI REA 6.9.0 in modo esplicito (senza MCP o server); conserva evidenze JSON e rifiuta automaticamente input non ammessi. **Non** è stato eseguito sul vecchio installer Deskland e il test sintetico non ne certifica la ricostruzione.
 
