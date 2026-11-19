@@ -1,5 +1,11 @@
 # Catalogo centrale capability — App Factory
 
+## 19/11/2026 — Reverse Engineering & Software Intelligence (REA)
+
+[Candidato E1 e dossier donor](REVERSE_INTELLIGENCE_REA_2026-11-19.md) · [metadati strutturati](REVERSE_INTELLIGENCE_REA_2026-11-19.json). Integrazione preparatoria in AppLab e studio sorgente Deskland; **non una CAP E3, non una Golden**, installer Windows storico non accessibile in questa sessione e nessun test binario eseguito.
+
+
+
 ## 16/11/2026 — Audit specifico app × stelle: 197 interventi con due punteggi
 
 [**Apri l'audit completo: 35 repository verificati documentalmente e 24 app/idee CAP-only**](STARS_750_AUDIT_APP_2026-11-16/00-INDEX.md). Include **59 schede, 197 interventi**, per ciascuno priorità P e fattibilità F /100, CAP esistenti, motivazione, fonte HEAD e distinzione stato. [Applicazioni A–M](STARS_750_AUDIT_APP_2026-11-16/01_APP_A_M.md) · [Applicazioni N–Z](STARS_750_AUDIT_APP_2026-11-16/02_APP_N_Z.md) · [Infrastrutture/Agenti](STARS_750_AUDIT_APP_2026-11-16/03_INFRA_AGENTI.md) · [App solo CAP, repo non verificato](STARS_750_AUDIT_APP_2026-11-16/04_CAP_ONLY_NO_REPO.md). La ricognizione NON è certificazione di runtime né modifica delle app; nessun nuovo ID CAP.
