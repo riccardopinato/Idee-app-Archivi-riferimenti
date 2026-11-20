@@ -1,4 +1,28 @@
+## 2026-11-19 — REA 5 maxi-step conclusi, Golden process certificato (scoped)
+
+- AppLab PR #238 **merged**: adapter CLI unico Desktop/.NET/Android/JADX/Flutter AOT, confronto manifest, donor review; real proof Desktop Deskland, Flutter Gallery PASS.
+- Second consumer Android Omni Cleaner PR #44 merged, own APK + REA/JADX [PASS](https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44626294217), negative cases; terzo consumer Adaptive Landscape PR #42 merged, own Flutter ARM64 AOT e JADX [PASS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/44630662704).
+- Core Golden Index v31 PR #122 merged: REA CLI static intelligence `CERTIFIED PROCESS` limitato, MA non CERTIFIED GOLDEN, non donor E3, non app runtime/Play. Il repository terzo REA resta ricerca E1; nessuna copia asset/codice GPL, nessun MCP.
+- AppLab duplicative PR #239 chiusa senza merge, un solo adapter canonico.
+
+## 2026-11-19 — REA Software Intelligence: 5 lanes independently gated
+
+Prepared AppLab CLI Desktop/managed/Android/Flutter adapters (PR #238), SHA-checked Desktop manifest, source-vs-REA donor decision gates, catalog read-only intake proposal script/tests, and second independent APK research harness in Android Omni Cleaner (PR #44). Both PR CI and real consumer proof initially PENDING; no E3/E5/certified promotion. No app source code, API, settings, or store release changed.
+
+## 2026-11-19 — REA CLI Golden COPY-READY PROCESS / Core Index v30
+
+Core [PR #119](https://github.com/riccardopinato/App-Factory-Core/pull/119) merged `43e9c6cd83fe162d9979c8ca9ff73d3e6c3d4ac6`: nuovo processo Golden `rea_cli_reverse_intelligence`, `COPY_READY`, report AppLab real binary PASS. Catalogo donor E1 sincronizzato con puntatore a Golden centrale; `golden=false` resta valido per la **fonte esterna**, che non è un donor certificato o una libreria runtime. Nessuna promozione E5/CERTIFIED, nessun nuovo modulo app.
+
+## 2026-11-19 — REA CLI: binario pubblico Deskland verificato, E1 invariato
+
+[REA AppLab run #44615407360](https://github.com/riccardopinato/AppLab/actions/runs/44615407360): checksum ufficiale del Preview 0.1.3 PASS, 43/43 payload SHA PASS tramite estrazione statica, real host CIL x64 e WebView2 1.0.4191.47; nessuna nuova capability Android trasferibile. Il diverso installer storico dell'utente non è disponibile. Aggiunto evidence record al dossier REI-REA-20261119, senza modifiche a REGISTRO_CAPABILITY, Golden, app code o release.
+
 ## 2026-11-19 — Anna's Diary: opportunità salvate, sviluppo differito
+
+## 19/11/2026 — REA CLI static research proof (E1)
+
+REA 6.9.0 invocato realmente tramite CLI nel test AppLab su PE sintetico ([run #44604806371](https://github.com/riccardopinato/AppLab/actions/runs/44604806371)); adapter AppLab PR #236. Aggiornati dossier e metadati E1, senza modificare REGISTRO_CAPABILITY, senza analisi dell'installer Deskland storico e senza promozione donor/Golden.
+
 - Registrate in [Inbox nuove idee](../11-NUOVE-IDEE/INBOX_IDEE.md) **sette proposte** `AD-OPP-20261119-01…07`: Ricordi contestuali, stato sync verificato, backup guidato, help secondario, album a rapporto naturale, mini-planner di Insieme, semplificazione dei percorsi. Cross-link agli issue Anna #224/#225/#327/#329/#355 e PR #365.
 - Tutte `DA_VALUTARE / DEFERRED`, non nuove CAP, non installate, non approvate. La priorità confermata dall'utente è la finalizzazione affidabile di Anna, non l'espansione funzionale. Nessuna modifica alla matrice CAP, alle classifiche o ai repository delle app.
 

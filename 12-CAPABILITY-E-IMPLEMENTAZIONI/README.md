@@ -2,7 +2,10 @@
 
 ## 19/11/2026 — Reverse Engineering & Software Intelligence (REA)
 
-[Candidato E1 e dossier donor](REVERSE_INTELLIGENCE_REA_2026-11-19.md) · [metadati strutturati](REVERSE_INTELLIGENCE_REA_2026-11-19.json). Integrazione preparatoria in AppLab e studio sorgente Deskland; **non una CAP E3, non una Golden**, installer Windows storico non accessibile in questa sessione e nessun test binario eseguito.
+**5 maxi-step REA:** [AppLab modalità Desktop/Android/Flutter + donor review (PR #238)](https://github.com/riccardopinato/AppLab/pull/238) · [intake E1 di questo catalogo](../scripts/rea_review_to_catalog.py) · [pilot indipendente Omni Cleaner (PR #44)](https://github.com/riccardopinato/Android-Omni-Cleaner/pull/44). Esiti reali: **PASS** su AppLab Desktop/.NET, Flutter Gallery, Omni Cleaner APK/JADX e Adaptive Landscape Flutter ARM64. [Golden Core Index v31: CERTIFIED PROCESS limitato](https://github.com/riccardopinato/App-Factory-Core/pull/122), non CERTIFIED GOLDEN; repo REA esterno rimane E1.
+
+
+[Candidato E1 e dossier donor](REVERSE_INTELLIGENCE_REA_2026-11-19.md) · [metadati strutturati](REVERSE_INTELLIGENCE_REA_2026-11-19.json). AppLab dispone del bridge **REA CLI** (nessun MCP), del [test reale PASS su PE sintetico](https://github.com/riccardopinato/AppLab/actions/runs/44604806371) e del [pilota statico PASS sulla release pubblica Deskland Preview v0.1.3](https://github.com/riccardopinato/AppLab/actions/runs/44615407360) con 43/43 SHA pubblicati verificati; **fonte esterna E1/non CAP E3; processo [GOLDEN CERTIFIED PROCESS](https://github.com/riccardopinato/App-Factory-Core/blob/main/golden/governance/GOLDEN_REA_CLI_REVERSE_INTELLIGENCE_v1.txt) in Core Index v31 (non CERTIFIED GOLDEN)**, installer storico Deskland indisponibile e nessuna analisi binaria del file originale.
 
 
 
