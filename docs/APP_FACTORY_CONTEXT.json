@@ -3,17 +3,17 @@
   "sources": [
     {
       "branch": "main",
-      "commit_date": "2026-11-19T16:00:44Z",
+      "commit_date": "2026-11-19T23:20:40Z",
       "purpose": "Master, Golden e policy",
       "repository": "riccardopinato/App-Factory-Core",
-      "sha": "5f744d4714c9bacd9b19fdf1b37be4855ed03f09"
+      "sha": "4df94ac3b3ea22a2323634fe83c3c7770fe3b835"
     },
     {
       "branch": "main",
-      "commit_date": "2026-11-19T16:52:41Z",
+      "commit_date": "2026-11-20T00:20:58Z",
       "purpose": "QA e orchestrazione",
       "repository": "riccardopinato/AppLab",
-      "sha": "800db6b3d1d36ecbe0867ae1f046032baae4d6e6"
+      "sha": "4496a12eaf5160a484b2da645f623dd2aa85afa3"
     }
   ]
 }
