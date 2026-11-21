@@ -5,7 +5,7 @@
 
 ## Nuovo prodotto autorizzato — 21/11/2026
 
-- **ART-2026-001 — Atelier del Giorno**: app Android Flutter indipendente, esplorazione arte quotidiana e wallpaper con fonte Open Access AIC. **IN_CODICE / SOURCE_MERGED** nel [repo ArtDrift](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery) a `main@991459f`, PR #1 merged; canvas 2D e dettaglio immersivo implementati, CI Flutter + APK debug PASS pre-merge ([run](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44858976559)). **Nessuna prova su telefono o Store; APK di test non è una release pubblica**. Dossier e confini: [ART-2026-001](../11-NUOVE-IDEE/ART-2026-001_ATELIER_DEL_GIORNO.md). Il materiale della chat non è un commit GitHub. Non confondere con Adaptive Landscape Android.
+- **ART-2026-001 — Atelier del Giorno**: app Android Flutter indipendente, esplorazione arte quotidiana e wallpaper con fonte Open Access AIC. **IN_CODICE / SOURCE_MERGED** nel [repo ArtDrift](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery) a `main@cc54265`, PR #1 merged; canvas 2D e dettaglio immersivo implementati, CI Flutter + APK debug PASS pre-merge ([run](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44858976559)) · [ARM64 run PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44859605655). **Nessuna prova su telefono o Store; APK di test non è una release pubblica**. Dossier e confini: [ART-2026-001](../11-NUOVE-IDEE/ART-2026-001_ATELIER_DEL_GIORNO.md). Il materiale della chat non è un commit GitHub. Non confondere con Adaptive Landscape Android.
 
 ## Verifiche repository: suite già costruite e nuovi prodotti compositi (30/10/2026)
 
