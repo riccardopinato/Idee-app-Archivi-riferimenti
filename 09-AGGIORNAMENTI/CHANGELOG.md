@@ -1,3 +1,6 @@
+## 2026-11-21 — ART-2026-001: CORREZIONE SCOPE, canvas infinito prioritario
+- Correzione esplicita dell'utente rispetto alla consegna Flutter v0.1: l'app Android deve essere un'esplorazione spaziale canvas 2D senza confini con pan/pinch/zoom e caricamento progressivo in viewport, non una Home quotidiana e griglie. Il vecchio MVP NON implementa questa esperienza, e non costituisce prova funzionale. Nome commerciale non scelto. Nessuna nuova build, codice app, CI o APK dichiarato.
+
 ## 2026-11-21 — ART-2026-001: autorizzato avvio app Android arte quotidiana
 - Su richiesta esplicita dell'utente, l'idea Atelier del Giorno è passata da IDEA/DA_VALUTARE a IN_ROADMAP. Sorgenti Flutter/Kotlin v0.1 preparati come file di consegna in chat: ricerca AIC, opera giornaliera deterministica, zoom, favoriti locali e impostazione wallpaper manuale. **Non** sono un nuovo repository, APK compilato, build/CI PASS, prototipo collaudato o release. Rotazione giornaliera automatica, catalogo curatoriale verificato per diritti e test fisici restano aperti.
 - Nessuna integrazione di feed, immagini, brand, UI o codice di anotherboring.day. Provider AIC: filtro pubblico dominio in codice ma diritti/termini per record e uso commerciale da validare prima della distribuzione.
