@@ -1,5 +1,9 @@
 ## 2026-11-19 — REA 5 maxi-step conclusi, Golden process certificato (scoped)
 
+## 2026-11-21 — GAME-2026-001: nuova idea shooter zombie pixel art
+- Su richiesta dell'utente, registrata in [11-NUOVE-IDEE](../11-NUOVE-IDEE/GAME-2026-001_ZOMBIE_PIXEL_SURVIVAL.md) e [Inbox](../11-NUOVE-IDEE/INBOX_IDEE.md) l'idea mobile `GAME-2026-001` (nome provvisorio Zombie Pixel Survival): screenshot del 20/11/2026, ipotesi di gameplay touch, MVP, monetizzazione opzionale e rischi.
+- Valutazione commerciale **7,5/10** puramente qualitativa; **IDEA / DA_VALUTARE**, non prodotto in codice né roadmap approvata. Originale, licenze, asset, mercato e retention ancora da verificare. Nessuna CAP/Golden/app modificata.
+
 - AppLab PR #238 **merged**: adapter CLI unico Desktop/.NET/Android/JADX/Flutter AOT, confronto manifest, donor review; real proof Desktop Deskland, Flutter Gallery PASS.
 - Second consumer Android Omni Cleaner PR #44 merged, own APK + REA/JADX [PASS](https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44626294217), negative cases; terzo consumer Adaptive Landscape PR #42 merged, own Flutter ARM64 AOT e JADX [PASS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/44630662704).
 - Core Golden Index v31 PR #122 merged: REA CLI static intelligence `CERTIFIED PROCESS` limitato, MA non CERTIFIED GOLDEN, non donor E3, non app runtime/Play. Il repository terzo REA resta ricerca E1; nessuna copia asset/codice GPL, nessun MCP.
