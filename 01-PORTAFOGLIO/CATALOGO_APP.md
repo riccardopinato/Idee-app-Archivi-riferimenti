@@ -3,6 +3,10 @@
 > **Audit corrente:** [verifica trasversale del 05/11/2026](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_360_RICONCILIAZIONE_2026-11-05.md). Le descrizioni sotto sono storiche/editoriali: per stato di codice, release e verifica fisica prevalgono gli HEAD e le roadmap di ciascun prodotto.
 
 
+## Nuovo prodotto autorizzato — 21/11/2026
+
+- **ART-2026-001 — Atelier del Giorno**: app Android Flutter indipendente, esplorazione arte quotidiana e wallpaper con fonte Open Access AIC. **IN_ROADMAP**, primi file sorgente v0.1 consegnati localmente in chat; **nessun repo app, CI, APK, test fisico o release attestati**. Dossier e confini: [ART-2026-001](../11-NUOVE-IDEE/ART-2026-001_ATELIER_DEL_GIORNO.md). Il materiale della chat non è un commit GitHub. Non confondere con Adaptive Landscape Android.
+
 ## Verifiche repository: suite già costruite e nuovi prodotti compositi (30/10/2026)
 
 - **Notification Control** — suite in codice verificata; accorpa Undo, Pausa Ping, Follow Up, Critical Alert, Pickup Code e Luminous. Repo `riccardopinato/Notification-Control`; release live non certificata in questo audit.
