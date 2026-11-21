@@ -1,3 +1,7 @@
+## 2026-11-21 — ART-2026-001: autorizzato avvio app Android arte quotidiana
+- Su richiesta esplicita dell'utente, l'idea Atelier del Giorno è passata da IDEA/DA_VALUTARE a IN_ROADMAP. Sorgenti Flutter/Kotlin v0.1 preparati come file di consegna in chat: ricerca AIC, opera giornaliera deterministica, zoom, favoriti locali e impostazione wallpaper manuale. **Non** sono un nuovo repository, APK compilato, build/CI PASS, prototipo collaudato o release. Rotazione giornaliera automatica, catalogo curatoriale verificato per diritti e test fisici restano aperti.
+- Nessuna integrazione di feed, immagini, brand, UI o codice di anotherboring.day. Provider AIC: filtro pubblico dominio in codice ma diritti/termini per record e uso commerciale da validare prima della distribuzione.
+
 ## 2026-11-19 — REA 5 maxi-step conclusi, Golden process certificato (scoped)
 
 ## 2026-11-21 — GAME-2026-001: nuova idea shooter zombie pixel art
