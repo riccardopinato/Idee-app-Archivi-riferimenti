@@ -1,3 +1,7 @@
+## 2026-11-21 — ART-2026-001: ArtDrift Android source merged, APK debug CI PASS
+- Creato vero consumer [ArtDrift-Infinite-Art-Gallery](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery), [PR #1 merged](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/1), main `991459f`. Schermata canvas infinito con gesture, opere da fonte Open Access e dettaglio con testo originale e wallpaper manuale, non la vecchia galleria a schede.
+- [CI esatta PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44858976559) su head `c90479b6`: analyze, unit test e build APK debug con artifact. Nessun device QA, Play Store, release signing o catalogo commerciale certificato; catalogo virtuale ancora con ripetizioni in regioni distanti. Acceptance [#2](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/2).
+
 ## 2026-11-21 — ART-2026-001: CORREZIONE SCOPE, canvas infinito prioritario
 - Correzione esplicita dell'utente rispetto alla consegna Flutter v0.1: l'app Android deve essere un'esplorazione spaziale canvas 2D senza confini con pan/pinch/zoom e caricamento progressivo in viewport, non una Home quotidiana e griglie. Il vecchio MVP NON implementa questa esperienza, e non costituisce prova funzionale. Nome commerciale non scelto. Nessuna nuova build, codice app, CI o APK dichiarato.
 
