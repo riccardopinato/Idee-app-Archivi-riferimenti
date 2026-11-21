@@ -1,5 +1,5 @@
 # ART-2026-001 — Atelier del Giorno
-**Stato:** IDEA / DA_VALUTARE · 21/11/2026 · **nessuna approvazione prodotto, repository, build o pubblicazione**
+**Stato:** IN_ROADMAP / SVILUPPO ANDROID AUTORIZZATO · 21/11/2026 · **prototipo sorgente locale NON COMPILATO / NON VERIFICATO; nessun repository app, APK o pubblicazione attestato**
 
 ## Provenienza e confine
 Ispirazione dell'utente: [anotherboring.day](https://anotherboring.day/), con servizio di opere d'arte curate quotidianamente e [app Mac](https://apps.apple.com/lu/app/another-boring-art-wallpaper/id6757328187?mt=12) esistente. Sito originale non letto integralmente tramite fetch, ma [pagina prodotto dell'autore](https://basalt.yevgenglukhov.com/) e listing App Store Mac documentano concept 'fine art daily', wallpaper/rotazione e raccolta. **Idea da reimplementare in modo indipendente**, NON replicare nome, asset, curatela, design, database, immagini/servizi e non assumere endpoint pubblici come contratto commerciale. Distinto da [Adaptive Landscape Android](ADAPTIVE_LANDSCAPE_ANDROID_2026-11-10.md).
@@ -38,11 +38,18 @@ Fonti da verificare come candidati (non autorizzate automaticamente): [The Met O
 - Rischi principali: permessi/OS restrictions, costo contenuti/autori, scarsità di differenziazione, qualità catalogo e retention.
 - **Nessun potenziale commerciale numerico attestato**, nessun annuncio o prezzo approvato.
 
-## Sviluppo: solo dopo autorizzazione
+## Sviluppo: autorizzato, verifica da completare
 1. Product Bible originale e mock-up indipendenti dalle schermate del concorrente; usare Design-App per componenti accessibili coerenti.
 2. Proof of concept Android di wallpaper con due immagini di test con diritti verificati.
 3. Pipeline editoriale per fonti/licenze e aggiornamenti controllati.
 4. Test fisici di schermo intero/crop/launcher wallpaper, airplane mode, storage, privacy; dimensione APK misurata.
-5. Eventuale roadmap/branch consumer e CI exact-head; niente creazione repo/build in questa fase.
+5. Repository consumer dedicato, CI exact-head, APK di test e firma persistente ancora da configurare. Il prototipo non equivale a una build installabile.
 
 **Fonte Design-App:** [audit lotto 21/11/2026](https://github.com/riccardopinato/Design-App/blob/main/sources/APPLLAMA_MOTION_ART_STACK_AUDIT_2026-11-21.md). **Registro inbox:** [ART-2026-001](INBOX_IDEE.md#art-2026-001--atelier-del-giorno--arte-quotidiana-android-21112026).
+
+## Decisione esplicita 21/11/2026 — avvio Android
+- L'utente ha richiesto di **creare un'app Android come anotherboring.day**, quindi l'avvio di un'implementazione indipendente è approvato; le esclusioni su brand/feed/codice/asset del concorrente rimangono vincolanti.
+- **Prima consegna nella chat**: sorgenti Flutter MVP v0.1 in ZIP + file TXT (non presenti ancora in un repository app). Funzioni implementate nel sorgente: vista giornaliera alimentata da search API AIC e selezione deterministica, esplorazione, dettaglio con zoom, metadata e credit line, preferiti locali con cache immagine best-effort, anteprima wallpaper Android e chiamata nativa Kotlin Home/Lock/Both. Nessun catalogo editoriale curato dichiarato; i contenuti giornalieri sono selezioni automatiche dal provider Open Access.
+- **Stato prove**: SOURCE PREPARED LOCALLY / NOT COMPILED / NOT TESTED ON DEVICE. Flutter/Android SDK non disponibili nell'ambiente di authoring. Non attestare CI, APK, firma, installazione, Store, affidabilità provider o schedulazione automatica.
+- **Provider**: Art Institute of Chicago API, `REVIEWED_FOR_PROTOTYPE` soltanto; filtro runtime `is_public_domain == true`, ID immagine limitato, credit line e link museo. La verifica per-record di diritti, termini commerciali, rate limit e provenienza editoriale rimane obbligatoria prima del feed pubblico.
+- **Priorità successive**: creare repo app, integrare sorgenti, validare compilazione Android, POC wallpaper su dispositivo, approvare identità visiva, introdurre dataset editoriale 30–100 opere con rights evidence, WorkManager con opt-in e pin, test offline/cache, APK firmato dopo gate.
