@@ -1,3 +1,7 @@
+## 2026-11-21 — ArtDrift v0.2 immagini reali e APK leggero
+- [PR ArtDrift #4 MERGED](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/4), main `80517b7`. Integrate 72 immagini WebP originali di opere AIC Open Access verificate (238.912 byte totali) + 62.985 byte metadati; il canvas mostra quadri anche senza rete, IIIF ad alta definizione scaricato solo al tocco/zoom. 
+- [CI pre-merge esatta PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44861566087): analyze, test asset-by-asset e APK ARM64 17.204.965 B (SHA256 `70b0ed5c26d2a94dee1deb41dacb8b06c1af544b23371ea7cadd2ce94f6bdb8b`). Verificato nel pacchetto: 72 WebP + JSON + libflutter ARM64. Firma test e physical QA aperti, non Release Google Play.
+
 ## 2026-11-21 — ArtDrift ARM64 16,9 MB optimized test APK
 - [PR ArtDrift #3](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/3) merged main `cc54265`. [Exact-source CI PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44859605655): Flutter analyze, tests, optimized ARM64 release-mode APK signed for **internal testing only**. APK file 16.931.737 bytes, SHA256 `da388496d685c7df54c5d221d031a16ff05de19a74dbd482ef193e66800f7b79`.
 - Build APK != physical QA; signature is ephemeral and store is not authorized. One new backlog issue [#2](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/2) records screenshot parity, catalog rights and device acceptance.
