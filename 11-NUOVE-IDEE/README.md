@@ -1,5 +1,7 @@
 # Nuove idee — area dedicata
 
+- [**GAME-2026-001 — Zombie Pixel Survival**](GAME-2026-001_ZOMBIE_PIXEL_SURVIVAL.md): candidata nuova app gaming Android/iOS, pixel-art zombie precision shooter, stima commerciale 7,5/10, MVP 15 livelli; **IDEA / DA_VALUTARE**, diritti sorgente e gameplay non verificati. Registrazione 21/11/2026; [voce inbox](INBOX_IDEE.md#game-2026-001--zombie-pixel-survival--precision-shooter-21112026).
+
 ## Viste operative: ancora da valutare oppure già integrato
 
 **Anna's Diary (19/11/2026):** [sette opportunità riservate a rivalutazione futura](INBOX_IDEE.md#annas-diary--idee-congelate-dallaudit-di-consolidamento-19112026), ID `AD-OPP-20261119-01…07`, **NON APPROVATE / NON DA SVILUPPARE ORA**. Il consolidamento delle 20 attività dell'audit rimane nel repo dell'app: le nuove idee non diventano automaticamente task di roadmap.
