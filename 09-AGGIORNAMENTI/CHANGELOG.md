@@ -1,4 +1,30 @@
+## 2026-11-21 — ArtDrift v0.3 search, parchments, settings
+- [PR #5 MERGED](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/5), main `d329161c88f26eadf30e3f2ad3452c6e36aac604`. Barra centrale 1/3 avorio con pennello, pannello pergamena, ricerca locale+autocomplete, The Met/Cleveland interrogati esplicitamente, 6 lingue interfaccia, Pro/privacy informativi. Nessuna modifica al canvas/72 opere v0.2; no recognition visuale, catalogo internazionale stabile, Billing o AdMob. [CI head esatto PASS #44894034979](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44894034979) su `98c1cf3`, APK ARM64 test 18.450.773 B SHA256 `53aba970248cc36077979d28327d11f151dea64813603d04774cd842d5f179fd`. Physical QA/Play pending. [Roadmap #6](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/6).
+
+## 2026-11-21 — ArtDrift v0.2 immagini reali e APK leggero
+- [PR ArtDrift #4 MERGED](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/4), main `80517b7`. Integrate 72 immagini WebP originali di opere AIC Open Access verificate (238.912 byte totali) + 62.985 byte metadati; il canvas mostra quadri anche senza rete, IIIF ad alta definizione scaricato solo al tocco/zoom. 
+- [CI pre-merge esatta PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44861566087): analyze, test asset-by-asset e APK ARM64 17.204.965 B (SHA256 `70b0ed5c26d2a94dee1deb41dacb8b06c1af544b23371ea7cadd2ce94f6bdb8b`). Verificato nel pacchetto: 72 WebP + JSON + libflutter ARM64. Firma test e physical QA aperti, non Release Google Play.
+
+## 2026-11-21 — ArtDrift ARM64 16,9 MB optimized test APK
+- [PR ArtDrift #3](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/3) merged main `cc54265`. [Exact-source CI PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44859605655): Flutter analyze, tests, optimized ARM64 release-mode APK signed for **internal testing only**. APK file 16.931.737 bytes, SHA256 `da388496d685c7df54c5d221d031a16ff05de19a74dbd482ef193e66800f7b79`.
+- Build APK != physical QA; signature is ephemeral and store is not authorized. One new backlog issue [#2](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/2) records screenshot parity, catalog rights and device acceptance.
+
+## 2026-11-21 — ART-2026-001: ArtDrift Android source merged, APK debug CI PASS
+- Creato vero consumer [ArtDrift-Infinite-Art-Gallery](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery), [PR #1 merged](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/1), main `991459f`. Schermata canvas infinito con gesture, opere da fonte Open Access e dettaglio con testo originale e wallpaper manuale, non la vecchia galleria a schede.
+- [CI esatta PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44858976559) su head `c90479b6`: analyze, unit test e build APK debug con artifact. Nessun device QA, Play Store, release signing o catalogo commerciale certificato; catalogo virtuale ancora con ripetizioni in regioni distanti. Acceptance [#2](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/2).
+
+## 2026-11-21 — ART-2026-001: CORREZIONE SCOPE, canvas infinito prioritario
+- Correzione esplicita dell'utente rispetto alla consegna Flutter v0.1: l'app Android deve essere un'esplorazione spaziale canvas 2D senza confini con pan/pinch/zoom e caricamento progressivo in viewport, non una Home quotidiana e griglie. Il vecchio MVP NON implementa questa esperienza, e non costituisce prova funzionale. Nome commerciale non scelto. Nessuna nuova build, codice app, CI o APK dichiarato.
+
+## 2026-11-21 — ART-2026-001: autorizzato avvio app Android arte quotidiana
+- Su richiesta esplicita dell'utente, l'idea Atelier del Giorno è passata da IDEA/DA_VALUTARE a IN_ROADMAP. Sorgenti Flutter/Kotlin v0.1 preparati come file di consegna in chat: ricerca AIC, opera giornaliera deterministica, zoom, favoriti locali e impostazione wallpaper manuale. **Non** sono un nuovo repository, APK compilato, build/CI PASS, prototipo collaudato o release. Rotazione giornaliera automatica, catalogo curatoriale verificato per diritti e test fisici restano aperti.
+- Nessuna integrazione di feed, immagini, brand, UI o codice di anotherboring.day. Provider AIC: filtro pubblico dominio in codice ma diritti/termini per record e uso commerciale da validare prima della distribuzione.
+
 ## 2026-11-19 — REA 5 maxi-step conclusi, Golden process certificato (scoped)
+
+## 2026-11-21 — GAME-2026-001: nuova idea shooter zombie pixel art
+- Su richiesta dell'utente, registrata in [11-NUOVE-IDEE](../11-NUOVE-IDEE/GAME-2026-001_ZOMBIE_PIXEL_SURVIVAL.md) e [Inbox](../11-NUOVE-IDEE/INBOX_IDEE.md) l'idea mobile `GAME-2026-001` (nome provvisorio Zombie Pixel Survival): screenshot del 20/11/2026, ipotesi di gameplay touch, MVP, monetizzazione opzionale e rischi.
+- Valutazione commerciale **7,5/10** puramente qualitativa; **IDEA / DA_VALUTARE**, non prodotto in codice né roadmap approvata. Originale, licenze, asset, mercato e retention ancora da verificare. Nessuna CAP/Golden/app modificata.
 
 - AppLab PR #238 **merged**: adapter CLI unico Desktop/.NET/Android/JADX/Flutter AOT, confronto manifest, donor review; real proof Desktop Deskland, Flutter Gallery PASS.
 - Second consumer Android Omni Cleaner PR #44 merged, own APK + REA/JADX [PASS](https://github.com/riccardopinato/Android-Omni-Cleaner/actions/runs/44626294217), negative cases; terzo consumer Adaptive Landscape PR #42 merged, own Flutter ARM64 AOT e JADX [PASS](https://github.com/riccardopinato/Adaptive-Landscape-Android/actions/runs/44630662704).

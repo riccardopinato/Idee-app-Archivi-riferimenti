@@ -3,6 +3,12 @@
 > **Audit corrente:** [verifica trasversale del 05/11/2026](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_360_RICONCILIAZIONE_2026-11-05.md). Le descrizioni sotto sono storiche/editoriali: per stato di codice, release e verifica fisica prevalgono gli HEAD e le roadmap di ciascun prodotto.
 
 
+## Nuovo prodotto autorizzato — 21/11/2026
+
+- **ART-2026-001 — Atelier del Giorno**: app Android Flutter indipendente **con mosaico artistico a canvas infinito e schede immersive**, con immagini Open Access AIC e wallpaper manuale. **IN_CODICE / SOURCE_MERGED** nel [repo ArtDrift](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery) a `main@d329161c`, PR #1 merged; canvas 2D e dettaglio immersivo implementati, **72 quadri reali Open Access incorporati in WebP (~239 KB immagini + ~63 KB metadati), visibili anche offline**; [CI v0.2 Flutter/test/APK ARM64 PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44861566087), APK test 17,2 MB. **Nessuna prova su telefono o Store; APK di test non è una release pubblica**. Dossier e confini: [ART-2026-001](../11-NUOVE-IDEE/ART-2026-001_ATELIER_DEL_GIORNO.md). La versione applicativa è integrata in GitHub; i precedenti ZIP Atelier erano prototipi superati. Non confondere con Adaptive Landscape Android.
+
+**ArtDrift v0.3 (21/11):** [PR #5 integrata](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/5), barra incorniciata con pennello 1/3 alto centro; ricerca locale/autocomplete autore/titolo/soggetto, Met/Cleveland consultabili con ricerca esplicita, impostazioni e 6 lingue UI, privacy/Pro solo informativi; [CI Flutter/test/ARM64 PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44894034979), APK interno ~18,5 MB. Rimangono *non implementati*: computer vision dell'opera, catalogo 10k+ nel canvas, acquisti Pro e AdMob; Play Store e device QA aperti.
+
 ## Verifiche repository: suite già costruite e nuovi prodotti compositi (30/10/2026)
 
 - **Notification Control** — suite in codice verificata; accorpa Undo, Pausa Ping, Follow Up, Critical Alert, Pickup Code e Luminous. Repo `riccardopinato/Notification-Control`; release live non certificata in questo audit.
