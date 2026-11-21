@@ -1,5 +1,9 @@
 # Inbox nuove idee — da valutare e conservare
 
+## GAME-2026-001 — Zombie Pixel Survival / precision shooter (21/11/2026)
+
+**IDEA / DA_VALUTARE · nuovo gioco mobile standalone, non in roadmap.** Fonte: screenshot condiviso dall'utente il 20/11/2026 e analisi commerciale in chat. Pixel art post-apocalittica panoramica, shooter a munizioni limitate con possibile mira touch; MVP candidato Android landscape (15 livelli, 3 armi, 4 nemici e 2 ambienti). Potenziale commerciale preliminare **7,5/10** (stima, non ricavi misurati); priorità esplorativa medio-alta. **Nessuna identificazione dell'originale o licenza accertata: solo riferimento visivo, niente copia di codice/asset.** [Scheda completa GAME-2026-001](GAME-2026-001_ZOMBIE_PIXEL_SURVIVAL.md). Prima dello sviluppo: acquisire fonte originale, verificare diritti e validare una demo touch su Android.
+
 ## Anna's Diary — idee congelate dall'audit di consolidamento (19/11/2026)
 
 **Decisione esplicita del titolare:** CONSERVARE PER RIVALUTAZIONE, **NON SVILUPPARE ORA**. Fonte: audit Anna's Diary del 19/11/2026 e sua sezione conclusiva ("consolidamento, collaudo ed effettiva finalizzazione del prodotto"). App source al censimento: [Agenda-per-Anna@adbab7d](https://github.com/riccardopinato/Agenda-per-Anna/commit/adbab7db67a1262a5255a64e4aa34da376d6d051); App Factory baseline per l'esecuzione: `6dfde2d6b6a5be6cbc898cea137f87803701814d` (Master v27 / Index v29). I sette ID qui sotto sono **ID di inbox / proposte**, non nuovi ID CAP. Non creare database/servizi, non duplicare CAP o promuovere nella Product Bible senza valutazione separata.
