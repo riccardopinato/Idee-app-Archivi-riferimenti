@@ -4,8 +4,24 @@
 ## Provenienza e confine
 Ispirazione dell'utente: [anotherboring.day](https://anotherboring.day/), con servizio di opere d'arte curate quotidianamente e [app Mac](https://apps.apple.com/lu/app/another-boring-art-wallpaper/id6757328187?mt=12) esistente. Sito originale non letto integralmente tramite fetch, ma [pagina prodotto dell'autore](https://basalt.yevgenglukhov.com/) e listing App Store Mac documentano concept 'fine art daily', wallpaper/rotazione e raccolta. **Idea da reimplementare in modo indipendente**, NON replicare nome, asset, curatela, design, database, immagini/servizi e non assumere endpoint pubblici come contratto commerciale. Distinto da [Adaptive Landscape Android](ADAPTIVE_LANDSCAPE_ANDROID_2026-11-10.md).
 
+## Rettifica di scope del 21/11/2026 — CANVAS INFINITO PRIMA DI TUTTO
+
+**Decisione prodotto esplicita dell'utente:** l'obiettivo Android è riprodurre il *paradigma di esplorazione* di anotherboring.day come **canvas 2D virtualmente infinito** navigabile con pan/drag in tutte le direzioni, pinch-to-zoom e opere che appaiono progressivamente in base alla porzione visibile. **NON** una Home a opera quotidiana con liste/griglie, feed verticale o comune gallery app. La UX deve essere una superficie spaziale immersiva, artwork-first, con UI minima e schede solo alla selezione.
+
+**Priorità funzionali vincolanti:**
+1. Canvas 2D con world coordinates persistenti, pan touch, pinch zoom, inertia controllata, reset/return e accessibilità.
+2. Layout di opere distribuite in posizioni/proporzioni varie, stabile al ritorno sulla stessa regione. Caricamento solo di elementi visibili/nearby tramite viewport culling, lazy loading e image LOD (thumbnail -> hi-res).
+3. Esplorazione fluida senza bordi percepibili; recupero offline best-effort e failure state reali; protezione memoria/RAM, caching e prefetch misurato.
+4. Tap sull'opera -> dettaglio ad alta risoluzione, metadati attribuiti, preferiti, zoom e wallpaper opzionale. Nessuna nuova barra di categorie che sostituisca il canvas.
+5. Feed/licenze indipendenti e tracciabili per record; contenuti filtrati e rilasciabili solo con diritti verificati. L'idea visuale è riutilizzabile, non marchio/UI/asset/feed/database o codice del concorrente.
+6. Test e profiling su dispositivo Android reale: frame pacing/jank, zoom, collisioni/gesture, RAM, rete lenta/offline, grandi dataset e ritorno alle coordinate precedenti.
+
+**Rettifica MVP v0.1 consegnato prima della correzione:** ZIP sorgente Flutter locale con schermata daily, liste e GridView; zoom solo nel dettaglio. **Non implementa canvas infinito** e quindi **non è la base di UI da approvare**. Riusare eventualmente adapter dati AIC, favorite storage e integrazione wallpaper soltanto dopo test, senza far ereditare al prodotto la navigazione sbagliata. Nessun repository app, APK, compilazione o collaudo attestato.
+
+**Naming:** `Atelier del Giorno` rimane ID/nome provvisorio; nome commerciale **NON DECISO**. L'orientamento corretto evoca canvas libero, esplorazione, viaggio nell'arte, infinito, non necessariamente una daily wallpaper app.
+
 ## Promessa di prodotto originale
-Un museo da tasca che presenta ogni giorno un'opera **con crediti e contesto**, costruisce un personale percorso d'arte e permette di usare, dove lecito, la riproduzione digitale come sfondo su smartphone. L'utente sceglie la propria esperienza: diario artistico, galleria tematica, esplorazione a sorpresa, palette di colori ispirate all'opera; mai copiare i servizi del sito sorgente. Il nome 'Atelier del Giorno' è provvisorio e richiede verifica marchi.
+Una galleria d'arte su canvas infinito da esplorare liberamente, che permette di scoprire ogni opera **con crediti e contesto**, costruisce un personale percorso d'arte e permette di usare, dove lecito, la riproduzione digitale come sfondo su smartphone. L'utente sceglie la propria esperienza: diario artistico, galleria tematica, esplorazione a sorpresa, palette di colori ispirate all'opera; mai copiare i servizi del sito sorgente. Il nome 'Atelier del Giorno' è provvisorio e richiede verifica marchi.
 
 ## Target e piattaforma
 - Prima piattaforma candidata: Android Flutter, con modulo Kotlin limitato al set wallpaper/permission integration quando necessario.
@@ -13,8 +29,8 @@ Un museo da tasca che presenta ogni giorno un'opera **con crediti e contesto**, 
 - Categoria: arte, educazione leggera, benessere visivo / personalizzazione locale, evitando slogan salute/benefici non comprovati.
 - Possibile sinergia con World Days per giornate legate all'arte (nessun riuso di storie non certificate); app indipendente per Product Bible.
 
-## MVP candidato (non approvato)
-1. **Opera del giorno**: una selezione originale verificata per fonte/diritti, descrizione breve, artista, epoca, provenienza e tecnica quando pubblicamente documentabili.
+## Funzioni secondarie previste (subordinate al Canvas-first MVP)
+1. **Opera del giorno (secondaria/opzionale)**: una selezione originale verificata per fonte/diritti, descrizione breve, artista, epoca, provenienza e tecnica quando pubblicamente documentabili.
 2. **Sfoglia ed esplora**: categorie, cronologia, alternative casuali; cronologia su dispositivo.
 3. **Dettaglio a schermo intero**: zoom, pan, immagini non tagliate, didascalia, contrasto/tipografia accessibile.
 4. **Favoriti** e raccolta locale con import/export opzionale, database leggero.
