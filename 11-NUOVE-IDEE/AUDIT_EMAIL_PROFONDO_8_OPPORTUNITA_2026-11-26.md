@@ -43,7 +43,7 @@
 **Problema:** piccoli tecnici ricopiano macchina, guasto, intervento e cliente fra chat, tabelle, calendario e rapportino.
 **Azione:** fotografa targhetta → verifica manuale marca/modello/matricola → apre scheda macchina → registra guasto, attività, ricambi e firma → esporta rapportino PDF.
 **MVP B2B:** anagrafica clienti/macchine, storico interventi, foto, note, firma cliente, export PDF, backup locale; no OCR obbligatorio per v1.
-**Nicotia/ICP candidata:** ditte piccole di assistenza installazione e riparazione attrezzature professionali; mercato generale field-service già competitivo.
+**Nicchia/ICP candidata:** ditte piccole di assistenza installazione e riparazione attrezzature professionali; mercato generale field-service già competitivo.
 **Gate commerciale:** 5–10 colloqui con tecnici, rilevazione minuti risparmiati sul ciclo intervento, GDPR e custodia firma, quote/legalità licenze; verificare software concorrente, willingness-to-pay e costi di supporto prima di aprire repo.
 **Stato:** nuova app proposta; **nessun repository o prodotto creato**.
 
