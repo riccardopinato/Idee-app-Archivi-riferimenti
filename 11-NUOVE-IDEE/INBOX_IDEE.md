@@ -10,8 +10,8 @@
 | AUDMAIL-20261126-02 | Procedure Engine | evoluzione | Notes-Ecosistema | P1 |
 | AUDMAIL-20261126-03 | **Service Passport** | **NUOVA APP B2B candidata** | tecnici sul campo, non esiste ancora repo | P1 |
 | AUDMAIL-20261126-04 | Failure Intelligence | evoluzione interna | AppLab / App Factory | P1 interna |
-| AUDMAIL-20261126-05 | Decision Studio | evoluzione | CashMate / Finance Intelligence Agent | P2 |
-| AUDMAIL-20261126-06 | Kitchen Conductor | evoluzione | TasteAI / Cooking Anime | P2 |
+| AUDMAIL-20261126-05 | Decision Studio | evoluzione proposta | [CashMateAI #1](https://github.com/riccardopinato/CashMateAI/issues/1) (repo vuoto) / [Finance Intelligence #6](https://github.com/riccardopinato/Finance-Intelligence-Agent/issues/6) | P2 |
+| AUDMAIL-20261126-06 | Kitchen Conductor | evoluzione proposta | [CookingAnime #79](https://github.com/riccardopinato/CookingAnime/issues/79) / [TasteAI #10](https://github.com/riccardopinato/TasteAI/issues/10) | P2 |
 | AUDMAIL-20261126-07 | Art-to-Shot | evoluzione | ArtDrift / FrameLab | P2 |
 | AUDMAIL-20261126-08 | Origin Passport | capability editoriale | ArtDrift / World Days / FrameLab, CAP-0043 da verificare | P2 interna |
 
