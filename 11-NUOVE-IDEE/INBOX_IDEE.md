@@ -1,5 +1,17 @@
 # Inbox nuove idee — da valutare e conservare
 
+## UTIL-20261126-01…03 — Tre utility pratiche salvate su richiesta dell'utente (26/11/2026)
+
+**Decisione:** **SALVARE COME IDEE DA VALUTARE**, senza iniziare lo sviluppo. Rispetto alle dieci ipotesi email non convincenti, queste tre proposte sono state selezionate esplicitamente dall'utente come esempi più concreti. [Dossier con problema, azione principale, MVP e deduplicazione](UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md).
+
+| ID stabile | Proposta | Funzione essenziale | Collocazione | Stato |
+|---|---|---|---|---|
+| UTIL-20261126-01 | **L'ultima volta che…** | Registro interventi e **«Fatto oggi»**, prossima scadenza | Candidata nuova utility, verificare overlap HomeFix/reminder | IDEA / DA_VALUTARE |
+| UTIL-20261126-02 | **File pronto da inviare** | Condividi file, converti/comprimi al limite richiesto, restituisci copia pronta | **Estensione candidata** PDF-Unifier / Omni Cleaner / FileFlow Kit | IDEA FUNZIONE / DA_VALUTARE |
+| UTIL-20261126-03 | **Dov'è finito?** | Foto/etichette oggetto e ricerca della scatola o del cassetto | **Riuso/variante** di BoxFinder e Home Assets Passport, non clone | IDEA VARIANTE / DA_VALUTARE |
+
+**Gate:** nessuna nuova app, modifica ai consumer, CAP, roadmap o promessa economica prima di un'ulteriore approvazione.
+
 ## MAIL-2026-001…010 — 10 ipotesi da email, conservate ma NON approvate (26/11/2026)
 
 **Decisione utente: REGISTRARE SOLTANTO; LE IDEE NON CONVINCONO.** Stato di tutte le voci **RINVIATA / NON APPROVATA / PRIORITÀ BASSA**, senza attività pianificata. Fonte: osservazioni tematiche da corrispondenza privata, riportate **solo in forma astratta**, senza dati identificativi o copie delle email. Nessuna nuova app, capability, roadmap o valutazione commerciale verificata. [Dossier completo con problemi, MVP, riuso e ostacoli](MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md).

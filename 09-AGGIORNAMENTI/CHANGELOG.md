@@ -1,3 +1,8 @@
+## 2026-11-26 — Tre utility concrete selezionate dall'utente
+- Registrate le idee [UTIL-20261126-01…03](../11-NUOVE-IDEE/UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md) e indicizzate in [INBOX_IDEE](../11-NUOVE-IDEE/INBOX_IDEE.md): **L'ultima volta che…** (un tap «Fatto oggi» per manutenzioni periodiche), **File pronto da inviare** (conversione/compressione di copie per limiti di upload), **Dov'è finito?** (catalogo fotografico e ricerca dei contenitori).
+- Deduplicazione conservativa: file helper come possibile funzione PDF-Unifier/Omni Cleaner/FileFlow Kit; catalogo oggetti come delta per BoxFinder/Home Assets Passport; reminder manuale come eventuale nuova utility.
+- **Stato: idee conservate / da valutare**. Nessun nuovo consumer, CAP, codice, monetizzazione o roadmap approvati.
+
 ## 2026-11-26 — 10 idee ricavate da temi email, conservate senza approvazione
 - Archiviati gli ID `MAIL-2026-001…010` in [Inbox idee](../11-NUOVE-IDEE/INBOX_IDEE.md) e nel [dossier dedicato](../11-NUOVE-IDEE/MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md): Deadline Radar, RefundGuard, DevPulse, GameShelf, SellerDeadline, Backup Guardian, Subscription Map, TripChange, Access Watch, Coupon Vault.
 - **Feedback esplicito:** proposte poco convincenti. Tutte **RINVIATE / NON APPROVATE / PRIORITÀ BASSA**, senza promozione di CAP, classifiche operative, portafoglio app o codice.
