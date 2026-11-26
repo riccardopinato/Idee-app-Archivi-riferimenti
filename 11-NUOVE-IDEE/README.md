@@ -1,5 +1,9 @@
 # Nuove idee — area dedicata
 
+## Idee da comunicazioni email — 26 novembre 2026 (solo archivio)
+
+[**10 ipotesi MAIL-2026-001…010**](MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md) registrate in [Inbox](INBOX_IDEE.md) come **RINVIATE / NON APPROVATE / PRIORITÀ BASSA**: l'utente ha chiesto di conservarle, specificando che non lo convincono molto. Nessuna promozione in roadmap, CAP, repo o prodotto; analisi email privata **non** pubblicata, solo problemi astratti.
+
 - [**ART-2026-001 — Atelier del Giorno**](ART-2026-001_ATELIER_DEL_GIORNO.md): IDEA nuova app Flutter Android d'arte quotidiana con wallpaper opzionale, ispirazione concettuale [anotherboring.day](https://anotherboring.day/) ma catalogo, asset, interfaccia e marchio indipendenti; diritti e domanda **da verificare**, non in roadmap; [inbox](INBOX_IDEE.md#art-2026-001--atelier-del-giorno--arte-quotidiana-android-21112026).
 
 - [**GAME-2026-001 — Zombie Pixel Survival**](GAME-2026-001_ZOMBIE_PIXEL_SURVIVAL.md): candidata nuova app gaming Android/iOS, pixel-art zombie precision shooter, stima commerciale 7,5/10, MVP 15 livelli; **IDEA / DA_VALUTARE**, diritti sorgente e gameplay non verificati. Registrazione 21/11/2026; [voce inbox](INBOX_IDEE.md#game-2026-001--zombie-pixel-survival--precision-shooter-21112026).
