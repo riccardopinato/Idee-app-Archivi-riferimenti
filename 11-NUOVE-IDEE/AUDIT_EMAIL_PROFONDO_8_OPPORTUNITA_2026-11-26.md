@@ -90,8 +90,8 @@ Le seguenti categorie erano emerse ma **non** ricevono nuovi ID/prodotti perché
 | Wonderlog / Agenda-per-Anna | 01 | handoff opt-in, non integrare senza decisione privacy | solo cross-reference, no duplicazione del bridge |
 | Notes-Ecosistema | 02 | procedure con prova e stato | ricerca funzionale, non riscrivere Smart Inbox |
 | AppLab / App-Factory-Core | 04 | diagnosi CI evidence-first | candidato AppLab, Core invariato |
-| CashMate + Finance Intelligence Agent | 05 | simulazioni bounded | backlog separato dai dati finanziari reali |
-| TasteAI / Cooking Anime | 06 | scheduler ricette | test di coordinamento multipiatto, no modifica ricette ora |
+| CashMateAI + Finance Intelligence Agent | 05 | simulazioni bounded | CashMateAI è un repository vuoto al controllo 26/11/2026; issue #1 research-only; backlog separato dai dati finanziari reali |
+| TasteAI / CookingAnime | 06 | scheduler ricette | CookingAnime issue #79; test di coordinamento multipiatto, no modifica ricette ora |
 | ArtDrift / FrameLab | 07 | apprendimento fotografico | diritti e UX separati |
 | ArtDrift / World Days / FrameLab | 08 | source/provenance per contenuti | delta da CAP-0043, no falsa certificazione |
 | App Factory catalogo | 01–08 | un solo set di ID e nota esclusioni | ricerca, nessuna implementazione |
@@ -108,9 +108,11 @@ Le seguenti categorie erano emerse ma **non** ricevono nuovi ID/prodotti perché
 - **02 Procedure Engine** — [Notes #108](https://github.com/riccardopinato/Notes-Ecosistema/issues/108).
 - **03 Service Passport** — [issue del catalogo #187](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/issues/187); **nuovo repo non creato**.
 - **04 Failure Intelligence** — [AppLab #245](https://github.com/riccardopinato/AppLab/issues/245).
-- **05 Decision Studio** — [Finance Intelligence #6](https://github.com/riccardopinato/Finance-Intelligence-Agent/issues/6); CashMate solo mappata in catalogo.
-- **06 Kitchen Conductor** — [TasteAI #10](https://github.com/riccardopinato/TasteAI/issues/10); Cooking Anime solo mappata in catalogo.
+- **05 Decision Studio** — [CashMateAI #1](https://github.com/riccardopinato/CashMateAI/issues/1) (repo verificato **vuoto**, ricerca soltanto), [Finance Intelligence #6](https://github.com/riccardopinato/Finance-Intelligence-Agent/issues/6) (ambito PAC/portafoglio).
+- **06 Kitchen Conductor** — [CookingAnime #79](https://github.com/riccardopinato/CookingAnime/issues/79) e [TasteAI #10](https://github.com/riccardopinato/TasteAI/issues/10), con distinte pipeline ricette e product truth.
 - **07 Art-to-Shot** — [ArtDrift #72](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/72), [FrameLab #9](https://github.com/riccardopinato/FrameLab-Google-AI-Studio/issues/9).
 - **08 Origin Passport** — [ArtDrift #73](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/73), [World Days #159](https://github.com/riccardopinato/World-Days/issues/159), [FrameLab #10](https://github.com/riccardopinato/FrameLab-Google-AI-Studio/issues/10).
 
 [Crosswalk CAP e anticollisione](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md). Gli issue conservano solo brief di ricerca: nessuna implementazione dichiarata.
+
+**Addendum 26/11/2026 — repository corretti:** l'utente ha fornito i link esatti [CookingAnime](https://github.com/riccardopinato/CookingAnime) e [CashMateAI](https://github.com/riccardopinato/CashMateAI). Verificati via connettore: CookingAnime contiene il progetto Flutter; CashMateAI è un repository GitHub pubblico ma senza README, roadmap o sorgenti su main. Aperte due schede di ricerca: [CookingAnime #79](https://github.com/riccardopinato/CookingAnime/issues/79) e [CashMateAI #1](https://github.com/riccardopinato/CashMateAI/issues/1). Non implica nuova app implementata né cambio roadmap.
