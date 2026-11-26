@@ -1,5 +1,17 @@
 # Nuove idee — area dedicata
 
+## Audit profondo email → App Factory — 26 novembre 2026
+
+[**Otto idee AUDMAIL-20261126-01…08**](AUDIT_EMAIL_PROFONDO_8_OPPORTUNITA_2026-11-26.md): **Service Passport** come possibile nuova app B2B, **sette proposte di miglioramento** per app esistenti, con [crosswalk CAP e issue](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md). Tutte **DA_VALUTARE / NON APPROVATE** e senza nuove roadmap o sviluppo. Le email private restano fuori dal repository.
+
+## Tre idee d'uso concreto — 26 novembre 2026
+
+[**UTIL-20261126-01…03: L'ultima volta che…, File pronto da inviare, Dov'è finito?**](UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md). Salvate in [Inbox](INBOX_IDEE.md) su selezione esplicita dell'utente, **IDEA / DA_VALUTARE**. La prima può essere autonoma; la seconda è candidata a estendere PDF-Unifier/Omni Cleaner; la terza è variante di BoxFinder/Home Assets Passport. **Nessuna roadmap o implementazione autorizzata.**
+
+## Idee da comunicazioni email — 26 novembre 2026 (solo archivio)
+
+[**10 ipotesi MAIL-2026-001…010**](MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md) registrate in [Inbox](INBOX_IDEE.md) come **RINVIATE / NON APPROVATE / PRIORITÀ BASSA**: l'utente ha chiesto di conservarle, specificando che non lo convincono molto. Nessuna promozione in roadmap, CAP, repo o prodotto; analisi email privata **non** pubblicata, solo problemi astratti.
+
 - [**ART-2026-001 — Atelier del Giorno**](ART-2026-001_ATELIER_DEL_GIORNO.md): IDEA nuova app Flutter Android d'arte quotidiana con wallpaper opzionale, ispirazione concettuale [anotherboring.day](https://anotherboring.day/) ma catalogo, asset, interfaccia e marchio indipendenti; diritti e domanda **da verificare**, non in roadmap; [inbox](INBOX_IDEE.md#art-2026-001--atelier-del-giorno--arte-quotidiana-android-21112026).
 
 - [**GAME-2026-001 — Zombie Pixel Survival**](GAME-2026-001_ZOMBIE_PIXEL_SURVIVAL.md): candidata nuova app gaming Android/iOS, pixel-art zombie precision shooter, stima commerciale 7,5/10, MVP 15 livelli; **IDEA / DA_VALUTARE**, diritti sorgente e gameplay non verificati. Registrazione 21/11/2026; [voce inbox](INBOX_IDEE.md#game-2026-001--zombie-pixel-survival--precision-shooter-21112026).

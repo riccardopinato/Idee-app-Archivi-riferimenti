@@ -1,5 +1,53 @@
 # Inbox nuove idee — da valutare e conservare
 
+## AUDMAIL-20261126-01…08 — Audit email: otto opportunità registrate (26/11/2026)
+
+**Decisione utente:** registrare tutte le opportunità dell'audit e, dove utile, i miglioramenti nei repository delle app. **IDEA / DA_VALUTARE / NON APPROVATA**; le priorità sotto sono *di ricerca*, non di sviluppo. Le email private **non** sono state pubblicate. [Dossier approfondito con MVP, differenziale, privacy e gate](AUDIT_EMAIL_PROFONDO_8_OPPORTUNITA_2026-11-26.md) · [crosswalk CAP e issues](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md).
+
+| ID stabile | Opportunità | Tipo | Collocazione | Ricerca |
+|---|---|---|---|---|
+| AUDMAIL-20261126-01 | LifeCanvas | evoluzione | GalleryDrift, futuro ponte Wonderlog/Anna | P1 |
+| AUDMAIL-20261126-02 | Procedure Engine | evoluzione | Notes-Ecosistema | P1 |
+| AUDMAIL-20261126-03 | **Service Passport** | **NUOVA APP B2B candidata** | tecnici sul campo, non esiste ancora repo | P1 |
+| AUDMAIL-20261126-04 | Failure Intelligence | evoluzione interna | AppLab / App Factory | P1 interna |
+| AUDMAIL-20261126-05 | Decision Studio | evoluzione proposta | [CashMateAI #1](https://github.com/riccardopinato/CashMateAI/issues/1) (repo vuoto) / [Finance Intelligence #6](https://github.com/riccardopinato/Finance-Intelligence-Agent/issues/6) | P2 |
+| AUDMAIL-20261126-06 | Kitchen Conductor | evoluzione proposta | [CookingAnime #79](https://github.com/riccardopinato/CookingAnime/issues/79) / [TasteAI #10](https://github.com/riccardopinato/TasteAI/issues/10) | P2 |
+| AUDMAIL-20261126-07 | Art-to-Shot | evoluzione | ArtDrift / FrameLab | P2 |
+| AUDMAIL-20261126-08 | Origin Passport | capability editoriale | ArtDrift / World Days / FrameLab, CAP-0043 da verificare | P2 interna |
+
+**Escluse come nuovi prodotti**: screenshot organizer AI, generatore fotolibri standalone, quiz AI da PDF, ETF overlap tracker standalone, timer ricette semplice, task manager email generico: già diffusi o sovrapposti. Gli issue app collegati nel dossier sono **solo ricerca**, non scope implementativo. Nessuna nuova CAP assegnata senza pipeline completa.
+
+## UTIL-20261126-01…03 — Tre utility pratiche salvate su richiesta dell'utente (26/11/2026)
+
+**Decisione:** **SALVARE COME IDEE DA VALUTARE**, senza iniziare lo sviluppo. Rispetto alle dieci ipotesi email non convincenti, queste tre proposte sono state selezionate esplicitamente dall'utente come esempi più concreti. [Dossier con problema, azione principale, MVP e deduplicazione](UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md).
+
+| ID stabile | Proposta | Funzione essenziale | Collocazione | Stato |
+|---|---|---|---|---|
+| UTIL-20261126-01 | **L'ultima volta che…** | Registro interventi e **«Fatto oggi»**, prossima scadenza | Candidata nuova utility, verificare overlap HomeFix/reminder | IDEA / DA_VALUTARE |
+| UTIL-20261126-02 | **File pronto da inviare** | Condividi file, converti/comprimi al limite richiesto, restituisci copia pronta | **Estensione candidata** PDF-Unifier / Omni Cleaner / FileFlow Kit | IDEA FUNZIONE / DA_VALUTARE |
+| UTIL-20261126-03 | **Dov'è finito?** | Foto/etichette oggetto e ricerca della scatola o del cassetto | **Riuso/variante** di BoxFinder e Home Assets Passport, non clone | IDEA VARIANTE / DA_VALUTARE |
+
+**Gate:** nessuna nuova app, modifica ai consumer, CAP, roadmap o promessa economica prima di un'ulteriore approvazione.
+
+## MAIL-2026-001…010 — 10 ipotesi da email, conservate ma NON approvate (26/11/2026)
+
+**Decisione utente: REGISTRARE SOLTANTO; LE IDEE NON CONVINCONO.** Stato di tutte le voci **RINVIATA / NON APPROVATA / PRIORITÀ BASSA**, senza attività pianificata. Fonte: osservazioni tematiche da corrispondenza privata, riportate **solo in forma astratta**, senza dati identificativi o copie delle email. Nessuna nuova app, capability, roadmap o valutazione commerciale verificata. [Dossier completo con problemi, MVP, riuso e ostacoli](MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md).
+
+| ID | Idea | Instradamento ipotetico (NON autorizzato) | Stato |
+|---|---|---|---|
+| MAIL-2026-001 | Deadline Radar | Notes/task o nuova app, da validare | RINVIATA |
+| MAIL-2026-002 | RefundGuard | possibile CashMate | RINVIATA |
+| MAIL-2026-003 | DevPulse | preferire App Factory/AppLab | RINVIATA |
+| MAIL-2026-004 | GameShelf | solo ipotesi standalone | RINVIATA |
+| MAIL-2026-005 | SellerDeadline | possibile micro-B2B | RINVIATA |
+| MAIL-2026-006 | Backup Guardian | possibile Notes/Omni Cleaner | RINVIATA |
+| MAIL-2026-007 | Subscription Map | possibile CashMate | RINVIATA |
+| MAIL-2026-008 | TripChange | possibile Wonderlog | RINVIATA |
+| MAIL-2026-009 | Access Watch | utility di sicurezza da verificare | RINVIATA |
+| MAIL-2026-010 | Coupon Vault | micro-utility secondaria | RINVIATA |
+
+**Gate di riapertura:** proposta migliorata + domanda esterna, concorrenza, differenziazione, diritti/permesse privacy e fattibilità. **Nessuna priorità ai prossimi step**.
+
 ## ART-2026-001 — Atelier del Giorno / arte quotidiana Android (21/11/2026)
 
 **IN_CODICE / SOURCE_MERGED 21/11/2026** — app Flutter Android nel [repository ArtDrift](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery) (PR #1 merged, main `d329161c`). Flutter analyze, test e APK debug GitHub Actions [PASS su commit esatto](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44858976559); **APK ARM64 v0.2 di test da 17,2 MB con **72 opere reali / ~302 KB di asset incorporati** [CI PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44861566087); nessun collaudo fisico, store, firma produzione o update-in-place certificati**. Origine: interesse espresso dall'utente per [anotherboring.day](https://anotherboring.day/) il 21/11/2026, verificato come servizio di opere d'arte scelte ogni giorno e wallpaper con app Mac esistente ([pagina prodotto](https://basalt.yevgenglukhov.com/), [Mac App Store](https://apps.apple.com/lu/app/another-boring-art-wallpaper/id6757328187?mt=12)). **Scope rettificato su indicazione esplicita dell'utente:** app Android Flutter **canvas infinito 2D in tutte le direzioni**, gesture drag/pan/pinch e opere visibili che compaiono durante l'esplorazione; layout posizionale stabile, lazy loading e dettaglio artwork a tap. Opera del giorno, ricerca/archivio/favoriti, palette e wallpaper restano secondari. Il vecchio ZIP Atelier v0.1 con liste/griglie era fuori scope ed è stato sostituito nel nuovo consumer da un vero canvas; il catalogo è ancora finito e può ripetersi nelle regioni lontane. Nome commerciale ancora da scegliere. **Non copiare** brand, grafica, feed, selezioni, download o testi del concorrente; servono diritti dell'opera, della riproduzione digitale e degli eventuali crediti per ogni immagine. Fonti candidata Met Open Access / Art Institute of Chicago API, da validare prima dell'import; catalogo indipendente curato. Diversa da `AL-ANDROID-2026-001` Adaptive Landscape (sfondi contestuali/lanciatori, non diario di opere d'arte). Monetizzazione da valutare, nessun prezzo approvato. [Dossier ART-2026-001](ART-2026-001_ATELIER_DEL_GIORNO.md) · [design audit](https://github.com/riccardopinato/Design-App/blob/main/sources/APPLLAMA_MOTION_ART_STACK_AUDIT_2026-11-21.md) (link del ramo da riconciliare dopo merge). **Gate:** sorgenti MVP locali non equivalgono ad APK; creare repo dedicato, catalogo editoriale originale con diritti per record, build/test Android, wallpaper su dispositivo reale, Product Bible e design distinti, modello economico e approvazione della pubblicazione.

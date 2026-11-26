@@ -1,3 +1,23 @@
+## 2026-11-26 — Correzione repository CookingAnime e CashMateAI, registrate due idee mancanti
+- Ricevuti e verificati i repository esatti `riccardopinato/CookingAnime` e `riccardopinato/CashMateAI`.
+- Aperta [CookingAnime #79](https://github.com/riccardopinato/CookingAnime/issues/79) per Kitchen Conductor (AUDMAIL-20261126-06) e [CashMateAI #1](https://github.com/riccardopinato/CashMateAI/issues/1) per Decision Studio (AUDMAIL-20261126-05). Totale schede research per audit = **13** (prima 11).
+- CookingAnime: progetto Flutter presente. CashMateAI: repo pubblico **vuoto** su main alla verifica; nessuna funzionalità esistente certificabile. Corretto il dossier, l'Inbox e il crosswalk CAP; nessun code/roadmap/Golden cambiato.
+
+## 2026-11-26 — Audit profondo email: 8 opportunità e registrazione nei repository pertinenti
+- [Dossier completo](../11-NUOVE-IDEE/AUDIT_EMAIL_PROFONDO_8_OPPORTUNITA_2026-11-26.md): **AUDMAIL-20261126-01…08** (LifeCanvas, Procedure Engine, Service Passport, Failure Intelligence, Decision Studio, Kitchen Conductor, Art-to-Shot, Origin Passport). Service Passport = nuova app B2B proposta; altre sette = miglioramenti candidati.
+- [Crosswalk CAP e issue](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md) con 11 issue research-only complessivi, inclusi GalleryDrift, Notes, AppLab, Finance Intelligence, TasteAI, ArtDrift, World Days e FrameLab. CashMate/Cooking Anime registrate solo come associazioni non aggiornate perché i repo con nomi certi non erano accessibili.
+- Conservate 6 proposte *escluse* come cloni di prodotti già diffusi. Email private non trasferite. **Nessun nuovo prodotto/CAP/roadmap/codice approvato o implementato.**
+
+## 2026-11-26 — Tre utility concrete selezionate dall'utente
+- Registrate le idee [UTIL-20261126-01…03](../11-NUOVE-IDEE/UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md) e indicizzate in [INBOX_IDEE](../11-NUOVE-IDEE/INBOX_IDEE.md): **L'ultima volta che…** (un tap «Fatto oggi» per manutenzioni periodiche), **File pronto da inviare** (conversione/compressione di copie per limiti di upload), **Dov'è finito?** (catalogo fotografico e ricerca dei contenitori).
+- Deduplicazione conservativa: file helper come possibile funzione PDF-Unifier/Omni Cleaner/FileFlow Kit; catalogo oggetti come delta per BoxFinder/Home Assets Passport; reminder manuale come eventuale nuova utility.
+- **Stato: idee conservate / da valutare**. Nessun nuovo consumer, CAP, codice, monetizzazione o roadmap approvati.
+
+## 2026-11-26 — 10 idee ricavate da temi email, conservate senza approvazione
+- Archiviati gli ID `MAIL-2026-001…010` in [Inbox idee](../11-NUOVE-IDEE/INBOX_IDEE.md) e nel [dossier dedicato](../11-NUOVE-IDEE/MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md): Deadline Radar, RefundGuard, DevPulse, GameShelf, SellerDeadline, Backup Guardian, Subscription Map, TripChange, Access Watch, Coupon Vault.
+- **Feedback esplicito:** proposte poco convincenti. Tutte **RINVIATE / NON APPROVATE / PRIORITÀ BASSA**, senza promozione di CAP, classifiche operative, portafoglio app o codice.
+- Origine in email personali: riportati soltanto pattern generici, nessun testo, dato personale, mittente, allegato o riferimento identificativo nel repository pubblico.
+
 ## 2026-11-21 — ArtDrift v0.3 search, parchments, settings
 - [PR #5 MERGED](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/5), main `d329161c88f26eadf30e3f2ad3452c6e36aac604`. Barra centrale 1/3 avorio con pennello, pannello pergamena, ricerca locale+autocomplete, The Met/Cleveland interrogati esplicitamente, 6 lingue interfaccia, Pro/privacy informativi. Nessuna modifica al canvas/72 opere v0.2; no recognition visuale, catalogo internazionale stabile, Billing o AdMob. [CI head esatto PASS #44894034979](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44894034979) su `98c1cf3`, APK ARM64 test 18.450.773 B SHA256 `53aba970248cc36077979d28327d11f151dea64813603d04774cd842d5f179fd`. Physical QA/Play pending. [Roadmap #6](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/6).
 
