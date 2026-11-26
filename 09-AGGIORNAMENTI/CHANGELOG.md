@@ -1,3 +1,8 @@
+## 2026-11-26 — Correzione repository CookingAnime e CashMateAI, registrate due idee mancanti
+- Ricevuti e verificati i repository esatti `riccardopinato/CookingAnime` e `riccardopinato/CashMateAI`.
+- Aperta [CookingAnime #79](https://github.com/riccardopinato/CookingAnime/issues/79) per Kitchen Conductor (AUDMAIL-20261126-06) e [CashMateAI #1](https://github.com/riccardopinato/CashMateAI/issues/1) per Decision Studio (AUDMAIL-20261126-05). Totale schede research per audit = **13** (prima 11).
+- CookingAnime: progetto Flutter presente. CashMateAI: repo pubblico **vuoto** su main alla verifica; nessuna funzionalità esistente certificabile. Corretto il dossier, l'Inbox e il crosswalk CAP; nessun code/roadmap/Golden cambiato.
+
 ## 2026-11-26 — Audit profondo email: 8 opportunità e registrazione nei repository pertinenti
 - [Dossier completo](../11-NUOVE-IDEE/AUDIT_EMAIL_PROFONDO_8_OPPORTUNITA_2026-11-26.md): **AUDMAIL-20261126-01…08** (LifeCanvas, Procedure Engine, Service Passport, Failure Intelligence, Decision Studio, Kitchen Conductor, Art-to-Shot, Origin Passport). Service Passport = nuova app B2B proposta; altre sette = miglioramenti candidati.
 - [Crosswalk CAP e issue](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md) con 11 issue research-only complessivi, inclusi GalleryDrift, Notes, AppLab, Finance Intelligence, TasteAI, ArtDrift, World Days e FrameLab. CashMate/Cooking Anime registrate solo come associazioni non aggiornate perché i repo con nomi certi non erano accessibili.
