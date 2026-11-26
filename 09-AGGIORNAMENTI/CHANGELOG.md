@@ -1,3 +1,8 @@
+## 2026-11-26 — Audit profondo email: 8 opportunità e registrazione nei repository pertinenti
+- [Dossier completo](../11-NUOVE-IDEE/AUDIT_EMAIL_PROFONDO_8_OPPORTUNITA_2026-11-26.md): **AUDMAIL-20261126-01…08** (LifeCanvas, Procedure Engine, Service Passport, Failure Intelligence, Decision Studio, Kitchen Conductor, Art-to-Shot, Origin Passport). Service Passport = nuova app B2B proposta; altre sette = miglioramenti candidati.
+- [Crosswalk CAP e issue](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md) con 11 issue research-only complessivi, inclusi GalleryDrift, Notes, AppLab, Finance Intelligence, TasteAI, ArtDrift, World Days e FrameLab. CashMate/Cooking Anime registrate solo come associazioni non aggiornate perché i repo con nomi certi non erano accessibili.
+- Conservate 6 proposte *escluse* come cloni di prodotti già diffusi. Email private non trasferite. **Nessun nuovo prodotto/CAP/roadmap/codice approvato o implementato.**
+
 ## 2026-11-26 — Tre utility concrete selezionate dall'utente
 - Registrate le idee [UTIL-20261126-01…03](../11-NUOVE-IDEE/UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md) e indicizzate in [INBOX_IDEE](../11-NUOVE-IDEE/INBOX_IDEE.md): **L'ultima volta che…** (un tap «Fatto oggi» per manutenzioni periodiche), **File pronto da inviare** (conversione/compressione di copie per limiti di upload), **Dov'è finito?** (catalogo fotografico e ricerca dei contenitori).
 - Deduplicazione conservativa: file helper come possibile funzione PDF-Unifier/Omni Cleaner/FileFlow Kit; catalogo oggetti come delta per BoxFinder/Home Assets Passport; reminder manuale come eventuale nuova utility.
