@@ -1,3 +1,8 @@
+## 2026-11-26 — 10 idee ricavate da temi email, conservate senza approvazione
+- Archiviati gli ID `MAIL-2026-001…010` in [Inbox idee](../11-NUOVE-IDEE/INBOX_IDEE.md) e nel [dossier dedicato](../11-NUOVE-IDEE/MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md): Deadline Radar, RefundGuard, DevPulse, GameShelf, SellerDeadline, Backup Guardian, Subscription Map, TripChange, Access Watch, Coupon Vault.
+- **Feedback esplicito:** proposte poco convincenti. Tutte **RINVIATE / NON APPROVATE / PRIORITÀ BASSA**, senza promozione di CAP, classifiche operative, portafoglio app o codice.
+- Origine in email personali: riportati soltanto pattern generici, nessun testo, dato personale, mittente, allegato o riferimento identificativo nel repository pubblico.
+
 ## 2026-11-21 — ArtDrift v0.3 search, parchments, settings
 - [PR #5 MERGED](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/pull/5), main `d329161c88f26eadf30e3f2ad3452c6e36aac604`. Barra centrale 1/3 avorio con pennello, pannello pergamena, ricerca locale+autocomplete, The Met/Cleveland interrogati esplicitamente, 6 lingue interfaccia, Pro/privacy informativi. Nessuna modifica al canvas/72 opere v0.2; no recognition visuale, catalogo internazionale stabile, Billing o AdMob. [CI head esatto PASS #44894034979](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44894034979) su `98c1cf3`, APK ARM64 test 18.450.773 B SHA256 `53aba970248cc36077979d28327d11f151dea64813603d04774cd842d5f179fd`. Physical QA/Play pending. [Roadmap #6](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/6).
 
