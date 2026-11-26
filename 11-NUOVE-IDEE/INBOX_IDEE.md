@@ -1,5 +1,24 @@
 # Inbox nuove idee — da valutare e conservare
 
+## MAIL-2026-001…010 — 10 ipotesi da email, conservate ma NON approvate (26/11/2026)
+
+**Decisione utente: REGISTRARE SOLTANTO; LE IDEE NON CONVINCONO.** Stato di tutte le voci **RINVIATA / NON APPROVATA / PRIORITÀ BASSA**, senza attività pianificata. Fonte: osservazioni tematiche da corrispondenza privata, riportate **solo in forma astratta**, senza dati identificativi o copie delle email. Nessuna nuova app, capability, roadmap o valutazione commerciale verificata. [Dossier completo con problemi, MVP, riuso e ostacoli](MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md).
+
+| ID | Idea | Instradamento ipotetico (NON autorizzato) | Stato |
+|---|---|---|---|
+| MAIL-2026-001 | Deadline Radar | Notes/task o nuova app, da validare | RINVIATA |
+| MAIL-2026-002 | RefundGuard | possibile CashMate | RINVIATA |
+| MAIL-2026-003 | DevPulse | preferire App Factory/AppLab | RINVIATA |
+| MAIL-2026-004 | GameShelf | solo ipotesi standalone | RINVIATA |
+| MAIL-2026-005 | SellerDeadline | possibile micro-B2B | RINVIATA |
+| MAIL-2026-006 | Backup Guardian | possibile Notes/Omni Cleaner | RINVIATA |
+| MAIL-2026-007 | Subscription Map | possibile CashMate | RINVIATA |
+| MAIL-2026-008 | TripChange | possibile Wonderlog | RINVIATA |
+| MAIL-2026-009 | Access Watch | utility di sicurezza da verificare | RINVIATA |
+| MAIL-2026-010 | Coupon Vault | micro-utility secondaria | RINVIATA |
+
+**Gate di riapertura:** proposta migliorata + domanda esterna, concorrenza, differenziazione, diritti/permesse privacy e fattibilità. **Nessuna priorità ai prossimi step**.
+
 ## ART-2026-001 — Atelier del Giorno / arte quotidiana Android (21/11/2026)
 
 **IN_CODICE / SOURCE_MERGED 21/11/2026** — app Flutter Android nel [repository ArtDrift](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery) (PR #1 merged, main `d329161c`). Flutter analyze, test e APK debug GitHub Actions [PASS su commit esatto](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44858976559); **APK ARM64 v0.2 di test da 17,2 MB con **72 opere reali / ~302 KB di asset incorporati** [CI PASS](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/actions/runs/44861566087); nessun collaudo fisico, store, firma produzione o update-in-place certificati**. Origine: interesse espresso dall'utente per [anotherboring.day](https://anotherboring.day/) il 21/11/2026, verificato come servizio di opere d'arte scelte ogni giorno e wallpaper con app Mac esistente ([pagina prodotto](https://basalt.yevgenglukhov.com/), [Mac App Store](https://apps.apple.com/lu/app/another-boring-art-wallpaper/id6757328187?mt=12)). **Scope rettificato su indicazione esplicita dell'utente:** app Android Flutter **canvas infinito 2D in tutte le direzioni**, gesture drag/pan/pinch e opere visibili che compaiono durante l'esplorazione; layout posizionale stabile, lazy loading e dettaglio artwork a tap. Opera del giorno, ricerca/archivio/favoriti, palette e wallpaper restano secondari. Il vecchio ZIP Atelier v0.1 con liste/griglie era fuori scope ed è stato sostituito nel nuovo consumer da un vero canvas; il catalogo è ancora finito e può ripetersi nelle regioni lontane. Nome commerciale ancora da scegliere. **Non copiare** brand, grafica, feed, selezioni, download o testi del concorrente; servono diritti dell'opera, della riproduzione digitale e degli eventuali crediti per ogni immagine. Fonti candidata Met Open Access / Art Institute of Chicago API, da validare prima dell'import; catalogo indipendente curato. Diversa da `AL-ANDROID-2026-001` Adaptive Landscape (sfondi contestuali/lanciatori, non diario di opere d'arte). Monetizzazione da valutare, nessun prezzo approvato. [Dossier ART-2026-001](ART-2026-001_ATELIER_DEL_GIORNO.md) · [design audit](https://github.com/riccardopinato/Design-App/blob/main/sources/APPLLAMA_MOTION_ART_STACK_AUDIT_2026-11-21.md) (link del ramo da riconciliare dopo merge). **Gate:** sorgenti MVP locali non equivalgono ad APK; creare repo dedicato, catalogo editoriale originale con diritti per record, build/test Android, wallpaper su dispositivo reale, Product Bible e design distinti, modello economico e approvazione della pubblicazione.
