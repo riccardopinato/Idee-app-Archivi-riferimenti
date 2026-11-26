@@ -1,5 +1,22 @@
 # Inbox nuove idee — da valutare e conservare
 
+## AUDMAIL-20261126-01…08 — Audit email: otto opportunità registrate (26/11/2026)
+
+**Decisione utente:** registrare tutte le opportunità dell'audit e, dove utile, i miglioramenti nei repository delle app. **IDEA / DA_VALUTARE / NON APPROVATA**; le priorità sotto sono *di ricerca*, non di sviluppo. Le email private **non** sono state pubblicate. [Dossier approfondito con MVP, differenziale, privacy e gate](AUDIT_EMAIL_PROFONDO_8_OPPORTUNITA_2026-11-26.md) · [crosswalk CAP e issues](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md).
+
+| ID stabile | Opportunità | Tipo | Collocazione | Ricerca |
+|---|---|---|---|---|
+| AUDMAIL-20261126-01 | LifeCanvas | evoluzione | GalleryDrift, futuro ponte Wonderlog/Anna | P1 |
+| AUDMAIL-20261126-02 | Procedure Engine | evoluzione | Notes-Ecosistema | P1 |
+| AUDMAIL-20261126-03 | **Service Passport** | **NUOVA APP B2B candidata** | tecnici sul campo, non esiste ancora repo | P1 |
+| AUDMAIL-20261126-04 | Failure Intelligence | evoluzione interna | AppLab / App Factory | P1 interna |
+| AUDMAIL-20261126-05 | Decision Studio | evoluzione | CashMate / Finance Intelligence Agent | P2 |
+| AUDMAIL-20261126-06 | Kitchen Conductor | evoluzione | TasteAI / Cooking Anime | P2 |
+| AUDMAIL-20261126-07 | Art-to-Shot | evoluzione | ArtDrift / FrameLab | P2 |
+| AUDMAIL-20261126-08 | Origin Passport | capability editoriale | ArtDrift / World Days / FrameLab, CAP-0043 da verificare | P2 interna |
+
+**Escluse come nuovi prodotti**: screenshot organizer AI, generatore fotolibri standalone, quiz AI da PDF, ETF overlap tracker standalone, timer ricette semplice, task manager email generico: già diffusi o sovrapposti. Gli issue app collegati nel dossier sono **solo ricerca**, non scope implementativo. Nessuna nuova CAP assegnata senza pipeline completa.
+
 ## UTIL-20261126-01…03 — Tre utility pratiche salvate su richiesta dell'utente (26/11/2026)
 
 **Decisione:** **SALVARE COME IDEE DA VALUTARE**, senza iniziare lo sviluppo. Rispetto alle dieci ipotesi email non convincenti, queste tre proposte sono state selezionate esplicitamente dall'utente come esempi più concreti. [Dossier con problema, azione principale, MVP e deduplicazione](UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md).

@@ -1,5 +1,9 @@
 # Nuove idee — area dedicata
 
+## Audit profondo email → App Factory — 26 novembre 2026
+
+[**Otto idee AUDMAIL-20261126-01…08**](AUDIT_EMAIL_PROFONDO_8_OPPORTUNITA_2026-11-26.md): **Service Passport** come possibile nuova app B2B, **sette proposte di miglioramento** per app esistenti, con [crosswalk CAP e issue](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md). Tutte **DA_VALUTARE / NON APPROVATE** e senza nuove roadmap o sviluppo. Le email private restano fuori dal repository.
+
 ## Tre idee d'uso concreto — 26 novembre 2026
 
 [**UTIL-20261126-01…03: L'ultima volta che…, File pronto da inviare, Dov'è finito?**](UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md). Salvate in [Inbox](INBOX_IDEE.md) su selezione esplicita dell'utente, **IDEA / DA_VALUTARE**. La prima può essere autonoma; la seconda è candidata a estendere PDF-Unifier/Omni Cleaner; la terza è variante di BoxFinder/Home Assets Passport. **Nessuna roadmap o implementazione autorizzata.**

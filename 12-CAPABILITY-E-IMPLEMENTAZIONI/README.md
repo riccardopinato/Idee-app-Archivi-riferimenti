@@ -1,5 +1,9 @@
 # Catalogo centrale capability — App Factory
 
+## 26/11/2026 — Crosswalk di otto opportunità da audit email (research only)
+
+[**Apri la matrice di deduplicazione e gli issue nei repository consumer**](AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md): 8 idee con ID `AUDMAIL-20261126-01…08`, inclusa una nuova app candidata e 7 migliorie/strumenti esistenti. Confronto preliminare con CAP-0011/0043/0070/0093 e altri record. **Nessun CAP-NNNN assegnato, nessuna modifica al registro JSON tecnico**, nessuna roadmap o certificazione alterata: per l'ammissione CAP servono revisione delta, kit, generazione viste e CI.
+
 ## 19/11/2026 — Reverse Engineering & Software Intelligence (REA)
 
 **5 maxi-step REA:** [AppLab modalità Desktop/Android/Flutter + donor review (PR #238)](https://github.com/riccardopinato/AppLab/pull/238) · [intake E1 di questo catalogo](../scripts/rea_review_to_catalog.py) · [pilot indipendente Omni Cleaner (PR #44)](https://github.com/riccardopinato/Android-Omni-Cleaner/pull/44). Esiti reali: **PASS** su AppLab Desktop/.NET, Flutter Gallery, Omni Cleaner APK/JADX e Adaptive Landscape Flutter ARM64. [Golden Core Index v31: CERTIFIED PROCESS limitato](https://github.com/riccardopinato/App-Factory-Core/pull/122), non CERTIFIED GOLDEN; repo REA esterno rimane E1.
