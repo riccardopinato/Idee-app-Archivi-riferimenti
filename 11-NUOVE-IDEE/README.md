@@ -1,5 +1,9 @@
 # Nuove idee — area dedicata
 
+## Tre idee d'uso concreto — 26 novembre 2026
+
+[**UTIL-20261126-01…03: L'ultima volta che…, File pronto da inviare, Dov'è finito?**](UTIL-2026-11-26_TRE_UTILITY_PRATICHE.md). Salvate in [Inbox](INBOX_IDEE.md) su selezione esplicita dell'utente, **IDEA / DA_VALUTARE**. La prima può essere autonoma; la seconda è candidata a estendere PDF-Unifier/Omni Cleaner; la terza è variante di BoxFinder/Home Assets Passport. **Nessuna roadmap o implementazione autorizzata.**
+
 ## Idee da comunicazioni email — 26 novembre 2026 (solo archivio)
 
 [**10 ipotesi MAIL-2026-001…010**](MAIL-2026-11-26_OPPORTUNITA_DA_EMAIL.md) registrate in [Inbox](INBOX_IDEE.md) come **RINVIATE / NON APPROVATE / PRIORITÀ BASSA**: l'utente ha chiesto di conservarle, specificando che non lo convincono molto. Nessuna promozione in roadmap, CAP, repo o prodotto; analisi email privata **non** pubblicata, solo problemi astratti.
