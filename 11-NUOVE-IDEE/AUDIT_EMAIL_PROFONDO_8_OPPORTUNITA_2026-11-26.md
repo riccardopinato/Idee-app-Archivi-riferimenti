@@ -101,3 +101,16 @@ Le seguenti categorie erano emerse ma **non** ricevono nuovi ID/prodotti perché
 - Confronto testato con alternative esistenti; differenziale non basato solo su AI.
 - No merge di codice, billing o permessi senza approvazione specifica di Product Bible, roadmap e gate.
 - Crosswalk CAP: **CAP-0011, CAP-0043, CAP-0070, CAP-0093** sono potenzialmente pertinenti ma non provano equivalenza. Per nuovi contratti canonici occorrono audit e generazione verificata del registro: **qui non si assegnano CAP fittizie né si sovrascrivono gli stati tecnici**.
+
+## Registro di follow-up nei repository (ricerca, non sviluppo)
+
+- **01 LifeCanvas** — [GalleryDrift #17](https://github.com/riccardopinato/GalleryDrift/issues/17). Wonderlog/Anna soltanto bridge futuro previa decisione privacy.
+- **02 Procedure Engine** — [Notes #108](https://github.com/riccardopinato/Notes-Ecosistema/issues/108).
+- **03 Service Passport** — [issue del catalogo #187](https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/issues/187); **nuovo repo non creato**.
+- **04 Failure Intelligence** — [AppLab #245](https://github.com/riccardopinato/AppLab/issues/245).
+- **05 Decision Studio** — [Finance Intelligence #6](https://github.com/riccardopinato/Finance-Intelligence-Agent/issues/6); CashMate solo mappata in catalogo.
+- **06 Kitchen Conductor** — [TasteAI #10](https://github.com/riccardopinato/TasteAI/issues/10); Cooking Anime solo mappata in catalogo.
+- **07 Art-to-Shot** — [ArtDrift #72](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/72), [FrameLab #9](https://github.com/riccardopinato/FrameLab-Google-AI-Studio/issues/9).
+- **08 Origin Passport** — [ArtDrift #73](https://github.com/riccardopinato/ArtDrift-Infinite-Art-Gallery/issues/73), [World Days #159](https://github.com/riccardopinato/World-Days/issues/159), [FrameLab #10](https://github.com/riccardopinato/FrameLab-Google-AI-Studio/issues/10).
+
+[Crosswalk CAP e anticollisione](../12-CAPABILITY-E-IMPLEMENTAZIONI/AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md). Gli issue conservano solo brief di ricerca: nessuna implementazione dichiarata.
