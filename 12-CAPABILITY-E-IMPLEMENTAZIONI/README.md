@@ -1,5 +1,9 @@
 # Catalogo centrale capability — App Factory
 
+## 27/11/2026 — Spec Kit: admission E1 e dedup trasversale (solo ricerca)
+
+[**Audit di ammissione GitHub Spec Kit con matrice 20 componenti**](OSS_GITHUB_SPEC_KIT_ADMISSION_2026-11-27.md) · [JSON strutturato](OSS_GITHUB_SPEC_KIT_ADMISSION_2026-11-27.json). Release stabile v1.4.5 MIT, SHAs pin, decisioni REUSE/NEW/DUPLICATE vs Core/Golden/AppLab/Agent Core. **Nessun CAP-NNNN nuovo, nessuna Golden promossa e nessuna app modificata.**
+
 ## 26/11/2026 — Crosswalk di otto opportunità da audit email (research only)
 
 [**Apri la matrice di deduplicazione e gli issue nei repository consumer**](AUDIT_EMAIL_8_CAP_CROSSWALK_20261126.md): 8 idee con ID `AUDMAIL-20261126-01…08`, inclusa una nuova app candidata e 7 migliorie/strumenti esistenti. Confronto preliminare con CAP-0011/0043/0070/0093 e altri record. **Nessun CAP-NNNN assegnato, nessuna modifica al registro JSON tecnico**, nessuna roadmap o certificazione alterata: per l'ammissione CAP servono revisione delta, kit, generazione viste e CI.
