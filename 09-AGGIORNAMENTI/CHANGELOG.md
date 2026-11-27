@@ -1,3 +1,7 @@
+## 2026-11-27 — Spec Kit: ammissione OSS E1 e deduplicazione App Factory
+- Registrato [`github/spec-kit` v1.4.5 MIT](../12-CAPABILITY-E-IMPLEMENTAZIONI/OSS_GITHUB_SPEC_KIT_ADMISSION_2026-11-27.md) con commit release e main distinti, Factory baseline SHA e matrice strutturata di 20 aree REUSE/NEW/DUPLICATE.
+- Riletti overlap con Master v27, Golden Index v31, Agent Core, AppLab e 199 capability esistenti. Solo ricerca: **nessun CAP, Golden, codice app o roadmap modificato**, test Factory runtime non attestati.
+
 ## 2026-11-26 — Correzione repository CookingAnime e CashMateAI, registrate due idee mancanti
 - Ricevuti e verificati i repository esatti `riccardopinato/CookingAnime` e `riccardopinato/CashMateAI`.
 - Aperta [CookingAnime #79](https://github.com/riccardopinato/CookingAnime/issues/79) per Kitchen Conductor (AUDMAIL-20261126-06) e [CashMateAI #1](https://github.com/riccardopinato/CashMateAI/issues/1) per Decision Studio (AUDMAIL-20261126-05). Totale schede research per audit = **13** (prima 11).

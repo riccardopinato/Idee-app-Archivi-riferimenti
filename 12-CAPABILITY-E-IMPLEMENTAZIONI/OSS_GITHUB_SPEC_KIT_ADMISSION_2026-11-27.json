@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "record_id": "OSS-SPEC-KIT-20261127",
+  "record_type": "EXTERNAL_OSS_ADMISSION_RESEARCH",
+  "date": "2026-11-27",
+  "status": "E1_RESEARCH_ONLY_NOT_CAP_ADMITTED",
+  "source_kind": "USER_PROVIDED_REPOSITORY_NOT_VERIFIED_STARRED",
+  "upstream": {
+    "repository": "github/spec-kit",
+    "homepage": "https://github.com/github/spec-kit",
+    "release": "v1.4.5",
+    "release_commit": "6ba8beefff8d6408cadd62038e92d459093e33a8",
+    "release_date": "2026-11-25",
+    "reviewed_main_sha": "f2010547121b3351e4923fe467205079e4593a32",
+    "license": "MIT",
+    "license_file": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/LICENSE",
+    "license_obligation": "Preserve copyright and MIT license text if copying substantial original material",
+    "language": "Python 3.11+ CLI with agent integrations; does not embed in Flutter/Android APK"
+  },
+  "factory_baseline": {
+    "repository": "riccardopinato/App-Factory-Core",
+    "commit": "842dfa073451ec247308ccb4afb8ead5349bcbd4",
+    "master": "27",
+    "golden_index": 31,
+    "golden_registry": 2
+  },
+  "comparison_sources": {
+    "catalog_repository": "riccardopinato/Idee-app-Archivi-riferimenti",
+    "catalog_commit": "87a37a5114a40548a23763a133bbf8b14f7c6513",
+    "catalog_records_reviewed": 199,
+    "agent_core_commit": "f2b4c28cc3a9afa4ef39c6d32fe0a8ef14dac512",
+    "applab_commit": "817a65dfdeb53750ce2ec4fb224a691dc29b8953"
+  },
+  "cap_overlap": [
+    "CAP-0067",
+    "CAP-0069",
+    "CAP-0070",
+    "CAP-0089",
+    "CAP-0103"
+  ],
+  "classification_counts": {
+    "DUPLICATE": 10,
+    "REUSE": 6,
+    "NEW": 4
+  },
+  "policy": {
+    "no_new_cap_id": true,
+    "no_golden_promotion": true,
+    "no_app_code_mutations": true,
+    "no_product_scope_change": true,
+    "no_cli_installation": true,
+    "no_paid_services": true,
+    "not_runtime_certified": true,
+    "not_test_proven_for_factory": true
+  },
+  "acceptance": {
+    "pin_commit_and_license": "SOURCE_REVIEWED",
+    "dedup_crosswalk": "20_SOURCE_MAPPED_ROWS_REVIEWED",
+    "repo_mutation_boundary": "CATALOG_DOCS_ONLY",
+    "github_pr_ci": "VERIFY_IN_LIVE_GITHUB_NOT_ASSERTED_BY_FILE"
+  },
+  "matrix": [
+    {
+      "id": "SK-001",
+      "capability": "Constitution / governance",
+      "classification": "DUPLICATE",
+      "owner": "Core",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/v27/candidate/MASTER_CORE_v27_CANDIDATE.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/templates/constitution-template.md",
+      "decision": "Master, Product Bible, Golden, AGENTS governano gia la precedenza; non introdurre una nuova costituzione autonoma."
+    },
+    {
+      "id": "SK-002",
+      "capability": "Istruzioni agente per repository",
+      "classification": "DUPLICATE",
+      "owner": "Core/Agent",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/governance/GOLDEN_AGENT_GOVERNANCE_v1.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/docs/integrations/generic.md",
+      "decision": "Riutilizzare AGENTS.md canonico e bridge sottili; niente doppie istruzioni divergenti."
+    },
+    {
+      "id": "SK-003",
+      "capability": "Workflow orchestration e work graph",
+      "classification": "DUPLICATE",
+      "owner": "AppLab",
+      "internal_evidence": "https://github.com/riccardopinato/AppLab/blob/817a65dfdeb53750ce2ec4fb224a691dc29b8953/integration/orchestration/contracts/agent-work-graph-v1.json",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/workflows/speckit/workflow.yml",
+      "decision": "Non importare un secondo scheduler/WorkGraph; collegare solo gli artefatti di specifica."
+    },
+    {
+      "id": "SK-004",
+      "capability": "Ripresa run, retry e idempotenza",
+      "classification": "DUPLICATE",
+      "owner": "AppLab/Golden",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/governance/GOLDEN_EVENT_DRIVEN_RECONCILIATION_v1.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/docs/workflows/overview.md",
+      "decision": "Conservare queue/lease e reconciliation AppLab; upstream ammette replay di side effect prima del checkpoint."
+    },
+    {
+      "id": "SK-005",
+      "capability": "Permission gate di esecuzione",
+      "classification": "REUSE",
+      "owner": "Agent Core",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Agent-Core/blob/f2b4c28cc3a9afa4ef39c6d32fe0a8ef14dac512/docs/X10-010_PERMISSION_GATEWAY.md",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/src/specify_cli/workflows/engine.py",
+      "decision": "Usare il gateway esistente; lo step shell upstream opera con i privilegi del runner, non e un sandbox."
+    },
+    {
+      "id": "SK-006",
+      "capability": "Trusted QA, certificazione, artefatti",
+      "classification": "DUPLICATE",
+      "owner": "AppLab/Golden",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/release/GOLDEN_APPLAB_QA_CERTIFICATION_v1.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/templates/commands/analyze.md",
+      "decision": "AppLab resta authority di evidence; Analyze non e una prova fisica o runtime."
+    },
+    {
+      "id": "SK-007",
+      "capability": "Source SHA e artifact provenance",
+      "classification": "DUPLICATE",
+      "owner": "Core/AppLab",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/release/GOLDEN_IMMUTABLE_BUILD_TEST_ARTIFACT_v1.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/docs/how-to/contract-driven-development.md",
+      "decision": "Preservare exact-head e SHA-256 gia regolati; aggiungere solo i riferimenti alle specifiche."
+    },
+    {
+      "id": "SK-008",
+      "capability": "Feature-scoped spec.md",
+      "classification": "NEW",
+      "owner": "Core process candidate",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/v27/candidate/MASTER_CORE_v27_CANDIDATE.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/templates/spec-template.md",
+      "decision": "Delta reale: contratto di comportamento circoscritto alla singola feature, subordinato alla Product Bible."
+    },
+    {
+      "id": "SK-009",
+      "capability": "Acceptance IDs e coverage machine-readable",
+      "classification": "NEW",
+      "owner": "AppLab/Core process candidate",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/release/GOLDEN_APPLAB_QA_CERTIFICATION_v1.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/templates/spec-template.md",
+      "decision": "Delta: ID requisiti stabili collegabili a task, test e prove; non esiste nel campione un equivalente feature-scoped canonico."
+    },
+    {
+      "id": "SK-010",
+      "capability": "Analisi incrociata spec/plan/tasks",
+      "classification": "NEW",
+      "owner": "Core process candidate",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/audit/MASTER_AUDIT_360_APP_FACTORY_v1.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/templates/commands/analyze.md",
+      "decision": "Delta: coerenza su un feature slice; non sostituisce Audit 360 o product approval."
+    },
+    {
+      "id": "SK-011",
+      "capability": "Converge residui requisito->codice",
+      "classification": "NEW",
+      "owner": "AppLab adapter candidate",
+      "internal_evidence": "https://github.com/riccardopinato/AppLab/blob/817a65dfdeb53750ce2ec4fb224a691dc29b8953/scripts/verify_repair_loop_v60d.py",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/templates/commands/converge.md",
+      "decision": "Delta: inventario gap rispetto a requisiti approvati; output e solo backlog, mai PASS autoproclamato."
+    },
+    {
+      "id": "SK-012",
+      "capability": "Preset Lean per feature",
+      "classification": "REUSE",
+      "owner": "Core",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/governance/GOLDEN_ROADMAP_FAST_CONTINUOUS_MAINTENANCE_v1.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/presets/lean/README.md",
+      "decision": "Adattare la forma breve al router DIRECT/PARALLEL/CONTROLLED senza nuova pipeline obbligatoria."
+    },
+    {
+      "id": "SK-013",
+      "capability": "Bug assess/fix/test",
+      "classification": "REUSE",
+      "owner": "AppLab",
+      "internal_evidence": "https://github.com/riccardopinato/AppLab/blob/817a65dfdeb53750ce2ec4fb224a691dc29b8953/scripts/bounded_fix_worker_v60c.py",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/extensions/bug/README.md",
+      "decision": "Aggiungere format riproduzione originale e esito post-fix; riparazione e verifica restano quelle esistenti."
+    },
+    {
+      "id": "SK-014",
+      "capability": "Idea assessment/go-kill",
+      "classification": "DUPLICATE",
+      "owner": "Archivio idee",
+      "internal_evidence": "https://github.com/riccardopinato/Idee-app-Archivi-riferimenti/blob/87a37a5114a40548a23763a133bbf8b14f7c6513/12-CAPABILITY-E-IMPLEMENTAZIONI/REGISTRO_CAPABILITY.json",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/extensions/assess/README.md",
+      "decision": "Decisioni su idee e ranking gia nel catalogo; usarne il formato come riferimento, non duplicare portfolio."
+    },
+    {
+      "id": "SK-015",
+      "capability": "Contract-driven interfaces",
+      "classification": "REUSE",
+      "owner": "Agent Core",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Agent-Core/blob/f2b4c28cc3a9afa4ef39c6d32fe0a8ef14dac512/contracts/job.schema.json",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/docs/how-to/contract-driven-development.md",
+      "decision": "Arricchire riferimenti ai requisiti senza creare secondo contratto di job o falsa runtime authority."
+    },
+    {
+      "id": "SK-016",
+      "capability": "Extension/runtime/catalog installati",
+      "classification": "DUPLICATE",
+      "owner": "Core/Golden",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/GOLDEN_REGISTRY.yaml",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/docs/extensions/api.md",
+      "decision": "No runtime plugin runner globale o registro Golden parallelo; valutare upstream solo se serve un adapter verificato."
+    },
+    {
+      "id": "SK-017",
+      "capability": "Artifact inventory/provenance di prompt",
+      "classification": "REUSE",
+      "owner": "Core",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/GOLDEN_INDEX_CURRENT.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/docs/overview/artifacts.md",
+      "decision": "Possibile adattamento read-only delle informazioni di composizione; registry unico rimane centrale."
+    },
+    {
+      "id": "SK-018",
+      "capability": "Test opzionali nel template upstream",
+      "classification": "DUPLICATE",
+      "owner": "Core/AppLab",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Core/blob/842dfa073451ec247308ccb4afb8ead5349bcbd4/golden/release/GOLDEN_APPLAB_QA_CERTIFICATION_v1.txt",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/templates/tasks-template.md",
+      "decision": "Non adottare optional-test default; usare test obbligatori basati su rischio e prodotto."
+    },
+    {
+      "id": "SK-019",
+      "capability": "Generic agent CLI dispatch",
+      "classification": "DUPLICATE",
+      "owner": "Chat/Agent Core",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Agent-Core/blob/f2b4c28cc3a9afa4ef39c6d32fe0a8ef14dac512/docs/ARCHITECTURE.md",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/docs/integrations/generic.md",
+      "decision": "L'integrazione generic non esegue prompt/command via CLI: nessuna promessa di runtime Chat autonoma."
+    },
+    {
+      "id": "SK-020",
+      "capability": "Scoping parallel jobs e costi",
+      "classification": "REUSE",
+      "owner": "Core/Agent",
+      "internal_evidence": "https://github.com/riccardopinato/App-Factory-Agent-Core/blob/f2b4c28cc3a9afa4ef39c6d32fe0a8ef14dac512/docs/X10-013_BOUNDED_ORCHESTRATION.md",
+      "upstream_evidence": "https://github.com/github/spec-kit/blob/f2010547121b3351e4923fe467205079e4593a32/docs/how-to/complex-features.md",
+      "decision": "Usare DAG, ownership e budget gia presenti; adottare solo slice di contesto piccoli."
+    }
+  ],
+  "next_gate": "Maxi-step 2: Factory Spec Lite only after this dossier is merged into catalog main with exact-head and applicable checks; NEW labels mean unvalidated deltas, not new CAP IDs or certified Golden."
+}
